@@ -26,9 +26,24 @@ const firebaseConfig = {
   measurementId: "G-X91BJ84ZJR"
 };
 
-// Initialize Firebase
+// 1. Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+// 2. Add a test function to write data
+async function testDatabase(){
+    try{
+        const docRef = await addDoc(collection(db, "nursing_students"),{
+            firstName: "Oliver",
+            lastName: "Cimafranca",
+            status: "active"
+        });
+        console.log("Success! Document written with ID: ", docRef.id);
+    } catch (error){
+        console.error ("Error adding document:", error);
+    }
+}
+// 3. Run the function
+    testDatabase();
   </script>
 </body>
 </html>
