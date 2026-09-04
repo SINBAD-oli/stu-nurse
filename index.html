@@ -29,6 +29,7 @@ const firebaseConfig = {
 // 1. Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const db = getFirestore(app);
 // 2. Add a test function to write data
 async function testDatabase(){
     try{
