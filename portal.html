@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Stu-Nurse</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/portal.css">
+  <link rel="stylesheet" href="css/testBank.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <h1>Stu-Nurse Portal</h1>
+      <button id="logout-btn" class="logout-button">Log Out</button>
+    </header>
+
+    <main class="dashboard-content">
+      <section class="card profile-card">
+        <h2>Student Profile</h2>
+        <div class="profile-info">
+          <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+          <p><strong>Role:</strong> <span id="user-role">Loading...</span></p>
+          <p><strong>Member Since:</strong> <span id="user-joined">Loading...</span></p>
+        </div>
+      </section>
+
+      <section class="card study-card">
+        <h2>Quick Study Access</h2>
+        <p>Select a module to begin reviewing your nursing concepts.</p>
+        <button id="launch-quiz-btn" class="action-btn">Launch Test Bank Quiz</button>
+      </section>
+    </main>
+
+    <!-- Quiz Modal Container -->
+    <div id="quiz-modal" class="quiz-modal hidden">
+      <div class="quiz-modal-content">
+        <div class="quiz-header-bar">
+          <span id="quiz-progress">Question 1 of 1</span>
+          <button id="close-quiz-btn" class="close-btn">&times;</button>
+        </div>
+        
+        <div id="question-meta" class="question-meta-tags">
+          <!-- Metadata pills injected here -->
+        </div>
+
+        <div id="question-box" class="question-box">
+          <h3 id="question-text">Loading question...</h3>
+          <div id="options-container" class="options-container">
+            <!-- Options injected here -->
+          </div>
+        </div>
+
+        <div id="feedback-box" class="feedback-box hidden">
+          <p id="feedback-text"></p>
+        </div>
+
+        <div class="quiz-footer-actions">
+          <button id="submit-answer-btn" class="action-btn">Submit Answer</button>
+          <button id="next-question-btn" class="action-btn hidden">Next Question</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/portal.js"></script>
+</body>
+</html>
