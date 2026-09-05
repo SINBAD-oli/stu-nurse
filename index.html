@@ -2,51 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Stu-Nurse App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stu-Nurse Portal</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
-  <!--Firebase Code Here-->
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-//import { initializeApp } from "firebase/app";
-//import { getAnalytics } from "firebase/analytics";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+  <div class="card">
+    <h1>Stu-Nurse</h1>
+    <p class="subtitle">Log in or create an account to access your study materials.</p>
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCrDUU0bsxz8UjkgMP0Xy8uV1o5FZC_llg",
-  authDomain: "stu-nurse-backend.firebaseapp.com",
-  projectId: "stu-nurse-backend",
-  storageBucket: "stu-nurse-backend.firebasestorage.app",
-  messagingSenderId: "500117493405",
-  appId: "1:500117493405:web:4cbef5fca6c9afd459e674",
-  measurementId: "G-X91BJ84ZJR"
-};
+    <form id="auth-form" onsubmit="return false;">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
 
-// 1. Initialize Firebase
-const app = initializeApp(firebaseConfig);
-//const analytics = getAnalytics(app);
-const db = getFirestore(app);
-// 2. Add a test function to write data
-async function testDatabase(){
-    try{
-        const docRef = await addDoc(collection(db, "nursing_students"),{
-            firstName: "Oliver",
-            lastName: "Cimafranca",
-            status: "active"
-        });
-        console.log("Success! Document written with ID: ", docRef.id);
-    } catch (error){
-        console.error ("Error adding document:", error);
-    }
-}
-// 3. Run the function
-    testDatabase();
-  </script>
+      <p id="error-message" class="hidden"></p>
+
+      <div class="button-group">
+        <button type="button" id="login-btn">Log In</button>
+        <button type="button" id="signup-btn">Sign Up</button>
+      </div>
+    </form>
+  </div>
+
+  <script type="module" src="js/auth.js"></script>
 </body>
 </html>
