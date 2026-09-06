@@ -43,7 +43,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
   let selectedChapterQuestions = [];
   let questionsList = [];
   let currentQuestionIndex = 0;
-  let selectedOptionIndex = null;
+  let selectedOptionIndices = []; // Array for multi-select checkboxes (SATA)
   let score = 0;
   let answeredCount = 0;
 
@@ -175,11 +175,16 @@ function setupQuiz(launchQuizBtn, quizModal) {
     const percentage = answeredCount > 0 ? ((score / answeredCount) * 100).toFixed(1) : '0.0';
     questionProgress.textContent = `Question ${currentQuestionIndex + 1} of ${questionsList.length} | Score: ${score.toFixed(1)} (${percentage}%)`;
     
+    // Detect if question is SATA (Select All That Apply)
+    const optionsList = q.options || q.answerOptions || [];
+    const correctOptionsCount = optionsList.filter(o => o.isCorrect === true).length;
+    const isSATA = q.type === 'SATA' || correctOptionsCount > 1;
+
     questionMeta.innerHTML = `
       ${q.chapter ? `<span class="meta-pill">${q.chapter}</span>` : ''}
+      <span class="meta-pill" style="background-color: ${isSATA ? '#fef3c7; color: #b45309;' : '#e0e7ff; color: #3730a3;'}">${isSATA ? 'Select All That Apply (SATA)' : 'Multiple Choice'}</span>
       ${q.clientNeed ? `<span class="meta-pill">Client Need: ${q.clientNeed}</span>` : ''}
       ${q.cognitiveLevel ? `<span class="meta-pill">Cognitive: ${q.cognitiveLevel}</span>` : ''}
-      ${q.difficulty ? `<span class="meta-pill">Difficulty: ${q.difficulty}</span>` : ''}
     `;
 
     questionText.textContent = q.questionText;
@@ -188,51 +193,120 @@ function setupQuiz(launchQuizBtn, quizModal) {
     submitAnswerBtn.classList.remove('hidden');
     submitAnswerBtn.disabled = true;
     nextQuestionBtn.classList.add('hidden');
-    selectedOptionIndex = null;
+    selectedOptionIndices = [];
 
-    const optionsList = q.options || q.answerOptions || [];
-    
     optionsList.forEach((opt, index) => {
       const label = document.createElement('label');
       label.className = 'option-label';
+      
+      // Use checkboxes for SATA, radios for standard single choice
+      const inputType = isSATA ? 'checkbox' : 'radio';
+      
       label.innerHTML = `
-        <input type="radio" name="quiz-option" value="${index}">
+        <input type="${inputType}" name="quiz-option" value="${index}" style="margin-top: 3px;">
         <span>${opt.text}</span>
       `;
-      label.addEventListener('click', () => {
-        document.querySelectorAll('.option-label').forEach(l => l.classList.remove('selected'));
-        label.classList.add('selected');
-        selectedOptionIndex = index;
-        submitAnswerBtn.disabled = false;
+      
+      label.addEventListener('click', (e) => {
+        if (e.target.tagName !== 'INPUT') {
+          const checkbox = label.querySelector('input');
+          checkbox.checked = !checkbox.checked;
+        }
+
+        const checkbox = label.querySelector('input');
+        if (isSATA) {
+          if (checkbox.checked) {
+            label.classList.add('selected');
+            if (!selectedOptionIndices.includes(index)) selectedOptionIndices.push(index);
+          } else {
+            label.classList.remove('selected');
+            selectedOptionIndices = selectedOptionIndices.filter(i => i !== index);
+          }
+          submitAnswerBtn.disabled = selectedOptionIndices.length === 0;
+        } else {
+          document.querySelectorAll('.option-label').forEach(l => l.classList.remove('selected'));
+          label.classList.add('selected');
+          selectedOptionIndices = [index];
+          submitAnswerBtn.disabled = false;
+        }
       });
+
       optionsContainer.appendChild(label);
     });
   }
 
   if (submitAnswerBtn) {
     submitAnswerBtn.addEventListener('click', () => {
-      if (selectedOptionIndex === null) return;
+      if (selectedOptionIndices.length === 0) return;
 
       const q = questionsList[currentQuestionIndex];
       const optionsList = q.options || q.answerOptions || [];
-      const chosenOpt = optionsList[selectedOptionIndex];
+      
+      const correctIndices = [];
+      optionsList.forEach((opt, idx) => {
+        if (opt.isCorrect === true || (idx + 1) === q.correctAnswerIndex) {
+          correctIndices.push(idx);
+        }
+      });
 
       answeredCount++;
-      const isCorrect = chosenOpt.isCorrect === true || selectedOptionIndex + 1 === q.correctAnswerIndex;
-      if (isCorrect) {
-        score += 1;
+      let questionEarnedScore = 0;
+      let feedbackStatus = "";
+
+      const correctOptionsCount = correctIndices.length;
+      const isSATA = q.type === 'SATA' || correctOptionsCount > 1;
+
+      if (!isSATA) {
+        // Standard Multiple Choice Scoring
+        const chosenIdx = selectedOptionIndices[0];
+        if (correctIndices.includes(chosenIdx)) {
+          questionEarnedScore = 1;
+          feedbackStatus = "correct";
+        } else {
+          feedbackStatus = "incorrect";
+        }
+      } else {
+        // SATA Partial Credit Scoring
+        let correctSelections = 0;
+        let incorrectSelections = 0;
+
+        selectedOptionIndices.forEach(idx => {
+          if (correctIndices.includes(idx)) {
+            correctSelections++;
+          } else {
+            incorrectSelections++;
+          }
+        });
+
+        // Award proportional points: correct picks minus incorrect picks, floored at 0
+        const rawScore = (correctSelections - incorrectSelections) / correctOptionsCount;
+        questionEarnedScore = Math.max(0, Math.min(1, rawScore));
+
+        if (questionEarnedScore === 1) {
+          feedbackStatus = "correct";
+        } else if (questionEarnedScore > 0) {
+          feedbackStatus = "partial";
+        } else {
+          feedbackStatus = "incorrect";
+        }
       }
 
+      score += questionEarnedScore;
+
+      // Highlight options
       const labels = document.querySelectorAll('.option-label');
       optionsList.forEach((opt, idx) => {
-        const correctFlag = opt.isCorrect === true || (idx + 1) === q.correctAnswerIndex;
-        if (correctFlag) {
+        const isCorrectOption = correctIndices.includes(idx);
+        const wasSelected = selectedOptionIndices.includes(idx);
+
+        if (isCorrectOption) {
           labels[idx].classList.add('correct-highlight');
-        } else if (idx === selectedOptionIndex && !isCorrect) {
+        } else if (wasSelected && !isCorrectOption) {
           labels[idx].classList.add('incorrect-highlight');
         }
       });
 
+      // Display individual rationales
       optionsList.forEach((opt, idx) => {
         if (opt.rationale) {
           const rationaleSpan = document.createElement('span');
@@ -242,9 +316,13 @@ function setupQuiz(launchQuizBtn, quizModal) {
         }
       });
 
-      feedbackText.innerHTML = isCorrect ? 
-        `<strong>Correct!</strong> Great job applying nursing concepts.` : 
-        `<strong>Incorrect.</strong> Review the highlighted correct answer and rationale above.`;
+      if (feedbackStatus === "correct") {
+        feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong> Great job applying nursing concepts.`;
+      } else if (feedbackStatus === "partial") {
+        feedbackText.innerHTML = `<strong>Partially Correct! (+${questionEarnedScore.toFixed(2)} pts)</strong> You selected some correct options but missed or included extra ones.`;
+      } else {
+        feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong> Review the highlighted correct answer(s) and rationale above.`;
+      }
       
       feedbackBox.classList.remove('hidden');
       submitAnswerBtn.classList.add('hidden');
