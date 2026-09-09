@@ -17,9 +17,9 @@
 
     <main class="dashboard-content">
       <section class="card profile-card">
-        <h2>Student Profile</h2>
+        <h2>Student Profile & Mastery</h2>
         <div class="profile-info">
-          <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+          <p><strong>Name:</strong> <span id="user-fullname">Loading...</span></p>
           <p><strong>Role:</strong> <span id="user-role">Loading...</span></p>
           <p><strong>Member Since:</strong> <span id="user-joined">Loading...</span></p>
         </div>
@@ -40,15 +40,11 @@
           <button id="close-quiz-btn" class="close-btn">&times;</button>
         </div>
         
-        <div id="question-meta" class="question-meta-tags">
-          <!-- Metadata pills injected here -->
-        </div>
+        <div id="question-meta" class="question-meta-tags"></div>
 
         <div id="question-box" class="question-box">
           <h3 id="question-text">Loading question...</h3>
-          <div id="options-container" class="options-container">
-            <!-- Options injected here -->
-          </div>
+          <div id="options-container" class="options-container"></div>
         </div>
 
         <div id="feedback-box" class="feedback-box hidden">

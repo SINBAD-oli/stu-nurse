@@ -1,5 +1,6 @@
 import { db } from './firebase-config.js';
-import { collection, getDocs } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { collection, getDocs, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { auth } from './firebase-config.js';
 
 export function initTestBank() {
   let attempts = 0;
@@ -17,7 +18,6 @@ export function initTestBank() {
   }, 50);
 }
 
-// True Fisher-Yates Shuffle Algorithm
 function shuffleArray(array) {
   let currentIndex = array.length, randomIndex;
   while (currentIndex !== 0) {
@@ -43,9 +43,11 @@ function setupQuiz(launchQuizBtn, quizModal) {
   let selectedChapterQuestions = [];
   let questionsList = [];
   let currentQuestionIndex = 0;
-  let selectedOptionIndices = []; // Array for multi-select checkboxes (SATA)
+  let selectedOptionIndices = [];
   let score = 0;
   let answeredCount = 0;
+  let activeChapterName = "";
+  let sessionMissedQuestions = [];
 
   launchQuizBtn.addEventListener('click', async () => {
     quizModal.classList.remove('hidden');
@@ -60,15 +62,14 @@ function setupQuiz(launchQuizBtn, quizModal) {
       if (allQuestions.length === 0) {
         questionProgress.textContent = "Test Bank";
         questionMeta.innerHTML = "";
-        questionText.textContent = "No questions found in Firestore database. Please run your upload script.";
+        questionText.textContent = "No questions found in Firestore database.";
         optionsContainer.innerHTML = '';
         return;
       }
 
       showChapterSelection();
     } catch (error) {
-      console.error("Error loading questions from Firestore:", error);
-      questionText.textContent = "Error loading questions from database.";
+      console.error("Error loading questions:", error);
     }
   });
 
@@ -86,6 +87,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
     feedbackBox.classList.add('hidden');
     submitAnswerBtn.classList.add('hidden');
     nextQuestionBtn.classList.add('hidden');
+    sessionMissedQuestions = [];
 
     const chapters = [...new Set(allQuestions.map(q => q.chapter || "General Practice"))];
     optionsContainer.innerHTML = '';
@@ -98,6 +100,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
     allBtn.innerHTML = `<span>📚 All Chapters Combined (${allQuestions.length} Questions)</span>`;
     allBtn.addEventListener('click', () => {
       selectedChapterQuestions = [...allQuestions];
+      activeChapterName = "All Chapters Combined";
       showQuizConfig();
     });
     optionsContainer.appendChild(allBtn);
@@ -111,6 +114,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
       chapBtn.innerHTML = `<span>📖 ${chap} (${chapQuestions.length} Questions)</span>`;
       chapBtn.addEventListener('click', () => {
         selectedChapterQuestions = [...chapQuestions];
+        activeChapterName = chap;
         showQuizConfig();
       });
       optionsContainer.appendChild(chapBtn);
@@ -125,7 +129,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
     optionsContainer.innerHTML = `
       <div style="display: flex; flex-direction: column; gap: 16px;">
         <div>
-          <label style="font-weight: 600; display: block; margin-bottom: 8px; color: #334155;">Number of Questions (Max ${selectedChapterQuestions.length}):</label>
+          <label style="font-weight: 600; display: block; margin-bottom: 8px; color: #334155;">Number of Questions:</label>
           <input type="number" id="question-count-input" value="${selectedChapterQuestions.length}" min="1" max="${selectedChapterQuestions.length}" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; font-size: 14px; box-sizing: border-box;">
         </div>
         <div>
@@ -145,14 +149,10 @@ function setupQuiz(launchQuizBtn, quizModal) {
       const orderVal = document.getElementById('question-order-select').value;
 
       let list = [...selectedChapterQuestions];
-
-      if (orderVal === 'random') {
-        list = shuffleArray(list);
-      }
+      if (orderVal === 'random') list = shuffleArray(list);
 
       const limit = isNaN(inputVal) ? list.length : Math.max(1, Math.min(inputVal, list.length));
       questionsList = list.slice(0, limit);
-      
       startQuizSession();
     });
 
@@ -175,14 +175,16 @@ function setupQuiz(launchQuizBtn, quizModal) {
     const percentage = answeredCount > 0 ? ((score / answeredCount) * 100).toFixed(1) : '0.0';
     questionProgress.textContent = `Question ${currentQuestionIndex + 1} of ${questionsList.length} | Score: ${score.toFixed(1)} (${percentage}%)`;
     
-    // Detect if question is SATA (Select All That Apply)
     const optionsList = q.options || q.answerOptions || [];
+    
+    const textLower = (q.questionText || "").toLowerCase();
+    const hasSataText = textLower.includes("select all that apply") || textLower.includes("all that apply");
     const correctOptionsCount = optionsList.filter(o => o.isCorrect === true).length;
-    const isSATA = q.type === 'SATA' || correctOptionsCount > 1;
+    const isSATA = q.type === 'SATA' || hasSataText || correctOptionsCount > 1;
 
     questionMeta.innerHTML = `
       ${q.chapter ? `<span class="meta-pill">${q.chapter}</span>` : ''}
-      <span class="meta-pill" style="background-color: ${isSATA ? '#fef3c7; color: #b45309;' : '#e0e7ff; color: #3730a3;'}">${isSATA ? 'Select All That Apply (SATA)' : 'Multiple Choice'}</span>
+      <span class="meta-pill" style="background-color: ${isSATA ? '#fef3c7; color: #b45309;' : '#e0e7ff; color: #3730a3;'}">${isSATA ? 'SATA' : 'MCQ'}</span>
       ${q.clientNeed ? `<span class="meta-pill">Client Need: ${q.clientNeed}</span>` : ''}
       ${q.cognitiveLevel ? `<span class="meta-pill">Cognitive: ${q.cognitiveLevel}</span>` : ''}
     `;
@@ -198,24 +200,21 @@ function setupQuiz(launchQuizBtn, quizModal) {
     optionsList.forEach((opt, index) => {
       const label = document.createElement('label');
       label.className = 'option-label';
-      
-      // Use checkboxes for SATA, radios for standard single choice
       const inputType = isSATA ? 'checkbox' : 'radio';
       
       label.innerHTML = `
-        <input type="${inputType}" name="quiz-option" value="${index}" style="margin-top: 3px;">
+        <input type="${inputType}" name="quiz-option" value="${index}" style="margin-top: 3px; pointer-events: none;">
         <span>${opt.text}</span>
       `;
-      
-      label.addEventListener('click', (e) => {
-        if (e.target.tagName !== 'INPUT') {
-          const checkbox = label.querySelector('input');
-          checkbox.checked = !checkbox.checked;
-        }
 
-        const checkbox = label.querySelector('input');
+      const inputElem = label.querySelector('input');
+
+      label.addEventListener('click', (e) => {
+        e.preventDefault();
+
         if (isSATA) {
-          if (checkbox.checked) {
+          inputElem.checked = !inputElem.checked;
+          if (inputElem.checked) {
             label.classList.add('selected');
             if (!selectedOptionIndices.includes(index)) selectedOptionIndices.push(index);
           } else {
@@ -224,7 +223,11 @@ function setupQuiz(launchQuizBtn, quizModal) {
           }
           submitAnswerBtn.disabled = selectedOptionIndices.length === 0;
         } else {
-          document.querySelectorAll('.option-label').forEach(l => l.classList.remove('selected'));
+          document.querySelectorAll('.option-label').forEach(l => {
+            l.classList.remove('selected');
+            l.querySelector('input').checked = false;
+          });
+          inputElem.checked = true;
           label.classList.add('selected');
           selectedOptionIndices = [index];
           submitAnswerBtn.disabled = false;
@@ -253,11 +256,12 @@ function setupQuiz(launchQuizBtn, quizModal) {
       let questionEarnedScore = 0;
       let feedbackStatus = "";
 
+      const textLower = (q.questionText || "").toLowerCase();
+      const hasSataText = textLower.includes("select all that apply") || textLower.includes("all that apply");
       const correctOptionsCount = correctIndices.length;
-      const isSATA = q.type === 'SATA' || correctOptionsCount > 1;
+      const isSATA = q.type === 'SATA' || hasSataText || correctOptionsCount > 1;
 
       if (!isSATA) {
-        // Standard Multiple Choice Scoring
         const chosenIdx = selectedOptionIndices[0];
         if (correctIndices.includes(chosenIdx)) {
           questionEarnedScore = 1;
@@ -266,77 +270,142 @@ function setupQuiz(launchQuizBtn, quizModal) {
           feedbackStatus = "incorrect";
         }
       } else {
-        // SATA Partial Credit Scoring
         let correctSelections = 0;
         let incorrectSelections = 0;
 
         selectedOptionIndices.forEach(idx => {
-          if (correctIndices.includes(idx)) {
-            correctSelections++;
-          } else {
-            incorrectSelections++;
-          }
+          if (correctIndices.includes(idx)) correctSelections++;
+          else incorrectSelections++;
         });
 
-        // Award proportional points: correct picks minus incorrect picks, floored at 0
         const rawScore = (correctSelections - incorrectSelections) / correctOptionsCount;
         questionEarnedScore = Math.max(0, Math.min(1, rawScore));
 
-        if (questionEarnedScore === 1) {
-          feedbackStatus = "correct";
-        } else if (questionEarnedScore > 0) {
-          feedbackStatus = "partial";
-        } else {
-          feedbackStatus = "incorrect";
-        }
+        if (questionEarnedScore === 1) feedbackStatus = "correct";
+        else if (questionEarnedScore > 0) feedbackStatus = "partial";
+        else feedbackStatus = "incorrect";
       }
 
       score += questionEarnedScore;
+      const specificChap = q.chapter || activeChapterName || "General Practice";
 
-      // Highlight options
+      if (feedbackStatus !== "correct") {
+        sessionMissedQuestions.push({
+          chapter: specificChap,
+          questionText: q.questionText,
+          clientNeed: q.clientNeed || "N/A",
+          cognitiveLevel: q.cognitiveLevel || "N/A",
+          concept: q.concept || q.heading || "General Nursing Concept",
+          rationales: optionsList.map(o => o.rationale).filter(Boolean).join(" | ")
+        });
+      }
+
+      // Enhanced Highlighting Logic:
+      // Green = Correct option selected
+      // Red = Incorrect option selected
+      // Yellow = Correct option that was MISSED (not selected by student)
       const labels = document.querySelectorAll('.option-label');
       optionsList.forEach((opt, idx) => {
         const isCorrectOption = correctIndices.includes(idx);
         const wasSelected = selectedOptionIndices.includes(idx);
 
-        if (isCorrectOption) {
-          labels[idx].classList.add('correct-highlight');
-        } else if (wasSelected && !isCorrectOption) {
-          labels[idx].classList.add('incorrect-highlight');
+        if (isCorrectOption && wasSelected) {
+          labels[idx].style.backgroundColor = "#d1fae5"; // Green (Correctly selected)
+          labels[idx].style.borderColor = "#10b981";
+        } else if (isCorrectOption && !wasSelected) {
+          labels[idx].style.backgroundColor = "#fef08a"; // Yellow (Missed correct answer)
+          labels[idx].style.borderColor = "#eab308";
+        } else if (!isCorrectOption && wasSelected) {
+          labels[idx].style.backgroundColor = "#fee2e2"; // Red (Incorrectly selected)
+          labels[idx].style.borderColor = "#ef4444";
         }
       });
 
-      // Display individual rationales
+      // Display rationales below each option
       optionsList.forEach((opt, idx) => {
         if (opt.rationale) {
-          const rationaleSpan = document.createElement('span');
-          rationaleSpan.className = 'rationale-text';
-          rationaleSpan.textContent = `Rationale: ${opt.rationale}`;
-          labels[idx].appendChild(rationaleSpan);
+          const existingRationale = labels[idx].querySelector('.rationale-text');
+          if (!existingRationale) {
+            const rationaleSpan = document.createElement('span');
+            rationaleSpan.className = 'rationale-text';
+            rationaleSpan.style.display = 'block';
+            rationaleSpan.style.marginTop = '6px';
+            rationaleSpan.style.fontSize = '12px';
+            rationaleSpan.style.color = '#334155';
+            rationaleSpan.style.fontStyle = 'italic';
+            rationaleSpan.textContent = `Rationale: ${opt.rationale}`;
+            labels[idx].appendChild(rationaleSpan);
+          }
         }
       });
 
       if (feedbackStatus === "correct") {
         feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong> Great job applying nursing concepts.`;
       } else if (feedbackStatus === "partial") {
-        feedbackText.innerHTML = `<strong>Partially Correct! (+${questionEarnedScore.toFixed(2)} pts)</strong> You selected some correct options but missed or included extra ones.`;
+        feedbackText.innerHTML = `<strong>Partially Correct! (+${questionEarnedScore.toFixed(2)} pts)</strong> Green = correct selections, Yellow = missed correct answers, Red = incorrect selections.`;
       } else {
-        feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong> Review the highlighted correct answer(s) and rationale above.`;
+        feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong> Green/Yellow = correct answers, Red = your incorrect picks. Review rationales above.`;
       }
       
       feedbackBox.classList.remove('hidden');
       submitAnswerBtn.classList.add('hidden');
       nextQuestionBtn.classList.remove('hidden');
+
+      if (!window.currentSessionChapterScores) window.currentSessionChapterScores = {};
+      if (!window.currentSessionChapterScores[specificChap]) {
+        window.currentSessionChapterScores[specificChap] = { correct: 0, total: 0 };
+      }
+      window.currentSessionChapterScores[specificChap].correct += questionEarnedScore;
+      window.currentSessionChapterScores[specificChap].total += 1;
     });
   }
 
   if (nextQuestionBtn) {
-    nextQuestionBtn.addEventListener('click', () => {
+    nextQuestionBtn.addEventListener('click', async () => {
       currentQuestionIndex++;
       if (currentQuestionIndex < questionsList.length) {
         loadQuestion();
       } else {
         const finalPercentage = ((score / questionsList.length) * 100).toFixed(1);
+        
+        const currentUser = auth.currentUser;
+        if (currentUser) {
+          try {
+            const userRef = doc(db, "users", currentUser.uid);
+            const userSnap = await getDoc(userRef);
+            if (userSnap.exists()) {
+              const uData = userSnap.data();
+              const prevQuizzes = uData.totalQuizzesTaken || 0;
+              const prevAvg = uData.averageAccuracy || 0;
+              const chapterStats = uData.chapterStats || {};
+              let existingMissed = uData.missedQuestions || [];
+
+              const newTotalQuizzes = prevQuizzes + 1;
+              const newAvgAccuracy = Number(((prevAvg * prevQuizzes + parseFloat(finalPercentage)) / newTotalQuizzes).toFixed(1));
+
+              if (window.currentSessionChapterScores) {
+                for (const [chap, data] of Object.entries(window.currentSessionChapterScores)) {
+                  if (!chapterStats[chap]) chapterStats[chap] = { correct: 0, total: 0 };
+                  chapterStats[chap].correct += data.correct;
+                  chapterStats[chap].total += data.total;
+                }
+              }
+              window.currentSessionChapterScores = {};
+
+              existingMissed.push(...sessionMissedQuestions);
+
+              await updateDoc(userRef, {
+                totalQuizzesTaken: newTotalQuizzes,
+                averageAccuracy: newAvgAccuracy,
+                chapterStats: chapterStats,
+                missedQuestions: existingMissed
+              });
+            }
+          } catch (err) {
+            console.error("Error updating scores:", err);
+          }
+        }
+
         questionProgress.textContent = `Quiz Completed`;
         questionMeta.innerHTML = `<span class="meta-pill">Session Review</span>`;
         questionText.textContent = `Quiz Complete! You scored ${score.toFixed(1)} out of ${questionsList.length} (${finalPercentage}%).`;
@@ -357,13 +426,8 @@ function setupQuiz(launchQuizBtn, quizModal) {
         submitAnswerBtn.classList.add('hidden');
         nextQuestionBtn.classList.add('hidden');
 
-        document.getElementById('restart-quiz-btn').addEventListener('click', () => {
-          showQuizConfig();
-        });
-
-        document.getElementById('choose-another-chapter-btn').addEventListener('click', () => {
-          showChapterSelection();
-        });
+        document.getElementById('restart-quiz-btn').addEventListener('click', () => showQuizConfig());
+        document.getElementById('choose-another-chapter-btn', () => showChapterSelection());
       }
     });
   }
