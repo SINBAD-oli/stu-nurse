@@ -440,7 +440,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
             clientNeed: q.clientNeed || "N/A",
             cognitiveLevel: q.cognitiveLevel || "N/A",
             concept: q.concept || q.heading || "General Nursing Concept",
-            rationales: optionsList.map(o => o.rationale).filter(Boolean).join(" | ")
+            rationales: optionsList.map(o => o.rationale).filter(Boolean).map(r => `<p style="margin: 6px 0; padding-left: 10px; border-left: 3px solid #cbd5e1;">${r}</p>`).join("")
           });
         }
 

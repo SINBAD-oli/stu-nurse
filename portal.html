@@ -3,62 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Dashboard - Stu-Nurse</title>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/portal.css">
-  <link rel="stylesheet" href="css/testBank.css">
+  <title>Stu-Nurse Dashboard</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/portal.css">
+  <link rel="stylesheet" href="./css/testBank.css">
 </head>
-<body>
-  <div class="dashboard-container">
-    <header class="dashboard-header">
-      <h1>Stu-Nurse Portal</h1>
-      <button id="logout-btn" class="logout-button">Log Out</button>
+<body class="body-shell">
+
+  <div class="app-container">
+    <header class="app-header container-slide-in">
+      <div class="header-brand-group">
+        <div class="brand-logo">SN</div>
+        <div>
+          <h1 class="brand-title">Stu-Nurse Portal</h1>
+          <p class="brand-subtitle">Fluid Shell Flow</p>
+        </div>
+      </div>
+      <button id="logout-btn" class="action-button">
+        Log Out
+      </button>
     </header>
 
-    <main class="dashboard-content">
-      <section class="card profile-card">
-        <h2>Student Profile & Mastery</h2>
-        <div class="profile-info">
-          <p><strong>Name:</strong> <span id="user-fullname">Loading...</span></p>
-          <p><strong>Role:</strong> <span id="user-role">Loading...</span></p>
-          <p><strong>Member Since:</strong> <span id="user-joined">Loading...</span></p>
+    <main class="dashboard-grid">
+      
+      <section class="card container-slide-in profile-card" style="animation-delay: 0.05s;">
+        <div class="card-header">
+          <h2 class="card-title">Student Profile & Mastery</h2>
+          <span class="badge">Active</span>
+        </div>
+        <div class="space-list">
+          <div class="info-row">
+            <span class="info-label">Name:</span>
+            <span id="user-fullname" class="info-value">Oliver Cimafranca</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Role:</span>
+            <span id="user-role" class="info-value">Loading...</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Member Since:</span>
+            <span id="user-joined" class="info-value">Loading...</span>
+          </div>
         </div>
       </section>
 
-      <section class="card study-card">
-        <h2>Quick Study Access</h2>
-        <p>Select a module to begin reviewing your nursing concepts.</p>
-        <button id="launch-quiz-btn" class="action-btn">Launch Test Bank Quiz</button>
+      <section class="card container-slide-in study-card" style="animation-delay: 0.1s;">
+        <div>
+          <div class="card-header">
+            <h2 class="card-title">Quick Study Access</h2>
+            <span class="badge">Test Bank</span>
+          </div>
+          <p class="study-description">Launch interactive quizzes, test your knowledge with MCQ, SATA, and Completion formats, and monitor your chapter proficiency rings.</p>
+        </div>
+        <button id="launch-quiz-btn" class="action-button primary-action">
+          Launch Test Bank Quiz
+        </button>
       </section>
+
     </main>
 
-    <!-- Quiz Modal Container -->
-    <div id="quiz-modal" class="quiz-modal hidden">
-      <div class="quiz-modal-content">
-        <div class="quiz-header-bar">
-          <span id="quiz-progress">Question 1 of 1</span>
-          <button id="close-quiz-btn" class="close-btn">&times;</button>
+    <div id="quiz-modal" class="modal-backdrop hidden backdrop-fade-in">
+      <div id="modal-box" class="modal-box container-slide-in">
+        
+        <div class="modal-header">
+          <span id="quiz-progress" class="modal-progress">Question 1 of 1</span>
+          <button id="close-quiz-btn" class="close-button">&times;</button>
         </div>
         
-        <div id="question-meta" class="question-meta-tags"></div>
+        <div id="question-meta" class="meta-container"></div>
 
-        <div id="question-box" class="question-box">
-          <h3 id="question-text">Loading question...</h3>
-          <div id="options-container" class="options-container"></div>
+        <div id="question-box" class="question-container">
+          <h3 id="question-text" class="question-heading">Loading question...</h3>
+          <div id="options-container" class="options-space"></div>
         </div>
 
         <div id="feedback-box" class="feedback-box hidden">
           <p id="feedback-text"></p>
         </div>
 
-        <div class="quiz-footer-actions">
-          <button id="submit-answer-btn" class="action-btn">Submit Answer</button>
-          <button id="next-question-btn" class="action-btn hidden">Next Question</button>
+        <div class="modal-footer">
+          <button id="submit-answer-btn" class="action-button">Submit Answer</button>
+          <button id="next-question-btn" class="action-button hidden">Next Question</button>
         </div>
+
       </div>
     </div>
+
   </div>
 
-  <script type="module" src="js/portal.js"></script>
+  <script type="module" src="./js/portal.js"></script>
 </body>
 </html>

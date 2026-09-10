@@ -1,46 +1,161 @@
 body {
-  display: block; /* Overrides the center alignment from global.css */
-  background-color: #f8fafc;
+  display: block;
+  background-color: #f1f5f9;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  margin: 0;
+  padding: 2rem 1rem;
 }
 
-.dashboard-container {
-  max-width: 900px;
+.app-container {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 24px;
 }
 
-.dashboard-header {
+.app-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 16px 24px;
-  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
 }
 
-.dashboard-header h1 {
-  font-size: 22px;
-  color: #1d4ed8;
+.header-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo {
+  width: 45px;
+  height: 45px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 12px;
+  font-size: 1.25rem;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  color: #0f172a;
   margin: 0;
 }
 
-.logout-button {
-  background-color: #fee2e2;
-  color: #dc2626;
+.brand-subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.badge {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.space-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.info-label {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.study-description {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.action-button {
+  background-color: #2563eb;
+  color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s;
+  text-align: center;
 }
 
-.logout-button:hover {
+.action-button:hover {
+  background-color: #1d4ed8;
+}
+
+#logout-btn {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+#logout-btn:hover {
   background-color: #fecaca;
 }
-
 .dashboard-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -90,6 +205,200 @@ body {
   }
 }
 
-.hidden {
-  display: none !important;
+/* --- UI UTILITIES & STATES --- */
+.hidden { 
+  display: none !important; 
+}
+
+/* --- DASHBOARD STYLES --- */
+.dashboard-main {
+  margin-top: 2rem;
+}
+.dashboard-card {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.dashboard-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.dashboard-subtitle {
+  margin-bottom: 2rem;
+  color: #475569;
+}
+.btn-large {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+}
+.btn-block {
+  width: 100%;
+}
+
+/* --- MODAL STYLES & LAYOUT FIXES --- */
+.modal-overlay,
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.modal-card,
+.modal-box {
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-close-btn,
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #64748b;
+  transition: color 0.2s;
+}
+.modal-close-btn:hover,
+.close-button:hover {
+  color: #0f172a;
+}
+
+/* --- QUIZ CONFIG & ELEMENT STYLES --- */
+#quiz-modal label {
+  display: block;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.35rem;
+}
+
+#quiz-modal input[type="number"],
+#quiz-modal input[type="text"],
+#quiz-modal select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.quiz-progress-text,
+.modal-progress {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+}
+
+.quiz-meta-container,
+.meta-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.quiz-question-text,
+.question-heading {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #0f172a;
+}
+
+.quiz-options-container,
+.options-space {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.quiz-feedback-box,
+.feedback-box {
+  padding: 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-feedback-text {
+  margin: 0;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.quiz-actions-container,
+.modal-footer {
+  display: flex;
+  gap: 1rem;
+}
+
+#quiz-modal .action-button, 
+#quiz-modal .portal-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+}
+
+#quiz-modal .action-button:hover, 
+#quiz-modal .portal-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* --- Popup Modal Styling for Review Area --- */
+#review-modal, 
+.review-container, 
+div[id*="review"] {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Style the inner content box so it floats nicely in the center */
+#review-modal > *, 
+.review-container > *, 
+div[id*="review"] > * {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
