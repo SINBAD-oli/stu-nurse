@@ -9,6 +9,7 @@ const joinedSpan = document.getElementById('user-joined');
 const logoutBtn = document.getElementById('logout-btn');
 
 initTestBank();
+initProfileModalListeners();
 
 setPersistence(auth, browserLocalPersistence).then(() => {
   onAuthStateChanged(auth, async (user) => {
@@ -19,8 +20,8 @@ setPersistence(auth, browserLocalPersistence).then(() => {
         onSnapshot(docRef, async (docSnap) => {
           if (!docSnap.exists()) {
             const initialUserData = {
-              firstName: "Nursing",
-              lastName: "Student",
+              firstName: "Oliver",
+              lastName: "Cimafranca",
               email: user.email,
               role: "Nursing Student",
               createdAt: new Date(),
@@ -116,7 +117,7 @@ function renderProfileCard(userId, userData) {
   `;
   profileCard.appendChild(extraInfoDiv);
 
-  // Add Click listeners to each circle graph item
+  // Click listeners for chapter rings
   document.querySelectorAll('.chapter-ring-item').forEach(item => {
     item.addEventListener('click', () => {
       const chapterName = item.getAttribute('data-chapter');
@@ -125,22 +126,54 @@ function renderProfileCard(userId, userData) {
     });
   });
 
+  // Open custom modal instead of prompt()
   const editBtn = document.getElementById('edit-profile-btn');
-  if (editBtn) {
-    editBtn.addEventListener('click', async () => {
-      const newFirst = prompt("First Name:", userData.firstName || "Nursing");
-      const newLast = prompt("Last Name:", userData.lastName || "Student");
-      const newRole = prompt("Role:", userData.role || "Nursing Student");
-      
-      if (newFirst !== null && newLast !== null) {
-        await updateDoc(doc(db, "users", userId), { 
-          firstName: newFirst.trim(), 
-          lastName: newLast.trim(),
-          role: newRole ? newRole.trim() : userData.role 
-        });
-      }
+  const editModal = document.getElementById('edit-profile-modal');
+  const nameInput = document.getElementById('edit-name-input');
+  const roleInput = document.getElementById('edit-role-input');
+
+  if (editBtn && editModal) {
+    editBtn.addEventListener('click', () => {
+      nameInput.value = `${userData.firstName || ""} ${userData.lastName || ""}`.trim();
+      roleInput.value = userData.role || "Nursing Student";
+      editModal.classList.remove('hidden');
     });
   }
+}
+
+function initProfileModalListeners() {
+  const editModal = document.getElementById('edit-profile-modal');
+  const closeBtn = document.getElementById('close-edit-modal-btn');
+  const saveBtn = document.getElementById('save-profile-btn');
+  const nameInput = document.getElementById('edit-name-input');
+  const roleInput = document.getElementById('edit-role-input');
+
+  if (!editModal) return;
+
+  const closeModal = () => editModal.classList.add('hidden');
+  closeBtn?.addEventListener('click', closeModal);
+
+  saveBtn?.addEventListener('click', async () => {
+    const user = auth.currentUser;
+    if (!user) return;
+
+    const fullFullName = nameInput.value.trim();
+    const parts = fullFullName.split(' ');
+    const firstName = parts[0] || "Nursing";
+    const lastName = parts.slice(1).join(' ') || "Student";
+    const role = roleInput.value.trim() || "Nursing Student";
+
+    try {
+      await updateDoc(doc(db, "users", user.uid), {
+        firstName,
+        lastName,
+        role
+      });
+      closeModal();
+    } catch (err) {
+      console.error("Error updating profile:", err);
+    }
+  });
 }
 
 function showMissedReviewModal(chapterName, missedList) {

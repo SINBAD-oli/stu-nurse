@@ -45,6 +45,10 @@
             <span id="user-joined" class="info-value">Loading...</span>
           </div>
         </div>
+        <!-- Added Edit Profile Button -->
+        <div style="margin-top: 1.5rem;">
+          <button id="open-edit-profile-btn" class="action-button" style="width: 100%;">Edit Profile Details</button>
+        </div>
       </section>
 
       <section class="card container-slide-in study-card" style="animation-delay: 0.1s;">
@@ -62,6 +66,7 @@
 
     </main>
 
+    <!-- Quiz Modal -->
     <div id="quiz-modal" class="modal-backdrop hidden backdrop-fade-in">
       <div id="modal-box" class="modal-box container-slide-in">
         
@@ -86,6 +91,29 @@
           <button id="next-question-btn" class="action-button hidden">Next Question</button>
         </div>
 
+      </div>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div id="edit-profile-modal" class="modal-backdrop hidden backdrop-fade-in">
+      <div class="modal-box container-slide-in" style="max-width: 400px;">
+        <div class="modal-header">
+          <h3 class="card-title" style="font-size: 1.1rem;">Edit Profile Details</h3>
+          <button id="close-edit-modal-btn" class="close-button">&times;</button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+          <div>
+            <label style="font-size: 0.8rem; color: var(--text-muted, #94a3b8); display: block; margin-bottom: 0.3rem;">Full Name</label>
+            <input type="text" id="edit-name-input" class="action-button" style="width: 100%; text-align: left; background: rgba(15, 23, 42, 0.6); cursor: text; padding: 0.75rem;" />
+          </div>
+          <div>
+            <label style="font-size: 0.8rem; color: var(--text-muted, #94a3b8); display: block; margin-bottom: 0.3rem;">Role / Status</label>
+            <input type="text" id="edit-role-input" class="action-button" style="width: 100%; text-align: left; background: rgba(15, 23, 42, 0.6); cursor: text; padding: 0.75rem;" />
+          </div>
+        </div>
+        <div class="modal-footer" style="margin-top: 1.5rem;">
+          <button id="save-profile-btn" class="action-button primary-action" style="width: 100%;">Save Changes</button>
+        </div>
       </div>
     </div>
 

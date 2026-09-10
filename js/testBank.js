@@ -7,15 +7,59 @@ export function initTestBank() {
   const waitForElements = setInterval(() => {
     const launchQuizBtn = document.getElementById('launch-quiz-btn');
     const quizModal = document.getElementById('quiz-modal');
+    const openEditBtn = document.getElementById('open-edit-profile');
     attempts++;
 
     if (launchQuizBtn && quizModal) {
       clearInterval(waitForElements);
       setupQuiz(launchQuizBtn, quizModal);
+      if (openEditBtn) setupProfileEditor();
     } else if (attempts > 40) {
       clearInterval(waitForElements);
     }
   }, 50);
+}
+
+function setupProfileEditor() {
+  const openBtn = document.getElementById('open-edit-profile');
+  const modal = document.getElementById('edit-profile-modal');
+  const closeBtn = document.getElementById('close-edit-modal');
+  const saveBtn = document.getElementById('save-profile-btn');
+  const nameInput = document.getElementById('edit-name-input');
+  const roleInput = document.getElementById('edit-role-input');
+
+  if (!openBtn || !modal) return;
+
+  openBtn.addEventListener('click', () => {
+    nameInput.value = document.getElementById('user-fullname').textContent || '';
+    roleInput.value = document.getElementById('user-role').textContent || '';
+    modal.classList.remove('hidden');
+  });
+
+  const closeModal = () => modal.classList.add('hidden');
+  closeBtn?.addEventListener('click', closeModal);
+
+  saveBtn?.addEventListener('click', async () => {
+    const user = auth.currentUser;
+    if (!user) return;
+
+    const updatedName = nameInput.value.trim();
+    const updatedRole = roleInput.value.trim();
+
+    try {
+      const userRef = doc(db, "users", user.uid);
+      await updateDoc(userRef, {
+        name: updatedName,
+        role: updatedRole
+      });
+
+      document.getElementById('user-fullname').textContent = updatedName;
+      document.getElementById('user-role').textContent = updatedRole;
+      closeModal();
+    } catch (err) {
+      console.error("Error updating profile details:", err);
+    }
+  });
 }
 
 function shuffleArray(array) {
@@ -301,7 +345,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
     optionsContainer.innerHTML = '';
     feedbackBox.classList.add('hidden');
     submitAnswerBtn.classList.remove('hidden');
-    submitAnswerBtn.disabled = !isCompletion; // Enable submit immediately for fill-in-the-blank if pre-filled, or disabled until typed
+    submitAnswerBtn.disabled = !isCompletion;
     nextQuestionBtn.classList.add('hidden');
     selectedOptionIndices = [];
 
@@ -449,18 +493,14 @@ function setupQuiz(launchQuizBtn, quizModal) {
           const isCorrectOption = correctIndices.includes(idx);
           const wasSelected = selectedOptionIndices.includes(idx);
 
+          labels[idx].classList.remove('eval-correct', 'eval-missed', 'eval-incorrect', 'selected');
+
           if (isCorrectOption && wasSelected) {
-            labels[idx].style.backgroundColor = "#d1fae5";
-            labels[idx].style.borderColor = "#10b981";
+            labels[idx].classList.add('eval-correct');
           } else if (isCorrectOption && !wasSelected) {
-            labels[idx].style.backgroundColor = "#fef08a";
-            labels[idx].style.borderColor = "#eab308";
+            labels[idx].classList.add('eval-missed');
           } else if (!isCorrectOption && wasSelected) {
-            labels[idx].style.backgroundColor = "#fee2e2";
-            labels[idx].style.borderColor = "#ef4444";
-          } else {
-            labels[idx].style.backgroundColor = "#ffffff";
-            labels[idx].style.borderColor = "#cbd5e1";
+            labels[idx].classList.add('eval-incorrect');
           }
         });
 
@@ -473,7 +513,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
               rationaleSpan.style.display = 'block';
               rationaleSpan.style.marginTop = '6px';
               rationaleSpan.style.fontSize = '12px';
-              rationaleSpan.style.color = '#334155';
+              rationaleSpan.style.color = '#cbd5e1';
               rationaleSpan.style.fontStyle = 'italic';
               rationaleSpan.textContent = `Rationale: ${opt.rationale}`;
               labels[idx].appendChild(rationaleSpan);
@@ -576,8 +616,8 @@ function setupQuiz(launchQuizBtn, quizModal) {
         submitAnswerBtn.classList.add('hidden');
         nextQuestionBtn.classList.add('hidden');
 
-        document.getElementById('restart-quiz-btn').addEventListener('click', () => showQuizConfig());
-        document.getElementById('choose-another-chapter-btn').addEventListener('click', () => showChapterSelection());
+        document.getElementById('restart-quiz-btn')?.addEventListener('click', () => showQuizConfig());
+        document.getElementById('choose-another-chapter-btn')?.addEventListener('click', () => showChapterSelection());
       }
     });
   }
