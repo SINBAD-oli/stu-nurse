@@ -2,874 +2,971 @@
 {
 "questionNumber": 1,
 "type": "MCQ",
-"questionText": "Which characteristics do the various definitions of critical thinking have in common?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Give one definition and one example of critical thinking.",
-"page": 11,
-"heading": "Table 2-1: Complex Critical-Thinking Processes",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Professionalism",
+"questionText": "A 15-year-old patient who is at 39 weeks' gestation is transported by her mother to the emergency department (ED) of a private hospital. The patient reports she is in active labor. The patient's mother states, 'We don't have any money or insurance, but this hospital is closer than the public hospital.' Which action does the ED nurse implement?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Identify four basic sources of law.",
+"page": 1655,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Legal",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Requires reasonable thought",
+"text": "Arrange for an ambulance to transport the patient to the nearest public hospital.",
+"isCorrect": false,
+"rationale": "This is incorrect. The Emergency Medical Treatment and Active Labor Act (EMTALA) requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the ED, regardless of their ability to pay, legal status, or citizenship status."
+},
+{
+"text": "Explain to the patient and her mother that the hospital only accepts patients who have health insurance.",
+"isCorrect": false,
+"rationale": "This is incorrect. The Emergency Medical Treatment and Active Labor Act (EMTALA) requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the ED, regardless of their ability to pay, legal status, or citizenship status."
+},
+{
+"text": "Examine the patient to determine whether her condition is stable or whether she requires immediate medical attention.",
 "isCorrect": true,
-"rationale": "This is correct. The definitions listed in the text as well as definitions contained in Box 2-1 state that critical thinking requires reasoning or reasoned thinking."
+"rationale": "This is correct. The Emergency Medical Treatment and Active Labor Act (EMTALA) requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the ED, regardless of their ability to pay, legal status, or citizenship status."
 },
 {
-"text": "Asks the questions 'Why?' or 'How?'",
+"text": "Advise the patient's mother to transport the patient to the nearest public hospital.",
 "isCorrect": false,
-"rationale": "This is incorrect. The process of critical thinking is not necessarily based on 'how' or 'why' questions."
-},
-{
-"text": "Is a hierarchical process",
-"isCorrect": false,
-"rationale": "This is incorrect. Critical thinking is neither linear nor hierarchical. The steps involved in critical thinking are not necessarily sequential, where mastery of one step is necessary to proceed to the next."
-},
-{
-"text": "Demands specialized thinking skills",
-"isCorrect": false,
-"rationale": "This is incorrect. Critical thinking is a purposeful, dynamic, analytical process that contributes to reasoned decisions and sound contextual judgments. It does not require specialized thinking skills."
+"rationale": "This is incorrect. The Emergency Medical Treatment and Active Labor Act (EMTALA) requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the ED, regardless of their ability to pay, legal status, or citizenship status."
 }
 ]
 },
 {
 "questionNumber": 2,
 "type": "MCQ",
-"questionText": "A few nurses on a unit have proposed to the nurse manager changes in the process for documenting care on the unit. The nurses describe a completely new system. For which reason is it important for the nurse manager to have a critical attitude?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "List and discuss seven attitudes of the critical thinker.",
-"page": 9,
-"heading": "What Are Critical-Thinking Attitudes?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Professionalism",
-"difficulty": "Moderate",
+"questionText": "An alert, oriented, 87-year-old patient has just been diagnosed with cancer. According to the patient's durable power of attorney, the patient's son serves as the patient's surrogate decision maker. The patient's son tells the nurse he is refusing chemotherapy treatment on the patient's behalf due to concerns about medication side effects and quality of life. Meanwhile, the patient states, 'I want to receive chemotherapy.' Which action does the nurse take?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss the effects of the Patient Self-Determination Act (PSDA) on healthcare practices.",
+"page": 1656,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Legal",
+"difficulty": "Easy",
 "options": [
 {
-"text": "All the possible advantages and disadvantages and must be considered.",
+"text": "Assist the patient and their son with reaching a compromise.",
 "isCorrect": false,
-"rationale": "This is incorrect. Critical attitude is not used to consider all the advantages or disadvantages associated with a proposed change; critical thinking is used in identifying the benefits related to the proposed change."
+"rationale": "This is incorrect. The patient is not required to compromise with regard to their healthcare treatment choices."
 },
 {
-"text": "An open mind about the proposed change needs to be maintained.",
+"text": "Administer the patient's chemotherapy treatment as ordered.",
 "isCorrect": true,
-"rationale": "This is correct. A critical attitude enables the person to think fairly and keep an open mind. Without a critical attitude, people tend to use thinking skills to justify narrow-mindedness and prejudice and to benefit themselves rather than others."
+"rationale": "This is correct. The patient is alert and oriented and can make their own healthcare decisions. The patient's son only has the authority to make healthcare decisions if the patient becomes incompetent and is unable to process information to make decisions."
 },
 {
-"text": "The nursing process needs to be applied to the proposed change.",
+"text": "Advise the patient's son to consult with the hospital legal department for guidance.",
 "isCorrect": false,
-"rationale": "This is incorrect. The nursing process is not necessarily a part of a critical attitude."
+"rationale": "This is incorrect. Legal intervention is not indicated. The patient is within their rights to personally choose to consent to or refuse treatment. The patient's son does not have the authority to supersede the patient's choice."
 },
 {
-"text": "Past experience with documentation needs to be applied to the decision.",
+"text": "Ask the patient's son to share more information about his decision to refuse the treatment.",
 "isCorrect": false,
-"rationale": "This is incorrect. Past experiences may taint the process of maintaining a critical attitude, which requires an open mind for decision making."
+"rationale": "This is incorrect. Additional information from the patient's son may be a component of therapeutic communication, but no further information from the patient's son is necessary in order to administer care to the patient."
 }
 ]
 },
 {
 "questionNumber": 3,
 "type": "MCQ",
-"questionText": "The nurse is assigned to the clinical care of a newly admitted patient. To know how best to care for the patient, the nurse develops a plan of care. Which action will the nurse initially perform?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Explain how nursing knowledge, nursing process, and critical thinking work together in full-spectrum nursing.",
-"page": 11,
-"heading": "What Is the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Easy",
+"questionText": "The charge nurse lists the nurses' patient assignments and the patients' diagnoses on a whiteboard located at the nurses' station. The charge nurse's practice represents a violation of which federal regulation?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Relate the impact of the Health Insurance Portability and Accountability Act (HIPAA) to patient rights and protections.",
+"page": 1654,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Comprehension [Understanding]",
+"concept": "Legal",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Make an assessment",
+"text": "Americans with Disabilities Act (ADA)",
+"isCorrect": false,
+"rationale": "This is incorrect. ADA provides protection against discrimination of individuals with disabilities. Failure to protect the confidentiality of patient information represents a violation of HIPAA."
+},
+{
+"text": "Patient Self-Determination Act (PSDA)",
+"isCorrect": false,
+"rationale": "This is incorrect. PSDA recognizes the client's right to make decisions regarding their own healthcare. The healthcare provider must inform the patient about available medical or surgical treatment options and benefits, risks, and alternatives. The charge nurse's failure to maintain the confidentiality of patient information represents a violation of HIPAA."
+},
+{
+"text": "Health Insurance Portability and Accountability Act (HIPAA)",
 "isCorrect": true,
-"rationale": "This is correct. The nursing process is used when developing a plan of care for a patient. Assessment is always the first step in the nursing process."
+"rationale": "This is correct. HIPAA mandates comprehensive protection for the privacy of protected health information (confidentiality of patient records). Writing the nurses' assignments with the corresponding patients and their diagnoses in a location where others may view it is a violation of HIPAA. Assignments should be kept in the nurses' conference room or a location that is not accessible to patients, their family members, or visitors."
 },
 {
-"text": "Make a diagnosis",
+"text": "Emergency Medical Treatment and Active Labor Act (EMTALA)",
 "isCorrect": false,
-"rationale": "This is incorrect. When using the nursing process, the nursing diagnosis is derived from the data gathered during assessment."
-},
-{
-"text": "Plan outcomes",
-"isCorrect": false,
-"rationale": "This is incorrect. When using the nursing process, outcomes are reasonable and measurable goals related to the diagnosis."
-},
-{
-"text": "Plan interventions",
-"isCorrect": false,
-"rationale": "This is incorrect. When using the nursing process, interventions are aimed at achieving the proposed outcomes."
+"rationale": "This is incorrect. EMTALA requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the emergency department (ED), regardless of their ability to pay, legal status, or citizenship status. The nurse who fails to protect the confidentiality of patient information is in violation of HIPAA."
 }
 ]
 },
 {
 "questionNumber": 4,
 "type": "MCQ",
-"questionText": "Nurses are constantly confronted by situations and conditions requiring the application of various types of knowledge. Which is an example of practical knowledge?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "List the four types of nursing knowledge discussed in this chapter.",
-"page": 13,
-"heading": "What Are the Different Kinds of Nursing Knowledge?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"questionText": "A 75-year-old patient is admitted to the ED for evaluation of confusion and memory loss. The initial patient assessment reveals bruises and scratches in various stages of healing on the patient's arms, legs, and torso. Based on the assessment findings, the nurse suspects the patient may be a victim of physical abuse. Which legislation requires the nurse to notify a designated authority about the suspected abuse?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Apply state mandatory reporting laws to patient care situations.",
+"page": 1657,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
 "cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
+"concept": "Legal",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "The tricuspid valve is located between the right atrium and the ventricle.",
+"text": "Good Samaritan laws",
 "isCorrect": false,
-"rationale": "This is incorrect. Knowledge of anatomy (tricuspid valve) is an example of theoretical knowledge."
+"rationale": "This is incorrect. Good Samaritan laws are designed to protect from liability those who provide emergency care to someone who is in need of medical services."
 },
 {
-"text": "The pancreas does not produce enough insulin in type 1 diabetes.",
-"isCorrect": false,
-"rationale": "This is incorrect. Knowledge based on factual information (type 1 diabetes) is an example of theoretical knowledge."
-},
-{
-"text": "When assessing the abdomen, you should auscultate before palpating.",
+"text": "Mandatory reporting laws",
 "isCorrect": true,
-"rationale": "This is correct. Practical knowledge is knowing what to do and how to do it, such as how to perform a physical assessment."
+"rationale": "This is correct. In accordance with mandatory reporting laws, healthcare workers are required to report communicable diseases, as well as physical, sexual, or emotional abuse or neglect of vulnerable individuals (e.g., children, older adults, the mentally ill). The intent is to protect people who cannot protect themselves and to protect society against the spread of communicable diseases. Mandatory reporting laws vary from state to state. The nurse should be familiar with applicable laws in the state in which they practice."
 },
 {
-"text": "Pain medication given intravenously acts faster than medication given by other routes.",
+"text": "Nurse practice act",
 "isCorrect": false,
-"rationale": "This is incorrect. Knowledge based on research findings (intravenous pain medication) is an example of theoretical knowledge."
+"rationale": "This is incorrect. Nurse practice acts (NPAs) are statutory laws passed by each state's legislative body that define the practice of nursing. Nurse practice acts are designed to regulate nursing practice to protect the health, safety, and welfare of the general public; define the scope of nursing practice; and approve programs providing prelicensure nursing education to students."
+},
+{
+"text": "Nursing standards of practice",
+"isCorrect": false,
+"rationale": "This is incorrect. Nursing standards of practice establish the minimum level of competency for nurses. Nurses are expected to follow the standards that apply to their specialty areas."
 }
 ]
 },
 {
 "questionNumber": 5,
 "type": "MCQ",
-"questionText": "Nursing education does not override or diminish self-knowledge. Which is the most important reason for nurses to develop an awareness about individual self-knowledge?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "List the four types of nursing knowledge discussed in this chapter.",
-"page": 11,
-"heading": "What Are the Different Kinds of Nursing Knowledge?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"questionText": "Which aspect of patient care is guaranteed by the American Nurses Association (ANA) Code of Ethics for Nurses?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Identify four basic sources of law.",
+"page": 1658,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
 "cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
+"concept": "Ethics",
 "difficulty": "Difficult",
 "options": [
 {
-"text": "Can be used to hide personal cultural biases",
+"text": "Helping a patient with billing claims",
 "isCorrect": false,
-"rationale": "This is incorrect. Self-knowledge is not used to hide personal bias. Self-knowledge helps the nurse answer the questions: 'Why did I do that?' or 'How did I come to think that?'"
+"rationale": "This is incorrect. The Patient Care Partnership (PCP), which replaced the American Hospital Association's Patient Bill of Rights, advises patients of several aspects of care that should be expected during a period of hospitalization. In accordance with the PCP, hospitalized patients are advised that their expectations should include help with billing claims."
 },
 {
-"text": "Assists in directing patients to self-understanding",
+"text": "Assisting a patient who is leaving the hospital",
 "isCorrect": false,
-"rationale": "This is incorrect. Obtaining self-knowledge is focused on the nurse; the nurse does not have the responsibility to help a patient with gaining self-knowledge unless it is related to health or wellness."
+"rationale": "This is incorrect. The Patient Care Partnership (PCP), which replaced the American Hospital Association's Patient Bill of Rights, advises patients of several aspects of care that should be expected during a period of hospitalization. In accordance with the PCP, hospitalized patients are advised that their expectations should include receiving help when leaving the hospital."
 },
 {
-"text": "Helps identify errors in nurse's thinking",
+"text": "Ensuring a clean and safe environment",
+"isCorrect": false,
+"rationale": "This is incorrect. The Patient Care Partnership (PCP), which replaced the American Hospital Association's Patient Bill of Rights, advises patients of several aspects of care that should be expected during a period of hospitalization. In accordance with the PCP, hospitalized patients are advised that their expectations should include a safe, clean environment."
+},
+{
+"text": "Protecting the patient from misrepresentation",
 "isCorrect": true,
-"rationale": "This is correct. To think critically, the nurse must be aware of personal beliefs, values, and cultural and religious biases. This kind of knowledge helps the nurse identify errors in thinking and enables the nurse to tune in to patients without biases."
-},
-{
-"text": "Aids the nurse in protecting personal beliefs",
-"isCorrect": false,
-"rationale": "This is incorrect. Self-knowledge is not a process that helps the nurse protect personal beliefs. Instead, the nurse becomes capable of respecting the beliefs of others."
+"rationale": "This is correct. The ANA Code of Ethics for Nurses guarantees the patient the right to dignity, privacy, and safety. According to the ANA Code, the nurse will protect the client from misinformation and misrepresentation."
 }
 ]
 },
 {
 "questionNumber": 6,
 "type": "MCQ",
-"questionText": "Which is the most important reason for nurses to be critical thinkers?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Explain how critical thinking is used in the nursing process.",
-"page": 8,
-"heading": "Why Is Critical Thinking Important for Nurses?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
+"questionText": "The charge nurse in a progressive care unit assigns the care of a patient receiving hemodialysis to a newly hired licensed practical nurse (LPN). The charge nurse does not ask whether or not the LPN is competent in caring for patients who are receiving hemodialysis. The LPN is in orientation and fails to inform the charge nurse that they do not have experience with patients who are undergoing hemodialysis treatments. Which term best describes the charge nurse's actions?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss basic principles of criminal law that affect nursing practice.",
+"page": 1663,
+"heading": "What Is Criminal Law?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Legal",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Nurses need to follow policies and procedures.",
+"text": "Breach of duty",
 "isCorrect": false,
-"rationale": "This is incorrect. Following policies and procedures does not necessarily require critical thinking."
+"rationale": "This is incorrect. A breach of duty must be a direct and proximate cause of the injury suffered by a patient. Although possible when an LPN is inappropriately assigned, this scenario did not result in injury to the patient."
 },
 {
-"text": "Nurses work with other healthcare team members.",
+"text": "Libel",
 "isCorrect": false,
-"rationale": "This is incorrect. Working with others does not necessarily require critical thinking."
+"rationale": "This is incorrect. Libel is the written or published form of defamation of character."
 },
 {
-"text": "Nurses care for clients who have multiple health problems.",
+"text": "Negligence",
 "isCorrect": true,
-"rationale": "This is correct. Critical thinking is essential for client care, particularly when the care is complex and involves numerous health issues."
+"rationale": "This is correct. Negligence is the failure to use ordinary or reasonable care or the failure to act in a reasonable and prudent (careful) manner. It is negligent to assign a nurse to care for a patient without verifying the nurse has training, experience, and clinical competence in caring for such patients."
 },
 {
-"text": "Nurses have to be flexible and work variable schedules.",
+"text": "Abandonment",
 "isCorrect": false,
-"rationale": "This is incorrect. Being flexible and working different schedules does not necessarily require critical thinking."
+"rationale": "This is incorrect. Abandonment occurs if the nurse fails to provide care to a patient for whom the nurse has accepted responsibility. Nurses are legally responsible for the assignments they accept. If the assignment becomes overwhelming and unmanageable, the nurse is required to immediately contact the charge nurse or nursing supervisor for assistance."
 }
 ]
 },
 {
 "questionNumber": 7,
 "type": "MCQ",
-"questionText": "The nurse is administering pain medication to an assigned patient every 4 hours as prescribed and based on patient-stated pain levels. The nurse's actions are an example of which aspect of patient care?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Describe the six overlapping and interdependent phases of the nursing process.",
-"page": 3,
-"heading": "What Is the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
+"questionText": "Under which circumstance is deferral of informed consent allowable?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss common causes of malpractice litigation.",
+"page": 1668,
+"heading": "How Can You Minimize Your Malpractice Risks?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Legal",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Assessment data",
+"text": "The patient is confused and does not appear to understand the plan of treatment or the consent form.",
 "isCorrect": false,
-"rationale": "This is incorrect. An example of assessment data might be 'Patient reports that pain is a 5 on a 1-to-10 scale.'"
+"rationale": "This is incorrect. Informed consent is the necessary authorization by the patient for any and all types of care and must be written and signed by the patient or the person legally responsible for the patient for hospital admission and for invasive or specialized treatments or diagnostic procedures."
 },
 {
-"text": "Nursing diagnosis",
-"isCorrect": false,
-"rationale": "This is incorrect. The nursing diagnosis would be 'Pain.'"
-},
-{
-"text": "Patient outcome",
-"isCorrect": false,
-"rationale": "This is incorrect. The nurse might define the patient outcome in this scenario as 'The patient will state that the level of pain is less than 4.'"
-},
-{
-"text": "Nursing intervention",
+"text": "The patient who is in cardiac arrest is transported to the emergency department without accompaniment by family members.",
 "isCorrect": true,
-"rationale": "This is correct. Interventions, such administering pain-relieving medication, are activities that will help the patient achieve a goal."
+"rationale": "This is correct. Informed consent is the client's permission to receive any and all types of care with full knowledge of the risks, benefits, costs, and alternatives. For hospital admission and for invasive or specialized treatments or diagnostic procedures, the consent must be written and signed by the client or their legal guardian. The law provides for implied or assumed consent in emergency situations; therefore, written consent is not necessary in an emergency if experts would agree that there was an immediate threat to the client's life or health."
+},
+{
+"text": "The surgeon requests that the patient be transferred to the surgical suite before the nurse has an opportunity to obtain the patient's informed consent.",
+"isCorrect": false,
+"rationale": "This is incorrect. The patient's assigned physician, and not the nurse, is responsible for obtaining the patient's informed consent."
+},
+{
+"text": "The patient is crying due to severe pain and is unable to verbalize understanding of the treatment plan.",
+"isCorrect": false,
+"rationale": "This is incorrect. Severe pain is not an acceptable reason for failing to obtain informed consent."
 }
 ]
 },
 {
 "questionNumber": 8,
 "type": "MCQ",
-"questionText": "What is clinical judgment defined as?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Define and explain clinical judgment",
-"page": 2,
-"heading": "What Is Clinical Judgment Defined As?",
-"integratedProcesses": "Clinical Judgment",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"questionText": "A 4-year-old patient is transported to the emergency department by their mother. The patient presents with bruising on the chest and facial contusions. The patient's mother reports that her boyfriend became angry and intentionally pushed the patient down the stairs. The patient appears to be experiencing significant pain. Which action does the nurse take first?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss common causes of malpractice litigation.",
+"page": 1667,
+"heading": "How Can You Minimize Your Malpractice Risks?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Physiological Integrity",
 "cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Easy",
+"concept": "Legal",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Processes that promote safe client care decisions and outcomes",
+"text": "Notify the nursing supervisor of the suspected physical abuse.",
+"isCorrect": false,
+"rationale": "This is incorrect. The nurse should notify the nursing supervisor about the need to contact an outside agency (Child Protective Services) to report suspected physical abuse. However, the nurse's initial, primary responsibility is evaluation of the patient's physical condition and extent of their injuries."
+},
+{
+"text": "Complete a physical assessment of the child.",
 "isCorrect": true,
-"rationale": "This is correct. Clinical judgment is defined as the processes that promote safe client care decisions and outcomes."
+"rationale": "This is correct. Although the nurse must report suspected physical abuse to designated authorities (Child Protective Services), the primary responsibility of the nurse in this situation is evaluation of the patient's physical condition and extent of their injuries."
 },
 {
-"text": "Avoids clinical thinking and decision making",
+"text": "Obtain an order for pain medication.",
 "isCorrect": false,
-"rationale": "This is incorrect. Clinical judgment is also defined as integrating critical thinking and the decision-making process."
+"rationale": "This is incorrect. Pain medication should not be administered prior to completion of a thorough physical assessment."
 },
 {
-"text": "Applying the same treatment regardless of a patient's needs or health problems",
+"text": "Notify Child Protective Services (CPS) of the suspected abuse.",
 "isCorrect": false,
-"rationale": "This is incorrect. Clinical judgment is also defined as interpretation about a patient's needs, or health problems. Tanner (2006) defines clinical judgment as the 'interpretation or conclusion about a patient's needs, concerns, or health problems, and/or the decision to take action (or not), use or modify standard approaches, or improvise new ones as deemed appropriate by the patient's response' (p. 204)."
-},
-{
-"text": "Is based on not addressing a patient's response to a health problem",
-"isCorrect": false,
-"rationale": "This is incorrect. Critical judgment is based on addressing the patient's needs and understanding their concerns."
+"rationale": "This is incorrect. Although the nurse must report to designated authorities (Child Protective Services) suspected physical abuse, the primary responsibility of the nurse in this situation is to evaluate the patient's physical condition and extent of their injuries for appropriate medical treatment to be provided."
 }
 ]
 },
 {
 "questionNumber": 9,
 "type": "MCQ",
-"questionText": "Which commonality is shared by both critical thinking and the nursing process?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Explain how critical thinking is used in the nursing process.",
-"page": 8,
-"heading": "How Is the Nursing Process Related to Critical Thinking?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
+"questionText": "The nurse provides care to an alert, oriented adult patient who is recovering from abdominal surgery. During a period of frustration, the patient states, 'I'm leaving the hospital. Remove my IV and surgical drains or I will do it myself.' In an effort to prevent the patient from removing the IV line and surgical drainage tubing, the nurse applies bilateral wrist restraints. Which terminology best describes the nurse's actions?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Compare and contrast intentional and unintentional torts.",
+"page": 1662,
+"heading": "What Is Civil Law?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Legal",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "They are both linear processes used to guide one's thinking.",
+"text": "Assault",
 "isCorrect": false,
-"rationale": "This is incorrect. Neither critical thinking nor the nursing process is a method of linear thinking."
+"rationale": "This is incorrect. An assault occurs when a nurse intentionally places a patient in immediate fear of personal violence or offensive contact. An assault must include words expressing an intention to cause harm and some type of action. For example, a nurse has committed an assault if they say to the patient, 'I will slap you' and raises their hand as if to slap the patient. The combination of the words and action causes the patient to believe the threat will be carried out."
 },
 {
-"text": "They are both thinking methods used to solve a problem.",
+"text": "Fraud",
+"isCorrect": false,
+"rationale": "This is incorrect. Fraud is the false representation of significant facts by words or by conduct. It is intentionally misleading or deceiving another person to act (or not act) for the personal gain of the one committing the fraud. Methods of committing fraud include making false statements, falsifying documentation, or concealing information that should have been disclosed."
+},
+{
+"text": "False imprisonment",
 "isCorrect": true,
-"rationale": "This is correct. Critical thinking and the nursing process are ways of thinking that can be used in problem-solving (although critical thinking can be used for applications other than problem-solving)."
+"rationale": "This is correct. False imprisonment involves an intentional or willful detention of a patient without consent or authority to do so. Restraining a patient without consent is another form of civil false imprisonment. Competent patients have a right to leave an institution, even if it is harmful to their health. Whenever possible, have the person sign a form stating that they are aware that they are leaving against medical advice."
 },
 {
-"text": "They both use specific steps to solve a problem.",
+"text": "Quasi-intentional tort",
 "isCorrect": false,
-"rationale": "This is incorrect. The nursing process has specific steps; critical thinking does not."
-},
-{
-"text": "They both use similar steps to solve a problem.",
-"isCorrect": false,
-"rationale": "This is incorrect. The nursing process and critical thinking do not share similar steps. Critical thinking is the process used to determine patient needs; the nursing process is used when developing a plan of care."
+"rationale": "This is incorrect. Quasi-intentional torts involve actions that injure a person's reputation. The overall concept for these torts is defamation of character. All four of the essential elements of defamation of character must be present."
 }
 ]
 },
 {
 "questionNumber": 10,
 "type": "MCQ",
-"questionText": "A nurse admits a patient to the unit after completing a comprehensive interview and physical examination. Which action does the nurse take to develop a nursing diagnosis?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Describe the six overlapping and interdependent phases of the nursing process.",
-"page": 10,
-"heading": "What Are the Phases of the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
+"questionText": "The nurse is assigned to provide care to a 74-year-old adult patient who is experiencing confusion. After completing the patient's physical assessment, the nurse forgets to raise the siderails on the patient's bed. Later in the day, the patient falls out of bed and sustains a hip fracture. The nurse is most likely to be sued on which grounds?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss common causes of malpractice litigation.",
+"page": 1664,
+"heading": "What Is Civil Law?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Legal",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Analyze the assessment data.",
+"text": "Malpractice",
 "isCorrect": true,
-"rationale": "This is correct. The basis of the nursing diagnosis is assessment data."
+"rationale": "This is correct. Malpractice, which is one source of legal liability, means that a professional person has failed to act in a reasonable and prudent manner. If someone is harmed, the professional may be held liable. To win and recover damages (money) in a malpractice lawsuit, the plaintiff must prove four elements: duty, breach of duty, causation, and damages."
 },
 {
-"text": "Refer to the standards of patient care.",
+"text": "Battery",
 "isCorrect": false,
-"rationale": "This is incorrect. Standards of care are referred to when establishing nursing interventions, not when determining the nursing diagnosis."
+"rationale": "This is incorrect. A battery is committed when (1) an offensive or harmful physical contact is made to the client without their consent, or (2) there is unauthorized touching of a person's body by another person."
 },
 {
-"text": "Select appropriate patient care interventions.",
+"text": "Assault",
 "isCorrect": false,
-"rationale": "This is incorrect. Customizing interventions is part of personalized nursing care, not developing a diagnosis."
+"rationale": "This is incorrect. An assault occurs when a nurse intentionally places a patient in immediate fear of personal violence or offensive contact. An assault must include words expressing an intention to cause harm and some type of action. For example, a nurse has committed an assault if they say to the patient, 'I will slap you' and raises their hand as if to slap the patient. The combination of the words and action causes the patient to believe the threat will be carried out."
 },
 {
-"text": "Ask the client's perceptions of the health problem.",
+"text": "Negligence",
 "isCorrect": false,
-"rationale": "This is incorrect. Asking about the patient's perceptions of the health problem is a method to validate whether the nurse has chosen the correct nursing diagnosis."
+"rationale": "This is incorrect. Negligence is the failure to use ordinary or reasonable care or the failure to act in a reasonable and prudent (careful) manner. While the nurse's actions were negligent, this is not the best response. The nurse is most likely to be sued for malpractice, as the plaintiff's legal team will likely be successful in proving the four required elements that must be present in order to establish malpractice: duty, breach of duty, causation, and damages."
 }
 ]
 },
 {
 "questionNumber": 11,
 "type": "MCQ",
-"questionText": "The nurse develops a plan of care for a patient who is at risk for impaired skin integrity. Interventions include changing the patient's position every 2 hours and keeping the skin clean and dry. During the evaluation phase of the nursing process, which finding validates the effectiveness of the plan of care?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Explain how critical thinking is used in the nursing process.",
-"page": 6,
-"heading": "What Are the Phases of the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
+"questionText": "A nurse who administers the wrong medication to a patient does not notify anyone of the error. Instead, the nurse documents administration of the correct medication. Ultimately, the error is discovered and the nurse is reported to the state board of nursing. Which action does the state board of nursing take against the nurse in this situation?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Explain disciplinary actions for unacceptable nursing decisions or actions.",
+"page": 1660,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Legal",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Documentation reflects the performance of care interventions.",
-"isCorrect": false,
-"rationale": "This is incorrect. Documentation is an important part of patient care and a legal requirement; however, it does not validate the effectiveness of the plan of care."
-},
-{
-"text": "Reassessment indicates maintenance or improvement of the condition.",
+"text": "Disciplinary action against the nurse's license to practice",
 "isCorrect": true,
-"rationale": "This is correct. The only valid method to evaluate the effectiveness of the plan of care is to see if the patient's condition is maintained or improved. The information is gathered through reassessment."
+"rationale": "This is correct. The state board of nursing is empowered to initiate disciplinary action against the nurse's license for professional misconduct."
 },
 {
-"text": "Intervention performance is verbally validated by the assigned personnel.",
+"text": "Criminal misdemeanor charges against the nurse",
 "isCorrect": false,
-"rationale": "This is incorrect. The personnel assigned to the performance of the interventions may verbally validate the care was provided; however, this does not support effectiveness of the intervention."
+"rationale": "This is incorrect. The board does not bring criminal charges or sentence the nurse to jail; that is the prerogative of the state prosecutor and judge."
 },
 {
-"text": "Patient states that care was provided in an effective and timely manner.",
+"text": "Medical malpractice lawsuit against the nurse",
 "isCorrect": false,
-"rationale": "This is incorrect. The nurse needs to perform reassessment to validate the effectiveness of the plan of care. The patient's verbal report does not provide enough information."
+"rationale": "This is incorrect. A medical malpractice lawsuit is filed by an individual who has been harmed or by the individual's designated legal representatives."
+},
+{
+"text": "Termination of the nurse's employment",
+"isCorrect": false,
+"rationale": "This is incorrect. While the nurse may be subject to termination of employment, the institution would be responsible for making this decision."
 }
 ]
 },
 {
 "questionNumber": 12,
 "type": "MCQ",
-"questionText": "The nurse is caring for a patient with diabetes mellitus and impaired skin integrity. When preparing a plan of care, the nurse uses knowledge of the patient's medical condition and the latest guidelines for providing skin care. Appropriate interventions are initiated, and the nurse begins regular monitoring for intervention effectiveness. Which nursing concept is being used?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Explain how nursing knowledge, nursing process, and critical thinking work together in full-spectrum nursing.",
-"page": 13,
-"heading": "What Concepts Are Used in Full-Spectrum Nursing?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
+"questionText": "The nurse provides care to a patient who is diagnosed with a sexually transmitted infection (STI). The nurse explains to the patient that the STI diagnosis must be reported to the local health department based on which regulation?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Apply state mandatory reporting laws to patient care situations.",
+"page": 1656,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Knowledge [Remembering]",
+"concept": "Legal",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Full-spectrum nursing",
+"text": "Americans with Disabilities Act (ADA)",
+"isCorrect": false,
+"rationale": "This is incorrect. The ADA protects those with disabilities from discrimination."
+},
+{
+"text": "Safe harbor laws",
+"isCorrect": false,
+"rationale": "This is incorrect. Safe harbor laws, found in the nurse practice act or other state laws, provide for exceptions to certain laws. They protect you from being suspended, terminated, disciplined, or discriminated against for refusing to do (or not do) something you believe would be harmful to a client."
+},
+{
+"text": "Good Samaritan law",
+"isCorrect": false,
+"rationale": "This is incorrect. The Good Samaritan law is designed to protect from liability those people who assist in an emergency situation outside of the workplace."
+},
+{
+"text": "Mandatory reporting",
 "isCorrect": true,
-"rationale": "This is correct. Full-spectrum nursing involves the use of critical thinking, nursing knowledge, nursing process, and patient situation. Although the other answers are important for planning and delivering nursing care, they do not reflect all the concepts the nurse utilized."
-},
-{
-"text": "Critical thinking",
-"isCorrect": false,
-"rationale": "This is incorrect. Critical thinking is one concept used for planning and delivering nursing care; however, it alone is not indicative of full-spectrum nursing."
-},
-{
-"text": "Nursing process",
-"isCorrect": false,
-"rationale": "This is incorrect. Nursing process is one concept used for planning and delivering nursing care; however, it alone is not indicative of full-spectrum nursing."
-},
-{
-"text": "Nursing knowledge",
-"isCorrect": false,
-"rationale": "This is incorrect. Nursing knowledge is one concept used for planning and delivering nursing care; however, it alone is not indicative of full-spectrum nursing."
+"rationale": "This is correct. Mandatory reporting is state law that requires health practitioners to report STIs to reduce the incidences of more people being infected/reinfected."
 }
 ]
 },
 {
 "questionNumber": 13,
 "type": "MCQ",
-"questionText": "Why is it important for nurses to be critical thinkers?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Explain how critical thinking is used in the nursing process.",
-"page": 10,
-"heading": "Why Is Critical Thinking Important for Nurses?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"questionText": "The night shift nurse is assigned to care for a patient who is confused and who frequently attempts to climb out of bed. During one of the patient's attempts to get up, the nurse pushes the patient back onto the bed. The nurse then shows the patient a set of limb restraints and states, 'If you keep trying to get up, I will tie you to the bed and leave you there until tomorrow morning.' The nurse's actions are best described as:",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss common causes of malpractice litigation.",
+"page": 1662,
+"heading": "What Is Civil Law?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
 "cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Patient-Centered Care",
+"concept": "Legal",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "All clients are unique and have individual needs and differences.",
+"text": "Assault and battery.",
 "isCorrect": true,
-"rationale": "This is correct. All clients are unique and have individual differences; critical thinking promotes the development of effective and personalized care for the patient."
+"rationale": "This is correct. Assault involves intentionally placing a patient in immediate fear of personal violence or offensive contact. An assault must include words expressing an intention to cause harm and some type of action. Assault occurred when the nurse showed the patient a set of restraints while threatening to tie up the patient until morning. Battery involves touching the patient without their permission or in a way that is forceful. Pushing the patient onto the bed is considered battery."
 },
 {
-"text": "All nursing actions are based on theoretical knowledge.",
+"text": "Libel and slander.",
 "isCorrect": false,
-"rationale": "This is incorrect. Nursing actions are not solely based on theoretical knowledge. Actions are based on theoretical knowledge, practical knowledge, and self-knowledge."
+"rationale": "This is incorrect. Libel is the written or published form of defamation of character. Slander is the spoken or verbal form of defamation of character."
 },
 {
-"text": "Nurses choose their actions primarily from professional guidelines.",
+"text": "False imprisonment.",
 "isCorrect": false,
-"rationale": "This is incorrect. Following professional guidelines does not usually require critical thinking, and guidelines often do not offer adequate or detailed information for managing complex situations."
+"rationale": "This is incorrect. False imprisonment is the restraint of a person without proper legal authorization. While use of restraints was threatened, the patient was not restrained."
 },
 {
-"text": "Nurses provide care based on individual client preferences.",
+"text": "Medical malpractice.",
 "isCorrect": false,
-"rationale": "This is incorrect. Client preferences are certainly included in the plan of care, but they do not cover the broad spectrum of being a critical thinker it does not require critical thinking but merely to do what the client prefers."
+"rationale": "This is incorrect. Medical malpractice refers to a lawsuit brought against a healthcare provider for damages (e.g., money) when there has been death of, injury to, or other loss to the person being treated."
 }
 ]
 },
 {
 "questionNumber": 14,
 "type": "MCQ",
-"questionText": "The nurse uses full-spectrum nursing and a critical-thinking model to organize patient care. If the nurse lacks facts about the patient's pathophysiology, a credible source is used for the information. The nurse considers alternative actions for implementing care, factoring in the unique qualities of the patient. Which critical-thinking concept is the nurse demonstrating?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Name and describe the main concepts of the full-spectrum nursing model.",
-"page": 10,
-"heading": "A Model for Critical Thinking",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
+"questionText": "The unit manager stops the staff nurse in the hallway to discuss concerns about the staff nurse's delivery of unsafe patient care. The unit manager's comments are based on false information reported by a disgruntled patient. The conversation is overheard by other members of the healthcare team. Which term describes the unit manager's behavior?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss basic principles of criminal law that affect nursing practice.",
+"page": 1662,
+"heading": "What Is Civil Law?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Legal",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Following model guidelines for specific interventions",
+"text": "Assault",
 "isCorrect": false,
-"rationale": "This is incorrect. Critical-thinking models do not include guidelines for specific interventions. The model is best used to identify and address the uniqueness of each patient."
+"rationale": "This is incorrect. An assault occurs when a nurse intentionally places a patient in immediate fear of personal violence or offensive contact. An assault must include words expressing an intention to cause harm and some type of action. For example, a nurse has committed an assault if they say to the patient, 'I will slap you' and raises their hand as if to slap the patient. The combination of the words and action causes the patient to believe the threat will be carried out."
 },
 {
-"text": "Using linear processes to promote critical thinking",
+"text": "Battery",
 "isCorrect": false,
-"rationale": "This is incorrect. Critical-thinking models do not progress from top to bottom; they are nonlinear."
+"rationale": "This is incorrect. A battery is committed when (1) an offensive or harmful physical contact is made to the client without their consent, or (2) there is unauthorized touching of a person's body by another person."
 },
 {
-"text": "Moving appropriately back and forth between steps",
+"text": "Slander",
 "isCorrect": true,
-"rationale": "This is correct. Critical thinking is not sequential, and critical-thinking models are not applied sequentially. Nurses will move back and forth between the various steps, as appropriate."
+"rationale": "This is correct. Slander is the spoken or verbal form of defamation of character. To establish slander, the comments regarding the person have to be false, communicated or overheard by a third party, and defame the nurse's character."
 },
 {
-"text": "Using self-knowledge in the decision-making process",
+"text": "Libel",
 "isCorrect": false,
-"rationale": "This is incorrect. Self-knowledge may be part of the decision-making process, but it involves the nurse's self-awareness of culture, religion, and beliefs that may become an issue in the delivery of patient care."
+"rationale": "This is incorrect. Libel is the written or published form of defamation of character."
 }
 ]
 },
 {
 "questionNumber": 15,
 "type": "MCQ",
-"questionText": "The nurse works on a postsurgical unit with a broad and rapidly changing patient census. Which critical-thinking attitude is most likely to best serve this nurse?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "List and discuss seven attitudes of the critical thinker.",
-"page": 9,
-"heading": "What Are Critical-Thinking Attitudes?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"questionText": "The nurse enters a patient's room with a portable computer station to assess the patient. The nurse does not log out while assisting a patient to the bathroom. A visitor reads the patient's health record and begins to question the nurse about patient information. This is an example of:",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss common causes of malpractice litigation.",
+"page": 1669,
+"heading": "How Can You Minimize Your Malpractice Risks?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
 "cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
+"concept": "Legal",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Possesses an extensive knowledge of principles and theories",
+"text": "Quasi-intentional torts.",
 "isCorrect": false,
-"rationale": "This is incorrect. Attitudes are more akin to feelings and traits than to intellectual skills. Therefore, extensive knowledge is not a good example of a critical-thinking attitude."
+"rationale": "This is incorrect. Quasi-intentional torts involve actions that injure a person's reputation. The overall concept for these torts is defamation of character. There is no evidence of quasi-intentional torts in the described scenario."
 },
 {
-"text": "Has a lively curiosity and enjoys learning new ways to do things",
+"text": "Breach of confidentiality.",
 "isCorrect": true,
-"rationale": "This is correct. This trait is known as intellectual curiosity. Critical thinkers love to learn new things. They show an attitude of curiosity and inquiry and frequently think or ask, 'What if...?' 'How could we do this differently?' 'How does this work?' or 'Why did that happen?' The nurse in this scenario will be best served by this critical-thinking attitude."
+"rationale": "This is correct. Even though it was an inadvertent act in this situation, failure to maintain patient confidentiality and privacy are applicable to patient records. By not closing the patient's electronic medical record, the nurse made it available to someone not directly involved with the patient's care. Family and friends do not have the right to have access to the patient's chart by virtue of their relationship to the patient."
 },
 {
-"text": "Applies the problem-solving process taught in nursing school",
+"text": "Vicarious liability.",
 "isCorrect": false,
-"rationale": "This is incorrect. Attitudes are addressed in nursing school, but it is unlikely that one can 'teach' attitudes. A problem-solving process does necessarily require critical thinking; moreover, applying a process simply because one learns it in school would mean the person is not demonstrating an attitude of intellectual independence."
+"rationale": "This is incorrect. Vicarious liability states the nurse is legally accountable for personal actions or inactions. This is a common legal principle that should guide the nurse's behavior."
 },
 {
-"text": "Responds to patients on the basis of what is socially approved",
+"text": "Character defamation.",
 "isCorrect": false,
-"rationale": "This is incorrect. Society and culture do help to form attitudes, but that is not the same as basing actions on what is socially approved. Again, that would not demonstrate independent thinking or any of the other critical-thinking attitudes."
+"rationale": "This is incorrect. Defamation of character is central to quasi-intentional torts, which involve actions that injure a person's reputation. Based on the scenario, there is no evidence that defamation of character occurred."
 }
 ]
 },
 {
 "questionNumber": 16,
 "type": "MCQ",
-"questionText": "Which is the best description of the nursing process?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Describe the six overlapping and interdependent phases of the nursing process.",
-"page": 3,
-"heading": "What Is the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Patient-Centered Care",
-"difficulty": "Easy",
+"questionText": "The nursing student asks the nurse preceptor to explain the purpose of accurate documentation in the electronic health record (EHR). Which response does the nurse choose?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Identify strategies to minimize liability in nursing practice.",
+"page": 1668,
+"heading": "How Can You Minimize Your Malpractice Risks?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Communication",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "A way to create nursing knowledge for use in practice",
-"isCorrect": false,
-"rationale": "This is incorrect. A process does not create knowledge. Knowledge is created through theoretical and practical research."
-},
-{
-"text": "A systematic view of a specific phenomenon in nursing",
-"isCorrect": false,
-"rationale": "This is incorrect. The nursing process is not a view of a specific phenomenon."
-},
-{
-"text": "A linear process for providing nursing care",
-"isCorrect": false,
-"rationale": "This is incorrect. The nursing process is not linear; the steps are reflexive and overlapping."
-},
-{
-"text": "A systematic process for the delivery of nursing care",
+"text": "Charting communicates to members of the healthcare team the patient's care and responses during my shift.",
 "isCorrect": true,
-"rationale": "This is correct. The nursing process is central to nursing care. It is a systematic problem-solving process that guides all nursing actions."
+"rationale": "This is correct. Accurate charting is needed to clearly communicate the patient's care and responses to other members of the healthcare team, not just the other nurses. This statement reflects the nurse's understanding of this principle."
+},
+{
+"text": "Charting allows me to share with the healthcare team my opinions of what happened with the patient.",
+"isCorrect": false,
+"rationale": "This is incorrect. The nurse's opinions are not to be placed in a chart because they are not factual."
+},
+{
+"text": "Charting helps the other nurses understand the patient care provided during my shift.",
+"isCorrect": false,
+"rationale": "This is incorrect. While accurate charting does help nurses understand the nature of the patient care that is provided during various shifts, the need for communication extends to non-nursing team members as well. Accurate documentation is needed to clearly communicate the patient's care and responses to all members of the interdisciplinary healthcare team."
+},
+{
+"text": "Charting is required to comply with practice guidelines and institutional policies.",
+"isCorrect": false,
+"rationale": "This is incorrect. While charting is important to comply with standards of practice and institutional policy, compliance is not the main purpose for ensuring accurate charting."
 }
 ]
 },
 {
 "questionNumber": 17,
 "type": "MCQ",
-"questionText": "The nurse is providing care for a client with heart failure. The nurse obtains the client's medical and personal histories, measures vital signs, and then auscultates breath sounds. Which aspect of the nursing process is the nurse demonstrating?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Describe the six overlapping and interdependent phases of the nursing process.",
-"page": 6,
-"heading": "What Are the Phases of the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Patient-Centered Care",
+"questionText": "The staff nurse asks the clinical nurse leader to explain the main purpose of an incident report. Which response does the clinical nurse leader choose?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Identify strategies to minimize liability in nursing practice.",
+"page": 1668,
+"heading": "How Can You Minimize Your Malpractice Risks?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Communication",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Assessment",
+"text": "Incident reports are used by nurse managers to discipline nursing staff for making errors.",
+"isCorrect": false,
+"rationale": "This is incorrect. Although incident reports have been used to discipline nurses, this is not the current trend and is not their purpose."
+},
+{
+"text": "If an error in care occurs, an incident report must be kept in the patient's medical record in case of a lawsuit.",
+"isCorrect": false,
+"rationale": "This is incorrect. Incident reports are not a part of the patient's medical record."
+},
+{
+"text": "To promote open communication, a copy of the incident report should be provided to the patient.",
+"isCorrect": false,
+"rationale": "This is incorrect. Incident reports should not be shared with the patient."
+},
+{
+"text": "The risk management team uses incident reports to prevent the incident from recurring.",
 "isCorrect": true,
-"rationale": "This is correct. Obtaining history, auscultating breath sounds, and measuring vital signs are part of the assessment process. In the assessment step, the nurse gathers patient data and information."
-},
-{
-"text": "Planning interventions",
-"isCorrect": false,
-"rationale": "This is incorrect. In the planning interventions step, the nurse chooses nursing activities aimed at meeting patient goals (and thus alleviating the patient's problem)."
-},
-{
-"text": "Planning outcomes",
-"isCorrect": false,
-"rationale": "This is incorrect. In the planning outcomes phase, the nurse and patient identify goals for the patient's health expected or desired outcomes of the care."
-},
-{
-"text": "Evaluation",
-"isCorrect": false,
-"rationale": "This is incorrect. After performing nursing activities, in the evaluation stage, the nurse reassesses the patient to determine whether goals have been met."
+"rationale": "This is correct. The main function of an incident report is to prevent the incident from happening again. The report allows the nurse manager and risk management to evaluate the context in which the incident occurred and to identify appropriate strategies to prevent a recurrence."
 }
 ]
 },
 {
 "questionNumber": 18,
 "type": "MCQ",
-"questionText": "The nurse is providing care for a client with skin breakdown in the coccyx area. The physician has prescribed a medication to be applied to the area. The nurse administers all medications as prescribed. Which specific aspect of the nursing process is the nurse performing?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Describe the six overlapping and interdependent phases of the nursing process.",
-"page": 14,
-"heading": "What Are the Phases of the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
+"questionText": "Effective delegation is a vital part of the nurse's responsibilities. Which factor is most important for the nurse to consider when correctly delegating a nursing task?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Identify strategies to minimize liability in nursing practice.",
+"page": 1669,
+"heading": "How Can You Minimize Your Malpractice Risks?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Professionalism",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Assessment",
-"isCorrect": false,
-"rationale": "This is incorrect. The assessment phase of the nursing process involves gathering data about the patient and the patient's condition and needs. Assessment is not performed in this scenario."
-},
-{
-"text": "Planning interventions",
-"isCorrect": false,
-"rationale": "This is incorrect. The nurse both plans and carries out interventions based on the patient's needs. However, applying the medication arises from the physician's prescription. The planned intervention is administering medications as prescribed."
-},
-{
-"text": "Implementation",
+"text": "The delegatee's level of experience",
 "isCorrect": true,
-"rationale": "This is correct. The application of medication to the coccyx area is an 'action' prescribed by the physician; the nurse's plan of care intervention is 'Give all medications as prescribed.' In doing so, the nurse is addressing the implementation phase of the nursing process."
+"rationale": "This is correct. Effective delegation requires the nurse to consider the education level and experience of the person being delegated a task. This enables the nurse to accurately align the patient's care needs with the patient assignments. Once the nurse knows the delegatee's educational level and experience, patient care assignments can be given with consideration to patient requests."
 },
 {
-"text": "Evaluation",
+"text": "The job description of the delegatee",
 "isCorrect": false,
-"rationale": "This is incorrect. The evaluation aspect of the nursing process is performed after the plan (or nursing action) is implemented. In this scenario, the nurse will evaluate if the medication was applied as prescribed."
+"rationale": "This is incorrect. While the delegatee's job description can provide insight into their scope of responsibilities, the delegate must possess the necessary skill level to safely complete the task."
+},
+{
+"text": "The patient's opinion of the delegatee",
+"isCorrect": false,
+"rationale": "This is incorrect. The patient's opinion and preferences should be taken into consideration. However, this is not the most important factor to consider when delegating a task. As a priority, safe delegation requires the nurse to consider the educational level and experience of the person being delegated a task."
+},
+{
+"text": "The delegatee's sense of confidence",
+"isCorrect": false,
+"rationale": "This is incorrect. The delegatee's level of confidence may or may not be reflective of the individual's actual skill level. The priority considerations include the delegatee's education level and experience."
 }
 ]
 },
 {
 "questionNumber": 19,
 "type": "MCQ",
-"questionText": "The nurse documents in a client's plan of care that wound treatment to the client's left foot resulted in wound healing. The nurse then removes the skin integrity diagnosis from the plan of care. Which aspect of the nursing process is the nurse performing?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Describe the six overlapping and interdependent phases of the nursing process.",
-"page": 14,
-"heading": "What Are the Phases of the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
+"questionText": "Which issue is directly addressed by safe harbor laws?",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Identify seven rights of nurses within the healthcare workplace.",
+"page": 1672,
+"heading": "How Can You Minimize Your Malpractice Risks?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Comprehension [Understanding]",
+"concept": "Professionalism",
 "difficulty": "Difficult",
 "options": [
 {
-"text": "Assessment",
-"isCorrect": false,
-"rationale": "This is incorrect. Assessment is the concept of gathering data, and reassessment is a part of this scenario related to evaluation. The performance of the evaluation phase is stronger in this instance."
-},
-{
-"text": "Evaluation",
+"text": "Guarantee of peer review",
 "isCorrect": true,
-"rationale": "This is correct. When the nurse documents that the wound has healed and the nursing diagnosis is removed from the care plan, the evaluation phase of the nursing process has occurred."
+"rationale": "This is correct. Safe harbor laws provide for exceptions to certain laws. They protect nurses from being suspended, terminated, disciplined, or discriminated against for refusing to do (or not do) something they believe would be harmful to a client. Under these laws, the nurse has a right to ask for peer review of either the situation or directives they believe would violate the nursing practice act. The nurse must follow the guidelines required under the safe harbor provisions."
 },
 {
-"text": "Planning outcomes",
+"text": "Prevention of workplace violence",
 "isCorrect": false,
-"rationale": "This is incorrect. There is no indication of planning outcomes in this scenario."
+"rationale": "This is incorrect. The Nurses' Bill of Rights provides a framework for employers to understand what nurses need for a safe work environment and to support nurses as they address a variety of issues, including workplace violence."
 },
 {
-"text": "Planning interventions",
+"text": "Exemption from mandatory overtime",
 "isCorrect": false,
-"rationale": "This is incorrect. There is no indication of planning interventions in this scenario."
+"rationale": "This is incorrect. The Nurses' Bill of Rights provides a framework for employers to understand what nurses need for a safe work environment and to support nurses as they address a variety of issues, including mandatory overtime."
+},
+{
+"text": "Assurance of safe staffing",
+"isCorrect": false,
+"rationale": "This is incorrect. The Nurses' Bill of Rights provides a framework for employers to understand what nurses need for a safe work environment and to support nurses as they address a variety of issues, including unsafe staffing."
 }
 ]
 },
 {
 "questionNumber": 20,
-"type": "MCQ",
-"questionText": "The nurse enters a room to find the client sitting up in the chair and crying. Which action by the nurse best displays both a critical-thinking and caring attitude?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "List and describe at least six critical-thinking skills and attitudes.",
-"page": 9,
-"heading": "What Are Critical-Thinking Attitudes?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Communication and Documentation",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
+"type": "SATA",
+"questionText": "Which nursing action constitutes invasion of privacy? Select all that apply.",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss basic principles of criminal law that affect nursing practice.",
+"page": 1663,
+"heading": "What Is Civil Law?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Legal",
+"difficulty": "Easy",
 "options": [
 {
-"text": "Telling the client the nurse will return to chat after seeing other clients.",
-"isCorrect": false,
-"rationale": "This is incorrect. Postponing talking with the client does not assist the client, nor does it enable the nurse to make an appropriate intervention. Telling the client that the nurse will be back may cause the client to feel the client's needs are less important."
-},
-{
-"text": "Contacting the family to request someone to come and sit with the client.",
-"isCorrect": false,
-"rationale": "This is incorrect. Contacting the family may be helpful to the client once the nurse identifies why the client is crying. However, depending on the reason, the family may not be helpful at all."
-},
-{
-"text": "Using communication skills to determine the reasons for the client's crying.",
+"text": "Searching the patient's belongings without permission",
 "isCorrect": true,
-"rationale": "This is correct. The nurse uses therapeutic communication skills to find out why the client is crying so that the nurse can intervene appropriately and correctly. The critical-thinking attitude is one of intellectual empathy and is being used with this action."
+"rationale": "This is correct. Searching patients' private items without permission is an invasion of privacy."
 },
 {
-"text": "Placing a 'do not disturb' sign on the door to protect the client's privacy.",
+"text": "Reviewing the patient's plan of care with nursing team members in the hospital cafeteria",
+"isCorrect": true,
+"rationale": "This is correct. Invasion of privacy includes discussing patient matters in a public setting."
+},
+{
+"text": "Discussing an unconscious patient's treatment plan with the patient's power of attorney",
 "isCorrect": false,
-"rationale": "This is incorrect. A 'do not disturb' sign, without obtaining more information, may isolate the client. Upon further exploration, the nurse may discover that the client is already feeling alone and does not want or need privacy right now."
+"rationale": "This is incorrect. A durable power of attorney is a document empowering a person selected by the patient to make healthcare decisions in the event that the patient is unable to do so. It is permissible to discuss pertinent issues related to the welfare of the patient with the person holding the power of attorney."
+},
+{
+"text": "Photographing a patient's leg wound without patient consent",
+"isCorrect": true,
+"rationale": "This is correct. Invasion of privacy violates a person's right to be free from unwanted interference in their private affairs. Although appropriate for wound documentation, photographing patients without their permission is an example of invasion of privacy."
+},
+{
+"text": "Concealing information that should have been disclosed",
+"isCorrect": false,
+"rationale": "This is incorrect. Concealing information that should have been disclosed constitutes fraud."
 }
 ]
 },
 {
 "questionNumber": 21,
-"type": "MCQ",
-"questionText": "The nurse in an acute care facility is appointed to a committee that reviews the delivery of patient care. Which primary purpose of using the full-spectrum nursing model does the nurse recognize",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Name and describe the main concepts of the full-spectrum nursing model.",
-"page": 13,
-"heading": "What Concepts Are Used in Full-Spectrum Nursing?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
+"type": "SATA",
+"questionText": "The patient asks the nurse, 'Will you please help me understand advance directives?' Which information does the nurse include in the response? Select all that apply.",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Discuss the effects of the Patient Self-Determination Act (PSDA) on healthcare practices.",
+"page": 1656,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Legal",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "The model assists nurses in testing.",
-"isCorrect": false,
-"rationale": "This is incorrect. The full-spectrum model may assist nurses in performing psychomotor skills especially when something unexpected occurs. However, this is not the focus of the model."
-},
-{
-"text": "Implementation has a positive effect on client health outcomes.",
+"text": "'Advance directives establish the patient's choices about healthcare treatment if the patient should become unable to communicate.'",
 "isCorrect": true,
-"rationale": "This is correct. The primary purpose of using the full-spectrum model is 'to have a positive effect on a client's health outcomes,' which is also a goal of nursing in general."
+"rationale": "This is correct. Advance directives establish the patient's wishes regarding future healthcare should they become unable to give instructions."
 },
 {
-"text": "The model adequately uses all aspects of the nursing process.",
+"text": "'Legal requirements for advance directives are the same in every state.'",
 "isCorrect": false,
-"rationale": "This is incorrect. Full-spectrum nursing would likely improve the nurse's problem-solving ability (as in the nursing process); however, that is not the end purpose of full-spectrum nursing. It is merely a means to achieving the purpose of positively affecting health outcomes."
+"rationale": "This is incorrect. As a legal document, the requirements for living wills may vary from state to state. However, language common in living wills gives the person the opportunity to specify treatment in numerous areas."
 },
 {
-"text": "Implementation enables nurses to complete their work on time.",
-"isCorrect": false,
-"rationale": "This is incorrect. The full-spectrum model may assist nurses in completing their work on time especially when something unexpected occurs. However, this is not the focus of the model."
+"text": "'A patient may change the advance directive by telling the attending physician or by making changes in writing.'",
+"isCorrect": true,
+"rationale": "This is correct. A person may change or revoke an advance directive at any time. Changes and written revocation should be signed and dated and shared with the patient's physician. Even without an official written change, orally expressed direction to the physician generally has priority over any statement made in an advance directive as long as the patient is able to decide for themself and can communicate their wishes."
+},
+{
+"text": "'Advance directives help to make sure the patient receives as much or as little care as they wish.'",
+"isCorrect": true,
+"rationale": "This is correct. A patient may specify actions in a living will to ensure their plan of care includes as much or as little care as they wish to receive."
+},
+{
+"text": "'Examples of advance directives include living wills and durable power of attorney for healthcare.'",
+"isCorrect": true,
+"rationale": "This is correct. There are two types of legal written advance directives: the living will and the durable power of attorney for healthcare."
 }
 ]
 },
 {
 "questionNumber": 22,
-"type": "MCQ",
-"questionText": "The nurse gathers assessment data and notes several significant changes in the client's health status. The client's weight has increased by 5 pounds (2.27 kg) over the past 24 hours, the client is short of breath, and crackles are auscultated at both lung bases. To which step of the nursing process should the nurse proceed after organizing the data?",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Describe the six overlapping and interdependent phases of the nursing process.",
-"page": 10,
-"heading": "What Are the Phases of the Nursing Process?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"type": "SATA",
+"questionText": "The nurse educator teaches a cohort of nursing students about intentional and unintentional torts. Which information does the nurse educator include in the discussion? Select all that apply.",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Compare and contrast intentional and unintentional torts.",
+"page": 1662,
+"heading": "What Is Criminal Law?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
 "cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
+"concept": "Legal",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Diagnosis",
+"text": "Negligence is an example of an intentional tort.",
+"isCorrect": false,
+"rationale": "This is incorrect. Negligence is an example of an unintentional tort."
+},
+{
+"text": "Battery is an example of an intentional tort.",
 "isCorrect": true,
-"rationale": "This is correct. After gathering and analyzing the assessment data, the nurse should formulate a nursing diagnosis. The other options are not done until after the problem has been diagnosed."
+"rationale": "This is correct. Battery is among the most commonly encountered intentional torts in nursing."
 },
 {
-"text": "Planning",
-"isCorrect": false,
-"rationale": "This is incorrect. The diagnosis is used to plan goals, which are then used to plan interventions."
+"text": "Intentional torts include invasion of privacy.",
+"isCorrect": true,
+"rationale": "This is correct. Invasion of privacy is an intentional tort."
 },
 {
-"text": "Implementation",
-"isCorrect": false,
-"rationale": "This is incorrect. Implementation of interventions is the third step in the nursing process and requires performance of interventions."
+"text": "Malpractice is a type of unintentional tort.",
+"isCorrect": true,
+"rationale": "This is correct. Malpractice is a type of unintentional tort."
 },
 {
-"text": "Evaluation",
+"text": "False imprisonment is an example of an unintentional tort.",
 "isCorrect": false,
-"rationale": "This is incorrect. After implementing the intervention(s), evaluation is done to identify change in health status and determine whether goals have been met."
+"rationale": "This is incorrect. False imprisonment is an example of an intentional tort."
 }
 ]
 },
 {
 "questionNumber": 23,
 "type": "SATA",
-"questionText": "The nurse works in an acute care facility with a culturally diverse client population. Using critical thinking, which aspects of healthcare does the nurse recognize as being affected by a client's culture? Select all that apply.",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "Explain ways in which nurses use critical thinking.",
-"page": 13,
-"heading": "What Is Critical Thinking?",
-"integratedProcesses": "Culture and Spirituality",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Analyze [Analyzing]",
-"concept": "Culture",
-"difficulty": "Difficult",
+"questionText": "A patient files a court complaint related to care that was delivered during a recent hospital admission. In an effort to prevent a trial hearing, the hospital's legal team attempts to resolve the patient dispute. Which processes represent methods of alternative dispute resolution? Select all that apply.",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Describe the phases of the litigation process in a nursing malpractice case.",
+"page": 1665,
+"heading": "Litigation in Civil Claims",
+"integratedProcesses": "Communication and Documentation",
+"clientNeed": "Safe and Effective Care Environment",
+"cognitiveLevel": "Knowledge [Remembering]",
+"concept": "Legal",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "How the client views healthcare",
-"isCorrect": true,
-"rationale": "This is correct. Culture impacts clients' views of health and healthcare. Critical thinkers are flexible, nonjudgmental, inquisitive, honest, and interested in seeking the truth."
-},
-{
-"text": "How the client views illness",
-"isCorrect": true,
-"rationale": "This is correct. Culture influences how clients will define illness. Critical thinkers are flexible, nonjudgmental, inquisitive, honest, and interested in seeking the truth."
-},
-{
-"text": "The type of insurance the client has",
+"text": "Deposition",
 "isCorrect": false,
-"rationale": "This is incorrect. How services are paid for is related to economic environment and status. This is not necessarily an issue related to culture."
+"rationale": "This is incorrect. During litigation, the discovery phase is the point at which both parties gather facts and evidence about the case that can be used at trial. Processes through which attorneys may obtain discovery include depositions. During a deposition, one or more attorneys orally question parties to the lawsuit under oath, as though they were testifying in court."
 },
 {
-"text": "The types of treatments the client will accept",
+"text": "Mediation",
 "isCorrect": true,
-"rationale": "This is correct. Clients will accept treatments acceptable in their culture. Critical thinkers are flexible, nonjudgmental, inquisitive, honest, and interested in seeking the truth."
+"rationale": "This is correct. Lawyers and involved parties usually try to resolve disputes before going to trial. The three most common methods of alternative dispute resolution include mediation, arbitration, and negotiation."
 },
 {
-"text": "When the client will seek healthcare services",
+"text": "Litigation",
+"isCorrect": false,
+"rationale": "This is incorrect. Litigation is the formal process wherein the legal issues, rights, and duties between the parties are heard and decided (adjudicated)."
+},
+{
+"text": "Arbitration",
 "isCorrect": true,
-"rationale": "This is correct. Culture affects when clients will seek healthcare. Critical thinkers are flexible, nonjudgmental, inquisitive, honest, and interested in seeking the truth."
+"rationale": "This is correct. Usually, in an effort to avoid a trial, lawyers and involved parties try to resolve disputes. The three most common methods of alternative dispute resolution include arbitration, mediation, and negotiation."
+},
+{
+"text": "Negotiation",
+"isCorrect": true,
+"rationale": "This is correct. In an attempt to resolve disputes before going to trial, lawyers and involved parties usually try to use a method of alternative dispute resolution. The three most common methods of alternative dispute resolution include negotiation, mediation, and arbitration."
 }
 ]
 },
 {
 "questionNumber": 24,
 "type": "SATA",
-"questionText": "Caring is a central concept in nursing. Which of the following exemplifies a nurse exhibiting the concept of caring and the use of critical-thinking attitudes? Select all that apply.",
-"chapter": "Chapter 2: Clinical Judgment",
-"objective": "List and describe at least six critical-thinking skills and attitudes.",
-"page": 13,
-"heading": "What Are Critical Thinking Attitudes?",
-"integratedProcesses": "Caring",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
+"questionText": "The nursing student creates a presentation about the impact of the American Nurses Association (ANA) Code of Ethics on nursing practice. Which information does the nursing student include in the presentation? Select all that apply.",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Identify strategies to minimize liability in nursing practice.",
+"page": 1658,
+"heading": "What Laws and Regulations Guide Nursing Practice?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeeds": "Safe and Effective Care Environment",
+"cognitiveLevel": "Comprehension [Understanding]",
+"concept": "Ethics",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Treating clients as unique individuals",
-"isCorrect": true,
-"rationale": "This is correct. Treating clients as unique individuals exemplifies caring and the use of the critical-thinking attitude intellectual empathy, which attempts to understand the feelings and perceptions of the client as an individual."
+"text": "The ANA Code of Ethics is a collection of federal and state laws.",
+"isCorrect": false,
+"rationale": "This is incorrect. The ANA Code of Ethics is not a law but, rather, standards of professional responsibilities of the nurse using behavior that is ethical and expected by or acceptable to the profession."
 },
 {
-"text": "Responding compassionately to client needs",
+"text": "The ANA Code of Ethics guarantees the patient's right to dignity.",
 "isCorrect": true,
-"rationale": "This is correct. Responding compassionately to client needs exemplifies caring and use of the critical-thinking attitude intellectual empathy, which attempts to understand the feelings and perceptions related to the client's experience."
+"rationale": "This is correct. The ANA code guarantees the patient the right to dignity, privacy, and safety."
 },
 {
-"text": "Acting in ways to preserve human dignity",
-"is-Correct": true,
-"rationale": "This is correct. Acting in ways to preserve human dignity exemplifies caring and the use of the critical-thinking attitude of intellectual empathy by showing respect for the individual."
+"text": "Violation of a standard in the ANA Code of Ethics is considered to be a criminal offense.",
+"isCorrect": false,
+"rationale": "This is incorrect. The Code of Ethics is not a law, and therefore you would not be charged with criminal offenses for violating the code's provisions."
 },
 {
-"text": "Connecting with others to give and receive help",
+"text": "The patient's privacy is guaranteed by the ANA Code of Ethics.",
 "isCorrect": true,
-"rationale": "This is correct. Connecting with others to give and receive help exemplifies caring and the use of the critical-thinking attitude and intellectual humility. Nurses need to be willing to ask for and provide help for the benefit of the client."
+"rationale": "This is correct. The ANA code guarantees the patient the right to privacy, dignity, and safety."
 },
 {
-"text": "Using the communication skill of active listening",
+"text": "Violation of the ANA Code of Ethics may result in disciplinary action by the state board of nursing.",
 "isCorrect": true,
-"rationale": "This is correct. Using the communication skill of active listening exemplifies caring and the use of the critical-thinking attitude fair-mindedness. Listening is a key to making impartial judgments about any aspect of healthcare."
+"rationale": "This is correct. A nurse who violates a provision of the Code of Ethics may have to defend their action to the state board of nursing."
+}
+]
+},
+{
+"questionNumber": 25,
+"type": "SATA",
+"questionText": "The nurse provides care to an adult patient who is admitted to a walk-in clinic for a follow-up visit. As a result of providing care to the patient over the course of several weeks, the nurse has developed a strong rapport with the patient. Which nursing actions represent a boundary violation? Select all that apply.",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Identify strategies to minimize liability in nursing practice",
+"page": 1670,
+"heading": "How Can You Minimize Your Malpractice Risks?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeeds": "Safe and Effective Care Environment",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Ethics",
+"difficulty": "Easy",
+"options": [
+{
+"text": "Expressing a personal attraction toward the patient",
+"isCorrect": true,
+"rationale": "This is correct. Communication that is sexual in nature or reveals personal attraction between client and nurse represents a boundary violation."
+},
+{
+"text": "Accepting a grocery store gift card from the patient",
+"isCorrect": true,
+"rationale": "This is correct. Violations of professional boundaries may be physical, sexual, emotional, or financial in nature. Do not accept gifts from clients."
+},
+{
+"text": "Agreeing to meet the patient for coffee after the patient is fully healed",
+"isCorrect": true,
+"rationale": "This is correct. Off-duty visits with a patient are a potential violation of professional boundaries."
+},
+{
+"text": "Sharing details about the nurse's personal problems with the patient",
+"isCorrect": true,
+"rationale": "This is correct. Discussing personal problems or intimate details with the patient represents a boundary violation."
+},
+{
+"text": "Denying the patient's parents access to the patient's medical record",
+"isCorrect": false,
+"rationale": "This is incorrect. The nurse must always maintain patient confidentiality unless directed by law to do otherwise (e.g., when a patient is threatening to harm someone). Family members and significant others do not have an automatic right to information about the patient. For example, parents do not have an automatic right to see the medical records of their adult child or minor child who is married or emancipated."
+}
+]
+},
+{
+"questionNumber": 26,
+"type": "SATA",
+"questionText": "In a malpractice lawsuit, which elements must be established by a plaintiff in order to win and recover damage? Select all that apply.",
+"chapter": "Chapter 39: Legal Accountability",
+"objective": "Compare and contrast intentional and unintentional torts.",
+"page": 1664,
+"heading": "What Is Civil Law?",
+"integratedProcesses": "Communication and Documentation",
+"clientNeeds": "Safe and Effective Care Environment",
+"cognitiveLevel": "Comprehension [Understanding]",
+"concept": "Legal",
+"difficulty": "Moderate",
+"options": [
+{
+"text": "Duty",
+"isCorrect": true,
+"rationale": "This is correct. To win a malpractice lawsuit, duty, breach of duty, causation, and injury must be proven."
+},
+{
+"text": "Breach of duty",
+"isCorrect": true,
+"rationale": "This is correct. To win a malpractice lawsuit, the plaintiff must establish four elements: duty, breach of duty, causation, and damages."
+},
+{
+"text": "Intent to harm",
+"isCorrect": false,
+"rationale": "This is incorrect. To win and recover damages in a malpractice lawsuit, it is not necessary for the plaintiff to prove the healthcare provider intended to cause harm. Four elements must be proven by the plaintiff in order to win a malpractice lawsuit: duty, breach of duty, causation, and damages."
+},
+{
+"text": "Injury",
+"isCorrect": true,
+"rationale": "This is correct. To win and recover damages in a malpractice lawsuit, the plaintiff must prove four elements: duty, breach of duty, causation, and damages."
+},
+{
+"text": "Causation",
+"isCorrect": true,
+"rationale": "This is correct. For the plaintiff to win a malpractice lawsuit and recover damages, four elements must be proven: duty, breach of duty, causation, and damages."
 }
 ]
 }
