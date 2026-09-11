@@ -599,12 +599,12 @@ function setupQuiz(launchQuizBtn, quizModal) {
         questionMeta.innerHTML = `<span class="meta-pill">Session Review</span>`;
         questionText.textContent = `Quiz Complete! You scored ${score.toFixed(1)} out of ${questionsList.length} (${finalPercentage}%).`;
         optionsContainer.innerHTML = `
-          <div class="summary-container">
-            <div class="summary-score-card">
-              <h3>Performance Summary</h3>
-              <p>Total Points: ${score.toFixed(1)} / ${questionsList.length}</p>
-              <p>Accuracy: ${finalPercentage}%</p>
-              <p>Flagged Questions: ${flaggedQuestionIndices.size}</p>
+          <div class="summary-container" style="display: flex; flex-direction: column; gap: 14px;">
+            <div class="summary-score-card" style="background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(51, 65, 85, 0.8); color: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; text-align: left;">
+              <h3 style="color: #ffffff; font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem;">Performance Summary</h3>
+              <p style="color: #cbd5e1; margin: 0.35rem 0; font-size: 0.95rem;">Total Points: ${score.toFixed(1)} / ${questionsList.length}</p>
+              <p style="color: #cbd5e1; margin: 0.35rem 0; font-size: 0.95rem;">Accuracy: ${finalPercentage}%</p>
+              <p style="color: #cbd5e1; margin: 0.35rem 0; font-size: 0.95rem;">Flagged Questions: ${flaggedQuestionIndices.size}</p>
             </div>
             <div style="display: flex; gap: 10px; flex-direction: column;">
               <button id="restart-quiz-btn" class="action-btn">Retake Quiz</button>
@@ -616,8 +616,8 @@ function setupQuiz(launchQuizBtn, quizModal) {
         submitAnswerBtn.classList.add('hidden');
         nextQuestionBtn.classList.add('hidden');
 
-        document.getElementById('restart-quiz-btn')?.addEventListener('click', () => showQuizConfig());
-        document.getElementById('choose-another-chapter-btn')?.addEventListener('click', () => showChapterSelection());
+        document.getElementById('restart-quiz-btn').addEventListener('click', () => showQuizConfig());
+        document.getElementById('choose-another-chapter-btn').addEventListener('click', () => showChapterSelection());
       }
     });
   }
