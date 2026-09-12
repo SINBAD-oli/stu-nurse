@@ -535,12 +535,15 @@ function setupQuiz(launchQuizBtn, quizModal) {
       submitAnswerBtn.classList.add('hidden');
       nextQuestionBtn.classList.remove('hidden');
 
-      if (!window.currentSessionChapterScores) window.currentSessionChapterScores = {};
-      if (!window.currentSessionChapterScores[specificChap]) {
-        window.currentSessionChapterScores[specificChap] = { correct: 0, total: 0 };
+      if (!window.currentSessionChapterQuestions) window.currentSessionChapterQuestions = {};
+      if (!window.currentSessionChapterQuestions[specificChap]) {
+        window.currentSessionChapterQuestions[specificChap] = {};
       }
-      window.currentSessionChapterScores[specificChap].correct += questionEarnedScore;
-      window.currentSessionChapterScores[specificChap].total += 1;
+      // Track latest answer per unique question text to prevent score stacking/inflation
+      window.currentSessionChapterQuestions[specificChap][q.questionText] = {
+        correct: questionEarnedScore >= 1,
+        score: questionEarnedScore
+      };
     });
   }
 
@@ -562,20 +565,35 @@ function setupQuiz(launchQuizBtn, quizModal) {
               const uData = userSnap.data();
               const prevQuizzes = uData.totalQuizzesTaken || 0;
               const prevAvg = uData.averageAccuracy || 0;
-              const chapterStats = uData.chapterStats || {};
+              let chapterProgressMap = uData.chapterProgressMap || {};
               let existingMissed = uData.missedQuestions || [];
 
               const newTotalQuizzes = prevQuizzes + 1;
               const newAvgAccuracy = Number(((prevAvg * prevQuizzes + parseFloat(finalPercentage)) / newTotalQuizzes).toFixed(1));
 
-              if (window.currentSessionChapterScores) {
-                for (const [chap, data] of Object.entries(window.currentSessionChapterScores)) {
-                  if (!chapterStats[chap]) chapterStats[chap] = { correct: 0, total: 0 };
-                  chapterStats[chap].correct += data.correct;
-                  chapterStats[chap].total += data.total;
+              if (window.currentSessionChapterQuestions) {
+                for (const [chap, qMap] of Object.entries(window.currentSessionChapterQuestions)) {
+                  if (!chapterProgressMap[chap]) chapterProgressMap[chap] = {};
+                  for (const [qText, qDetails] of Object.entries(qMap)) {
+                    chapterProgressMap[chap][qText] = qDetails;
+                  }
                 }
               }
-              window.currentSessionChapterScores = {};
+              window.currentSessionChapterQuestions = {};
+
+              // Recalculate true chapterStats safely from unique question status maps
+              const chapterStats = {};
+              for (const [chap, qMap] of Object.entries(chapterProgressMap)) {
+                let correctCount = 0;
+                const questionEntries = Object.values(qMap);
+                questionEntries.forEach(item => {
+                  if (item.correct) correctCount += 1;
+                });
+                chapterStats[chap] = {
+                  correct: correctCount,
+                  total: questionEntries.length
+                };
+              }
 
               sessionMissedQuestions.forEach(m => {
                 if (!existingMissed.some(ex => ex.questionText === m.questionText)) {
@@ -586,6 +604,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
               await updateDoc(userRef, {
                 totalQuizzesTaken: newTotalQuizzes,
                 averageAccuracy: newAvgAccuracy,
+                chapterProgressMap: chapterProgressMap,
                 chapterStats: chapterStats,
                 missedQuestions: existingMissed
               });
