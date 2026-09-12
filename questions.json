@@ -2,971 +2,1146 @@
 {
 "questionNumber": 1,
 "type": "MCQ",
-"questionText": "A 15-year-old patient who is at 39 weeks' gestation is transported by her mother to the emergency department (ED) of a private hospital. The patient reports she is in active labor. The patient's mother states, 'We don't have any money or insurance, but this hospital is closer than the public hospital.' Which action does the ED nurse implement?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Identify four basic sources of law.",
-"page": 1655,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
+"questionText": "The nurse is aware the client's risk of breast cancer is dramatically increased because both her sister and her mother had breast cancer. Which of the multidimensional aspects of health does this scenario illustrate?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Describe the various ways that people experience health and illness.",
+"page": 4,
+"heading": "How Do People Experience Health and Illness?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
 "cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
+"concept": "Patient-Centered Care",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Arrange for an ambulance to transport the patient to the nearest public hospital.",
+"text": "Personal relationships",
 "isCorrect": false,
-"rationale": "This is incorrect. The Emergency Medical Treatment and Active Labor Act (EMTALA) requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the ED, regardless of their ability to pay, legal status, or citizenship status."
+"rationale": "This is incorrect. Nurses respond to the physical, emotional, mental, and spiritual dimensions of health. Personal relationships are more psychosocial in nature; for example, family relationships can facilitate coping."
 },
 {
-"text": "Explain to the patient and her mother that the hospital only accepts patients who have health insurance.",
-"isCorrect": false,
-"rationale": "This is incorrect. The Emergency Medical Treatment and Active Labor Act (EMTALA) requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the ED, regardless of their ability to pay, legal status, or citizenship status."
-},
-{
-"text": "Examine the patient to determine whether her condition is stable or whether she requires immediate medical attention.",
+"text": "Biological factors",
 "isCorrect": true,
-"rationale": "This is correct. The Emergency Medical Treatment and Active Labor Act (EMTALA) requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the ED, regardless of their ability to pay, legal status, or citizenship status."
+"rationale": "This is correct. Biological factors include genetic makeup, gender, age, and developmental stage. The risk of breast cancer increases dramatically in women who have a family history of a mother, sister, or daughter with breast cancer. Recently, a genetic marker for this type of breast cancer was discovered. This is an example of biological factors."
 },
 {
-"text": "Advise the patient's mother to transport the patient to the nearest public hospital.",
+"text": "Lifestyle choices",
 "isCorrect": false,
-"rationale": "This is incorrect. The Emergency Medical Treatment and Active Labor Act (EMTALA) requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the ED, regardless of their ability to pay, legal status, or citizenship status."
+"rationale": "This is incorrect. Lifestyle choices involve such health behaviors as choosing not to use tobacco and other substances."
+},
+{
+"text": "Environmental factors",
+"isCorrect": false,
+"rationale": "This is incorrect. Environmental factors involve, for example, environmental pollutants or the psychosocial environment (a quiet versus a noisy hospital room)."
 }
 ]
 },
 {
 "questionNumber": 2,
 "type": "MCQ",
-"questionText": "An alert, oriented, 87-year-old patient has just been diagnosed with cancer. According to the patient's durable power of attorney, the patient's son serves as the patient's surrogate decision maker. The patient's son tells the nurse he is refusing chemotherapy treatment on the patient's behalf due to concerns about medication side effects and quality of life. Meanwhile, the patient states, 'I want to receive chemotherapy.' Which action does the nurse take?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss the effects of the Patient Self-Determination Act (PSDA) on healthcare practices.",
-"page": 1656,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
+"questionText": "The nurse uses the concept of the wellness-illness continuum for developing a nursing plan of care. Which plan for a chronically ill patient does the nurse select?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Differentiate between acute and chronic illnesses.",
+"page": 4,
+"heading": "How Do People Experience Health and Illness?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
 "cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
-"difficulty": "Easy",
+"concept": "Patient-Centered Care",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Assist the patient and their son with reaching a compromise.",
+"text": "Educate the patient about every possible complication associated with the specific illness.",
 "isCorrect": false,
-"rationale": "This is incorrect. The patient is not required to compromise with regard to their healthcare treatment choices."
+"rationale": "This is incorrect. Education about every possible complication does not promote optimal functioning at the point on the health-illness continuum where the chronically ill patient is located."
 },
 {
-"text": "Administer the patient's chemotherapy treatment as ordered.",
+"text": "Encourage positive health characteristics within the limits of the specific illness.",
 "isCorrect": true,
-"rationale": "This is correct. The patient is alert and oriented and can make their own healthcare decisions. The patient's son only has the authority to make healthcare decisions if the patient becomes incompetent and is unable to process information to make decisions."
+"rationale": "This is correct. The health-illness continuum defines health and illness as a graduated spectrum that cannot be divided into parts. Encouraging positive health characteristics within the limits of the specific illness will promote maintenance of a personal state of health for the individual patient."
 },
 {
-"text": "Advise the patient's son to consult with the hospital legal department for guidance.",
+"text": "Limit activities because of the progressive deterioration associated with chronic illnesses.",
 "isCorrect": false,
-"rationale": "This is incorrect. Legal intervention is not indicated. The patient is within their rights to personally choose to consent to or refuse treatment. The patient's son does not have the authority to supersede the patient's choice."
+"rationale": "This is incorrect. An appropriate plan of care for a chronically ill patient will constantly change with the patient's condition. Physiological changes, lifestyle choices, and the results of various choices will impact where the patient falls on the continuum; however, activities are limited only by the patient's ability."
 },
 {
-"text": "Ask the patient's son to share more information about his decision to refuse the treatment.",
+"text": "Recommend activity beyond the scope of tolerance to prevent early deterioration.",
 "isCorrect": false,
-"rationale": "This is incorrect. Additional information from the patient's son may be a component of therapeutic communication, but no further information from the patient's son is necessary in order to administer care to the patient."
+"rationale": "This is incorrect. Recommending activity beyond the scope of tolerance to prevent early deterioration is not a part of planning care related to the patient's position on the health-illness continuum."
 }
 ]
 },
 {
 "questionNumber": 3,
 "type": "MCQ",
-"questionText": "The charge nurse lists the nurses' patient assignments and the patients' diagnoses on a whiteboard located at the nurses' station. The charge nurse's practice represents a violation of which federal regulation?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Relate the impact of the Health Insurance Portability and Accountability Act (HIPAA) to patient rights and protections.",
-"page": 1654,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"questionText": "The nurse works at a busy trauma center and needs to establish a relationship of caring, respect, and understanding with clients during a time of extreme physical and emotional stress. Which behavior from the nurse is most likely to convey a sense of compassion?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Identify factors that influence individuals' responses to illness.",
+"page": 5,
+"heading": "Establish Trust at Your First Patient Contact",
+"integratedProcesses": "Caring",
+"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Americans with Disabilities Act (ADA)",
+"text": "Extend kindness to the client and family.",
 "isCorrect": false,
-"rationale": "This is incorrect. ADA provides protection against discrimination of individuals with disabilities. Failure to protect the confidentiality of patient information represents a violation of HIPAA."
+"rationale": "This is incorrect. Extending kindness to the client and the client's family is an important way to demonstrate caring and respect."
 },
 {
-"text": "Patient Self-Determination Act (PSDA)",
+"text": "Display competency during procedures.",
 "isCorrect": false,
-"rationale": "This is incorrect. PSDA recognizes the client's right to make decisions regarding their own healthcare. The healthcare provider must inform the patient about available medical or surgical treatment options and benefits, risks, and alternatives. The charge nurse's failure to maintain the confidentiality of patient information represents a violation of HIPAA."
+"rationale": "This is incorrect. Merely performing procedures, administering medications, or providing solutions to the patient does not allow you to support the patient's transition from health to illness."
 },
 {
-"text": "Health Insurance Portability and Accountability Act (HIPAA)",
+"text": "Provide a healing presence.",
 "isCorrect": true,
-"rationale": "This is correct. HIPAA mandates comprehensive protection for the privacy of protected health information (confidentiality of patient records). Writing the nurses' assignments with the corresponding patients and their diagnoses in a location where others may view it is a violation of HIPAA. Assignments should be kept in the nurses' conference room or a location that is not accessible to patients, their family members, or visitors."
+"rationale": "This is correct. Part of what a nurse does when displaying a healing presence will never show up in a written care plan. However, the nurse's healing presence may be the most important aspect of care nurses have to offer."
 },
 {
-"text": "Emergency Medical Treatment and Active Labor Act (EMTALA)",
+"text": "Remain professionally aloof.",
 "isCorrect": false,
-"rationale": "This is incorrect. EMTALA requires healthcare facilities to provide emergency medical treatment to patients (including those in labor) who seek healthcare in the emergency department (ED), regardless of their ability to pay, legal status, or citizenship status. The nurse who fails to protect the confidentiality of patient information is in violation of HIPAA."
+"rationale": "This is incorrect. When the nurse remains professionally aloof, the concepts of caring and trust cannot be established."
 }
 ]
 },
 {
 "questionNumber": 4,
 "type": "MCQ",
-"questionText": "A 75-year-old patient is admitted to the ED for evaluation of confusion and memory loss. The initial patient assessment reveals bruises and scratches in various stages of healing on the patient's arms, legs, and torso. Based on the assessment findings, the nurse suspects the patient may be a victim of physical abuse. Which legislation requires the nurse to notify a designated authority about the suspected abuse?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Apply state mandatory reporting laws to patient care situations.",
-"page": 1657,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
+"questionText": "The nurse is providing care for a client who is 76 years of age and experiencing chronic illness related to genetic-linked anemia. The client does not eat a balanced diet and admits preferring sweets to meat and vegetables. Which dimension of health is the nurse most likely to influence with teaching and counseling?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Identify factors that influence individuals' responses to illness.",
+"page": 4,
+"heading": "How Do People Experience Health and Illness?",
+"integratedProcesses": "Teaching and Learning",
+"clientNeed": "Health Promotion and Maintenance",
 "cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
+"concept": "Patient-Centered Care",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Good Samaritan laws",
+"text": "Age-related changes",
 "isCorrect": false,
-"rationale": "This is incorrect. Good Samaritan laws are designed to protect from liability those who provide emergency care to someone who is in need of medical services."
+"rationale": "This is incorrect. Although people consider biological factors when they describe themselves as well or ill, these factors are not entirely within their control. Age is one of the biological factors for this client."
 },
 {
-"text": "Mandatory reporting laws",
+"text": "Genetic anemia",
+"isCorrect": false,
+"rationale": "This is incorrect. The biological factor of genetic makeup is not changeable through teaching; however, management is possible."
+},
+{
+"text": "Eating habits",
 "isCorrect": true,
-"rationale": "This is correct. In accordance with mandatory reporting laws, healthcare workers are required to report communicable diseases, as well as physical, sexual, or emotional abuse or neglect of vulnerable individuals (e.g., children, older adults, the mentally ill). The intent is to protect people who cannot protect themselves and to protect society against the spread of communicable diseases. Mandatory reporting laws vary from state to state. The nurse should be familiar with applicable laws in the state in which they practice."
+"rationale": "This is correct. The nurse is most likely to influence the patient's eating habits because those are the dimensions over which the client has the most control. Therefore, those dimensions have the most potential for change."
 },
 {
-"text": "Nurse practice act",
+"text": "Gender-related issues",
 "isCorrect": false,
-"rationale": "This is incorrect. Nurse practice acts (NPAs) are statutory laws passed by each state's legislative body that define the practice of nursing. Nurse practice acts are designed to regulate nursing practice to protect the health, safety, and welfare of the general public; define the scope of nursing practice; and approve programs providing prelicensure nursing education to students."
-},
-{
-"text": "Nursing standards of practice",
-"isCorrect": false,
-"rationale": "This is incorrect. Nursing standards of practice establish the minimum level of competency for nurses. Nurses are expected to follow the standards that apply to their specialty areas."
+"rationale": "This is incorrect. Gender is a biological factor and is not changeable through teaching."
 }
 ]
 },
 {
 "questionNumber": 5,
 "type": "MCQ",
-"questionText": "Which aspect of patient care is guaranteed by the American Nurses Association (ANA) Code of Ethics for Nurses?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Identify four basic sources of law.",
-"page": 1658,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Ethics",
-"difficulty": "Difficult",
+"questionText": "The nurse recognizes which type of loss as being most common among patients who are hospitalized for complex health conditions?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 14,
+"heading": "The Intensity, Duration, and Multiplicity of the Disruption",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
+"cognitiveLevel": "Comprehension [Understanding]",
+"concept": "Patient-Centered Care",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Helping a patient with billing claims",
+"text": "Privacy",
 "isCorrect": false,
-"rationale": "This is incorrect. The Patient Care Partnership (PCP), which replaced the American Hospital Association's Patient Bill of Rights, advises patients of several aspects of care that should be expected during a period of hospitalization. In accordance with the PCP, hospitalized patients are advised that their expectations should include help with billing claims."
+"rationale": "This is incorrect. Healthcare providers have a duty to protect the privacy and confidentiality of patients, even though it is certainly threatened by some situations during hospitalization."
 },
 {
-"text": "Assisting a patient who is leaving the hospital",
-"isCorrect": false,
-"rationale": "This is incorrect. The Patient Care Partnership (PCP), which replaced the American Hospital Association's Patient Bill of Rights, advises patients of several aspects of care that should be expected during a period of hospitalization. In accordance with the PCP, hospitalized patients are advised that their expectations should include receiving help when leaving the hospital."
-},
-{
-"text": "Ensuring a clean and safe environment",
-"isCorrect": false,
-"rationale": "This is incorrect. The Patient Care Partnership (PCP), which replaced the American Hospital Association's Patient Bill of Rights, advises patients of several aspects of care that should be expected during a period of hospitalization. In accordance with the PCP, hospitalized patients are advised that their expectations should include a safe, clean environment."
-},
-{
-"text": "Protecting the patient from misrepresentation",
+"text": "Dignity",
 "isCorrect": true,
-"rationale": "This is correct. The ANA Code of Ethics for Nurses guarantees the patient the right to dignity, privacy, and safety. According to the ANA Code, the nurse will protect the client from misinformation and misrepresentation."
+"rationale": "This is correct. Hospitalized patients commonly experience the loss of dignity. Wearing a hospital gown, having their body exposed, invasive procedures, loss of control over body functions all of these contribute to loss of dignity, and all are very common among hospitalized patients."
+},
+{
+"text": "Functional",
+"isCorrect": false,
+"rationale": "This is incorrect. Some patients lose functioning during hospitalization, but this is not a common occurrence."
+},
+{
+"text": "Identity",
+"isCorrect": false,
+"rationale": "This is incorrect. Patients may be at risk for losing identity during hospitalization; however, the risk is reduced when healthcare providers use patient-centered communication."
 }
 ]
 },
 {
 "questionNumber": 6,
 "type": "MCQ",
-"questionText": "The charge nurse in a progressive care unit assigns the care of a patient receiving hemodialysis to a newly hired licensed practical nurse (LPN). The charge nurse does not ask whether or not the LPN is competent in caring for patients who are receiving hemodialysis. The LPN is in orientation and fails to inform the charge nurse that they do not have experience with patients who are undergoing hemodialysis treatments. Which term best describes the charge nurse's actions?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss basic principles of criminal law that affect nursing practice.",
-"page": 1663,
-"heading": "What Is Criminal Law?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"questionText": "The nurse is admitting a 62-year-old patient with a diagnosis of hypertension to the hospital. Which question by the nurse is most important when performing the initial assessment interview?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
+"page": 11,
+"heading": "Nurses Understand Health and Illness as Individual Experiences",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Breach of duty",
+"text": "What medications do you take at home?",
 "isCorrect": false,
-"rationale": "This is incorrect. A breach of duty must be a direct and proximate cause of the injury suffered by a patient. Although possible when an LPN is inappropriately assigned, this scenario did not result in injury to the patient."
+"rationale": "This is incorrect. Asking about medications is a routine question by the nurse during the admission process. It is important for the nurse to ask about medications, but it does not take priority over asking about the patient's greatest concern."
 },
 {
-"text": "Libel",
+"text": "Do you have any environmental, food, or drug allergies?",
 "isCorrect": false,
-"rationale": "This is incorrect. Libel is the written or published form of defamation of character."
+"rationale": "This is incorrect. It is part of the routine admission process to ask the patient about any allergies. However, of the presented options, this is not the priority question for the nurse to ask."
 },
 {
-"text": "Negligence",
+"text": "Do you have an advance directive?",
+"isCorrect": false,
+"rationale": "This is incorrect. It is common for the nurse to ask a patient about an advance directive during the admission process. However, it is not more important than asking about the patient's greatest concern."
+},
+{
+"text": "What greatest concern are you dealing with today?",
 "isCorrect": true,
-"rationale": "This is correct. Negligence is the failure to use ordinary or reasonable care or the failure to act in a reasonable and prudent (careful) manner. It is negligent to assign a nurse to care for a patient without verifying the nurse has training, experience, and clinical competence in caring for such patients."
-},
-{
-"text": "Abandonment",
-"isCorrect": false,
-"rationale": "This is incorrect. Abandonment occurs if the nurse fails to provide care to a patient for whom the nurse has accepted responsibility. Nurses are legally responsible for the assignments they accept. If the assignment becomes overwhelming and unmanageable, the nurse is required to immediately contact the charge nurse or nursing supervisor for assistance."
+"rationale": "This is correct. It is most important for the nurse to ask the patient about the patient's greatest concerns. The answer to this question will be helpful in identifying any contributing factors to the patient's admitting diagnosis. Patient concerns need to be incorporated into the plan of care, making sure patient needs are met."
 }
 ]
 },
 {
 "questionNumber": 7,
 "type": "MCQ",
-"questionText": "Under which circumstance is deferral of informed consent allowable?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss common causes of malpractice litigation.",
-"page": 1668,
-"heading": "How Can You Minimize Your Malpractice Risks?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
+"questionText": "The nurse is providing care for a 55-year-old client with severe respiratory disease. Using Neuman's continuum as a resource, which stage of illness is the nurse most likely to identify as being applicable to this client?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 4,
+"heading": "Nurses Use Conceptual Models to Understand Health and Illness",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
 "cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "The patient is confused and does not appear to understand the plan of treatment or the consent form.",
+"text": "Moderate energy related to resiliency of age",
 "isCorrect": false,
-"rationale": "This is incorrect. Informed consent is the necessary authorization by the patient for any and all types of care and must be written and signed by the patient or the person legally responsible for the patient for hospital admission and for invasive or specialized treatments or diagnostic procedures."
+"rationale": "This is incorrect. Nursing theorist Betty Neuman (2002) views health as an expression of living energy available to an individual. The energy is displayed as a continuum with high energy (wellness) at one end and low energy (illness) at the opposite end. In the absence of a medical condition, age can be a contributing factor to where a client falls on Neuman's continuum."
 },
 {
-"text": "The patient who is in cardiac arrest is transported to the emergency department without accompaniment by family members.",
+"text": "High energy related to available treatment",
+"isCorrect": false,
+"rationale": "This is incorrect. With the client's condition being described as severe, it is unlikely the client will be placed in the moderate area of Neuman's continuum."
+},
+{
+"text": "Low energy related to compromised breathing",
 "isCorrect": true,
-"rationale": "This is correct. Informed consent is the client's permission to receive any and all types of care with full knowledge of the risks, benefits, costs, and alternatives. For hospital admission and for invasive or specialized treatments or diagnostic procedures, the consent must be written and signed by the client or their legal guardian. The law provides for implied or assumed consent in emergency situations; therefore, written consent is not necessary in an emergency if experts would agree that there was an immediate threat to the client's life or health."
+"rationale": "This is correct. Neuman's continuum states when more energy is expended than is generated, there is illness and possibly death. Because the client is diagnosed with severe respiratory disease, it is likely the client spends more energy breathing than the energy created."
 },
 {
-"text": "The surgeon requests that the patient be transferred to the surgical suite before the nurse has an opportunity to obtain the patient's informed consent.",
+"text": "Extremely low energy due to impending death",
 "isCorrect": false,
-"rationale": "This is incorrect. The patient's assigned physician, and not the nurse, is responsible for obtaining the patient's informed consent."
-},
-{
-"text": "The patient is crying due to severe pain and is unable to verbalize understanding of the treatment plan.",
-"isCorrect": false,
-"rationale": "This is incorrect. Severe pain is not an acceptable reason for failing to obtain informed consent."
+"rationale": "This is incorrect. Newman's continuum states that when more energy is expended than is generated, there is illness and possibly death. However, the scenario does not provide information that supports impending death."
 }
 ]
 },
 {
 "questionNumber": 8,
 "type": "MCQ",
-"questionText": "A 4-year-old patient is transported to the emergency department by their mother. The patient presents with bruising on the chest and facial contusions. The patient's mother reports that her boyfriend became angry and intentionally pushed the patient down the stairs. The patient appears to be experiencing significant pain. Which action does the nurse take first?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss common causes of malpractice litigation.",
-"page": 1667,
-"heading": "How Can You Minimize Your Malpractice Risks?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Physiological Integrity",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Legal",
+"questionText": "The nurse is providing care for a client who has been hospitalized for 6 weeks. Which nursing intervention is specifically focused on helping the patient cope with the emotional responses to prolonged hospitalization?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
+"page": 4,
+"heading": "Environmental Factors",
+"integratedProcesses": "Culture and Spirituality",
+"clientNeed": "Psychosocial Integrity",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Patient-Centered Care",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Notify the nursing supervisor of the suspected physical abuse.",
+"text": "Providing skin care every shift to prevent skin breakdown",
 "isCorrect": false,
-"rationale": "This is incorrect. The nurse should notify the nursing supervisor about the need to contact an outside agency (Child Protective Services) to report suspected physical abuse. However, the nurse's initial, primary responsibility is evaluation of the patient's physical condition and extent of their injuries."
+"rationale": "This is incorrect. Providing skin care is a physiological nursing intervention and does not address the patient's emotional status."
 },
 {
-"text": "Complete a physical assessment of the child.",
+"text": "Encouraging the patient to get up in a chair to eat meals",
+"isCorrect": false,
+"rationale": "This is incorrect. Encouraging the patient to get up into a chair for meals is a physiological nursing intervention, which may help the patient's sense of well-being. However, it is not totally focused on the patient's emotional status."
+},
+{
+"text": "Assisting the patient to ambulate in the hallway for several minutes each day",
+"isCorrect": false,
+"rationale": "This is incorrect. Assisting the patient to ambulate daily in the hall is a physiological nursing intervention, and while it may increase the patient's sense of well-being, it does not specifically meet the patient's emotional needs."
+},
+{
+"text": "Designating a corner of the patient's room to display personal mementos",
 "isCorrect": true,
-"rationale": "This is correct. Although the nurse must report suspected physical abuse to designated authorities (Child Protective Services), the primary responsibility of the nurse in this situation is evaluation of the patient's physical condition and extent of their injuries."
-},
-{
-"text": "Obtain an order for pain medication.",
-"isCorrect": false,
-"rationale": "This is incorrect. Pain medication should not be administered prior to completion of a thorough physical assessment."
-},
-{
-"text": "Notify Child Protective Services (CPS) of the suspected abuse.",
-"isCorrect": false,
-"rationale": "This is incorrect. Although the nurse must report to designated authorities (Child Protective Services) suspected physical abuse, the primary responsibility of the nurse in this situation is to evaluate the patient's physical condition and extent of their injuries for appropriate medical treatment to be provided."
+"rationale": "This is correct. The patient's environment can help nourish wellness. Helping the patient designate a corner of the room to display personal mementos can be healing and help the patient to cope with the prolonged hospitalization."
 }
 ]
 },
 {
 "questionNumber": 9,
 "type": "MCQ",
-"questionText": "The nurse provides care to an alert, oriented adult patient who is recovering from abdominal surgery. During a period of frustration, the patient states, 'I'm leaving the hospital. Remove my IV and surgical drains or I will do it myself.' In an effort to prevent the patient from removing the IV line and surgical drainage tubing, the nurse applies bilateral wrist restraints. Which terminology best describes the nurse's actions?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Compare and contrast intentional and unintentional torts.",
-"page": 1662,
-"heading": "What Is Civil Law?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"questionText": "The nurse is providing care for a patient with a terminal illness. Which is particularly valuable in helping a patient with a terminal illness maintain a view of wellness?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Identify factors that influence individuals' responses to illness.",
+"page": 5,
+"heading": "Religion and Spirituality",
+"integratedProcesses": "Culture and Spirituality",
+"clientNeed": "Psychosocial Integrity",
+"cognitiveLevel": "Comprehension [Understanding]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Assault",
+"text": "Family relationships",
 "isCorrect": false,
-"rationale": "This is incorrect. An assault occurs when a nurse intentionally places a patient in immediate fear of personal violence or offensive contact. An assault must include words expressing an intention to cause harm and some type of action. For example, a nurse has committed an assault if they say to the patient, 'I will slap you' and raises their hand as if to slap the patient. The combination of the words and action causes the patient to believe the threat will be carried out."
+"rationale": "This is incorrect. Family relationships can provide a loving, supportive source of comfort and reassurance but can sometimes cause the patient pain and a feeling of loneliness when faced with a terminal illness. Nutrition, sleep, and rest are healing but usually not as helpful to a patient with terminal illness as is spirituality."
 },
 {
-"text": "Fraud",
-"isCorrect": false,
-"rationale": "This is incorrect. Fraud is the false representation of significant facts by words or by conduct. It is intentionally misleading or deceiving another person to act (or not act) for the personal gain of the one committing the fraud. Methods of committing fraud include making false statements, falsifying documentation, or concealing information that should have been disclosed."
-},
-{
-"text": "False imprisonment",
+"text": "Spiritually",
 "isCorrect": true,
-"rationale": "This is correct. False imprisonment involves an intentional or willful detention of a patient without consent or authority to do so. Restraining a patient without consent is another form of civil false imprisonment. Competent patients have a right to leave an institution, even if it is harmful to their health. Whenever possible, have the person sign a form stating that they are aware that they are leaving against medical advice."
+"rationale": "This is correct. When patients are faced with a terminal illness, spirituality can help the patient maintain a sense of wellness."
 },
 {
-"text": "Quasi-intentional tort",
+"text": "Nutrition",
 "isCorrect": false,
-"rationale": "This is incorrect. Quasi-intentional torts involve actions that injure a person's reputation. The overall concept for these torts is defamation of character. All four of the essential elements of defamation of character must be present."
+"rationale": "This is incorrect. Nutrition is healing, but not helpful to the patient in maintaining a sense of wellness."
+},
+{
+"text": "Sleep and rest",
+"isCorrect": false,
+"rationale": "This is incorrect. Sleep and rest can be healing but do not help the patient to maintain a sense of wellness like spirituality."
 }
 ]
 },
 {
 "questionNumber": 10,
 "type": "MCQ",
-"questionText": "The nurse is assigned to provide care to a 74-year-old adult patient who is experiencing confusion. After completing the patient's physical assessment, the nurse forgets to raise the siderails on the patient's bed. Later in the day, the patient falls out of bed and sustains a hip fracture. The nurse is most likely to be sued on which grounds?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss common causes of malpractice litigation.",
-"page": 1664,
-"heading": "What Is Civil Law?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Legal",
-"difficulty": "Difficult",
+"questionText": "The nurse is providing care to a client with a history of schizophrenia who is diagnosed with a urinary tract infection. The nurse recognizes that which of the following is the most significant barrier this patient will face?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Identify factors that disrupt health.",
+"page": 7,
+"heading": "What Factors Disrupt Health?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Psychosocial Integrity",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Patient-Centered Care",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Malpractice",
+"text": "Chronic urinary incontinence",
+"isCorrect": false,
+"rationale": "This is incorrect. Chronic urinary incontinence is not commonly associated with urinary tract infection, and nothing in the scenario suggests that the patient is incontinent."
+},
+{
+"text": "Stigma associated with mental illness",
 "isCorrect": true,
-"rationale": "This is correct. Malpractice, which is one source of legal liability, means that a professional person has failed to act in a reasonable and prudent manner. If someone is harmed, the professional may be held liable. To win and recover damages (money) in a malpractice lawsuit, the plaintiff must prove four elements: duty, breach of duty, causation, and damages."
+"rationale": "This is correct. Mental illness is associated with a stigma that is usually a barrier, and even considered a debilitating handicap. Mental illness carries with it a stigma that may be diminishing slowly but is highly visible to those who suffer from its effects."
 },
 {
-"text": "Battery",
+"text": "Risk for recurring infections",
 "isCorrect": false,
-"rationale": "This is incorrect. A battery is committed when (1) an offensive or harmful physical contact is made to the client without their consent, or (2) there is unauthorized touching of a person's body by another person."
+"rationale": "This is incorrect. The patient is at risk for recurrent urinary tract infections, but this is not considered a debilitating handicap."
 },
 {
-"text": "Assault",
+"text": "Auditory hallucinations ('hearing things')",
 "isCorrect": false,
-"rationale": "This is incorrect. An assault occurs when a nurse intentionally places a patient in immediate fear of personal violence or offensive contact. An assault must include words expressing an intention to cause harm and some type of action. For example, a nurse has committed an assault if they say to the patient, 'I will slap you' and raises their hand as if to slap the patient. The combination of the words and action causes the patient to believe the threat will be carried out."
-},
-{
-"text": "Negligence",
-"isCorrect": false,
-"rationale": "This is incorrect. Negligence is the failure to use ordinary or reasonable care or the failure to act in a reasonable and prudent (careful) manner. While the nurse's actions were negligent, this is not the best response. The nurse is most likely to be sued for malpractice, as the plaintiff's legal team will likely be successful in proving the four required elements that must be present in order to establish malpractice: duty, breach of duty, causation, and damages."
+"rationale": "This is incorrect. Auditory hallucinations are associated with schizophrenia but have not been described as the most debilitating handicap."
 }
 ]
 },
 {
 "questionNumber": 11,
 "type": "MCQ",
-"questionText": "A nurse who administers the wrong medication to a patient does not notify anyone of the error. Instead, the nurse documents administration of the correct medication. Ultimately, the error is discovered and the nurse is reported to the state board of nursing. Which action does the state board of nursing take against the nurse in this situation?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Explain disciplinary actions for unacceptable nursing decisions or actions.",
-"page": 1660,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
+"questionText": "The nurse is attending to a 76-year-old patient who is being admitted for an acute myocardial infarction (heart attack). The doctor tells the patient that an angioplasty is necessary, and the patient agrees and signs the informed consent form. Which stage of illness behavior does the nurse identify the patient experiencing?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Describe the five stages of illness behavior.",
+"page": 9,
+"heading": "Stages of Illness Behavior",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Psychosocial Integrity",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Disciplinary action against the nurse's license to practice",
+"text": "Sick-role behavior",
+"isCorrect": false,
+"rationale": "This is incorrect. The patient entered the sick-role behavior phase when they admitted to the family that they were experiencing chest pain."
+},
+{
+"text": "Seeking professional care",
+"isCorrect": false,
+"rationale": "This is incorrect. When the patient decided to go to the emergency department for healthcare intervention, they entered the 'seeking professional care' stage of illness."
+},
+{
+"text": "Experiencing symptoms",
+"isCorrect": false,
+"rationale": "This is incorrect. The patient entered the 'experiencing symptoms' stage when they began having chest pain at home."
+},
+{
+"text": "Dependence on others",
 "isCorrect": true,
-"rationale": "This is correct. The state board of nursing is empowered to initiate disciplinary action against the nurse's license for professional misconduct."
-},
-{
-"text": "Criminal misdemeanor charges against the nurse",
-"isCorrect": false,
-"rationale": "This is incorrect. The board does not bring criminal charges or sentence the nurse to jail; that is the prerogative of the state prosecutor and judge."
-},
-{
-"text": "Medical malpractice lawsuit against the nurse",
-"isCorrect": false,
-"rationale": "This is incorrect. A medical malpractice lawsuit is filed by an individual who has been harmed or by the individual's designated legal representatives."
-},
-{
-"text": "Termination of the nurse's employment",
-"isCorrect": false,
-"rationale": "This is incorrect. While the nurse may be subject to termination of employment, the institution would be responsible for making this decision."
+"rationale": "This is correct. This patient is experiencing the 'dependence on others' stage of illness behavior; the patient has accepted the diagnosis and treatment of the healthcare provider."
 }
 ]
 },
 {
 "questionNumber": 12,
 "type": "MCQ",
-"questionText": "The nurse provides care to a patient who is diagnosed with a sexually transmitted infection (STI). The nurse explains to the patient that the STI diagnosis must be reported to the local health department based on which regulation?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Apply state mandatory reporting laws to patient care situations.",
-"page": 1656,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Knowledge [Remembering]",
-"concept": "Legal",
+"questionText": "Many healthcare providers define illness as pathology; however, people experience illness rather than define it as a pathology. In which manner do most people experience illness?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Describe the various ways that people experience health and illness.",
+"page": 9,
+"heading": "Nurses Understand Health and Illness as Individual Experiences",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
+"cognitiveLevel": "Comprehension [Understanding]",
+"concept": "Patient-Centered Care",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Americans with Disabilities Act (ADA)",
+"text": "'Feeling lousy,' a true sense of not being all right",
 "isCorrect": false,
-"rationale": "This is incorrect. The ADA protects those with disabilities from discrimination."
+"rationale": "This is incorrect. 'Feeling lousy' is inappropriate, as many people do not feel 'lousy' when they are ill. For example, hypertension is an illness that may have no symptoms. Similarly, patients may have chronic disease that is well managed and therefore does not make them feel ill."
 },
 {
-"text": "Safe harbor laws",
-"isCorrect": false,
-"rationale": "This is incorrect. Safe harbor laws, found in the nurse practice act or other state laws, provide for exceptions to certain laws. They protect you from being suspended, terminated, disciplined, or discriminated against for refusing to do (or not do) something you believe would be harmful to a client."
-},
-{
-"text": "Good Samaritan law",
-"isCorrect": false,
-"rationale": "This is incorrect. The Good Samaritan law is designed to protect from liability those people who assist in an emergency situation outside of the workplace."
-},
-{
-"text": "Mandatory reporting",
+"text": "A change in the way they feel or a disruption in their typical life",
 "isCorrect": true,
-"rationale": "This is correct. Mandatory reporting is state law that requires health practitioners to report STIs to reduce the incidences of more people being infected/reinfected."
+"rationale": "This is correct. People typically describe their illness in terms of how it makes them feel or the effect it has on day-to-day life."
+},
+{
+"text": "Something to be dreaded and avoided, if at all possible",
+"isCorrect": false,
+"rationale": "This is incorrect. 'Something to be dreaded and avoided' is also not accurate. If a person has an external locus of control, they may view illness as a consequence of actions taken. From this viewpoint, the person may have little control over whether illness can be avoided."
+},
+{
+"text": "An experience that offers a potential for learning and spiritual growth",
+"isCorrect": false,
+"rationale": "This is incorrect. Although some people do grow and learn in the face of illness, most people do not hold such a positive view about illness and the question asks how people experience illness."
 }
 ]
 },
 {
 "questionNumber": 13,
 "type": "MCQ",
-"questionText": "The night shift nurse is assigned to care for a patient who is confused and who frequently attempts to climb out of bed. During one of the patient's attempts to get up, the nurse pushes the patient back onto the bed. The nurse then shows the patient a set of limb restraints and states, 'If you keep trying to get up, I will tie you to the bed and leave you there until tomorrow morning.' The nurse's actions are best described as:",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss common causes of malpractice litigation.",
-"page": 1662,
-"heading": "What Is Civil Law?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"questionText": "Dunn believes that an individual's state of health should be evaluated in the context of the person's environment. Which is an approach that illustrates Dunn's belief?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Compare and contrast three models of health and illness.",
+"page": 12,
+"heading": "Nurses Use Conceptual Models to Understand Health and Illness",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Health Promotion and Maintenance",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Assault and battery.",
+"text": "An unhealthy physical environment, characterized by poor living conditions, always has a negative effect on an individual's health.",
+"isCorrect": false,
+"rationale": "This is incorrect. The effect of poor living conditions may be offset by the presence of loving family and friends. Poverty does not always have a negative effect on health."
+},
+{
+"text": "Adequate income, food, and shelter create a healthful environment and always improve physical health status.",
+"isCorrect": false,
+"rationale": "This is incorrect. The presence of food, shelter, and clothing does not always convey protective health, as loneliness and hopelessness may counteract these positive influences."
+},
+{
+"text": "Physical environment, family, and social support may help or hinder the health status of an individual.",
 "isCorrect": true,
-"rationale": "This is correct. Assault involves intentionally placing a patient in immediate fear of personal violence or offensive contact. An assault must include words expressing an intention to cause harm and some type of action. Assault occurred when the nurse showed the patient a set of restraints while threatening to tie up the patient until morning. Battery involves touching the patient without their permission or in a way that is forceful. Pushing the patient onto the bed is considered battery."
+"rationale": "This is correct. The home environment, community, family, friends, and support system all influence health status. The balance among these variables has a net positive or negative effect on a client's health status."
 },
 {
-"text": "Libel and slander.",
+"text": "The environment that should always be assessed is the client's immediate surroundings; extended boundaries do not apply in an ill state.",
 "isCorrect": false,
-"rationale": "This is incorrect. Libel is the written or published form of defamation of character. Slander is the spoken or verbal form of defamation of character."
-},
-{
-"text": "False imprisonment.",
-"isCorrect": false,
-"rationale": "This is incorrect. False imprisonment is the restraint of a person without proper legal authorization. While use of restraints was threatened, the patient was not restrained."
-},
-{
-"text": "Medical malpractice.",
-"isCorrect": false,
-"rationale": "This is incorrect. Medical malpractice refers to a lawsuit brought against a healthcare provider for damages (e.g., money) when there has been death of, injury to, or other loss to the person being treated."
+"rationale": "This is incorrect. When examining the client's environment, extended boundaries must be considered, especially when providing community-based care."
 }
 ]
 },
 {
 "questionNumber": 14,
 "type": "MCQ",
-"questionText": "The unit manager stops the staff nurse in the hallway to discuss concerns about the staff nurse's delivery of unsafe patient care. The unit manager's comments are based on false information reported by a disgruntled patient. The conversation is overheard by other members of the healthcare team. Which term describes the unit manager's behavior?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss basic principles of criminal law that affect nursing practice.",
-"page": 1662,
-"heading": "What Is Civil Law?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
+"questionText": "Some people readily become ill when under stress, while others are able to deal with tremendous stress and remain physically and mentally healthy. This disparity is affected by a person's level of hardiness. In which manner does the nurse apply this knowledge to nursing care?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 2,
+"heading": "Hardiness",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Psychosocial Integrity",
 "cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Assault",
+"text": "The nurse cannot use the presented information. People are innately hardy or not, a state that the nurse must merely recognize.",
 "isCorrect": false,
-"rationale": "This is incorrect. An assault occurs when a nurse intentionally places a patient in immediate fear of personal violence or offensive contact. An assault must include words expressing an intention to cause harm and some type of action. For example, a nurse has committed an assault if they say to the patient, 'I will slap you' and raises their hand as if to slap the patient. The combination of the words and action causes the patient to believe the threat will be carried out."
+"rationale": "This is incorrect. The information presented in the scenario is useful in helping the nurse to recognize the presence or lack of hardiness in patients."
 },
 {
-"text": "Battery",
+"text": "Nurses need to encourage all people to develop some level of hardiness to help them get through difficult physical and emotional times.",
 "isCorrect": false,
-"rationale": "This is incorrect. A battery is committed when (1) an offensive or harmful physical contact is made to the client without their consent, or (2) there is unauthorized touching of a person's body by another person."
+"rationale": "This is incorrect. As hardiness is a personality trait, it is unlikely that the nurse can teach or otherwise encourage the development of hardiness."
 },
 {
-"text": "Slander",
+"text": "Nurses need to assess for their own level of hardiness. If nurses are hardy, they will be better nurses; if not, nurses can learn more about hardiness.",
+"isCorrect": false,
+"rationale": "This is incorrect. The nurse's own awareness of a level of hardiness helps the nurse understand the personal response to stress, but hardiness does not necessarily make a better nurse."
+},
+{
+"text": "Nurses assessing for hardiness in patients can encourage hardy patients to learn about their illness as a means for them to be more comfortable.",
 "isCorrect": true,
-"rationale": "This is correct. Slander is the spoken or verbal form of defamation of character. To establish slander, the comments regarding the person have to be false, communicated or overheard by a third party, and defame the nurse's character."
-},
-{
-"text": "Libel",
-"isCorrect": false,
-"rationale": "This is incorrect. Libel is the written or published form of defamation of character."
+"rationale": "This is correct. Hardiness is a personality trait that helps many to cope with stress and illness."
 }
 ]
 },
 {
 "questionNumber": 15,
 "type": "MCQ",
-"questionText": "The nurse enters a patient's room with a portable computer station to assess the patient. The nurse does not log out while assisting a patient to the bathroom. A visitor reads the patient's health record and begins to question the nurse about patient information. This is an example of:",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss common causes of malpractice litigation.",
-"page": 1669,
-"heading": "How Can You Minimize Your Malpractice Risks?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
+"questionText": "The new graduate nurse is working with a nurse mentor. Which advice from the mentor is best suited when the new graduate is preparing to interact with the first patient?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 11,
+"heading": "What Does It Mean to Communicate Care and Concern?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Safe and Effective Care Environment: Management of Care",
 "cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Quasi-intentional torts.",
+"text": "Be maximally attentive to the patient at all times.",
 "isCorrect": false,
-"rationale": "This is incorrect. Quasi-intentional torts involve actions that injure a person's reputation. The overall concept for these torts is defamation of character. There is no evidence of quasi-intentional torts in the described scenario."
+"rationale": "This is incorrect. Nurses need to be aware of the need to communicate care and concern, and being maximally attentive is appropriate. However, this advice is not the best for a new graduate preparing to meet the first patient."
 },
 {
-"text": "Breach of confidentiality.",
+"text": "Take a few moments to settle into the situation.",
 "isCorrect": true,
-"rationale": "This is correct. Even though it was an inadvertent act in this situation, failure to maintain patient confidentiality and privacy are applicable to patient records. By not closing the patient's electronic medical record, the nurse made it available to someone not directly involved with the patient's care. Family and friends do not have the right to have access to the patient's chart by virtue of their relationship to the patient."
+"rationale": "This is correct. The best advice a nurse mentor can give to new graduates preparing to meet their first patient is to take a few moments to settle into the situation. This can help establish a therapeutic relationship and can facilitate communication."
 },
 {
-"text": "Vicarious liability.",
+"text": "Accept the patient regardless of background.",
 "isCorrect": false,
-"rationale": "This is incorrect. Vicarious liability states the nurse is legally accountable for personal actions or inactions. This is a common legal principle that should guide the nurse's behavior."
+"rationale": "This is incorrect. Accepting a patient regardless of the patient's background demonstrates acceptance. Nurses need to always be accepting of their patients, but in this scenario, the new graduate will benefit best from the advice about taking a few moments to settle in."
 },
 {
-"text": "Character defamation.",
+"text": "Create a broad attitude of enjoyment of the patient.",
 "isCorrect": false,
-"rationale": "This is incorrect. Defamation of character is central to quasi-intentional torts, which involve actions that injure a person's reputation. Based on the scenario, there is no evidence that defamation of character occurred."
+"rationale": "This is incorrect. An attitude of enjoying patients will help the nurse to establish an attitude of caring. However, the new graduate in this scenario will benefit best from the advice of settling in."
 }
 ]
 },
 {
 "questionNumber": 16,
 "type": "MCQ",
-"questionText": "The nursing student asks the nurse preceptor to explain the purpose of accurate documentation in the electronic health record (EHR). Which response does the nurse choose?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Identify strategies to minimize liability in nursing practice.",
-"page": 1668,
-"heading": "How Can You Minimize Your Malpractice Risks?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Communication",
-"difficulty": "Moderate",
+"questionText": "When transferring a patient from a hospital to a long-term care facility, which action by the nurse is most helpful in facilitating the patient's planning and emotional adjustment?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 14,
+"heading": "Maintain Trust During Transitions",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Charting communicates to members of the healthcare team the patient's care and responses during my shift.",
+"text": "Notify the patient and family as much in advance of the transfer as possible.",
 "isCorrect": true,
-"rationale": "This is correct. Accurate charting is needed to clearly communicate the patient's care and responses to other members of the healthcare team, not just the other nurses. This statement reflects the nurse's understanding of this principle."
+"rationale": "This is correct. Notifying the patient and family well in advance of the transfer allows them time to adjust emotionally and to make any necessary plans."
 },
 {
-"text": "Charting allows me to share with the healthcare team my opinions of what happened with the patient.",
+"text": "Send a complete copy of the patient's medical records to the new facility.",
 "isCorrect": false,
-"rationale": "This is incorrect. The nurse's opinions are not to be placed in a chart because they are not factual."
+"rationale": "This is incorrect. A copy of the records is usually sent; however, this action does very little to assist with the patient's emotional status or planning."
 },
 {
-"text": "Charting helps the other nurses understand the patient care provided during my shift.",
+"text": "Carefully coordinate the transfer with the long-term facility to keep it smooth.",
 "isCorrect": false,
-"rationale": "This is incorrect. While accurate charting does help nurses understand the nature of the patient care that is provided during various shifts, the need for communication extends to non-nursing team members as well. Accurate documentation is needed to clearly communicate the patient's care and responses to all members of the interdisciplinary healthcare team."
+"rationale": "This is incorrect. The nurse does coordinate the transfer with the receiving facility; however, this action does very little to assist with the patient's emotional status or planning."
 },
 {
-"text": "Charting is required to comply with practice guidelines and institutional policies.",
+"text": "Help arrange for transportation and accompany the patient to the transport vehicle.",
 "isCorrect": false,
-"rationale": "This is incorrect. While charting is important to comply with standards of practice and institutional policy, compliance is not the main purpose for ensuring accurate charting."
+"rationale": "This is incorrect. Someone from the hospital may or may not accompany the patient in the car, or the transfer may be by ambulance. Either way, this action will not help the patient and family do the necessary planning for the transfer."
 }
 ]
 },
 {
 "questionNumber": 17,
 "type": "MCQ",
-"questionText": "The staff nurse asks the clinical nurse leader to explain the main purpose of an incident report. Which response does the clinical nurse leader choose?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Identify strategies to minimize liability in nursing practice.",
-"page": 1668,
-"heading": "How Can You Minimize Your Malpractice Risks?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Communication",
+"questionText": "A parent of three small children has had nausea, vomiting, and extreme fatigue for the past 2 days and calls the children's grandmother for assistance with caring for the children. Which illness behavior is the parent experiencing?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Describe the five stages of illness behavior.",
+"page": 9,
+"heading": "Stages of Illness Behavior",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Patient-Centered Care",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Incident reports are used by nurse managers to discipline nursing staff for making errors.",
-"isCorrect": false,
-"rationale": "This is incorrect. Although incident reports have been used to discipline nurses, this is not the current trend and is not their purpose."
-},
-{
-"text": "If an error in care occurs, an incident report must be kept in the patient's medical record in case of a lawsuit.",
-"isCorrect": false,
-"rationale": "This is incorrect. Incident reports are not a part of the patient's medical record."
-},
-{
-"text": "To promote open communication, a copy of the incident report should be provided to the patient.",
-"isCorrect": false,
-"rationale": "This is incorrect. Incident reports should not be shared with the patient."
-},
-{
-"text": "The risk management team uses incident reports to prevent the incident from recurring.",
+"text": "Sick role behavior",
 "isCorrect": true,
-"rationale": "This is correct. The main function of an incident report is to prevent the incident from happening again. The report allows the nurse manager and risk management to evaluate the context in which the incident occurred and to identify appropriate strategies to prevent a recurrence."
+"rationale": "This is correct. The parent is assuming sick role behavior when identifying that the child is ill."
+},
+{
+"text": "Dependence on others",
+"isCorrect": false,
+"rationale": "This is incorrect. By telling a family member of the illness, the parent is relieved of normal duties and caring for the children. However, dependence on others actually occurs when the client accepts a diagnosis and treatment from the healthcare provider."
+},
+{
+"text": "Seeking professional care",
+"isCorrect": false,
+"rationale": "This is incorrect. Seeking professional care occurs after the sick role behavior stage. During this stage, the client makes the decision of being ill and that professional healthcare is needed."
+},
+{
+"text": "Experiencing symptoms",
+"isCorrect": false,
+"rationale": "This is incorrect. The parent is experiencing symptoms but has moved into sick role behavior when seeking assistance with responsibilities (caring for the children)."
 }
 ]
 },
 {
 "questionNumber": 18,
 "type": "MCQ",
-"questionText": "Effective delegation is a vital part of the nurse's responsibilities. Which factor is most important for the nurse to consider when correctly delegating a nursing task?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Identify strategies to minimize liability in nursing practice.",
-"page": 1669,
-"heading": "How Can You Minimize Your Malpractice Risks?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Professionalism",
-"difficulty": "Moderate",
+"questionText": "The nurse assigns a nursing assistant the task of ambulating a group of patients on the medical-surgical unit. Later in the morning, the nursing assistant tells the nurse, 'Some of my patients feel very sick but want to get out of bed. Others say they feel well but don't want to get out of bed. What should I do?' Which is the most appropriate response by the nurse?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
+"page": 14,
+"heading": "Planning Interventions/Implementation",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "The delegatee's level of experience",
+"text": "'All patients are supposed to be out of bed today, so do the best you can with them.'",
+"isCorrect": false,
+"rationale": "This is incorrect. The nurse's response to 'do the best you can' is not appropriate. The nurse's instructions to the nursing assistant must be clear and concise and include a timeline."
+},
+{
+"text": "'This is not uncommon. Sometimes you have to push some patients more than others.'",
+"isCorrect": false,
+"rationale": "This is incorrect. All patients may, indeed, have prescriptions to get out of bed, but telling the nursing assistant to do the best or to push the patients does not recognize that patients respond to illness and wellness differently; nor does it consider the patient-centered approach to care."
+},
+{
+"text": "'All patients may respond to illness differently. Explain that they must be out of bed today.'",
+"isCorrect": false,
+"rationale": "This is incorrect. The nursing assistant is not responsible for explaining to patients the reasons for getting out of bed. The nurse needs to assume this role."
+},
+{
+"text": "'Get the patients up if they want to get up, and help the others to ambulate later in the day.'",
 "isCorrect": true,
-"rationale": "This is correct. Effective delegation requires the nurse to consider the education level and experience of the person being delegated a task. This enables the nurse to accurately align the patient's care needs with the patient assignments. Once the nurse knows the delegatee's educational level and experience, patient care assignments can be given with consideration to patient requests."
-},
-{
-"text": "The job description of the delegatee",
-"isCorrect": false,
-"rationale": "This is incorrect. While the delegatee's job description can provide insight into their scope of responsibilities, the delegate must possess the necessary skill level to safely complete the task."
-},
-{
-"text": "The patient's opinion of the delegatee",
-"isCorrect": false,
-"rationale": "This is incorrect. The patient's opinion and preferences should be taken into consideration. However, this is not the most important factor to consider when delegating a task. As a priority, safe delegation requires the nurse to consider the educational level and experience of the person being delegated a task."
-},
-{
-"text": "The delegatee's sense of confidence",
-"isCorrect": false,
-"rationale": "This is incorrect. The delegatee's level of confidence may or may not be reflective of the individual's actual skill level. The priority considerations include the delegatee's education level and experience."
+"rationale": "This is correct. It is appropriate to ambulate patients who want to get out of bed and allow others to ambulate later. This promotes and facilitates patient-centered care and allows the patient some control and decision making in their environment."
 }
 ]
 },
 {
 "questionNumber": 19,
 "type": "MCQ",
-"questionText": "Which issue is directly addressed by safe harbor laws?",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Identify seven rights of nurses within the healthcare workplace.",
-"page": 1672,
-"heading": "How Can You Minimize Your Malpractice Risks?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Professionalism",
-"difficulty": "Difficult",
+"questionText": "A patient who is 80 years old arrives in the emergency department experiencing a severe heart attack. The patient's condition is deteriorating and the physician informs the spouse that the patient is not expected to survive. The spouse becomes distraught and tells the nurse, 'We have been married for 60 years. What am I going to do?' Which is the most appropriate response by the nurse?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 14,
+"heading": "Permanent Loss",
+"integratedProcesses": "Caring",
+"clientNeed": "Psychosocial Integrity",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Patient-Centered Care",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Guarantee of peer review",
+"text": "'You had a good life together. You just need to understand that death is part of life, too.'",
+"isCorrect": false,
+"rationale": "This is incorrect. At this most painful time, it is not appropriate, nor can it be expected that a spouse will accept at this time that death is part of life."
+},
+{
+"text": "'I understand how you feel, but living to 80 years of age is a good long life.'",
+"isCorrect": false,
+"rationale": "This is incorrect. An attempt to comfort a spouse by mentioning the age of the patient demonstrates ageism and will not comfort a spouse at this time."
+},
+{
+"text": "'I will get a social worker to see you for some help you may need at home.'",
+"isCorrect": false,
+"rationale": "This is incorrect. It is appropriate to contact a social worker for home assistance; however, this can be done after recognizing and acknowledging the spouse's loss."
+},
+{
+"text": "'I understand that this is an incredible and unexpected loss for you.'",
 "isCorrect": true,
-"rationale": "This is correct. Safe harbor laws provide for exceptions to certain laws. They protect nurses from being suspended, terminated, disciplined, or discriminated against for refusing to do (or not do) something they believe would be harmful to a client. Under these laws, the nurse has a right to ask for peer review of either the situation or directives they believe would violate the nursing practice act. The nurse must follow the guidelines required under the safe harbor provisions."
-},
-{
-"text": "Prevention of workplace violence",
-"isCorrect": false,
-"rationale": "This is incorrect. The Nurses' Bill of Rights provides a framework for employers to understand what nurses need for a safe work environment and to support nurses as they address a variety of issues, including workplace violence."
-},
-{
-"text": "Exemption from mandatory overtime",
-"isCorrect": false,
-"rationale": "This is incorrect. The Nurses' Bill of Rights provides a framework for employers to understand what nurses need for a safe work environment and to support nurses as they address a variety of issues, including mandatory overtime."
-},
-{
-"text": "Assurance of safe staffing",
-"isCorrect": false,
-"rationale": "This is incorrect. The Nurses' Bill of Rights provides a framework for employers to understand what nurses need for a safe work environment and to support nurses as they address a variety of issues, including unsafe staffing."
+"rationale": "This is correct. The death of a spouse is no less traumatic for an older adult than it would be for a young spouse. Losing someone with whom one has spent most of one's life is an incredible loss, whether it is expected or unexpected. The best response is to validate this with the spouse."
 }
 ]
 },
 {
 "questionNumber": 20,
-"type": "SATA",
-"questionText": "Which nursing action constitutes invasion of privacy? Select all that apply.",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss basic principles of criminal law that affect nursing practice.",
-"page": 1663,
-"heading": "What Is Civil Law?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
+"type": "MCQ",
+"questionText": "Living in a healthy family is an important dimension of wellness. Which condition most accurately describes a characteristic of healthy families?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Describe the various ways that people experience health and illness.",
+"page": 5,
+"heading": "Personal Relationships",
+"integratedProcesses": "Culture and Spirituality",
+"clientNeed": "Health Promotion and Maintenance",
 "cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Legal",
-"difficulty": "Easy",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Searching the patient's belongings without permission",
+"text": "A family in which individual members live a health-promoting lifestyle",
 "isCorrect": true,
-"rationale": "This is correct. Searching patients' private items without permission is an invasion of privacy."
+"rationale": "This is correct. The most accurately stated characteristic of healthy families is one that focuses on health-promoting lifestyles for its members."
 },
 {
-"text": "Reviewing the patient's plan of care with nursing team members in the hospital cafeteria",
-"isCorrect": true,
-"rationale": "This is correct. Invasion of privacy includes discussing patient matters in a public setting."
-},
-{
-"text": "Discussing an unconscious patient's treatment plan with the patient's power of attorney",
+"text": "A family that responses to its members' needs only during serious illness",
 "isCorrect": false,
-"rationale": "This is incorrect. A durable power of attorney is a document empowering a person selected by the patient to make healthcare decisions in the event that the patient is unable to do so. It is permissible to discuss pertinent issues related to the welfare of the patient with the person holding the power of attorney."
+"rationale": "This is incorrect. Healthy families do not necessarily respond to health issues only in times of serious illness."
 },
 {
-"text": "Photographing a patient's leg wound without patient consent",
-"isCorrect": true,
-"rationale": "This is correct. Invasion of privacy violates a person's right to be free from unwanted interference in their private affairs. Although appropriate for wound documentation, photographing patients without their permission is an example of invasion of privacy."
-},
-{
-"text": "Concealing information that should have been disclosed",
+"text": "A family that may avoid or withhold the truth to prevent hurting someone's feelings",
 "isCorrect": false,
-"rationale": "This is incorrect. Concealing information that should have been disclosed constitutes fraud."
+"rationale": "This is incorrect. A healthy family is very open about expressing feelings and disagreements rather than squelching feelings to avoid conflict."
+},
+{
+"text": "A family that understands a family member is powerless when experiencing severe illness",
+"isCorrect": false,
+"rationale": "This is incorrect. Healthy families view the family as capable and successful in meeting and responding to illness as opposed to feeling powerless over illness."
 }
 ]
 },
 {
 "questionNumber": 21,
-"type": "SATA",
-"questionText": "The patient asks the nurse, 'Will you please help me understand advance directives?' Which information does the nurse include in the response? Select all that apply.",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Discuss the effects of the Patient Self-Determination Act (PSDA) on healthcare practices.",
-"page": 1656,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"type": "MCQ",
+"questionText": "The home-care nurse is providing care for a patient. After several visits and review of the plan of care, the nurse notices the patient does not follow the prescribed diet and exercise regimen. Which is the most appropriate action by the nurse?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
+"page": 12,
+"heading": "Planning Interventions/Implementation",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "'Advance directives establish the patient's choices about healthcare treatment if the patient should become unable to communicate.'",
-"isCorrect": true,
-"rationale": "This is correct. Advance directives establish the patient's wishes regarding future healthcare should they become unable to give instructions."
-},
-{
-"text": "'Legal requirements for advance directives are the same in every state.'",
+"text": "Discharge the patient from home care because of noncompliance to the medical regimen.",
 "isCorrect": false,
-"rationale": "This is incorrect. As a legal document, the requirements for living wills may vary from state to state. However, language common in living wills gives the person the opportunity to specify treatment in numerous areas."
+"rationale": "This is incorrect. Noncompliance often occurs because the effort, inconvenience, or pain involved with the plan is too much for some patients to handle. They probably do not refuse to carry out a plan of care simply out of stubbornness, hostility toward healthcare providers, or wanton disregard for their own welfare."
 },
 {
-"text": "'A patient may change the advance directive by telling the attending physician or by making changes in writing.'",
-"isCorrect": true,
-"rationale": "This is correct. A person may change or revoke an advance directive at any time. Changes and written revocation should be signed and dated and shared with the patient's physician. Even without an official written change, orally expressed direction to the physician generally has priority over any statement made in an advance directive as long as the patient is able to decide for themself and can communicate their wishes."
+"text": "Continue to teach and reinforce the importance of the diet and exercise regimen.",
+"isCorrect": false,
+"rationale": "This is incorrect. Patients may fail to comply with proposed medical regimens or a plan of care if the plan has no cultural or personal relevance for the patient (or family). The nurse must consider the patient's understanding of the plan, knowledge level, and feasibility in terms of available support, time, energy, and finances."
 },
 {
-"text": "'Advance directives help to make sure the patient receives as much or as little care as they wish.'",
-"isCorrect": true,
-"rationale": "This is correct. A patient may specify actions in a living will to ensure their plan of care includes as much or as little care as they wish to receive."
+"text": "Notify the healthcare provider of the patient's refusal to follow the diet and exercise regimen.",
+"isCorrect": false,
+"rationale": "This is incorrect. If after assessing the problem and revising the plan, the patient continues to refuse to follow the plan, then the physician can be notified and the patient possibly discharged. However, these are not the first and most appropriate actions by the nurse."
 },
 {
-"text": "'Examples of advance directives include living wills and durable power of attorney for healthcare.'",
+"text": "Identify why the patient is not following the plan, and revise the plan in collaboration with the patient.",
 "isCorrect": true,
-"rationale": "This is correct. There are two types of legal written advance directives: the living will and the durable power of attorney for healthcare."
+"rationale": "This is correct. The challenge and best action by the nurse is to develop an individualized plan of care in collaboration with the patient, based on mutual goals and respect."
 }
 ]
 },
 {
 "questionNumber": 22,
-"type": "SATA",
-"questionText": "The nurse educator teaches a cohort of nursing students about intentional and unintentional torts. Which information does the nurse educator include in the discussion? Select all that apply.",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Compare and contrast intentional and unintentional torts.",
-"page": 1662,
-"heading": "What Is Criminal Law?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"type": "MCQ",
+"questionText": "Which condition listed below is not considered a chronic disease?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Which is a classification of chronic disease?",
+"page": 10,
+"heading": "Procedure",
+"integratedProcesses": "Chronic diseases",
+"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Patient-Centered Care",
+"difficulty": "Easy",
 "options": [
 {
-"text": "Negligence is an example of an intentional tort.",
+"text": "Diabetes",
 "isCorrect": false,
-"rationale": "This is incorrect. Negligence is an example of an unintentional tort."
+"rationale": "This is incorrect. Diabetes is a chronic disease that occurs when the pancreas doesn't produce enough insulin, and if left untreated can cause serious health problems."
 },
 {
-"text": "Battery is an example of an intentional tort.",
-"isCorrect": true,
-"rationale": "This is correct. Battery is among the most commonly encountered intentional torts in nursing."
-},
-{
-"text": "Intentional torts include invasion of privacy.",
-"isCorrect": true,
-"rationale": "This is correct. Invasion of privacy is an intentional tort."
-},
-{
-"text": "Malpractice is a type of unintentional tort.",
-"isCorrect": true,
-"rationale": "This is correct. Malpractice is a type of unintentional tort."
-},
-{
-"text": "False imprisonment is an example of an unintentional tort.",
+"text": "Kidney disease",
 "isCorrect": false,
-"rationale": "This is incorrect. False imprisonment is an example of an intentional tort."
+"rationale": "This is incorrect. Kidney disease is a gradual loss of kidney function. The kidney damage happens slowly over a period of time and can also cause other health problems."
+},
+{
+"text": "Arthritis",
+"isCorrect": false,
+"rationale": "This is incorrect. Rheumatoid arthritis is a chronic inflammatory disease that affects the joints. Arthritis can occur with other chronic diseases such as hypertension, diabetes, and heart disease."
+},
+{
+"text": "Mononucleosis",
+"isCorrect": true,
+"rationale": "This is correct. Mononucleosis is not a chronic disease; it is a virus that is transmitted through saliva and is very contagious. Mono clears up in a few weeks while chronic disease is noninfectious and lasts for a long time."
 }
 ]
 },
 {
 "questionNumber": 23,
-"type": "SATA",
-"questionText": "A patient files a court complaint related to care that was delivered during a recent hospital admission. In an effort to prevent a trial hearing, the hospital's legal team attempts to resolve the patient dispute. Which processes represent methods of alternative dispute resolution? Select all that apply.",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Describe the phases of the litigation process in a nursing malpractice case.",
-"page": 1665,
-"heading": "Litigation in Civil Claims",
-"integratedProcesses": "Communication and Documentation",
-"clientNeed": "Safe and Effective Care Environment",
-"cognitiveLevel": "Knowledge [Remembering]",
-"concept": "Legal",
+"type": "MCQ",
+"questionText": "The nurse is admitting a patient with heart disease to the cardiac unit. When answering questions related to health history, the patient's responses are lengthy and time-consuming. Which is the most appropriate action by the nurse?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 14,
+"heading": "How Can I Honor Each Client's Unique Health/Illness Experience?",
+"integratedProcesses": "Caring",
+"clientNeed": "Psychosocial Integrity",
+"cognitiveLevel": "Application [Applying]",
+"concept": "Patient-Centered Care",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "Deposition",
+"text": "Recognize that the patient may be lonely and just wants to talk to someone.",
 "isCorrect": false,
-"rationale": "This is incorrect. During litigation, the discovery phase is the point at which both parties gather facts and evidence about the case that can be used at trial. Processes through which attorneys may obtain discovery include depositions. During a deposition, one or more attorneys orally question parties to the lawsuit under oath, as though they were testifying in court."
+"rationale": "This is incorrect. Most people are hungry for someone to listen to them, and meeting the patient's needs will assist in developing a good nurse-patient relationship. However, the nurse needs to concentrate on gathering assessment information by focusing on the patient's conversation."
 },
 {
-"text": "Mediation",
-"isCorrect": true,
-"rationale": "This is correct. Lawyers and involved parties usually try to resolve disputes before going to trial. The three most common methods of alternative dispute resolution include mediation, arbitration, and negotiation."
-},
-{
-"text": "Litigation",
+"text": "Set a time limit, and inform the patient of your time frame to complete the assessment.",
 "isCorrect": false,
-"rationale": "This is incorrect. Litigation is the formal process wherein the legal issues, rights, and duties between the parties are heard and decided (adjudicated)."
+"rationale": "This is incorrect. The best action is to focus on what the patient or family has to say without emphasizing a set time frame, which will diminish the patient's ability to relate to the nurse."
 },
 {
-"text": "Arbitration",
-"isCorrect": true,
-"rationale": "This is correct. Usually, in an effort to avoid a trial, lawyers and involved parties try to resolve disputes. The three most common methods of alternative dispute resolution include arbitration, mediation, and negotiation."
+"text": "Anticipate the patient's answers, and quickly go on to the next question.",
+"isCorrect": false,
+"rationale": "This is incorrect. Often, listeners are so busy thinking about what they want to say that they fail to really listen. Anticipating a patient's responses interferes with accuracy of information."
 },
 {
-"text": "Negotiation",
+"text": "Be attentive, focus on what the patient has to say, and respond accordingly.",
 "isCorrect": true,
-"rationale": "This is correct. In an attempt to resolve disputes before going to trial, lawyers and involved parties usually try to use a method of alternative dispute resolution. The three most common methods of alternative dispute resolution include negotiation, mediation, and arbitration."
+"rationale": "This is correct. Being maximally attentive is an important factor in facilitating communication."
 }
 ]
 },
 {
 "questionNumber": 24,
-"type": "SATA",
-"questionText": "The nursing student creates a presentation about the impact of the American Nurses Association (ANA) Code of Ethics on nursing practice. Which information does the nursing student include in the presentation? Select all that apply.",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Identify strategies to minimize liability in nursing practice.",
-"page": 1658,
-"heading": "What Laws and Regulations Guide Nursing Practice?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeeds": "Safe and Effective Care Environment",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Ethics",
+"type": "MCQ",
+"questionText": "A patient who is 30 years of age has been experiencing joint pain for several months and is diagnosed with rheumatoid arthritis. The patient tells the nurse, 'This can't be happening to me. I don't understand this.' Which statement best describes the nurse's understanding of the patient's comments?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Identify factors that influence individuals' responses to illness.",
+"page": 12,
+"heading": "How Do People Experience Health and Illness?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
 "difficulty": "Moderate",
 "options": [
 {
-"text": "The ANA Code of Ethics is a collection of federal and state laws.",
+"text": "The patient is too young to possess the ability to cope with this diagnosis.",
 "isCorrect": false,
-"rationale": "This is incorrect. The ANA Code of Ethics is not a law but, rather, standards of professional responsibilities of the nurse using behavior that is ethical and expected by or acceptable to the profession."
+"rationale": "This is incorrect. Age is not the determining factor in one's ability to cope, but the patient's developmental stage is. The patient at age 30 years may not accept their illness at this time because they are not developmentally ready."
 },
 {
-"text": "The ANA Code of Ethics guarantees the patient's right to dignity.",
-"isCorrect": true,
-"rationale": "This is correct. The ANA code guarantees the patient the right to dignity, privacy, and safety."
-},
-{
-"text": "Violation of a standard in the ANA Code of Ethics is considered to be a criminal offense.",
+"text": "The patient is exhibiting the state of denial related to the illness diagnosis.",
 "isCorrect": false,
-"rationale": "This is incorrect. The Code of Ethics is not a law, and therefore you would not be charged with criminal offenses for violating the code's provisions."
+"rationale": "This is incorrect. The patient's statements do not provide enough information to infer that they are in denial about the diagnosis of an illness."
 },
 {
-"text": "The patient's privacy is guaranteed by the ANA Code of Ethics.",
+"text": "The patient's developmental stage affects the ability to cope with stressors.",
 "isCorrect": true,
-"rationale": "This is correct. The ANA code guarantees the patient the right to privacy, dignity, and safety."
+"rationale": "This is correct. Developmental stage influences a person's ability to cope with stressors that tend to move them toward the illness end of the health-illness continuum. For example, infants or children who are ill, frightened, or hurt have a limited repertoire of experiences, communication ability, and understanding to help them in their responses. This patient is a young adult who is not likely prepared to handle an ongoing medical diagnosis."
 },
 {
-"text": "Violation of the ANA Code of Ethics may result in disciplinary action by the state board of nursing.",
-"isCorrect": true,
-"rationale": "This is correct. A nurse who violates a provision of the Code of Ethics may have to defend their action to the state board of nursing."
+"text": "The patient's statements indicate an inability to accept an ongoing illness.",
+"isCorrect": false,
+"rationale": "This is incorrect. The patient has just received the diagnosis and may not be immediately able to accept an ongoing illness. Acceptance is likely to occur over time."
 }
 ]
 },
 {
 "questionNumber": 25,
-"type": "SATA",
-"questionText": "The nurse provides care to an adult patient who is admitted to a walk-in clinic for a follow-up visit. As a result of providing care to the patient over the course of several weeks, the nurse has developed a strong rapport with the patient. Which nursing actions represent a boundary violation? Select all that apply.",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Identify strategies to minimize liability in nursing practice",
-"page": 1670,
-"heading": "How Can You Minimize Your Malpractice Risks?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeeds": "Safe and Effective Care Environment",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Ethics",
-"difficulty": "Easy",
+"type": "MCQ",
+"questionText": "Which situation is most reflective of a life change for managing chronic illness?",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Differentiate between acute and chronic illnesses.",
+"page": 10,
+"heading": "The Nature of the Illness",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Moderate",
 "options": [
 {
-"text": "Expressing a personal attraction toward the patient",
+"text": "Beginning self-injection of insulin for diabetes mellitus",
 "isCorrect": true,
-"rationale": "This is correct. Communication that is sexual in nature or reveals personal attraction between client and nurse represents a boundary violation."
+"rationale": "This is correct. Chronic illness lasts for a long period of time, usually 6 months or more and often a lifetime. Chronic illness requires the person to make life changes. These changes might be regular visits to the clinic or hospital, daily medications, or lifestyle modifications, such as following a specific diet or smoking cessation."
 },
 {
-"text": "Accepting a grocery store gift card from the patient",
-"isCorrect": true,
-"rationale": "This is correct. Violations of professional boundaries may be physical, sexual, emotional, or financial in nature. Do not accept gifts from clients."
-},
-{
-"text": "Agreeing to meet the patient for coffee after the patient is fully healed",
-"isCorrect": true,
-"rationale": "This is correct. Off-duty visits with a patient are a potential violation of professional boundaries."
-},
-{
-"text": "Sharing details about the nurse's personal problems with the patient",
-"isCorrect": true,
-"rationale": "This is correct. Discussing personal problems or intimate details with the patient represents a boundary violation."
-},
-{
-"text": "Denying the patient's parents access to the patient's medical record",
+"text": "Taking an antibiotic for a streptococcal throat infection",
 "isCorrect": false,
-"rationale": "This is incorrect. The nurse must always maintain patient confidentiality unless directed by law to do otherwise (e.g., when a patient is threatening to harm someone). Family members and significant others do not have an automatic right to information about the patient. For example, parents do not have an automatic right to see the medical records of their adult child or minor child who is married or emancipated."
+"rationale": "This is incorrect. Starting on a medication for 'strep throat' is a response to an acute and short-term illness aimed at the management of an infection."
+},
+{
+"text": "Going to the gym and participating in an exercise program",
+"isCorrect": false,
+"rationale": "This is incorrect. Starting an exercise program at the gym may be a part of a chronic illness lifestyle change; however, it can also be a healthy lifestyle and/or health-promotion activity."
+},
+{
+"text": "Taking prescribed pain medication after a tooth extraction",
+"isCorrect": false,
+"rationale": "This is incorrect. Starting on a medication for a tooth extraction is a reaction to an acute and short-term condition for the management of pain."
 }
 ]
 },
 {
 "questionNumber": 26,
 "type": "SATA",
-"questionText": "In a malpractice lawsuit, which elements must be established by a plaintiff in order to win and recover damage? Select all that apply.",
-"chapter": "Chapter 39: Legal Accountability",
-"objective": "Compare and contrast intentional and unintentional torts.",
-"page": 1664,
-"heading": "What Is Civil Law?",
-"integratedProcesses": "Communication and Documentation",
-"clientNeeds": "Safe and Effective Care Environment",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Legal",
-"difficulty": "Moderate",
+"questionText": "The nurse in a retirement complex is intrigued by the time and energy residents spend on favorite activities, which they refer to as their 'work.' Which statements best describe what can be identified as 'meaningful work'? Select all that apply.",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Describe the various ways that people experience health and illness.",
+"page": 11,
+"heading": "How Do People Experience Health and Illness?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Health Promotion and Maintenance",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
 "options": [
 {
-"text": "Duty",
+"text": "Volunteering in the children's ward at the local hospital",
 "isCorrect": true,
-"rationale": "This is correct. To win a malpractice lawsuit, duty, breach of duty, causation, and injury must be proven."
+"rationale": "This is correct. Many people find that work is a healthy way to cope with stressors. People also experience meaningful work as a dimension of wellness. For many people, volunteering, pursuing hobbies, and engaging in pleasurable activities can be forms of meaningful work."
 },
 {
-"text": "Breach of duty",
+"text": "Starting a garden club in the living community",
 "isCorrect": true,
-"rationale": "This is correct. To win a malpractice lawsuit, the plaintiff must establish four elements: duty, breach of duty, causation, and damages."
+"rationale": "This is correct. Starting a community garden club may be distinguished as 'meaningful work' for persons who enjoyed farming, nature, and growing plants."
 },
 {
-"text": "Intent to harm",
+"text": "Reaching a desired salary after 10 years of employment",
 "isCorrect": false,
-"rationale": "This is incorrect. To win and recover damages in a malpractice lawsuit, it is not necessary for the plaintiff to prove the healthcare provider intended to cause harm. Four elements must be proven by the plaintiff in order to win a malpractice lawsuit: duty, breach of duty, causation, and damages."
+"rationale": "This is incorrect. Receiving a desired salary after 10 years of work is not necessarily seen as 'meaningful work.' Salary is not typically mentioned in definitions of 'meaningful work.'"
 },
 {
-"text": "Injury",
+"text": "Playing an instrument in a rock and roll band",
 "isCorrect": true,
-"rationale": "This is correct. To win and recover damages in a malpractice lawsuit, the plaintiff must prove four elements: duty, breach of duty, causation, and damages."
+"rationale": "This is correct. Some people find that singing, playing a musical instrument, or listening to music is particularly healing."
 },
 {
-"text": "Causation",
+"text": "Deciding to return to work because of boredom",
+"isCorrect": false,
+"rationale": "This is incorrect. Deciding to return to work because of boredom is not necessarily seen as 'meaningful work.' Meaningful work is meant to be pleasurable. Returning to work is only meaningful if the work is pleasurable."
+}
+]
+},
+{
+"questionNumber": 27,
+"type": "SATA",
+"questionText": "The nurse is aware that patients may fail to comply with a proposed healthcare regimen and be perceived as being noncompliant. For which common reason(s) does a nurse identify as causing a patient to be noncompliant with a plan of care? Select all that apply.",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 11,
+"heading": "How Do People Experience Health and Illness?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Safe and Effective Care Environment: Management of Care",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
+"options": [
+{
+"text": "The patient lacks a support system.",
 "isCorrect": true,
-"rationale": "This is correct. For the plaintiff to win a malpractice lawsuit and recover damages, four elements must be proven: duty, breach of duty, causation, and damages."
+"rationale": "This is correct. Patients may fail to comply with proposed medical regimens or a plan of care if the plan has no personal relevance for the patient (or family), which indicates a lack of support system."
+},
+{
+"text": "The patient does not understand the plan.",
+"isCorrect": true,
+"rationale": "This is correct. The nurse must consider the patient's understanding of the plan, knowledge level, and feasibility. The patient is unlikely to be compliant if the plan is not understood."
+},
+{
+"text": "The plan of care is inconvenient.",
+"isCorrect": true,
+"rationale": "This is correct. Noncompliance often occurs because the inconvenience causes a barrier for the patient."
+},
+{
+"text": "The patient is stubborn by nature.",
+"isCorrect": false,
+"rationale": "This is incorrect. People are least likely to refuse to carry out a plan of care simply out of stubbornness, hostility toward healthcare providers, or wanton disregard for their own welfare."
+},
+{
+"text": "The plan is financially inhibitive.",
+"isCorrect": true,
+"rationale": "This is correct. If the plan of care includes interventions that are financially prohibitive, the patient is likely to be noncompliant."
+}
+]
+},
+{
+"questionNumber": 28,
+"type": "SATA",
+"questionText": "The nurse is aware that which situations can lead to the family caregiver's feeling of 'burnout'? Select all that apply.",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
+"page": 14,
+"heading": "Analysis/Nursing Diagnosis",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Psychosocial Integrity",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
+"options": [
+{
+"text": "Caring for an infant during eruption of a first tooth",
+"isCorrect": false,
+"rationale": "This is incorrect. Caring for an infant during the eruption of a first tooth is considered a short-term situation."
+},
+{
+"text": "Caring for an adolescent child with schizophrenia",
+"isCorrect": true,
+"rationale": "This is correct. The long-term effects of caring for a family member with mental illness, such as schizophrenia, can cause burnout. The client's care may fluctuate with the disease process, but emotional stress is always high."
+},
+{
+"text": "Caring for a child being treated for a broken leg",
+"isCorrect": false,
+"rationale": "This is incorrect. Caring for a child being treated for a broken leg is a short-term situation with an 'end in sight.'"
+},
+{
+"text": "Caring for a spouse with Alzheimer's disease",
+"isCorrect": true,
+"rationale": "This is correct. The caregiver of a person who has Alzheimer's disease is very likely to experience burnout; the client's care is ongoing and full-time."
+},
+{
+"text": "Caring for grandchildren once a week, as needed",
+"isCorrect": false,
+"rationale": "This is incorrect. Caring for grandchildren once a week, as needed, is both short-term and intermittent and not considered to be a likely cause of burnout."
+}
+]
+},
+{
+"questionNumber": 29,
+"type": "SATA",
+"questionText": "A newly hired nurse is working with an experienced nurse on the oncology unit. The newly hired nurse expresses interest in helping patients and making their hospital stay a better experience. Which is the most appropriate response for the experienced nurse to make? Select all that apply.",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
+"page": 13,
+"heading": "How Can I Honor Each Client's Unique Health/Illness Experience?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Difficult",
+"options": [
+{
+"text": "'This takes time. Once you have worked on the unit for a while, it will become clear to you.'",
+"isCorrect": false,
+"rationale": "This is incorrect. As a nurse, one can be an instrument of healing in a hurtful world. However, being an instrument of healing does not come automatically with a nursing license. This is not an appropriate response from the experienced nurse."
+},
+{
+"text": "'Find your best approach to patient care, and then use this approach with every patient.'",
+"isCorrect": false,
+"rationale": "This is incorrect. Nurses do not provide the best care by learning just one approach and applying it to every client or patient. The nurse needs to see and react to each patient as a unique individual."
+},
+{
+"text": "'One of the very best ways is to listen to your patient and be attentive to their needs.'",
+"isCorrect": true,
+"rationale": "This is correct. Cultivating a healing presence by listening, being maximally attentive to a patient's needs, and being respectful to others' ways of coping is an excellent response from the experienced nurse."
+},
+{
+"text": "'It is helpful to consider your strengths and weaknesses and how you cope with illness.'",
+"isCorrect": true,
+"rationale": "This is correct. An excellent way to help patients with their hospital experience is for the nurse to be aware of personal strengths and weaknesses and to understand how the nurse would respond to illness."
+},
+{
+"text": "'Just remember to apply all your nursing knowledge when you interact with a patient.'",
+"isCorrect": false,
+"rationale": "This is incorrect. Applying all the nurse's knowledge during each interaction with a patient is not sound advice and probably not possible. The nurse needs to focus on each patient in the present time frame."
+}
+]
+},
+{
+"questionNumber": 30,
+"type": "SATA",
+"questionText": "What is an example of a nutrient-deficient disease? Select all that apply.",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Explore the concepts of health and illness",
+"page": 4,
+"heading": "What Is an Example of a Nutrient-Deficient Disease",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Physiological Integrity: Physiological Adaptation",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Easy",
+"options": [
+{
+"text": "Scurvy",
+"isCorrect": true,
+"rationale": "This is correct. Scurvy is a nutrient-deficient disease and is caused by a lack of vitamin C in the diet. Symptoms of scurvy include sore arms and legs, fatigue, and weakness. If left untreated, it can lead to gum disease, hair loss, and bleeding from the skin."
+},
+{
+"text": "Night blindness",
+"isCorrect": true,
+"rationale": "This is correct. Night blindness is a condition that makes it hard to see in low light. Night blindness is also caused by lack of vitamin A in the diet."
+},
+{
+"text": "Anemia",
+"isCorrect": true,
+"rationale": "This is correct. Anemia is a condition in which there are not enough red blood cells to carry enough oxygen to the body's tissues. Anemia is also caused by an iron deficiency, which causes fatigue and weakness."
+},
+{
+"text": "Goiter",
+"isCorrect": true,
+"rationale": "This is correct. Goiter is caused by a lack of iodine in the diet. Goiter is known as an abnormal enlargement of the thyroid gland."
+},
+{
+"text": "HIV",
+"isCorrect": false,
+"rationale": "This is incorrect. HIV is not a nutrient-deficient disease. HIV is spread via person-to-person contact. HIV damages the immune system and interferes with the body's ability to fight diseases."
+}
+]
+},
+{
+"questionNumber": 31,
+"type": "SATA",
+"questionText": "How does sleep nourish our bodies? Select all that apply.",
+"chapter": "Chapter 7: Experiencing Health & Illness",
+"objective": "Explore the concepts of health and illness",
+"page": 5,
+"heading": "How Does Sleep Nourish Our Bodies?",
+"integratedProcesses": "Nursing Process",
+"clientNeed": "Psychosocial Integrity",
+"cognitiveLevel": "Analysis [Analyzing]",
+"concept": "Patient-Centered Care",
+"difficulty": "Easy",
+"options": [
+{
+"text": "Tissue regeneration",
+"isCorrect": true,
+"rationale": "This is correct. Sleep nourishes our bodies by assisting in tissue regeneration. While we sleep, our body is repairing tissues and repairing DNA that has suffered oxidative stress."
+},
+{
+"text": "Formation of red blood cells",
+"isCorrect": true,
+"rationale": "This is correct. Sleep also helps with formation of new red blood cells. While we sleep, new blood cells are created to carry more oxygen to repair tissue damage."
+},
+{
+"text": "Mental rejuvenation",
+"isCorrect": true,
+"rationale": "This is correct. Sleep helps with mental rejuvenation and helps the mind and body slow down. Which is very important for mental health."
+},
+{
+"text": "Synthesis of bone",
+"isCorrect": true,
+"rationale": "This is correct. Sleep is important for synthesis of bone growth. Sleep is necessary for bone marrow, which contains blood cells, stem cells, and immune cells to fight off infections."
+},
+{
+"text": "Mood disturbances",
+"isCorrect": false,
+"rationale": "This is incorrect. Sleep deprivation can have a large effect on our mood disturbance and sensory deficits."
 }
 ]
 }
