@@ -2,7 +2,28 @@ import { db } from './firebase-config.js';
 import { collection, getDocs, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { auth } from './firebase-config.js';
 
+let cachedQuestions = null;
+
+async function prefetchQuestions() {
+  if (cachedQuestions) return cachedQuestions;
+  try {
+    const querySnapshot = await getDocs(collection(db, "questions"));
+    cachedQuestions = [];
+    querySnapshot.forEach((docSnap) => {
+      const qData = docSnap.data();
+      qData.normalizedChapter = normalizeChapterName(qData.chapter);
+      cachedQuestions.push(qData);
+    });
+    return cachedQuestions;
+  } catch (error) {
+    console.error("Error prefetching questions:", error);
+    return [];
+  }
+}
+
 export function initTestBank() {
+  prefetchQuestions();
+
   let attempts = 0;
   const waitForElements = setInterval(() => {
     const launchQuizBtn = document.getElementById('launch-quiz-btn');
@@ -110,27 +131,17 @@ function setupQuiz(launchQuizBtn, quizModal) {
   launchQuizBtn.addEventListener('click', async () => {
     quizModal.classList.remove('hidden');
     
-    try {
-      const querySnapshot = await getDocs(collection(db, "questions"));
-      allQuestions = [];
-      querySnapshot.forEach((docSnap) => {
-        const qData = docSnap.data();
-        qData.normalizedChapter = normalizeChapterName(qData.chapter);
-        allQuestions.push(qData);
-      });
+    allQuestions = cachedQuestions || await prefetchQuestions();
 
-      if (allQuestions.length === 0) {
-        questionProgress.textContent = "Test Bank";
-        questionMeta.innerHTML = "";
-        questionText.textContent = "No questions found in Firestore database.";
-        optionsContainer.innerHTML = '';
-        return;
-      }
-
-      showChapterSelection();
-    } catch (error) {
-      console.error("Error loading questions:", error);
+    if (allQuestions.length === 0) {
+      questionProgress.textContent = "Test Bank";
+      questionMeta.innerHTML = "";
+      questionText.textContent = "No questions found in Firestore database.";
+      optionsContainer.innerHTML = '';
+      return;
     }
+
+    showChapterSelection();
   });
 
   if (closeQuizBtn) {
