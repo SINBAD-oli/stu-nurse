@@ -550,7 +550,6 @@ function setupQuiz(launchQuizBtn, quizModal) {
       if (!window.currentSessionChapterQuestions[specificChap]) {
         window.currentSessionChapterQuestions[specificChap] = {};
       }
-      // Track latest answer per unique question text to prevent score stacking/inflation
       window.currentSessionChapterQuestions[specificChap][q.questionText] = {
         correct: questionEarnedScore >= 1,
         score: questionEarnedScore
@@ -577,6 +576,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
               const prevQuizzes = uData.totalQuizzesTaken || 0;
               const prevAvg = uData.averageAccuracy || 0;
               let chapterProgressMap = uData.chapterProgressMap || {};
+              let chapterStats = uData.chapterStats || {};
               let existingMissed = uData.missedQuestions || [];
 
               const newTotalQuizzes = prevQuizzes + 1;
@@ -588,23 +588,19 @@ function setupQuiz(launchQuizBtn, quizModal) {
                   for (const [qText, qDetails] of Object.entries(qMap)) {
                     chapterProgressMap[chap][qText] = qDetails;
                   }
+                  
+                  let correctCount = 0;
+                  const questionEntries = Object.values(chapterProgressMap[chap]);
+                  questionEntries.forEach(item => {
+                    if (item.correct) correctCount += 1;
+                  });
+                  chapterStats[chap] = {
+                    correct: correctCount,
+                    total: questionEntries.length
+                  };
                 }
               }
               window.currentSessionChapterQuestions = {};
-
-              // Recalculate true chapterStats safely from unique question status maps
-              const chapterStats = {};
-              for (const [chap, qMap] of Object.entries(chapterProgressMap)) {
-                let correctCount = 0;
-                const questionEntries = Object.values(qMap);
-                questionEntries.forEach(item => {
-                  if (item.correct) correctCount += 1;
-                });
-                chapterStats[chap] = {
-                  correct: correctCount,
-                  total: questionEntries.length
-                };
-              }
 
               sessionMissedQuestions.forEach(m => {
                 if (!existingMissed.some(ex => ex.questionText === m.questionText)) {
