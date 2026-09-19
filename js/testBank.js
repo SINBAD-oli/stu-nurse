@@ -255,12 +255,40 @@ function setupQuiz(launchQuizBtn, quizModal) {
       </div>
     `;
 
-    document.getElementById('start-configured-quiz').addEventListener('click', () => {
+    document.getElementById('start-configured-quiz').addEventListener('click', async () => {
       const inputVal = parseInt(document.getElementById('question-count-input').value, 10);
       const orderVal = document.getElementById('question-order-select').value;
       const timerVal = document.getElementById('quiz-timer-select').value;
 
-      let list = [...selectedChapterQuestions];
+      // Fetch latest user progress to exclude correctly answered (mastered) questions
+      const currentUser = auth.currentUser;
+      let masteredQuestionsMap = {};
+      if (currentUser) {
+        try {
+          const userSnap = await getDoc(doc(db, "users", currentUser.uid));
+          if (userSnap.exists()) {
+            masteredQuestionsMap = userSnap.data().chapterProgressMap || {};
+          }
+        } catch (err) {
+          console.error("Error fetching progress map for filtering:", err);
+        }
+      }
+
+      // Filter out questions already answered correctly
+      let list = selectedChapterQuestions.filter(q => {
+        const chap = q.normalizedChapter;
+        const qText = q.questionText;
+        if (masteredQuestionsMap[chap] && masteredQuestionsMap[chap][qText]?.correct === true) {
+          return false;
+        }
+        return true;
+      });
+
+      if (list.length === 0) {
+        alert("Amazing job! You have already answered every question in this chapter correctly.");
+        return;
+      }
+
       if (orderVal === 'random') list = shuffleArray(list);
 
       const limit = isNaN(inputVal) ? list.length : Math.max(1, Math.min(inputVal, list.length));
