@@ -1,5 +1,5 @@
 import { db } from './firebase-config.js';
-import { collection, getDocs, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { collection, getDocs, query, limit, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { auth } from './firebase-config.js';
 
 let cachedQuestions = null;
@@ -7,7 +7,10 @@ let cachedQuestions = null;
 async function prefetchQuestions() {
   if (cachedQuestions) return cachedQuestions;
   try {
-    const querySnapshot = await getDocs(collection(db, "questions"));
+    // Remove default query limit by querying a high ceiling to fetch all questions
+    const q = query(collection(db, "questions"), limit(500));
+    const querySnapshot = await getDocs(q);
+    
     cachedQuestions = [];
     querySnapshot.forEach((docSnap) => {
       const qData = docSnap.data();
@@ -131,7 +134,9 @@ function setupQuiz(launchQuizBtn, quizModal) {
   launchQuizBtn.addEventListener('click', async () => {
     quizModal.classList.remove('hidden');
     
-    allQuestions = cachedQuestions || await prefetchQuestions();
+    // Clear cache on click to force fresh fetch of all documents
+    cachedQuestions = null;
+    allQuestions = await prefetchQuestions();
 
     if (allQuestions.length === 0) {
       questionProgress.textContent = "Test Bank";
@@ -223,7 +228,6 @@ function setupQuiz(launchQuizBtn, quizModal) {
       const chapQuestions = chapterMap[chap];
       const totalCount = chapQuestions.length;
       
-      // Calculate how many are unmastered
       const unmasteredCount = chapQuestions.filter(q => {
         return !(masteredMap[chap] && masteredMap[chap][q.questionText]?.correct === true);
       }).length;
@@ -291,7 +295,6 @@ function setupQuiz(launchQuizBtn, quizModal) {
     const modeSelect = document.getElementById('quiz-mode-select');
     const countInput = document.getElementById('question-count-input');
 
-    // Initialize input max value based on default "unmastered" mode
     (async () => {
       const currentUser = auth.currentUser;
       let masteredMap = {};
@@ -744,7 +747,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
         nextQuestionBtn.classList.add('hidden');
 
         document.getElementById('restart-quiz-btn').addEventListener('click', () => showQuizConfig());
-        document.getElementById('choose-another-chapter-btn').addEventListener('click', () => showChapterSelection());
+        document.getElementById('choose-another-chapter-btn', () => showChapterSelection());
       }
     });
   }
