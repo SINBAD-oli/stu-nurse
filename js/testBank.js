@@ -158,7 +158,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
     }
   }
 
-  function showChapterSelection() {
+  async function showChapterSelection() {
     stopTimer();
     questionProgress.textContent = "Select Quiz Category";
     questionMeta.innerHTML = `<span class="meta-pill">Chapter Selection</span>`;
@@ -169,6 +169,19 @@ function setupQuiz(launchQuizBtn, quizModal) {
     nextQuestionBtn.classList.add('hidden');
     sessionMissedQuestions = [];
     flaggedQuestionIndices.clear();
+
+    const currentUser = auth.currentUser;
+    let masteredMap = {};
+    if (currentUser) {
+      try {
+        const uDoc = await getDoc(doc(db, "users", currentUser.uid));
+        if (uDoc.exists()) {
+          masteredMap = uDoc.data().chapterProgressMap || {};
+        }
+      } catch (err) {
+        console.error("Error fetching progress map:", err);
+      }
+    }
 
     const chapterMap = {};
     allQuestions.forEach(q => {
@@ -188,9 +201,8 @@ function setupQuiz(launchQuizBtn, quizModal) {
     missedBtn.style.justifyContent = 'center';
     missedBtn.innerHTML = `<span>🎯 Target & Review Missed Questions</span>`;
     missedBtn.addEventListener('click', async () => {
-      const user = auth.currentUser;
-      if (user) {
-        const uDoc = await getDoc(doc(db, "users", user.uid));
+      if (currentUser) {
+        const uDoc = await getDoc(doc(db, "users", currentUser.uid));
         if (uDoc.exists() && uDoc.data().missedQuestions?.length > 0) {
           const missedData = uDoc.data().missedQuestions;
           selectedChapterQuestions = allQuestions.filter(q => missedData.some(m => m.questionText === q.questionText));
@@ -209,11 +221,25 @@ function setupQuiz(launchQuizBtn, quizModal) {
 
     Object.keys(chapterMap).forEach(chap => {
       const chapQuestions = chapterMap[chap];
+      const totalCount = chapQuestions.length;
+      
+      // Calculate how many are unmastered
+      const unmasteredCount = chapQuestions.filter(q => {
+        return !(masteredMap[chap] && masteredMap[chap][q.questionText]?.correct === true);
+      }).length;
+
       const chapBtn = document.createElement('div');
       chapBtn.className = 'option-label selected-chapter-card';
       chapBtn.style.textAlign = 'center';
       chapBtn.style.justifyContent = 'center';
-      chapBtn.innerHTML = `<span>📖 ${chap} (${chapQuestions.length} Questions)</span>`;
+      chapBtn.style.flexDirection = 'column';
+      chapBtn.style.gap = '4px';
+      
+      chapBtn.innerHTML = `
+        <span style="font-weight: 600;">📖 ${chap}</span>
+        <span style="font-size: 12px; color: #64748b;">Total: ${totalCount} questions | Unmastered: ${unmasteredCount}</span>
+      `;
+
       chapBtn.addEventListener('click', () => {
         selectedChapterQuestions = [...chapQuestions];
         activeChapterName = chap;
@@ -227,7 +253,7 @@ function setupQuiz(launchQuizBtn, quizModal) {
     stopTimer();
     questionProgress.textContent = "Quiz Configuration";
     questionMeta.innerHTML = `<span class="meta-pill">Session Settings</span>`;
-    questionText.textContent = `Configure your session (${selectedChapterQuestions.length} questions available):`;
+    questionText.textContent = `Configure your session (${selectedChapterQuestions.length} total questions available):`;
     
     optionsContainer.innerHTML = `
       <div style="display: flex; flex-direction: column; gap: 14px;">
@@ -262,9 +288,23 @@ function setupQuiz(launchQuizBtn, quizModal) {
       </div>
     `;
 
-    // Update max questions dynamically if user switches mode
     const modeSelect = document.getElementById('quiz-mode-select');
     const countInput = document.getElementById('question-count-input');
+
+    // Initialize input max value based on default "unmastered" mode
+    (async () => {
+      const currentUser = auth.currentUser;
+      let masteredMap = {};
+      if (currentUser) {
+        const userSnap = await getDoc(doc(db, "users", currentUser.uid));
+        if (userSnap.exists()) masteredMap = userSnap.data().chapterProgressMap || {};
+      }
+      const unmastered = selectedChapterQuestions.filter(q => {
+        return !(masteredMap[q.normalizedChapter] && masteredMap[q.normalizedChapter][q.questionText]?.correct === true);
+      });
+      countInput.value = unmastered.length > 0 ? unmastered.length : selectedChapterQuestions.length;
+      countInput.max = unmastered.length > 0 ? unmastered.length : selectedChapterQuestions.length;
+    })();
 
     modeSelect.addEventListener('change', async () => {
       if (modeSelect.value === 'unmastered') {
