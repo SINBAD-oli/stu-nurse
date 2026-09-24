@@ -1,1148 +1,1153 @@
 [
-{
-"questionNumber": 1,
-"type": "MCQ",
-"questionText": "The nurse is aware the client's risk of breast cancer is dramatically increased because both her sister and her mother had breast cancer. Which of the multidimensional aspects of health does this scenario illustrate?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Describe the various ways that people experience health and illness.",
-"page": 4,
-"heading": "How Do People Experience Health and Illness?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Personal relationships",
-"isCorrect": false,
-"rationale": "This is incorrect. Nurses respond to the physical, emotional, mental, and spiritual dimensions of health. Personal relationships are more psychosocial in nature; for example, family relationships can facilitate coping."
-},
-{
-"text": "Biological factors",
-"isCorrect": true,
-"rationale": "This is correct. Biological factors include genetic makeup, gender, age, and developmental stage. The risk of breast cancer increases dramatically in women who have a family history of a mother, sister, or daughter with breast cancer. Recently, a genetic marker for this type of breast cancer was discovered. This is an example of biological factors."
-},
-{
-"text": "Lifestyle choices",
-"isCorrect": false,
-"rationale": "This is incorrect. Lifestyle choices involve such health behaviors as choosing not to use tobacco and other substances."
-},
-{
-"text": "Environmental factors",
-"isCorrect": false,
-"rationale": "This is incorrect. Environmental factors involve, for example, environmental pollutants or the psychosocial environment (a quiet versus a noisy hospital room)."
-}
-]
-},
-{
-"questionNumber": 2,
-"type": "MCQ",
-"questionText": "The nurse uses the concept of the wellness-illness continuum for developing a nursing plan of care. Which plan for a chronically ill patient does the nurse select?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Differentiate between acute and chronic illnesses.",
-"page": 4,
-"heading": "How Do People Experience Health and Illness?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Educate the patient about every possible complication associated with the specific illness.",
-"isCorrect": false,
-"rationale": "This is incorrect. Education about every possible complication does not promote optimal functioning at the point on the health-illness continuum where the chronically ill patient is located."
-},
-{
-"text": "Encourage positive health characteristics within the limits of the specific illness.",
-"isCorrect": true,
-"rationale": "This is correct. The health-illness continuum defines health and illness as a graduated spectrum that cannot be divided into parts. Encouraging positive health characteristics within the limits of the specific illness will promote maintenance of a personal state of health for the individual patient."
-},
-{
-"text": "Limit activities because of the progressive deterioration associated with chronic illnesses.",
-"isCorrect": false,
-"rationale": "This is incorrect. An appropriate plan of care for a chronically ill patient will constantly change with the patient's condition. Physiological changes, lifestyle choices, and the results of various choices will impact where the patient falls on the continuum; however, activities are limited only by the patient's ability."
-},
-{
-"text": "Recommend activity beyond the scope of tolerance to prevent early deterioration.",
-"isCorrect": false,
-"rationale": "This is incorrect. Recommending activity beyond the scope of tolerance to prevent early deterioration is not a part of planning care related to the patient's position on the health-illness continuum."
-}
-]
-},
-{
-"questionNumber": 3,
-"type": "MCQ",
-"questionText": "The nurse works at a busy trauma center and needs to establish a relationship of caring, respect, and understanding with clients during a time of extreme physical and emotional stress. Which behavior from the nurse is most likely to convey a sense of compassion?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Identify factors that influence individuals' responses to illness.",
-"page": 5,
-"heading": "Establish Trust at Your First Patient Contact",
-"integratedProcesses": "Caring",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "Extend kindness to the client and family.",
-"isCorrect": false,
-"rationale": "This is incorrect. Extending kindness to the client and the client's family is an important way to demonstrate caring and respect."
-},
-{
-"text": "Display competency during procedures.",
-"isCorrect": false,
-"rationale": "This is incorrect. Merely performing procedures, administering medications, or providing solutions to the patient does not allow you to support the patient's transition from health to illness."
-},
-{
-"text": "Provide a healing presence.",
-"isCorrect": true,
-"rationale": "This is correct. Part of what a nurse does when displaying a healing presence will never show up in a written care plan. However, the nurse's healing presence may be the most important aspect of care nurses have to offer."
-},
-{
-"text": "Remain professionally aloof.",
-"isCorrect": false,
-"rationale": "This is incorrect. When the nurse remains professionally aloof, the concepts of caring and trust cannot be established."
-}
-]
-},
-{
-"questionNumber": 4,
-"type": "MCQ",
-"questionText": "The nurse is providing care for a client who is 76 years of age and experiencing chronic illness related to genetic-linked anemia. The client does not eat a balanced diet and admits preferring sweets to meat and vegetables. Which dimension of health is the nurse most likely to influence with teaching and counseling?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Identify factors that influence individuals' responses to illness.",
-"page": 4,
-"heading": "How Do People Experience Health and Illness?",
-"integratedProcesses": "Teaching and Learning",
-"clientNeed": "Health Promotion and Maintenance",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Age-related changes",
-"isCorrect": false,
-"rationale": "This is incorrect. Although people consider biological factors when they describe themselves as well or ill, these factors are not entirely within their control. Age is one of the biological factors for this client."
-},
-{
-"text": "Genetic anemia",
-"isCorrect": false,
-"rationale": "This is incorrect. The biological factor of genetic makeup is not changeable through teaching; however, management is possible."
-},
-{
-"text": "Eating habits",
-"isCorrect": true,
-"rationale": "This is correct. The nurse is most likely to influence the patient's eating habits because those are the dimensions over which the client has the most control. Therefore, those dimensions have the most potential for change."
-},
-{
-"text": "Gender-related issues",
-"isCorrect": false,
-"rationale": "This is incorrect. Gender is a biological factor and is not changeable through teaching."
-}
-]
-},
-{
-"questionNumber": 5,
-"type": "MCQ",
-"questionText": "The nurse recognizes which type of loss as being most common among patients who are hospitalized for complex health conditions?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 14,
-"heading": "The Intensity, Duration, and Multiplicity of the Disruption",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Privacy",
-"isCorrect": false,
-"rationale": "This is incorrect. Healthcare providers have a duty to protect the privacy and confidentiality of patients, even though it is certainly threatened by some situations during hospitalization."
-},
-{
-"text": "Dignity",
-"isCorrect": true,
-"rationale": "This is correct. Hospitalized patients commonly experience the loss of dignity. Wearing a hospital gown, having their body exposed, invasive procedures, loss of control over body functions all of these contribute to loss of dignity, and all are very common among hospitalized patients."
-},
-{
-"text": "Functional",
-"isCorrect": false,
-"rationale": "This is incorrect. Some patients lose functioning during hospitalization, but this is not a common occurrence."
-},
-{
-"text": "Identity",
-"isCorrect": false,
-"rationale": "This is incorrect. Patients may be at risk for losing identity during hospitalization; however, the risk is reduced when healthcare providers use patient-centered communication."
-}
-]
-},
-{
-"questionNumber": 6,
-"type": "MCQ",
-"questionText": "The nurse is admitting a 62-year-old patient with a diagnosis of hypertension to the hospital. Which question by the nurse is most important when performing the initial assessment interview?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
-"page": 11,
-"heading": "Nurses Understand Health and Illness as Individual Experiences",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "What medications do you take at home?",
-"isCorrect": false,
-"rationale": "This is incorrect. Asking about medications is a routine question by the nurse during the admission process. It is important for the nurse to ask about medications, but it does not take priority over asking about the patient's greatest concern."
-},
-{
-"text": "Do you have any environmental, food, or drug allergies?",
-"isCorrect": false,
-"rationale": "This is incorrect. It is part of the routine admission process to ask the patient about any allergies. However, of the presented options, this is not the priority question for the nurse to ask."
-},
-{
-"text": "Do you have an advance directive?",
-"isCorrect": false,
-"rationale": "This is incorrect. It is common for the nurse to ask a patient about an advance directive during the admission process. However, it is not more important than asking about the patient's greatest concern."
-},
-{
-"text": "What greatest concern are you dealing with today?",
-"isCorrect": true,
-"rationale": "This is correct. It is most important for the nurse to ask the patient about the patient's greatest concerns. The answer to this question will be helpful in identifying any contributing factors to the patient's admitting diagnosis. Patient concerns need to be incorporated into the plan of care, making sure patient needs are met."
-}
-]
-},
-{
-"questionNumber": 7,
-"type": "MCQ",
-"questionText": "The nurse is providing care for a 55-year-old client with severe respiratory disease. Using Neuman's continuum as a resource, which stage of illness is the nurse most likely to identify as being applicable to this client?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 4,
-"heading": "Nurses Use Conceptual Models to Understand Health and Illness",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "Moderate energy related to resiliency of age",
-"isCorrect": false,
-"rationale": "This is incorrect. Nursing theorist Betty Neuman (2002) views health as an expression of living energy available to an individual. The energy is displayed as a continuum with high energy (wellness) at one end and low energy (illness) at the opposite end. In the absence of a medical condition, age can be a contributing factor to where a client falls on Neuman's continuum."
-},
-{
-"text": "High energy related to available treatment",
-"isCorrect": false,
-"rationale": "This is incorrect. With the client's condition being described as severe, it is unlikely the client will be placed in the moderate area of Neuman's continuum."
-},
-{
-"text": "Low energy related to compromised breathing",
-"isCorrect": true,
-"rationale": "This is correct. Neuman's continuum states when more energy is expended than is generated, there is illness and possibly death. Because the client is diagnosed with severe respiratory disease, it is likely the client spends more energy breathing than the energy created."
-},
-{
-"text": "Extremely low energy due to impending death",
-"isCorrect": false,
-"rationale": "This is incorrect. Newman's continuum states that when more energy is expended than is generated, there is illness and possibly death. However, the scenario does not provide information that supports impending death."
-}
-]
-},
-{
-"questionNumber": 8,
-"type": "MCQ",
-"questionText": "The nurse is providing care for a client who has been hospitalized for 6 weeks. Which nursing intervention is specifically focused on helping the patient cope with the emotional responses to prolonged hospitalization?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
-"page": 4,
-"heading": "Environmental Factors",
-"integratedProcesses": "Culture and Spirituality",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Providing skin care every shift to prevent skin breakdown",
-"isCorrect": false,
-"rationale": "This is incorrect. Providing skin care is a physiological nursing intervention and does not address the patient's emotional status."
-},
-{
-"text": "Encouraging the patient to get up in a chair to eat meals",
-"isCorrect": false,
-"rationale": "This is incorrect. Encouraging the patient to get up into a chair for meals is a physiological nursing intervention, which may help the patient's sense of well-being. However, it is not totally focused on the patient's emotional status."
-},
-{
-"text": "Assisting the patient to ambulate in the hallway for several minutes each day",
-"isCorrect": false,
-"rationale": "This is incorrect. Assisting the patient to ambulate daily in the hall is a physiological nursing intervention, and while it may increase the patient's sense of well-being, it does not specifically meet the patient's emotional needs."
-},
-{
-"text": "Designating a corner of the patient's room to display personal mementos",
-"isCorrect": true,
-"rationale": "This is correct. The patient's environment can help nourish wellness. Helping the patient designate a corner of the room to display personal mementos can be healing and help the patient to cope with the prolonged hospitalization."
-}
-]
-},
-{
-"questionNumber": 9,
-"type": "MCQ",
-"questionText": "The nurse is providing care for a patient with a terminal illness. Which is particularly valuable in helping a patient with a terminal illness maintain a view of wellness?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Identify factors that influence individuals' responses to illness.",
-"page": 5,
-"heading": "Religion and Spirituality",
-"integratedProcesses": "Culture and Spirituality",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "Family relationships",
-"isCorrect": false,
-"rationale": "This is incorrect. Family relationships can provide a loving, supportive source of comfort and reassurance but can sometimes cause the patient pain and a feeling of loneliness when faced with a terminal illness. Nutrition, sleep, and rest are healing but usually not as helpful to a patient with terminal illness as is spirituality."
-},
-{
-"text": "Spiritually",
-"isCorrect": true,
-"rationale": "This is correct. When patients are faced with a terminal illness, spirituality can help the patient maintain a sense of wellness."
-},
-{
-"text": "Nutrition",
-"isCorrect": false,
-"rationale": "This is incorrect. Nutrition is healing, but not helpful to the patient in maintaining a sense of wellness."
-},
-{
-"text": "Sleep and rest",
-"isCorrect": false,
-"rationale": "This is incorrect. Sleep and rest can be healing but do not help the patient to maintain a sense of wellness like spirituality."
-}
-]
-},
-{
-"questionNumber": 10,
-"type": "MCQ",
-"questionText": "The nurse is providing care to a client with a history of schizophrenia who is diagnosed with a urinary tract infection. The nurse recognizes that which of the following is the most significant barrier this patient will face?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Identify factors that disrupt health.",
-"page": 7,
-"heading": "What Factors Disrupt Health?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Chronic urinary incontinence",
-"isCorrect": false,
-"rationale": "This is incorrect. Chronic urinary incontinence is not commonly associated with urinary tract infection, and nothing in the scenario suggests that the patient is incontinent."
-},
-{
-"text": "Stigma associated with mental illness",
-"isCorrect": true,
-"rationale": "This is correct. Mental illness is associated with a stigma that is usually a barrier, and even considered a debilitating handicap. Mental illness carries with it a stigma that may be diminishing slowly but is highly visible to those who suffer from its effects."
-},
-{
-"text": "Risk for recurring infections",
-"isCorrect": false,
-"rationale": "This is incorrect. The patient is at risk for recurrent urinary tract infections, but this is not considered a debilitating handicap."
-},
-{
-"text": "Auditory hallucinations ('hearing things')",
-"isCorrect": false,
-"rationale": "This is incorrect. Auditory hallucinations are associated with schizophrenia but have not been described as the most debilitating handicap."
-}
-]
-},
-{
-"questionNumber": 11,
-"type": "MCQ",
-"questionText": "The nurse is attending to a 76-year-old patient who is being admitted for an acute myocardial infarction (heart attack). The doctor tells the patient that an angioplasty is necessary, and the patient agrees and signs the informed consent form. Which stage of illness behavior does the nurse identify the patient experiencing?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Describe the five stages of illness behavior.",
-"page": 9,
-"heading": "Stages of Illness Behavior",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Sick-role behavior",
-"isCorrect": false,
-"rationale": "This is incorrect. The patient entered the sick-role behavior phase when they admitted to the family that they were experiencing chest pain."
-},
-{
-"text": "Seeking professional care",
-"isCorrect": false,
-"rationale": "This is incorrect. When the patient decided to go to the emergency department for healthcare intervention, they entered the 'seeking professional care' stage of illness."
-},
-{
-"text": "Experiencing symptoms",
-"isCorrect": false,
-"rationale": "This is incorrect. The patient entered the 'experiencing symptoms' stage when they began having chest pain at home."
-},
-{
-"text": "Dependence on others",
-"isCorrect": true,
-"rationale": "This is correct. This patient is experiencing the 'dependence on others' stage of illness behavior; the patient has accepted the diagnosis and treatment of the healthcare provider."
-}
-]
-},
-{
-"questionNumber": 12,
-"type": "MCQ",
-"questionText": "Many healthcare providers define illness as pathology; however, people experience illness rather than define it as a pathology. In which manner do most people experience illness?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Describe the various ways that people experience health and illness.",
-"page": 9,
-"heading": "Nurses Understand Health and Illness as Individual Experiences",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Comprehension [Understanding]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "'Feeling lousy,' a true sense of not being all right",
-"isCorrect": false,
-"rationale": "This is incorrect. 'Feeling lousy' is inappropriate, as many people do not feel 'lousy' when they are ill. For example, hypertension is an illness that may have no symptoms. Similarly, patients may have chronic disease that is well managed and therefore does not make them feel ill."
-},
-{
-"text": "A change in the way they feel or a disruption in their typical life",
-"isCorrect": true,
-"rationale": "This is correct. People typically describe their illness in terms of how it makes them feel or the effect it has on day-to-day life."
-},
-{
-"text": "Something to be dreaded and avoided, if at all possible",
-"isCorrect": false,
-"rationale": "This is incorrect. 'Something to be dreaded and avoided' is also not accurate. If a person has an external locus of control, they may view illness as a consequence of actions taken. From this viewpoint, the person may have little control over whether illness can be avoided."
-},
-{
-"text": "An experience that offers a potential for learning and spiritual growth",
-"isCorrect": false,
-"rationale": "This is incorrect. Although some people do grow and learn in the face of illness, most people do not hold such a positive view about illness and the question asks how people experience illness."
-}
-]
-},
-{
-"questionNumber": 13,
-"type": "MCQ",
-"questionText": "Dunn believes that an individual's state of health should be evaluated in the context of the person's environment. Which is an approach that illustrates Dunn's belief?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Compare and contrast three models of health and illness.",
-"page": 12,
-"heading": "Nurses Use Conceptual Models to Understand Health and Illness",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Health Promotion and Maintenance",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "An unhealthy physical environment, characterized by poor living conditions, always has a negative effect on an individual's health.",
-"isCorrect": false,
-"rationale": "This is incorrect. The effect of poor living conditions may be offset by the presence of loving family and friends. Poverty does not always have a negative effect on health."
-},
-{
-"text": "Adequate income, food, and shelter create a healthful environment and always improve physical health status.",
-"isCorrect": false,
-"rationale": "This is incorrect. The presence of food, shelter, and clothing does not always convey protective health, as loneliness and hopelessness may counteract these positive influences."
-},
-{
-"text": "Physical environment, family, and social support may help or hinder the health status of an individual.",
-"isCorrect": true,
-"rationale": "This is correct. The home environment, community, family, friends, and support system all influence health status. The balance among these variables has a net positive or negative effect on a client's health status."
-},
-{
-"text": "The environment that should always be assessed is the client's immediate surroundings; extended boundaries do not apply in an ill state.",
-"isCorrect": false,
-"rationale": "This is incorrect. When examining the client's environment, extended boundaries must be considered, especially when providing community-based care."
-}
-]
-},
-{
-"questionNumber": 14,
-"type": "MCQ",
-"questionText": "Some people readily become ill when under stress, while others are able to deal with tremendous stress and remain physically and mentally healthy. This disparity is affected by a person's level of hardiness. In which manner does the nurse apply this knowledge to nursing care?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 2,
-"heading": "Hardiness",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "The nurse cannot use the presented information. People are innately hardy or not, a state that the nurse must merely recognize.",
-"isCorrect": false,
-"rationale": "This is incorrect. The information presented in the scenario is useful in helping the nurse to recognize the presence or lack of hardiness in patients."
-},
-{
-"text": "Nurses need to encourage all people to develop some level of hardiness to help them get through difficult physical and emotional times.",
-"isCorrect": false,
-"rationale": "This is incorrect. As hardiness is a personality trait, it is unlikely that the nurse can teach or otherwise encourage the development of hardiness."
-},
-{
-"text": "Nurses need to assess for their own level of hardiness. If nurses are hardy, they will be better nurses; if not, nurses can learn more about hardiness.",
-"isCorrect": false,
-"rationale": "This is incorrect. The nurse's own awareness of a level of hardiness helps the nurse understand the personal response to stress, but hardiness does not necessarily make a better nurse."
-},
-{
-"text": "Nurses assessing for hardiness in patients can encourage hardy patients to learn about their illness as a means for them to be more comfortable.",
-"isCorrect": true,
-"rationale": "This is correct. Hardiness is a personality trait that helps many to cope with stress and illness."
-}
-]
-},
-{
-"questionNumber": 15,
-"type": "MCQ",
-"questionText": "The new graduate nurse is working with a nurse mentor. Which advice from the mentor is best suited when the new graduate is preparing to interact with the first patient?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 11,
-"heading": "What Does It Mean to Communicate Care and Concern?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "Be maximally attentive to the patient at all times.",
-"isCorrect": false,
-"rationale": "This is incorrect. Nurses need to be aware of the need to communicate care and concern, and being maximally attentive is appropriate. However, this advice is not the best for a new graduate preparing to meet the first patient."
-},
-{
-"text": "Take a few moments to settle into the situation.",
-"isCorrect": true,
-"rationale": "This is correct. The best advice a nurse mentor can give to new graduates preparing to meet their first patient is to take a few moments to settle into the situation. This can help establish a therapeutic relationship and can facilitate communication."
-},
-{
-"text": "Accept the patient regardless of background.",
-"isCorrect": false,
-"rationale": "This is incorrect. Accepting a patient regardless of the patient's background demonstrates acceptance. Nurses need to always be accepting of their patients, but in this scenario, the new graduate will benefit best from the advice about taking a few moments to settle in."
-},
-{
-"text": "Create a broad attitude of enjoyment of the patient.",
-"isCorrect": false,
-"rationale": "This is incorrect. An attitude of enjoying patients will help the nurse to establish an attitude of caring. However, the new graduate in this scenario will benefit best from the advice of settling in."
-}
-]
-},
-{
-"questionNumber": 16,
-"type": "MCQ",
-"questionText": "When transferring a patient from a hospital to a long-term care facility, which action by the nurse is most helpful in facilitating the patient's planning and emotional adjustment?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 14,
-"heading": "Maintain Trust During Transitions",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "Notify the patient and family as much in advance of the transfer as possible.",
-"isCorrect": true,
-"rationale": "This is correct. Notifying the patient and family well in advance of the transfer allows them time to adjust emotionally and to make any necessary plans."
-},
-{
-"text": "Send a complete copy of the patient's medical records to the new facility.",
-"isCorrect": false,
-"rationale": "This is incorrect. A copy of the records is usually sent; however, this action does very little to assist with the patient's emotional status or planning."
-},
-{
-"text": "Carefully coordinate the transfer with the long-term facility to keep it smooth.",
-"isCorrect": false,
-"rationale": "This is incorrect. The nurse does coordinate the transfer with the receiving facility; however, this action does very little to assist with the patient's emotional status or planning."
-},
-{
-"text": "Help arrange for transportation and accompany the patient to the transport vehicle.",
-"isCorrect": false,
-"rationale": "This is incorrect. Someone from the hospital may or may not accompany the patient in the car, or the transfer may be by ambulance. Either way, this action will not help the patient and family do the necessary planning for the transfer."
-}
-]
-},
-{
-"questionNumber": 17,
-"type": "MCQ",
-"questionText": "A parent of three small children has had nausea, vomiting, and extreme fatigue for the past 2 days and calls the children's grandmother for assistance with caring for the children. Which illness behavior is the parent experiencing?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Describe the five stages of illness behavior.",
-"page": 9,
-"heading": "Stages of Illness Behavior",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Sick role behavior",
-"isCorrect": true,
-"rationale": "This is correct. The parent is assuming sick role behavior when identifying that the child is ill."
-},
-{
-"text": "Dependence on others",
-"isCorrect": false,
-"rationale": "This is incorrect. By telling a family member of the illness, the parent is relieved of normal duties and caring for the children. However, dependence on others actually occurs when the client accepts a diagnosis and treatment from the healthcare provider."
-},
-{
-"text": "Seeking professional care",
-"isCorrect": false,
-"rationale": "This is incorrect. Seeking professional care occurs after the sick role behavior stage. During this stage, the client makes the decision of being ill and that professional healthcare is needed."
-},
-{
-"text": "Experiencing symptoms",
-"isCorrect": false,
-"rationale": "This is incorrect. The parent is experiencing symptoms but has moved into sick role behavior when seeking assistance with responsibilities (caring for the children)."
-}
-]
-},
-{
-"questionNumber": 18,
-"type": "MCQ",
-"questionText": "The nurse assigns a nursing assistant the task of ambulating a group of patients on the medical-surgical unit. Later in the morning, the nursing assistant tells the nurse, 'Some of my patients feel very sick but want to get out of bed. Others say they feel well but don't want to get out of bed. What should I do?' Which is the most appropriate response by the nurse?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
-"page": 14,
-"heading": "Planning Interventions/Implementation",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "'All patients are supposed to be out of bed today, so do the best you can with them.'",
-"isCorrect": false,
-"rationale": "This is incorrect. The nurse's response to 'do the best you can' is not appropriate. The nurse's instructions to the nursing assistant must be clear and concise and include a timeline."
-},
-{
-"text": "'This is not uncommon. Sometimes you have to push some patients more than others.'",
-"isCorrect": false,
-"rationale": "This is incorrect. All patients may, indeed, have prescriptions to get out of bed, but telling the nursing assistant to do the best or to push the patients does not recognize that patients respond to illness and wellness differently; nor does it consider the patient-centered approach to care."
-},
-{
-"text": "'All patients may respond to illness differently. Explain that they must be out of bed today.'",
-"isCorrect": false,
-"rationale": "This is incorrect. The nursing assistant is not responsible for explaining to patients the reasons for getting out of bed. The nurse needs to assume this role."
-},
-{
-"text": "'Get the patients up if they want to get up, and help the others to ambulate later in the day.'",
-"isCorrect": true,
-"rationale": "This is correct. It is appropriate to ambulate patients who want to get out of bed and allow others to ambulate later. This promotes and facilitates patient-centered care and allows the patient some control and decision making in their environment."
-}
-]
-},
-{
-"questionNumber": 19,
-"type": "MCQ",
-"questionText": "A patient who is 80 years old arrives in the emergency department experiencing a severe heart attack. The patient's condition is deteriorating and the physician informs the spouse that the patient is not expected to survive. The spouse becomes distraught and tells the nurse, 'We have been married for 60 years. What am I going to do?' Which is the most appropriate response by the nurse?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 14,
-"heading": "Permanent Loss",
-"integratedProcesses": "Caring",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "'You had a good life together. You just need to understand that death is part of life, too.'",
-"isCorrect": false,
-"rationale": "This is incorrect. At this most painful time, it is not appropriate, nor can it be expected that a spouse will accept at this time that death is part of life."
-},
-{
-"text": "'I understand how you feel, but living to 80 years of age is a good long life.'",
-"isCorrect": false,
-"rationale": "This is incorrect. An attempt to comfort a spouse by mentioning the age of the patient demonstrates ageism and will not comfort a spouse at this time."
-},
-{
-"text": "'I will get a social worker to see you for some help you may need at home.'",
-"isCorrect": false,
-"rationale": "This is incorrect. It is appropriate to contact a social worker for home assistance; however, this can be done after recognizing and acknowledging the spouse's loss."
-},
-{
-"text": "'I understand that this is an incredible and unexpected loss for you.'",
-"isCorrect": true,
-"rationale": "This is correct. The death of a spouse is no less traumatic for an older adult than it would be for a young spouse. Losing someone with whom one has spent most of one's life is an incredible loss, whether it is expected or unexpected. The best response is to validate this with the spouse."
-}
-]
-},
-{
-"questionNumber": 20,
-"type": "MCQ",
-"questionText": "Living in a healthy family is an important dimension of wellness. Which condition most accurately describes a characteristic of healthy families?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Describe the various ways that people experience health and illness.",
-"page": 5,
-"heading": "Personal Relationships",
-"integratedProcesses": "Culture and Spirituality",
-"clientNeed": "Health Promotion and Maintenance",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "A family in which individual members live a health-promoting lifestyle",
-"isCorrect": true,
-"rationale": "This is correct. The most accurately stated characteristic of healthy families is one that focuses on health-promoting lifestyles for its members."
-},
-{
-"text": "A family that responses to its members' needs only during serious illness",
-"isCorrect": false,
-"rationale": "This is incorrect. Healthy families do not necessarily respond to health issues only in times of serious illness."
-},
-{
-"text": "A family that may avoid or withhold the truth to prevent hurting someone's feelings",
-"isCorrect": false,
-"rationale": "This is incorrect. A healthy family is very open about expressing feelings and disagreements rather than squelching feelings to avoid conflict."
-},
-{
-"text": "A family that understands a family member is powerless when experiencing severe illness",
-"isCorrect": false,
-"rationale": "This is incorrect. Healthy families view the family as capable and successful in meeting and responding to illness as opposed to feeling powerless over illness."
-}
-]
-},
-{
-"questionNumber": 21,
-"type": "MCQ",
-"questionText": "The home-care nurse is providing care for a patient. After several visits and review of the plan of care, the nurse notices the patient does not follow the prescribed diet and exercise regimen. Which is the most appropriate action by the nurse?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
-"page": 12,
-"heading": "Planning Interventions/Implementation",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "Discharge the patient from home care because of noncompliance to the medical regimen.",
-"isCorrect": false,
-"rationale": "This is incorrect. Noncompliance often occurs because the effort, inconvenience, or pain involved with the plan is too much for some patients to handle. They probably do not refuse to carry out a plan of care simply out of stubbornness, hostility toward healthcare providers, or wanton disregard for their own welfare."
-},
-{
-"text": "Continue to teach and reinforce the importance of the diet and exercise regimen.",
-"isCorrect": false,
-"rationale": "This is incorrect. Patients may fail to comply with proposed medical regimens or a plan of care if the plan has no cultural or personal relevance for the patient (or family). The nurse must consider the patient's understanding of the plan, knowledge level, and feasibility in terms of available support, time, energy, and finances."
-},
-{
-"text": "Notify the healthcare provider of the patient's refusal to follow the diet and exercise regimen.",
-"isCorrect": false,
-"rationale": "This is incorrect. If after assessing the problem and revising the plan, the patient continues to refuse to follow the plan, then the physician can be notified and the patient possibly discharged. However, these are not the first and most appropriate actions by the nurse."
-},
-{
-"text": "Identify why the patient is not following the plan, and revise the plan in collaboration with the patient.",
-"isCorrect": true,
-"rationale": "This is correct. The challenge and best action by the nurse is to develop an individualized plan of care in collaboration with the patient, based on mutual goals and respect."
-}
-]
-},
-{
-"questionNumber": 22,
-"type": "MCQ",
-"questionText": "Which condition listed below is not considered a chronic disease?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Which is a classification of chronic disease?",
-"page": 10,
-"heading": "Procedure",
-"integratedProcesses": "Chronic diseases",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Easy",
-"options": [
-{
-"text": "Diabetes",
-"isCorrect": false,
-"rationale": "This is incorrect. Diabetes is a chronic disease that occurs when the pancreas doesn't produce enough insulin, and if left untreated can cause serious health problems."
-},
-{
-"text": "Kidney disease",
-"isCorrect": false,
-"rationale": "This is incorrect. Kidney disease is a gradual loss of kidney function. The kidney damage happens slowly over a period of time and can also cause other health problems."
-},
-{
-"text": "Arthritis",
-"isCorrect": false,
-"rationale": "This is incorrect. Rheumatoid arthritis is a chronic inflammatory disease that affects the joints. Arthritis can occur with other chronic diseases such as hypertension, diabetes, and heart disease."
-},
-{
-"text": "Mononucleosis",
-"isCorrect": true,
-"rationale": "This is correct. Mononucleosis is not a chronic disease; it is a virus that is transmitted through saliva and is very contagious. Mono clears up in a few weeks while chronic disease is noninfectious and lasts for a long time."
-}
-]
-},
-{
-"questionNumber": 23,
-"type": "MCQ",
-"questionText": "The nurse is admitting a patient with heart disease to the cardiac unit. When answering questions related to health history, the patient's responses are lengthy and time-consuming. Which is the most appropriate action by the nurse?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 14,
-"heading": "How Can I Honor Each Client's Unique Health/Illness Experience?",
-"integratedProcesses": "Caring",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Application [Applying]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Recognize that the patient may be lonely and just wants to talk to someone.",
-"isCorrect": false,
-"rationale": "This is incorrect. Most people are hungry for someone to listen to them, and meeting the patient's needs will assist in developing a good nurse-patient relationship. However, the nurse needs to concentrate on gathering assessment information by focusing on the patient's conversation."
-},
-{
-"text": "Set a time limit, and inform the patient of your time frame to complete the assessment.",
-"isCorrect": false,
-"rationale": "This is incorrect. The best action is to focus on what the patient or family has to say without emphasizing a set time frame, which will diminish the patient's ability to relate to the nurse."
-},
-{
-"text": "Anticipate the patient's answers, and quickly go on to the next question.",
-"isCorrect": false,
-"rationale": "This is incorrect. Often, listeners are so busy thinking about what they want to say that they fail to really listen. Anticipating a patient's responses interferes with accuracy of information."
-},
-{
-"text": "Be attentive, focus on what the patient has to say, and respond accordingly.",
-"isCorrect": true,
-"rationale": "This is correct. Being maximally attentive is an important factor in facilitating communication."
-}
-]
-},
-{
-"questionNumber": 24,
-"type": "MCQ",
-"questionText": "A patient who is 30 years of age has been experiencing joint pain for several months and is diagnosed with rheumatoid arthritis. The patient tells the nurse, 'This can't be happening to me. I don't understand this.' Which statement best describes the nurse's understanding of the patient's comments?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Identify factors that influence individuals' responses to illness.",
-"page": 12,
-"heading": "How Do People Experience Health and Illness?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "The patient is too young to possess the ability to cope with this diagnosis.",
-"isCorrect": false,
-"rationale": "This is incorrect. Age is not the determining factor in one's ability to cope, but the patient's developmental stage is. The patient at age 30 years may not accept their illness at this time because they are not developmentally ready."
-},
-{
-"text": "The patient is exhibiting the state of denial related to the illness diagnosis.",
-"isCorrect": false,
-"rationale": "This is incorrect. The patient's statements do not provide enough information to infer that they are in denial about the diagnosis of an illness."
-},
-{
-"text": "The patient's developmental stage affects the ability to cope with stressors.",
-"isCorrect": true,
-"rationale": "This is correct. Developmental stage influences a person's ability to cope with stressors that tend to move them toward the illness end of the health-illness continuum. For example, infants or children who are ill, frightened, or hurt have a limited repertoire of experiences, communication ability, and understanding to help them in their responses. This patient is a young adult who is not likely prepared to handle an ongoing medical diagnosis."
-},
-{
-"text": "The patient's statements indicate an inability to accept an ongoing illness.",
-"isCorrect": false,
-"rationale": "This is incorrect. The patient has just received the diagnosis and may not be immediately able to accept an ongoing illness. Acceptance is likely to occur over time."
-}
-]
-},
-{
-"questionNumber": 25,
-"type": "MCQ",
-"questionText": "Which situation is most reflective of a life change for managing chronic illness?",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Differentiate between acute and chronic illnesses.",
-"page": 10,
-"heading": "The Nature of the Illness",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Moderate",
-"options": [
-{
-"text": "Beginning self-injection of insulin for diabetes mellitus",
-"isCorrect": true,
-"rationale": "This is correct. Chronic illness lasts for a long period of time, usually 6 months or more and often a lifetime. Chronic illness requires the person to make life changes. These changes might be regular visits to the clinic or hospital, daily medications, or lifestyle modifications, such as following a specific diet or smoking cessation."
-},
-{
-"text": "Taking an antibiotic for a streptococcal throat infection",
-"isCorrect": false,
-"rationale": "This is incorrect. Starting on a medication for 'strep throat' is a response to an acute and short-term illness aimed at the management of an infection."
-},
-{
-"text": "Going to the gym and participating in an exercise program",
-"isCorrect": false,
-"rationale": "This is incorrect. Starting an exercise program at the gym may be a part of a chronic illness lifestyle change; however, it can also be a healthy lifestyle and/or health-promotion activity."
-},
-{
-"text": "Taking prescribed pain medication after a tooth extraction",
-"isCorrect": false,
-"rationale": "This is incorrect. Starting on a medication for a tooth extraction is a reaction to an acute and short-term condition for the management of pain."
-}
-]
-},
-{
-"questionNumber": 26,
-"type": "SATA",
-"questionText": "The nurse in a retirement complex is intrigued by the time and energy residents spend on favorite activities, which they refer to as their 'work.' Which statements best describe what can be identified as 'meaningful work'? Select all that apply.",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Describe the various ways that people experience health and illness.",
-"page": 11,
-"heading": "How Do People Experience Health and Illness?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Health Promotion and Maintenance",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "Volunteering in the children's ward at the local hospital",
-"isCorrect": true,
-"rationale": "This is correct. Many people find that work is a healthy way to cope with stressors. People also experience meaningful work as a dimension of wellness. For many people, volunteering, pursuing hobbies, and engaging in pleasurable activities can be forms of meaningful work."
-},
-{
-"text": "Starting a garden club in the living community",
-"isCorrect": true,
-"rationale": "This is correct. Starting a community garden club may be distinguished as 'meaningful work' for persons who enjoyed farming, nature, and growing plants."
-},
-{
-"text": "Reaching a desired salary after 10 years of employment",
-"isCorrect": false,
-"rationale": "This is incorrect. Receiving a desired salary after 10 years of work is not necessarily seen as 'meaningful work.' Salary is not typically mentioned in definitions of 'meaningful work.'"
-},
-{
-"text": "Playing an instrument in a rock and roll band",
-"isCorrect": true,
-"rationale": "This is correct. Some people find that singing, playing a musical instrument, or listening to music is particularly healing."
-},
-{
-"text": "Deciding to return to work because of boredom",
-"isCorrect": false,
-"rationale": "This is incorrect. Deciding to return to work because of boredom is not necessarily seen as 'meaningful work.' Meaningful work is meant to be pleasurable. Returning to work is only meaningful if the work is pleasurable."
-}
-]
-},
-{
-"questionNumber": 27,
-"type": "SATA",
-"questionText": "The nurse is aware that patients may fail to comply with a proposed healthcare regimen and be perceived as being noncompliant. For which common reason(s) does a nurse identify as causing a patient to be noncompliant with a plan of care? Select all that apply.",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 11,
-"heading": "How Do People Experience Health and Illness?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Safe and Effective Care Environment: Management of Care",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "The patient lacks a support system.",
-"isCorrect": true,
-"rationale": "This is correct. Patients may fail to comply with proposed medical regimens or a plan of care if the plan has no personal relevance for the patient (or family), which indicates a lack of support system."
-},
-{
-"text": "The patient does not understand the plan.",
-"isCorrect": true,
-"rationale": "This is correct. The nurse must consider the patient's understanding of the plan, knowledge level, and feasibility. The patient is unlikely to be compliant if the plan is not understood."
-},
-{
-"text": "The plan of care is inconvenient.",
-"isCorrect": true,
-"rationale": "This is correct. Noncompliance often occurs because the inconvenience causes a barrier for the patient."
-},
-{
-"text": "The patient is stubborn by nature.",
-"isCorrect": false,
-"rationale": "This is incorrect. People are least likely to refuse to carry out a plan of care simply out of stubbornness, hostility toward healthcare providers, or wanton disregard for their own welfare."
-},
-{
-"text": "The plan is financially inhibitive.",
-"isCorrect": true,
-"rationale": "This is correct. If the plan of care includes interventions that are financially prohibitive, the patient is likely to be noncompliant."
-}
-]
-},
-{
-"questionNumber": 28,
-"type": "SATA",
-"questionText": "The nurse is aware that which situations can lead to the family caregiver's feeling of 'burnout'? Select all that apply.",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Apply the concepts presented in this chapter to a variety of patient care situations.",
-"page": 14,
-"heading": "Analysis/Nursing Diagnosis",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "Caring for an infant during eruption of a first tooth",
-"isCorrect": false,
-"rationale": "This is incorrect. Caring for an infant during the eruption of a first tooth is considered a short-term situation."
-},
-{
-"text": "Caring for an adolescent child with schizophrenia",
-"isCorrect": true,
-"rationale": "This is correct. The long-term effects of caring for a family member with mental illness, such as schizophrenia, can cause burnout. The client's care may fluctuate with the disease process, but emotional stress is always high."
-},
-{
-"text": "Caring for a child being treated for a broken leg",
-"isCorrect": false,
-"rationale": "This is incorrect. Caring for a child being treated for a broken leg is a short-term situation with an 'end in sight.'"
-},
-{
-"text": "Caring for a spouse with Alzheimer's disease",
-"isCorrect": true,
-"rationale": "This is correct. The caregiver of a person who has Alzheimer's disease is very likely to experience burnout; the client's care is ongoing and full-time."
-},
-{
-"text": "Caring for grandchildren once a week, as needed",
-"isCorrect": false,
-"rationale": "This is incorrect. Caring for grandchildren once a week, as needed, is both short-term and intermittent and not considered to be a likely cause of burnout."
-}
-]
-},
-{
-"questionNumber": 29,
-"type": "SATA",
-"questionText": "A newly hired nurse is working with an experienced nurse on the oncology unit. The newly hired nurse expresses interest in helping patients and making their hospital stay a better experience. Which is the most appropriate response for the experienced nurse to make? Select all that apply.",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Explain what the concepts in this chapter mean to you as you work toward becoming a full-spectrum nurse.",
-"page": 13,
-"heading": "How Can I Honor Each Client's Unique Health/Illness Experience?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Difficult",
-"options": [
-{
-"text": "'This takes time. Once you have worked on the unit for a while, it will become clear to you.'",
-"isCorrect": false,
-"rationale": "This is incorrect. As a nurse, one can be an instrument of healing in a hurtful world. However, being an instrument of healing does not come automatically with a nursing license. This is not an appropriate response from the experienced nurse."
-},
-{
-"text": "'Find your best approach to patient care, and then use this approach with every patient.'",
-"isCorrect": false,
-"rationale": "This is incorrect. Nurses do not provide the best care by learning just one approach and applying it to every client or patient. The nurse needs to see and react to each patient as a unique individual."
-},
-{
-"text": "'One of the very best ways is to listen to your patient and be attentive to their needs.'",
-"isCorrect": true,
-"rationale": "This is correct. Cultivating a healing presence by listening, being maximally attentive to a patient's needs, and being respectful to others' ways of coping is an excellent response from the experienced nurse."
-},
-{
-"text": "'It is helpful to consider your strengths and weaknesses and how you cope with illness.'",
-"isCorrect": true,
-"rationale": "This is correct. An excellent way to help patients with their hospital experience is for the nurse to be aware of personal strengths and weaknesses and to understand how the nurse would respond to illness."
-},
-{
-"text": "'Just remember to apply all your nursing knowledge when you interact with a patient.'",
-"isCorrect": false,
-"rationale": "This is incorrect. Applying all the nurse's knowledge during each interaction with a patient is not sound advice and probably not possible. The nurse needs to focus on each patient in the present time frame."
-}
-]
-},
-{
-"questionNumber": 30,
-"type": "SATA",
-"questionText": "What is an example of a nutrient-deficient disease? Select all that apply.",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Explore the concepts of health and illness",
-"page": 4,
-"heading": "What Is an Example of a Nutrient-Deficient Disease",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Physiological Integrity: Physiological Adaptation",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Easy",
-"options": [
-{
-"text": "Scurvy",
-"isCorrect": true,
-"rationale": "This is correct. Scurvy is a nutrient-deficient disease and is caused by a lack of vitamin C in the diet. Symptoms of scurvy include sore arms and legs, fatigue, and weakness. If left untreated, it can lead to gum disease, hair loss, and bleeding from the skin."
-},
-{
-"text": "Night blindness",
-"isCorrect": true,
-"rationale": "This is correct. Night blindness is a condition that makes it hard to see in low light. Night blindness is also caused by lack of vitamin A in the diet."
-},
-{
-"text": "Anemia",
-"isCorrect": true,
-"rationale": "This is correct. Anemia is a condition in which there are not enough red blood cells to carry enough oxygen to the body's tissues. Anemia is also caused by an iron deficiency, which causes fatigue and weakness."
-},
-{
-"text": "Goiter",
-"isCorrect": true,
-"rationale": "This is correct. Goiter is caused by a lack of iodine in the diet. Goiter is known as an abnormal enlargement of the thyroid gland."
-},
-{
-"text": "HIV",
-"isCorrect": false,
-"rationale": "This is incorrect. HIV is not a nutrient-deficient disease. HIV is spread via person-to-person contact. HIV damages the immune system and interferes with the body's ability to fight diseases."
-}
-]
-},
-{
-"questionNumber": 31,
-"type": "SATA",
-"questionText": "How does sleep nourish our bodies? Select all that apply.",
-"chapter": "Chapter 7: Experiencing Health & Illness",
-"objective": "Explore the concepts of health and illness",
-"page": 5,
-"heading": "How Does Sleep Nourish Our Bodies?",
-"integratedProcesses": "Nursing Process",
-"clientNeed": "Psychosocial Integrity",
-"cognitiveLevel": "Analysis [Analyzing]",
-"concept": "Patient-Centered Care",
-"difficulty": "Easy",
-"options": [
-{
-"text": "Tissue regeneration",
-"isCorrect": true,
-"rationale": "This is correct. Sleep nourishes our bodies by assisting in tissue regeneration. While we sleep, our body is repairing tissues and repairing DNA that has suffered oxidative stress."
-},
-{
-"text": "Formation of red blood cells",
-"isCorrect": true,
-"rationale": "This is correct. Sleep also helps with formation of new red blood cells. While we sleep, new blood cells are created to carry more oxygen to repair tissue damage."
-},
-{
-"text": "Mental rejuvenation",
-"isCorrect": true,
-"rationale": "This is correct. Sleep helps with mental rejuvenation and helps the mind and body slow down. Which is very important for mental health."
-},
-{
-"text": "Synthesis of bone",
-"isCorrect": true,
-"rationale": "This is correct. Sleep is important for synthesis of bone growth. Sleep is necessary for bone marrow, which contains blood cells, stem cells, and immune cells to fight off infections."
-},
-{
-"text": "Mood disturbances",
-"isCorrect": false,
-"rationale": "This is incorrect. Sleep deprivation can have a large effect on our mood disturbance and sensory deficits."
-}
-]
-}
+  {
+    "questionNumber": 1,
+    "type": "MCQ",
+    "questionText": "A client admitted as an inpatient to the medical-surgical unit has suffered sudden respiratory failure. The client's condition is getting worse; they become cyanotic with periods of labored breathing. Which action should the nurse take first?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify a variety of documentation formats and their purposes.",
+    "page": 441,
+    "heading": "How Are Health Records Systems Organized? > Source-Oriented Record Systems",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Study the discharge plan.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The discharge plan contains data from utilization review, case managers, or discharge planners on anticipated needs after discharge. This is not the first action the nurse should take."
+      },
+      {
+        "text": "Check the progress notes for vital signs.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Progress notes are chronological documentation by healthcare team members, including client exams, problem identification, and response to therapy. Graphic data records, not progress notes, contain the vital signs."
+      },
+      {
+        "text": "Examine the history and physical examination.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The history and physical examination provide a detailed summary of the client's current problem, past medical and social history, medications taken by the client, review of systems, and physical examination data. This is not the first action the nurse should take."
+      },
+      {
+        "text": "Look for an advance directive.",
+        "isCorrect": true,
+        "rationale": "This is correct. The advance directive, which should be located in a special section of the client's medical record, should be examined first because the client's symptoms indicate that resuscitation may be needed. The advance directive contains information about the client's wishes for intensity of care and actions that should be taken in the event of a life-threatening event."
+      }
+    ]
+  },
+  {
+    "questionNumber": 2,
+    "type": "MCQ",
+    "questionText": "A hospital uses a source-oriented medical record. What is a major disadvantage of this charting system?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify a variety of documentation formats and their purposes.",
+    "page": 441,
+    "heading": "How Are Health Records Systems Organized? > Source-Oriented Record Systems",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "It involves a cooperative effort among various disciplines.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The problem-oriented (not source-oriented) medical record requires a cooperative effort among disciplines."
+      },
+      {
+        "text": "The system requires diligence in maintaining a current problem list.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The problem-oriented (not source-oriented) medical record requires diligence in maintaining a current problem list."
+      },
+      {
+        "text": "Data may be fragmented and scattered throughout the chart.",
+        "isCorrect": true,
+        "rationale": "This is correct. A major disadvantage of a source-oriented medical record is that data may be fragmented and scattered throughout the chart."
+      },
+      {
+        "text": "Oversights of care may result from disagreement over what constitutes a significant variation.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Charting by exception (not source-oriented) can result in omissions from disagreement over what constitutes a significant variation."
+      }
+    ]
+  },
+  {
+    "questionNumber": 3,
+    "type": "MCQ",
+    "questionText": "A student nurse makes the following comments to the preceptor: 'I love getting information from the chart. Everything related to the patient's problem is together and addressed by various members of the healthcare team.' The student nurse has been introduced to which type of charting system?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify a variety of documentation formats and their purposes.",
+    "page": 441,
+    "heading": "How Are Health Records Systems Organized? > Problem-Oriented Record (POR) Systems",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Narrative",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Narrative charting is a free text description of the patient status and nursing care, not usually organized according to patient problems."
+      },
+      {
+        "text": "Focus",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Focus charting highlights the patient's concerns, problems, and strengths in a three-column format."
+      },
+      {
+        "text": "Source-oriented",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Source-oriented record systems require members of each discipline to record their findings in a separately labeled section of the chart."
+      },
+      {
+        "text": "Problem-oriented",
+        "isCorrect": true,
+        "rationale": "This is correct. A problem-oriented record system is organized around the patient's problems, and each member of the healthcare team documents in the area designated for that problem. This method makes it easier to view the patient's progress and integrate the interdisciplinary perspective."
+      }
+    ]
+  },
+  {
+    "questionNumber": 4,
+    "type": "MCQ",
+    "questionText": "The department of nursing at a local hospital is considering changing to charting by exception (CBE). Which example would be a major disadvantage of CBE?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify a variety of documentation formats and their purposes.",
+    "page": 442,
+    "heading": "How Are Health Records Systems Organized? > Charting by Exception",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Increases the time nurses spend on charting in narrative format",
+        "isCorrect": false,
+        "rationale": "This is incorrect. CBE reduces the amount of time spent in charting because if nurses document only deviations from the normal CBE, then it is assumed that unless a separate entry is made, all standards have been met with a normal response."
+      },
+      {
+        "text": "Does not clearly identify deviations from normal expectations",
+        "isCorrect": false,
+        "rationale": "This is incorrect. CBE clearly identifies deviations from normal expectations."
+      },
+      {
+        "text": "Requires all providers to document in the same sections of the chart",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Problem-oriented charting requires all providers to document in the same sections of the chart; CBE does not."
+      },
+      {
+        "text": "Can increase the risk of omissions in client care",
+        "isCorrect": true,
+        "rationale": "This is correct. A major disadvantage of CBE is that it can result in omissions in documenting client care because of either varying views of what is abnormal or deviations. Another disadvantage is that it does not capture the application of critical thinking by the nurse in the provision of care."
+      }
+    ]
+  },
+  {
+    "questionNumber": 5,
+    "type": "MCQ",
+    "questionText": "Which of the following prescriptions would the nurse question since it is inconsistent with the standards established by the Joint Commission?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify approved abbreviations to use when documenting in clinical environments.",
+    "page": 447,
+    "heading": "What Are Some Common Formats for Nursing Progress Notes? > Use of Abbreviations; Table 17-1: Joint Commission 'Do Not Use' List",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Administer Lasix 20 mg PO daily at 1,000.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse would not question this order because it is consistent (not inconsistent) with the standards established by the Joint Commission. The word daily should be written out instead of using qd or q.d."
+      },
+      {
+        "text": "Administer Lasix 10.0 mg PO daily at 1,000.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse would question this order because it is inconsistent with the standards of the Joint Commission. The Joint Commission recommends that certain words are written out instead of using symbols and abbreviations to minimize the risk of medication errors. The trailing zero should not be used in medication prescriptions; thus, 10.0 mg is incorrect. It should be correctly written as 10 mg."
+      },
+      {
+        "text": "Administer digoxin 10 mg PO daily at 1,000.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse would not question this order because it is consistent (not inconsistent) with the standards established by the Joint Commission. The order is correctly written."
+      },
+      {
+        "text": "Administer digoxin 0.3 mg IV daily at 1,000.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse would not question this order because it is consistent (not inconsistent) with the standards established by the Joint Commission. The Joint Commission supports the use of a leading zero; thus, 0.3 mg is correctly written."
+      }
+    ]
+  },
+  {
+    "questionNumber": 6,
+    "type": "MCQ",
+    "questionText": "A patient with a history of hypertension and rheumatoid arthritis is admitted for surgery for a colon resection due to colon cancer. Which integrated plan of care (IPOC) would be priority for the nurse to implement?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to accurately record the health status of a patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 454,
+    "heading": "What Forms Do Nurses Use to Document Nursing Care? > Integrated Plan of Care",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Leadership and Management",
+    "difficulty": "Difficult",
+    "options": [
+      {
+        "text": "Hypertension",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While the patient does have hypertension, it is not the priority IPOC the nurse should use."
+      },
+      {
+        "text": "Rheumatoid arthritis",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While the patient does have rheumatoid arthritis, it is not the priority IPOC the nurse should use."
+      },
+      {
+        "text": "Postoperative colon resection",
+        "isCorrect": true,
+        "rationale": "This is correct. The postoperative colon resection integrated plan of care should be followed; however, modifications should be made to meet the patient's other health needs."
+      },
+      {
+        "text": "Diabetes mellitus",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The patient's scenario does not have any mention of diabetes mellitus, so this IPOC should not be used."
+      }
+    ]
+  },
+  {
+    "questionNumber": 7,
+    "type": "MCQ",
+    "questionText": "The nurse notifies the primary care provider that their patient is experiencing pain. The provider gives the nurse a telephone prescription for morphine 4 mg intravenously every hour as needed for pain. How should the nurse document this telephone order?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 463,
+    "heading": "Clinical Insight 17-2: Receiving Telephone and Verbal Prescriptions",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain. Kay Andrews, RN",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse must include TO and the primary provider's name."
+      },
+      {
+        "text": "09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain. TO Dr. D. Kelly/Kay Andrews, RN",
+        "isCorrect": true,
+        "rationale": "This is correct. Correct documentation of a telephone order is as follows: '09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain TO Dr. D. Kelly/Kay Andrews, RN' (date, time, medication, route, frequency of dose, circumstances under which it is to be given, prescriber's name and title, nurse's name and title.)"
+      },
+      {
+        "text": "09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain. VO Dr. D. Kelly/Kay Andrews, RN",
+        "isCorrect": false,
+        "rationale": "This is incorrect. VO stands for 'verbal order,' not 'telephone order' (TO)."
+      },
+      {
+        "text": "09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain. VO Kay Andrews, RN",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should not include VO in front of their name. VO stands for 'verbal order.'"
+      }
+    ]
+  },
+  {
+    "questionNumber": 8,
+    "type": "MCQ",
+    "questionText": "A patient refuses a dose of medication. How should the nurse document the event?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 464,
+    "heading": "Charting Additional Information About Medications; Clinical Insight 17-3: Guidelines for Documentation",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Patient is uncooperative and refuses the prescribed dose of digoxin.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. 'Uncooperative' is judgmental and is an example of subjective charting, which should be avoided."
+      },
+      {
+        "text": "Patient refuses the 0900 dose of digoxin.",
+        "isCorrect": true,
+        "rationale": "This is correct. 'Patient refuses the 0900 dose of digoxin' objectively describes the event in which the patient refuses to take the 0900 dose of digoxin."
+      },
+      {
+        "text": "Patient is belligerent, argumentative, and refuses the 0900 dose of digoxin.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. 'Belligerent and argumentative' is judgmental and is an example of subjective charting, which should be avoided."
+      },
+      {
+        "text": "0900 dose of digoxin not given.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. '0900 dose of digoxin not given' provides no explanation why the medication was not given."
+      }
+    ]
+  },
+  {
+    "questionNumber": 9,
+    "type": "MCQ",
+    "questionText": "At 1000 on 11/14/19, the nurse takes a telephone prescription for 'metoprolol 5 mg intravenously now.' What is the latest date and time the nurse will expect the prescriber to countersign the order?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 463,
+    "heading": "Clinical Insight 17-2: Receiving Telephone and Verbal Prescriptions",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "11/14/19 at 1200",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This is not the latest date and time, but it is an acceptable time frame to sign the order."
+      },
+      {
+        "text": "11/14/19 at 2200",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This is not the latest date and time, but it is an acceptable time frame to sign the order."
+      },
+      {
+        "text": "11/15/19 at 1000",
+        "isCorrect": true,
+        "rationale": "This is correct. This is the latest date and time for the prescriber to countersign the order. The prescriber must countersign all verbal and telephone orders within 24 hours."
+      },
+      {
+        "text": "11/16/19 at 1000",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This is too long of a time frame for the provider to sign the orders."
+      }
+    ]
+  },
+  {
+    "questionNumber": 10,
+    "type": "MCQ",
+    "questionText": "The nurse takes a telephone order from a primary care provider for 40 mEq potassium chloride in 100 mL of sterile water for injection to be infused over 4 hours. Which action must the nurse take to ensure the accuracy of the order?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Explain the process for verifying or questioning a medical prescription.",
+    "page": 463,
+    "heading": "Clinical Insight 17-2: Receiving Telephone and Verbal Prescriptions",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Repeat the order to the prescriber, even if the nurse believes the order was understood correctly.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse should repeat the order to the prescriber, even if they believe the order was understood entirely."
+      },
+      {
+        "text": "Immediately notify the pharmacy of the order, and verify it with a pharmacist.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Only the prescribing provider, not the pharmacist, can verify the order."
+      },
+      {
+        "text": "Ask the unit secretary to listen to the prescriber on the phone to verify the order.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. If possible, the nurse should have a second nurse (not the unit secretary) listen to the order to verify accuracy."
+      },
+      {
+        "text": "Transcribe the order on notepaper, and verify the dosage in a drug handbook.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should transcribe the order directly on the patient's chart. Transcribing it on a piece of paper and then copying it again introduces one more chance of errог."
+      }
+    ]
+  },
+  {
+    "questionNumber": 11,
+    "type": "MCQ",
+    "questionText": "Which charting entry would the nurse use for the A in SOAP charting?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 445,
+    "heading": "What Are Some Common Formats for Nursing Progress Notes? SOAP/SOAPIE/SOAP(IER)",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Intractable pain",
+        "isCorrect": true,
+        "rationale": "This is correct. The A in SOAP charting stands for 'assessment,' which, in this case, is intractable pain. Assessment is the client's problem or nursing diagnoses."
+      },
+      {
+        "text": "'I can't get any relief from this pain in my abdomen.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. 'I can't get any relief from this pain in my abdomen' is subjective data and goes with the S."
+      },
+      {
+        "text": "Holding abdomen and moaning",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Holding abdomen and moaning is objective data and goes with the O."
+      },
+      {
+        "text": "Notified provider to change pain medication",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Notifying the provider to change pain medication is the plan and goes with the P in SOAP."
+      }
+    ]
+  },
+  {
+    "questionNumber": 12,
+    "type": "MCQ",
+    "questionText": "A client is admitted to a long-term care facility. The nurse would use which form to follow federal law?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 455,
+    "heading": "What Is Unique About Documentation in Long-Term Care?",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Legal",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "The Minimum Data Set (MDS) for assessment",
+        "isCorrect": true,
+        "rationale": "This is correct. Federal regulations require that a resident be evaluated using the Minimum Data Set (MDS) within 14 days of admission to a long-term care facility."
+      },
+      {
+        "text": "Situation, background, assessment, recommendation (SBAR) for reporting",
+        "isCorrect": false,
+        "rationale": "This is incorrect. SBAR is a technique used for communicating and organizing a handoff report. It is not used for long-term care admissions."
+      },
+      {
+        "text": "Health Care Financing Administration (HCFA) guidelines prior to surgery",
+        "isCorrect": false,
+        "rationale": "This is incorrect. HCFA guidelines govern home healthcare documentation, not long-term care."
+      },
+      {
+        "text": "The Joint Commission guidelines for discharge planning",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The Joint Commission guidelines do apply to long-term care facilities. However, only the MDS assessment is mandated by federal law."
+      }
+    ]
+  },
+  {
+    "questionNumber": 13,
+    "type": "MCQ",
+    "questionText": "The surgeon enters a computerized order for a patient in the postoperative period after a unilateral thoracotomy for lung cancer. The order states: OOB in AM. Which action indicates the nurse is following the surgeon's order?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify approved abbreviations to use when documenting in clinical environments.",
+    "page": 446,
+    "heading": "Abbreviations Commonly Used in Healthcare",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Communication",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Performs oral care",
+        "isCorrect": false,
+        "rationale": "This is incorrect. OOB does not indicate that the nurse should perform oral care."
+      },
+      {
+        "text": "Assists the patient out of bed",
+        "isCorrect": true,
+        "rationale": "This is correct. OOB is the abbreviation for 'out of bed.' The nurse is following the physician's order when they assist the patient out of bed in the morning."
+      },
+      {
+        "text": "Helps the patient with bathing",
+        "isCorrect": false,
+        "rationale": "This is incorrect. OOB does not indicate that the nurse should help with bathing."
+      },
+      {
+        "text": "Changes the patient's operative dressings",
+        "isCorrect": false,
+        "rationale": "This is incorrect. OOB does not indicate the nurse should change the patient's operative dressings."
+      }
+    ]
+  },
+  {
+    "questionNumber": 14,
+    "type": "MCQ",
+    "questionText": "Which instruction by a registered nurse should the student nurse clarify with the clinical instructor about transcribing the provider's orders?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify approved abbreviations to use when documenting in clinical environments.",
+    "page": 447,
+    "heading": "Table 17-1: Joint Commission 'Do Not Use' List",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "'Write drug names in full rather than using abbreviations.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The student nurse would not need to question this instruction."
+      },
+      {
+        "text": "'Use apothecary units instead of metric units.'",
+        "isCorrect": true,
+        "rationale": "This is correct. The student nurse should question the instruction to use apothecary units instead of metric units. Nurses are encouraged to use metric units instead of the rarely used apothecary system."
+      },
+      {
+        "text": "'Use 'at' or 'each' rather than the '@'symbol.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The student nurse would not question this instruction, as it follows the correct standards for abbreviations."
+      },
+      {
+        "text": "'Write 'mL' or 'milliliters' in place of the 'cc' abbreviation.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The student nurse would not question this instruction because it is an approved abbreviation."
+      }
+    ]
+  },
+  {
+    "questionNumber": 15,
+    "type": "MCQ",
+    "questionText": "The nursing instructor is teaching the student about occurrence reports. Which statement by the student indicates correct understanding of the purpose of occurrence reports?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 454,
+    "heading": "What Forms Do Nurses Use to Document Nursing Care? > Occurrence Reports",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "'These reports track problems and identify areas for quality improvement.'",
+        "isCorrect": true,
+        "rationale": "This is correct. Occurrence reports are used to track problems and identify areas for quality improvement."
+      },
+      {
+        "text": "'These reports are required by the Food and Drug Administration (FDA) to report drug errors.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. As an internal communication and documentation tool, occurrence reports are not required to be reported to the FDA."
+      },
+      {
+        "text": "'These reports are required by the Joint Commission for all client falls.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While occurrence reports are required for client falls, it is not for the Joint Commission; it is for the facility to improve quality."
+      },
+      {
+        "text": "'These reports provide legal information should the patient seek legal action after an unusual occurrence.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Occurrence reports are not used to provide legal information should a client seek legal action."
+      }
+    ]
+  },
+  {
+    "questionNumber": 16,
+    "type": "MCQ",
+    "questionText": "Which aspect of electronic documentation systems is most beneficial when compared with written documentation systems?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Compare and contrast electronic and written documentation.",
+    "page": 444,
+    "heading": "Electronic Health Record (EHR) Systems; Box 17-1: Advantages and Disadvantages of a Paper Health Record",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Assists collaboration",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Both types of charting can assist with collaboration."
+      },
+      {
+        "text": "Provides different terminology",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Charting terminology is similar in both types of charting."
+      },
+      {
+        "text": "Improves legibility",
+        "isCorrect": true,
+        "rationale": "This is correct. One of the most beneficial aspects of electronic documentation systems is its ability to improve legibility, which reduces the risk for medication administration mistakes and other errors."
+      },
+      {
+        "text": "Serves as a resource",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Both electronic and written charting can serve as resources."
+      }
+    ]
+  },
+  {
+    "questionNumber": 17,
+    "type": "MCQ",
+    "questionText": "The unlicensed assistive personnel (UAP) informs the nurse that a patient has fallen out of bed and is in pain. The nurse assesses the patient and provides care. Identify the correct documentation of the fall.",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 466,
+    "heading": "Occurrence Reports; Clinical Insight 17-3: Guidelines for Documentation",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Patient found on floor after falling out of bed and verbalizes (L) hip pain",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Do not chart what others have observed as the nurse's own observation."
+      },
+      {
+        "text": "Patient found on floor by UAP Smith and verbalizing (L) hip pain",
+        "isCorrect": true,
+        "rationale": "This is correct. Charting must be accurate and succinct: only chart what the nurse observes."
+      },
+      {
+        "text": "Patient fell out of bed but is currently in bed",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Since the nurse did not see the patient fall, this should not be used as a chart entry."
+      },
+      {
+        "text": "Patient reminded not to climb OOB after falling",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While the nurse can remind the patient not to get out of bed, 'after falling' should not be charted since the nurse did not see this occur."
+      }
+    ]
+  },
+  {
+    "questionNumber": 18,
+    "type": "MCQ",
+    "questionText": "Which set of topics makes up a handoff report given in a recommended format?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Discuss the key elements of giving a verbal patient report.",
+    "page": 456,
+    "heading": "How Do I Give a Handoff Report? > Standardized Report Formats",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Data-action-response (DAR)",
+        "isCorrect": false,
+        "rationale": "This is incorrect. DAR is used in Focus Charting, not for a handoff report."
+      },
+      {
+        "text": "Subjective, objective, assessment, plan (SOAP)",
+        "isCorrect": false,
+        "rationale": "This is incorrect. SOAP is a method for documenting nursing care, not for a handoff report."
+      },
+      {
+        "text": "Situation, background, assessment, recommendation (SBAR)",
+        "isCorrect": true,
+        "rationale": "This is correct. The SBAR technique is used as a mechanism to give a handoff report by enabling a focused communication between healthcare team members."
+      },
+      {
+        "text": "Flowsheets, assessment, concise, timely (FACT)",
+        "isCorrect": false,
+        "rationale": "This is incorrect. FACT is a type of documentation model (not a handoff report) that incorporates many charting-by-exception principles."
+      }
+    ]
+  },
+  {
+    "questionNumber": 19,
+    "type": "MCQ",
+    "questionText": "What is one advantage of problem-intervention-evaluation (PIE) charting?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify a variety of documentation formats and their purposes.",
+    "page": 445,
+    "heading": "What Are Some Common Formats for Nursing Progress Notes? > Problem-Intervention-Evaluation (PIE)",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Focuses on a complete list of client problems",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This style of charting tends to focus only on the listed problems and not on the client as a whole. Therefore, this is a disadvantage, not an advantage."
+      },
+      {
+        "text": "Assesses the client in a comprehensive manner",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This type of charting does not focus on the client as a whole. This is a disadvantage, not an advantage."
+      },
+      {
+        "text": "Documents the planning portion of the client's care",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The primary disadvantage (not advantage) of PIE charting is that it does not document the planning portion of the nursing process."
+      },
+      {
+        "text": "Establishes an ongoing plan of care for the client",
+        "isCorrect": true,
+        "rationale": "This is correct. The PIE charting format organizes information by the client's problems and requires a daily assessment record and progress notes, thus eliminating the need for a nursing care plan."
+      }
+    ]
+  },
+  {
+    "questionNumber": 20,
+    "type": "MCQ",
+    "questionText": "A client is admitted to the birthing unit to rule out preterm labor. The nurse charts only abnormal findings. Which type of charting is the nurse using?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify a variety of documentation formats and their purposes.",
+    "page": 442,
+    "heading": "Charting by Exception",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeeds": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Communication",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Narrative charting",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Narrative charting records all findings, both normal and abnormal."
+      },
+      {
+        "text": "Charting by inclusion",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Charting by inclusion does not chart only abnormal findings."
+      },
+      {
+        "text": "Charting by exception",
+        "isCorrect": true,
+        "rationale": "This is correct. Charting by exception is a system of charting where only exceptions to the normal findings or to the unit standards are charted. These are directed by organizational, professional, and legal guidelines."
+      },
+      {
+        "text": "Source-oriented charting",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Source-oriented charting refers to each healthcare practitioner's charting in a specific section of the chart. For example, nurses would document in the nurses' notes section and physicians would document in the physician section of the healthcare record."
+      }
+    ]
+  },
+  {
+    "questionNumber": 21,
+    "type": "MCQ",
+    "questionText": "At the end of a 12-hour shift, the nurse gives a verbal report to the oncoming nurse. This face-to-face reporting, using the acronym 'CUBAN,' does which of the following?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Discuss the key elements of giving a verbal patient report.",
+    "page": 462,
+    "heading": "Clinical Insight 17-1: Giving Oral Reports",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Ensures that the nurse is able to finish the shift as quickly as possible",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Report should not be rushed in order for a nurse to finish the shift as quickly as possible. However, the nurse should try to begin the report before the shift is over, early enough to complete it before the next shift begins."
+      },
+      {
+        "text": "Provides a guide for the nurse's report to the oncoming nurse",
+        "isCorrect": true,
+        "rationale": "This is correct. The CUBAN acronym is used in all types of report formats and stands for Confidential, Uninterrupted, Brief, Accurate, Named nurse. Following this format, the nurse giving the report has a guide to remember the important data that needs to be shared with the oncoming nurse who will care for the patient."
+      },
+      {
+        "text": "Requires the nurses to engage in walking rounds for the report",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The CUBAN approach does not require walking rounds."
+      },
+      {
+        "text": "Offers a detailed cultural report on Latino patients",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The CUBAN acronym can be used for reporting about any patient regardless of race, ethnicity, or religion and does not necessarily provide cultural information. It is not specific to Latino patients."
+      }
+    ]
+  },
+  {
+    "questionNumber": 22,
+    "type": "MCQ",
+    "questionText": "The instructor is teaching the nursing students about electronic health records (EHRs). Which statement from a student indicates the need for further instruction?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Compare and contrast electronic and written documentation.",
+    "page": 444,
+    "heading": "Disadvantages of Electronic Health Records",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "'I have had EHR instruction and understand the basics of the system. If I need assistance, I will ask for it.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This student does not need further instruction. A person needs to be taught the specifics of each system. Even though the system has been taught to them, a student who understands also knows that the instructor will be a resource for EHR questions that may arise."
+      },
+      {
+        "text": "'The EHR integrates the patient's health information documented by the entire healthcare team into one electronic system.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This student does not need further instruction. The EHR generally integrates information to be used by the healthcare team."
+      },
+      {
+        "text": "'The EHR can track problems and errors, which can direct quality improvement efforts in a given institution.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This student does not need further instruction. Data can be collected and analyzed in multiple ways to evaluate and improve patient care (quality improvement)."
+      },
+      {
+        "text": "'I am proficient with a computer; therefore, I am completely prepared to use the EHR in any institution.'",
+        "isCorrect": true,
+        "rationale": "This is correct. This student needs further instruction. The EHR can vary according to institution and may not be user-friendly. Although a student knows how to use a computer, this knowledge may not directly translate so that the student is able to accurately document in any particular institution."
+      }
+    ]
+  },
+  {
+    "questionNumber": 23,
+    "type": "MCQ",
+    "questionText": "A medical provider has prescribed milk of magnesia (magnesium hydroxide) 30 mL, PO bid. What does bid mean?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify approved abbreviations to use when documenting in clinical environments.",
+    "page": 446,
+    "heading": "Abbreviations Commonly Used in Healthcare",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Communication",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Once every day",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Once a day is written as 'daily.' The abbreviation qd is not used for 'once a day' but is written as 'daily.' Abbreviations are used with caution to reduce errors by nurses and the healthcare team."
+      },
+      {
+        "text": "Two times every day",
+        "isCorrect": true,
+        "rationale": "This is correct. The abbreviation for 'twice a day' is bid, which is generally 12 hours between doses. Abbreviations are used with caution to reduce errors by the nurse and the healthcare team."
+      },
+      {
+        "text": "Three times every day",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Three times a day is tid. Abbreviations are used with caution to reduce errors by the nurse and the healthcare team."
+      },
+      {
+        "text": "Four times a day",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Four times a day is qid. Abbreviations are used with caution to reduce errors by the nurse and the healthcare teams."
+      }
+    ]
+  },
+  {
+    "questionNumber": 24,
+    "type": "MCQ",
+    "questionText": "Why might a healthcare provider choose narrative charting instead of using forms or checklists?",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify a variety of documentation formats and their purposes.",
+    "page": 445,
+    "heading": "Narrative Format",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Narrative charting tracks the client's changing health status as it occurs.",
+        "isCorrect": true,
+        "rationale": "This is correct. A narrative chart entry tells the story of the client's experience as it occurs in a chronological format with the goal being to track a client's changing medical and health status. It also documents progress toward goals for the client."
+      },
+      {
+        "text": "Free-form documentation is inconsistent among healthcare providers.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A disadvantage to narrative charting includes inconsistency among healthcare providers and the manner in which they document using narrative charting."
+      },
+      {
+        "text": "Less charting time by healthcare providers is needed for narrative charting.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. More charting time is needed for narrative charting."
+      },
+      {
+        "text": "Less interdisciplinary discussion occurs with the narrative style of charting.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A concern with narrative charting is a decrease in interdisciplinary discussion of client progress owing to lengthy and redundant documentation by healthcare team members."
+      }
+    ]
+  },
+  {
+    "questionNumber": 25,
+    "type": "SATA",
+    "questionText": "Which actions by the nurse breach patient confidentiality? Select all that apply.",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Compare and contrast electronic and written documentation.",
+    "page": 458,
+    "heading": "Guidelines for Electronic Health Records > How Do I Maintain Confidentiality and Data Security?",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Informatics",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Leaving patient data displayed on a computer screen where others may view it",
+        "isCorrect": true,
+        "rationale": "This is correct. Leaving patient data displayed on a computer screen where others may view them breaches patient confidentiality."
+      },
+      {
+        "text": "Remaining logged on to the computer system after documenting patient care",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse should log off the computer immediately after use. This breaks patient confidentiality."
+      },
+      {
+        "text": "Faxing a patient report to the nurses' station where the patient is being transferred",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Faxing a report to the nurses' station receiving a patient does not breach patient confidentiality because it is located at the nurses' station out of others' view."
+      },
+      {
+        "text": "Informing the nurse manager of a change in the patient's condition",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Anyone directly involved in the patient's care has the right to know about the patient's condition without breaching patient confidentiality."
+      },
+      {
+        "text": "Accessing records of patients assigned to the nurse",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse can directly access records of patients for whom the nurse is caring. However, never access client health records that the nurse has no professional reason to view. This is a severe breach of client privacy rules."
+      }
+    ]
+  },
+  {
+    "questionNumber": 26,
+    "type": "SATA",
+    "questionText": "Which statements by the new graduate nurse indicate a need for further instruction about documentation? Select all that apply.",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 464,
+    "heading": "Clinical Insight 17-3: Guidelines for Documentation",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "'I can wait until the end of the shift to document my care.'",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse graduate needs further instruction. Documentation should be performed as soon as possible after the nurse makes an assessment or provides care. The longer the nurse waits, the less accurate the documentation will be. Leaving documentation until the end of the shift may cause important details to be omitted or mistaken."
+      },
+      {
+        "text": "'Charting every 2 hours is the most appropriate way to document nursing care.'",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse graduate needs further instruction. It is not necessary to complete documentation on a strict schedule, such as every 2 to 4 hours."
+      },
+      {
+        "text": "'I find it easier to chart before I go to lunch and then after my shift report.'",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse graduate needs further instruction. Even waiting until lunch to report or after the shift is over is too long a period of time for accurate documentation."
+      },
+      {
+        "text": "'I should chart as soon as possible after nursing care is given.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse graduate does not need further instruction. Charting as soon as possible after nursing care is appropriate."
+      },
+      {
+        "text": "'Charting after performing an intervention is acceptable.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse graduate nurse does not need further instruction. Charting after performing an intervention is appropriate. However, the nurse should never document before performing an intervention."
+      }
+    ]
+  },
+  {
+    "questionNumber": 27,
+    "type": "SATA",
+    "questionText": "The implementation of electronic health records (EHRs) allows the nurse to carry out which actions? Select all that apply.",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Compare and contrast electronic and written documentation.",
+    "page": 442,
+    "heading": "Electronic Health Record (EHR) Systems > Advantages",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Informatics",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Use data to facilitate evidence-based nursing practice",
+        "isCorrect": true,
+        "rationale": "This is correct. The implementation of EHRs has many advantages for the nurse. This includes the ability to identify data to facilitate evidence-based nursing practice."
+      },
+      {
+        "text": "Promote efficient use of time spent charting",
+        "isCorrect": true,
+        "rationale": "This is correct. EHR promotes the efficient use of time nurses spend documenting client care. Nurses spend up to 25% less time charting."
+      },
+      {
+        "text": "Reduce the opportunity for interdisciplinary collaboration",
+        "isCorrect": false,
+        "rationale": "This is incorrect. EHR does not impair interdisciplinary collaboration; rather, EHR fosters communication and collaboration among healthcare team members."
+      },
+      {
+        "text": "Activate the system's safeguards to improve quality of care",
+        "isCorrect": true,
+        "rationale": "This is correct. EHRs have protocols and programmed alerts and safeguards to improve the quality of client care."
+      },
+      {
+        "text": "Access patient information at the same time as other team members",
+        "isCorrect": true,
+        "rationale": "This is correct. Multiple healthcare providers can access the same information at the same time."
+      }
+    ]
+  },
+  {
+    "questionNumber": 28,
+    "type": "SATA",
+    "questionText": "In performing a handoff report, the nurse should communicate information on which parameters? Select all that apply.",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Discuss the key elements of giving a verbal patient report.",
+    "page": 463,
+    "heading": "Clinical Insight 17-1: Giving Oral Reports",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Teaching performed",
+        "isCorrect": true,
+        "rationale": "This is correct. Handoff reports include any client teaching done."
+      },
+      {
+        "text": "Any change in client status",
+        "isCorrect": true,
+        "rationale": "This is correct. Any change in client status is included in a handoff report."
+      },
+      {
+        "text": "Treatments administered",
+        "isCorrect": true,
+        "rationale": "This is correct. Handoff reports include therapies and treatments administered."
+      },
+      {
+        "text": "Hygiene measures performed",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Hygiene care is routinely done in inpatient settings and is usually recorded on a flowsheet. Handoff reports should be succinct and not contain routine information."
+      },
+      {
+        "text": "Insurance status",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Insurance status is not included in a handoff report."
+      }
+    ]
+  },
+  {
+    "questionNumber": 29,
+    "type": "SATA",
+    "questionText": "Which points regarding discharge summaries must the nurse remember? Select all that apply.",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Identify a variety of documentation formats and their purposes.",
+    "page": 450,
+    "heading": "Discharge Summary",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "The discharge summary is important because clients require follow-up care.",
+        "isCorrect": true,
+        "rationale": "This is correct. The discharge summary is important because clients require follow-up care."
+      },
+      {
+        "text": "A complete discharge summary is a guide for healthcare professionals in the community.",
+        "isCorrect": true,
+        "rationale": "This is correct. The discharge summary serves as baseline data for the healthcare professionals who will provide follow-up care."
+      },
+      {
+        "text": "The nurse can give a verbal transfer report, which is the same as a discharge summary.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A verbal transfer report is not a replacement for the comprehensive discharge summary. A complete discharge summary must be completed even if a complete verbal transfer report is given to ensure that all important and specific information is communicated to another healthcare provider when the client is discharged from the hospital."
+      },
+      {
+        "text": "The discharge summary is the final note in the client's paper record.",
+        "isCorrect": true,
+        "rationale": "This is correct. A discharge summary is the last entry made in the paper record."
+      },
+      {
+        "text": "A complete discharge summary must be handwritten using the narrative note format.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A discharge summary can be done in the electronic medical record (EMR) formats, a narrative note, or on a discharge summary form."
+      }
+    ]
+  },
+  {
+    "questionNumber": 30,
+    "type": "SATA",
+    "questionText": "The nurse is administering the 0900 dose of heparin (an anticoagulant) 5,000 units subcutaneously ordered every 6 hours to a patient with deep vein thrombosis (DVT). At 0800, the patient's laboratory values show partial thromboplastin time (PTT) and clotting times are four times the normal range (excessively elevated). The nurse observes bruising on the patient's buttocks and back and recognizes these as signs of risk for significant bleeding. Which actions would the nurse take? Select all that apply.",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
+    "page": 464,
+    "heading": "Medication Administration Records; Clinical Insight 17-3: Guidelines for Documentation",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Patient-Centered Care",
+    "difficulty": "Difficult",
+    "options": [
+      {
+        "text": "Notify the prescriber.",
+        "isCorrect": true,
+        "rationale": "This is correct. The physician should be notified immediately. Heparin, an anticoagulant, would make the situation worse if given."
+      },
+      {
+        "text": "Give subcutaneous heparin, as ordered.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. In this situation, the heparin should not be given. This action would exacerbate the bleeding."
+      },
+      {
+        "text": "Hold the medication dose at this time.",
+        "isCorrect": true,
+        "rationale": "This is correct. Heparin must be held since the patient is at risk for bleeding and the laboratory values are excessively abnormal."
+      },
+      {
+        "text": "Chart the reason the medication was not given.",
+        "isCorrect": true,
+        "rationale": "This is correct. If a medication is held, the nurse should chart the reason."
+      },
+      {
+        "text": "Record abnormal findings in the patient's health record.",
+        "isCorrect": true,
+        "rationale": "This is correct. Abnormal findings are charted in the patient's health record."
+      }
+    ]
+  },
+  {
+    "questionNumber": 31,
+    "type": "SATA",
+    "questionText": "The EHR is used to document client care. Which purposes are applicable to the EHR? Select all that apply.",
+    "chapter": "Chapter 17: Documenting & Reporting",
+    "objective": "Explain the purposes of documentation.",
+    "page": 440,
+    "heading": "How Do Healthcare Providers Use Documentation?",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Is a legal record",
+        "isCorrect": true,
+        "rationale": "This is correct. One purpose of the EHR and documentation is to act as a legal record. In court, the health record is legal evidence of the care given to a client and is used to judge whether the interventions were timely and appropriate."
+      },
+      {
+        "text": "Is used for utilization review",
+        "isCorrect": true,
+        "rationale": "This is correct. The health record is used for utilization review to determine whether the medical treatments and interventions were necessary and appropriate."
+      },
+      {
+        "text": "Provides continuity of care",
+        "isCorrect": true,
+        "rationale": "This is correct. One purpose of the EHR and documentation is to communicate, enhancing continuity of care."
+      },
+      {
+        "text": "Is used for quality improvement",
+        "isCorrect": true,
+        "rationale": "This is correct. One purpose of the EHR and documentation is quality improvement."
+      },
+      {
+        "text": "Acts as an occurrence report",
+        "isCorrect": false,
+        "rationale": "This is incorrect. An occurrence report is not part of the client's health record and should never be referenced in the nurse' notes or in other sections of the health record."
+      }
+    ]
+  }
 ]

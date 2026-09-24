@@ -12,19 +12,42 @@ initializeApp({
 
 const db = getFirestore();
 
+function normalizeChapterName(name) {
+  if (!name) return "General Practice";
+  
+  let cleaned = name
+    .replace(/[:\-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return cleaned
+    .toLowerCase()
+    .replace(/(^\w|\s\w)/g, m => m.toUpperCase());
+}
+
 async function uploadQuestions() {
   const rawData = fs.readFileSync("questions.json", "utf8");
   const questions = JSON.parse(rawData);
 
-  console.log("🚀 Uploading new questions to Firestore (preserving existing ones)...");
+  console.log("🚀 Uploading new questions to Firestore using JSON metadata IDs...");
   
   for (const q of questions) {
-    const docRef = db.collection("questions").doc();
+    const normalizedChap = normalizeChapterName(q.chapter);
+    
+    // Extract chapter number directly from the chapter string (e.g., "Chapter 3: ...")
+    const chapMatch = normalizedChap.match(/\d+/);
+    const chapNum = chapMatch ? chapMatch[0] : "gen";
+    const qNum = q.questionNumber || 0;
+    
+    // Construct clean, predictable ID using chapter and question numbers
+    const docId = `ch${chapNum}_q${qNum}`;
+
+    const docRef = db.collection("questions").doc(docId);
     await docRef.set({
-      questionNumber: q.questionNumber || 0,
+      questionNumber: qNum,
       type: q.type || "MCQ",
       questionText: q.questionText || "",
-      chapter: q.chapter || "General Practice",
+      chapter: normalizedChap,
       objective: q.objective || "",
       page: q.page || 0,
       heading: q.heading || "",
@@ -39,7 +62,7 @@ async function uploadQuestions() {
     });
   }
 
-  console.log(`✅ Successfully uploaded ${questions.length} new questions to Firestore!`);
+  console.log(`✅ Successfully uploaded ${questions.length} questions to Firestore with uniform titles and clean IDs!`);
   process.exit(0);
 }
 
