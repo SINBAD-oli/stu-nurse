@@ -1,1152 +1,253 @@
 [
   {
-    "questionNumber": 1,
+    "questionNumber": 4,
     "type": "MCQ",
-    "questionText": "A client admitted as an inpatient to the medical-surgical unit has suffered sudden respiratory failure. The client's condition is getting worse; they become cyanotic with periods of labored breathing. Which action should the nurse take first?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify a variety of documentation formats and their purposes.",
-    "page": 441,
-    "heading": "How Are Health Records Systems Organized? > Source-Oriented Record Systems",
+    "questionText": "The nurse is preparing to administer a medication for a patient with cystic fibrosis. The nurse is not familiar with this particular drug. Which is the best action that the nurse should take?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Name at least five sources of medication information.",
+    "page": 807,
+    "heading": "Drug Listings and Directories",
     "integratedProcesses": "Nursing Process",
     "clientNeed": "Safe and Effective Care Environment: Management of Care",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Easy",
-    "options": [
-      {
-        "text": "Study the discharge plan.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The discharge plan contains data from utilization review, case managers, or discharge planners on anticipated needs after discharge. This is not the first action the nurse should take."
-      },
-      {
-        "text": "Check the progress notes for vital signs.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Progress notes are chronological documentation by healthcare team members, including client exams, problem identification, and response to therapy. Graphic data records, not progress notes, contain the vital signs."
-      },
-      {
-        "text": "Examine the history and physical examination.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The history and physical examination provide a detailed summary of the client's current problem, past medical and social history, medications taken by the client, review of systems, and physical examination data. This is not the first action the nurse should take."
-      },
-      {
-        "text": "Look for an advance directive.",
-        "isCorrect": true,
-        "rationale": "This is correct. The advance directive, which should be located in a special section of the client's medical record, should be examined first because the client's symptoms indicate that resuscitation may be needed. The advance directive contains information about the client's wishes for intensity of care and actions that should be taken in the event of a life-threatening event."
-      }
-    ]
-  },
-  {
-    "questionNumber": 2,
-    "type": "MCQ",
-    "questionText": "A hospital uses a source-oriented medical record. What is a major disadvantage of this charting system?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify a variety of documentation formats and their purposes.",
-    "page": 441,
-    "heading": "How Are Health Records Systems Organized? > Source-Oriented Record Systems",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Communication",
+    "concept": "Safety",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "It involves a cooperative effort among various disciplines.",
+        "text": "Administer the drug.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The problem-oriented (not source-oriented) medical record requires a cooperative effort among disciplines."
+        "rationale": "This is incorrect. If the nurse is in doubt about a medication, they should look it up before administering."
       },
       {
-        "text": "The system requires diligence in maintaining a current problem list.",
+        "text": "Ask another nurse.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The problem-oriented (not source-oriented) medical record requires diligence in maintaining a current problem list."
+        "rationale": "This is incorrect. While asking another nurse is acceptable, it is not the best answer because the other nurse may not be familiar with the drug either."
       },
       {
-        "text": "Data may be fragmented and scattered throughout the chart.",
+        "text": "Refer to the Physician's Desk Reference.",
         "isCorrect": true,
-        "rationale": "This is correct. A major disadvantage of a source-oriented medical record is that data may be fragmented and scattered throughout the chart."
+        "rationale": "This is correct. The Physician's Desk Reference is a book commercially compiled by the pharmaceutical companies and is a standard resource for professionals prescribing and administering medication."
       },
       {
-        "text": "Oversights of care may result from disagreement over what constitutes a significant variation.",
+        "text": "Review a nursing care plan textbook.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Charting by exception (not source-oriented) can result in omissions from disagreement over what constitutes a significant variation."
-      }
-    ]
-  },
-  {
-    "questionNumber": 3,
-    "type": "MCQ",
-    "questionText": "A student nurse makes the following comments to the preceptor: 'I love getting information from the chart. Everything related to the patient's problem is together and addressed by various members of the healthcare team.' The student nurse has been introduced to which type of charting system?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify a variety of documentation formats and their purposes.",
-    "page": 441,
-    "heading": "How Are Health Records Systems Organized? > Problem-Oriented Record (POR) Systems",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Narrative",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Narrative charting is a free text description of the patient status and nursing care, not usually organized according to patient problems."
-      },
-      {
-        "text": "Focus",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Focus charting highlights the patient's concerns, problems, and strengths in a three-column format."
-      },
-      {
-        "text": "Source-oriented",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Source-oriented record systems require members of each discipline to record their findings in a separately labeled section of the chart."
-      },
-      {
-        "text": "Problem-oriented",
-        "isCorrect": true,
-        "rationale": "This is correct. A problem-oriented record system is organized around the patient's problems, and each member of the healthcare team documents in the area designated for that problem. This method makes it easier to view the patient's progress and integrate the interdisciplinary perspective."
-      }
-    ]
-  },
-  {
-    "questionNumber": 4,
-    "type": "MCQ",
-    "questionText": "The department of nursing at a local hospital is considering changing to charting by exception (CBE). Which example would be a major disadvantage of CBE?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify a variety of documentation formats and their purposes.",
-    "page": 442,
-    "heading": "How Are Health Records Systems Organized? > Charting by Exception",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Increases the time nurses spend on charting in narrative format",
-        "isCorrect": false,
-        "rationale": "This is incorrect. CBE reduces the amount of time spent in charting because if nurses document only deviations from the normal CBE, then it is assumed that unless a separate entry is made, all standards have been met with a normal response."
-      },
-      {
-        "text": "Does not clearly identify deviations from normal expectations",
-        "isCorrect": false,
-        "rationale": "This is incorrect. CBE clearly identifies deviations from normal expectations."
-      },
-      {
-        "text": "Requires all providers to document in the same sections of the chart",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Problem-oriented charting requires all providers to document in the same sections of the chart; CBE does not."
-      },
-      {
-        "text": "Can increase the risk of omissions in client care",
-        "isCorrect": true,
-        "rationale": "This is correct. A major disadvantage of CBE is that it can result in omissions in documenting client care because of either varying views of what is abnormal or deviations. Another disadvantage is that it does not capture the application of critical thinking by the nurse in the provision of care."
+        "rationale": "This is incorrect. A pharmacology or drug handbook can be used, but not a nursing care plan book."
       }
     ]
   },
   {
     "questionNumber": 5,
     "type": "MCQ",
-    "questionText": "Which of the following prescriptions would the nurse question since it is inconsistent with the standards established by the Joint Commission?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify approved abbreviations to use when documenting in clinical environments.",
-    "page": 447,
-    "heading": "What Are Some Common Formats for Nursing Progress Notes? > Use of Abbreviations; Table 17-1: Joint Commission 'Do Not Use' List",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
+    "questionText": "Which term refers to the movement of a drug from the site of administration to the bloodstream?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
+    "page": 809,
+    "heading": "What Factors Affect Drug Absorption?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Evidence-Based Practice",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Administer Lasix 20 mg PO daily at 1,000.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse would not question this order because it is consistent (not inconsistent) with the standards established by the Joint Commission. The word daily should be written out instead of using qd or q.d."
-      },
-      {
-        "text": "Administer Lasix 10.0 mg PO daily at 1,000.",
+        "text": "Absorption",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse would question this order because it is inconsistent with the standards of the Joint Commission. The Joint Commission recommends that certain words are written out instead of using symbols and abbreviations to minimize the risk of medication errors. The trailing zero should not be used in medication prescriptions; thus, 10.0 mg is incorrect. It should be correctly written as 10 mg."
+        "rationale": "This is correct. Absorption refers to the movement of a drug from the site of administration into the bloodstream."
       },
       {
-        "text": "Administer digoxin 10 mg PO daily at 1,000.",
+        "text": "Distribution",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nurse would not question this order because it is consistent (not inconsistent) with the standards established by the Joint Commission. The order is correctly written."
+        "rationale": "This is incorrect. Distribution involves the transport of the drug in body fluids, such as blood, to the tissues and organs."
       },
       {
-        "text": "Administer digoxin 0.3 mg IV daily at 1,000.",
+        "text": "Metabolism",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nurse would not question this order because it is consistent (not inconsistent) with the standards established by the Joint Commission. The Joint Commission supports the use of a leading zero; thus, 0.3 mg is correctly written."
+        "rationale": "This is incorrect. Metabolism is the biotransformation of the drug into a more water-soluble form or into metabolites that can be excreted from the body."
+      },
+      {
+        "text": "Excretion",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Excretion, or the removal of drugs from the body, takes place in the kidneys, liver, gastrointestinal tract, lungs, and exocrine glands."
       }
     ]
   },
   {
     "questionNumber": 6,
     "type": "MCQ",
-    "questionText": "A patient with a history of hypertension and rheumatoid arthritis is admitted for surgery for a colon resection due to colon cancer. Which integrated plan of care (IPOC) would be priority for the nurse to implement?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to accurately record the health status of a patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 454,
-    "heading": "What Forms Do Nurses Use to Document Nursing Care? > Integrated Plan of Care",
+    "questionText": "A patient who just returned from the postanesthesia care unit is reporting severe incision pain. Which drug contained in the patient's medication administration record will offer them the fastest relief?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 851,
+    "heading": "Intravenous Medications",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Leadership and Management",
-    "difficulty": "Difficult",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Evidence-Based Practice",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Hypertension",
+        "text": "Liquid acetaminophen with codeine",
         "isCorrect": false,
-        "rationale": "This is incorrect. While the patient does have hypertension, it is not the priority IPOC the nurse should use."
+        "rationale": "This is incorrect. This is not the fastest. Liquid medication has a faster onset than oral tablets but slower than intramuscular."
       },
       {
-        "text": "Rheumatoid arthritis",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While the patient does have rheumatoid arthritis, it is not the priority IPOC the nurse should use."
-      },
-      {
-        "text": "Postoperative colon resection",
+        "text": "Intravenous morphine sulfate",
         "isCorrect": true,
-        "rationale": "This is correct. The postoperative colon resection integrated plan of care should be followed; however, modifications should be made to meet the patient's other health needs."
+        "rationale": "This is correct. This is the fastest. The onset of medication action takes place within seconds, so intravenous administration is especially useful in emergencies."
       },
       {
-        "text": "Diabetes mellitus",
+        "text": "Intramuscular meperidine",
         "isCorrect": false,
-        "rationale": "This is incorrect. The patient's scenario does not have any mention of diabetes mellitus, so this IPOC should not be used."
+        "rationale": "This is incorrect. This is fast, but not as fast as intravenous."
+      },
+      {
+        "text": "Oral oxycodone tablets",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This is not the fastest. Oral medications have the slowest onset of action when compared to other routes."
       }
     ]
   },
   {
     "questionNumber": 7,
     "type": "MCQ",
-    "questionText": "The nurse notifies the primary care provider that their patient is experiencing pain. The provider gives the nurse a telephone prescription for morphine 4 mg intravenously every hour as needed for pain. How should the nurse document this telephone order?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 463,
-    "heading": "Clinical Insight 17-2: Receiving Telephone and Verbal Prescriptions",
-    "integratedProcesses": "Communication and Documentation",
+    "questionText": "A nurse is preparing a medication that is supplied in ounces but the prescription is in milliliters. How many milliliters equal 1 ounce?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Correctly calculate drug dosages, including (1) conversion among the metric, apothecary, and household measurement systems and (2) working with units and milliequivalents (mEq).",
+    "page": 821,
+    "heading": "Medication Measurement Systems > Household Measurements",
+    "integratedProcesses": "Nursing Process",
     "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
     "cognitiveLevel": "Application [Applying]",
     "concept": "Safety",
-    "difficulty": "Moderate",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain. Kay Andrews, RN",
+        "text": "5",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nurse must include TO and the primary provider's name."
+        "rationale": "This is incorrect. One teaspoon equals 5 milliliters."
       },
       {
-        "text": "09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain. TO Dr. D. Kelly/Kay Andrews, RN",
+        "text": "15",
+        "isCorrect": false,
+        "rationale": "This is incorrect. One tablespoon or 3 teaspoons equals 15 milliliters."
+      },
+      {
+        "text": "30",
         "isCorrect": true,
-        "rationale": "This is correct. Correct documentation of a telephone order is as follows: '09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain TO Dr. D. Kelly/Kay Andrews, RN' (date, time, medication, route, frequency of dose, circumstances under which it is to be given, prescriber's name and title, nurse's name and title.)"
+        "rationale": "This is correct. One ounce equals 30 milliliters."
       },
       {
-        "text": "09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain. VO Dr. D. Kelly/Kay Andrews, RN",
+        "text": "45",
         "isCorrect": false,
-        "rationale": "This is incorrect. VO stands for 'verbal order,' not 'telephone order' (TO)."
-      },
-      {
-        "text": "09/02/19 0845 morphine 4 mg intravenously q 1 hour prn pain. VO Kay Andrews, RN",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should not include VO in front of their name. VO stands for 'verbal order.'"
+        "rationale": "This is incorrect. One ounce does not equal 45 milliliters."
       }
     ]
   },
   {
     "questionNumber": 8,
     "type": "MCQ",
-    "questionText": "A patient refuses a dose of medication. How should the nurse document the event?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 464,
-    "heading": "Charting Additional Information About Medications; Clinical Insight 17-3: Guidelines for Documentation",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Patient is uncooperative and refuses the prescribed dose of digoxin.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. 'Uncooperative' is judgmental and is an example of subjective charting, which should be avoided."
-      },
-      {
-        "text": "Patient refuses the 0900 dose of digoxin.",
-        "isCorrect": true,
-        "rationale": "This is correct. 'Patient refuses the 0900 dose of digoxin' objectively describes the event in which the patient refuses to take the 0900 dose of digoxin."
-      },
-      {
-        "text": "Patient is belligerent, argumentative, and refuses the 0900 dose of digoxin.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. 'Belligerent and argumentative' is judgmental and is an example of subjective charting, which should be avoided."
-      },
-      {
-        "text": "0900 dose of digoxin not given.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. '0900 dose of digoxin not given' provides no explanation why the medication was not given."
-      }
-    ]
-  },
-  {
-    "questionNumber": 9,
-    "type": "MCQ",
-    "questionText": "At 1000 on 11/14/19, the nurse takes a telephone prescription for 'metoprolol 5 mg intravenously now.' What is the latest date and time the nurse will expect the prescriber to countersign the order?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 463,
-    "heading": "Clinical Insight 17-2: Receiving Telephone and Verbal Prescriptions",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "11/14/19 at 1200",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This is not the latest date and time, but it is an acceptable time frame to sign the order."
-      },
-      {
-        "text": "11/14/19 at 2200",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This is not the latest date and time, but it is an acceptable time frame to sign the order."
-      },
-      {
-        "text": "11/15/19 at 1000",
-        "isCorrect": true,
-        "rationale": "This is correct. This is the latest date and time for the prescriber to countersign the order. The prescriber must countersign all verbal and telephone orders within 24 hours."
-      },
-      {
-        "text": "11/16/19 at 1000",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This is too long of a time frame for the provider to sign the orders."
-      }
-    ]
-  },
-  {
-    "questionNumber": 10,
-    "type": "MCQ",
-    "questionText": "The nurse takes a telephone order from a primary care provider for 40 mEq potassium chloride in 100 mL of sterile water for injection to be infused over 4 hours. Which action must the nurse take to ensure the accuracy of the order?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Explain the process for verifying or questioning a medical prescription.",
-    "page": 463,
-    "heading": "Clinical Insight 17-2: Receiving Telephone and Verbal Prescriptions",
-    "integratedProcesses": "Communication and Documentation",
+    "questionText": "A patient is given furosemide 40 mg orally at 0900. The duration of action for this drug is approximately 6 hours after oral administration. At which time in military hours should the nurse no longer expect to see the effects of this drug?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Define onset, peak, and duration of drug action; therapeutic level, peak level, and trough level; and biological half-life.",
+    "page": 816,
+    "heading": "Onset, Peak, and Duration of Action",
+    "integratedProcesses": "Nursing Process",
     "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
     "cognitiveLevel": "Application [Applying]",
     "concept": "Safety",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Repeat the order to the prescriber, even if the nurse believes the order was understood correctly.",
+        "text": "0930",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The effects of oral furosemide should be seen 30 to 60 minutes after administration, which is 0900 (9:30 a.m. in this case)."
+      },
+      {
+        "text": "1000",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Peak effect (diuresis) should occur in 1 to 2 hours, which is 1000 hours (10:00 a.m.)."
+      },
+      {
+        "text": "1100",
+        "isCorrect": false,
+        "rationale": "This is incorrect. In this scenario, peak effect (diuresis) should occur in 1 to 2 hours, which is 1100 hours (11:00 a.m.)."
+      },
+      {
+        "text": "1500",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should repeat the order to the prescriber, even if they believe the order was understood entirely."
-      },
-      {
-        "text": "Immediately notify the pharmacy of the order, and verify it with a pharmacist.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Only the prescribing provider, not the pharmacist, can verify the order."
-      },
-      {
-        "text": "Ask the unit secretary to listen to the prescriber on the phone to verify the order.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. If possible, the nurse should have a second nurse (not the unit secretary) listen to the order to verify accuracy."
-      },
-      {
-        "text": "Transcribe the order on notepaper, and verify the dosage in a drug handbook.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should transcribe the order directly on the patient's chart. Transcribing it on a piece of paper and then copying it again introduces one more chance of errог."
+        "rationale": "This is correct. The nurse should no longer see the effects of furosemide at around 1500 hours (3:00 p.m.)."
       }
     ]
   },
   {
-    "questionNumber": 11,
+    "questionNumber": 9,
     "type": "MCQ",
-    "questionText": "Which charting entry would the nurse use for the A in SOAP charting?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 445,
-    "heading": "What Are Some Common Formats for Nursing Progress Notes? SOAP/SOAPIE/SOAP(IER)",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Intractable pain",
-        "isCorrect": true,
-        "rationale": "This is correct. The A in SOAP charting stands for 'assessment,' which, in this case, is intractable pain. Assessment is the client's problem or nursing diagnoses."
-      },
-      {
-        "text": "'I can't get any relief from this pain in my abdomen.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. 'I can't get any relief from this pain in my abdomen' is subjective data and goes with the S."
-      },
-      {
-        "text": "Holding abdomen and moaning",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Holding abdomen and moaning is objective data and goes with the O."
-      },
-      {
-        "text": "Notified provider to change pain medication",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Notifying the provider to change pain medication is the plan and goes with the P in SOAP."
-      }
-    ]
-  },
-  {
-    "questionNumber": 12,
-    "type": "MCQ",
-    "questionText": "A client is admitted to a long-term care facility. The nurse would use which form to follow federal law?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 455,
-    "heading": "What Is Unique About Documentation in Long-Term Care?",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Legal",
-    "difficulty": "Easy",
-    "options": [
-      {
-        "text": "The Minimum Data Set (MDS) for assessment",
-        "isCorrect": true,
-        "rationale": "This is correct. Federal regulations require that a resident be evaluated using the Minimum Data Set (MDS) within 14 days of admission to a long-term care facility."
-      },
-      {
-        "text": "Situation, background, assessment, recommendation (SBAR) for reporting",
-        "isCorrect": false,
-        "rationale": "This is incorrect. SBAR is a technique used for communicating and organizing a handoff report. It is not used for long-term care admissions."
-      },
-      {
-        "text": "Health Care Financing Administration (HCFA) guidelines prior to surgery",
-        "isCorrect": false,
-        "rationale": "This is incorrect. HCFA guidelines govern home healthcare documentation, not long-term care."
-      },
-      {
-        "text": "The Joint Commission guidelines for discharge planning",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The Joint Commission guidelines do apply to long-term care facilities. However, only the MDS assessment is mandated by federal law."
-      }
-    ]
-  },
-  {
-    "questionNumber": 13,
-    "type": "MCQ",
-    "questionText": "The surgeon enters a computerized order for a patient in the postoperative period after a unilateral thoracotomy for lung cancer. The order states: OOB in AM. Which action indicates the nurse is following the surgeon's order?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify approved abbreviations to use when documenting in clinical environments.",
-    "page": 446,
-    "heading": "Abbreviations Commonly Used in Healthcare",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Communication",
-    "difficulty": "Easy",
-    "options": [
-      {
-        "text": "Performs oral care",
-        "isCorrect": false,
-        "rationale": "This is incorrect. OOB does not indicate that the nurse should perform oral care."
-      },
-      {
-        "text": "Assists the patient out of bed",
-        "isCorrect": true,
-        "rationale": "This is correct. OOB is the abbreviation for 'out of bed.' The nurse is following the physician's order when they assist the patient out of bed in the morning."
-      },
-      {
-        "text": "Helps the patient with bathing",
-        "isCorrect": false,
-        "rationale": "This is incorrect. OOB does not indicate that the nurse should help with bathing."
-      },
-      {
-        "text": "Changes the patient's operative dressings",
-        "isCorrect": false,
-        "rationale": "This is incorrect. OOB does not indicate the nurse should change the patient's operative dressings."
-      }
-    ]
-  },
-  {
-    "questionNumber": 14,
-    "type": "MCQ",
-    "questionText": "Which instruction by a registered nurse should the student nurse clarify with the clinical instructor about transcribing the provider's orders?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify approved abbreviations to use when documenting in clinical environments.",
-    "page": 447,
-    "heading": "Table 17-1: Joint Commission 'Do Not Use' List",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "'Write drug names in full rather than using abbreviations.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The student nurse would not need to question this instruction."
-      },
-      {
-        "text": "'Use apothecary units instead of metric units.'",
-        "isCorrect": true,
-        "rationale": "This is correct. The student nurse should question the instruction to use apothecary units instead of metric units. Nurses are encouraged to use metric units instead of the rarely used apothecary system."
-      },
-      {
-        "text": "'Use 'at' or 'each' rather than the '@'symbol.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The student nurse would not question this instruction, as it follows the correct standards for abbreviations."
-      },
-      {
-        "text": "'Write 'mL' or 'milliliters' in place of the 'cc' abbreviation.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The student nurse would not question this instruction because it is an approved abbreviation."
-      }
-    ]
-  },
-  {
-    "questionNumber": 15,
-    "type": "MCQ",
-    "questionText": "The nursing instructor is teaching the student about occurrence reports. Which statement by the student indicates correct understanding of the purpose of occurrence reports?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 454,
-    "heading": "What Forms Do Nurses Use to Document Nursing Care? > Occurrence Reports",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "'These reports track problems and identify areas for quality improvement.'",
-        "isCorrect": true,
-        "rationale": "This is correct. Occurrence reports are used to track problems and identify areas for quality improvement."
-      },
-      {
-        "text": "'These reports are required by the Food and Drug Administration (FDA) to report drug errors.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. As an internal communication and documentation tool, occurrence reports are not required to be reported to the FDA."
-      },
-      {
-        "text": "'These reports are required by the Joint Commission for all client falls.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While occurrence reports are required for client falls, it is not for the Joint Commission; it is for the facility to improve quality."
-      },
-      {
-        "text": "'These reports provide legal information should the patient seek legal action after an unusual occurrence.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Occurrence reports are not used to provide legal information should a client seek legal action."
-      }
-    ]
-  },
-  {
-    "questionNumber": 16,
-    "type": "MCQ",
-    "questionText": "Which aspect of electronic documentation systems is most beneficial when compared with written documentation systems?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Compare and contrast electronic and written documentation.",
-    "page": 444,
-    "heading": "Electronic Health Record (EHR) Systems; Box 17-1: Advantages and Disadvantages of a Paper Health Record",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "questionText": "Which factor in a patient's medical history is most likely to prolong the half-life of certain drugs?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Define onset, peak, and duration of drug action; therapeutic level, peak level, and trough level; and biological half-life.",
+    "page": 816,
+    "heading": "Other Concepts Relevant to Drug Effectiveness > Biological Half-Life",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
     "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Assists collaboration",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Both types of charting can assist with collaboration."
-      },
-      {
-        "text": "Provides different terminology",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Charting terminology is similar in both types of charting."
-      },
-      {
-        "text": "Improves legibility",
-        "isCorrect": true,
-        "rationale": "This is correct. One of the most beneficial aspects of electronic documentation systems is its ability to improve legibility, which reduces the risk for medication administration mistakes and other errors."
-      },
-      {
-        "text": "Serves as a resource",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Both electronic and written charting can serve as resources."
-      }
-    ]
-  },
-  {
-    "questionNumber": 17,
-    "type": "MCQ",
-    "questionText": "The unlicensed assistive personnel (UAP) informs the nurse that a patient has fallen out of bed and is in pain. The nurse assesses the patient and provides care. Identify the correct documentation of the fall.",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 466,
-    "heading": "Occurrence Reports; Clinical Insight 17-3: Guidelines for Documentation",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Patient found on floor after falling out of bed and verbalizes (L) hip pain",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Do not chart what others have observed as the nurse's own observation."
-      },
-      {
-        "text": "Patient found on floor by UAP Smith and verbalizing (L) hip pain",
-        "isCorrect": true,
-        "rationale": "This is correct. Charting must be accurate and succinct: only chart what the nurse observes."
-      },
-      {
-        "text": "Patient fell out of bed but is currently in bed",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Since the nurse did not see the patient fall, this should not be used as a chart entry."
-      },
-      {
-        "text": "Patient reminded not to climb OOB after falling",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While the nurse can remind the patient not to get out of bed, 'after falling' should not be charted since the nurse did not see this occur."
-      }
-    ]
-  },
-  {
-    "questionNumber": 18,
-    "type": "MCQ",
-    "questionText": "Which set of topics makes up a handoff report given in a recommended format?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Discuss the key elements of giving a verbal patient report.",
-    "page": 456,
-    "heading": "How Do I Give a Handoff Report? > Standardized Report Formats",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Easy",
-    "options": [
-      {
-        "text": "Data-action-response (DAR)",
-        "isCorrect": false,
-        "rationale": "This is incorrect. DAR is used in Focus Charting, not for a handoff report."
-      },
-      {
-        "text": "Subjective, objective, assessment, plan (SOAP)",
-        "isCorrect": false,
-        "rationale": "This is incorrect. SOAP is a method for documenting nursing care, not for a handoff report."
-      },
-      {
-        "text": "Situation, background, assessment, recommendation (SBAR)",
-        "isCorrect": true,
-        "rationale": "This is correct. The SBAR technique is used as a mechanism to give a handoff report by enabling a focused communication between healthcare team members."
-      },
-      {
-        "text": "Flowsheets, assessment, concise, timely (FACT)",
-        "isCorrect": false,
-        "rationale": "This is incorrect. FACT is a type of documentation model (not a handoff report) that incorporates many charting-by-exception principles."
-      }
-    ]
-  },
-  {
-    "questionNumber": 19,
-    "type": "MCQ",
-    "questionText": "What is one advantage of problem-intervention-evaluation (PIE) charting?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify a variety of documentation formats and their purposes.",
-    "page": 445,
-    "heading": "What Are Some Common Formats for Nursing Progress Notes? > Problem-Intervention-Evaluation (PIE)",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Focuses on a complete list of client problems",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This style of charting tends to focus only on the listed problems and not on the client as a whole. Therefore, this is a disadvantage, not an advantage."
-      },
-      {
-        "text": "Assesses the client in a comprehensive manner",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This type of charting does not focus on the client as a whole. This is a disadvantage, not an advantage."
-      },
-      {
-        "text": "Documents the planning portion of the client's care",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The primary disadvantage (not advantage) of PIE charting is that it does not document the planning portion of the nursing process."
-      },
-      {
-        "text": "Establishes an ongoing plan of care for the client",
-        "isCorrect": true,
-        "rationale": "This is correct. The PIE charting format organizes information by the client's problems and requires a daily assessment record and progress notes, thus eliminating the need for a nursing care plan."
-      }
-    ]
-  },
-  {
-    "questionNumber": 20,
-    "type": "MCQ",
-    "questionText": "A client is admitted to the birthing unit to rule out preterm labor. The nurse charts only abnormal findings. Which type of charting is the nurse using?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify a variety of documentation formats and their purposes.",
-    "page": 442,
-    "heading": "Charting by Exception",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeeds": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Communication",
-    "difficulty": "Easy",
-    "options": [
-      {
-        "text": "Narrative charting",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Narrative charting records all findings, both normal and abnormal."
-      },
-      {
-        "text": "Charting by inclusion",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Charting by inclusion does not chart only abnormal findings."
-      },
-      {
-        "text": "Charting by exception",
-        "isCorrect": true,
-        "rationale": "This is correct. Charting by exception is a system of charting where only exceptions to the normal findings or to the unit standards are charted. These are directed by organizational, professional, and legal guidelines."
-      },
-      {
-        "text": "Source-oriented charting",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Source-oriented charting refers to each healthcare practitioner's charting in a specific section of the chart. For example, nurses would document in the nurses' notes section and physicians would document in the physician section of the healthcare record."
-      }
-    ]
-  },
-  {
-    "questionNumber": 21,
-    "type": "MCQ",
-    "questionText": "At the end of a 12-hour shift, the nurse gives a verbal report to the oncoming nurse. This face-to-face reporting, using the acronym 'CUBAN,' does which of the following?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Discuss the key elements of giving a verbal patient report.",
-    "page": 462,
-    "heading": "Clinical Insight 17-1: Giving Oral Reports",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Ensures that the nurse is able to finish the shift as quickly as possible",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Report should not be rushed in order for a nurse to finish the shift as quickly as possible. However, the nurse should try to begin the report before the shift is over, early enough to complete it before the next shift begins."
-      },
-      {
-        "text": "Provides a guide for the nurse's report to the oncoming nurse",
-        "isCorrect": true,
-        "rationale": "This is correct. The CUBAN acronym is used in all types of report formats and stands for Confidential, Uninterrupted, Brief, Accurate, Named nurse. Following this format, the nurse giving the report has a guide to remember the important data that needs to be shared with the oncoming nurse who will care for the patient."
-      },
-      {
-        "text": "Requires the nurses to engage in walking rounds for the report",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The CUBAN approach does not require walking rounds."
-      },
-      {
-        "text": "Offers a detailed cultural report on Latino patients",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The CUBAN acronym can be used for reporting about any patient regardless of race, ethnicity, or religion and does not necessarily provide cultural information. It is not specific to Latino patients."
-      }
-    ]
-  },
-  {
-    "questionNumber": 22,
-    "type": "MCQ",
-    "questionText": "The instructor is teaching the nursing students about electronic health records (EHRs). Which statement from a student indicates the need for further instruction?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Compare and contrast electronic and written documentation.",
-    "page": 444,
-    "heading": "Disadvantages of Electronic Health Records",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "'I have had EHR instruction and understand the basics of the system. If I need assistance, I will ask for it.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This student does not need further instruction. A person needs to be taught the specifics of each system. Even though the system has been taught to them, a student who understands also knows that the instructor will be a resource for EHR questions that may arise."
-      },
-      {
-        "text": "'The EHR integrates the patient's health information documented by the entire healthcare team into one electronic system.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This student does not need further instruction. The EHR generally integrates information to be used by the healthcare team."
-      },
-      {
-        "text": "'The EHR can track problems and errors, which can direct quality improvement efforts in a given institution.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This student does not need further instruction. Data can be collected and analyzed in multiple ways to evaluate and improve patient care (quality improvement)."
-      },
-      {
-        "text": "'I am proficient with a computer; therefore, I am completely prepared to use the EHR in any institution.'",
-        "isCorrect": true,
-        "rationale": "This is correct. This student needs further instruction. The EHR can vary according to institution and may not be user-friendly. Although a student knows how to use a computer, this knowledge may not directly translate so that the student is able to accurately document in any particular institution."
-      }
-    ]
-  },
-  {
-    "questionNumber": 23,
-    "type": "MCQ",
-    "questionText": "A medical provider has prescribed milk of magnesia (magnesium hydroxide) 30 mL, PO bid. What does bid mean?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify approved abbreviations to use when documenting in clinical environments.",
-    "page": 446,
-    "heading": "Abbreviations Commonly Used in Healthcare",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Communication",
-    "difficulty": "Easy",
-    "options": [
-      {
-        "text": "Once every day",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Once a day is written as 'daily.' The abbreviation qd is not used for 'once a day' but is written as 'daily.' Abbreviations are used with caution to reduce errors by nurses and the healthcare team."
-      },
-      {
-        "text": "Two times every day",
-        "isCorrect": true,
-        "rationale": "This is correct. The abbreviation for 'twice a day' is bid, which is generally 12 hours between doses. Abbreviations are used with caution to reduce errors by the nurse and the healthcare team."
-      },
-      {
-        "text": "Three times every day",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Three times a day is tid. Abbreviations are used with caution to reduce errors by the nurse and the healthcare team."
-      },
-      {
-        "text": "Four times a day",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Four times a day is qid. Abbreviations are used with caution to reduce errors by the nurse and the healthcare teams."
-      }
-    ]
-  },
-  {
-    "questionNumber": 24,
-    "type": "MCQ",
-    "questionText": "Why might a healthcare provider choose narrative charting instead of using forms or checklists?",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify a variety of documentation formats and their purposes.",
-    "page": 445,
-    "heading": "Narrative Format",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Narrative charting tracks the client's changing health status as it occurs.",
-        "isCorrect": true,
-        "rationale": "This is correct. A narrative chart entry tells the story of the client's experience as it occurs in a chronological format with the goal being to track a client's changing medical and health status. It also documents progress toward goals for the client."
-      },
-      {
-        "text": "Free-form documentation is inconsistent among healthcare providers.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. A disadvantage to narrative charting includes inconsistency among healthcare providers and the manner in which they document using narrative charting."
-      },
-      {
-        "text": "Less charting time by healthcare providers is needed for narrative charting.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. More charting time is needed for narrative charting."
-      },
-      {
-        "text": "Less interdisciplinary discussion occurs with the narrative style of charting.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. A concern with narrative charting is a decrease in interdisciplinary discussion of client progress owing to lengthy and redundant documentation by healthcare team members."
-      }
-    ]
-  },
-  {
-    "questionNumber": 25,
-    "type": "SATA",
-    "questionText": "Which actions by the nurse breach patient confidentiality? Select all that apply.",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Compare and contrast electronic and written documentation.",
-    "page": 458,
-    "heading": "Guidelines for Electronic Health Records > How Do I Maintain Confidentiality and Data Security?",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Informatics",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Leaving patient data displayed on a computer screen where others may view it",
-        "isCorrect": true,
-        "rationale": "This is correct. Leaving patient data displayed on a computer screen where others may view them breaches patient confidentiality."
-      },
-      {
-        "text": "Remaining logged on to the computer system after documenting patient care",
-        "isCorrect": true,
-        "rationale": "This is correct. The nurse should log off the computer immediately after use. This breaks patient confidentiality."
-      },
-      {
-        "text": "Faxing a patient report to the nurses' station where the patient is being transferred",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Faxing a report to the nurses' station receiving a patient does not breach patient confidentiality because it is located at the nurses' station out of others' view."
-      },
-      {
-        "text": "Informing the nurse manager of a change in the patient's condition",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Anyone directly involved in the patient's care has the right to know about the patient's condition without breaching patient confidentiality."
-      },
-      {
-        "text": "Accessing records of patients assigned to the nurse",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse can directly access records of patients for whom the nurse is caring. However, never access client health records that the nurse has no professional reason to view. This is a severe breach of client privacy rules."
-      }
-    ]
-  },
-  {
-    "questionNumber": 26,
-    "type": "SATA",
-    "questionText": "Which statements by the new graduate nurse indicate a need for further instruction about documentation? Select all that apply.",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 464,
-    "heading": "Clinical Insight 17-3: Guidelines for Documentation",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "'I can wait until the end of the shift to document my care.'",
-        "isCorrect": true,
-        "rationale": "This is correct. The nurse graduate needs further instruction. Documentation should be performed as soon as possible after the nurse makes an assessment or provides care. The longer the nurse waits, the less accurate the documentation will be. Leaving documentation until the end of the shift may cause important details to be omitted or mistaken."
-      },
-      {
-        "text": "'Charting every 2 hours is the most appropriate way to document nursing care.'",
-        "isCorrect": true,
-        "rationale": "This is correct. The nurse graduate needs further instruction. It is not necessary to complete documentation on a strict schedule, such as every 2 to 4 hours."
-      },
-      {
-        "text": "'I find it easier to chart before I go to lunch and then after my shift report.'",
-        "isCorrect": true,
-        "rationale": "This is correct. The nurse graduate needs further instruction. Even waiting until lunch to report or after the shift is over is too long a period of time for accurate documentation."
-      },
-      {
-        "text": "'I should chart as soon as possible after nursing care is given.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse graduate does not need further instruction. Charting as soon as possible after nursing care is appropriate."
-      },
-      {
-        "text": "'Charting after performing an intervention is acceptable.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse graduate nurse does not need further instruction. Charting after performing an intervention is appropriate. However, the nurse should never document before performing an intervention."
-      }
-    ]
-  },
-  {
-    "questionNumber": 27,
-    "type": "SATA",
-    "questionText": "The implementation of electronic health records (EHRs) allows the nurse to carry out which actions? Select all that apply.",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Compare and contrast electronic and written documentation.",
-    "page": 442,
-    "heading": "Electronic Health Record (EHR) Systems > Advantages",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Informatics",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Use data to facilitate evidence-based nursing practice",
-        "isCorrect": true,
-        "rationale": "This is correct. The implementation of EHRs has many advantages for the nurse. This includes the ability to identify data to facilitate evidence-based nursing practice."
-      },
-      {
-        "text": "Promote efficient use of time spent charting",
-        "isCorrect": true,
-        "rationale": "This is correct. EHR promotes the efficient use of time nurses spend documenting client care. Nurses spend up to 25% less time charting."
-      },
-      {
-        "text": "Reduce the opportunity for interdisciplinary collaboration",
-        "isCorrect": false,
-        "rationale": "This is incorrect. EHR does not impair interdisciplinary collaboration; rather, EHR fosters communication and collaboration among healthcare team members."
-      },
-      {
-        "text": "Activate the system's safeguards to improve quality of care",
-        "isCorrect": true,
-        "rationale": "This is correct. EHRs have protocols and programmed alerts and safeguards to improve the quality of client care."
-      },
-      {
-        "text": "Access patient information at the same time as other team members",
-        "isCorrect": true,
-        "rationale": "This is correct. Multiple healthcare providers can access the same information at the same time."
-      }
-    ]
-  },
-  {
-    "questionNumber": 28,
-    "type": "SATA",
-    "questionText": "In performing a handoff report, the nurse should communicate information on which parameters? Select all that apply.",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Discuss the key elements of giving a verbal patient report.",
-    "page": 463,
-    "heading": "Clinical Insight 17-1: Giving Oral Reports",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Teaching performed",
-        "isCorrect": true,
-        "rationale": "This is correct. Handoff reports include any client teaching done."
-      },
-      {
-        "text": "Any change in client status",
-        "isCorrect": true,
-        "rationale": "This is correct. Any change in client status is included in a handoff report."
-      },
-      {
-        "text": "Treatments administered",
-        "isCorrect": true,
-        "rationale": "This is correct. Handoff reports include therapies and treatments administered."
-      },
-      {
-        "text": "Hygiene measures performed",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Hygiene care is routinely done in inpatient settings and is usually recorded on a flowsheet. Handoff reports should be succinct and not contain routine information."
-      },
-      {
-        "text": "Insurance status",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Insurance status is not included in a handoff report."
-      }
-    ]
-  },
-  {
-    "questionNumber": 29,
-    "type": "SATA",
-    "questionText": "Which points regarding discharge summaries must the nurse remember? Select all that apply.",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Identify a variety of documentation formats and their purposes.",
-    "page": 450,
-    "heading": "Discharge Summary",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "The discharge summary is important because clients require follow-up care.",
-        "isCorrect": true,
-        "rationale": "This is correct. The discharge summary is important because clients require follow-up care."
-      },
-      {
-        "text": "A complete discharge summary is a guide for healthcare professionals in the community.",
-        "isCorrect": true,
-        "rationale": "This is correct. The discharge summary serves as baseline data for the healthcare professionals who will provide follow-up care."
-      },
-      {
-        "text": "The nurse can give a verbal transfer report, which is the same as a discharge summary.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. A verbal transfer report is not a replacement for the comprehensive discharge summary. A complete discharge summary must be completed even if a complete verbal transfer report is given to ensure that all important and specific information is communicated to another healthcare provider when the client is discharged from the hospital."
-      },
-      {
-        "text": "The discharge summary is the final note in the client's paper record.",
-        "isCorrect": true,
-        "rationale": "This is correct. A discharge summary is the last entry made in the paper record."
-      },
-      {
-        "text": "A complete discharge summary must be handwritten using the narrative note format.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. A discharge summary can be done in the electronic medical record (EMR) formats, a narrative note, or on a discharge summary form."
-      }
-    ]
-  },
-  {
-    "questionNumber": 30,
-    "type": "SATA",
-    "questionText": "The nurse is administering the 0900 dose of heparin (an anticoagulant) 5,000 units subcutaneously ordered every 6 hours to a patient with deep vein thrombosis (DVT). At 0800, the patient's laboratory values show partial thromboplastin time (PTT) and clotting times are four times the normal range (excessively elevated). The nurse observes bruising on the patient's buttocks and back and recognizes these as signs of risk for significant bleeding. Which actions would the nurse take? Select all that apply.",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Follow documentation guidelines to record accurately the health status patient, nursing interventions, and patient outcomes in written and electronic formats.",
-    "page": 464,
-    "heading": "Medication Administration Records; Clinical Insight 17-3: Guidelines for Documentation",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Patient-Centered Care",
+    "concept": "Safety",
     "difficulty": "Difficult",
     "options": [
       {
-        "text": "Notify the prescriber.",
-        "isCorrect": true,
-        "rationale": "This is correct. The physician should be notified immediately. Heparin, an anticoagulant, would make the situation worse if given."
-      },
-      {
-        "text": "Give subcutaneous heparin, as ordered.",
+        "text": "Heart disease",
         "isCorrect": false,
-        "rationale": "This is incorrect. In this situation, the heparin should not be given. This action would exacerbate the bleeding."
+        "rationale": "This is incorrect. Liver and kidney diseases, not heart disease, prolong half-life."
       },
       {
-        "text": "Hold the medication dose at this time.",
+        "text": "Liver disease",
         "isCorrect": true,
-        "rationale": "This is correct. Heparin must be held since the patient is at risk for bleeding and the laboratory values are excessively abnormal."
+        "rationale": "This is correct. Metabolism takes place largely in the liver. If there is a decrease in liver function (e.g., because of liver disease), the drug will be eliminated more slowly, prolonging the drug's half-life."
       },
       {
-        "text": "Chart the reason the medication was not given.",
-        "isCorrect": true,
-        "rationale": "This is correct. If a medication is held, the nurse should chart the reason."
+        "text": "Rheumatoid arthritis",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Rheumatoid arthritis will not prolong half-life; however, liver and kidney diseases can prolong half-life."
       },
       {
-        "text": "Record abnormal findings in the patient's health record.",
-        "isCorrect": true,
-        "rationale": "This is correct. Abnormal findings are charted in the patient's health record."
+        "text": "Osteoarthritis",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Osteoarthritis will not prolong half-life because it does not affect the metabolism or excretion of the drug."
       }
     ]
   },
   {
-    "questionNumber": 31,
-    "type": "SATA",
-    "questionText": "The EHR is used to document client care. Which purposes are applicable to the EHR? Select all that apply.",
-    "chapter": "Chapter 17: Documenting & Reporting",
-    "objective": "Explain the purposes of documentation.",
-    "page": 440,
-    "heading": "How Do Healthcare Providers Use Documentation?",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
+    "questionNumber": 10,
+    "type": "MCQ",
+    "questionText": "The nurse receives a laboratory report that states the patient's digoxin level is 1.2 mg/mL; therapeutic range for this drug is 0.5 to 2 mg/mL Which action should the nurse take in regards to the next dose of digoxin?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Define onset, peak, and duration of drug action; therapeutic level, peak level, and trough level; and biological half-life.",
+    "page": 816,
+    "heading": "Other Concepts Relevant to Drug Effectiveness > Therapeutic Range",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "Is a legal record",
-        "isCorrect": true,
-        "rationale": "This is correct. One purpose of the EHR and documentation is to act as a legal record. In court, the health record is legal evidence of the care given to a client and is used to judge whether the interventions were timely and appropriate."
-      },
-      {
-        "text": "Is used for utilization review",
-        "isCorrect": true,
-        "rationale": "This is correct. The health record is used for utilization review to determine whether the medical treatments and interventions were necessary and appropriate."
-      },
-      {
-        "text": "Provides continuity of care",
-        "isCorrect": true,
-        "rationale": "This is correct. One purpose of the EHR and documentation is to communicate, enhancing continuity of care."
-      },
-      {
-        "text": "Is used for quality improvement",
-        "isCorrect": true,
-        "rationale": "This is correct. One purpose of the EHR and documentation is quality improvement."
-      },
-      {
-        "text": "Acts as an occurrence report",
+        "text": "Notify the prescriber to reduce the dose.",
         "isCorrect": false,
-        "rationale": "This is incorrect. An occurrence report is not part of the client's health record and should never be referenced in the nurse' notes or in other sections of the health record."
+        "rationale": "This is incorrect. The prescriber does not need to be notified because the results are in the therapeutic range."
+      },
+      {
+        "text": "Withhold the next dose of digoxin.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The dose should not be withheld; this action could result in detrimental cardiac effects for the patient."
+      },
+      {
+        "text": "Administer the next dose of digoxin as prescribed.",
+        "isCorrect": true,
+        "rationale": "This is correct. Therapeutic range is a range whereby the medication is at a concentration to produce the desired effect. This patient's level is within the therapeutic range, so the nurse should administer the next dose as prescribed because repeated doses of the medication are given to achieve and maintain a constant therapeutic concentration."
+      },
+      {
+        "text": "Ask the prescribing healthcare provider to increase the dose.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The dose should not be increased because the prescribed dose is producing a level within the therapeutic range."
       }
     ]
   }

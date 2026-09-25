@@ -1,9 +1,9 @@
 import { db } from './firebase-config.js';
-import { collection, getDocs, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { collection, getDocs, doc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { auth } from './firebase-config.js';
 import { setupProfileEditor } from './profileEditor.js';
 import { checkAdminStatus, getReleasedChapters, toggleChapterRelease } from './adminManager.js';
-import { normalizeChapterName } from './quizEngine.js';
+import { normalizeChapterName, setupQuizSession } from './quizEngine.js';
 
 let cachedQuestions = null;
 let cachedReleasedChapters = [];
@@ -85,7 +85,7 @@ async function renderChapterSelection(allQuestions) {
   questionProgress.textContent = currentUserIsAdmin ? "Admin Chapter Release Control" : "Select Quiz Category";
   questionMeta.innerHTML = `<span class="meta-pill">${currentUserIsAdmin ? 'Admin Mode' : 'Chapter Selection'}</span>`;
   questionText.textContent = currentUserIsAdmin 
-    ? "Toggle chapters below to release them for student access:" 
+    ? "Toggle chapters below to release them or test quizzes:" 
     : "Choose an available released chapter or review mode to begin:";
 
   const chapterMap = {};
@@ -117,6 +117,10 @@ async function renderChapterSelection(allQuestions) {
     chapBtn.appendChild(titleDiv);
 
     if (currentUserIsAdmin) {
+      const actionGroup = document.createElement('div');
+      actionGroup.style.display = 'flex';
+      actionGroup.style.gap = '6px';
+
       const releaseBtn = document.createElement('button');
       releaseBtn.className = 'action-btn';
       releaseBtn.style.padding = '6px 10px';
@@ -129,7 +133,26 @@ async function renderChapterSelection(allQuestions) {
         cachedReleasedChapters = await toggleChapterRelease(chap, cachedReleasedChapters);
         renderChapterSelection(allQuestions);
       });
-      chapBtn.appendChild(releaseBtn);
+
+      const testQuizBtn = document.createElement('button');
+      testQuizBtn.className = 'action-btn';
+      testQuizBtn.style.padding = '6px 10px';
+      testQuizBtn.style.fontSize = '11px';
+      testQuizBtn.style.backgroundColor = '#2563eb';
+      testQuizBtn.textContent = '▶️ Test Quiz';
+
+      testQuizBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setupQuizSession(allQuestions, chapQuestions, chap, () => renderChapterSelection(allQuestions));
+      });
+
+      actionGroup.appendChild(releaseBtn);
+      actionGroup.appendChild(testQuizBtn);
+      chapBtn.appendChild(actionGroup);
+    } else {
+      chapBtn.addEventListener('click', () => {
+        setupQuizSession(allQuestions, chapQuestions, chap, () => renderChapterSelection(allQuestions));
+      });
     }
 
     optionsContainer.appendChild(chapBtn);
