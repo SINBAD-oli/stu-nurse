@@ -1,5 +1,113 @@
 [
   {
+    "questionNumber": 1,
+    "type": "MCQ",
+    "questionText": "The nurse administered the narcotic meperidine 50 mg orally (PO) at 1400 to a patient with nausea, vomiting, and pain rated as 9 on a 0 to 10 scale. At 1430, the patient stated that the medication was not working and requested to have intravenous (IV) morphine, which the provider had prescribed for severe pain. What is the nurse's best evaluation of this situation?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 837,
+    "heading": "Route of Administration > Administering Oral Medications> Special Situations",
+    "integratedProcesses": "",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Comfort",
+    "difficulty": "Difficult",
+    "options": [
+      {
+        "text": "The patient needs to understand that it takes time for the medication to reduce pain.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While it does take time for medication to reduce pain, the issue is the severe pain, nausea, and vomiting, which indicates oral medication is not effective."
+      },
+      {
+        "text": "Administering meperidine PO was not the best nursing intervention in this situation.",
+        "isCorrect": true,
+        "rationale": "This is correct. Administering meperidine PO was not the best nursing intervention in this situation because the patient was in severe pain (9/10) with nausea and vomiting. The patient needed immediate pain relief, which would not occur with PO pain medication. The nurse should have administered morphine via IV."
+      },
+      {
+        "text": "The provider should be notified if the patient's pain is not relieved in 2 hours.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Waiting 2 hours to notify the physician does not provide patient comfort."
+      },
+      {
+        "text": "Meperidine PO was the best intervention because morphine IV can cause drug addiction.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should focus on pain relief and not worry about the patient becoming 'addicted' to the morphine."
+      }
+    ]
+  },
+  {
+    "questionNumber": 2,
+    "type": "MCQ",
+    "questionText": "An insulin-dependent diabetic patient tells the nurse that they have been giving themself injections in the same location in their right thigh for the past several months because it is easier. What is the nurse's best action?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 900,
+    "heading": "Choosing a Subcutaneous Site; Procedure 23-12: Administering Subcutaneous Medication",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Provide patient teaching on rotating injection sites.",
+        "isCorrect": true,
+        "rationale": "This is correct. Administering medications in the same site over prolonged periods of time can cause fat deposits and skin lumps, which will interfere with absorption and thus hinder the effectiveness of the medication."
+      },
+      {
+        "text": "Tell the patient to make sure the dose is in milliliters.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Insulin is prescribed in units (not milliliters or milligrams)."
+      },
+      {
+        "text": "Check the type of insulin the patient receives to ensure that it is compatible with the vastus lateralis site.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Insulin is administered subcutaneously, not intramuscularly."
+      },
+      {
+        "text": "Document the patient's comments, as the patient understands the treatment regimen.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The patient does not understand the treatment regimen, as the sites should be rotated."
+      }
+    ]
+  },
+  {
+    "questionNumber": 3,
+    "type": "MCQ",
+    "questionText": "A surgeon prescribes heparin 2,500 mEq intramuscularly (IM) every 12 hours (q12hr) verbally to the nurse and will put the order in later. What is the nurse's best action?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "List the types and methods for communicating medication prescriptions.",
+    "page": 821,
+    "heading": "Medication Measurements Systems > Units and Administering Heparin",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Collaboration",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Administer the medication as prescribed.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should not administer the medication. The order is written incorrectly."
+      },
+      {
+        "text": "Clarify the medication dose with the surgeon.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While the nurse would clarify the dose with the surgeon, there is another aspect of the order the nurse should address."
+      },
+      {
+        "text": "Administer the medication subcutaneously.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While heparin can be administered subcutaneously, that is not how the order is written. The nurse should contact the surgeon who prescribed the order."
+      },
+      {
+        "text": "Clarify the dose and route with the surgeon.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse should contact the surgeon to clarify the dosage and route of administration. Heparin is measured in units and administered either subcutaneously or intravenously."
+      }
+    ]
+  },
+  {
     "questionNumber": 4,
     "type": "MCQ",
     "questionText": "The nurse is preparing to administer a medication for a patient with cystic fibrosis. The nurse is not familiar with this particular drug. Which is the best action that the nurse should take?",
@@ -248,6 +356,1409 @@
         "text": "Ask the prescribing healthcare provider to increase the dose.",
         "isCorrect": false,
         "rationale": "This is incorrect. The dose should not be increased because the prescribed dose is producing a level within the therapeutic range."
+      }
+    ]
+  },
+  {
+    "questionNumber": 11,
+    "type": "MCQ",
+    "questionText": "The primary care provider orders peak and trough levels for a patient who is receiving intravenous vancomycin every 12 hours. When should the nurse obtain a blood specimen to measure the trough?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Define onset, peak, and duration of drug action; therapeutic level, peak level, and trough level; and biological half-life.",
+    "page": 816,
+    "heading": "Other Concepts Relevant to Drug Effectiveness > Therapeutic Range",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Difficult",
+    "options": [
+      {
+        "text": "With the morning routine laboratory studies",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Trough levels cannot be collected with the morning routine laboratory studies."
+      },
+      {
+        "text": "Approximately 30 minutes before the next dose",
+        "isCorrect": true,
+        "rationale": "This is correct. Trough levels are typically obtained approximately 30 minutes before administering the next dose of the drug."
+      },
+      {
+        "text": "Two hours after the next dose infuses",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Peak level must be measured when absorption is complete. This depends on all the factors that affect absorption."
+      },
+      {
+        "text": "While the drug is infusing",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Trough levels would be inaccurate if the specimen is obtained while the drug infuses."
+      }
+    ]
+  },
+  {
+    "questionNumber": 12,
+    "type": "MCQ",
+    "questionText": "Teratogenic drugs should be avoided in which patient population?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
+    "page": 817,
+    "heading": "What Factors Affect Pharmacokinetics?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Safety",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Pregnant women",
+        "isCorrect": true,
+        "rationale": "This is correct. Drugs that are known to cause developmental defects are termed teratogenic. These drugs are contraindicated during pregnancy because of the likelihood of adverse effects in the embryo or fetus."
+      },
+      {
+        "text": "Elderly",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Elderly patients are not affected by teratogenic drugs."
+      },
+      {
+        "text": "Children",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Teratogenic drugs do not affect children."
+      },
+      {
+        "text": "Adolescents",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Teratogenic drugs do not have to be avoided in adolescents."
+      }
+    ]
+  },
+  {
+    "questionNumber": 13,
+    "type": "MCQ",
+    "questionText": "A patient with end-stage cancer is prescribed morphine sulfate to reduce pain. For which effect is this medication prescribed?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Compare and contrast primary, secondary, cumulative, and side effects; and adverse, toxic, allergic, anaphylactic, and idiosyncratic reactions.",
+    "page": 818,
+    "heading": "What Are Primary Effects?",
+    "integratedProcesses": "Caring",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Comfort",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Supportive",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Supportive effects support the integrity of body functions until other medications or treatments become effective for example, giving acetaminophen to control the fever until the antibiotic is at therapeutic level."
+      },
+      {
+        "text": "Restorative",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Restorative effects return the body to or maintain the body at optimal levels of health for example, giving vitamins and minerals to patients recovering from surgery."
+      },
+      {
+        "text": "Substitutive",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Substitutive effects replace either body fluids or a chemical required by the body for improved functioning-for example, giving insulin to a diabetic patient."
+      },
+      {
+        "text": "Palliative",
+        "isCorrect": true,
+        "rationale": "This is correct. Morphine is prescribed for its palliative effects to relieve pain, a symptom of cancer. Palliative effects relieve the signs and symptoms of a disease but have no effect on the disease itself. For example, morphine sulfate may be given to a patient with cancer to manage pain, but it does not destroy cancer cells."
+      }
+    ]
+  },
+  {
+    "questionNumber": 14,
+    "type": "MCQ",
+    "questionText": "After receiving diphenhydramine, a patient reports experiencing a very dry mouth. This is not uncommon in patients taking this medication. Which drug effect is this patient experiencing?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Compare and contrast primary, secondary, cumulative, and side effects; and adverse, toxic, allergic, anaphylactic, and idiosyncratic reactions.",
+    "page": 818,
+    "heading": "What Are Secondary Effects? > Side Effects",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Safety",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Side effect",
+        "isCorrect": true,
+        "rationale": "This is correct. Dry mouth is a side effect of diphenhydramine. Side effects are unintended, often predictable, physiological effects that are well tolerated by patients."
+      },
+      {
+        "text": "Adverse reaction",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Adverse reactions are harmful, unintended, usually unexpected reactions to a drug administered at a normal dosage. They are commonly more severe compared with side effects."
+      },
+      {
+        "text": "Toxic reaction",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Toxic reactions are dangerous, damaging effects to an organ or tissue."
+      },
+      {
+        "text": "Supportive effect",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Supportive effects are intended effects that support the integrity of body functions."
+      }
+    ]
+  },
+  {
+    "questionNumber": 15,
+    "type": "MCQ",
+    "questionText": "While receiving an intravenous dose of the antibiotic levofloxacin, a patient develops severe shortness of breath, wheezing, and severe hypotension. Which action should the nurse take first?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Compare and contrast primary, secondary, cumulative, and side effects; and adverse, toxic, allergic, anaphylactic, and idiosyncratic reactions.",
+    "page": 819,
+    "heading": "What Are Secondary Effects? > Allergic Reactions",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Administer epinephrine intramuscularly (IM)",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Administering epinephrine is not the first action to take."
+      },
+      {
+        "text": "Give a bolus dose of intravenous fluids",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Starting a bolus of intravenous fluids is not the first action to take."
+      },
+      {
+        "text": "Stop the infusion of medication",
+        "isCorrect": true,
+        "rationale": "This is correct. The patient is experiencing an anaphylactic reaction (severe shortness of breath, wheezing, and severe hypotension), a life-threatening allergic reaction. Therefore, the nurse should immediately discontinue the medication."
+      },
+      {
+        "text": "Prepare for endotracheal intubation",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Respiratory support ranging from oxygen administration to endotracheal intubation and mechanical ventilation may be necessary, but it is not the first action to take."
+      }
+    ]
+  },
+  {
+    "questionNumber": 16,
+    "type": "MCQ",
+    "questionText": "A patient develops urticaria and pruritus 5 days after beginning phenytoin for treatment of seizures. Which type of reaction is the patient most likely experiencing?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Compare and contrast primary, secondary, cumulative, and side effects; and adverse, toxic, allergic, anaphylactic, and idiosyncratic reactions.",
+    "page": 819,
+    "heading": "What Are Secondary Effects? > Allergic Reactions",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Mild allergic reaction",
+        "isCorrect": true,
+        "rationale": "This is correct. Urticaria and pruritus are considered mild allergic reactions."
+      },
+      {
+        "text": "Dose-related adverse reaction",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Dose-related adverse reactions are undesired effects that result from the known pharmacological effects of a medication."
+      },
+      {
+        "text": "Toxic reaction",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Toxic reactions are dangerous, damaging effects to an organ or tissue."
+      },
+      {
+        "text": "Anaphylactic reaction",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Anaphylactic reaction is a life-threatening allergic reaction that occurs during or immediately after administration."
+      }
+    ]
+  },
+  {
+    "questionNumber": 17,
+    "type": "MCQ",
+    "questionText": "Laboratory test results indicate that warfarin anticoagulant therapy is suddenly ineffective in a patient who has been taking the drug for an extended period of time. The nurse suspects an interaction with herbal medications. What type of interaction does the nurse suspect?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Define drug-drug interaction, antagonistic drug relationship, synergistic drug relationship, drug incompatibility, and medication contraindications.",
+    "page": 820,
+    "heading": "How Do Medications Interact?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Antagonistic drug interaction",
+        "isCorrect": true,
+        "rationale": "This is correct. In an antagonistic drug interaction, one drug interferes with the actions of another and decreases the resultant drug effect."
+      },
+      {
+        "text": "Synergistic drug interaction",
+        "isCorrect": false,
+        "rationale": "This is incorrect. In a synergistic drug interaction, there is an additive effect; that is, the effects of both drugs combined are greater than the individual effects."
+      },
+      {
+        "text": "Idiosyncratic reaction",
+        "isCorrect": false,
+        "rationale": "This is incorrect. An idiosyncratic reaction is an unexpected, abnormal, or peculiar response to a medication."
+      },
+      {
+        "text": "Drug incompatibility",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Drug incompatibilities occur when drugs are physically mixed together, causing a chemical deterioration of one or both drugs."
+      }
+    ]
+  },
+  {
+    "questionNumber": 18,
+    "type": "MCQ",
+    "questionText": "A patient with terminal cancer requires increasing doses of an opioid pain medication to obtain relief from pain. This patient is exhibiting signs of drug:",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Describe nursing assessment before, during, and following the administration of a drug.",
+    "page": 821,
+    "heading": "What Should I Know About Drug Abuse or Misuse?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Abuse.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Drug abuse is the inappropriate intake of a substance continually or periodically."
+      },
+      {
+        "text": "Misuse.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Drug misuse is the nonspecific, indiscriminate, or improper use of drugs, including alcohol, over-the-counter preparations, and prescription drugs."
+      },
+      {
+        "text": "Tolerance.",
+        "isCorrect": true,
+        "rationale": "This is correct. Patients in the terminal stages of cancer commonly exhibit drug tolerance, a decreasing response to repeated doses of a medication. Therefore, pain management must be carefully planned to promote patient comfort."
+      },
+      {
+        "text": "Dependence.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Drug dependence occurs when a person relies on or needs a drug. Dependence leads to lifestyle changes that focus on obtaining and administering the drug."
+      }
+    ]
+  },
+  {
+    "questionNumber": 19,
+    "type": "MCQ",
+    "questionText": "Before administering a medication, the nurse must verify the six rights of medication administration, which are:",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Administer medications using the 'three checks' and 'rights of medication.'",
+    "page": 834,
+    "heading": "Rights of Medication",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Right patient, right room, right drug, right route, right dose, and right time.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Right room is not one of the six rights."
+      },
+      {
+        "text": "Right drug, right dose, right route, right time, right physician, and right documentation.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Right physician is not one of the six rights."
+      },
+      {
+        "text": "Right patient, right drug, right route, right time, right documentation, and right equipment.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Right equipment is not one of the six rights."
+      },
+      {
+        "text": "Right patient, right drug, right dose, right route, right time, and right documentation.",
+        "isCorrect": true,
+        "rationale": "This is correct. The six rights of medication administration are the right patient, right drug, right dose, right route, right time, and right documentation."
+      }
+    ]
+  },
+  {
+    "questionNumber": 20,
+    "type": "MCQ",
+    "questionText": "Which expected outcome is best for a patient with a nursing diagnosis of deficient knowledge related to a new drug treatment regimen?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 832,
+    "heading": "Planning Outcomes/Evaluation",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "After an explanation and written materials, the patient verbalizes the expected actions and adverse reactions of the medication.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While measurable behaviors are present, there is no time frame."
+      },
+      {
+        "text": "One week after the instructional session, the patient can describe the expected actions and adverse reactions of the medications.",
+        "isCorrect": true,
+        "rationale": "This is correct. The best phrasing for the expected outcome is the one with a specific, measurable time frame (1 week) and details for how to resolve the patient's knowledge deficit."
+      },
+      {
+        "text": "The patient follows the treatment plan as prescribed.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While following the treatment plan is measurable, there is no time frame listed."
+      },
+      {
+        "text": "The patient experiences no adverse effect from the prescribed treatment plan.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. 'Experiences no adverse effect' does not relate to the nursing diagnosis of deficient knowledge."
+      }
+    ]
+  },
+  {
+    "questionNumber": 21,
+    "type": "MCQ",
+    "questionText": "When the nurse enters a patient's room to administer a medication, they call out from the bathroom, telling the nurse to leave their medication on the bedside table. They reassure the nurse that they will take the medication as soon as they are finished. How should the nurse proceed?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 863,
+    "heading": "Rights of Medication > Right Patient and Medication Guidelines: Steps to Follow for All Medications (Regardless of Type or Route)",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Inform the patient that the nurse will return when they are finished in the bathroom.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse should inform the patient that they will return with the medication when the patient is finished in the bathroom."
+      },
+      {
+        "text": "Wait outside the bathroom door until the patient is ready for the dose.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse likely would not have time to stand outside the door and wait for the patient to finish in the bathroom."
+      },
+      {
+        "text": "Withhold the dose until the next administration time later in the day.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Withholding the dose until the next administration time may compromise the patient's condition and is not an appropriate nursing action."
+      },
+      {
+        "text": "Leave the medication at the bedside so that the patient can take it later.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should not leave medications at the bedside. If the medication is left at the bedside for the patient, the nurse cannot be sure that the patient actually took the medication."
+      }
+    ]
+  },
+  {
+    "questionNumber": 22,
+    "type": "MCQ",
+    "questionText": "Which documentation entry related to prn (as needed) medication administration is complete?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Administer medications using the 'three checks' and 'rights of medication.'",
+    "page": 835,
+    "heading": "Right Documentation",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "6/5/20 0900 morphine 4 mg IV given in right antecubital fossa for pain rated 8 on a 1-10 scale, J. Williams RN",
+        "isCorrect": true,
+        "rationale": "This is correct. The option, signed by J. Williams, is complete because it contains the date and time the medication was administered, the name of the medication, the route of administration and injection site, and the name of the nurse administering the medication. Because the medication administered was a prn order, the nurse also included the reason the medication was administered."
+      },
+      {
+        "text": "0600 famotidine 20 mg IV given in right hand, S. Abraham RN",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Date and reason for administering the prn medication are omitted in the documentation, making the entry incomplete."
+      },
+      {
+        "text": "9/2/20 0900 levothyroxine 50 mcg PO given",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The reason for administering the prn medication and the nurse's signature are omitted, making the entry incomplete."
+      },
+      {
+        "text": "1/16/20 furosemide 40 mg PO given, J. Smith RN",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Time and reason for administering the prn medication are omitted in the documentation, making the entry incomplete."
+      }
+    ]
+  },
+  {
+    "questionNumber": 23,
+    "type": "MCQ",
+    "questionText": "A patient has difficulty taking liquid medications from a cup. How should the nurse administer the medications?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 869,
+    "heading": "Procedure 23-1: Administering Oral Medications > What If... My Patient Has Difficulty Drinking From a Cup?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Request that the physician change the order to the IV route.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. It is not necessary to ask the prescriber to change the order to the IV route; it is preferable to use the least invasive route."
+      },
+      {
+        "text": "Administer the medication by the intramuscular (IM) route.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse cannot administer a drug by another route without a prescription to do so. Dosing might not necessarily be the same in the oral versus the IM route; thus, a prescription is needed to change the route."
+      },
+      {
+        "text": "Use a needleless syringe to place the medication in the side of the mouth.",
+        "isCorrect": true,
+        "rationale": "This is correct. When a patient has difficulty taking liquid medications from a cup, the nurse should use a syringe without a needle to place the medication in the side of the patient's mouth. After placing the syringe between the gum and cheek, the nurse should push the plunger to administer the medication slowly."
+      },
+      {
+        "text": "Add the whole capsule to a small amount of food or beverage to facilitate swallowing.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Crush (do not place whole) soluble tablets and place them in liquids or in a small amount of applesauce or pudding. Remember that some forms (e.g., time-released tablets) should not be crushed, so check the drug reference sources to be certain."
+      }
+    ]
+  },
+  {
+    "questionNumber": 24,
+    "type": "MCQ",
+    "questionText": "The primary care provider prescribes nitroglycerin 1/150 grains sublingually for a patient experiencing chest pain. How should the nurse administer the drug?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 868,
+    "heading": "Buccal and Sublingual Medications",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Put the drug in the cheek area and allow it to dissolve.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Drugs administered by the buccal route are placed in the cheek and allowed to dissolve."
+      },
+      {
+        "text": "Place the drug under the tongue and allow it to dissolve.",
+        "isCorrect": true,
+        "rationale": "This is correct. Drugs administered by the sublingual route should be placed under the patient's tongue and allowed to dissolve."
+      },
+      {
+        "text": "Inject the drug superficially into the subcutaneous tissue.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A subcutaneous injection is administered into the subcutaneous tissue."
+      },
+      {
+        "text": "Have the patient swallow the pill with water.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Placing the drug into the patient's mouth, giving them water, and instructing them to swallow the tablet describes oral administration."
+      }
+    ]
+  },
+  {
+    "questionNumber": 25,
+    "type": "MCQ",
+    "questionText": "Which action should the nurse take immediately after administering a medication through a nasogastric tube?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 868,
+    "heading": "Procedure 23-1A: Administering Medication Through an Enteral Tube",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Verify correct nasogastric tube placement in the stomach.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should verify nasogastric tube placement before administering the drug."
+      },
+      {
+        "text": "Auscultate the abdomen for presence of bowel sounds.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should auscultate the abdomen for bowel sounds before administering the medication."
+      },
+      {
+        "text": "Immediately administer the next prescribed medication.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. If there is more than one medication, give each separately, flushing after each. Some medications are less effective when given in combination with others."
+      },
+      {
+        "text": "Flush the tube with water using a needleless syringe.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse should flush the nasogastric tube with water using a needleless syringe after administering each medication."
+      }
+    ]
+  },
+  {
+    "questionNumber": 26,
+    "type": "MCQ",
+    "questionText": "How should the nurse dispose of a contaminated needle after administering an injection?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 845,
+    "heading": "Preventing Needlestick Injuries",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Place the needle in a specially marked, puncture-proof container.",
+        "isCorrect": true,
+        "rationale": "This is correct. To avoid needlestick injuries, the nurse should place the uncapped needle and syringe directly into a specially marked, puncture-proof container without capping, bending, or breaking the needle."
+      },
+      {
+        "text": "Recap the needle, and carefully place it in the trash can.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The trash can is an unacceptable receptacle for a used syringe and needle."
+      },
+      {
+        "text": "Recap the needle, and place it in a puncture-proof container.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Recapping a used needle is not advised."
+      },
+      {
+        "text": "Place the needle in a biohazard bag with other contaminated supplies.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Placing the needle in an improper container (biohazard bag) that could be punctured by the contaminated needle places other staff members at risk."
+      }
+    ]
+  },
+  {
+    "questionNumber": 27,
+    "type": "MCQ",
+    "questionText": "The nurse must administer hepatitis B (HB) immunoglobulin 0.5 mL intramuscularly to a newly born infant of a hepatitis B antigen (HB Ag)-positive mother. Which injection site should the nurse choose to administer this injection?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the intramuscular injection procedure at the following sites: ventrogluteal, deltoid, and vastus lateralis.",
+    "page": 850,
+    "heading": "Choosing an Intramuscular Site > Vastus Lateralis Site",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Infection",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Ventrogluteal",
+        "isCorrect": false,
+        "rationale": "This is incorrect. For children who are walking, the site of choice is the ventrogluteal muscle."
+      },
+      {
+        "text": "Vastus lateralis",
+        "isCorrect": true,
+        "rationale": "This is correct. The preferred site for intramuscular injections for infants who are not yet walking is the vastus lateralis muscle because there are no major blood vessels or nerves in the area."
+      },
+      {
+        "text": "Deltoid",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The deltoid muscle can be used for small volumes in older children and adults."
+      },
+      {
+        "text": "Dorsogluteal",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The dorsogluteal site is not recommended for children or adults."
+      }
+    ]
+  },
+  {
+    "questionNumber": 28,
+    "type": "MCQ",
+    "questionText": "Which action should the nurse take to relax the vastus lateralis muscle before administering an intramuscular injection into the site?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the intramuscular injection procedure at the following sites: ventrogluteal, deltoid, and vastus lateralis.",
+    "page": 904,
+    "heading": "Procedure 23-14A: Intramuscular Injection: Traditional Method; Procedure 23-14B: Intramuscular Injection: Z-Track Method; Procedure 23-14C",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Apply a warm compress.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Using a warm compress is not a recommended technique for a vastus lateralis injection."
+      },
+      {
+        "text": "Massage the site in a circular motion.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Massaging or rubbing the site will alter the rate of absorption of the medication. Thus, massaging is avoided."
+      },
+      {
+        "text": "Apply a soothing lotion.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Applying a soothing lotion is not a recommended practice. An adhesive bandage may be applied."
+      },
+      {
+        "text": "Have the client assume a sitting position.",
+        "isCorrect": true,
+        "rationale": "This is correct. To relax the vastus lateralis for injection, the nurse should have the client assume a sitting position or lie flat."
+      }
+    ]
+  },
+  {
+    "questionNumber": 29,
+    "type": "MCQ",
+    "questionText": "The physician prescribes warfarin 5 mg orally (PO) at 1800 for a patient. After administering the medication, the nurse realizes they administered a 10 mg tablet instead of the prescribed 5 mg PO. Which action by the nurse is appropriate?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Describe the appropriate steps to take when communicating a medication error.",
+    "page": 856,
+    "heading": "What Should I Do If I Commit a Medication Error?; Clinical Insight 23-1: Taking Action After a Medication Error",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "No action is necessary because an extra 5 mg of warfarin is not harmful.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Action is necessary when any error is made, especially a medication error. Giving an extra 5 mg of warfarin can be harmful."
+      },
+      {
+        "text": "Call the prescriber and ask the order to be changed to 10 mg.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While the prescriber should be notified, it is not to ask that the dose be changed but to notify the prescriber of the error."
+      },
+      {
+        "text": "Document on the chart that the drug was given, and indicate the drug was given in error.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Document the drug, dose, site, route, date, and time in the patient's healthcare record but do not document that the drug was given in error."
+      },
+      {
+        "text": "Complete an incident report according to the facility's policy.",
+        "isCorrect": true,
+        "rationale": "This is correct. Complete an incident report according to the facility's policy; submit the signed report to the nurse manager."
+      }
+    ]
+  },
+  {
+    "questionNumber": 30,
+    "type": "MCQ",
+    "questionText": "The nurse must administer eardrops to an infant. How should the nurse proceed?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "List the five steps to incorporate in your practice to ensure safe medication administration and prevent a medication error.",
+    "page": 874,
+    "heading": "Highlights of Procedures 23-1 Through 23-18 and Procedure 23-3: Administering Otic Medication",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Pull the pinna down and back before instilling the drops.",
+        "isCorrect": true,
+        "rationale": "This is correct. For a child younger than 3 years of age, the nurse should pull the pinna down and back. This straightens the ear canal for proper channeling of the medication."
+      },
+      {
+        "text": "Position the pinna upward and outward before instilling the drops.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. For older children and adults, the nurse should pull the pinna upward and outward."
+      },
+      {
+        "text": "Instill the drops directly; no special positioning is necessary.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should not instill the drops directly. The nurse should instill the prescribed number of drops along the side of the ear canal."
+      },
+      {
+        "text": "Position the patient supine with the head of the bed elevated 30°.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The patient should be assisted into a side-lying position with the appropriate ear facing up before instillation."
+      }
+    ]
+  },
+  {
+    "questionNumber": 31,
+    "type": "MCQ",
+    "questionText": "The nurse is teaching parents methods to give oral medication to their child. Which action would the parents implement to improve compliance?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 838,
+    "heading": "Self-Care Box: Teaching Parents About Medicating Children",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Growth and Development",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Crush time-release capsules to put in their child's favorite food.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Time-released capsules should not be crushed and favorite foods should not be used to mask unpleasant medication taste."
+      },
+      {
+        "text": "Give medication quickly before the child knows what is happening.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Parents should take their time when giving medications to children. Rushing the child can be frustrating and lead to struggles with the child."
+      },
+      {
+        "text": "Allow the child to eat a frozen pop before receiving the medication.",
+        "isCorrect": true,
+        "rationale": "This is correct. The parent can give the child a frozen fruit bar or frozen flavored ice pop just before the medication. This helps to numb the taste buds to weaken the taste of the medication."
+      },
+      {
+        "text": "Mask the flavor of medication in a toddler cup with orange juice.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Do not use essential foods in the child's diet (e.g., milk or orange juice) to mask the taste of medications. The child may later refuse a food they associate with the medicine."
+      }
+    ]
+  },
+  {
+    "questionNumber": 32,
+    "type": "MCQ",
+    "questionText": "An adult patient who has been admitted with lower gastrointestinal bleeding is prescribed a unit of packed red blood cells. Which gauge needle should be inserted to administer this blood product?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 841,
+    "heading": "Equipment for Parenteral Medications>Needles > Gauge",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Safety",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "18",
+        "isCorrect": true,
+        "rationale": "This is correct. Large-gauge needles, 14- to 18-gauge needles, are used for blood products in adults because the bore is large enough to allow transfusion without cell damage (lysis)."
+      },
+      {
+        "text": "22",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This gauge (22) is too small for blood transfusions."
+      },
+      {
+        "text": "24",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A 24-gauge needle is too small for blood transfusions."
+      },
+      {
+        "text": "26",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Smaller needles, such as a 26-gauge needle, cause less pain and trauma to the tissue but it is not large enough for blood."
+      }
+    ]
+  },
+  {
+    "questionNumber": 33,
+    "type": "MCQ",
+    "questionText": "What is the most essential action by the nurse prior to delegating the administration of an IV medication to a licensed practical nurse (LPN)?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Discuss the agencies and legislation that help to ensure drug quality and safety.",
+    "page": 807,
+    "heading": "Legal Considerations > Nurse Practice Acts",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Legal",
+    "difficulty": "Difficult",
+    "options": [
+      {
+        "text": "Review the state's nurse practice act for LPN scope of practice.",
+        "isCorrect": true,
+        "rationale": "This is correct. The State Board of Nursing regulates the types and routes of medications that can be administered by the various levels of nurses. For example, LPNs in some states cannot administer IV medications, whereas other states require additional education and experience before LPNs can perform this action."
+      },
+      {
+        "text": "Examine the unit policy and procedure for IV medication administration.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Once scope of practice is identified, the nurse can proceed with reviewing the unit policies."
+      },
+      {
+        "text": "Determine whether the LPN has previously performed this procedure.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. There is an action that is more important than assessing the experience level of the LPN."
+      },
+      {
+        "text": "Demonstrate the procedure; then allow the LPN to administer the IV medication.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. If state regulations do not allow LPNs to administer IV medications, there is no reason for the nurse to demonstrate the procedure."
+      }
+    ]
+  },
+  {
+    "questionNumber": 34,
+    "type": "MCQ",
+    "questionText": "Which body organ is primarily responsible for the metabolism of medications?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
+    "page": 815,
+    "heading": "How Are Drugs Metabolized in the Body?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Metabolism",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Kidney",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Medications can be detoxified in the kidneys, but it is not the primary organ. The kidneys are the primary organ for excretion of drugs."
+      },
+      {
+        "text": "Skin",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The skin is not the primary organ for metabolism of medications."
+      },
+      {
+        "text": "Liver",
+        "isCorrect": true,
+        "rationale": "This is correct. Drug metabolism takes place mainly in the liver. If liver function is impaired due to liver disease, medications will be eliminated more slowly, and toxic levels may accumulate."
+      },
+      {
+        "text": "Large intestine",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The gastrointestinal tract can help excrete some drugs in the feces, but it does not metabolize medications."
+      }
+    ]
+  },
+  {
+    "questionNumber": 35,
+    "type": "MCQ",
+    "questionText": "Which body organ is primarily responsible for medication excretion?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
+    "page": 815,
+    "heading": "How Are Drugs Excreted From the Body?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Elimination",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Liver",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The liver is the primary site for metabolism, not excretion."
+      },
+      {
+        "text": "Kidney",
+        "isCorrect": true,
+        "rationale": "This is correct. The kidneys are the primary site of excretion. If the patient has decreased renal function, the nurse should closely monitor for medication toxicity."
+      },
+      {
+        "text": "Lungs",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While the lungs can excrete some drugs, it is not the primary organ."
+      },
+      {
+        "text": "Exocrine glands",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While exocrine glands can help eliminate some drugs, it is not the primary site."
+      }
+    ]
+  },
+  {
+    "questionNumber": 36,
+    "type": "MCQ",
+    "questionText": "The nursing student is preparing to administer an IM injection to the patient. The student states to the instructor, 'I'm going to administer this medication in my patient's buttocks at the dorsogluteal site.' What is the most appropriate response by the instructor?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Explain the disadvantages of using the dorsogluteal site for intramuscular injections.",
+    "page": 850,
+    "heading": "Choosing an Intramuscular Site and Dorsogluteal Site Site to Avoid",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "'Okay. Explain the procedure to me and you are good to go.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The dorsogluteal site should be avoided; the site is not recommended."
+      },
+      {
+        "text": "'This may not be the best site owing to proximity of the sciatic nerve.'",
+        "isCorrect": true,
+        "rationale": "This is correct. The dorsogluteal site consists of the gluteal muscles of the buttocks. Avoid using the dorsogluteal site for IM injections because its close proximity to the sciatic nerve and superior gluteal artery increases the risk of injection into a major blood vessel and damage to the sciatic nerve. Furthermore, the site is difficult to identify accurately in older adults or people with flabby skin. The instructor should advise the student that this is not the appropriate site and elicit another site from the student."
+      },
+      {
+        "text": "'I agree this is a good site for thin patients such as this one.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This is not a good site for intramuscular injections."
+      },
+      {
+        "text": "'Okay, but first be sure to locate the bony landmarks carefully.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nursing instructor should not encourage the nursing student to use this site. It is no longer recommended."
+      }
+    ]
+  },
+  {
+    "questionNumber": 37,
+    "type": "MCQ",
+    "questionText": "The nursing student is preparing to administer lisinopril to the patient but does not know what lisinopril is used for. What is the most appropriate action by the student to obtain the information?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Name at least five sources of medication information.",
+    "page": 807,
+    "heading": "Drug Listings and Directories",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Consult the pharmacist.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While the pharmacist is a good reference, this action is not the most appropriate."
+      },
+      {
+        "text": "Ask the primary nurse.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Asking the primary nurse is not the best action to take in this situation."
+      },
+      {
+        "text": "Question the nursing instructor.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Questioning the nursing instructor is not the most appropriate action for the student nurse to take."
+      },
+      {
+        "text": "Look up the drug in a medication reference text.",
+        "isCorrect": true,
+        "rationale": "This is correct. Look it up! As a nurse, one is professionally, ethically, legally, and personally responsible for every dose of medication administered to a patient. Always use current information when researching a medication."
+      }
+    ]
+  },
+  {
+    "questionNumber": 38,
+    "type": "MCQ",
+    "questionText": "The nurse mixes two medications together in one syringe and is preparing to administer the mixture to the patient. On entering the patient's room, the nurse notices that the medication looks cloudy and there are some particles floating in the mixture. What is the most appropriate action by the nurse?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Define drug-drug interaction, antagonistic drug relationship, synergistic drug relationship, drug incompatibility, and medication contraindications.",
+    "page": 820,
+    "heading": "How Do Medications Interact?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Notify the pharmacist before proceeding.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The pharmacist could have been consulted before mixing the drugs, but not afterward. The reaction has already taken place and should not be administered."
+      },
+      {
+        "text": "Check for medication compatibility.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should always consult a medication resource and compatibility chart before mixing medications."
+      },
+      {
+        "text": "Discard the medications and syringe.",
+        "isCorrect": true,
+        "rationale": "This is correct. Drug incompatibilities occur when multiple drugs are mixed together, causing a chemical deterioration of one or more of the drugs. The result is an incompatible solution that should not be administered. The nurse can usually recognize an incompatibility when the mixed solution takes on a changed appearance. If the contents of the syringe become discolored or there are particles in the solution, do not administer the medication."
+      },
+      {
+        "text": "Remix the medications in a different syringe.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Remixing the medications using a different syringe is inappropriate, because this will only elicit the same result."
+      }
+    ]
+  },
+  {
+    "questionNumber": 39,
+    "type": "MCQ",
+    "questionText": "The nursing student has registered for a class on pharmacokinetics. Which phrase reflects the student's accurate understanding of what the focus in this class will be?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
+    "page": 809,
+    "heading": "What Is Pharmacokinetics?",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Evidence-Based Practice",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "The study of drug actions and their various side effects",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Pharmacology is the science of drug effects. It deals with all drugs used in society, legal and illegal, prescription and nonprescription."
+      },
+      {
+        "text": "A classification system for organizing brand names and generic names of drugs",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Drug classification is a system for making inferences about the drug's basic characteristics. Drug names refer to chemical names, generic names, official names, and brand/trade names."
+      },
+      {
+        "text": "The absorption, distribution, metabolism, and excretion of drugs",
+        "isCorrect": true,
+        "rationale": "This is correct. Pharmacokinetics refers to the absorption, distribution, metabolism, and exertion of a drug. These four processes determine the intensity and duration of a drug's action. Each drug has unique pharmacokinetic characteristics."
+      },
+      {
+        "text": "The study of how medications achieve their effects at various sites in the body",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Pharmacodynamics, another subconcept of pharmacology, is the study of how medications achieve their effects at various sites in the body, how specific drug molecules interact with target cells, and how biological responses occur."
+      }
+    ]
+  },
+  {
+    "questionNumber": 40,
+    "type": "MCQ",
+    "questionText": "Of the four ways a drug can be named, which classification is assigned by the United States Adopted Name Council (USAN Council)?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Distinguish among various nomenclature systems for naming and classifying drugs",
+    "page": 806,
+    "heading": "How Are Drugs Named and Classified?",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Evidence-Based Practice",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Trade name",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Brand or trade name is what the drug is sold as in stores."
+      },
+      {
+        "text": "Brand name",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Brand or trade name is what the drug is sold as in stores."
+      },
+      {
+        "text": "Generic name",
+        "isCorrect": true,
+        "rationale": "This is correct. The generic name is assigned by the United States Adopted Name Council (USAN Council) when the developing manufacturer is ready to market the drug."
+      },
+      {
+        "text": "Chemical name",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Chemical name is the exact description of the drug's chemical composition and molecular structure."
+      }
+    ]
+  },
+  {
+    "questionNumber": 41,
+    "type": "MCQ",
+    "questionText": "When taking the history of a patient admitted to the emergency department for uncontrolled hypertension, the patient stated that they discontinued their blood pressure medication due to their blood pressure being 'normal again.' What is the best course of action for the nurse?",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Plan care for clients with diagnoses of risk for injury and ineffective health management related to medications.",
+    "page": 832,
+    "heading": "Nonadherence",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Evidence-Based Practice",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Ignore the patient's statement and continue.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. It would be inappropriate to ignore the statement and not address the reason for not complying"
+      },
+      {
+        "text": "Provide appropriate education of medications.",
+        "isCorrect": true,
+        "rationale": "This is correct. Non-adherence can be due to lack of symptoms, intolerable side effects, forgetfulness, inability to afford medication, disagreement with plan, or lack of knowledge. It is important to address the patient's reason for not complying and provide adequate education."
+      },
+      {
+        "text": "Scold the patient for non-adherence.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. It would be inappropriate to scold the patient."
+      },
+      {
+        "text": "Report patient to the drug administration.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. In this scenario, it would be inappropriate and wrong to report the patient for non-adherence to medication."
+      }
+    ]
+  },
+  {
+    "questionNumber": 42,
+    "type": "SATA",
+    "questionText": "What are the primary roles of the Food and Drug Administration (FDA)? Select all that apply.",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Discuss the agencies and legislation that help to ensure drug quality and safety.",
+    "page": 808,
+    "heading": "Legal Considerations",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Legal",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Regulate the testing, manufacture, and sale of all medications",
+        "isCorrect": true,
+        "rationale": "This is correct. The FDA of the U.S. Department of Health and Human Services regulates the testing, manufacturing, and sale of all medications. This process helps to ensure that ineffective or unsafe drugs are not marketed or are recalled, if later found unsafe."
+      },
+      {
+        "text": "Monitor safety and effectiveness of medications available to consumers",
+        "isCorrect": true,
+        "rationale": "This is correct. The FDA also monitors the safety and effectiveness of medications available to consumers."
+      },
+      {
+        "text": "Manage the storage and handling of controlled substances",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The management of controlled substances is under the auspices of the Drug Enforcement Agency (DEA)."
+      },
+      {
+        "text": "Manage the sale and regulation of all herbal remedies",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Many medicinal products are not regulated by the FDA. For example, herbal remedies and some naturopathic supplements are considered 'food products' and are not regulated, even though they are advertised as having health benefits."
+      },
+      {
+        "text": "Regulate the administration and disposal of controlled substances",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The DEA regulates the administration and disposal of controlled substances, not the FDA."
+      }
+    ]
+  },
+  {
+    "questionNumber": 43,
+    "type": "SATA",
+    "questionText": "The new nurse is beginning orientation on a medical-surgical unit. What is most important for the nurse to know regarding hospital policies concerning controlled substances? Select all that apply.",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Discuss the agencies and legislation that help to ensure drug quality and safety.",
+    "page": 808,
+    "heading": "Regulation of Controlled Substances",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Legal",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Controlled substances are stored in a double-locked area.",
+        "isCorrect": true,
+        "rationale": "This is correct. Controlled substances must be stored in locked drawers with a second locked area. This process is known as double-locking."
+      },
+      {
+        "text": "A count of all controlled substances is performed at specific times, usually monthly.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A count of all controlled substances is performed at specified times, usually at change of shift (not monthly)."
+      },
+      {
+        "text": "The facility must keep a record of every dose of a controlled substance that is administered.",
+        "isCorrect": true,
+        "rationale": "This is correct. The facility must also keep a record of every dose administered."
+      },
+      {
+        "text": "Schedule 1 are drugs used commonly in the healthcare field.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Schedule I identifies drugs that have a high potential for abuse and no acceptable medical use (e.g., heroin, lysergic acid diethylamide [LSD], ecstasy, peyote, mescaline)."
+      },
+      {
+        "text": "RNs can prescribe controlled substances to clients in the nursing home, but not in the hospital.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Only prescribers with a national provider identification number have the authority to prescribe controlled substances. RNs do not prescribe any type of medications."
+      }
+    ]
+  },
+  {
+    "questionNumber": 44,
+    "type": "SATA",
+    "questionText": "The nurse is preparing to administer a subcutaneous dose of insulin to a patient with diabetes. Which two sites might the nurse use that would provide the fastest absorption of the injection? Select all that apply.",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 847,
+    "heading": "Subcutaneous Injections",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Arm",
+        "isCorrect": true,
+        "rationale": "This is correct. Absorption is fastest in the arms. Subcutaneous injections are given into the subcutaneous tissue, the layer of fat located below the dermis and above the muscle tissue."
+      },
+      {
+        "text": "Abdomen",
+        "isCorrect": true,
+        "rationale": "This is correct. Absorption is faster in the abdomen. Medication is absorbed more evenly from the abdomen than from the thighs and buttocks because it is affected less by activity."
+      },
+      {
+        "text": "Thigh",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Absorption is slower in the thighs."
+      },
+      {
+        "text": "Upper buttocks",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Absorption is slower in the upper buttocks."
+      },
+      {
+        "text": "Ventral forearm",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The ventral forearm is used for the intradermal site, not for insulin injections."
+      }
+    ]
+  },
+  {
+    "questionNumber": 45,
+    "type": "SATA",
+    "questionText": "The nurse is preparing to administer ophthalmic eye drops to the patient. What are the most appropriate actions for administering eye drops? Select all that apply.",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "List the five steps to incorporate in your practice to ensure safe medication administration and prevent a medication error.",
+    "page": 872,
+    "heading": "Highlights of Procedures 23-1 Through 23-18 > Procedure 23-2: Administering Ophthalmic Medication",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Place the patient in the high-Fowler's position.",
+        "isCorrect": true,
+        "rationale": "This is correct. When administering ophthalmic medications, use a high-Fowler's position."
+      },
+      {
+        "text": "Administer the ointment from the inner to the outer canthus of the eye.",
+        "isCorrect": true,
+        "rationale": "This is correct. Work from the inner canthus to the outer canthus when applying eye ointment."
+      },
+      {
+        "text": "Position the eyedropper 1 to 2 inches above the eye.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Position the eyedropper about 1.5 to 2 cm (1/2 to 3/4 in.) above the eye; 1 to 2 inches is too high."
+      },
+      {
+        "text": "Apply the medication into the conjunctival sac.",
+        "isCorrect": true,
+        "rationale": "This is correct. Apply the medication into the conjunctival sac."
+      },
+      {
+        "text": "Allow the medication to drop gently on the cornea.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Do not apply the medication to the cornea and do not allow the dropper to touch the eye."
+      }
+    ]
+  },
+  {
+    "questionNumber": 46,
+    "type": "SATA",
+    "questionText": "The nurse is preparing to administer otic medications to a 35-year-old patient. What are the most appropriate actions by the nurse? Select all that apply.",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
+    "page": 874,
+    "heading": "Highlights of Procedures 23-1 Through 23-18 > Procedure 23-3: Administering Otic Medication",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Pull the pinna up and back.",
+        "isCorrect": true,
+        "rationale": "This is correct. Straighten the ear and pull the pinna up and back for an adult patient."
+      },
+      {
+        "text": "Position the pinna down and back.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Position the pinna down and back for a child, not for an adult."
+      },
+      {
+        "text": "Place the patient in the side-lying position with the appropriate ear up.",
+        "isCorrect": true,
+        "rationale": "This is correct. Assist the patient to a side-lying position, with the appropriate ear facing up when instilling otic medication."
+      },
+      {
+        "text": "Instruct the patient to remain in the side-lying position for at least 20 minutes.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Instruct the patient to remain on their side for 5 to 10 minutes after the procedure, not 20."
+      },
+      {
+        "text": "Cool the solution to slightly below body temperature.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. When administering otic medications, warm the solution to be instilled to body temperature; it should not be cooled."
+      }
+    ]
+  },
+  {
+    "questionNumber": 47,
+    "type": "SATA",
+    "questionText": "The home-health nurse is caring for a 75-year-old patient with severe arthritis of the hands and fingers. The patient states, 'I can't use these childproof safety lock caps because I can't open them.' What are the most appropriate responses by the nurse? Select all that apply.",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "List the five steps to incorporate in your practice to ensure safe medication administration and prevent a medication error.",
+    "page": 833,
+    "heading": "Teaching Patients About Medication Self-Administration > Administer Your Drugs Correctly",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Safety",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "'I see this is difficult for you. Do you have any family members or friends who can help you?'",
+        "isCorrect": true,
+        "rationale": "This is correct. If a patient has difficulty opening containers and administering medications owing to pain or stiffness in the hands and fingers, family members and friends can be asked to help."
+      },
+      {
+        "text": "'We can ask the pharmacist not to put childproof caps on your medications; you may need to sign a form.'",
+        "isCorrect": true,
+        "rationale": "This is correct. Additionally, the nurse or patient can ask the pharmacy and the primary care provider not to put childproof safety lids on containers for easier handling. Older adults are allowed to sign a release with their pharmacy to be able to do this."
+      },
+      {
+        "text": "'You can transfer your medications to different containers that are easier for you to open.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Do not store a drug in a container that is different from the one it came in. The medication may lose its strength, or the patient may take the wrong medication."
+      },
+      {
+        "text": "'All medications come in childproof containers, so there isn't much we can do about this.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This is an inaccurate statement and does not address the patient's issue. All medications do not come with childproof lids."
+      },
+      {
+        "text": "'Why can't you open those types of medication containers? You should be able to.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This disregards the patient's concerns and places the blame on the patient, which is nontherapeutic. Using 'why' should be avoided."
+      }
+    ]
+  },
+  {
+    "questionNumber": 48,
+    "type": "SATA",
+    "questionText": "The nurse educator at the local hospital is preparing a teaching plan for staff nurses on using medication abbreviations in nursing documentation. What is most important for the nurse to include in the teaching plan concerning acceptable abbreviations? Select all that apply.",
+    "chapter": "Chapter 23: Administering Medications",
+    "objective": "List the five steps to incorporate in your practice to ensure safe medication administration and prevent a medication error.",
+    "page": 823,
+    "heading": "What Abbreviations Are Used in Medication Prescriptions?",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Communication",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "They are based on the Joint Commission recommendations.",
+        "isCorrect": true,
+        "rationale": "This is correct. The Joint Commission has an official Do Not Use list of abbreviations, which should be included in the teaching presentation."
+      },
+      {
+        "text": "They are commonly used by the pharmacy department.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While abbreviations can be used by the pharmacy department, the Joint Commission and the facility determine the acceptable abbreviations."
+      },
+      {
+        "text": "They are most commonly used by nurses.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The nurse should write out drug names and dosages in full. All healthcare team members, not just nurses, must follow the approved abbreviation list."
+      },
+      {
+        "text": "They are based on policies of the facility.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse must be familiar with the facility's approved list of abbreviations, and this is correct information to include in the teaching presentation."
+      },
+      {
+        "text": "They are determined by the individual nurse who is charting.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. An individual nurse cannot determine which abbreviations to use in charting."
       }
     ]
   }

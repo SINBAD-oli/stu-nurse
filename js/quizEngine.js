@@ -70,9 +70,10 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
 
   function showQuizConfig() {
     stopTimer();
+    const totalAvail = selectedChapterQuestions.length;
     questionProgress.textContent = "Quiz Configuration";
     questionMeta.innerHTML = `<span class="meta-pill">Session Settings (${activeChapterName})</span>`;
-    questionText.textContent = `Configure your session (${selectedChapterQuestions.length} total questions available):`;
+    questionText.textContent = `Configure your session (${totalAvail} total questions available):`;
     
     feedbackBox.classList.add('hidden');
     submitAnswerBtn.classList.add('hidden');
@@ -81,8 +82,8 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
     optionsContainer.innerHTML = `
       <div style="display: flex; flex-direction: column; gap: 14px;">
         <div>
-          <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #334155;">Number of Questions:</label>
-          <input type="number" id="quiz-count-input" value="${selectedChapterQuestions.length}" min="1" max="${selectedChapterQuestions.length}" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; font-size: 14px; box-sizing: border-box;">
+          <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #334155;">Number of Questions (1 to ${totalAvail}):</label>
+          <input type="number" id="quiz-count-input" value="${totalAvail}" min="1" max="${totalAvail}" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; font-size: 14px; box-sizing: border-box;">
         </div>
         <div>
           <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #334155;">Question Order:</label>
@@ -105,14 +106,16 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
     `;
 
     document.getElementById('start-configured-quiz').addEventListener('click', () => {
-      const inputVal = parseInt(document.getElementById('quiz-count-input').value, 10);
+      const inputElem = document.getElementById('quiz-count-input');
+      const parsedVal = parseInt(inputElem.value, 10);
+      const limit = isNaN(parsedVal) ? totalAvail : Math.max(1, Math.min(parsedVal, totalAvail));
+
       const orderVal = document.getElementById('quiz-order-select').value;
       const timerVal = document.getElementById('quiz-timer-select').value;
 
       let list = [...selectedChapterQuestions];
       if (orderVal === 'random') list = shuffleArray(list);
 
-      const limit = isNaN(inputVal) ? list.length : Math.max(1, Math.min(inputVal, list.length));
       questionsList = list.slice(0, limit);
       
       if (timerVal !== 'none') {
@@ -167,14 +170,17 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
       </button>
     `;
 
-    document.getElementById('flag-question-btn').addEventListener('click', () => {
-      if (flaggedQuestionIndices.has(currentQuestionIndex)) {
-        flaggedQuestionIndices.delete(currentQuestionIndex);
-      } else {
-        flaggedQuestionIndices.add(currentQuestionIndex);
-      }
-      loadQuestion();
-    });
+    const flagBtn = document.getElementById('flag-question-btn');
+    if (flagBtn) {
+      flagBtn.addEventListener('click', () => {
+        if (flaggedQuestionIndices.has(currentQuestionIndex)) {
+          flaggedQuestionIndices.delete(currentQuestionIndex);
+        } else {
+          flaggedQuestionIndices.add(currentQuestionIndex);
+        }
+        loadQuestion();
+      });
+    }
 
     questionText.textContent = q.questionText;
     optionsContainer.innerHTML = '';
@@ -192,10 +198,12 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
         </div>
       `;
       const inputElem = document.getElementById('completion-input');
-      inputElem.focus();
-      inputElem.addEventListener('input', () => {
-        submitAnswerBtn.disabled = inputElem.value.trim().length === 0;
-      });
+      if (inputElem) {
+        inputElem.focus();
+        inputElem.addEventListener('input', () => {
+          submitAnswerBtn.disabled = inputElem.value.trim().length === 0;
+        });
+      }
     } else {
       optionsList.forEach((opt, index) => {
         const label = document.createElement('label');
@@ -223,7 +231,8 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
           } else {
             document.querySelectorAll('.option-label').forEach(l => {
               l.classList.remove('selected');
-              l.querySelector('input').checked = false;
+              const inp = l.querySelector('input');
+              if (inp) inp.checked = false;
             });
             inputElem.checked = true;
             label.classList.add('selected');
@@ -254,7 +263,7 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
         const userTyped = (inputElem ? inputElem.value : "").trim().toLowerCase();
         const correctAns = (q.correctAnswer || "").trim().toLowerCase();
 
-        inputElem.disabled = true;
+        if (inputElem) inputElem.disabled = true;
 
         if (userTyped === correctAns) {
           questionEarnedScore = 1;
@@ -262,7 +271,7 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
           feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong><br>Answer: <em>${q.correctAnswer}</em><br><br>Rationale: ${q.rationale || q.feedback || "Great job!"}`;
         } else {
           feedbackStatus = "incorrect";
-          feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong><br>You typed: <em>${inputElem.value}</em><br>Correct Answer: <em>${q.correctAnswer}</em><br><br>Rationale: ${q.rationale || q.feedback || ""}`;
+          feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong><br>You typed: <em>${inputElem ? inputElem.value : ""}</em><br>Correct Answer: <em>${q.correctAnswer}</em><br><br>Rationale: ${q.rationale || q.feedback || ""}`;
           sessionMissedQuestions.push({
             chapter: specificChap,
             questionText: q.questionText,
@@ -325,19 +334,21 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
           const isCorrectOption = correctIndices.includes(idx);
           const wasSelected = selectedOptionIndices.includes(idx);
 
-          labels[idx].classList.remove('eval-correct', 'eval-missed', 'eval-incorrect', 'selected');
+          if (labels[idx]) {
+            labels[idx].classList.remove('eval-correct', 'eval-missed', 'eval-incorrect', 'selected');
 
-          if (isCorrectOption && wasSelected) {
-            labels[idx].classList.add('eval-correct');
-          } else if (isCorrectOption && !wasSelected) {
-            labels[idx].classList.add('eval-missed');
-          } else if (!isCorrectOption && wasSelected) {
-            labels[idx].classList.add('eval-incorrect');
+            if (isCorrectOption && wasSelected) {
+              labels[idx].classList.add('eval-correct');
+            } else if (isCorrectOption && !wasSelected) {
+              labels[idx].classList.add('eval-missed');
+            } else if (!isCorrectOption && wasSelected) {
+              labels[idx].classList.add('eval-incorrect');
+            }
           }
         });
 
         optionsList.forEach((opt, idx) => {
-          if (opt.rationale) {
+          if (opt.rationale && labels[idx]) {
             const existingRationale = labels[idx].querySelector('.rationale-text');
             if (!existingRationale) {
               const rationaleSpan = document.createElement('span');
@@ -398,7 +409,7 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
               const prevAvg = uData.averageAccuracy || 0;
               let chapterProgressMap = uData.chapterProgressMap || {};
               let chapterStats = uData.chapterStats || {};
-              let existingMissed = uData.missedQuestions || [];
+              let existingMissed = uData.missedQuestions || {};
 
               const newTotalQuizzes = prevQuizzes + 1;
               const newAvgAccuracy = Number(((prevAvg * prevQuizzes + parseFloat(finalPercentage)) / newTotalQuizzes).toFixed(1));
@@ -463,8 +474,10 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
         submitAnswerBtn.classList.add('hidden');
         nextQuestionBtn.classList.add('hidden');
 
-        document.getElementById('restart-quiz-btn').addEventListener('click', () => showQuizConfig());
-        document.getElementById('choose-another-chapter-btn').addEventListener('click', () => onBackToChapters());
+        const restartBtn = document.getElementById('restart-quiz-btn');
+        const chooseAnotherBtn = document.getElementById('choose-another-chapter-btn');
+        if (restartBtn) restartBtn.addEventListener('click', () => showQuizConfig());
+        if (chooseAnotherBtn) chooseAnotherBtn.addEventListener('click', () => onBackToChapters());
       }
     });
   }
