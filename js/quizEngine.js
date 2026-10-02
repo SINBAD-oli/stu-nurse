@@ -41,7 +41,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       </div>
       <div style="padding: 24px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; box-sizing: border-box; flex: 1; background: #0f172a;">
         <p id="modal-question-text" style="font-size: 16px; font-weight: 600; color: #f8fafc; margin-top: 0; line-height: 1.5;"></p>
-        <div id="modal-options-container" style="display: flex; flex-direction: column; gap: 10px;"></div>
+        <div id="modal-options-container" style="display: flex; flex-direction: column; gap: 12px;"></div>
         <div id="modal-feedback-box" class="hidden" style="padding: 14px; border-radius: 8px; background: #1e293b; border: 1px solid #334155;">
           <p id="modal-feedback-text" style="margin: 0; font-size: 14px; color: #e2e8f0; line-height: 1.4;"></p>
         </div>
@@ -265,13 +265,20 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       optionsList.forEach((opt, index) => {
         const label = document.createElement('label');
         label.className = 'option-label';
-        label.style.cssText = `display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; cursor: pointer; color: #f8fafc; font-size: 14px; box-sizing: border-box;`;
+        // Fixed UI layout: use CSS grid to cleanly separate input from option text and rationales without wrapping issues
+        label.style.cssText = `
+          display: grid; grid-template-columns: 24px 1fr; align-items: start; gap: 12px; 
+          padding: 14px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; 
+          cursor: pointer; color: #f8fafc; font-size: 14px; box-sizing: border-box;
+        `;
         
         const inputType = isSATA ? 'checkbox' : 'radio';
         
         label.innerHTML = `
-          <input type="${inputType}" name="quiz-option" value="${index}" style="margin-top: 3px; pointer-events: none;">
-          <span style="flex: 1; line-height: 1.4;">${opt.text}</span>
+          <input type="${inputType}" name="quiz-option" value="${index}" style="margin-top: 2px; pointer-events: none; justify-self: center;">
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <span style="line-height: 1.4;">${opt.text}</span>
+          </div>
         `;
 
         const inputElem = label.querySelector('input');
@@ -409,8 +416,9 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
 
         optionsList.forEach((opt, idx) => {
           if (opt.rationale && labels[idx]) {
-            const existingRationale = labels[idx].querySelector('.rationale-text');
-            if (!existingRationale) {
+            const textContainer = labels[idx].querySelector('div');
+            const existingRationale = textContainer?.querySelector('.rationale-text');
+            if (!existingRationale && textContainer) {
               const rationaleSpan = document.createElement('span');
               rationaleSpan.className = 'rationale-text';
               rationaleSpan.style.display = 'block';
@@ -419,7 +427,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
               rationaleSpan.style.color = '#cbd5e1';
               rationaleSpan.style.fontStyle = 'italic';
               rationaleSpan.textContent = `Rationale: ${opt.rationale}`;
-              labels[idx].appendChild(rationaleSpan);
+              textContainer.appendChild(rationaleSpan);
             }
           }
         });
