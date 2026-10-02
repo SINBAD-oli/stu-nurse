@@ -34,9 +34,9 @@ setPersistence(auth, browserLocalPersistence).then(() => {
             await setDoc(docRef, initialUserData);
           } else {
             const data = docSnap.data();
-            fullNameSpan.textContent = `${data.firstName || "Nursing"} ${data.lastName || "Student"}`;
-            roleSpan.textContent = data.role || "Nursing Student";
-            joinedSpan.textContent = data.createdAt?.toDate ? data.createdAt.toDate().toLocaleDateString() : "Recently";
+            if (fullNameSpan) fullNameSpan.textContent = `${data.firstName || "Nursing"} ${data.lastName || "Student"}`;
+            if (roleSpan) roleSpan.textContent = data.role || "Nursing Student";
+            if (joinedSpan) joinedSpan.textContent = data.createdAt?.toDate ? data.createdAt.toDate().toLocaleDateString() : "Recently";
 
             renderProfileCard(user.uid, data);
           }
