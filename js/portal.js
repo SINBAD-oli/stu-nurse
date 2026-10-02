@@ -117,7 +117,6 @@ function renderProfileCard(userId, userData) {
   `;
   profileCard.appendChild(extraInfoDiv);
 
-  // Click listeners for chapter proficiency rings
   document.querySelectorAll('.chapter-ring-item').forEach(item => {
     item.addEventListener('click', () => {
       const chapterName = item.getAttribute('data-chapter');

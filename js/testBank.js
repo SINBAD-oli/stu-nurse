@@ -1,12 +1,11 @@
 import { db, auth } from './firebase-config.js';
-import { collection, getDocs, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { collection, getDocs, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { setupQuizSession, normalizeChapterName } from './quizEngine.js';
 import { setupAdminPanel } from './adminManager.js';
 
 export async function initTestBank() {
   const container = document.getElementById('test-bank-container') || document.body;
   
-  // Render main container layout if not already present
   if (!document.getElementById('quiz-app-root')) {
     container.innerHTML = `
       <div id="quiz-app-root" style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: system-ui, -apple-system, sans-serif;">
@@ -54,7 +53,6 @@ export async function initTestBank() {
       setupAdminPanel();
     }
 
-    // Fetch questions and chapters
     const querySnapshot = await getDocs(collection(db, "questions"));
     const allQuestions = [];
     querySnapshot.forEach(docSnap => {
@@ -63,20 +61,19 @@ export async function initTestBank() {
       allQuestions.push(q);
     });
 
-    // Fetch settings for chapter releases
     const settingsRef = doc(db, "settings", "chapters");
     const settingsSnap = await getDoc(settingsRef);
     const settingsData = settingsSnap.exists() ? settingsSnap.data() : { releasedChapters: {} };
     const releasedMap = settingsData.releasedChapters || {};
 
-    renderChapterSelector(allQuestions, releasedMap, isAdmin, userData);
+    renderChapterSelector(allQuestions, releasedMap, isAdmin);
 
   } catch (err) {
     console.error("Error initializing test bank:", err);
   }
 }
 
-function renderChapterSelector(allQuestions, releasedMap, isAdmin, userData) {
+async function renderChapterSelector(allQuestions, releasedMap, isAdmin) {
   const chapterListContainer = document.getElementById('chapter-list');
   const chapterSelectionView = document.getElementById('chapter-selection-view');
   const questionText = document.getElementById('question-text');
@@ -96,6 +93,13 @@ function renderChapterSelector(allQuestions, releasedMap, isAdmin, userData) {
   questionProgress.textContent = "Select a Chapter";
   questionMeta.innerHTML = '';
 
+  const currentUser = auth.currentUser;
+  let userData = {};
+  if (currentUser) {
+    const userSnap = await getDoc(doc(db, "users", currentUser.uid));
+    if (userSnap.exists()) userData = userSnap.data();
+  }
+
   const chaptersMap = {};
   allQuestions.forEach(q => {
     const chap = q.normalizedChapter;
@@ -109,7 +113,7 @@ function renderChapterSelector(allQuestions, releasedMap, isAdmin, userData) {
     const questions = chaptersMap[chapName];
     const isReleased = releasedMap[chapName] === true;
 
-    if (!isAdmin && !isReleased) return; // Hide unreleased chapters for students
+    if (!isAdmin && !isReleased) return;
 
     const card = document.createElement('div');
     card.style.cssText = `
@@ -128,11 +132,16 @@ function renderChapterSelector(allQuestions, releasedMap, isAdmin, userData) {
       <button class="action-btn" style="padding: 6px 12px; font-size: 13px; background-color: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer;">Start Quiz</button>
     `;
 
-    card.addEventListener('click', () => {
+    card.addEventListener('click', async () => {
       chapterSelectionView.style.display = 'none';
 
-      // Restore mastered question exclusion filter
-      const userProgress = userData.chapterProgressMap || {};
+      let freshUserData = {};
+      if (currentUser) {
+        const freshSnap = await getDoc(doc(db, "users", currentUser.uid));
+        if (freshSnap.exists()) freshUserData = freshSnap.data();
+      }
+
+      const userProgress = freshUserData.chapterProgressMap || {};
       const chapterProgress = userProgress[chapName] || {};
       const unmasteredQuestions = questions.filter(q => {
         const record = chapterProgress[q.questionText];
@@ -142,7 +151,7 @@ function renderChapterSelector(allQuestions, releasedMap, isAdmin, userData) {
       const sessionQuestions = unmasteredQuestions.length > 0 ? unmasteredQuestions : questions;
 
       setupQuizSession(allQuestions, sessionQuestions, chapName, () => {
-        renderChapterSelector(allQuestions, releasedMap, isAdmin, userData);
+        renderChapterSelector(allQuestions, releasedMap, isAdmin);
       });
     });
 
