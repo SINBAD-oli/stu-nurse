@@ -21,15 +21,48 @@ export function normalizeChapterName(name) {
     .replace(/(^\w|\s\w)/g, m => m.toUpperCase());
 }
 
-export function setupQuizSession(allQuestions, selectedChapterQuestions, activeChapterName, onBackToChapters) {
-  const questionProgress = document.getElementById('quiz-progress');
-  const questionMeta = document.getElementById('question-meta');
-  const questionText = document.getElementById('question-text');
-  const optionsContainer = document.getElementById('options-container');
-  const feedbackBox = document.getElementById('feedback-box');
-  const feedbackText = document.getElementById('feedback-text');
-  const submitAnswerBtn = document.getElementById('submit-answer-btn');
-  const nextQuestionBtn = document.getElementById('next-question-btn');
+export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredChapterQuestions, activeChapterName, onBackToChapters) {
+  let modal = document.getElementById('quiz-session-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'quiz-session-modal';
+    modal.style.cssText = `
+      position: fixed; inset: 0; background: rgba(15, 23, 42, 0.9); 
+      display: flex; align-items: center; justify-content: center; z-index: 99999; padding: 20px; box-sizing: border-box;
+    `;
+    document.body.appendChild(modal);
+  }
+
+  modal.innerHTML = `
+    <div style="background: #1e293b; color: #f8fafc; width: 100%; max-width: 750px; max-height: 90vh; border-radius: 12px; display: flex; flex-direction: column; border: 1px solid #334155; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); box-sizing: border-box; overflow: hidden;">
+      <div style="padding: 16px 20px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; background: #0f172a;">
+        <h3 id="modal-quiz-progress" style="margin: 0; font-size: 16px; color: #f8fafc;">Quiz Session: ${activeChapterName}</h3>
+        <div id="modal-question-meta" style="display: flex; gap: 8px; align-items: center;"></div>
+      </div>
+      <div style="padding: 24px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; box-sizing: border-box; flex: 1; background: #0f172a;">
+        <p id="modal-question-text" style="font-size: 16px; font-weight: 600; color: #f8fafc; margin-top: 0; line-height: 1.5;"></p>
+        <div id="modal-options-container" style="display: flex; flex-direction: column; gap: 10px;"></div>
+        <div id="modal-feedback-box" class="hidden" style="padding: 14px; border-radius: 8px; background: #1e293b; border: 1px solid #334155;">
+          <p id="modal-feedback-text" style="margin: 0; font-size: 14px; color: #e2e8f0; line-height: 1.4;"></p>
+        </div>
+      </div>
+      <div style="padding: 16px 20px; border-top: 1px solid #334155; display: flex; justify-content: flex-end; gap: 10px; background: #0f172a; flex-shrink: 0;">
+        <button id="modal-submit-btn" class="action-btn hidden" style="background-color: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">Submit Answer</button>
+        <button id="modal-next-btn" class="action-btn hidden" style="background-color: #10b981; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">Next Question</button>
+      </div>
+    </div>
+  `;
+
+  modal.classList.remove('hidden');
+
+  const questionProgress = document.getElementById('modal-quiz-progress');
+  const questionMeta = document.getElementById('modal-question-meta');
+  const questionText = document.getElementById('modal-question-text');
+  const optionsContainer = document.getElementById('modal-options-container');
+  const feedbackBox = document.getElementById('modal-feedback-box');
+  const feedbackText = document.getElementById('modal-feedback-text');
+  const submitAnswerBtn = document.getElementById('modal-submit-btn');
+  const nextQuestionBtn = document.getElementById('modal-next-btn');
 
   let questionsList = [];
   let currentQuestionIndex = 0;
@@ -57,7 +90,7 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
       if (timerDisplay) {
         const mins = Math.floor(secondsRemaining / 60);
         const secs = secondsRemaining % 60;
-        timerDisplay.textContent = `⏱️ Time Left: ${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        timerDisplay.textContent = `⏱ Time Left: ${mins}:${secs < 10 ? '0' : ''}${secs}`;
       }
       if (secondsRemaining <= 0) {
         stopTimer();
@@ -70,50 +103,75 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
 
   function showQuizConfig() {
     stopTimer();
-    const totalAvail = selectedChapterQuestions.length;
-    questionProgress.textContent = "Quiz Configuration";
-    questionMeta.innerHTML = `<span class="meta-pill">Session Settings (${activeChapterName})</span>`;
-    questionText.textContent = `Configure your session (${totalAvail} total questions available):`;
+    const unmasteredCount = unmasteredChapterQuestions.length;
+    const totalCount = fullChapterQuestions.length;
+
+    if (questionProgress) questionProgress.textContent = `Configuration: ${activeChapterName}`;
+    if (questionMeta) questionMeta.innerHTML = `<span style="background: #334155; color: #f8fafc; padding: 4px 8px; border-radius: 4px; font-size: 12px;">${totalCount} total available</span>`;
+    if (questionText) questionText.textContent = `Configure your session parameters below:`;
     
-    feedbackBox.classList.add('hidden');
-    submitAnswerBtn.classList.add('hidden');
-    nextQuestionBtn.classList.add('hidden');
+    if (feedbackBox) feedbackBox.classList.add('hidden');
+    if (submitAnswerBtn) submitAnswerBtn.classList.add('hidden');
+    if (nextQuestionBtn) nextQuestionBtn.classList.add('hidden');
 
-    optionsContainer.innerHTML = `
-      <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div>
-          <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #334155;">Number of Questions (1 to ${totalAvail}):</label>
-          <input type="number" id="quiz-count-input" value="${totalAvail}" min="1" max="${totalAvail}" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; font-size: 14px; box-sizing: border-box;">
+    if (optionsContainer) {
+      optionsContainer.innerHTML = `
+        <div style="display: flex; flex-direction: column; gap: 14px; width: 100%;">
+          <div>
+            <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #f8fafc; font-size: 14px;">Question Scope Mode:</label>
+            <select id="quiz-scope-select" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #f8fafc; font-size: 15px; box-sizing: border-box;">
+              <option value="unmastered" selected>🎯 Unmastered Questions Only (${unmasteredCount} available)</option>
+              <option value="all">📚 Entire Chapter Bank (${totalCount} questions)</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #f8fafc; font-size: 14px;">Number of Questions:</label>
+            <input type="number" id="quiz-count-input" value="${unmasteredCount > 0 ? unmasteredCount : totalCount}" min="1" max="${totalCount}" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #f8fafc; font-size: 15px; box-sizing: border-box;">
+          </div>
+          <div>
+            <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #f8fafc; font-size: 14px;">Question Order:</label>
+            <select id="quiz-order-select" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #f8fafc; font-size: 15px; box-sizing: border-box;">
+              <option value="random" selected>🔀 Randomize / Shuffle</option>
+              <option value="sequential">📋 Sequential Order</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #f8fafc; font-size: 14px;">⏱️ Exam Simulation Timer:</label>
+            <select id="quiz-timer-select" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #f8fafc; font-size: 15px; box-sizing: border-box;">
+              <option value="none" selected>No Timer (Relaxed Mode)</option>
+              <option value="1">1 Minute per Question</option>
+              <option value="2">2 Minutes per Question</option>
+            </select>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <button id="start-configured-quiz" class="action-btn" style="flex: 1; background: #2563eb; color: white; border: none; padding: 12px; border-radius: 6px; font-weight: 600; font-size: 15px; cursor: pointer;">Start Quiz Session</button>
+            <button id="back-to-chapters" class="action-btn" style="background-color: #64748b; color: white; border: none; padding: 12px 20px; border-radius: 6px; font-weight: 600; font-size: 15px; cursor: pointer;">Cancel</button>
+          </div>
         </div>
-        <div>
-          <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #334155;">Question Order:</label>
-          <select id="quiz-order-select" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; font-size: 14px; box-sizing: border-box;">
-            <option value="random" selected>🔀 Randomize / Shuffle</option>
-            <option value="sequential">📋 Sequential Order</option>
-          </select>
-        </div>
-        <div>
-          <label style="font-weight: 600; display: block; margin-bottom: 6px; color: #334155;">⏱️ Exam Simulation Timer:</label>
-          <select id="quiz-timer-select" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; font-size: 14px; box-sizing: border-box;">
-            <option value="none" selected>No Timer (Relaxed Mode)</option>
-            <option value="1">1 Minute per Question</option>
-            <option value="2">2 Minutes per Question</option>
-          </select>
-        </div>
-        <button id="start-configured-quiz" class="action-btn" style="margin-top: 6px;">Start Quiz Session</button>
-        <button id="back-to-chapters" class="action-btn" style="background-color: #64748b;">Back to Categories</button>
-      </div>
-    `;
+      `;
 
-    document.getElementById('start-configured-quiz').addEventListener('click', () => {
+      const scopeSelect = document.getElementById('quiz-scope-select');
+      const countInput = document.getElementById('quiz-count-input');
+      scopeSelect?.addEventListener('change', () => {
+        const scope = scopeSelect.value;
+        const maxVal = scope === 'all' ? totalCount : (unmasteredCount > 0 ? unmasteredCount : totalCount);
+        countInput.max = maxVal;
+        countInput.value = maxVal;
+      });
+    }
+
+    document.getElementById('start-configured-quiz')?.addEventListener('click', () => {
+      const scopeVal = document.getElementById('quiz-scope-select')?.value || 'unmastered';
+      const pool = scopeVal === 'all' ? fullChapterQuestions : (unmasteredChapterQuestions.length > 0 ? unmasteredChapterQuestions : fullChapterQuestions);
+      
       const inputElem = document.getElementById('quiz-count-input');
-      const parsedVal = parseInt(inputElem.value, 10);
-      const limit = isNaN(parsedVal) ? totalAvail : Math.max(1, Math.min(parsedVal, totalAvail));
+      const parsedVal = parseInt(inputElem ? inputElem.value : pool.length, 10);
+      const limit = isNaN(parsedVal) ? pool.length : Math.max(1, Math.min(parsedVal, pool.length));
 
-      const orderVal = document.getElementById('quiz-order-select').value;
-      const timerVal = document.getElementById('quiz-timer-select').value;
+      const orderVal = document.getElementById('quiz-order-select')?.value || 'random';
+      const timerVal = document.getElementById('quiz-timer-select')?.value || 'none';
 
-      let list = [...selectedChapterQuestions];
+      let list = [...pool];
       if (orderVal === 'random') list = shuffleArray(list);
 
       questionsList = list.slice(0, limit);
@@ -129,7 +187,8 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
       loadQuestion();
     });
 
-    document.getElementById('back-to-chapters').addEventListener('click', () => {
+    document.getElementById('back-to-chapters')?.addEventListener('click', () => {
+      modal.remove();
       onBackToChapters();
     });
   }
@@ -140,10 +199,9 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
     const percentage = answeredCount > 0 ? ((score / answeredCount) * 100).toFixed(1) : '0.0';
     const isFlagged = flaggedQuestionIndices.has(currentQuestionIndex);
 
-    questionProgress.innerHTML = `
-      <span>Question ${currentQuestionIndex + 1} of ${questionsList.length} | Score: ${score.toFixed(1)} (${percentage}%)</span>
-      <span id="quiz-timer-display" style="margin-left: 15px; font-weight: 700; color: #d97706;"></span>
-    `;
+    if (questionProgress) {
+      questionProgress.innerHTML = `Question ${currentQuestionIndex + 1} of ${questionsList.length} | Score: ${score.toFixed(1)} (${percentage}%)`;
+    }
 
     const qType = (q.type || "MCQ").trim();
     const isCompletion = qType.toLowerCase() === 'completion';
@@ -151,68 +209,69 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
     const optionsList = q.options || [];
 
     let typeBadgeLabel = 'MCQ';
-    let typeBadgeColor = '#e0e7ff; color: #3730a3;';
+    let typeBadgeColor = 'background: #312e81; color: #c7d2fe;';
     if (isCompletion) {
       typeBadgeLabel = 'Fill-in-the-Blank';
-      typeBadgeColor = '#dcfce7; color: #166534;';
+      typeBadgeColor = 'background: #064e3b; color: #a7f3d0;';
     } else if (isSATA) {
       typeBadgeLabel = 'SATA';
-      typeBadgeColor = '#fef3c7; color: #b45309;';
+      typeBadgeColor = 'background: #78350f; color: #fde68a;';
     }
 
-    questionMeta.innerHTML = `
-      ${q.normalizedChapter ? `<span class="meta-pill">${q.normalizedChapter}</span>` : ''}
-      <span class="meta-pill" style="background-color: ${typeBadgeColor}">${typeBadgeLabel}</span>
-      ${q.clientNeed ? `<span class="meta-pill">Client Need: ${q.clientNeed}</span>` : ''}
-      ${q.cognitiveLevel ? `<span class="meta-pill">Cognitive: ${q.cognitiveLevel}</span>` : ''}
-      <button id="flag-question-btn" class="action-btn" style="background-color: ${isFlagged ? '#f59e0b' : '#64748b'}; padding: 4px 10px; font-size: 11px; margin-left: auto;">
-        ${isFlagged ? '🚩 Flagged' : '🏳️ Flag Question'}
-      </button>
-    `;
-
-    const flagBtn = document.getElementById('flag-question-btn');
-    if (flagBtn) {
-      flagBtn.addEventListener('click', () => {
-        if (flaggedQuestionIndices.has(currentQuestionIndex)) {
-          flaggedQuestionIndices.delete(currentQuestionIndex);
-        } else {
-          flaggedQuestionIndices.add(currentQuestionIndex);
-        }
-        loadQuestion();
-      });
+    if (questionMeta) {
+      questionMeta.innerHTML = `
+        <span style="${typeBadgeColor} padding: 3px 8px; border-radius: 4px; font-size: 11px;">${typeBadgeLabel}</span>
+        <span id="quiz-timer-display" style="font-weight: 700; color: #fbbf24; font-size: 12px; margin-left: 8px;"></span>
+        <button id="flag-question-btn" class="action-btn" style="background-color: ${isFlagged ? '#f59e0b' : '#475569'}; color: white; border: none; padding: 4px 10px; font-size: 11px; border-radius: 4px; cursor: pointer; margin-left: 8px;">
+          ${isFlagged ? '🚩 Flagged' : '🏳️ Flag'}
+        </button>
+      `;
     }
 
-    questionText.textContent = q.questionText;
-    optionsContainer.innerHTML = '';
-    feedbackBox.classList.add('hidden');
-    submitAnswerBtn.classList.remove('hidden');
-    submitAnswerBtn.disabled = !isCompletion;
-    nextQuestionBtn.classList.add('hidden');
+    document.getElementById('flag-question-btn')?.addEventListener('click', () => {
+      if (flaggedQuestionIndices.has(currentQuestionIndex)) {
+        flaggedQuestionIndices.delete(currentQuestionIndex);
+      } else {
+        flaggedQuestionIndices.add(currentQuestionIndex);
+      }
+      loadQuestion();
+    });
+
+    if (questionText) questionText.textContent = q.questionText;
+    if (optionsContainer) optionsContainer.innerHTML = '';
+    if (feedbackBox) feedbackBox.classList.add('hidden');
+    if (submitAnswerBtn) submitAnswerBtn.classList.remove('hidden');
+    if (submitAnswerBtn) submitAnswerBtn.disabled = !isCompletion;
+    if (nextQuestionBtn) nextQuestionBtn.classList.add('hidden');
     selectedOptionIndices = [];
 
     if (isCompletion) {
-      optionsContainer.innerHTML = `
-        <div style="margin-top: 15px; display: flex; flex-direction: column; gap: 10px;">
-          <label style="font-weight: 600; color: #334155;">Type your answer below (case-insensitive):</label>
-          <input type="text" id="completion-input" placeholder="Enter missing word/phrase..." style="width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 16px; box-sizing: border-box; background: white;">
-        </div>
-      `;
+      if (optionsContainer) {
+        optionsContainer.innerHTML = `
+          <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
+            <label style="font-weight: 600; color: #e2e8f0; font-size: 14px;">Type your answer below (case-insensitive):</label>
+            <input type="text" id="completion-input" placeholder="Enter missing word/phrase..." style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; font-size: 15px; box-sizing: border-box; background: #0f172a; color: #f8fafc;">
+          </div>
+        `;
+      }
       const inputElem = document.getElementById('completion-input');
       if (inputElem) {
         inputElem.focus();
         inputElem.addEventListener('input', () => {
-          submitAnswerBtn.disabled = inputElem.value.trim().length === 0;
+          if (submitAnswerBtn) submitAnswerBtn.disabled = inputElem.value.trim().length === 0;
         });
       }
     } else {
       optionsList.forEach((opt, index) => {
         const label = document.createElement('label');
         label.className = 'option-label';
+        label.style.cssText = `display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; cursor: pointer; color: #f8fafc; font-size: 14px; box-sizing: border-box;`;
+        
         const inputType = isSATA ? 'checkbox' : 'radio';
         
         label.innerHTML = `
           <input type="${inputType}" name="quiz-option" value="${index}" style="margin-top: 3px; pointer-events: none;">
-          <span>${opt.text}</span>
+          <span style="flex: 1; line-height: 1.4;">${opt.text}</span>
         `;
 
         const inputElem = label.querySelector('input');
@@ -221,26 +280,26 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
           if (isSATA) {
             inputElem.checked = !inputElem.checked;
             if (inputElem.checked) {
-              label.classList.add('selected');
+              label.style.borderColor = '#3b82f6';
               if (!selectedOptionIndices.includes(index)) selectedOptionIndices.push(index);
             } else {
-              label.classList.remove('selected');
+              label.style.borderColor = '#334155';
               selectedOptionIndices = selectedOptionIndices.filter(i => i !== index);
             }
-            submitAnswerBtn.disabled = selectedOptionIndices.length === 0;
+            if (submitAnswerBtn) submitAnswerBtn.disabled = selectedOptionIndices.length === 0;
           } else {
             document.querySelectorAll('.option-label').forEach(l => {
-              l.classList.remove('selected');
+              l.style.borderColor = '#334155';
               const inp = l.querySelector('input');
               if (inp) inp.checked = false;
             });
             inputElem.checked = true;
-            label.classList.add('selected');
+            label.style.borderColor = '#3b82f6';
             selectedOptionIndices = [index];
-            submitAnswerBtn.disabled = false;
+            if (submitAnswerBtn) submitAnswerBtn.disabled = false;
           }
         });
-        optionsContainer.appendChild(label);
+        if (optionsContainer) optionsContainer.appendChild(label);
       });
     }
   }
@@ -268,10 +327,10 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
         if (userTyped === correctAns) {
           questionEarnedScore = 1;
           feedbackStatus = "correct";
-          feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong><br>Answer: <em>${q.correctAnswer}</em><br><br>Rationale: ${q.rationale || q.feedback || "Great job!"}`;
+          if (feedbackText) feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong><br>Answer: <em>${q.correctAnswer}</em><br><br>Rationale: ${q.rationale || q.feedback || "Great job!"}`;
         } else {
           feedbackStatus = "incorrect";
-          feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong><br>You typed: <em>${inputElem ? inputElem.value : ""}</em><br>Correct Answer: <em>${q.correctAnswer}</em><br><br>Rationale: ${q.rationale || q.feedback || ""}`;
+          if (feedbackText) feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong><br>You typed: <em>${inputElem ? inputElem.value : ""}</em><br>Correct Answer: <em>${q.correctAnswer}</em><br><br>Rationale: ${q.rationale || q.feedback || ""}`;
           sessionMissedQuestions.push({
             chapter: specificChap,
             questionText: q.questionText,
@@ -325,7 +384,7 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
             clientNeed: q.clientNeed || "N/A",
             cognitiveLevel: q.cognitiveLevel || "N/A",
             concept: q.concept || q.heading || "General Nursing Concept",
-            rationales: optionsList.map(o => o.rationale).filter(Boolean).map(r => `<p style="margin: 6px 0; padding-left: 10px; border-left: 3px solid #cbd5e1;">${r}</p>`).join("")
+            rationales: optionsList.map(o => o.rationale).filter(Boolean).map(r => `<p style="margin: 6px 0; padding-left: 10px; border-left: 3px solid #334155;">${r}</p>`).join("")
           });
         }
 
@@ -335,14 +394,15 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
           const wasSelected = selectedOptionIndices.includes(idx);
 
           if (labels[idx]) {
-            labels[idx].classList.remove('eval-correct', 'eval-missed', 'eval-incorrect', 'selected');
-
             if (isCorrectOption && wasSelected) {
-              labels[idx].classList.add('eval-correct');
+              labels[idx].style.borderColor = '#10b981';
+              labels[idx].style.background = 'rgba(16, 185, 129, 0.1)';
             } else if (isCorrectOption && !wasSelected) {
-              labels[idx].classList.add('eval-missed');
+              labels[idx].style.borderColor = '#f59e0b';
+              labels[idx].style.background = 'rgba(245, 158, 11, 0.1)';
             } else if (!isCorrectOption && wasSelected) {
-              labels[idx].classList.add('eval-incorrect');
+              labels[idx].style.borderColor = '#ef4444';
+              labels[idx].style.background = 'rgba(239, 68, 68, 0.1)';
             }
           }
         });
@@ -365,18 +425,18 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
         });
 
         if (feedbackStatus === "correct") {
-          feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong> Great job applying nursing concepts.`;
+          if (feedbackText) feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong> Great job applying nursing concepts.`;
         } else if (feedbackStatus === "partial") {
-          feedbackText.innerHTML = `<strong>Partially Correct! (+${questionEarnedScore.toFixed(2)} pts)</strong>`;
+          if (feedbackText) feedbackText.innerHTML = `<strong>Partially Correct! (+${questionEarnedScore.toFixed(2)} pts)</strong>`;
         } else {
-          feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong> Review rationales above.`;
+          if (feedbackText) feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts)</strong> Review rationales above.`;
         }
       }
 
       score += questionEarnedScore;
-      feedbackBox.classList.remove('hidden');
-      submitAnswerBtn.classList.add('hidden');
-      nextQuestionBtn.classList.remove('hidden');
+      if (feedbackBox) feedbackBox.classList.remove('hidden');
+      if (submitAnswerBtn) submitAnswerBtn.classList.add('hidden');
+      if (nextQuestionBtn) nextQuestionBtn.classList.remove('hidden');
 
       if (!window.currentSessionChapterQuestions) window.currentSessionChapterQuestions = {};
       if (!window.currentSessionChapterQuestions[specificChap]) {
@@ -453,31 +513,34 @@ export function setupQuizSession(allQuestions, selectedChapterQuestions, activeC
           }
         }
 
-        questionProgress.textContent = `Quiz Completed`;
-        questionMeta.innerHTML = `<span class="meta-pill">Session Review</span>`;
-        questionText.textContent = `Quiz Complete! You scored ${score.toFixed(1)} out of ${questionsList.length} (${finalPercentage}%).`;
-        optionsContainer.innerHTML = `
-          <div class="summary-container" style="display: flex; flex-direction: column; gap: 14px;">
-            <div class="summary-score-card" style="background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(51, 65, 85, 0.8); color: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; text-align: left;">
-              <h3 style="color: #ffffff; font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem;">Performance Summary</h3>
-              <p style="color: #cbd5e1; margin: 0.35rem 0; font-size: 0.95rem;">Total Points: ${score.toFixed(1)} / ${questionsList.length}</p>
-              <p style="color: #cbd5e1; margin: 0.35rem 0; font-size: 0.95rem;">Accuracy: ${finalPercentage}%</p>
-              <p style="color: #cbd5e1; margin: 0.35rem 0; font-size: 0.95rem;">Flagged Questions: ${flaggedQuestionIndices.size}</p>
+        if (questionProgress) questionProgress.textContent = `Quiz Completed`;
+        if (questionMeta) questionMeta.innerHTML = `<span style="background: #334155; color: #f8fafc; padding: 4px 8px; border-radius: 4px; font-size: 12px;">Session Review</span>`;
+        if (questionText) questionText.textContent = `Quiz Complete! You scored ${score.toFixed(1)} out of ${questionsList.length} (${finalPercentage}%).`;
+        if (optionsContainer) {
+          optionsContainer.innerHTML = `
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div style="background: #0f172a; border: 1px solid #334155; color: #f8fafc; padding: 16px; border-radius: 8px;">
+                <h3 style="color: #f8fafc; font-size: 16px; margin-top: 0; margin-bottom: 10px;">Performance Summary</h3>
+                <p style="color: #cbd5e1; margin: 4px 0; font-size: 14px;">Total Points: ${score.toFixed(1)} / ${questionsList.length}</p>
+                <p style="color: #cbd5e1; margin: 4px 0; font-size: 14px;">Accuracy: ${finalPercentage}%</p>
+                <p style="color: #cbd5e1; margin: 4px 0; font-size: 14px;">Flagged Questions: ${flaggedQuestionIndices.size}</p>
+              </div>
+              <div style="display: flex; gap: 10px; flex-direction: column;">
+                <button id="restart-quiz-btn" class="action-btn" style="background: #2563eb; color: white; border: none; padding: 12px; border-radius: 6px; font-weight: 600; cursor: pointer;">Configure New Session</button>
+                <button id="close-quiz-modal-btn" class="action-btn" style="background-color: #64748b; color: white; border: none; padding: 12px; border-radius: 6px; font-weight: 600; cursor: pointer;">Return to Main Dashboard</button>
+              </div>
             </div>
-            <div style="display: flex; gap: 10px; flex-direction: column;">
-              <button id="restart-quiz-btn" class="action-btn">Retake Quiz</button>
-              <button id="choose-another-chapter-btn" class="action-btn" style="background-color: #64748b;">Back to Categories</button>
-            </div>
-          </div>
-        `;
-        feedbackBox.classList.add('hidden');
-        submitAnswerBtn.classList.add('hidden');
-        nextQuestionBtn.classList.add('hidden');
+          `;
+        }
+        if (feedbackBox) feedbackBox.classList.add('hidden');
+        if (submitAnswerBtn) submitAnswerBtn.classList.add('hidden');
+        if (nextQuestionBtn) nextQuestionBtn.classList.add('hidden');
 
-        const restartBtn = document.getElementById('restart-quiz-btn');
-        const chooseAnotherBtn = document.getElementById('choose-another-chapter-btn');
-        if (restartBtn) restartBtn.addEventListener('click', () => showQuizConfig());
-        if (chooseAnotherBtn) chooseAnotherBtn.addEventListener('click', () => onBackToChapters());
+        document.getElementById('restart-quiz-btn')?.addEventListener('click', () => showQuizConfig());
+        document.getElementById('close-quiz-modal-btn')?.addEventListener('click', () => {
+          modal.remove();
+          window.location.reload();
+        });
       }
     });
   }

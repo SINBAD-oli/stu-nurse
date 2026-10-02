@@ -2,1343 +2,1435 @@
   {
     "questionNumber": 1,
     "type": "MCQ",
-    "questionText": "The nurse administered the narcotic meperidine 50 mg orally (PO) at 1400 to a patient with nausea, vomiting, and pain rated as 9 on a 0 to 10 scale. At 1430, the patient stated that the medication was not working and requested to have intravenous (IV) morphine, which the provider had prescribed for severe pain. What is the nurse's best evaluation of this situation?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 837,
-    "heading": "Route of Administration > Administering Oral Medications> Special Situations",
-    "integratedProcesses": "",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Comfort",
-    "difficulty": "Difficult",
+    "questionText": "Which food item provides the body with no usable glucose?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 931,
+    "heading": "Carbohydrates > Types of CHOs",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Nutrition",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "The patient needs to understand that it takes time for the medication to reduce pain.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While it does take time for medication to reduce pain, the issue is the severe pain, nausea, and vomiting, which indicates oral medication is not effective."
-      },
-      {
-        "text": "Administering meperidine PO was not the best nursing intervention in this situation.",
+        "text": "Wheat germ",
         "isCorrect": true,
-        "rationale": "This is correct. Administering meperidine PO was not the best nursing intervention in this situation because the patient was in severe pain (9/10) with nausea and vomiting. The patient needed immediate pain relief, which would not occur with PO pain medication. The nurse should have administered morphine via IV."
+        "rationale": "This is correct. Dietary fiber, such as wheat germ, contains no usable glucose. Humans do not have the enzymes to digest fiber; thus, it provides no usable glucose.[cite: 289]"
       },
       {
-        "text": "The provider should be notified if the patient's pain is not relieved in 2 hours.",
+        "text": "Potatoes",
         "isCorrect": false,
-        "rationale": "This is incorrect. Waiting 2 hours to notify the physician does not provide patient comfort."
+        "rationale": "This is incorrect. Potatoes are a carbohydrate that provides usable glucose for the body.[cite: 289]"
       },
       {
-        "text": "Meperidine PO was the best intervention because morphine IV can cause drug addiction.",
+        "text": "Honey",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should focus on pain relief and not worry about the patient becoming 'addicted' to the morphine."
+        "rationale": "This is incorrect. Honey is a simple sugar and provides usable glucose for the body.[cite: 289]"
+      },
+      {
+        "text": "Brown rice",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Brown rice is a complex carbohydrate and provides usable glucose.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 2,
     "type": "MCQ",
-    "questionText": "An insulin-dependent diabetic patient tells the nurse that they have been giving themself injections in the same location in their right thigh for the past several months because it is easier. What is the nurse's best action?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 900,
-    "heading": "Choosing a Subcutaneous Site; Procedure 23-12: Administering Subcutaneous Medication",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Tissue Integrity",
-    "difficulty": "Moderate",
+    "questionText": "In a patient with type 1 diabetes mellitus admitted for hyperglycemia, fats are being broken down for energy. Which alternative fuel does the breakdown of fats produce?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 932,
+    "heading": "Carbohydrates > Functions of CHOS",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Metabolism",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "Provide patient teaching on rotating injection sites.",
+        "text": "Glycogen",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Glycogen is converted to glucose to meet energy needs. Glycogen is not from the breakdown of fats.[cite: 289]"
+      },
+      {
+        "text": "Insulin",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Insulin, a pancreatic hormone, promotes the movement of glucose into cells for use.[cite: 289]"
+      },
+      {
+        "text": "Ketones",
         "isCorrect": true,
-        "rationale": "This is correct. Administering medications in the same site over prolonged periods of time can cause fat deposits and skin lumps, which will interfere with absorption and thus hinder the effectiveness of the medication."
+        "rationale": "This is correct. When fats are used for energy, they are converted directly into an alternative fuel called ketones.[cite: 289]"
       },
       {
-        "text": "Tell the patient to make sure the dose is in milliliters.",
+        "text": "Proteins",
         "isCorrect": false,
-        "rationale": "This is incorrect. Insulin is prescribed in units (not milliliters or milligrams)."
-      },
-      {
-        "text": "Check the type of insulin the patient receives to ensure that it is compatible with the vastus lateralis site.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Insulin is administered subcutaneously, not intramuscularly."
-      },
-      {
-        "text": "Document the patient's comments, as the patient understands the treatment regimen.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The patient does not understand the treatment regimen, as the sites should be rotated."
+        "rationale": "This is incorrect. Proteins would not be used for fuel as long as fats are available. Protein is not from the breakdown of fats.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 3,
     "type": "MCQ",
-    "questionText": "A surgeon prescribes heparin 2,500 mEq intramuscularly (IM) every 12 hours (q12hr) verbally to the nurse and will put the order in later. What is the nurse's best action?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "List the types and methods for communicating medication prescriptions.",
-    "page": 821,
-    "heading": "Medication Measurements Systems > Units and Administering Heparin",
+    "questionText": "Which of the following patients is most likely experiencing positive nitrogen balance? A patient admitted:[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 932,
+    "heading": "Proteins > Protein Metabolism and Storage",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Collaboration",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Metabolism",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Administer the medication as prescribed.",
+        "text": "With third-degree burns of the legs.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should not administer the medication. The order is written incorrectly."
+        "rationale": "This is incorrect. Patients with burns commonly experience negative nitrogen balance because tissues are lost.[cite: 289]"
       },
       {
-        "text": "Clarify the medication dose with the surgeon.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While the nurse would clarify the dose with the surgeon, there is another aspect of the order the nurse should address."
-      },
-      {
-        "text": "Administer the medication subcutaneously.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While heparin can be administered subcutaneously, that is not how the order is written. The nurse should contact the surgeon who prescribed the order."
-      },
-      {
-        "text": "Clarify the dose and route with the surgeon.",
+        "text": "In the sixth month of a healthy pregnancy.",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should contact the surgeon to clarify the dosage and route of administration. Heparin is measured in units and administered either subcutaneously or intravenously."
+        "rationale": "This is correct. A positive nitrogen balance typically exists during pregnancy when new tissues are being formed and nitrogen intake exceeds output.[cite: 289]"
+      },
+      {
+        "text": "From a nursing home who has been refusing to eat.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This patient is experiencing negative nitrogen balance because nitrogen intake is less than nitrogen loss, which occurs in malnutrition.[cite: 289]"
+      },
+      {
+        "text": "For acute pancreatitis.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A patient with an illness is in negative nitrogen balance, not positive.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 4,
     "type": "MCQ",
-    "questionText": "The nurse is preparing to administer a medication for a patient with cystic fibrosis. The nurse is not familiar with this particular drug. Which is the best action that the nurse should take?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Name at least five sources of medication information.",
-    "page": 807,
-    "heading": "Drug Listings and Directories",
+    "questionText": "Which substance is stored in the liver?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 932,
+    "heading": "Carbohydrates > Functions of CHOs",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Metabolism",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Administer the drug.",
+        "text": "Insulin",
         "isCorrect": false,
-        "rationale": "This is incorrect. If the nurse is in doubt about a medication, they should look it up before administering."
+        "rationale": "This is incorrect. Insulin is a pancreatic hormone that promotes the movement of glucose into cells. Insulin is not stored in the liver.[cite: 289]"
       },
       {
-        "text": "Ask another nurse.",
+        "text": "Ketones",
         "isCorrect": false,
-        "rationale": "This is incorrect. While asking another nurse is acceptable, it is not the best answer because the other nurse may not be familiar with the drug either."
+        "rationale": "This is incorrect. If fats must be used for energy, they are converted directly into ketones. They are not stored in the liver.[cite: 289]"
       },
       {
-        "text": "Refer to the Physician's Desk Reference.",
+        "text": "Glycogen",
         "isCorrect": true,
-        "rationale": "This is correct. The Physician's Desk Reference is a book commercially compiled by the pharmaceutical companies and is a standard resource for professionals prescribing and administering medication."
+        "rationale": "This is correct. Humans store glucose in the liver and in skeletal muscle tissue as glycogen. Glycogen can then be converted back into glucose to meet energy needs through a process known as glycogenolysis.[cite: 289]"
       },
       {
-        "text": "Review a nursing care plan textbook.",
+        "text": "Vitamin C",
         "isCorrect": false,
-        "rationale": "This is incorrect. A pharmacology or drug handbook can be used, but not a nursing care plan book."
+        "rationale": "This is incorrect. Fat-soluble vitamins, not water-soluble vitamins (vitamin C), are stored in the liver.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 5,
     "type": "MCQ",
-    "questionText": "Which term refers to the movement of a drug from the site of administration to the bloodstream?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
-    "page": 809,
-    "heading": "What Factors Affect Drug Absorption?",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Evidence-Based Practice",
+    "questionText": "While addressing a community group, the nurse explains the importance of replacing saturated fats in the diet with mono- and polyunsaturated fats. The nurse emphasizes that doing so greatly reduces the risk of which complication?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 933,
+    "heading": "Lipids > Types of Lipids > Saturated and Unsaturated Fatty Acids",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Absorption",
+        "text": "Kidney failure",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Fats are not the cause of kidney failure.[cite: 289]"
+      },
+      {
+        "text": "Asthma",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Asthma is not linked to intake of dietary fats.[cite: 289]"
+      },
+      {
+        "text": "Stroke",
         "isCorrect": true,
-        "rationale": "This is correct. Absorption refers to the movement of a drug from the site of administration into the bloodstream."
+        "rationale": "This is correct. Dietary fat should mainly be polyunsaturated and mono-unsaturated fats to reduce the risk of heart disease and stroke.[cite: 289]"
       },
       {
-        "text": "Distribution",
+        "text": "Lung cancer",
         "isCorrect": false,
-        "rationale": "This is incorrect. Distribution involves the transport of the drug in body fluids, such as blood, to the tissues and organs."
-      },
-      {
-        "text": "Metabolism",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Metabolism is the biotransformation of the drug into a more water-soluble form or into metabolites that can be excreted from the body."
-      },
-      {
-        "text": "Excretion",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Excretion, or the removal of drugs from the body, takes place in the kidneys, liver, gastrointestinal tract, lungs, and exocrine glands."
+        "rationale": "This is incorrect. Smoking, not fats, is linked to lung cancer.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 6,
     "type": "MCQ",
-    "questionText": "A patient who just returned from the postanesthesia care unit is reporting severe incision pain. Which drug contained in the patient's medication administration record will offer them the fastest relief?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 851,
-    "heading": "Intravenous Medications",
+    "questionText": "Which nutrient deficiency increases the risk for tissue breakdown?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 932,
+    "heading": "Proteins > Functions of Proteins",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Evidence-Based Practice",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Liquid acetaminophen with codeine",
+        "text": "Potassium",
         "isCorrect": false,
-        "rationale": "This is incorrect. This is not the fastest. Liquid medication has a faster onset than oral tablets but slower than intramuscular."
+        "rationale": "This is incorrect. Potassium deficiency would affect the heart, not cause tissue breakdown.[cite: 289]"
       },
       {
-        "text": "Intravenous morphine sulfate",
+        "text": "Protein",
         "isCorrect": true,
-        "rationale": "This is correct. This is the fastest. The onset of medication action takes place within seconds, so intravenous administration is especially useful in emergencies."
+        "rationale": "This is correct. Protein is necessary for growth and maintenance of body tissues. Protein deficiency places the patient at risk for skin breakdown.[cite: 289]"
       },
       {
-        "text": "Intramuscular meperidine",
+        "text": "Fluoride",
         "isCorrect": false,
-        "rationale": "This is incorrect. This is fast, but not as fast as intravenous."
+        "rationale": "This is incorrect. Fluoride deficiency leads to cavities, not tissue breakdown.[cite: 289]"
       },
       {
-        "text": "Oral oxycodone tablets",
+        "text": "Vitamin D",
         "isCorrect": false,
-        "rationale": "This is incorrect. This is not the fastest. Oral medications have the slowest onset of action when compared to other routes."
+        "rationale": "This is incorrect. Vitamin D regulates blood calcium levels and helps deposit calcium into the bones. A deficiency would lead to rickets or fractures, not tissue breakdown.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 7,
     "type": "MCQ",
-    "questionText": "A nurse is preparing a medication that is supplied in ounces but the prescription is in milliliters. How many milliliters equal 1 ounce?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Correctly calculate drug dosages, including (1) conversion among the metric, apothecary, and household measurement systems and (2) working with units and milliequivalents (mEq).",
-    "page": 821,
-    "heading": "Medication Measurement Systems > Household Measurements",
+    "questionText": "The patient is irritable, their temperature is elevated, and their mucous membranes are dry. Based on these findings, the patient most likely has excess levels of which mineral?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 937,
+    "heading": "Table 24-4: Minerals: Adult Dietary Reference Intakes",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Fluid and Electrolyte Balance",
     "difficulty": "Difficult",
     "options": [
       {
-        "text": "5",
-        "isCorrect": false,
-        "rationale": "This is incorrect. One teaspoon equals 5 milliliters."
-      },
-      {
-        "text": "15",
-        "isCorrect": false,
-        "rationale": "This is incorrect. One tablespoon or 3 teaspoons equals 15 milliliters."
-      },
-      {
-        "text": "30",
+        "text": "Sodium",
         "isCorrect": true,
-        "rationale": "This is correct. One ounce equals 30 milliliters."
+        "rationale": "This is correct. Signs and symptoms associated with sodium excess include thirst, fever, dry and sticky tongue and mucous membranes, restlessness, irritability, and seizures.[cite: 289]"
       },
       {
-        "text": "45",
+        "text": "Potassium",
         "isCorrect": false,
-        "rationale": "This is incorrect. One ounce does not equal 45 milliliters."
+        "rationale": "This is incorrect. Findings associated with potassium excess include cardiac arrhythmias, weakness, abdominal cramps, diarrhea, anxiety, and paresthesia.[cite: 289]"
+      },
+      {
+        "text": "Phosphorus",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Phosphorus excess leads to tetany and seizures.[cite: 289]"
+      },
+      {
+        "text": "Magnesium",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Magnesium excess causes weakness, nausea, and malaise.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 8,
     "type": "MCQ",
-    "questionText": "A patient is given furosemide 40 mg orally at 0900. The duration of action for this drug is approximately 6 hours after oral administration. At which time in military hours should the nurse no longer expect to see the effects of this drug?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Define onset, peak, and duration of drug action; therapeutic level, peak level, and trough level; and biological half-life.",
-    "page": 816,
-    "heading": "Onset, Peak, and Duration of Action",
+    "questionText": "A patient who was prescribed furosemide is deficient in potassium. To reach their appropriate nutritional potassium goal, the patient will increase consumption of which of the following?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 937,
+    "heading": "Table 24-4: Minerals: Adult Dietary Reference Intakes",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "concept": "Fluid and Electrolyte Balance",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "0930",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The effects of oral furosemide should be seen 30 to 60 minutes after administration, which is 0900 (9:30 a.m. in this case)."
-      },
-      {
-        "text": "1000",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Peak effect (diuresis) should occur in 1 to 2 hours, which is 1000 hours (10:00 a.m.)."
-      },
-      {
-        "text": "1100",
-        "isCorrect": false,
-        "rationale": "This is incorrect. In this scenario, peak effect (diuresis) should occur in 1 to 2 hours, which is 1100 hours (11:00 a.m.)."
-      },
-      {
-        "text": "1500",
+        "text": "Avocados, peaches, molasses, and potatoes",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should no longer see the effects of furosemide at around 1500 hours (3:00 p.m.)."
+        "rationale": "This is correct. Foods rich in potassium include peaches, molasses, meats, avocados, milk, shellfish, dates, figs, and potatoes.[cite: 289]"
+      },
+      {
+        "text": "Eggs, celery, baking soda, and baking powder",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Eggs, celery, baking soda, and baking powder have high sodium content.[cite: 289]"
+      },
+      {
+        "text": "Wheat bran, chocolate, eggs, and sardines",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Dairy products, beef, pork, beans, sardines, eggs, chicken, wheat bran, and chocolate are rich in phosphorus.[cite: 289]"
+      },
+      {
+        "text": "Egg yolks, nuts, broccoli, and sardines",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Egg yolks, nuts, sardines, dairy products, broccoli, and legumes are rich in calcium.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 9,
     "type": "MCQ",
-    "questionText": "Which factor in a patient's medical history is most likely to prolong the half-life of certain drugs?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Define onset, peak, and duration of drug action; therapeutic level, peak level, and trough level; and biological half-life.",
-    "page": 816,
-    "heading": "Other Concepts Relevant to Drug Effectiveness > Biological Half-Life",
+    "questionText": "During the day shift, a patient's temperature measures 97°F (36.1°C) orally. At 2000, the patient's temperature measures 102°F ( 38.9°C) orally. What effect does this rise in temperature have on the patient's basal metabolic rate?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Calculate a client's basal metabolic rate.",
+    "page": 940,
+    "heading": "What Factors Affect Basal Metabolic Rate?",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Metabolism",
     "difficulty": "Difficult",
     "options": [
       {
-        "text": "Heart disease",
+        "text": "Increases the rate by 7%",
         "isCorrect": false,
-        "rationale": "This is incorrect. Liver and kidney diseases, not heart disease, prolong half-life."
+        "rationale": "This is incorrect. The answer would be '7%' if the patient's temperature rose by only 1°F; for example, if the patient's temperature went from 97°F to 98°F.[cite: 289]"
       },
       {
-        "text": "Liver disease",
+        "text": "Decreases the rate by 14%",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Fever causes the basal metabolic rate to increase, not decrease.[cite: 289]"
+      },
+      {
+        "text": "Increases the rate by 35%",
         "isCorrect": true,
-        "rationale": "This is correct. Metabolism takes place largely in the liver. If there is a decrease in liver function (e.g., because of liver disease), the drug will be eliminated more slowly, prolonging the drug's half-life."
+        "rationale": "This is correct. Basal metabolic rate increases by 7% for each degree Fahrenheit (0.56°C); therefore, this patient's temperature rise is an increase of 35%: 102-97=5x7=35[cite: 289]"
       },
       {
-        "text": "Rheumatoid arthritis",
+        "text": "Decreases the rate by 28%",
         "isCorrect": false,
-        "rationale": "This is incorrect. Rheumatoid arthritis will not prolong half-life; however, liver and kidney diseases can prolong half-life."
-      },
-      {
-        "text": "Osteoarthritis",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Osteoarthritis will not prolong half-life because it does not affect the metabolism or excretion of the drug."
+        "rationale": "This is incorrect. The basal metabolic rate will increase, not decrease, with a fever. If the patient's temperature went from 97°F to 101°F, the basal metabolic rate would be increased by 28%.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 10,
     "type": "MCQ",
-    "questionText": "The nurse receives a laboratory report that states the patient's digoxin level is 1.2 mg/mL; therapeutic range for this drug is 0.5 to 2 mg/mL Which action should the nurse take in regards to the next dose of digoxin?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Define onset, peak, and duration of drug action; therapeutic level, peak level, and trough level; and biological half-life.",
-    "page": 816,
-    "heading": "Other Concepts Relevant to Drug Effectiveness > Therapeutic Range",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "questionText": "A mother brings her 4-month-old infant for a well-baby checkup. The mother tells the nurse that she would like to start bottle feeding her baby because she cannot keep up with the demands of breastfeeding since returning to work. Which response by the nurse is appropriate?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the primary nutritional considerations for various developmental stages.",
+    "page": 944,
+    "heading": "Infants to One Year > Infant Feedings",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Health Promotion and Maintenance",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Difficult",
+    "concept": "Nutrition",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Notify the prescriber to reduce the dose.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The prescriber does not need to be notified because the results are in the therapeutic range."
-      },
-      {
-        "text": "Withhold the next dose of digoxin.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The dose should not be withheld; this action could result in detrimental cardiac effects for the patient."
-      },
-      {
-        "text": "Administer the next dose of digoxin as prescribed.",
+        "text": "'Make sure you give your baby an iron-fortified formula to supplement any stored breast milk you have.'",
         "isCorrect": true,
-        "rationale": "This is correct. Therapeutic range is a range whereby the medication is at a concentration to produce the desired effect. This patient's level is within the therapeutic range, so the nurse should administer the next dose as prescribed because repeated doses of the medication are given to achieve and maintain a constant therapeutic concentration."
+        "rationale": "This is correct. The nurse should emphasize the importance of giving the baby iron-fortified formula because fetal iron stores become depleted by age 4 to 6 months. The mother can give it to supplement any stored breast milk she might have in supply.[cite: 289]"
       },
       {
-        "text": "Ask the prescribing healthcare provider to increase the dose.",
+        "text": "'You really need to continue breastfeeding your baby.'",
         "isCorrect": false,
-        "rationale": "This is incorrect. The dose should not be increased because the prescribed dose is producing a level within the therapeutic range."
+        "rationale": "This is incorrect. The nurse should not make the mother feel guilty about her decision to begin bottle feeding to supplement breastfeeding. Instead, she should educate the mother about best practices for bottle feeding.[cite: 289]"
+      },
+      {
+        "text": "'Give your baby formula until he is 6 months old; then you can introduce whole milk.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Infants younger than 1 year of age should not receive regular cow's milk because it may place a strain on the immature kidneys.[cite: 289]"
+      },
+      {
+        "text": "'Your baby weighs 14 pounds, so he will require about 36 ounces of formula a day.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Because the baby weighs 14 pounds, they will require about 21 to 28 ounces of formula a day (not 36 ounces), based on the nutritional recommendations that infants require 1.5 to 2 ounces of breastmilk or formula per pound of body weight per day.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 11,
     "type": "MCQ",
-    "questionText": "The primary care provider orders peak and trough levels for a patient who is receiving intravenous vancomycin every 12 hours. When should the nurse obtain a blood specimen to measure the trough?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Define onset, peak, and duration of drug action; therapeutic level, peak level, and trough level; and biological half-life.",
-    "page": 816,
-    "heading": "Other Concepts Relevant to Drug Effectiveness > Therapeutic Range",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "questionText": "After instructing a mother about nutrition for a preschool-age child, which statement by the mother indicates correct understanding of the topic?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the primary nutritional considerations for various developmental stages.",
+    "page": 944,
+    "heading": "Developmental Stage > Preschoolers",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Health Promotion and Maintenance",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Difficult",
+    "concept": "Nutrition",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "With the morning routine laboratory studies",
+        "text": "'I usually use dessert only as a reward for eating other foods.'",
         "isCorrect": false,
-        "rationale": "This is incorrect. Trough levels cannot be collected with the morning routine laboratory studies."
+        "rationale": "This is incorrect. Desserts should not be used as rewards for eating other foods. Reward with attention instead of food.[cite: 289]"
       },
       {
-        "text": "Approximately 30 minutes before the next dose",
+        "text": "'I will make sure my child gets at least 2,000 kcal/day.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Preschool-age children need 1,200 to 1,400 kcal/day.[cite: 289]"
+      },
+      {
+        "text": "'I do not give my child snacks; they simply spoil the appetite for meals.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Because they are active, preschoolers require nutritious between-meal snacks.[cite: 289]"
+      },
+      {
+        "text": "'I know that lifelong food habits are developed during this stage of life.'",
         "isCorrect": true,
-        "rationale": "This is correct. Trough levels are typically obtained approximately 30 minutes before administering the next dose of the drug."
-      },
-      {
-        "text": "Two hours after the next dose infuses",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Peak level must be measured when absorption is complete. This depends on all the factors that affect absorption."
-      },
-      {
-        "text": "While the drug is infusing",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Trough levels would be inaccurate if the specimen is obtained while the drug infuses."
+        "rationale": "This is correct. Lifelong food habits are developed during the preschool stage of life. Therefore, the mother should widen the variety of foods she introduces to the child.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 12,
     "type": "MCQ",
-    "questionText": "Teratogenic drugs should be avoided in which patient population?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
-    "page": 817,
-    "heading": "What Factors Affect Pharmacokinetics?",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
+    "questionText": "The nurse is providing nutrition counseling for a patient planning on becoming pregnant. The nurse should emphasize the importance of consuming which nutrient to prevent neural tube defects?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the primary nutritional considerations for various developmental stages.",
+    "page": 945,
+    "heading": "Pregnant and Lactating Women",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Health Promotion",
     "difficulty": "Easy",
     "options": [
       {
-        "text": "Pregnant women",
+        "text": "Folic acid",
         "isCorrect": true,
-        "rationale": "This is correct. Drugs that are known to cause developmental defects are termed teratogenic. These drugs are contraindicated during pregnancy because of the likelihood of adverse effects in the embryo or fetus."
+        "rationale": "This is correct. The nurse should emphasize the importance of consuming folic acid even before conception to prevent neural tube defects from developing.[cite: 289]"
       },
       {
-        "text": "Elderly",
+        "text": "Calcium",
         "isCorrect": false,
-        "rationale": "This is incorrect. Elderly patients are not affected by teratogenic drugs."
+        "rationale": "This is incorrect. Calcium needs increase during pregnancy; however, its consumption does not prevent neural tube defects.[cite: 289]"
       },
       {
-        "text": "Children",
+        "text": "Protein",
         "isCorrect": false,
-        "rationale": "This is incorrect. Teratogenic drugs do not affect children."
+        "rationale": "This is incorrect. While protein needs increase during pregnancy, it is not needed to prevent neural tube defects.[cite: 289]"
       },
       {
-        "text": "Adolescents",
+        "text": "Vitamin D",
         "isCorrect": false,
-        "rationale": "This is incorrect. Teratogenic drugs do not have to be avoided in adolescents."
+        "rationale": "This is incorrect. Vitamin D consumption does not prevent neural tube defects.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 13,
     "type": "MCQ",
-    "questionText": "A patient with end-stage cancer is prescribed morphine sulfate to reduce pain. For which effect is this medication prescribed?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Compare and contrast primary, secondary, cumulative, and side effects; and adverse, toxic, allergic, anaphylactic, and idiosyncratic reactions.",
-    "page": 818,
-    "heading": "What Are Primary Effects?",
-    "integratedProcesses": "Caring",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "questionText": "A middle-aged patient with a history of alcohol abuse is admitted with acute pancreatitis. Which nutrient level will most likely be the lowest?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Discuss how each of the following affects and is affected by nutritional status: lifestyle choices, vegetarianism, dieting for weight loss, culture and religion, disease processes, functional limitations, and special diets.",
+    "page": 946,
+    "heading": "Lifestyle Choices",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Comfort",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Supportive",
+        "text": "Iron",
         "isCorrect": false,
-        "rationale": "This is incorrect. Supportive effects support the integrity of body functions until other medications or treatments become effective for example, giving acetaminophen to control the fever until the antibiotic is at therapeutic level."
+        "rationale": "This is incorrect. While iron may be low, it is not the lowest.[cite: 289]"
       },
       {
-        "text": "Restorative",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Restorative effects return the body to or maintain the body at optimal levels of health for example, giving vitamins and minerals to patients recovering from surgery."
-      },
-      {
-        "text": "Substitutive",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Substitutive effects replace either body fluids or a chemical required by the body for improved functioning-for example, giving insulin to a diabetic patient."
-      },
-      {
-        "text": "Palliative",
+        "text": "B vitamins",
         "isCorrect": true,
-        "rationale": "This is correct. Morphine is prescribed for its palliative effects to relieve pain, a symptom of cancer. Palliative effects relieve the signs and symptoms of a disease but have no effect on the disease itself. For example, morphine sulfate may be given to a patient with cancer to manage pain, but it does not destroy cancer cells."
+        "rationale": "This is correct. Patients who regularly abuse alcohol may be deficient in many nutrients; however, they are commonly deficient in the B vitamins and folic acid.[cite: 289]"
+      },
+      {
+        "text": "Calcium",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Calcium will not be the lowest nutrient.[cite: 289]"
+      },
+      {
+        "text": "Phosphorus",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Phosphorus may be low, but it will not be the lowest.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 14,
     "type": "MCQ",
-    "questionText": "After receiving diphenhydramine, a patient reports experiencing a very dry mouth. This is not uncommon in patients taking this medication. Which drug effect is this patient experiencing?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Compare and contrast primary, secondary, cumulative, and side effects; and adverse, toxic, allergic, anaphylactic, and idiosyncratic reactions.",
-    "page": 818,
-    "heading": "What Are Secondary Effects? > Side Effects",
+    "questionText": "A patient who underwent surgery 24 hours ago is prescribed a clear liquid diet. The patient asks for something to drink. Which item may the nurse provide for the patient?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Discuss how each of the following affects and is affected by nutritional status: lifestyle choices, vegetarianism, dieting for weight loss, culture and religion, disease processes, functional limitations, and special diets.",
+    "page": 952,
+    "heading": "Table 24-5: Diets Modified by Consistency",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Safety",
+    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Nutrition",
     "difficulty": "Easy",
     "options": [
       {
-        "text": "Side effect",
+        "text": "Vanilla shake",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A vanilla shake is included in a full liquid diet.[cite: 289]"
+      },
+      {
+        "text": "Orange juice",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Orange juice is part of a full liquid diet, not a clear liquid diet.[cite: 289]"
+      },
+      {
+        "text": "Grape juice",
         "isCorrect": true,
-        "rationale": "This is correct. Dry mouth is a side effect of diphenhydramine. Side effects are unintended, often predictable, physiological effects that are well tolerated by patients."
+        "rationale": "This is correct. A clear liquid diet consists of water; tea (without dairy); coffee; broth; clear juices, such as apple, grape, or cranberry; popsicles; carbonated beverages; and gelatin.[cite: 289]"
       },
       {
-        "text": "Adverse reaction",
+        "text": "Skim milk",
         "isCorrect": false,
-        "rationale": "This is incorrect. Adverse reactions are harmful, unintended, usually unexpected reactions to a drug administered at a normal dosage. They are commonly more severe compared with side effects."
-      },
-      {
-        "text": "Toxic reaction",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Toxic reactions are dangerous, damaging effects to an organ or tissue."
-      },
-      {
-        "text": "Supportive effect",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Supportive effects are intended effects that support the integrity of body functions."
+        "rationale": "This is incorrect. A patient can have skim milk on a full liquid diet but not on a clear liquid diet.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 15,
     "type": "MCQ",
-    "questionText": "While receiving an intravenous dose of the antibiotic levofloxacin, a patient develops severe shortness of breath, wheezing, and severe hypotension. Which action should the nurse take first?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Compare and contrast primary, secondary, cumulative, and side effects; and adverse, toxic, allergic, anaphylactic, and idiosyncratic reactions.",
-    "page": 819,
-    "heading": "What Are Secondary Effects? > Allergic Reactions",
+    "questionText": "A patient with trigeminal neuralgia is prescribed a mechanical soft diet. This diet places the patient at risk for which complication?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Discuss how each of the following affects and is affected by nutritional status: lifestyle choices, vegetarianism, dieting for weight loss, culture and religion, disease processes, functional limitations, and special diets.",
+    "page": 952,
+    "heading": "Table 24-5: Diets Modified by Consistency",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Safety",
+    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Administer epinephrine intramuscularly (IM)",
+        "text": "Dehydration",
         "isCorrect": false,
-        "rationale": "This is incorrect. Administering epinephrine is not the first action to take."
+        "rationale": "This is incorrect. A mechanical soft diet can supply a full range of nutrients and fluids. Nausea and vomiting or a lack of fluids can lead to dehydration.[cite: 289]"
       },
       {
-        "text": "Give a bolus dose of intravenous fluids",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Starting a bolus of intravenous fluids is not the first action to take."
-      },
-      {
-        "text": "Stop the infusion of medication",
+        "text": "Constipation",
         "isCorrect": true,
-        "rationale": "This is correct. The patient is experiencing an anaphylactic reaction (severe shortness of breath, wheezing, and severe hypotension), a life-threatening allergic reaction. Therefore, the nurse should immediately discontinue the medication."
+        "rationale": "This is correct. Because of its lack of fiber, a mechanical soft diet places the patient at risk for constipation.[cite: 289]"
       },
       {
-        "text": "Prepare for endotracheal intubation",
+        "text": "Hyperglycemia",
         "isCorrect": false,
-        "rationale": "This is incorrect. Respiratory support ranging from oxygen administration to endotracheal intubation and mechanical ventilation may be necessary, but it is not the first action to take."
+        "rationale": "This is incorrect. Hyperglycemia is not a complication of a mechanical soft diet. It is a complication of diabetes.[cite: 289]"
+      },
+      {
+        "text": "Diarrhea",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Constipation, not diarrhea, is a complication of a mechanical soft diet.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 16,
     "type": "MCQ",
-    "questionText": "A patient develops urticaria and pruritus 5 days after beginning phenytoin for treatment of seizures. Which type of reaction is the patient most likely experiencing?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Compare and contrast primary, secondary, cumulative, and side effects; and adverse, toxic, allergic, anaphylactic, and idiosyncratic reactions.",
-    "page": 819,
-    "heading": "What Are Secondary Effects? > Allergic Reactions",
+    "questionText": "Which nutritional goal is appropriate for a patient newly diagnosed with hypertension? The patient will:[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Discuss how each of the following affects and is affected by nutritional status: lifestyle choices, vegetarianism, dieting for weight loss, culture and religion, disease processes, functional limitations, and special diets.",
+    "page": 951,
+    "heading": "Special Diets > Diets Modified for Disease",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
+    "concept": "Nutrition",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Mild allergic reaction",
+        "text": "Limit intake of protein.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Those with liver and kidney diseases should control their protein intake.[cite: 289]"
+      },
+      {
+        "text": "Avoid foods containing gluten.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Patients with celiac disease should avoid foods containing gluten.[cite: 289]"
+      },
+      {
+        "text": "Restrict intake of sodium.",
         "isCorrect": true,
-        "rationale": "This is correct. Urticaria and pruritus are considered mild allergic reactions."
+        "rationale": "This is correct. Patients with hypertension should limit their intake of sodium.[cite: 289]"
       },
       {
-        "text": "Dose-related adverse reaction",
+        "text": "Reduce intake of potassium-rich foods.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Dose-related adverse reactions are undesired effects that result from the known pharmacological effects of a medication."
-      },
-      {
-        "text": "Toxic reaction",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Toxic reactions are dangerous, damaging effects to an organ or tissue."
-      },
-      {
-        "text": "Anaphylactic reaction",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Anaphylactic reaction is a life-threatening allergic reaction that occurs during or immediately after administration."
+        "rationale": "This is incorrect. Patients with renal disease must limit their intake of potassium-rich foods.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 17,
     "type": "MCQ",
-    "questionText": "Laboratory test results indicate that warfarin anticoagulant therapy is suddenly ineffective in a patient who has been taking the drug for an extended period of time. The nurse suspects an interaction with herbal medications. What type of interaction does the nurse suspect?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Define drug-drug interaction, antagonistic drug relationship, synergistic drug relationship, drug incompatibility, and medication contraindications.",
-    "page": 820,
-    "heading": "How Do Medications Interact?",
+    "questionText": "The nurse notices that a patient has spoon-shaped, brittle nails. This suggests that the patient is experiencing imbalanced nutrition related to deficiency of which nutrient?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "List at least five physical assessment findings that indicate nutritional imbalance.",
+    "page": 956,
+    "heading": "Focused Assessment > Integumentary System",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Nutrition",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "Antagonistic drug interaction",
+        "text": "Iron",
         "isCorrect": true,
-        "rationale": "This is correct. In an antagonistic drug interaction, one drug interferes with the actions of another and decreases the resultant drug effect."
+        "rationale": "This is correct. Patients with iron deficiency may have spoon-shaped, brittle nails.[cite: 289]"
       },
       {
-        "text": "Synergistic drug interaction",
+        "text": "Vitamin A",
         "isCorrect": false,
-        "rationale": "This is incorrect. In a synergistic drug interaction, there is an additive effect; that is, the effects of both drugs combined are greater than the individual effects."
+        "rationale": "This is incorrect. Nails that are pale, have poor blanching, or present with mottling indicate a vitamin A or C deficiency.[cite: 289]"
       },
       {
-        "text": "Idiosyncratic reaction",
+        "text": "Protein",
         "isCorrect": false,
-        "rationale": "This is incorrect. An idiosyncratic reaction is an unexpected, abnormal, or peculiar response to a medication."
+        "rationale": "This is incorrect. Abnormal nail findings include dull nails with a transverse ridge for protein deficiency. Bruising or bleeding beneath the nails indicates protein or caloric deficiency.[cite: 289]"
       },
       {
-        "text": "Drug incompatibility",
+        "text": "Vitamin C",
         "isCorrect": false,
-        "rationale": "This is incorrect. Drug incompatibilities occur when drugs are physically mixed together, causing a chemical deterioration of one or both drugs."
+        "rationale": "This is incorrect. Splinter hemorrhages occur with a vitamin C deficiency.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 18,
     "type": "MCQ",
-    "questionText": "A patient with terminal cancer requires increasing doses of an opioid pain medication to obtain relief from pain. This patient is exhibiting signs of drug:",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Describe nursing assessment before, during, and following the administration of a drug.",
-    "page": 821,
-    "heading": "What Should I Know About Drug Abuse or Misuse?",
+    "questionText": "Which portion of a nutritional assessment must the registered nurse personally complete?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Describe tools and techniques for gathering subjective data about nutritional status.",
+    "page": 958,
+    "heading": "May I Delegate Nutritional Assessments?",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
     "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
+    "concept": "Collaboration",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Abuse.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Drug abuse is the inappropriate intake of a substance continually or periodically."
-      },
-      {
-        "text": "Misuse.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Drug misuse is the nonspecific, indiscriminate, or improper use of drugs, including alcohol, over-the-counter preparations, and prescription drugs."
-      },
-      {
-        "text": "Tolerance.",
+        "text": "Analyzing the data",
         "isCorrect": true,
-        "rationale": "This is correct. Patients in the terminal stages of cancer commonly exhibit drug tolerance, a decreasing response to repeated doses of a medication. Therefore, pain management must be carefully planned to promote patient comfort."
+        "rationale": "This is correct. The registered nurse should review and interpret (analyze) the data collected as part of a nutritional assessment.[cite: 289]"
       },
       {
-        "text": "Dependence.",
+        "text": "Obtaining intake and output",
         "isCorrect": false,
-        "rationale": "This is incorrect. Drug dependence occurs when a person relies on or needs a drug. Dependence leads to lifestyle changes that focus on obtaining and administering the drug."
+        "rationale": "This is incorrect. The registered nurse can delegate intake and output to the unlicensed assistive personnel.[cite: 289]"
+      },
+      {
+        "text": "Weighing the patient",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Weighing the patient can be safely delegated to the unlicensed assistive personnel.[cite: 289]"
+      },
+      {
+        "text": "Taking the nutritional history",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Nutritional history taking can be safely delegated to the licensed practical nurse.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 19,
     "type": "MCQ",
-    "questionText": "Before administering a medication, the nurse must verify the six rights of medication administration, which are:",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Administer medications using the 'three checks' and 'rights of medication.'",
-    "page": 834,
-    "heading": "Rights of Medication",
+    "questionText": "Which laboratory test result most accurately reflects a patient's nutritional status?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the laboratory values that are indicators of nutritional status.",
+    "page": 958,
+    "heading": "What Laboratory Values Indicate Nutritional Status? > Serum Protein Levels and Indices",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Safety",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Factors",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Right patient, right room, right drug, right route, right dose, and right time.",
+        "text": "Albumin",
         "isCorrect": false,
-        "rationale": "This is incorrect. Right room is not one of the six rights."
+        "rationale": "This is incorrect. Albumin level is not as accurate because the half-life of albumin is 18 to 21 days, causing a delay in detection of nutritional problems.[cite: 289]"
       },
       {
-        "text": "Right drug, right dose, right route, right time, right physician, and right documentation.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Right physician is not one of the six rights."
-      },
-      {
-        "text": "Right patient, right drug, right route, right time, right documentation, and right equipment.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Right equipment is not one of the six rights."
-      },
-      {
-        "text": "Right patient, right drug, right dose, right route, right time, and right documentation.",
+        "text": "Prealbumin",
         "isCorrect": true,
-        "rationale": "This is correct. The six rights of medication administration are the right patient, right drug, right dose, right route, right time, and right documentation."
+        "rationale": "This is correct. Prealbumin levels fluctuate daily and is considered a better marker of acute change than albumin.[cite: 289]"
+      },
+      {
+        "text": "Creatinine",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Creatinine, an end product of skeletal muscle metabolism, is excreted through the kidneys and is an excellent indicator of renal function (not for nutritional status).[cite: 289]"
+      },
+      {
+        "text": "Hemoglobin",
+        "isCorrect": false,
+        "rationale": "This is incorrect. There is another test that more accurately reflects a patient's nutritional status. Hemoglobin level reflects iron intake or chronic blood loss.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 20,
     "type": "MCQ",
-    "questionText": "Which expected outcome is best for a patient with a nursing diagnosis of deficient knowledge related to a new drug treatment regimen?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 832,
-    "heading": "Planning Outcomes/Evaluation",
+    "questionText": "A 52-year-old man has a body mass index (BMI) of 28.9, and his weight exceeds the ideal body weight for height by 23%. Which nursing diagnosis should the nurse identify for this patient?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "List at least five physical assessment findings that indicate nutritional imbalance.",
+    "page": 941,
+    "heading": "Example Problem: Overweight and Obesity",
     "integratedProcesses": "Nursing Process",
     "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "After an explanation and written materials, the patient verbalizes the expected actions and adverse reactions of the medication.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While measurable behaviors are present, there is no time frame."
-      },
-      {
-        "text": "One week after the instructional session, the patient can describe the expected actions and adverse reactions of the medications.",
+        "text": "Overweight",
         "isCorrect": true,
-        "rationale": "This is correct. The best phrasing for the expected outcome is the one with a specific, measurable time frame (1 week) and details for how to resolve the patient's knowledge deficit."
+        "rationale": "This is correct. This patient has defining characteristics for the nursing diagnosis of being overweight; body mass index is in the overweight category and weight is 20% over ideal for height and frame.[cite: 289]"
       },
       {
-        "text": "The patient follows the treatment plan as prescribed.",
+        "text": "Risk for imbalanced nutrition: More than body requirements",
         "isCorrect": false,
-        "rationale": "This is incorrect. While following the treatment plan is measurable, there is no time frame listed."
+        "rationale": "This is incorrect. The patient has an actual nutrition problem, not a risk problem.[cite: 289]"
       },
       {
-        "text": "The patient experiences no adverse effect from the prescribed treatment plan.",
+        "text": "Imbalanced nutrition: Less than body requirements",
         "isCorrect": false,
-        "rationale": "This is incorrect. 'Experiences no adverse effect' does not relate to the nursing diagnosis of deficient knowledge."
+        "rationale": "This is incorrect. The patient's nursing diagnosis is more (not less) than body requirements.[cite: 289]"
+      },
+      {
+        "text": "Readiness for enhanced nutrition",
+        "isCorrect": false,
+        "rationale": "This is incorrect. There are no defining criteria for readiness for enhanced nutrition in this scenario.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 21,
     "type": "MCQ",
-    "questionText": "When the nurse enters a patient's room to administer a medication, they call out from the bathroom, telling the nurse to leave their medication on the bedside table. They reassure the nurse that they will take the medication as soon as they are finished. How should the nurse proceed?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 863,
-    "heading": "Rights of Medication > Right Patient and Medication Guidelines: Steps to Follow for All Medications (Regardless of Type or Route)",
+    "questionText": "A patient's parenteral nutrition (PN) container infuses completely before the pharmacy prepares the next container. This places the patient at risk for which complication?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Safely provide enteral and parenteral nutrition for patients.",
+    "page": 990,
+    "heading": "Procedure 24-5: Administering Parenteral Nutrition > Safety Feature",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Metabolism",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "Inform the patient that the nurse will return when they are finished in the bathroom.",
+        "text": "Sepsis",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Sepsis is a complication that can occur if a break in aseptic technique occurs during therapy or from contamination of PN solution or supplies.[cite: 289]"
+      },
+      {
+        "text": "Aspiration",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Aspiration can occur with enteral feedings, not PN feedings.[cite: 289]"
+      },
+      {
+        "text": "Hypoglycemia",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should inform the patient that they will return with the medication when the patient is finished in the bathroom."
+        "rationale": "This is correct. Because of the high glucose content of parenteral nutrition, any interruption in therapy places the patient at risk for hypoglycemia. PN should not be discontinued abruptly, but rather over several (as many as 48) hours to prevent a sudden drop in blood sugar (rebound hypoglycemia).[cite: 289]"
       },
       {
-        "text": "Wait outside the bathroom door until the patient is ready for the dose.",
+        "text": "Diarrhea",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nurse likely would not have time to stand outside the door and wait for the patient to finish in the bathroom."
-      },
-      {
-        "text": "Withhold the dose until the next administration time later in the day.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Withholding the dose until the next administration time may compromise the patient's condition and is not an appropriate nursing action."
-      },
-      {
-        "text": "Leave the medication at the bedside so that the patient can take it later.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should not leave medications at the bedside. If the medication is left at the bedside for the patient, the nurse cannot be sure that the patient actually took the medication."
+        "rationale": "This is incorrect. Diarrhea is a complication from enteral feedings, not PN feedings.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 22,
     "type": "MCQ",
-    "questionText": "Which documentation entry related to prn (as needed) medication administration is complete?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Administer medications using the 'three checks' and 'rights of medication.'",
-    "page": 835,
-    "heading": "Right Documentation",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "questionText": "Which intervention would help to prevent or relieve persistent nausea?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Describe nursing interventions for patients with special nutritional needs: impaired swallowing, NPO, older adults, and nausea.",
+    "page": 967,
+    "heading": "Box 24-5: Interventions for Patients Who Have Nausea",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
-    "difficulty": "Moderate",
+    "concept": "Nutrition",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "6/5/20 0900 morphine 4 mg IV given in right antecubital fossa for pain rated 8 on a 1-10 scale, J. Williams RN",
+        "text": "Assess for signs of dehydration.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Dehydration can occur as a result of continued nausea and vomiting, so the nurse should assess for this condition. However, this intervention does not prevent nausea.[cite: 289]"
+      },
+      {
+        "text": "Provide dietary supplements.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Dietary supplements might help to prevent malnutrition. However, they do not prevent nausea; in fact, they often cause nausea.[cite: 289]"
+      },
+      {
+        "text": "Place the patient in a supine position for 30 minutes after eating.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Having the patient sit upright (not supine) for 30 to 45 minutes may help.[cite: 289]"
+      },
+      {
+        "text": "Immediately remove any food that the patient cannot eat.",
         "isCorrect": true,
-        "rationale": "This is correct. The option, signed by J. Williams, is complete because it contains the date and time the medication was administered, the name of the medication, the route of administration and injection site, and the name of the nurse administering the medication. Because the medication administered was a prn order, the nurse also included the reason the medication was administered."
-      },
-      {
-        "text": "0600 famotidine 20 mg IV given in right hand, S. Abraham RN",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Date and reason for administering the prn medication are omitted in the documentation, making the entry incomplete."
-      },
-      {
-        "text": "9/2/20 0900 levothyroxine 50 mcg PO given",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The reason for administering the prn medication and the nurse's signature are omitted, making the entry incomplete."
-      },
-      {
-        "text": "1/16/20 furosemide 40 mg PO given, J. Smith RN",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Time and reason for administering the prn medication are omitted in the documentation, making the entry incomplete."
+        "rationale": "This is correct. Odors (even pleasant ones) and even the sight and smell of hot food can cause nausea, so any uneaten food should be removed immediately from the room.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 23,
     "type": "MCQ",
-    "questionText": "A patient has difficulty taking liquid medications from a cup. How should the nurse administer the medications?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 869,
-    "heading": "Procedure 23-1: Administering Oral Medications > What If... My Patient Has Difficulty Drinking From a Cup?",
+    "questionText": "The nurse completes the nutrition assessment for a 14-year-old female with a BMI of 15. Which physical assessment finding would cause the nurse to suspect an eating disorder?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "List at least five physical assessment findings that indicate nutritional imbalance.",
+    "page": 947,
+    "heading": "Example Problem: Undernutrition and Malnutrition > Assessment",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
+    "clientNeed": "Psychosocial Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Request that the physician change the order to the IV route.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. It is not necessary to ask the prescriber to change the order to the IV route; it is preferable to use the least invasive route."
-      },
-      {
-        "text": "Administer the medication by the intramuscular (IM) route.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse cannot administer a drug by another route without a prescription to do so. Dosing might not necessarily be the same in the oral versus the IM route; thus, a prescription is needed to change the route."
-      },
-      {
-        "text": "Use a needleless syringe to place the medication in the side of the mouth.",
+        "text": "Cold intolerance",
         "isCorrect": true,
-        "rationale": "This is correct. When a patient has difficulty taking liquid medications from a cup, the nurse should use a syringe without a needle to place the medication in the side of the patient's mouth. After placing the syringe between the gum and cheek, the nurse should push the plunger to administer the medication slowly."
+        "rationale": "This is correct. Cold intolerance is a physical sign of an eating disorder.[cite: 289]"
       },
       {
-        "text": "Add the whole capsule to a small amount of food or beverage to facilitate swallowing.",
+        "text": "Hypertension",
         "isCorrect": false,
-        "rationale": "This is incorrect. Crush (do not place whole) soluble tablets and place them in liquids or in a small amount of applesauce or pudding. Remember that some forms (e.g., time-released tablets) should not be crushed, so check the drug reference sources to be certain."
+        "rationale": "This is incorrect. Low blood pressure, not hypertension, is a physical assessment finding that might suggest an eating disorder.[cite: 289]"
+      },
+      {
+        "text": "Excessively thick hair",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Hair loss, not thick hair, is a sign of an eating disorder.[cite: 289]"
+      },
+      {
+        "text": "Early development of sexual maturation",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A delay of sexual maturation (not early development) is a sign of an eating disorder.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 24,
     "type": "MCQ",
-    "questionText": "The primary care provider prescribes nitroglycerin 1/150 grains sublingually for a patient experiencing chest pain. How should the nurse administer the drug?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 868,
-    "heading": "Buccal and Sublingual Medications",
+    "questionText": "For an elderly female client who is experiencing chronic nausea and weight loss, which laboratory result would the nurse recognize as being most consistent with a diagnosis of imbalanced nutrition: less than body requirements?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the laboratory values that are indicators of nutritional status.",
+    "page": 947,
+    "heading": "Example Problem: Undernutrition and Malnutrition > Others at Risk",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Put the drug in the cheek area and allow it to dissolve.",
+        "text": "Serum glucose of 78 mg/dL",
         "isCorrect": false,
-        "rationale": "This is incorrect. Drugs administered by the buccal route are placed in the cheek and allowed to dissolve."
+        "rationale": "This is incorrect. Serum glucose is normal (70 to 100 mg/dL) in this scenario.[cite: 289]"
       },
       {
-        "text": "Place the drug under the tongue and allow it to dissolve.",
+        "text": "Serum albumin of 3.2 g/dL",
         "isCorrect": true,
-        "rationale": "This is correct. Drugs administered by the sublingual route should be placed under the patient's tongue and allowed to dissolve."
+        "rationale": "This is correct. Serum albumin is a blood protein and marker for nutritional status. The value should be between 3.4 and 4.8 g/dL. This situation is consistent with undernutrition due to low nutritional intake.[cite: 289]"
       },
       {
-        "text": "Inject the drug superficially into the subcutaneous tissue.",
+        "text": "Creatinine of 1 mg/dL",
         "isCorrect": false,
-        "rationale": "This is incorrect. A subcutaneous injection is administered into the subcutaneous tissue."
+        "rationale": "This is incorrect. The serum creatinine is within normal limits for women (0.5 to 1 mg/dL).[cite: 289]"
       },
       {
-        "text": "Have the patient swallow the pill with water.",
+        "text": "Hemoglobin of 12.8 g/dL",
         "isCorrect": false,
-        "rationale": "This is incorrect. Placing the drug into the patient's mouth, giving them water, and instructing them to swallow the tablet describes oral administration."
+        "rationale": "This is incorrect. The hemoglobin level is within normal limits for a female (11.7 to 15.5 g/dL).[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 25,
     "type": "MCQ",
-    "questionText": "Which action should the nurse take immediately after administering a medication through a nasogastric tube?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 868,
-    "heading": "Procedure 23-1A: Administering Medication Through an Enteral Tube",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
+    "questionText": "Which statement made by a client whose BMI is 34 and who is attempting to lose weight would indicate the need for further teaching?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify and discuss at least six nursing interventions for imbalanced nutrition: Less than body requirements, obesity, overweight",
+    "page": 963,
+    "heading": "Self-Care Box Sidebar > Self-Care > Keep a Food Diary",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Nutrition",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Verify correct nasogastric tube placement in the stomach.",
+        "text": "'I should limit the number of fruit juices that I drink every day.'",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should verify nasogastric tube placement before administering the drug."
+        "rationale": "This is incorrect. Sugar-sweetened beverages (e.g., soda, fruit juices, fruit drinks, and energy drinks) have a high concentration of empty calories and minimal micronutrients.[cite: 289]"
       },
       {
-        "text": "Auscultate the abdomen for presence of bowel sounds.",
+        "text": "'I need to tell my family and friends about my commitment to losing weight.'",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should auscultate the abdomen for bowel sounds before administering the medication."
+        "rationale": "This is incorrect. Setting realistic, measurable goals that are shared with family members (accountability) increases the likelihood of success.[cite: 289]"
       },
       {
-        "text": "Immediately administer the next prescribed medication.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. If there is more than one medication, give each separately, flushing after each. Some medications are less effective when given in combination with others."
-      },
-      {
-        "text": "Flush the tube with water using a needleless syringe.",
+        "text": "'An online food diary is unlikely to help me to improve my food intake.'",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should flush the nasogastric tube with water using a needleless syringe after administering each medication."
+        "rationale": "This is correct. Keeping a food diary (either traditional or online), reviewing nutritional intake (both food selections and serving size), and patterns of consumption have all been shown to assist clients in decreasing dietary intake.[cite: 289]"
+      },
+      {
+        "text": "'The amount of time that I spend in front of my computer and TV should be limited.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Increased exercise and reduced sedentary activities (e.g., screen time), coupled with reduced dietary intake with improved food quality, tend to result in weight loss.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 26,
     "type": "MCQ",
-    "questionText": "How should the nurse dispose of a contaminated needle after administering an injection?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 845,
-    "heading": "Preventing Needlestick Injuries",
+    "questionText": "The nurse is checking the aspirate collected from a patient receiving gastric tube feedings. The nurse notes there is 200 mL of pale yellow and cloudy fluid with a pH of 7.3. Which action should the nurse take?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Safely provide enteral and parenteral nutrition for patients.",
+    "page": 984,
+    "heading": "Procedure 24-3: Guidelines for Checking Feeding Tube Placement > Inspecting the Aspirate and Measuring the Volume and pH of the Aspirate",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Collaboration",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "Place the needle in a specially marked, puncture-proof container.",
+        "text": "Stop the feeding immediately; then notify the prescribing provider.",
         "isCorrect": true,
-        "rationale": "This is correct. To avoid needlestick injuries, the nurse should place the uncapped needle and syringe directly into a specially marked, puncture-proof container without capping, bending, or breaking the needle."
+        "rationale": "This is correct. Normal gastric fluid should be greenish brown or white, and acidic (pH 1 to 5.5). If the gastric aspirate has a pH of 7.3 (alkaline), the nurse must stop the tube feeding immediately and notify the prescriber of the feedings. This finding might indicate the feeding tube has migrated to the lungs, which could lead to aspiration pneumonia and become a medical emergency.[cite: 289]"
       },
       {
-        "text": "Recap the needle, and carefully place it in the trash can.",
+        "text": "Hold the tube feeding for 2 hours; continue if residual is less than 200 mL.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The trash can is an unacceptable receptacle for a used syringe and needle."
+        "rationale": "This is incorrect. Holding the feeding for 2 hours and continuing after that could lead to aspiration pneumonia because the quality of the fluid indicates the placement of the tube is in the lungs.[cite: 289]"
       },
       {
-        "text": "Recap the needle, and place it in a puncture-proof container.",
+        "text": "Flush tube with 30 mL of sterile water; resume tube feeding at prescribed rate.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Recapping a used needle is not advised."
+        "rationale": "This is incorrect. Flushing the tube and resuming feedings when the feeding tube is in the lungs could lead to a medical emergency.[cite: 289]"
       },
       {
-        "text": "Place the needle in a biohazard bag with other contaminated supplies.",
+        "text": "Administer a promotility agent as prescribed; resume feeding in 1 hour.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Placing the needle in an improper container (biohazard bag) that could be punctured by the contaminated needle places other staff members at risk."
+        "rationale": "This is incorrect. If the gastric residual volume is 250 mL or greater after a second gastric residual check, a promotility agent may be considered in adult clients. However, the feeding tube may be in the lungs in this situation.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 27,
     "type": "MCQ",
-    "questionText": "The nurse must administer hepatitis B (HB) immunoglobulin 0.5 mL intramuscularly to a newly born infant of a hepatitis B antigen (HB Ag)-positive mother. Which injection site should the nurse choose to administer this injection?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the intramuscular injection procedure at the following sites: ventrogluteal, deltoid, and vastus lateralis.",
-    "page": 850,
-    "heading": "Choosing an Intramuscular Site > Vastus Lateralis Site",
+    "questionText": "Which class of nutrients is the primary source of energy for the body?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 931,
+    "heading": "Carbohydrates",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Health Promotion and Maintenance",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Infection",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Metabolism",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Ventrogluteal",
+        "text": "Proteins",
         "isCorrect": false,
-        "rationale": "This is incorrect. For children who are walking, the site of choice is the ventrogluteal muscle."
+        "rationale": "This is incorrect. Proteins primarily perform the following functions: build tissue and maintain metabolism, immune systems functions, fluid balance, and acid-base balance. They are a secondary energy source.[cite: 289]"
       },
       {
-        "text": "Vastus lateralis",
+        "text": "Carbohydrates",
         "isCorrect": true,
-        "rationale": "This is correct. The preferred site for intramuscular injections for infants who are not yet walking is the vastus lateralis muscle because there are no major blood vessels or nerves in the area."
+        "rationale": "This is correct. Carbohydrates are the primary energy source for the body. Carbohydrates perform several functions. They supply energy for muscle and organ function, spare protein, and enhance insulin secretion.[cite: 289]"
       },
       {
-        "text": "Deltoid",
+        "text": "Lipids",
         "isCorrect": false,
-        "rationale": "This is incorrect. The deltoid muscle can be used for small volumes in older children and adults."
+        "rationale": "This is incorrect. The primary functions of lipids include supplying the body with essential nutrients, acting as an energy source, providing flavor and satiety, and providing insulation. It is not the body's primary energy source.[cite: 289]"
       },
       {
-        "text": "Dorsogluteal",
+        "text": "Vitamins",
         "isCorrect": false,
-        "rationale": "This is incorrect. The dorsogluteal site is not recommended for children or adults."
+        "rationale": "This is incorrect. Although vitamins provide no energy, they are critical in regulating a variety of body functions.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 28,
     "type": "MCQ",
-    "questionText": "Which action should the nurse take to relax the vastus lateralis muscle before administering an intramuscular injection into the site?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the intramuscular injection procedure at the following sites: ventrogluteal, deltoid, and vastus lateralis.",
-    "page": 904,
-    "heading": "Procedure 23-14A: Intramuscular Injection: Traditional Method; Procedure 23-14B: Intramuscular Injection: Z-Track Method; Procedure 23-14C",
+    "questionText": "The nurse is caring for a patient with a significant history of hypertension and cardiovascular disease. The nurse would be most interested in which of the following laboratory results?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the laboratory values that are indicators of nutritional status.",
+    "page": 932,
+    "heading": "Types of Lipids",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Apply a warm compress.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Using a warm compress is not a recommended technique for a vastus lateralis injection."
-      },
-      {
-        "text": "Massage the site in a circular motion.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Massaging or rubbing the site will alter the rate of absorption of the medication. Thus, massaging is avoided."
-      },
-      {
-        "text": "Apply a soothing lotion.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Applying a soothing lotion is not a recommended practice. An adhesive bandage may be applied."
-      },
-      {
-        "text": "Have the client assume a sitting position.",
+        "text": "Lipoproteins, such as low-density and high-density lipoproteins (LDLs and HDLs)",
         "isCorrect": true,
-        "rationale": "This is correct. To relax the vastus lateralis for injection, the nurse should have the client assume a sitting position or lie flat."
+        "rationale": "This is correct. LDLs transport cholesterol to body cells. Diets high in saturated fats increase LDL circulation in the bloodstream and may result in fatty deposits on vessel walls, causing cardiovascular disease. As a result, LDL is often known as the 'bad cholesterol.' HDLs remove cholesterol from the bloodstream, returning it to the liver, where it is used to produce bile; thus, a high HDL is considered protective against cardiovascular disease and is often known as the 'good cholesterol.'[cite: 289]"
+      },
+      {
+        "text": "Fatty acids, such as alpha-linolenic acid (omega-3)",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Linolenic acid (omega-3) helps to protect against heart disease but does not indicate cardiovascular disease.[cite: 289]"
+      },
+      {
+        "text": "B-complex vitamins",
+        "isCorrect": false,
+        "rationale": "This is incorrect. B-complex vitamins' primary function is cellular metabolism.[cite: 289]"
+      },
+      {
+        "text": "Vitamin K",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Vitamin K is involved in blood clotting.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 29,
     "type": "MCQ",
-    "questionText": "The physician prescribes warfarin 5 mg orally (PO) at 1800 for a patient. After administering the medication, the nurse realizes they administered a 10 mg tablet instead of the prescribed 5 mg PO. Which action by the nurse is appropriate?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Describe the appropriate steps to take when communicating a medication error.",
-    "page": 856,
-    "heading": "What Should I Do If I Commit a Medication Error?; Clinical Insight 23-1: Taking Action After a Medication Error",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "questionText": "The nurse is caring for a patient who states, 'I have been smoking two packs of cigarettes a day for 20 years, and now my nurse practitioner wants me to take vitamins. Do you think I need to take vitamins?' What is the most appropriate response by the nurse?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Discuss the need for and advisability of vitamin and mineral supplementation.",
+    "page": 959,
+    "heading": "Lifestyle Choices; Teaching Clients About Vitamin and Mineral Supplementation",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Health Promotion and Maintenance",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "No action is necessary because an extra 5 mg of warfarin is not harmful.",
+        "text": "'Smoking is bad for your health. I believe if you stop smoking, you would certainly be better off and not have to take vitamins.'",
         "isCorrect": false,
-        "rationale": "This is incorrect. Action is necessary when any error is made, especially a medication error. Giving an extra 5 mg of warfarin can be harmful."
+        "rationale": "This is incorrect. Telling a patient they would be better off not smoking may be true, but it reflects a judgmental attitude on the part of the nurse.[cite: 289]"
       },
       {
-        "text": "Call the prescriber and ask the order to be changed to 10 mg.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While the prescriber should be notified, it is not to ask that the dose be changed but to notify the prescriber of the error."
-      },
-      {
-        "text": "Document on the chart that the drug was given, and indicate the drug was given in error.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Document the drug, dose, site, route, date, and time in the patient's healthcare record but do not document that the drug was given in error."
-      },
-      {
-        "text": "Complete an incident report according to the facility's policy.",
+        "text": "'Smokers use vitamin C faster than do nonsmokers, and this is linked to iron deficiency. You can either eat more foods containing vitamin C and iron or take dietary supplements.'",
         "isCorrect": true,
-        "rationale": "This is correct. Complete an incident report according to the facility's policy; submit the signed report to the nurse manager."
+        "rationale": "This is correct. Because vitamin C is an antioxidant, smokers metabolize vitamin C faster than do nonsmokers. The more a person uses tobacco, the more vitamin C is lost, yet the body needs more vitamin C to counteract the damage smoking causes to cells. Additionally, because vitamin C aids in absorption of iron, a low level of vitamin C is also linked to iron deficiency. If a person cannot quit smoking, vitamin C and iron supplementation may help compensate.[cite: 289]"
+      },
+      {
+        "text": "'It is probably a good idea. With your history of tobacco use, I'm sure you are lacking in vitamins and nutrients.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Telling the patient that they are lacking in many vitamins is too broad and not helpful.[cite: 289]"
+      },
+      {
+        "text": "'I really cannot answer this question. You will need to speak with a nutritionist to find out more about this.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Nurses can answer these questions without having to refer the patient to a nutritionist. Encourage patients to ask their primary care provider's advice before taking vitamins and other dietary supplements.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 30,
     "type": "MCQ",
-    "questionText": "The nurse must administer eardrops to an infant. How should the nurse proceed?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "List the five steps to incorporate in your practice to ensure safe medication administration and prevent a medication error.",
-    "page": 874,
-    "heading": "Highlights of Procedures 23-1 Through 23-18 and Procedure 23-3: Administering Otic Medication",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
+    "questionText": "While the nurse is performing a nutritional assessment, the patient states, 'I am on a vegan diet. I have been vegan for 10 years.' What is the best response by the nurse?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Discuss how each of the following affects and is affected by nutritional status: lifestyle choices, vegetarianism, dieting for weight loss, culture and religion, disease processes, functional limitations, and special diets.",
+    "page": 946,
+    "heading": "Vegetarianism > Types of Vegetarian Diets",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Pull the pinna down and back before instilling the drops.",
+        "text": "'Is this a religious or cultural requirement for you?'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Asking the patient whether this is a religious or cultural requirement may be judgmental, is a closed-ended question, and will not elicit information regarding specific dietary intake.[cite: 289]"
+      },
+      {
+        "text": "'It is fine; however, you may not be getting all the nutrients you need.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While a vegan diet is lacking in some nutrients, the nurse cannot assume the patient is not getting all the nutrients needed. The nurse must gather data first. Vegans usually take supplements to obtain the needed nutrients.[cite: 289]"
+      },
+      {
+        "text": "'Can you tell me about the foods you eat along with any other supplements you take?'",
         "isCorrect": true,
-        "rationale": "This is correct. For a child younger than 3 years of age, the nurse should pull the pinna down and back. This straightens the ear canal for proper channeling of the medication."
+        "rationale": "This is correct. The most appropriate response by the nurse is to first assess what the patient is eating and what supplements the patient uses. This will assist the nurse in identifying the patient's knowledge level of the diet and in identifying proper supplements.[cite: 289]"
       },
       {
-        "text": "Position the pinna upward and outward before instilling the drops.",
+        "text": "'I think it is your right to be on whatever diet you would like to be on.'",
         "isCorrect": false,
-        "rationale": "This is incorrect. For older children and adults, the nurse should pull the pinna upward and outward."
-      },
-      {
-        "text": "Instill the drops directly; no special positioning is necessary.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should not instill the drops directly. The nurse should instill the prescribed number of drops along the side of the ear canal."
-      },
-      {
-        "text": "Position the patient supine with the head of the bed elevated 30°.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The patient should be assisted into a side-lying position with the appropriate ear facing up before instillation."
+        "rationale": "This is incorrect. It is certainly an individual's right to make their own choices regarding diet; however, this response will not assist the nurse in conducting a thorough nutritional assessment.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 31,
     "type": "MCQ",
-    "questionText": "The nurse is teaching parents methods to give oral medication to their child. Which action would the parents implement to improve compliance?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 838,
-    "heading": "Self-Care Box: Teaching Parents About Medicating Children",
+    "questionText": "A 30-year-old patient newly diagnosed with type 2 diabetes states to the nurse, 'If glucose is so important, then I think as long as my blood sugar is high I must be doing well.' What is the most appropriate response by the nurse?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Discuss how each of the following affects and is affected by nutritional status: lifestyle choices, vegetarianism, dieting for weight loss, culture and religion, disease processes, functional limitations, and special diets.",
+    "page": 957,
+    "heading": "Blood Glucose > Hyperglycemia",
     "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Growth and Development",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Metabolism",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "Crush time-release capsules to put in their child's favorite food.",
+        "text": "'It depends on what you mean by high blood sugar. You will need to obtain more information from your provider, as diabetes is a very complicated disease process.'",
         "isCorrect": false,
-        "rationale": "This is incorrect. Time-released capsules should not be crushed and favorite foods should not be used to mask unpleasant medication taste."
+        "rationale": "This is incorrect. Putting the patient off by telling them to ask the provider indicates either the nurse's own poor understanding of the disease or an unwillingness to provide patient teaching. The nurse should clarify, explain, and teach this information to the patient in a timely manner.[cite: 289]"
       },
       {
-        "text": "Give medication quickly before the child knows what is happening.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Parents should take their time when giving medications to children. Rushing the child can be frustrating and lead to struggles with the child."
-      },
-      {
-        "text": "Allow the child to eat a frozen pop before receiving the medication.",
+        "text": "'I understand how you are thinking; however, a high glucose level does not mean that there is more fuel available for your body's cells. Because you have diabetes, your body cells can't use the excess glucose.'",
         "isCorrect": true,
-        "rationale": "This is correct. The parent can give the child a frozen fruit bar or frozen flavored ice pop just before the medication. This helps to numb the taste buds to weaken the taste of the medication."
+        "rationale": "This is correct. Diabetes, an endocrine problem, may develop as a result of either insufficient insulin production or resistance to the existing supply of insulin. A high blood glucose level does not mean that there is more fuel available for cellular energy. A characteristic of diabetes is that although there is more than enough glucose in the blood, it cannot enter and be used by the cells.[cite: 289]"
       },
       {
-        "text": "Mask the flavor of medication in a toddler cup with orange juice.",
+        "text": "'I will be able to explain this to you a little better when we talk about diabetes. For now, I have to finish my assessment, and then we can get back to your question.'",
         "isCorrect": false,
-        "rationale": "This is incorrect. Do not use essential foods in the child's diet (e.g., milk or orange juice) to mask the taste of medications. The child may later refuse a food they associate with the medicine."
+        "rationale": "This is incorrect. The patient's needs are more important than completing the task of the assessment. This type of response ignores the patient's need for education.[cite: 289]"
+      },
+      {
+        "text": "'When I finish your assessment, I will teach you how to perform glucose testing. As long as your blood sugar remains somewhere in the 120 to 140 range, you will be doing well.'",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Glucose testing is important; however, a random blood sugar range of 120 to 140 mg/dL is too high for diabetic patients.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 32,
     "type": "MCQ",
-    "questionText": "An adult patient who has been admitted with lower gastrointestinal bleeding is prescribed a unit of packed red blood cells. Which gauge needle should be inserted to administer this blood product?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 841,
-    "heading": "Equipment for Parenteral Medications>Needles > Gauge",
+    "questionText": "After inserting a nasogastric feeding tube, what should be the nurse's priority action prior to starting the first tube feeding?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Safely provide enteral and parenteral nutrition for patients.",
+    "page": 984,
+    "heading": "Procedure 24-3: Guidelines for Checking Feeding Tube Placement",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Knowledge [Remembering]",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "cognitiveLevel": "Application [Applying]",
     "concept": "Safety",
-    "difficulty": "Easy",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "18",
+        "text": "Auscultate bowel sounds over the abdomen.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Auscultating bowel sounds does not provide any reliable information related to tube placement, although it is an indicator of intestinal motility.[cite: 289]"
+      },
+      {
+        "text": "Aspirate gastric contents and obtain a pH reading.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Feeding tube placement can be checked by testing the pH of the aspirate in combination with other methods; however, this is not the most reliable indication of proper placement prior to a first feeding.[cite: 289]"
+      },
+      {
+        "text": "Obtain radiographic verification (x-ray).",
         "isCorrect": true,
-        "rationale": "This is correct. Large-gauge needles, 14- to 18-gauge needles, are used for blood products in adults because the bore is large enough to allow transfusion without cell damage (lysis)."
+        "rationale": "This is correct. Radiographic (x-ray) verification is the only reliable method for confirming tube placement; it must be performed before the first feeding is administered.[cite: 289]"
       },
       {
-        "text": "22",
+        "text": "Mix the feeding with water for the first feeding only.",
         "isCorrect": false,
-        "rationale": "This is incorrect. This gauge (22) is too small for blood transfusions."
-      },
-      {
-        "text": "24",
-        "isCorrect": false,
-        "rationale": "This is incorrect. A 24-gauge needle is too small for blood transfusions."
-      },
-      {
-        "text": "26",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Smaller needles, such as a 26-gauge needle, cause less pain and trauma to the tissue but it is not large enough for blood."
+        "rationale": "This is incorrect. While in some instances mixing water in the first tube feeding can be done, tube placement must be verified prior to feeding.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 33,
     "type": "MCQ",
-    "questionText": "What is the most essential action by the nurse prior to delegating the administration of an IV medication to a licensed practical nurse (LPN)?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Discuss the agencies and legislation that help to ensure drug quality and safety.",
-    "page": 807,
-    "heading": "Legal Considerations > Nurse Practice Acts",
+    "questionText": "A group of pediatric nurses accepts an international assignment in an underdeveloped country. The nurses are informed that they will be caring for many children with kwashiorkor. Knowing this information, the nurses should create a care plan focusing on which primary nutrient for these children?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify and discuss at least six nursing interventions for imbalanced nutrition: less than body requirements, obesity, overweight.",
+    "page": 947,
+    "heading": "Example Problem: Undernutrition and Malnutrition",
     "integratedProcesses": "Nursing Process",
     "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Legal",
-    "difficulty": "Difficult",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Nutrition",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Review the state's nurse practice act for LPN scope of practice.",
+        "text": "Calories",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Marasmus is a severe protein and overall caloric deficit.[cite: 289]"
+      },
+      {
+        "text": "Protein",
         "isCorrect": true,
-        "rationale": "This is correct. The State Board of Nursing regulates the types and routes of medications that can be administered by the various levels of nurses. For example, LPNs in some states cannot administer IV medications, whereas other states require additional education and experience before LPNs can perform this action."
+        "rationale": "This is correct. Kwashiorkor is a severe deficiency of dietary protein.[cite: 289]"
       },
       {
-        "text": "Examine the unit policy and procedure for IV medication administration.",
+        "text": "Niacin",
         "isCorrect": false,
-        "rationale": "This is incorrect. Once scope of practice is identified, the nurse can proceed with reviewing the unit policies."
+        "rationale": "This is incorrect. A lack of niacin results in pellagra, not kwashiorkor.[cite: 289]"
       },
       {
-        "text": "Determine whether the LPN has previously performed this procedure.",
+        "text": "Vitamin C",
         "isCorrect": false,
-        "rationale": "This is incorrect. There is an action that is more important than assessing the experience level of the LPN."
-      },
-      {
-        "text": "Demonstrate the procedure; then allow the LPN to administer the IV medication.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. If state regulations do not allow LPNs to administer IV medications, there is no reason for the nurse to demonstrate the procedure."
+        "rationale": "This is incorrect. A lack of vitamin C results in scurvy, not kwashiorkor.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 34,
     "type": "MCQ",
-    "questionText": "Which body organ is primarily responsible for the metabolism of medications?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
-    "page": 815,
-    "heading": "How Are Drugs Metabolized in the Body?",
+    "questionText": "An adequately nourished elderly female was admitted to a skilled nursing facility 3 months ago. Since then, she has had significant weight loss and has become weaker. Her appetite and activity level are reduced, and she has lost interest in interacting with other patients. What would the nurse suspect the reason for her condition to be?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the primary nutritional considerations for various developmental stages.",
+    "page": 946,
+    "heading": "Gero feature > Older Adults > Frail Elderly Syndrome",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Metabolism",
-    "difficulty": "Easy",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Nutrition",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Kidney",
+        "text": "Need for teaching about nutrition",
         "isCorrect": false,
-        "rationale": "This is incorrect. Medications can be detoxified in the kidneys, but it is not the primary organ. The kidneys are the primary organ for excretion of drugs."
+        "rationale": "This is incorrect. The resident's poor appetite is not a result of not understanding nutrition or the need to eat. Teaching would not be helpful in this instance.[cite: 289]"
       },
       {
-        "text": "Skin",
+        "text": "Anxiety",
         "isCorrect": false,
-        "rationale": "This is incorrect. The skin is not the primary organ for metabolism of medications."
+        "rationale": "This is incorrect. In this situation, the resident's poor appetite is more likely related to depression and social withdrawal or even dementia, rather than anxiety.[cite: 289]"
       },
       {
-        "text": "Liver",
+        "text": "Distaste for the food served",
+        "isCorrect": false,
+        "rationale": "This is incorrect. There are no data in the scenario to indicate a distaste for the food served. However, the skilled nursing facility can address individual preferences. This is not the most likely reason for the resident's condition.[cite: 289]"
+      },
+      {
+        "text": "Frail elderly syndrome",
         "isCorrect": true,
-        "rationale": "This is correct. Drug metabolism takes place mainly in the liver. If liver function is impaired due to liver disease, medications will be eliminated more slowly, and toxic levels may accumulate."
-      },
-      {
-        "text": "Large intestine",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The gastrointestinal tract can help excrete some drugs in the feces, but it does not metabolize medications."
+        "rationale": "This is correct. With advancing age, older adults face many losses. As a result, depression and social isolation are common. Both negatively affect appetite. Frail elderly syndrome is a complex disorder characterized by weight loss, lessened activity and interaction, and increasing frailty.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 35,
     "type": "MCQ",
-    "questionText": "Which body organ is primarily responsible for medication excretion?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
-    "page": 815,
-    "heading": "How Are Drugs Excreted From the Body?",
+    "questionText": "What is the BMI for a male patient who weighs 165 lb and is 71 inches tall?[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Calculate the body mass index for a client and explain its significance.",
+    "page": 954,
+    "heading": "Focused Nutritional Assessment >Body Mass Index> Box 24-3: Calculating Body Mass Index (BMI)",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Elimination",
-    "difficulty": "Easy",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Nutrition",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Liver",
+        "text": "45",
         "isCorrect": false,
-        "rationale": "This is incorrect. The liver is the primary site for metabolism, not excretion."
+        "rationale": "This is incorrect. This BMI is not correct. The equation to calculate body mass index is BMI = kg/m^2.[cite: 289]"
       },
       {
-        "text": "Kidney",
+        "text": "20",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This BMI is not correct. The equation to calculate body mass index is BMI = kg/m^2.[cite: 289]"
+      },
+      {
+        "text": "23",
         "isCorrect": true,
-        "rationale": "This is correct. The kidneys are the primary site of excretion. If the patient has decreased renal function, the nurse should closely monitor for medication toxicity."
+        "rationale": "This is correct. To calculate BMI when given pounds for weight and inches for height, you must first convert pounds to kilograms and inches to meters. The equation to calculate body mass index is BMI = kg/m^2.[cite: 289]"
       },
       {
-        "text": "Lungs",
+        "text": "32",
         "isCorrect": false,
-        "rationale": "This is incorrect. While the lungs can excrete some drugs, it is not the primary organ."
-      },
-      {
-        "text": "Exocrine glands",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While exocrine glands can help eliminate some drugs, it is not the primary site."
+        "rationale": "This is incorrect. This BMI is not correct. The equation to calculate body mass index is BMI = kg/m^2.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 36,
-    "type": "MCQ",
-    "questionText": "The nursing student is preparing to administer an IM injection to the patient. The student states to the instructor, 'I'm going to administer this medication in my patient's buttocks at the dorsogluteal site.' What is the most appropriate response by the instructor?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Explain the disadvantages of using the dorsogluteal site for intramuscular injections.",
-    "page": 850,
-    "heading": "Choosing an Intramuscular Site and Dorsogluteal Site Site to Avoid",
+    "type": "SATA",
+    "questionText": "To promote wound healing, the nurse is teaching a patient about choosing foods high in protein. The nurse will evaluate that learning has occurred if the patient recognizes which foods have incomplete proteins that should be consumed with a complementary protein? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 931,
+    "heading": "Table 24-1: Energy Nutrients > Proteins",
     "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "'Okay. Explain the procedure to me and you are good to go.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The dorsogluteal site should be avoided; the site is not recommended."
-      },
-      {
-        "text": "'This may not be the best site owing to proximity of the sciatic nerve.'",
+        "text": "Whole grain rice",
         "isCorrect": true,
-        "rationale": "This is correct. The dorsogluteal site consists of the gluteal muscles of the buttocks. Avoid using the dorsogluteal site for IM injections because its close proximity to the sciatic nerve and superior gluteal artery increases the risk of injection into a major blood vessel and damage to the sciatic nerve. Furthermore, the site is difficult to identify accurately in older adults or people with flabby skin. The instructor should advise the student that this is not the appropriate site and elicit another site from the student."
+        "rationale": "This is correct. Whole grain rice is an incomplete protein. Incomplete proteins are supplied by plant sources (e.g., grains, nuts, legumes, seeds, vegetables). They can be combined to make complete proteins.[cite: 289]"
       },
       {
-        "text": "'I agree this is a good site for thin patients such as this one.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This is not a good site for intramuscular injections."
+        "text": "Legumes",
+        "isCorrect": true,
+        "rationale": "This is correct. Legumes are examples of incomplete protein. Grains, nuts, legumes, seeds, and vegetables are examples of incomplete proteins. They can be combined to make complete proteins.[cite: 289]"
       },
       {
-        "text": "'Okay, but first be sure to locate the bony landmarks carefully.'",
+        "text": "Poultry",
         "isCorrect": false,
-        "rationale": "This is incorrect. The nursing instructor should not encourage the nursing student to use this site. It is no longer recommended."
+        "rationale": "This is incorrect. Poultry comes from an animal source and is a complete protein.[cite: 289]"
+      },
+      {
+        "text": "Eggs",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Eggs are a complete protein providing all of the essential amino acids necessary for protein synthesis.[cite: 289]"
+      },
+      {
+        "text": "Milk",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Milk is a complete protein.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 37,
-    "type": "MCQ",
-    "questionText": "The nursing student is preparing to administer lisinopril to the patient but does not know what lisinopril is used for. What is the most appropriate action by the student to obtain the information?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Name at least five sources of medication information.",
-    "page": 807,
-    "heading": "Drug Listings and Directories",
+    "type": "SATA",
+    "questionText": "The nurse is teaching a patient about the importance of reducing saturated fats in the diet. The nurse will recognize that learning has occurred if, upon questioning, the patient replies that they should read product labels to eliminate the intake of which saturated fats? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 931,
+    "heading": "Table 24-1: Energy Nutrients > Lipids and Table 24-2: Dietary Fats",
     "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Easy",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Health Promotion",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Consult the pharmacist.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While the pharmacist is a good reference, this action is not the most appropriate."
-      },
-      {
-        "text": "Ask the primary nurse.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Asking the primary nurse is not the best action to take in this situation."
-      },
-      {
-        "text": "Question the nursing instructor.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Questioning the nursing instructor is not the most appropriate action for the student nurse to take."
-      },
-      {
-        "text": "Look up the drug in a medication reference text.",
+        "text": "Palm oil",
         "isCorrect": true,
-        "rationale": "This is correct. Look it up! As a nurse, one is professionally, ethically, legally, and personally responsible for every dose of medication administered to a patient. Always use current information when researching a medication."
+        "rationale": "This is correct. Palm oil is a source of saturated fats that are contained in many processed foods. The patient should be encouraged to read product labels to eliminate them from the diet.[cite: 289]"
+      },
+      {
+        "text": "Coconut oil",
+        "isCorrect": true,
+        "rationale": "This is correct. Many processed foods contain coconut oils, which are sources of saturated fat. The patient should be encouraged to read product labels to eliminate them from the diet.[cite: 289]"
+      },
+      {
+        "text": "Canola oil",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Canola oil is a monounsaturated fat that tends to lower the level of low-density lipoprotein (LDL) cholesterol (the 'bad' cholesterol). These should be substituted for saturated fats in the diet.[cite: 289]"
+      },
+      {
+        "text": "Peanut oil",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Monounsaturated fats should be included in the patient's diet. Peanut oil is a type of monounsaturated fat.[cite: 289]"
+      },
+      {
+        "text": "Safflower oil",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Safflower oil is a polyunsaturated fat and should be included in the patient's diet.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 38,
-    "type": "MCQ",
-    "questionText": "The nurse mixes two medications together in one syringe and is preparing to administer the mixture to the patient. On entering the patient's room, the nurse notices that the medication looks cloudy and there are some particles floating in the mixture. What is the most appropriate action by the nurse?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Define drug-drug interaction, antagonistic drug relationship, synergistic drug relationship, drug incompatibility, and medication contraindications.",
-    "page": 820,
-    "heading": "How Do Medications Interact?",
+    "type": "SATA",
+    "questionText": "Which instructions should the nurse give to the older adult patient experiencing constipation? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Describe the nursing interventions for patients with special needs: impaired swallowing, NPO, older adults, and nausea.",
+    "page": 945,
+    "heading": "What factors affect nutrition> Developmental Stage> Older Adults",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Elimination",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Drink at least eight glasses of water or fluid per day.",
+        "isCorrect": true,
+        "rationale": "This is correct. To prevent constipation, the nurse should instruct the patient to drink at least eight glasses of water or fluid per day.[cite: 289]"
+      },
+      {
+        "text": "Obtain a minimum of four servings of meat per day.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Four servings of meat is not a recommendation for constipation.[cite: 289]"
+      },
+      {
+        "text": "Consume whole grains and fresh greens.",
+        "isCorrect": true,
+        "rationale": "This is correct. Whole grains and fresh greens provide the needed fiber for constipation.[cite: 289]"
+      },
+      {
+        "text": "Exercise vigorously at least 60 minutes per day.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. While activity is beneficial for constipation, 60 minutes of vigorous activity is not necessary for older adults.[cite: 289]"
+      },
+      {
+        "text": "Include both soluble and insoluble fibers in the diet.",
+        "isCorrect": true,
+        "rationale": "This is correct. Soluble fiber allows more water to remain in the stool, which makes it softer and easier to pass. Insoluble fiber adds bulk to the stool for easier defecation.[cite: 289]"
+      }
+    ]
+  },
+  {
+    "questionNumber": 39,
+    "type": "SATA",
+    "questionText": "Where in the body is glucose stored? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 931,
+    "heading": "Carbohydrates > Functions of CHOs",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Physiological Adaptation",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Metabolism",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Brain",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The brain requires glucose (carbohydrates) to function but does not store glucose.[cite: 289]"
+      },
+      {
+        "text": "Liver",
+        "isCorrect": true,
+        "rationale": "This is correct. Glucose is stored in the liver as glycogen.[cite: 289]"
+      },
+      {
+        "text": "Skeletal muscles",
+        "isCorrect": true,
+        "rationale": "This is correct. The skeletal muscles store glucose.[cite: 289]"
+      },
+      {
+        "text": "Smooth muscles",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Skeletal muscles, not smooth muscles, store glucose.[cite: 289]"
+      },
+      {
+        "text": "Bone marrow",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Blood, not glucose, is produced in the bone marrow. Bone marrow does not store glucose.[cite: 289]"
+      }
+    ]
+  },
+  {
+    "questionNumber": 40,
+    "type": "SATA",
+    "questionText": "For a patient with risk for imbalanced nutrition: less than body requirements related to impaired swallowing, which nursing interventions are appropriate? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Describe nursing interventions for patients with special nutritional needs: impaired swallowing, NPO, older adults, and nausea.",
+    "page": 961,
+    "heading": "Interventions for Patients With Impaired Swallowing",
     "integratedProcesses": "Nursing Process",
     "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
     "cognitiveLevel": "Application [Applying]",
@@ -1346,419 +1438,316 @@
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Notify the pharmacist before proceeding.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The pharmacist could have been consulted before mixing the drugs, but not afterward. The reaction has already taken place and should not be administered."
-      },
-      {
-        "text": "Check for medication compatibility.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should always consult a medication resource and compatibility chart before mixing medications."
-      },
-      {
-        "text": "Discard the medications and syringe.",
+        "text": "Check inside the mouth for pocketing of food after eating.",
         "isCorrect": true,
-        "rationale": "This is correct. Drug incompatibilities occur when multiple drugs are mixed together, causing a chemical deterioration of one or more of the drugs. The result is an incompatible solution that should not be administered. The nurse can usually recognize an incompatibility when the mixed solution takes on a changed appearance. If the contents of the syringe become discolored or there are particles in the solution, do not administer the medication."
+        "rationale": "This is correct. The nurse should check for pocketing of food (storing food in cheeks) that the patient has not been able to swallow.[cite: 289]"
       },
       {
-        "text": "Remix the medications in a different syringe.",
+        "text": "Provide a full liquid diet that is easy to swallow.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Remixing the medications using a different syringe is inappropriate, because this will only elicit the same result."
-      }
-    ]
-  },
-  {
-    "questionNumber": 39,
-    "type": "MCQ",
-    "questionText": "The nursing student has registered for a class on pharmacokinetics. Which phrase reflects the student's accurate understanding of what the focus in this class will be?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Discuss the concepts and processes of pharmacokinetics, including drug absorption, distribution, metabolism, and excretion.",
-    "page": 809,
-    "heading": "What Is Pharmacokinetics?",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Evidence-Based Practice",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "The study of drug actions and their various side effects",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Pharmacology is the science of drug effects. It deals with all drugs used in society, legal and illegal, prescription and nonprescription."
+        "rationale": "This is incorrect. Thin liquids should be avoided unless thickeners are added.[cite: 289]"
       },
       {
-        "text": "A classification system for organizing brand names and generic names of drugs",
+        "text": "Remind the patient to raise the chin slightly to prepare for swallowing.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Drug classification is a system for making inferences about the drug's basic characteristics. Drug names refer to chemical names, generic names, official names, and brand/trade names."
+        "rationale": "This is incorrect. The patient should flex the head forward (tuck the chin) in preparation for swallowing, not raise the chin.[cite: 289]"
       },
       {
-        "text": "The absorption, distribution, metabolism, and excretion of drugs",
+        "text": "Keep the head of the bed elevated for 30 to 45 minutes after feeding.",
         "isCorrect": true,
-        "rationale": "This is correct. Pharmacokinetics refers to the absorption, distribution, metabolism, and exertion of a drug. These four processes determine the intensity and duration of a drug's action. Each drug has unique pharmacokinetic characteristics."
+        "rationale": "This is correct. Keep the head of the bed elevated for 30 to 45 minutes after feeding to help prevent aspiration.[cite: 289]"
       },
       {
-        "text": "The study of how medications achieve their effects at various sites in the body",
+        "text": "Encourage the use of straws to drink fluids easily.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Pharmacodynamics, another subconcept of pharmacology, is the study of how medications achieve their effects at various sites in the body, how specific drug molecules interact with target cells, and how biological responses occur."
-      }
-    ]
-  },
-  {
-    "questionNumber": 40,
-    "type": "MCQ",
-    "questionText": "Of the four ways a drug can be named, which classification is assigned by the United States Adopted Name Council (USAN Council)?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Distinguish among various nomenclature systems for naming and classifying drugs",
-    "page": 806,
-    "heading": "How Are Drugs Named and Classified?",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Evidence-Based Practice",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "Trade name",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Brand or trade name is what the drug is sold as in stores."
-      },
-      {
-        "text": "Brand name",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Brand or trade name is what the drug is sold as in stores."
-      },
-      {
-        "text": "Generic name",
-        "isCorrect": true,
-        "rationale": "This is correct. The generic name is assigned by the United States Adopted Name Council (USAN Council) when the developing manufacturer is ready to market the drug."
-      },
-      {
-        "text": "Chemical name",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Chemical name is the exact description of the drug's chemical composition and molecular structure."
+        "rationale": "This is incorrect. Avoid the use of drinking straws for a patient with impaired swallowing.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 41,
-    "type": "MCQ",
-    "questionText": "When taking the history of a patient admitted to the emergency department for uncontrolled hypertension, the patient stated that they discontinued their blood pressure medication due to their blood pressure being 'normal again.' What is the best course of action for the nurse?",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Plan care for clients with diagnoses of risk for injury and ineffective health management related to medications.",
-    "page": 832,
-    "heading": "Nonadherence",
+    "type": "SATA",
+    "questionText": "What should the nurse include in a plan for teaching adults about dietary trans-fatty acids? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 933,
+    "heading": "Lipids > Saturated and Unsaturated Fatty Acids; Table 24-2: Dietary Fats",
     "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Evidence-Based Practice",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Health Promotion",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Ignore the patient's statement and continue.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. It would be inappropriate to ignore the statement and not address the reason for not complying"
-      },
-      {
-        "text": "Provide appropriate education of medications.",
+        "text": "Trans-fat increases the shelf-life of foods.",
         "isCorrect": true,
-        "rationale": "This is correct. Non-adherence can be due to lack of symptoms, intolerable side effects, forgetfulness, inability to afford medication, disagreement with plan, or lack of knowledge. It is important to address the patient's reason for not complying and provide adequate education."
+        "rationale": "This is correct. Trans-fatty acids are saturated fats created when food manufacturers add hydrogen to polyunsaturated plant oils, such as corn oil. This process solidifies the fat, improves texture and flavor, and extends the shelf-life of the food.[cite: 289]"
       },
       {
-        "text": "Scold the patient for non-adherence.",
+        "text": "Trans-fat decreases blood cholesterol levels and LDL levels.",
         "isCorrect": false,
-        "rationale": "This is incorrect. It would be inappropriate to scold the patient."
+        "rationale": "This is incorrect. Trans-fats increase (not decrease) blood cholesterol levels. Additionally, they raise LDL levels.[cite: 289]"
       },
       {
-        "text": "Report patient to the drug administration.",
+        "text": "The Food and Drug Administration (FDA) mandates that trans-fat content be listed on all food labels.",
+        "isCorrect": true,
+        "rationale": "This is correct. The FDA mandates that trans-fat content be listed on all food labels. Intake of saturated and trans-fat should be limited.[cite: 289]"
+      },
+      {
+        "text": "Check for hydrogenated vegetable oils on food labels.",
+        "isCorrect": true,
+        "rationale": "This is correct. Trans-fats are found in many margarines and other processed foods containing hydrogenated vegetable oils.[cite: 289]"
+      },
+      {
+        "text": "Vegetable oil sprays used for cooking are high in trans-fats.",
         "isCorrect": false,
-        "rationale": "This is incorrect. In this scenario, it would be inappropriate and wrong to report the patient for non-adherence to medication."
+        "rationale": "This is incorrect. Vegetable oil sprays are not high in trans-fats. The Centers for Disease Control and Prevention (CDC) recommends cooking and baking with vegetable oils (liquid or spray) instead of solid fats (e.g., solid shortenings, butter, lard).[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 42,
     "type": "SATA",
-    "questionText": "What are the primary roles of the Food and Drug Administration (FDA)? Select all that apply.",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Discuss the agencies and legislation that help to ensure drug quality and safety.",
-    "page": 808,
-    "heading": "Legal Considerations",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Legal",
+    "questionText": "The pediatric nurse is preparing a teaching plan about vitamins for parents of school-age children. What vital information should the nurse include in the plan? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify the types, functions, metabolism, and major food sources of (1) energy nutrients, (2) vitamins, (3) minerals, and (4) water.",
+    "page": 934,
+    "heading": "Vitamins; Table 24-3: Vitamins... ",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Health Promotion and Maintenance",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Health Promotion",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Regulate the testing, manufacture, and sale of all medications",
+        "text": "Water-soluble vitamins are needed for cellular metabolism.",
         "isCorrect": true,
-        "rationale": "This is correct. The FDA of the U.S. Department of Health and Human Services regulates the testing, manufacturing, and sale of all medications. This process helps to ensure that ineffective or unsafe drugs are not marketed or are recalled, if later found unsafe."
+        "rationale": "This is correct. Water-soluble vitamins, especially the B vitamins, are needed for cellular metabolism.[cite: 289]"
       },
       {
-        "text": "Monitor safety and effectiveness of medications available to consumers",
+        "text": "Vitamins are necessary for preventing particular deficiency diseases.",
         "isCorrect": true,
-        "rationale": "This is correct. The FDA also monitors the safety and effectiveness of medications available to consumers."
+        "rationale": "This is correct. Vitamins are organic substances that are necessary for metabolism and for preventing a particular deficiency disease.[cite: 289]"
       },
       {
-        "text": "Manage the storage and handling of controlled substances",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The management of controlled substances is under the auspices of the Drug Enforcement Agency (DEA)."
+        "text": "Because the body does not make vitamins, they must be supplied by the foods we eat.",
+        "isCorrect": true,
+        "rationale": "This is correct. Because the body cannot make vitamins, they must be supplied by the foods we eat.[cite: 289]"
       },
       {
-        "text": "Manage the sale and regulation of all herbal remedies",
+        "text": "The most important vitamin for children is vitamin C.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Many medicinal products are not regulated by the FDA. For example, herbal remedies and some naturopathic supplements are considered 'food products' and are not regulated, even though they are advertised as having health benefits."
+        "rationale": "This is incorrect. There is no reference that children need any other specific vitamin, such as vitamin C, more than others; all are important for healthy bodily functions.[cite: 289]"
       },
       {
-        "text": "Regulate the administration and disposal of controlled substances",
+        "text": "Vitamin E is needed to prevent night blindness.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The DEA regulates the administration and disposal of controlled substances, not the FDA."
+        "rationale": "This is incorrect. Vitamin A, not E, is needed to prevent night blindness.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 43,
     "type": "SATA",
-    "questionText": "The new nurse is beginning orientation on a medical-surgical unit. What is most important for the nurse to know regarding hospital policies concerning controlled substances? Select all that apply.",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Discuss the agencies and legislation that help to ensure drug quality and safety.",
-    "page": 808,
-    "heading": "Regulation of Controlled Substances",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "questionText": "The nurse admitting a new patient to the medical-surgical unit is conducting a dietary history. What information should the nurse include? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Describe the tools and techniques for gathering subjective data about nutritional status.",
+    "page": 953,
+    "heading": "Dietary History; Focused Assessment > Dietary history",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Legal",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Controlled substances are stored in a double-locked area.",
+        "text": "Basic eating habits",
         "isCorrect": true,
-        "rationale": "This is correct. Controlled substances must be stored in locked drawers with a second locked area. This process is known as double-locking."
+        "rationale": "This is correct. A nurse can obtain a dietary history during any routine assessment. The purpose is to collect baseline information about the patient's basic eating habits.[cite: 289]"
       },
       {
-        "text": "A count of all controlled substances is performed at specific times, usually monthly.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. A count of all controlled substances is performed at specified times, usually at change of shift (not monthly)."
-      },
-      {
-        "text": "The facility must keep a record of every dose of a controlled substance that is administered.",
+        "text": "Food preferences",
         "isCorrect": true,
-        "rationale": "This is correct. The facility must also keep a record of every dose administered."
+        "rationale": "This is correct. The nurse would gather data about food preferences. A dietary history creates a picture of the patient's food habits and eating behaviors.[cite: 289]"
       },
       {
-        "text": "Schedule 1 are drugs used commonly in the healthcare field.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Schedule I identifies drugs that have a high potential for abuse and no acceptable medical use (e.g., heroin, lysergic acid diethylamide [LSD], ecstasy, peyote, mescaline)."
+        "text": "Attitude toward food",
+        "isCorrect": true,
+        "rationale": "This is correct. Attitude toward food is a consideration when obtaining a dietary history.[cite: 289]"
       },
       {
-        "text": "RNs can prescribe controlled substances to clients in the nursing home, but not in the hospital.",
+        "text": "Body mass index (BMI)",
         "isCorrect": false,
-        "rationale": "This is incorrect. Only prescribers with a national provider identification number have the authority to prescribe controlled substances. RNs do not prescribe any type of medications."
+        "rationale": "This is incorrect. BMI is not part of the dietary history, although it is sometimes a part of a total nutritional assessment.[cite: 289]"
+      },
+      {
+        "text": "Cultural dietary restrictions",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse would collect data about dietary influences from ethnic, cultural, or religious practices.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 44,
     "type": "SATA",
-    "questionText": "The nurse is preparing to administer a subcutaneous dose of insulin to a patient with diabetes. Which two sites might the nurse use that would provide the fastest absorption of the injection? Select all that apply.",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 847,
-    "heading": "Subcutaneous Injections",
+    "questionText": "The nurse assigned to an oncology unit reports that three of the patients with cancer do not have an appetite and have eaten little during the shift. What strategies can the nurse on the next shift use to increase these patients' appetites? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Identify and discuss at least six nursing interventions for imbalanced nutrition: less than body requirements, obesity, overweight",
+    "page": 947,
+    "heading": "Example Problem: Undernutrition and Malnutrition > Interventions > Stimulating Appetite",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "concept": "Nutrition",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Arm",
+        "text": "Offer frequent, smaller meals.",
         "isCorrect": true,
-        "rationale": "This is correct. Absorption is fastest in the arms. Subcutaneous injections are given into the subcutaneous tissue, the layer of fat located below the dermis and above the muscle tissue."
+        "rationale": "This is correct. Illness, with any accompanying pain, anxiety, and medications, often causes appetite loss. To improve appetite and intake and, subsequently, nutritional status, the nurse would offer frequent and smaller meals.[cite: 289]"
       },
       {
-        "text": "Abdomen",
+        "text": "Keep the patients' rooms neat and clean.",
         "isCorrect": true,
-        "rationale": "This is correct. Absorption is faster in the abdomen. Medication is absorbed more evenly from the abdomen than from the thighs and buttocks because it is affected less by activity."
+        "rationale": "This is correct. Keeping the patient's environment neat and clean and free of unpleasant sights and odors would stimulate a patient's appetite.[cite: 289]"
       },
       {
-        "text": "Thigh",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Absorption is slower in the thighs."
+        "text": "Provide or assist with frequent oral hygiene.",
+        "isCorrect": true,
+        "rationale": "This is correct. Providing or assisting with frequent oral hygiene is a strategy that will stimulate a patient's appetite.[cite: 289]"
       },
       {
-        "text": "Upper buttocks",
+        "text": "Increase liquid intake before meals.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Absorption is slower in the upper buttocks."
+        "rationale": "This is incorrect. Restrict liquids with meals to prevent feeling full before patient eats sufficient nutrients. Providing liquids before meals can make the patient feel full before even starting to eat a meal.[cite: 289]"
       },
       {
-        "text": "Ventral forearm",
+        "text": "Avoid high-protein supplements.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The ventral forearm is used for the intradermal site, not for insulin injections."
+        "rationale": "This is incorrect. High-protein supplements should be offered, not avoided.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 45,
     "type": "SATA",
-    "questionText": "The nurse is preparing to administer ophthalmic eye drops to the patient. What are the most appropriate actions for administering eye drops? Select all that apply.",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "List the five steps to incorporate in your practice to ensure safe medication administration and prevent a medication error.",
-    "page": 872,
-    "heading": "Highlights of Procedures 23-1 Through 23-18 > Procedure 23-2: Administering Ophthalmic Medication",
+    "questionText": "The registered nurse (RN) on a medical-surgical unit is making assignments. Which tasks would the RN delegate to the licensed practical nurse (LPN)? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Safely provide enteral and parenteral nutrition for patients.",
+    "page": 977,
+    "heading": "May I Delegate Nutritional Assessments?; Procedure 24-1: Checking Fingerstick (Capillary) Blood Glucose Levels > Delegation and Administering Feedings Through Gastric and Enteric Tubes > Delegation",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "concept": "Leadership and Management",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Place the patient in the high-Fowler's position.",
+        "text": "Tube feeding",
         "isCorrect": true,
-        "rationale": "This is correct. When administering ophthalmic medications, use a high-Fowler's position."
+        "rationale": "This is correct. The registered nurse can safely delegate tube feeding to the licensed practical nurse (LPN/LVN).[cite: 289]"
       },
       {
-        "text": "Administer the ointment from the inner to the outer canthus of the eye.",
+        "text": "Fingerstick blood glucose",
         "isCorrect": true,
-        "rationale": "This is correct. Work from the inner canthus to the outer canthus when applying eye ointment."
+        "rationale": "This is correct. An LPN/LVN can safely perform a fingerstick blood glucose reading.[cite: 289]"
       },
       {
-        "text": "Position the eyedropper 1 to 2 inches above the eye.",
+        "text": "Nutritional history",
+        "isCorrect": true,
+        "rationale": "This is correct. Collecting a nutritional history can safely be delegated to the LPN.[cite: 289]"
+      },
+      {
+        "text": "Laboratory findings interpretations",
         "isCorrect": false,
-        "rationale": "This is incorrect. Position the eyedropper about 1.5 to 2 cm (1/2 to 3/4 in.) above the eye; 1 to 2 inches is too high."
+        "rationale": "This is incorrect. The registered nurse is responsible for reviewing and interpreting the findings of the nutritional assessment, including laboratory values.[cite: 289]"
       },
       {
-        "text": "Apply the medication into the conjunctival sac.",
-        "isCorrect": true,
-        "rationale": "This is correct. Apply the medication into the conjunctival sac."
-      },
-      {
-        "text": "Allow the medication to drop gently on the cornea.",
+        "text": "Lipid administration",
         "isCorrect": false,
-        "rationale": "This is incorrect. Do not apply the medication to the cornea and do not allow the dropper to touch the eye."
+        "rationale": "This is incorrect. Do not delegate this skill to the LPN because administration of lipids requires advanced assessment and critical-thinking skills.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 46,
     "type": "SATA",
-    "questionText": "The nurse is preparing to administer otic medications to a 35-year-old patient. What are the most appropriate actions by the nurse? Select all that apply.",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "Demonstrate the correct procedure for administering medications by the oral, enteral, inhalant, and parenteral routes.",
-    "page": 874,
-    "heading": "Highlights of Procedures 23-1 Through 23-18 > Procedure 23-3: Administering Otic Medication",
+    "questionText": "Which of the following are anthropometric measurements? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Safely provide enteral and parenteral nutrition for patients.",
+    "page": 954,
+    "heading": "Focused Nutritional Assessment >Assessing Body Composition",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "clientNeed": "Safe and Effective Care Environment: Management of Care",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
+    "concept": "Leadership and Management",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Pull the pinna up and back.",
+        "text": "Weight",
         "isCorrect": true,
-        "rationale": "This is correct. Straighten the ear and pull the pinna up and back for an adult patient."
+        "rationale": "This is correct. Anthropometric measurements are used when assessing body composition (the proportion of fat in the body). Weight is considered an anthropometric measurement.[cite: 289]"
       },
       {
-        "text": "Position the pinna down and back.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Position the pinna down and back for a child, not for an adult."
-      },
-      {
-        "text": "Place the patient in the side-lying position with the appropriate ear up.",
+        "text": "Height",
         "isCorrect": true,
-        "rationale": "This is correct. Assist the patient to a side-lying position, with the appropriate ear facing up when instilling otic medication."
+        "rationale": "This is correct. Anthropometric measurements are used when assessing body composition (the proportion of fat in the body). Height is considered an anthropometric measurement.[cite: 289]"
       },
       {
-        "text": "Instruct the patient to remain in the side-lying position for at least 20 minutes.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Instruct the patient to remain on their side for 5 to 10 minutes after the procedure, not 20."
+        "text": "Waist circumference",
+        "isCorrect": true,
+        "rationale": "This is correct. Anthropometric measurements are used when assessing body composition (the proportion of fat in the body). Waist circumference is considered an anthropometric measurement.[cite: 289]"
       },
       {
-        "text": "Cool the solution to slightly below body temperature.",
+        "text": "Head circumference",
         "isCorrect": false,
-        "rationale": "This is incorrect. When administering otic medications, warm the solution to be instilled to body temperature; it should not be cooled."
+        "rationale": "This is incorrect. Head circumference is not an anthropometric measurement.[cite: 289]"
+      },
+      {
+        "text": "Hip circumference",
+        "isCorrect": true,
+        "rationale": "This is correct. Anthropometric measurements are used when assessing body composition (the proportion of fat in the body). Hip circumference is considered an anthropometric measurement.[cite: 289]"
       }
     ]
   },
   {
     "questionNumber": 47,
     "type": "SATA",
-    "questionText": "The home-health nurse is caring for a 75-year-old patient with severe arthritis of the hands and fingers. The patient states, 'I can't use these childproof safety lock caps because I can't open them.' What are the most appropriate responses by the nurse? Select all that apply.",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "List the five steps to incorporate in your practice to ensure safe medication administration and prevent a medication error.",
-    "page": 833,
-    "heading": "Teaching Patients About Medication Self-Administration > Administer Your Drugs Correctly",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
-    "options": [
-      {
-        "text": "'I see this is difficult for you. Do you have any family members or friends who can help you?'",
-        "isCorrect": true,
-        "rationale": "This is correct. If a patient has difficulty opening containers and administering medications owing to pain or stiffness in the hands and fingers, family members and friends can be asked to help."
-      },
-      {
-        "text": "'We can ask the pharmacist not to put childproof caps on your medications; you may need to sign a form.'",
-        "isCorrect": true,
-        "rationale": "This is correct. Additionally, the nurse or patient can ask the pharmacy and the primary care provider not to put childproof safety lids on containers for easier handling. Older adults are allowed to sign a release with their pharmacy to be able to do this."
-      },
-      {
-        "text": "'You can transfer your medications to different containers that are easier for you to open.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Do not store a drug in a container that is different from the one it came in. The medication may lose its strength, or the patient may take the wrong medication."
-      },
-      {
-        "text": "'All medications come in childproof containers, so there isn't much we can do about this.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This is an inaccurate statement and does not address the patient's issue. All medications do not come with childproof lids."
-      },
-      {
-        "text": "'Why can't you open those types of medication containers? You should be able to.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. This disregards the patient's concerns and places the blame on the patient, which is nontherapeutic. Using 'why' should be avoided."
-      }
-    ]
-  },
-  {
-    "questionNumber": 48,
-    "type": "SATA",
-    "questionText": "The nurse educator at the local hospital is preparing a teaching plan for staff nurses on using medication abbreviations in nursing documentation. What is most important for the nurse to include in the teaching plan concerning acceptable abbreviations? Select all that apply.",
-    "chapter": "Chapter 23: Administering Medications",
-    "objective": "List the five steps to incorporate in your practice to ensure safe medication administration and prevent a medication error.",
-    "page": 823,
-    "heading": "What Abbreviations Are Used in Medication Prescriptions?",
-    "integratedProcesses": "Teaching and Learning",
+    "questionText": "An overweight patient comes to the office for their annual physical and states to the nurse, 'I am tired of eating fast food all of the time and I'm afraid I'm not eating a well-balanced meal.' What would be some reliable sources of nutritional information the nurse can give to the patient to help guide them? Select all that apply.[cite: 289]",
+    "chapter": "Chapter 24: Nutrition",
+    "objective": "Differentiate among the various sources of nutritional information (e.g., USDA dietary guidelines, MyPlate, DRIs, nutrition facts labels).",
+    "page": 928,
+    "heading": "What Are Some Reliable Sources of Nutrition Information?",
+    "integratedProcesses": "Nursing Process",
     "clientNeed": "Safe and Effective Care Environment: Management of Care",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Communication",
+    "concept": "Leadership and Management",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "They are based on the Joint Commission recommendations.",
+        "text": "Dietary Reference Intakes",
         "isCorrect": true,
-        "rationale": "This is correct. The Joint Commission has an official Do Not Use list of abbreviations, which should be included in the teaching presentation."
+        "rationale": "This is correct. The Dietary Reference Intakes (DRIs) are used for planning and assessing diets for healthy individuals. The DRIs encompass five types of nutrient reference values: Estimated Average Requirement, Recommended Dietary Allowance, Adequate Intake, Tolerable Upper Intake Level, and acceptable Macronutrient Distribution Range.[cite: 289]"
       },
       {
-        "text": "They are commonly used by the pharmacy department.",
+        "text": "Wikipedia",
         "isCorrect": false,
-        "rationale": "This is incorrect. While abbreviations can be used by the pharmacy department, the Joint Commission and the facility determine the acceptable abbreviations."
+        "rationale": "This is incorrect. Although Wikipedia has a lot of accurate information, it is not a reliable nutrition resource.[cite: 289]"
       },
       {
-        "text": "They are most commonly used by nurses.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse should write out drug names and dosages in full. All healthcare team members, not just nurses, must follow the approved abbreviation list."
-      },
-      {
-        "text": "They are based on policies of the facility.",
+        "text": "USDA Dietary Guidelines",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse must be familiar with the facility's approved list of abbreviations, and this is correct information to include in the teaching presentation."
+        "rationale": "This is correct. USDA Dietary Guidelines are intended as a primary source of health information.[cite: 289]"
       },
       {
-        "text": "They are determined by the individual nurse who is charting.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. An individual nurse cannot determine which abbreviations to use in charting."
+        "text": "MyPlate",
+        "isCorrect": true,
+        "rationale": "This is correct. MyPlate is a food guide that visually illustrates a healthy meal.[cite: 289]"
+      },
+      {
+        "text": "Nutritional Labels",
+        "isCorrect": true,
+        "rationale": "This is correct. Nutrition facts labels are required on all packaged foods sold in the United States. It contains important information about serving size, number of servings per package, total calories and calories from fat per serving, a list and amounts of key nutrients, and the percent daily values.[cite: 289]"
       }
     ]
   }

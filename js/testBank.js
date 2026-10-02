@@ -4,38 +4,39 @@ import { setupQuizSession, normalizeChapterName } from './quizEngine.js';
 import { setupAdminPanel } from './adminManager.js';
 
 export async function initTestBank() {
-  const container = document.getElementById('test-bank-container') || document.body;
-  
-  if (!document.getElementById('quiz-app-root')) {
-    container.innerHTML = `
-      <div id="quiz-app-root" style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: system-ui, -apple-system, sans-serif;">
-        <div id="admin-controls-root"></div>
-        <div id="quiz-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-          <h2 id="quiz-progress" style="margin: 0; font-size: 20px; color: #1e293b;">Select a Chapter</h2>
-          <div id="question-meta" style="display: flex; gap: 8px; align-items: center;"></div>
-        </div>
-        <div id="quiz-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-          <div id="chapter-selection-view">
-            <p style="color: #64748b; margin-top: 0;">Choose an unlocked chapter below to begin your study session:</p>
-            <div id="chapter-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 16px;"></div>
-          </div>
-          <p id="question-text" style="font-size: 16px; font-weight: 600; color: #0f172a; margin-top: 0; line-height: 1.5;"></p>
-          <div id="options-container" style="display: flex; flex-direction: column; gap: 10px; margin-top: 16px;"></div>
-          <div id="feedback-box" class="hidden" style="margin-top: 20px; padding: 14px; border-radius: 8px; background: #f8fafc; border: 1px solid #cbd5e1;">
-            <p id="feedback-text" style="margin: 0; font-size: 14px; color: #334155; line-height: 1.4;"></p>
-          </div>
-          <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 24px;">
-            <button id="submit-answer-btn" class="action-btn hidden" style="background-color: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">Submit Answer</button>
-            <button id="next-question-btn" class="action-btn hidden" style="background-color: #10b981; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">Next Question</button>
-          </div>
+  const allCards = document.querySelectorAll('div');
+  let quickStudyCard = Array.from(allCards).find(el => el.textContent && el.textContent.includes('Quick Study Access'));
+
+  if (!quickStudyCard) {
+    quickStudyCard = document.querySelector('.profile-card')?.nextElementSibling || document.body;
+  }
+
+  quickStudyCard.innerHTML = `
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+      <h3 style="margin: 0; font-size: 16px; color: #f8fafc; font-weight: 600;">📖 Nursing Test Bank</h3>
+      <button id="back-to-dashboard-btn" style="background: #475569; color: white; border: none; padding: 4px 10px; border-radius: 4px; font-size: 11px; cursor: pointer;">Dashboard</button>
+    </div>
+    <div id="admin-controls-root"></div>
+    <div id="quiz-app-root" style="font-family: system-ui, -apple-system, sans-serif; margin-top: 10px;">
+      <div id="quiz-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <h3 id="quiz-progress" style="margin: 0; font-size: 15px; color: #f8fafc;">Select a Chapter</h3>
+        <div id="question-meta" style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;"></div>
+      </div>
+      <div id="quiz-card" style="background: rgba(15, 23, 42, 0.6); border: 1px solid #334155; border-radius: 8px; padding: 14px; box-sizing: border-box;">
+        <div id="chapter-selection-view">
+          <p style="color: #94a3b8; margin-top: 0; font-size: 13px;">Choose a chapter below to begin your study session:</p>
+          <div id="chapter-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; margin-top: 10px; max-height: 400px; overflow-y: auto;"></div>
         </div>
       </div>
-    `;
-  }
+    </div>
+  `;
+
+  document.getElementById('back-to-dashboard-btn')?.addEventListener('click', () => {
+    window.location.reload();
+  });
 
   try {
     const currentUser = auth.currentUser;
-    let userRole = "Nursing Student";
     let userData = {};
 
     if (currentUser) {
@@ -43,21 +44,21 @@ export async function initTestBank() {
       const userSnap = await getDoc(userRef);
       if (userSnap.exists()) {
         userData = userSnap.data();
-        userRole = userData.role || "Nursing Student";
       }
     }
 
-    const isAdmin = userRole.toLowerCase().includes('admin') || userRole.toLowerCase().includes('faculty');
+    // Correctly check the Firestore isAdmin boolean flag
+    const isAdmin = userData.isAdmin === true;
 
     if (isAdmin) {
-      setupAdminPanel();
+      await setupAdminPanel();
     }
 
     const querySnapshot = await getDocs(collection(db, "questions"));
     const allQuestions = [];
     querySnapshot.forEach(docSnap => {
       const q = docSnap.data();
-      q.normalizedChapter = normalizeChapterName(q.chapter);
+      q.normalizedChapter = normalizeChapterName(q.chapter || q.heading || "General Practice");
       allQuestions.push(q);
     });
 
@@ -76,22 +77,14 @@ export async function initTestBank() {
 async function renderChapterSelector(allQuestions, releasedMap, isAdmin) {
   const chapterListContainer = document.getElementById('chapter-list');
   const chapterSelectionView = document.getElementById('chapter-selection-view');
-  const questionText = document.getElementById('question-text');
-  const optionsContainer = document.getElementById('options-container');
-  const feedbackBox = document.getElementById('feedback-box');
-  const submitAnswerBtn = document.getElementById('submit-answer-btn');
-  const nextQuestionBtn = document.getElementById('next-question-btn');
   const questionProgress = document.getElementById('quiz-progress');
   const questionMeta = document.getElementById('question-meta');
 
+  if (!chapterListContainer || !chapterSelectionView) return;
+
   chapterSelectionView.style.display = 'block';
-  questionText.textContent = '';
-  optionsContainer.innerHTML = '';
-  feedbackBox.classList.add('hidden');
-  submitAnswerBtn.classList.add('hidden');
-  nextQuestionBtn.classList.add('hidden');
-  questionProgress.textContent = "Select a Chapter";
-  questionMeta.innerHTML = '';
+  if (questionProgress) questionProgress.textContent = "Select a Chapter";
+  if (questionMeta) questionMeta.innerHTML = '';
 
   const currentUser = auth.currentUser;
   let userData = {};
@@ -108,33 +101,32 @@ async function renderChapterSelector(allQuestions, releasedMap, isAdmin) {
   });
 
   chapterListContainer.innerHTML = '';
+  const hasReleaseSettings = Object.keys(releasedMap).length > 0;
 
   Object.keys(chaptersMap).forEach(chapName => {
     const questions = chaptersMap[chapName];
     const isReleased = releasedMap[chapName] === true;
 
-    if (!isAdmin && !isReleased) return;
+    if (!isAdmin && hasReleaseSettings && !isReleased) return;
 
     const card = document.createElement('div');
     card.style.cssText = `
-      background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 16px;
-      display: flex; flex-direction: column; justify-content: space-between; gap: 12px; cursor: pointer;
+      background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; border-radius: 6px; padding: 12px;
+      display: flex; flex-direction: column; justify-content: space-between; gap: 10px; cursor: pointer;
       transition: all 0.2s ease;
     `;
-    card.onmouseover = () => card.style.borderColor = '#94a3b8';
-    card.onmouseout = () => card.style.borderColor = '#cbd5e1';
+    card.onmouseover = () => card.style.borderColor = '#64748b';
+    card.onmouseout = () => card.style.borderColor = '#334155';
 
     card.innerHTML = `
       <div>
-        <h4 style="margin: 0 0 6px 0; font-size: 15px; color: #0f172a;">${chapName}</h4>
-        <span style="font-size: 12px; color: #64748b;">${questions.length} questions available</span>
+        <h4 style="margin: 0 0 4px 0; font-size: 14px; color: #f8fafc; font-weight: 600;">${chapName}</h4>
+        <span style="font-size: 11px; color: #94a3b8;">${questions.length} questions available ${isAdmin ? (isReleased ? '• (Released)' : '• (Hidden)') : ''}</span>
       </div>
-      <button class="action-btn" style="padding: 6px 12px; font-size: 13px; background-color: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer;">Start Quiz</button>
+      <button class="action-btn" style="padding: 6px 12px; font-size: 12px; background-color: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; width: 100%;">Start Quiz</button>
     `;
 
     card.addEventListener('click', async () => {
-      chapterSelectionView.style.display = 'none';
-
       let freshUserData = {};
       if (currentUser) {
         const freshSnap = await getDoc(doc(db, "users", currentUser.uid));
@@ -143,14 +135,13 @@ async function renderChapterSelector(allQuestions, releasedMap, isAdmin) {
 
       const userProgress = freshUserData.chapterProgressMap || {};
       const chapterProgress = userProgress[chapName] || {};
+      
       const unmasteredQuestions = questions.filter(q => {
         const record = chapterProgress[q.questionText];
         return !record || record.correct !== true;
       });
 
-      const sessionQuestions = unmasteredQuestions.length > 0 ? unmasteredQuestions : questions;
-
-      setupQuizSession(allQuestions, sessionQuestions, chapName, () => {
+      setupQuizSession(allQuestions, questions, unmasteredQuestions, chapName, () => {
         renderChapterSelector(allQuestions, releasedMap, isAdmin);
       });
     });

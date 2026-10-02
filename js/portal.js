@@ -9,7 +9,19 @@ const roleSpan = document.getElementById('user-role');
 const joinedSpan = document.getElementById('user-joined');
 const logoutBtn = document.getElementById('logout-btn');
 
-initTestBank();
+// Bind the Launch Test Bank Quiz button correctly
+document.addEventListener('DOMContentLoaded', () => {
+  const allButtons = document.querySelectorAll('button');
+  allButtons.forEach(btn => {
+    if (btn.textContent.includes('Launch Test Bank Quiz')) {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        initTestBank();
+      });
+    }
+  });
+});
+
 initProfileModalListeners();
 
 setPersistence(auth, browserLocalPersistence).then(() => {
@@ -40,6 +52,8 @@ setPersistence(auth, browserLocalPersistence).then(() => {
 
             renderProfileCard(user.uid, data);
           }
+        }, (error) => {
+          console.error("Snapshot error:", error);
         });
       } catch (error) {
         console.error("Profile error:", error);
