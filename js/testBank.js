@@ -1,160 +1,151 @@
-import { db } from './firebase-config.js';
-import { collection, getDocs, doc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
-import { auth } from './firebase-config.js';
-import { setupProfileEditor } from './profileEditor.js';
-import { checkAdminStatus, getReleasedChapters, toggleChapterRelease } from './adminManager.js';
-import { normalizeChapterName, setupQuizSession } from './quizEngine.js';
+import { db, auth } from './firebase-config.js';
+import { collection, getDocs, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { setupQuizSession, normalizeChapterName } from './quizEngine.js';
+import { setupAdminPanel } from './adminManager.js';
 
-let cachedQuestions = null;
-let cachedReleasedChapters = [];
-let currentUserIsAdmin = false;
+export async function initTestBank() {
+  const container = document.getElementById('test-bank-container') || document.body;
+  
+  // Render main container layout if not already present
+  if (!document.getElementById('quiz-app-root')) {
+    container.innerHTML = `
+      <div id="quiz-app-root" style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: system-ui, -apple-system, sans-serif;">
+        <div id="admin-controls-root"></div>
+        <div id="quiz-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <h2 id="quiz-progress" style="margin: 0; font-size: 20px; color: #1e293b;">Select a Chapter</h2>
+          <div id="question-meta" style="display: flex; gap: 8px; align-items: center;"></div>
+        </div>
+        <div id="quiz-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <div id="chapter-selection-view">
+            <p style="color: #64748b; margin-top: 0;">Choose an unlocked chapter below to begin your study session:</p>
+            <div id="chapter-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 16px;"></div>
+          </div>
+          <p id="question-text" style="font-size: 16px; font-weight: 600; color: #0f172a; margin-top: 0; line-height: 1.5;"></p>
+          <div id="options-container" style="display: flex; flex-direction: column; gap: 10px; margin-top: 16px;"></div>
+          <div id="feedback-box" class="hidden" style="margin-top: 20px; padding: 14px; border-radius: 8px; background: #f8fafc; border: 1px solid #cbd5e1;">
+            <p id="feedback-text" style="margin: 0; font-size: 14px; color: #334155; line-height: 1.4;"></p>
+          </div>
+          <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 24px;">
+            <button id="submit-answer-btn" class="action-btn hidden" style="background-color: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">Submit Answer</button>
+            <button id="next-question-btn" class="action-btn hidden" style="background-color: #10b981; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">Next Question</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
 
-async function prefetchPortalData() {
   try {
-    if (!cachedQuestions) {
-      const querySnapshot = await getDocs(collection(db, "questions"));
-      cachedQuestions = [];
-      querySnapshot.forEach((docSnap) => {
-        const qData = docSnap.data();
-        qData.normalizedChapter = normalizeChapterName(qData.chapter);
-        cachedQuestions.push(qData);
-      });
+    const currentUser = auth.currentUser;
+    let userRole = "Nursing Student";
+    let userData = {};
+
+    if (currentUser) {
+      const userRef = doc(db, "users", currentUser.uid);
+      const userSnap = await getDoc(userRef);
+      if (userSnap.exists()) {
+        userData = userSnap.data();
+        userRole = userData.role || "Nursing Student";
+      }
     }
 
-    cachedReleasedChapters = await getReleasedChapters();
-    currentUserIsAdmin = await checkAdminStatus();
+    const isAdmin = userRole.toLowerCase().includes('admin') || userRole.toLowerCase().includes('faculty');
 
-    return cachedQuestions;
-  } catch (error) {
-    console.error("Error prefetching portal data:", error);
-    return [];
-  }
-}
-
-export function initTestBank() {
-  prefetchPortalData();
-
-  let attempts = 0;
-  const waitForElements = setInterval(() => {
-    const launchQuizBtn = document.getElementById('launch-quiz-btn');
-    const quizModal = document.getElementById('quiz-modal');
-    const openEditBtn = document.getElementById('open-edit-profile');
-    attempts++;
-
-    if (launchQuizBtn && quizModal) {
-      clearInterval(waitForElements);
-      setupTestBankModal(launchQuizBtn, quizModal);
-      if (openEditBtn) setupProfileEditor();
-    } else if (attempts > 40) {
-      clearInterval(waitForElements);
-    }
-  }, 50);
-}
-
-function setupTestBankModal(launchQuizBtn, quizModal) {
-  const closeQuizBtn = document.getElementById('close-quiz-btn');
-
-  launchQuizBtn.addEventListener('click', async () => {
-    quizModal.classList.remove('hidden');
-    cachedQuestions = null;
-    const allQuestions = await prefetchPortalData();
-
-    if (allQuestions.length === 0) {
-      document.getElementById('quiz-progress').textContent = "Test Bank";
-      document.getElementById('question-text').textContent = "No questions found in Firestore database.";
-      document.getElementById('options-container').innerHTML = '';
-      return;
+    if (isAdmin) {
+      setupAdminPanel();
     }
 
-    renderChapterSelection(allQuestions);
-  });
-
-  if (closeQuizBtn) {
-    closeQuizBtn.addEventListener('click', () => {
-      quizModal.classList.add('hidden');
+    // Fetch questions and chapters
+    const querySnapshot = await getDocs(collection(db, "questions"));
+    const allQuestions = [];
+    querySnapshot.forEach(docSnap => {
+      const q = docSnap.data();
+      q.normalizedChapter = normalizeChapterName(q.chapter);
+      allQuestions.push(q);
     });
+
+    // Fetch settings for chapter releases
+    const settingsRef = doc(db, "settings", "chapters");
+    const settingsSnap = await getDoc(settingsRef);
+    const settingsData = settingsSnap.exists() ? settingsSnap.data() : { releasedChapters: {} };
+    const releasedMap = settingsData.releasedChapters || {};
+
+    renderChapterSelector(allQuestions, releasedMap, isAdmin, userData);
+
+  } catch (err) {
+    console.error("Error initializing test bank:", err);
   }
 }
 
-async function renderChapterSelection(allQuestions) {
-  const questionProgress = document.getElementById('quiz-progress');
-  const questionMeta = document.getElementById('question-meta');
+function renderChapterSelector(allQuestions, releasedMap, isAdmin, userData) {
+  const chapterListContainer = document.getElementById('chapter-list');
+  const chapterSelectionView = document.getElementById('chapter-selection-view');
   const questionText = document.getElementById('question-text');
   const optionsContainer = document.getElementById('options-container');
+  const feedbackBox = document.getElementById('feedback-box');
+  const submitAnswerBtn = document.getElementById('submit-answer-btn');
+  const nextQuestionBtn = document.getElementById('next-question-btn');
+  const questionProgress = document.getElementById('quiz-progress');
+  const questionMeta = document.getElementById('question-meta');
 
-  questionProgress.textContent = currentUserIsAdmin ? "Admin Chapter Release Control" : "Select Quiz Category";
-  questionMeta.innerHTML = `<span class="meta-pill">${currentUserIsAdmin ? 'Admin Mode' : 'Chapter Selection'}</span>`;
-  questionText.textContent = currentUserIsAdmin 
-    ? "Toggle chapters below to release them or test quizzes:" 
-    : "Choose an available released chapter or review mode to begin:";
+  chapterSelectionView.style.display = 'block';
+  questionText.textContent = '';
+  optionsContainer.innerHTML = '';
+  feedbackBox.classList.add('hidden');
+  submitAnswerBtn.classList.add('hidden');
+  nextQuestionBtn.classList.add('hidden');
+  questionProgress.textContent = "Select a Chapter";
+  questionMeta.innerHTML = '';
 
-  const chapterMap = {};
+  const chaptersMap = {};
   allQuestions.forEach(q => {
-    const normChap = q.normalizedChapter || "General Practice";
-    if (!chapterMap[normChap]) chapterMap[normChap] = [];
-    chapterMap[normChap].push(q);
+    const chap = q.normalizedChapter;
+    if (!chaptersMap[chap]) chaptersMap[chap] = [];
+    chaptersMap[chap].push(q);
   });
 
-  optionsContainer.innerHTML = '';
+  chapterListContainer.innerHTML = '';
 
-  Object.keys(chapterMap).forEach(chap => {
-    const chapQuestions = chapterMap[chap];
-    const isReleased = cachedReleasedChapters.includes(chap);
+  Object.keys(chaptersMap).forEach(chapName => {
+    const questions = chaptersMap[chapName];
+    const isReleased = releasedMap[chapName] === true;
 
-    if (!currentUserIsAdmin && !isReleased) return;
+    if (!isAdmin && !isReleased) return; // Hide unreleased chapters for students
 
-    const chapBtn = document.createElement('div');
-    chapBtn.className = 'option-label selected-chapter-card';
-    chapBtn.style.display = 'flex';
-    chapBtn.style.justifyContent = 'space-between';
-    chapBtn.style.alignItems = 'center';
-
-    const titleDiv = document.createElement('div');
-    titleDiv.innerHTML = `
-      <span style="font-weight: 600;">📖 ${chap} ${!isReleased && currentUserIsAdmin ? '🔒 (Hidden)' : ''}</span>
-      <span style="font-size: 12px; color: #64748b; display: block;">Total: ${chapQuestions.length} questions</span>
+    const card = document.createElement('div');
+    card.style.cssText = `
+      background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 16px;
+      display: flex; flex-direction: column; justify-content: space-between; gap: 12px; cursor: pointer;
+      transition: all 0.2s ease;
     `;
-    chapBtn.appendChild(titleDiv);
+    card.onmouseover = () => card.style.borderColor = '#94a3b8';
+    card.onmouseout = () => card.style.borderColor = '#cbd5e1';
 
-    if (currentUserIsAdmin) {
-      const actionGroup = document.createElement('div');
-      actionGroup.style.display = 'flex';
-      actionGroup.style.gap = '6px';
+    card.innerHTML = `
+      <div>
+        <h4 style="margin: 0 0 6px 0; font-size: 15px; color: #0f172a;">${chapName}</h4>
+        <span style="font-size: 12px; color: #64748b;">${questions.length} questions available</span>
+      </div>
+      <button class="action-btn" style="padding: 6px 12px; font-size: 13px; background-color: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer;">Start Quiz</button>
+    `;
 
-      const releaseBtn = document.createElement('button');
-      releaseBtn.className = 'action-btn';
-      releaseBtn.style.padding = '6px 10px';
-      releaseBtn.style.fontSize = '11px';
-      releaseBtn.style.backgroundColor = isReleased ? '#16a34a' : '#64748b';
-      releaseBtn.textContent = isReleased ? '✅ Released' : '🔒 Release';
+    card.addEventListener('click', () => {
+      chapterSelectionView.style.display = 'none';
 
-      releaseBtn.addEventListener('click', async (e) => {
-        e.stopPropagation();
-        cachedReleasedChapters = await toggleChapterRelease(chap, cachedReleasedChapters);
-        renderChapterSelection(allQuestions);
+      // Restore mastered question exclusion filter
+      const userProgress = userData.chapterProgressMap || {};
+      const chapterProgress = userProgress[chapName] || {};
+      const unmasteredQuestions = questions.filter(q => {
+        const record = chapterProgress[q.questionText];
+        return !record || record.correct !== true;
       });
 
-      const testQuizBtn = document.createElement('button');
-      testQuizBtn.className = 'action-btn';
-      testQuizBtn.style.padding = '6px 10px';
-      testQuizBtn.style.fontSize = '11px';
-      testQuizBtn.style.backgroundColor = '#2563eb';
-      testQuizBtn.textContent = '▶️ Test Quiz';
+      const sessionQuestions = unmasteredQuestions.length > 0 ? unmasteredQuestions : questions;
 
-      testQuizBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        setupQuizSession(allQuestions, chapQuestions, chap, () => renderChapterSelection(allQuestions));
+      setupQuizSession(allQuestions, sessionQuestions, chapName, () => {
+        renderChapterSelector(allQuestions, releasedMap, isAdmin, userData);
       });
+    });
 
-      actionGroup.appendChild(releaseBtn);
-      actionGroup.appendChild(testQuizBtn);
-      chapBtn.appendChild(actionGroup);
-    } else {
-      chapBtn.addEventListener('click', () => {
-        setupQuizSession(allQuestions, chapQuestions, chap, () => renderChapterSelection(allQuestions));
-      });
-    }
-
-    optionsContainer.appendChild(chapBtn);
+    chapterListContainer.appendChild(card);
   });
 }
