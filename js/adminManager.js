@@ -23,7 +23,7 @@ export async function setupAdminPanel() {
     adminRoot.innerHTML = `
       <div style="background: rgba(30, 41, 59, 0.95); border: 1px solid #334155; border-radius: 8px; padding: 14px; margin-bottom: 16px;">
         <h4 style="margin: 0 0 6px 0; font-size: 14px; color: #f8fafc;">🛠️ Admin Chapter Release Controls</h4>
-        <p style="font-size: 12px; color: #94a3b8; margin-top: 0; margin-bottom: 10px;"></p>
+        <p style="font-size: 12px; color: #94a3b8; margin-top: 0; margin-bottom: 10px;">Manage global releases or target specific users:</p>
         <div id="admin-toggles-container" style="display: flex; flex-direction: column; gap: 10px;"></div>
       </div>
     `;
@@ -81,15 +81,14 @@ export async function setupAdminPanel() {
 
 async function openUserReleaseModal(chapterName) {
   let modal = document.getElementById('user-release-modal');
-  if (!modal) {
-    modal = document.createElement('div');
-    modal.id = 'user-release-modal';
-    modal.style.cssText = `
-      position: fixed; inset: 0; background: rgba(15, 23, 42, 0.9); 
-      display: flex; align-items: center; justify-content: center; z-index: 99999; padding: 20px; box-sizing: border-box;
-    `;
-    document.body.appendChild(modal);
-  }
+  if (modal) modal.remove();
+
+  modal = document.createElement('div');
+  modal.id = 'user-release-modal';
+  modal.style.cssText = `
+    position: fixed; inset: 0; background: rgba(15, 23, 42, 0.9); 
+    display: flex; align-items: center; justify-content: center; z-index: 99999; padding: 20px; box-sizing: border-box;
+  `;
 
   modal.innerHTML = `
     <div style="background: #1e293b; color: #f8fafc; width: 100%; max-width: 550px; max-height: 80vh; border-radius: 12px; display: flex; flex-direction: column; border: 1px solid #334155; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); overflow: hidden;">
@@ -103,7 +102,7 @@ async function openUserReleaseModal(chapterName) {
     </div>
   `;
 
-  modal.classList.remove('hidden');
+  document.body.appendChild(modal);
 
   document.getElementById('close-user-modal').addEventListener('click', () => {
     modal.remove();
@@ -115,7 +114,7 @@ async function openUserReleaseModal(chapterName) {
     usersListContainer.innerHTML = '';
 
     if (usersSnapshot.empty) {
-      usersListContainer.innerHTML = `<p style="color: #94a3b8; font-size: 13px;">No registered users found.</p>`;
+      usersListContainer.innerHTML = `<p style="color: #94a3b8; font-size: 13px;">No registered users found in Firestore.</p>`;
       return;
     }
 
