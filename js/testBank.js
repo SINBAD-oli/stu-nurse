@@ -108,8 +108,16 @@ async function renderChapterSelector(allQuestions, releasedMap, userUnlockedMap,
     const isGloballyReleased = releasedMap[chapName] === true;
     const isUserUnlocked = userUnlockedMap[chapName] === true;
 
-    // Show if admin, globally released, or specifically unlocked for this user
     if (!isAdmin && hasReleaseSettings && !isGloballyReleased && !isUserUnlocked) return;
+
+    // Safely evaluate unmastered questions with fallback for missing chapterProgressMap
+    const userProgress = userData.chapterProgressMap || {};
+    const chapterProgress = userProgress[chapName] || {};
+    
+    const unmasteredQuestions = questions.filter(q => {
+      const record = chapterProgress[q.questionText];
+      return !record || record.correct !== true;
+    });
 
     const card = document.createElement('div');
     card.style.cssText = `
@@ -123,7 +131,7 @@ async function renderChapterSelector(allQuestions, releasedMap, userUnlockedMap,
     card.innerHTML = `
       <div>
         <h4 style="margin: 0 0 4px 0; font-size: 14px; color: #f8fafc; font-weight: 600;">${chapName}</h4>
-        <span style="font-size: 11px; color: #94a3b8;">${questions.length} questions available ${isAdmin ? (isGloballyReleased ? '• (Global)' : '• (Locked)') : ''}</span>
+        <span style="font-size: 11px; color: #94a3b8;">${unmasteredQuestions.length} unmastered / ${questions.length} total ${isAdmin ? (isGloballyReleased ? '• (Global)' : '• (Locked)') : ''}</span>
       </div>
       <button class="action-btn" style="padding: 6px 12px; font-size: 12px; background-color: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; width: 100%;">Start Quiz</button>
     `;
@@ -135,15 +143,15 @@ async function renderChapterSelector(allQuestions, releasedMap, userUnlockedMap,
         if (freshSnap.exists()) freshUserData = freshSnap.data();
       }
 
-      const userProgress = freshUserData.chapterProgressMap || {};
-      const chapterProgress = userProgress[chapName] || {};
+      const freshProgress = freshUserData.chapterProgressMap || {};
+      const freshChapProgress = freshProgress[chapName] || {};
       
-      const unmasteredQuestions = questions.filter(q => {
-        const record = chapterProgress[q.questionText];
+      const freshUnmastered = questions.filter(q => {
+        const record = freshChapProgress[q.questionText];
         return !record || record.correct !== true;
       });
 
-      setupQuizSession(allQuestions, questions, unmasteredQuestions, chapName, () => {
+      setupQuizSession(allQuestions, questions, freshUnmastered, chapName, () => {
         renderChapterSelector(allQuestions, releasedMap, freshUserData.unlockedChapters || {}, isAdmin);
       });
     });
