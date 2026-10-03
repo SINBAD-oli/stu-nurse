@@ -47,7 +47,6 @@ export async function initTestBank() {
       }
     }
 
-    // Correctly check the Firestore isAdmin boolean flag
     const isAdmin = userData.isAdmin === true;
 
     if (isAdmin) {
@@ -66,15 +65,16 @@ export async function initTestBank() {
     const settingsSnap = await getDoc(settingsRef);
     const settingsData = settingsSnap.exists() ? settingsSnap.data() : { releasedChapters: {} };
     const releasedMap = settingsData.releasedChapters || {};
+    const userUnlockedMap = userData.unlockedChapters || {};
 
-    renderChapterSelector(allQuestions, releasedMap, isAdmin);
+    renderChapterSelector(allQuestions, releasedMap, userUnlockedMap, isAdmin);
 
   } catch (err) {
     console.error("Error initializing test bank:", err);
   }
 }
 
-async function renderChapterSelector(allQuestions, releasedMap, isAdmin) {
+async function renderChapterSelector(allQuestions, releasedMap, userUnlockedMap, isAdmin) {
   const chapterListContainer = document.getElementById('chapter-list');
   const chapterSelectionView = document.getElementById('chapter-selection-view');
   const questionProgress = document.getElementById('quiz-progress');
@@ -105,9 +105,11 @@ async function renderChapterSelector(allQuestions, releasedMap, isAdmin) {
 
   Object.keys(chaptersMap).forEach(chapName => {
     const questions = chaptersMap[chapName];
-    const isReleased = releasedMap[chapName] === true;
+    const isGloballyReleased = releasedMap[chapName] === true;
+    const isUserUnlocked = userUnlockedMap[chapName] === true;
 
-    if (!isAdmin && hasReleaseSettings && !isReleased) return;
+    // Show if admin, globally released, or specifically unlocked for this user
+    if (!isAdmin && hasReleaseSettings && !isGloballyReleased && !isUserUnlocked) return;
 
     const card = document.createElement('div');
     card.style.cssText = `
@@ -121,7 +123,7 @@ async function renderChapterSelector(allQuestions, releasedMap, isAdmin) {
     card.innerHTML = `
       <div>
         <h4 style="margin: 0 0 4px 0; font-size: 14px; color: #f8fafc; font-weight: 600;">${chapName}</h4>
-        <span style="font-size: 11px; color: #94a3b8;">${questions.length} questions available ${isAdmin ? (isReleased ? '• (Released)' : '• (Hidden)') : ''}</span>
+        <span style="font-size: 11px; color: #94a3b8;">${questions.length} questions available ${isAdmin ? (isGloballyReleased ? '• (Global)' : '• (Locked)') : ''}</span>
       </div>
       <button class="action-btn" style="padding: 6px 12px; font-size: 12px; background-color: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; width: 100%;">Start Quiz</button>
     `;
@@ -142,7 +144,7 @@ async function renderChapterSelector(allQuestions, releasedMap, isAdmin) {
       });
 
       setupQuizSession(allQuestions, questions, unmasteredQuestions, chapName, () => {
-        renderChapterSelector(allQuestions, releasedMap, isAdmin);
+        renderChapterSelector(allQuestions, releasedMap, freshUserData.unlockedChapters || {}, isAdmin);
       });
     });
 
