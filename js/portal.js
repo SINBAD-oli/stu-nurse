@@ -9,7 +9,6 @@ const roleSpan = document.getElementById('user-role');
 const joinedSpan = document.getElementById('user-joined');
 const logoutBtn = document.getElementById('logout-btn');
 
-// Bind the Launch Test Bank Quiz button correctly
 document.addEventListener('DOMContentLoaded', () => {
   const allButtons = document.querySelectorAll('button');
   allButtons.forEach(btn => {
@@ -32,9 +31,10 @@ setPersistence(auth, browserLocalPersistence).then(() => {
         
         onSnapshot(docRef, async (docSnap) => {
           if (!docSnap.exists()) {
+            const emailPrefix = user.email ? user.email.split('@')[0] : "Student";
             const initialUserData = {
-              firstName: "Oliver",
-              lastName: "Cimafranca",
+              firstName: emailPrefix,
+              lastName: "User",
               email: user.email,
               role: "Nursing Student",
               createdAt: new Date(),
