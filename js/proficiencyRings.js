@@ -1,24 +1,33 @@
 import { db, auth } from './firebase-config.js';
-import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { doc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
 export async function openProficiencyReviewModal(chapterName) {
   const currentUser = auth.currentUser;
   if (!currentUser) return;
 
   try {
-    const userSnap = await getDoc(doc(db, "users", currentUser.uid));
+    const [userSnap, querySnapshot] = await Promise.all([
+      getDoc(doc(db, "users", currentUser.uid)),
+      getDocs(collection(db, "questions"))
+    ]);
+
     if (!userSnap.exists()) return;
 
     const userData = userSnap.data();
     const progressMap = userData.chapterProgressMap || {};
     const chapterProgress = progressMap[chapterName] || {};
     
-    const answeredEntries = Object.entries(chapterProgress);
+    const allQuestions = [];
+    querySnapshot.forEach(docSnap => {
+      allQuestions.push(docSnap.data());
+    });
 
-    if (answeredEntries.length === 0) {
-      alert("No answered questions found for this chapter yet!");
-      return;
-    }
+    const questionMap = {};
+    allQuestions.forEach(q => {
+      if (q.questionText) {
+        questionMap[q.questionText.trim()] = q;
+      }
+    });
 
     let modal = document.getElementById('proficiency-review-modal');
     if (!modal) {
@@ -31,6 +40,12 @@ export async function openProficiencyReviewModal(chapterName) {
       document.body.appendChild(modal);
     }
 
+    const answeredEntries = Object.entries(chapterProgress);
+    if (answeredEntries.length === 0) {
+      alert("No answered questions found for this chapter yet!");
+      return;
+    }
+
     let contentHtml = `
       <div style="background: #1e293b; color: #f8fafc; width: 100%; max-width: 750px; max-height: 85vh; border-radius: 12px; display: flex; flex-direction: column; border: 1px solid #334155; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); box-sizing: border-box; overflow: hidden;">
         <div style="padding: 16px 20px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; background: #0f172a;">
@@ -41,7 +56,11 @@ export async function openProficiencyReviewModal(chapterName) {
     `;
 
     answeredEntries.forEach(([qKey, qData], idx) => {
-      const displayQuestionText = qData.questionText || qKey;
+      const matchedQ = questionMap[qKey?.trim()] || {};
+      const displayQuestionText = qData.questionText || matchedQ.questionText || (isNaN(qKey) ? qKey : "Question Item");
+      const optionsList = qData.options || matchedQ.options || [];
+      const correctAnswerIndex = qData.correctAnswerIndex !== undefined ? qData.correctAnswerIndex : matchedQ.correctAnswerIndex;
+
       const isCorrect = qData.correct === true;
       const isPartial = qData.score > 0 && qData.score < 1;
       
@@ -75,9 +94,8 @@ export async function openProficiencyReviewModal(chapterName) {
             <div style="display: flex; flex-direction: column; gap: 10px;">
       `;
 
-      const optionsList = qData.options || [];
       optionsList.forEach((opt, oIdx) => {
-        const isOptCorrect = opt.isCorrect === true || (oIdx + 1) === qData.correctAnswerIndex;
+        const isOptCorrect = opt.isCorrect === true || (oIdx + 1) === correctAnswerIndex;
         
         let optBorder = '#334155';
         let optBg = 'rgba(30, 41, 59, 0.5)';
