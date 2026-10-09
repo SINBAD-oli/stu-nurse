@@ -33,10 +33,12 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
     document.body.appendChild(modal);
   }
 
+  const normalizedActiveChapter = normalizeChapterName(activeChapterName);
+
   modal.innerHTML = `
     <div style="background: #1e293b; color: #f8fafc; width: 100%; max-width: 750px; max-height: 90vh; border-radius: 12px; display: flex; flex-direction: column; border: 1px solid #334155; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); box-sizing: border-box; overflow: hidden;">
       <div style="padding: 16px 20px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; background: #0f172a;">
-        <h3 id="modal-quiz-progress" style="margin: 0; font-size: 16px; color: #f8fafc;">Quiz Session: ${activeChapterName}</h3>
+        <h3 id="modal-quiz-progress" style="margin: 0; font-size: 16px; color: #f8fafc;">Quiz Session: ${normalizedActiveChapter}</h3>
         <div id="modal-question-meta" style="display: flex; gap: 8px; align-items: center;"></div>
       </div>
       <div style="padding: 24px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; box-sizing: border-box; flex: 1; background: #0f172a;">
@@ -106,7 +108,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
     const unmasteredCount = unmasteredChapterQuestions.length;
     const totalCount = fullChapterQuestions.length;
 
-    if (questionProgress) questionProgress.textContent = `Configuration: ${activeChapterName}`;
+    if (questionProgress) questionProgress.textContent = `Configuration: ${normalizedActiveChapter}`;
     if (questionMeta) questionMeta.innerHTML = `<span style="background: #334155; color: #f8fafc; padding: 4px 8px; border-radius: 4px; font-size: 12px;">${totalCount} total available</span>`;
     if (questionText) questionText.textContent = `Configure your session parameters below:`;
     
@@ -321,7 +323,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       answeredCount++;
       let questionEarnedScore = 0;
       let feedbackStatus = "";
-      const specificChap = q.normalizedChapter || "General Practice";
+      const specificChap = normalizeChapterName(q.chapter || q.heading || activeChapterName);
 
       if (isCompletion) {
         const inputElem = document.getElementById('completion-input');
@@ -519,7 +521,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
               chapterStats: chapterStats,
               missedQuestions: existingMissed
             });
-            console.log("Quiz progress and stats successfully saved to Firestore.");
+            console.log("Quiz progress successfully saved to Firestore!");
           } catch (err) {
             console.error("Error updating scores:", err);
           }
