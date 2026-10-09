@@ -1,6 +1,6 @@
 import { db, auth } from './firebase-config.js';
 import { doc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
-import { normalizeChapterName } from './quizEngine.js';
+import { normalizeChapterName } from './quizScoring.js';
 
 export async function openProficiencyReviewModal(chapterName) {
   const currentUser = auth.currentUser;
@@ -18,8 +18,15 @@ export async function openProficiencyReviewModal(chapterName) {
     const progressMap = userData.chapterProgressMap || {};
     
     const normalizedTarget = normalizeChapterName(chapterName);
-    const chapterProgress = progressMap[normalizedTarget] || progressMap[chapterName] || {};
+    let chapterProgress = progressMap[chapterName] || progressMap[normalizedTarget] || {};
     
+    if (Object.keys(chapterProgress).length === 0) {
+      const foundKey = Object.keys(progressMap).find(k => normalizeChapterName(k) === normalizedTarget || k.toLowerCase() === chapterName.toLowerCase());
+      if (foundKey) {
+        chapterProgress = progressMap[foundKey];
+      }
+    }
+
     const allQuestions = [];
     querySnapshot.forEach(docSnap => {
       allQuestions.push(docSnap.data());
