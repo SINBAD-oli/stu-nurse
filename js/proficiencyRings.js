@@ -13,9 +13,9 @@ export async function openProficiencyReviewModal(chapterName) {
     const progressMap = userData.chapterProgressMap || {};
     const chapterProgress = progressMap[chapterName] || {};
     
-    const answeredQuestions = Object.values(chapterProgress);
+    const answeredEntries = Object.entries(chapterProgress);
 
-    if (answeredQuestions.length === 0) {
+    if (answeredEntries.length === 0) {
       alert("No answered questions found for this chapter yet!");
       return;
     }
@@ -40,7 +40,8 @@ export async function openProficiencyReviewModal(chapterName) {
         <div style="padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; box-sizing: border-box; flex: 1;">
     `;
 
-    answeredQuestions.forEach((qData, idx) => {
+    answeredEntries.forEach(([qKey, qData], idx) => {
+      const displayQuestionText = qData.questionText || qKey;
       const isCorrect = qData.correct === true;
       const isPartial = qData.score > 0 && qData.score < 1;
       
@@ -66,7 +67,7 @@ export async function openProficiencyReviewModal(chapterName) {
           <div class="proficiency-card-header" style="padding: 14px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(30, 41, 59, 0.4); border-radius: 6px 6px 0 0;">
             <div style="display: flex; align-items: center; gap: 10px; flex: 1; padding-right: 10px;">
               <span style="background: ${badgeBg}; color: ${badgeColor}; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; white-space: nowrap;">${badgeText}</span>
-              <span style="color: #f8fafc; font-size: 14px; font-weight: 600; line-height: 1.4;">Q${idx + 1}: ${qData.questionText}</span>
+              <span style="color: #f8fafc; font-size: 14px; font-weight: 600; line-height: 1.4;">Q${idx + 1}: ${displayQuestionText}</span>
             </div>
             <span style="font-size: 12px; color: #94a3b8; white-space: nowrap; background: rgba(15, 23, 42, 0.6); padding: 4px 8px; border-radius: 4px; border: 1px solid #334155;">▼ Rationale</span>
           </div>
