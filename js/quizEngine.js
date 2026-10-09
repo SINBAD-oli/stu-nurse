@@ -265,7 +265,6 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       optionsList.forEach((opt, index) => {
         const label = document.createElement('label');
         label.className = 'option-label';
-        // Fixed UI layout: use CSS grid to cleanly separate input from option text and rationales without wrapping issues
         label.style.cssText = `
           display: grid; grid-template-columns: 24px 1fr; align-items: start; gap: 12px; 
           padding: 14px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; 
@@ -452,7 +451,12 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       }
       window.currentSessionChapterQuestions[specificChap][q.questionText] = {
         correct: questionEarnedScore >= 1,
-        score: questionEarnedScore
+        score: questionEarnedScore,
+        questionText: q.questionText,
+        type: q.type || "MCQ",
+        options: q.options || [],
+        correctAnswerIndex: q.correctAnswerIndex,
+        correctAnswer: q.correctAnswer
       };
     });
   }
@@ -471,51 +475,51 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
           try {
             const userRef = doc(db, "users", currentUser.uid);
             const userSnap = await getDoc(userRef);
-            if (userSnap.exists()) {
-              const uData = userSnap.data();
-              const prevQuizzes = uData.totalQuizzesTaken || 0;
-              const prevAvg = uData.averageAccuracy || 0;
-              let chapterProgressMap = uData.chapterProgressMap || {};
-              let chapterStats = uData.chapterStats || {};
-              let existingMissed = uData.missedQuestions || {};
+            
+            let uData = userSnap.exists() ? userSnap.data() : {};
+            const prevQuizzes = uData.totalQuizzesTaken || 0;
+            const prevAvg = uData.averageAccuracy || 0;
+            let chapterProgressMap = uData.chapterProgressMap || {};
+            let chapterStats = uData.chapterStats || {};
+            let existingMissed = uData.missedQuestions || [];
 
-              const newTotalQuizzes = prevQuizzes + 1;
-              const newAvgAccuracy = Number(((prevAvg * prevQuizzes + parseFloat(finalPercentage)) / newTotalQuizzes).toFixed(1));
+            const newTotalQuizzes = prevQuizzes + 1;
+            const newAvgAccuracy = Number(((prevAvg * prevQuizzes + parseFloat(finalPercentage)) / newTotalQuizzes).toFixed(1));
 
-              if (window.currentSessionChapterQuestions) {
-                for (const [chap, qMap] of Object.entries(window.currentSessionChapterQuestions)) {
-                  if (!chapterProgressMap[chap]) chapterProgressMap[chap] = {};
-                  for (const [qText, qDetails] of Object.entries(qMap)) {
-                    chapterProgressMap[chap][qText] = qDetails;
-                  }
-                  
-                  let correctCount = 0;
-                  const questionEntries = Object.values(chapterProgressMap[chap]);
-                  questionEntries.forEach(item => {
-                    if (item.correct) correctCount += 1;
-                  });
-                  chapterStats[chap] = {
-                    correct: correctCount,
-                    total: questionEntries.length
-                  };
+            if (window.currentSessionChapterQuestions) {
+              for (const [chap, qMap] of Object.entries(window.currentSessionChapterQuestions)) {
+                if (!chapterProgressMap[chap]) chapterProgressMap[chap] = {};
+                for (const [qText, qDetails] of Object.entries(qMap)) {
+                  chapterProgressMap[chap][qText] = qDetails;
                 }
+                
+                let correctCount = 0;
+                const questionEntries = Object.values(chapterProgressMap[chap]);
+                questionEntries.forEach(item => {
+                  if (item.correct) correctCount += 1;
+                });
+                chapterStats[chap] = {
+                  correct: correctCount,
+                  total: questionEntries.length
+                };
               }
-              window.currentSessionChapterQuestions = {};
-
-              sessionMissedQuestions.forEach(m => {
-                if (!existingMissed.some(ex => ex.questionText === m.questionText)) {
-                  existingMissed.push(m);
-                }
-              });
-
-              await updateDoc(userRef, {
-                totalQuizzesTaken: newTotalQuizzes,
-                averageAccuracy: newAvgAccuracy,
-                chapterProgressMap: chapterProgressMap,
-                chapterStats: chapterStats,
-                missedQuestions: existingMissed
-              });
             }
+            window.currentSessionChapterQuestions = {};
+
+            sessionMissedQuestions.forEach(m => {
+              if (!existingMissed.some(ex => ex.questionText === m.questionText)) {
+                existingMissed.push(m);
+              }
+            });
+
+            await updateDoc(userRef, {
+              totalQuizzesTaken: newTotalQuizzes,
+              averageAccuracy: newAvgAccuracy,
+              chapterProgressMap: chapterProgressMap,
+              chapterStats: chapterStats,
+              missedQuestions: existingMissed
+            });
+            console.log("Quiz progress and stats successfully saved to Firestore.");
           } catch (err) {
             console.error("Error updating scores:", err);
           }

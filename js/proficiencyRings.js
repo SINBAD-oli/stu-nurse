@@ -1,31 +1,21 @@
 import { db, auth } from './firebase-config.js';
-import { doc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
 export async function openProficiencyReviewModal(chapterName) {
   const currentUser = auth.currentUser;
   if (!currentUser) return;
 
   try {
-    const [userSnap, querySnapshot] = await Promise.all([
-      getDoc(doc(db, "users", currentUser.uid)),
-      getDocs(collection(db, "questions"))
-    ]);
-
+    const userSnap = await getDoc(doc(db, "users", currentUser.uid));
     if (!userSnap.exists()) return;
 
     const userData = userSnap.data();
     const progressMap = userData.chapterProgressMap || {};
     const chapterProgress = progressMap[chapterName] || {};
     
-    const allQuestions = [];
-    querySnapshot.forEach(docSnap => {
-      allQuestions.push(docSnap.data());
-    });
+    const answeredQuestions = Object.values(chapterProgress);
 
-    const answeredQuestionTexts = Object.keys(chapterProgress);
-    const chapterQuestions = allQuestions.filter(q => answeredQuestionTexts.includes(q.questionText));
-
-    if (chapterQuestions.length === 0) {
+    if (answeredQuestions.length === 0) {
       alert("No answered questions found for this chapter yet!");
       return;
     }
@@ -50,10 +40,9 @@ export async function openProficiencyReviewModal(chapterName) {
         <div style="padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; box-sizing: border-box; flex: 1;">
     `;
 
-    chapterQuestions.forEach((q, idx) => {
-      const qProgress = chapterProgress[q.questionText] || {};
-      const isCorrect = qProgress.correct === true;
-      const isPartial = qProgress.score > 0 && qProgress.score < 1;
+    answeredQuestions.forEach((qData, idx) => {
+      const isCorrect = qData.correct === true;
+      const isPartial = qData.score > 0 && qData.score < 1;
       
       let cardBorderColor = '#10b981';
       let badgeText = '✅ Correct';
@@ -77,7 +66,7 @@ export async function openProficiencyReviewModal(chapterName) {
           <div class="proficiency-card-header" style="padding: 14px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(30, 41, 59, 0.4); border-radius: 6px 6px 0 0;">
             <div style="display: flex; align-items: center; gap: 10px; flex: 1; padding-right: 10px;">
               <span style="background: ${badgeBg}; color: ${badgeColor}; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; white-space: nowrap;">${badgeText}</span>
-              <span style="color: #f8fafc; font-size: 14px; font-weight: 600; line-height: 1.4;">Q${idx + 1}: ${q.questionText}</span>
+              <span style="color: #f8fafc; font-size: 14px; font-weight: 600; line-height: 1.4;">Q${idx + 1}: ${qData.questionText}</span>
             </div>
             <span style="font-size: 12px; color: #94a3b8; white-space: nowrap; background: rgba(15, 23, 42, 0.6); padding: 4px 8px; border-radius: 4px; border: 1px solid #334155;">▼ Rationale</span>
           </div>
@@ -85,9 +74,9 @@ export async function openProficiencyReviewModal(chapterName) {
             <div style="display: flex; flex-direction: column; gap: 10px;">
       `;
 
-      const optionsList = q.options || [];
+      const optionsList = qData.options || [];
       optionsList.forEach((opt, oIdx) => {
-        const isOptCorrect = opt.isCorrect === true || (oIdx + 1) === q.correctAnswerIndex;
+        const isOptCorrect = opt.isCorrect === true || (oIdx + 1) === qData.correctAnswerIndex;
         
         let optBorder = '#334155';
         let optBg = 'rgba(30, 41, 59, 0.5)';
