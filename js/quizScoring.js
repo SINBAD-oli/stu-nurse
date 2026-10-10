@@ -30,26 +30,35 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
     const newTotalQuizzes = prevQuizzes + 1;
     const newAvgAccuracy = Number(((prevAvg * prevQuizzes + parseFloat(finalPercentage)) / newTotalQuizzes).toFixed(1));
 
+    const standardizedChapterKey = normalizeChapterName(sessionChapter);
+
+    if (!chapterProgressMap[standardizedChapterKey]) {
+      chapterProgressMap[standardizedChapterKey] = {};
+    }
+
     if (sessionChapterQuestions) {
-      for (const [chap, qMap] of Object.entries(sessionChapterQuestions)) {
-        if (!chapterProgressMap[chap]) chapterProgressMap[chap] = {};
-        for (const [qText, qDetails] of Object.entries(qMap)) {
-          chapterProgressMap[chap][qText] = qDetails;
-        }
-        
-        let correctCount = 0;
-        const questionEntries = Object.values(chapterProgressMap[chap]);
-        questionEntries.forEach(item => {
-          if (item.correct) correctCount += 1;
-        });
-        chapterStats[chap] = {
-          correct: correctCount,
-          total: questionEntries.length
-        };
+      const sessionQMap = sessionChapterQuestions[sessionChapter] || 
+                          sessionChapterQuestions[standardizedChapterKey] || 
+                          Object.values(sessionChapterQuestions)[0] || {};
+
+      for (const [qText, qDetails] of Object.entries(sessionQMap)) {
+        chapterProgressMap[standardizedChapterKey][qText] = qDetails;
       }
     }
 
+    let correctCount = 0;
+    const allStoredQuestions = Object.values(chapterProgressMap[standardizedChapterKey]);
+    allStoredQuestions.forEach(item => {
+      if (item.correct === true) correctCount += 1;
+    });
+
+    chapterStats[standardizedChapterKey] = {
+      correct: correctCount,
+      total: allStoredQuestions.length
+    };
+
     sessionMissedQuestions.forEach(m => {
+      m.chapter = standardizedChapterKey;
       if (!existingMissed.some(ex => ex.questionText === m.questionText)) {
         existingMissed.push(m);
       }
@@ -62,8 +71,9 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
       chapterStats: chapterStats,
       missedQuestions: existingMissed
     });
-    console.log("Quiz progress successfully saved to Firestore!");
+
+    console.log("Successfully saved and merged quiz results for:", standardizedChapterKey);
   } catch (err) {
-    console.error("Error updating scores:", err);
+    console.error("Error updating scores in Firestore:", err);
   }
 }
