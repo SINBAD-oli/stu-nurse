@@ -11,6 +11,24 @@ export function normalizeChapterName(name) {
     .replace(/(^\w|\s\w)/g, m => m.toUpperCase());
 }
 
+// Helper to remove undefined properties recursively or flatly so Firestore doesn't reject them
+quizScoring.js
+function sanitizeForFirestore(obj) {
+  const sanitized = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (value !== undefined) {
+      if (value && typeof value === 'object' && !Array.isArray(value)) {
+        sanitized[key] = sanitizeForFirestore(value);
+      } else if (Array.isArray(value)) {
+        sanitized[key] = value.map(item => (item && typeof item === 'object' ? sanitizeForFirestore(item) : item));
+      } else {
+        sanitized[key] = value;
+      }
+    }
+  }
+  return sanitized;
+}
+
 export async function saveQuizResultsToFirestore(sessionChapter, score, totalQuestions, sessionMissedQuestions, sessionChapterQuestions) {
   const currentUser = auth.currentUser;
   if (!currentUser) return;
@@ -42,7 +60,7 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
                           Object.values(sessionChapterQuestions)[0] || {};
 
       for (const [qText, qDetails] of Object.entries(sessionQMap)) {
-        chapterProgressMap[standardizedChapterKey][qText] = qDetails;
+        chapterProgressMap[standardizedChapterKey][qText] = sanitizeForFirestore(qDetails);
       }
     }
 
@@ -59,20 +77,21 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
 
     sessionMissedQuestions.forEach(m => {
       m.chapter = standardizedChapterKey;
-      if (!existingMissed.some(ex => ex.questionText === m.questionText)) {
-        existingMissed.push(m);
+      const cleanMissed = sanitizeForFirestore(m);
+      if (!existingMissed.some(ex => ex.questionText === cleanMissed.questionText)) {
+        existingMissed.push(cleanMissed);
       }
     });
 
     await updateDoc(userRef, {
       totalQuizzesTaken: newTotalQuizzes,
       averageAccuracy: newAvgAccuracy,
-      chapterProgressMap: chapterProgressMap,
-      chapterStats: chapterStats,
+      chapterProgressMap: sanitizeForFirestore(chapterProgressMap),
+      chapterStats: sanitizeForFirestore(chapterStats),
       missedQuestions: existingMissed
     });
 
-    console.log("Successfully saved and merged quiz results for:", standardizedChapterKey);
+    console.log("Successfully saved and merged sanitized quiz results for:", standardizedChapterKey);
   } catch (err) {
     console.error("Error updating scores in Firestore:", err);
   }
