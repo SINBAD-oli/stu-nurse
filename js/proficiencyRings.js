@@ -71,7 +71,7 @@ export async function openProficiencyReviewModal(chapterName) {
       const optionsList = qData.options || matchedQ.options || [];
       const correctAnswerIndex = qData.correctAnswerIndex !== undefined ? qData.correctAnswerIndex : matchedQ.correctAnswerIndex;
 
-      const isCorrect = qData.correct === true;
+      const isCorrect = qData.correct === true || qData.score === 1;
       const isPartial = qData.score > 0 && qData.score < 1;
       
       let cardBorderColor = '#10b981';

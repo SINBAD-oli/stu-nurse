@@ -246,6 +246,25 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
         }
       });
 
+      // Render individual option rationales below each option
+      optionsList.forEach((opt, idx) => {
+        if (opt.rationale && labels[idx]) {
+          const textContainer = labels[idx].querySelector('div');
+          const existingRationale = textContainer?.querySelector('.rationale-text');
+          if (!existingRationale && textContainer) {
+            const rationaleSpan = document.createElement('span');
+            rationaleSpan.className = 'rationale-text';
+            rationaleSpan.style.display = 'block';
+            rationaleSpan.style.marginTop = '6px';
+            rationaleSpan.style.fontSize = '12px';
+            rationaleSpan.style.color = '#cbd5e1';
+            rationaleSpan.style.fontStyle = 'italic';
+            rationaleSpan.textContent = `Rationale: ${opt.rationale}`;
+            textContainer.appendChild(rationaleSpan);
+          }
+        }
+      });
+
       if (feedbackStatus === "correct") {
         if (feedbackText) feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong> Great job applying nursing concepts.`;
       } else if (feedbackStatus === "partial") {
