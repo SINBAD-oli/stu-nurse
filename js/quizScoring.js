@@ -11,8 +11,6 @@ export function normalizeChapterName(name) {
     .replace(/(^\w|\s\w)/g, m => m.toUpperCase());
 }
 
-// Helper to remove undefined properties recursively or flatly so Firestore doesn't reject them
-quizScoring.js
 function sanitizeForFirestore(obj) {
   const sanitized = {};
   for (const [key, value] of Object.entries(obj)) {
