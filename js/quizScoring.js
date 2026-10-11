@@ -37,14 +37,9 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
     
     let uData = userSnap.exists() ? userSnap.data() : {};
     const prevQuizzes = uData.totalQuizzesTaken || 0;
-    const prevAvg = uData.averageAccuracy || 0;
     let chapterProgressMap = uData.chapterProgressMap || {};
     let chapterStats = uData.chapterStats || {};
     let existingMissed = uData.missedQuestions || [];
-
-    const finalPercentage = ((score / totalQuestions) * 100).toFixed(1);
-    const newTotalQuizzes = prevQuizzes + 1;
-    const newAvgAccuracy = Number(((prevAvg * prevQuizzes + parseFloat(finalPercentage)) / newTotalQuizzes).toFixed(1));
 
     const standardizedChapterKey = normalizeChapterName(sessionChapter);
 
@@ -62,16 +57,31 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
       }
     }
 
-    let correctCount = 0;
-    const allStoredQuestions = Object.values(chapterProgressMap[standardizedChapterKey]);
-    allStoredQuestions.forEach(item => {
-      if (item.correct === true) correctCount += 1;
-    });
+    let totalGlobalCorrect = 0;
+    let totalGlobalQuestions = 0;
 
-    chapterStats[standardizedChapterKey] = {
-      correct: correctCount,
-      total: allStoredQuestions.length
-    };
+    for (const [chapKey, qMap] of Object.entries(chapterProgressMap)) {
+      let chapCorrect = 0;
+      let chapTotal = 0;
+      for (const qItem of Object.values(qMap)) {
+        chapTotal++;
+        totalGlobalQuestions++;
+        if (qItem.correct === true || qItem.score === 1) {
+          chapCorrect++;
+          totalGlobalCorrect++;
+        }
+      }
+      chapterStats[chapKey] = {
+        correct: chapCorrect,
+        total: chapTotal
+      };
+    }
+
+    const trueOverallAccuracy = totalGlobalQuestions > 0 
+      ? Number(((totalGlobalCorrect / totalGlobalQuestions) * 100).toFixed(1)) 
+      : 0.0;
+
+    const newTotalQuizzes = prevQuizzes + 1;
 
     sessionMissedQuestions.forEach(m => {
       m.chapter = standardizedChapterKey;
@@ -83,13 +93,13 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
 
     await updateDoc(userRef, {
       totalQuizzesTaken: newTotalQuizzes,
-      averageAccuracy: newAvgAccuracy,
+      averageAccuracy: trueOverallAccuracy,
       chapterProgressMap: sanitizeForFirestore(chapterProgressMap),
       chapterStats: sanitizeForFirestore(chapterStats),
       missedQuestions: existingMissed
     });
 
-    console.log("Successfully saved and merged sanitized quiz results for:", standardizedChapterKey);
+    console.log("Successfully saved quiz results. Accuracy updated to:", trueOverallAccuracy);
   } catch (err) {
     console.error("Error updating scores in Firestore:", err);
   }
