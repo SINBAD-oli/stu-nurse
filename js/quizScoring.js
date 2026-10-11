@@ -48,7 +48,9 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
     const prevQuizzes = uData.totalQuizzesTaken || 0;
     let chapterProgressMap = uData.chapterProgressMap || {};
     let chapterStats = uData.chapterStats || {};
-    let existingMissed = uData.missedQuestions || [];
+    
+    // Ensure existingMissed is strictly an array
+    let existingMissed = Array.isArray(uData.missedQuestions) ? uData.missedQuestions : [];
 
     const standardizedChapterKey = normalizeChapterName(sessionChapter);
 
@@ -96,13 +98,15 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
 
     const newTotalQuizzes = prevQuizzes + 1;
 
-    sessionMissedQuestions.forEach(m => {
-      m.chapter = standardizedChapterKey;
-      const cleanMissed = sanitizeForFirestore(m);
-      if (!existingMissed.some(ex => ex.questionText === cleanMissed.questionText)) {
-        existingMissed.push(cleanMissed);
-      }
-    });
+    if (Array.isArray(sessionMissedQuestions)) {
+      sessionMissedQuestions.forEach(m => {
+        m.chapter = standardizedChapterKey;
+        const cleanMissed = sanitizeForFirestore(m);
+        if (!existingMissed.some(ex => ex && ex.questionText === cleanMissed.questionText)) {
+          existingMissed.push(cleanMissed);
+        }
+      });
+    }
 
     const payload = sanitizeForFirestore({
       totalQuizzesTaken: newTotalQuizzes,
