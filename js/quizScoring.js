@@ -11,6 +11,11 @@ export function normalizeChapterName(name) {
     .replace(/(^\w|\s\w)/g, m => m.toUpperCase());
 }
 
+function safeKey(text) {
+  if (!text) return "question_item";
+  return text.replace(/[.#$\/\[\]]/g, "_").trim();
+}
+
 function sanitizeForFirestore(obj) {
   const sanitized = {};
   for (const [key, value] of Object.entries(obj)) {
@@ -53,7 +58,11 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
                           Object.values(sessionChapterQuestions)[0] || {};
 
       for (const [qText, qDetails] of Object.entries(sessionQMap)) {
-        chapterProgressMap[standardizedChapterKey][qText] = sanitizeForFirestore(qDetails);
+        const key = safeKey(qText);
+        chapterProgressMap[standardizedChapterKey][key] = sanitizeForFirestore({
+          ...qDetails,
+          questionText: qText
+        });
       }
     }
 
@@ -99,7 +108,7 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
       missedQuestions: existingMissed
     });
 
-    console.log("Successfully saved quiz results. Accuracy updated to:", trueOverallAccuracy);
+    console.log("Successfully saved quiz results with safe keys. Accuracy updated to:", trueOverallAccuracy);
   } catch (err) {
     console.error("Error updating scores in Firestore:", err);
   }
