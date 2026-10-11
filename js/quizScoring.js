@@ -34,7 +34,11 @@ function sanitizeForFirestore(obj) {
 
 export async function saveQuizResultsToFirestore(sessionChapter, score, totalQuestions, sessionMissedQuestions, sessionChapterQuestions) {
   const currentUser = auth.currentUser;
-  if (!currentUser) return;
+  if (!currentUser) {
+    console.error("❌ Save failed: No authenticated user found in auth.currentUser!");
+    alert("Error: User session not detected. Please log back in.");
+    return;
+  }
 
   try {
     const userRef = doc(db, "users", currentUser.uid);
@@ -100,16 +104,19 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
       }
     });
 
-    await updateDoc(userRef, {
+    const payload = sanitizeForFirestore({
       totalQuizzesTaken: newTotalQuizzes,
       averageAccuracy: trueOverallAccuracy,
-      chapterProgressMap: sanitizeForFirestore(chapterProgressMap),
-      chapterStats: sanitizeForFirestore(chapterStats),
+      chapterProgressMap: chapterProgressMap,
+      chapterStats: chapterStats,
       missedQuestions: existingMissed
     });
 
-    console.log("Successfully saved quiz results with safe keys. Accuracy updated to:", trueOverallAccuracy);
+    await updateDoc(userRef, payload);
+
+    console.log("✅ Successfully saved quiz results for user:", currentUser.uid);
+    console.log("📊 Updated Accuracy:", trueOverallAccuracy, "| Total Quizzes:", newTotalQuizzes);
   } catch (err) {
-    console.error("Error updating scores in Firestore:", err);
+    console.error("❌ Error updating scores in Firestore:", err);
   }
 }
