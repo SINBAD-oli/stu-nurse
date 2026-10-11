@@ -11,11 +11,6 @@ export function normalizeChapterName(name) {
     .replace(/(^\w|\s\w)/g, m => m.toUpperCase());
 }
 
-function safeKey(text) {
-  if (!text) return "question_item";
-  return text.replace(/[.#$\/\[\]]/g, "_").trim();
-}
-
 function sanitizeForFirestore(obj) {
   const sanitized = {};
   for (const [key, value] of Object.entries(obj)) {
@@ -48,8 +43,6 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
     const prevQuizzes = uData.totalQuizzesTaken || 0;
     let chapterProgressMap = uData.chapterProgressMap || {};
     let chapterStats = uData.chapterStats || {};
-    
-    // Ensure existingMissed is strictly an array
     let existingMissed = Array.isArray(uData.missedQuestions) ? uData.missedQuestions : [];
 
     const standardizedChapterKey = normalizeChapterName(sessionChapter);
@@ -63,9 +56,9 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
                           sessionChapterQuestions[standardizedChapterKey] || 
                           Object.values(sessionChapterQuestions)[0] || {};
 
+      // Use raw question text as map key so unmastered filtering matches correctly
       for (const [qText, qDetails] of Object.entries(sessionQMap)) {
-        const key = safeKey(qText);
-        chapterProgressMap[standardizedChapterKey][key] = sanitizeForFirestore({
+        chapterProgressMap[standardizedChapterKey][qText] = sanitizeForFirestore({
           ...qDetails,
           questionText: qText
         });
@@ -118,8 +111,7 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
 
     await updateDoc(userRef, payload);
 
-    console.log("✅ Successfully saved quiz results for user:", currentUser.uid);
-    console.log("📊 Updated Accuracy:", trueOverallAccuracy, "| Total Quizzes:", newTotalQuizzes);
+    console.log("✅ Successfully saved quiz results with raw question keys for chapter:", standardizedChapterKey);
   } catch (err) {
     console.error("❌ Error updating scores in Firestore:", err);
   }
