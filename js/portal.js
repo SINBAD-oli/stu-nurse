@@ -50,6 +50,16 @@ setPersistence(auth, browserLocalPersistence).then(() => {
             if (roleSpan) roleSpan.textContent = data.role || "Nursing Student";
             if (joinedSpan) joinedSpan.textContent = data.createdAt?.toDate ? data.createdAt.toDate().toLocaleDateString() : "Recently";
 
+            // SECURE ADMIN CHECK: Only reveal the builder button if the role is Admin
+            const createQuizBtn = document.getElementById('standalone-create-quiz-btn');
+            if (createQuizBtn) {
+              if (data.role && data.role.toLowerCase() === 'admin') {
+                createQuizBtn.classList.remove('hidden');
+              } else {
+                createQuizBtn.classList.add('hidden');
+              }
+            }
+
             renderProfileCard(user.uid, data);
           }
         }, (error) => {
@@ -146,7 +156,15 @@ function renderProfileCard(userId, userData) {
   if (editBtn && editModal) {
     editBtn.addEventListener('click', () => {
       nameInput.value = `${userData.firstName || ""} ${userData.lastName || ""}`.trim();
-      roleInput.value = userData.role || "Nursing Student";
+      
+      // Lock the role input field so users cannot alter their own permissions
+      if (roleInput) {
+        roleInput.value = userData.role || "Nursing Student";
+        roleInput.disabled = true;
+        roleInput.style.opacity = "0.5";
+        roleInput.style.cursor = "not-allowed";
+      }
+      
       editModal.classList.remove('hidden');
     });
   }
@@ -157,7 +175,6 @@ function initProfileModalListeners() {
   const closeBtn = document.getElementById('close-edit-modal-btn');
   const saveBtn = document.getElementById('save-profile-btn');
   const nameInput = document.getElementById('edit-name-input');
-  const roleInput = document.getElementById('edit-role-input');
 
   if (!editModal) return;
 
@@ -172,13 +189,13 @@ function initProfileModalListeners() {
     const parts = fullFullName.split(' ');
     const firstName = parts[0] || "Nursing";
     const lastName = parts.slice(1).join(' ') || "Student";
-    const role = roleInput.value.trim() || "Nursing Student";
 
     try {
+      // Intentionally omitting 'role' from the update payload
+      // to prevent users from forcing an admin title into Firestore
       await updateDoc(doc(db, "users", user.uid), {
         firstName,
-        lastName,
-        role
+        lastName
       });
       closeModal();
     } catch (err) {
