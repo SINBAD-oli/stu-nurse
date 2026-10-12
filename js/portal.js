@@ -37,6 +37,7 @@ setPersistence(auth, browserLocalPersistence).then(() => {
               lastName: "User",
               email: user.email,
               role: "Nursing Student",
+              isAdmin: false,
               createdAt: new Date(),
               totalQuizzesTaken: 0,
               averageAccuracy: 0,
@@ -47,13 +48,18 @@ setPersistence(auth, browserLocalPersistence).then(() => {
           } else {
             const data = docSnap.data();
             if (fullNameSpan) fullNameSpan.textContent = `${data.firstName || "Nursing"} ${data.lastName || "Student"}`;
-            if (roleSpan) roleSpan.textContent = data.role || "Nursing Student";
+            
+            // Set display role based on isAdmin boolean
+            if (roleSpan) {
+              roleSpan.textContent = data.isAdmin ? "Admin" : (data.role || "Nursing Student");
+            }
+            
             if (joinedSpan) joinedSpan.textContent = data.createdAt?.toDate ? data.createdAt.toDate().toLocaleDateString() : "Recently";
 
-            // SECURE ADMIN CHECK: Only reveal the builder button if the role is Admin
+            // SECURE ADMIN CHECK: Verify the isAdmin boolean
             const createQuizBtn = document.getElementById('standalone-create-quiz-btn');
             if (createQuizBtn) {
-              if (data.role && data.role.toLowerCase() === 'admin') {
+              if (data.isAdmin === true) {
                 createQuizBtn.classList.remove('hidden');
               } else {
                 createQuizBtn.classList.add('hidden');
@@ -159,7 +165,7 @@ function renderProfileCard(userId, userData) {
       
       // Lock the role input field so users cannot alter their own permissions
       if (roleInput) {
-        roleInput.value = userData.role || "Nursing Student";
+        roleInput.value = userData.isAdmin ? "Admin" : (userData.role || "Nursing Student");
         roleInput.disabled = true;
         roleInput.style.opacity = "0.5";
         roleInput.style.cursor = "not-allowed";
@@ -191,8 +197,6 @@ function initProfileModalListeners() {
     const lastName = parts.slice(1).join(' ') || "Student";
 
     try {
-      // Intentionally omitting 'role' from the update payload
-      // to prevent users from forcing an admin title into Firestore
       await updateDoc(doc(db, "users", user.uid), {
         firstName,
         lastName
