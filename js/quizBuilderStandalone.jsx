@@ -1,9 +1,14 @@
 // ./js/quizBuilderStandalone.jsx
 
-import { db } from './js/firebase-config.js';
+import { db } from './js/firebase-config.js'; 
 import { collection, getDocs, query, where, writeBatch, doc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
 const QuizBuilder = ({ onExit }) => {
+  // Grab ALL components from the window
+  const AddMCQ = window.AddMCQ;
+  const AddSATA = window.AddSATA;
+  const AddBowTie = window.AddBowTie;
+
   const [quizTitle, setQuizTitle] = React.useState('');
   const [activeTab, setActiveTab] = React.useState('library');
   const [availableChapters, setAvailableChapters] = React.useState([]);
@@ -13,64 +18,49 @@ const QuizBuilder = ({ onExit }) => {
   const [isSaving, setIsSaving] = React.useState(false);
   const [toast, setToast] = React.useState(null);
 
+  const [manualType, setManualType] = React.useState(''); 
+
   const showToast = (message, type = 'success') => {
     setToast({ message, type });
     setTimeout(() => setToast(null), 3000); 
   };
 
-  // --- DYNAMIC CHAPTER FETCHING ---
   React.useEffect(() => {
     const fetchUniqueChapters = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, "questions"));
         const chaptersSet = new Set();
-        
         querySnapshot.forEach((doc) => {
           const data = doc.data();
-          if (data.chapter) {
-            chaptersSet.add(data.chapter);
-          }
+          if (data.chapter) chaptersSet.add(data.chapter);
         });
-        
         const uniqueChapters = Array.from(chaptersSet).sort((a, b) => 
           a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
         );
-        
         setAvailableChapters(uniqueChapters);
       } catch (error) {
-        console.error("Error fetching unique chapters:", error);
+        console.error("Error fetching chapters:", error);
       }
     };
-
     fetchUniqueChapters();
   }, []);
 
-  // --- REAL FIREBASE QUESTION FETCH LOGIC ---
   React.useEffect(() => {
     if (!selectedChapter) return;
-
     const fetchQuestions = async () => {
       try {
         setLibraryQuestions([]); 
-        
-        const q = query(
-          collection(db, "questions"), 
-          where("chapter", "==", selectedChapter)
-        );
-        
+        const q = query(collection(db, "questions"), where("chapter", "==", selectedChapter));
         const querySnapshot = await getDocs(q);
-        
         const fetchedQuestions = querySnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data()
         }));
-
         setLibraryQuestions(fetchedQuestions);
       } catch (error) {
-        console.error("Error fetching questions from Firebase:", error);
+        console.error("Error fetching questions:", error);
       }
     };
-
     fetchQuestions();
   }, [selectedChapter]);
 
@@ -83,11 +73,16 @@ const QuizBuilder = ({ onExit }) => {
     }
   };
 
+  const handleManualAdd = (newQuestion) => {
+    setDraftQuestions([...draftQuestions, newQuestion]);
+    showToast(`${newQuestion.type} successfully added to draft!`, "success");
+    setManualType(''); 
+  };
+
   const handleRemoveFromDraft = (questionId) => {
     setDraftQuestions(draftQuestions.filter(q => q.id !== questionId));
   };
 
-  // --- NEW: SAVE QUIZ TO FIRESTORE ---
   const handleSaveQuiz = async () => {
     if (!quizTitle.trim()) {
       showToast("Please enter a Quiz Title.", "error");
@@ -97,39 +92,26 @@ const QuizBuilder = ({ onExit }) => {
       showToast("Please add at least one question to save.", "error");
       return;
     }
-
     setIsSaving(true);
-
     try {
       const batch = writeBatch(db);
       const questionsRef = collection(db, "questions");
 
-      // Loop through draft and prepare new documents for Firestore
       draftQuestions.forEach((q) => {
-        const newDocRef = doc(questionsRef); // Auto-generates a new ID
-        
-        // Remove the old ID and overwrite the chapter name
+        const newDocRef = doc(questionsRef); 
         const { id, ...questionData } = q; 
         const newQuestion = {
           ...questionData,
           chapter: quizTitle.trim()
         };
-        
         batch.set(newDocRef, newQuestion);
       });
 
-      // Commit all writes simultaneously
       await batch.commit();
-      
       showToast("Quiz successfully saved to your library!", "success");
-      
-      // Reset the builder so they can make another quiz if needed
       setQuizTitle('');
       setDraftQuestions([]);
-      
-      // Optionally update the chapters list immediately so the new quiz shows in the dropdown
       setAvailableChapters(prev => Array.from(new Set([...prev, quizTitle.trim()])).sort());
-      
     } catch (error) {
       console.error("Error saving quiz:", error);
       showToast("Failed to save quiz. Check console.", "error");
@@ -140,10 +122,7 @@ const QuizBuilder = ({ onExit }) => {
 
   return (
     <div className="max-w-7xl mx-auto p-6 min-h-screen text-slate-800 font-sans relative">
-      <button 
-        onClick={onExit}
-        className="flex items-center gap-2 text-slate-500 hover:text-slate-800 transition-colors mb-6 font-medium text-sm"
-      >
+      <button onClick={onExit} className="flex items-center gap-2 text-slate-500 hover:text-slate-800 transition-colors mb-6 font-medium text-sm">
         ← Back to Portal
       </button>
 
@@ -152,7 +131,6 @@ const QuizBuilder = ({ onExit }) => {
         <p className="text-slate-500">Build a custom test or chapter for the Stu Nurse portal.</p>
       </div>
 
-      {/* QUIZ SETUP */}
       <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 mb-8">
         <label className="block text-sm font-semibold text-slate-700 mb-2">Quiz Title (Chapter Name)</label>
         <input 
@@ -164,9 +142,7 @@ const QuizBuilder = ({ onExit }) => {
         />
       </div>
 
-      {/* MAIN WORKSPACE */}
       <div className="flex flex-col lg:flex-row gap-8">
-        {/* LEFT COLUMN: SOURCE */}
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
           <div className="flex bg-slate-200 p-1 rounded-lg">
             <button 
@@ -187,11 +163,7 @@ const QuizBuilder = ({ onExit }) => {
             <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col h-[600px]">
               <div className="p-4 border-b border-slate-200 bg-slate-50">
                 <label className="block text-sm font-semibold text-slate-700 mb-2">Select Chapter</label>
-                <select 
-                  value={selectedChapter}
-                  onChange={(e) => setSelectedChapter(e.target.value)}
-                  className="w-full p-2.5 border border-slate-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none"
-                >
+                <select value={selectedChapter} onChange={(e) => setSelectedChapter(e.target.value)} className="w-full p-2.5 border border-slate-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none">
                   <option value="" disabled>Select a chapter...</option>
                   {availableChapters.map(chapter => (
                     <option key={chapter} value={chapter}>{chapter}</option>
@@ -201,52 +173,34 @@ const QuizBuilder = ({ onExit }) => {
 
               <div className="flex-1 overflow-y-auto p-4 space-y-4">
                 {!selectedChapter ? (
-                  <div className="h-full flex items-center justify-center text-slate-400 text-sm">
-                    Select a chapter above to view questions.
-                  </div>
+                  <div className="h-full flex items-center justify-center text-slate-400 text-sm">Select a chapter above to view questions.</div>
                 ) : libraryQuestions.length === 0 ? (
-                  <div className="h-full flex items-center justify-center text-slate-400 text-sm">
-                    Loading questions or no questions found for this chapter...
-                  </div>
+                  <div className="h-full flex items-center justify-center text-slate-400 text-sm">Loading questions or no questions found...</div>
                 ) : libraryQuestions.map((q) => {
-                  
                   const isAdded = draftQuestions.some(draftQ => draftQ.id === q.id);
-
                   return (
                     <div key={q.id} className={`border rounded-lg p-4 transition-colors ${isAdded ? 'border-green-300 bg-green-50/30' : 'border-slate-200 hover:border-blue-300'}`}>
                       <div className="flex justify-between items-start gap-4 mb-2">
                         <span className="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded">{q.type || 'MCQ'}</span>
-                        
                         <button 
                           onClick={() => handleAddToDraft(q)}
                           disabled={isAdded}
-                          className={`text-sm px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-colors ${
-                            isAdded 
-                              ? 'bg-green-100 text-green-700 cursor-not-allowed' 
-                              : 'bg-blue-50 text-blue-600 hover:bg-blue-100'
-                          }`}
+                          className={`text-sm px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-colors ${isAdded ? 'bg-green-100 text-green-700 cursor-not-allowed' : 'bg-blue-50 text-blue-600 hover:bg-blue-100'}`}
                         >
                           {isAdded ? '✓ Added' : '+ Add'}
                         </button>
                       </div>
-                      
                       <p className="font-medium text-slate-800 mb-4 text-sm">{q.questionText || "Question text not found."}</p>
-                      
+                      {/* Only render simple options preview if it has them (ignores Bow Tie in this view) */}
                       {q.options && Array.isArray(q.options) && (
                         <div className="space-y-2">
                           {q.options.map((opt, i) => (
                             <div key={i} className={`p-3 rounded-md border ${opt.isCorrect ? 'bg-green-50 border-green-200' : 'bg-slate-50 border-slate-200'}`}>
                               <div className="text-sm text-slate-800 flex items-start gap-2 mb-1">
-                                <span className={`mt-0.5 ${opt.isCorrect ? 'text-green-600 font-bold' : 'text-slate-400'}`}>
-                                  {opt.isCorrect ? '✓' : '○'}
-                                </span>
+                                <span className={`mt-0.5 ${opt.isCorrect ? 'text-green-600 font-bold' : 'text-slate-400'}`}>{opt.isCorrect ? '✓' : '○'}</span>
                                 <span className={opt.isCorrect ? 'font-medium' : ''}>{opt.text}</span>
                               </div>
-                              {opt.rationale && (
-                                <p className="text-xs text-slate-500 italic ml-6">
-                                  Rationale: {opt.rationale}
-                                </p>
-                              )}
+                              {opt.rationale && <p className="text-xs text-slate-500 italic ml-6">Rationale: {opt.rationale}</p>}
                             </div>
                           ))}
                         </div>
@@ -257,14 +211,60 @@ const QuizBuilder = ({ onExit }) => {
               </div>
             </div>
           ) : (
-            <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-8 flex flex-col items-center justify-center h-[600px] text-center">
-              <h3 className="text-lg font-semibold text-slate-700 mb-2">Manual Question Builder</h3>
-              <p className="text-slate-500 text-sm max-w-xs">Select question types to build from scratch. (Coming soon)</p>
+            <div className="bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col h-[600px] overflow-hidden">
+              {!manualType ? (
+                <div className="p-8 h-full flex flex-col items-center justify-center bg-slate-50">
+                  <h3 className="text-xl font-bold text-slate-700 mb-6">Select Question Type</h3>
+                  <div className="grid grid-cols-3 gap-4 w-full max-w-2xl">
+                    <button onClick={() => setManualType('MCQ')} className="p-6 bg-white border-2 border-blue-200 hover:border-blue-500 rounded-xl flex flex-col items-center gap-2 transition-all shadow-sm hover:shadow-md">
+                      <span className="font-bold text-blue-600 text-lg">MCQ</span>
+                      <span className="text-xs text-slate-500 text-center">Multiple Choice Question</span>
+                    </button>
+                    <button onClick={() => setManualType('SATA')} className="p-6 bg-white border-2 border-purple-200 hover:border-purple-500 rounded-xl flex flex-col items-center gap-2 transition-all shadow-sm hover:shadow-md">
+                      <span className="font-bold text-purple-600 text-lg">SATA</span>
+                      <span className="text-xs text-slate-500 text-center">Select All That Apply</span>
+                    </button>
+                    <button onClick={() => setManualType('BowTie')} className="p-6 bg-white border-2 border-orange-200 hover:border-orange-500 rounded-xl flex flex-col items-center gap-2 transition-all shadow-sm hover:shadow-md">
+                      <span className="font-bold text-orange-600 text-lg">Bow Tie</span>
+                      <span className="text-xs text-slate-500 text-center">NGN Clinical Judgment</span>
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  {manualType === 'MCQ' && AddMCQ && (
+                    <AddMCQ 
+                      onAdd={handleManualAdd} 
+                      onCancel={() => setManualType('')} 
+                      draftCount={draftQuestions.length}
+                      quizTitle={quizTitle}
+                    />
+                  )}
+                  {manualType === 'SATA' && AddSATA && (
+                    <AddSATA 
+                      onAdd={handleManualAdd} 
+                      onCancel={() => setManualType('')} 
+                      draftCount={draftQuestions.length}
+                      quizTitle={quizTitle}
+                    />
+                  )}
+                  {manualType === 'BowTie' && AddBowTie && (
+                    <AddBowTie 
+                      onAdd={handleManualAdd} 
+                      onCancel={() => setManualType('')} 
+                      draftCount={draftQuestions.length}
+                      quizTitle={quizTitle}
+                    />
+                  )}
+                  {((manualType === 'MCQ' && !AddMCQ) || (manualType === 'SATA' && !AddSATA) || (manualType === 'BowTie' && !AddBowTie)) && (
+                     <div className="p-8 text-center text-red-500">Error: Component failed to load. Check script tags in portal.html.</div>
+                  )}
+                </>
+              )}
             </div>
           )}
         </div>
 
-        {/* RIGHT COLUMN: QUIZ DRAFT */}
         <div className="w-full lg:w-1/2 flex flex-col">
           <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col h-[600px]">
             <div className="p-4 border-b border-slate-200 bg-slate-800 text-white flex justify-between items-center">
@@ -272,14 +272,10 @@ const QuizBuilder = ({ onExit }) => {
                 <h2 className="font-semibold">Current Draft</h2>
                 <p className="text-xs text-slate-300">{draftQuestions.length} questions added</p>
               </div>
-              
-              {/* NEW: Updated Save Button connected to handleSaveQuiz */}
               <button 
                 onClick={handleSaveQuiz}
                 disabled={isSaving}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  isSaving ? 'bg-blue-400 cursor-not-allowed text-white' : 'bg-blue-500 hover:bg-blue-600 text-white'
-                }`}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${isSaving ? 'bg-blue-400 cursor-not-allowed text-white' : 'bg-blue-500 hover:bg-blue-600 text-white'}`}
               >
                 {isSaving ? 'Saving...' : 'Save Quiz'}
               </button>
@@ -297,13 +293,12 @@ const QuizBuilder = ({ onExit }) => {
                       {index + 1}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <span className="text-[10px] font-bold text-slate-400 uppercase">{q.type || 'MCQ'}</span>
+                      <span className={`text-[10px] font-bold uppercase ${q.type === 'SATA' ? 'text-purple-500' : q.type === 'BowTie' ? 'text-orange-500' : 'text-blue-500'}`}>
+                        {q.type || 'MCQ'}
+                      </span>
                       <p className="text-sm font-medium text-slate-800 mb-1 truncate">{q.questionText}</p>
                     </div>
-                    <button 
-                      onClick={() => handleRemoveFromDraft(q.id)}
-                      className="p-1.5 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-md transition-colors"
-                    >
+                    <button onClick={() => handleRemoveFromDraft(q.id)} className="p-1.5 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-md transition-colors">
                       ✕
                     </button>
                   </div>
@@ -314,16 +309,9 @@ const QuizBuilder = ({ onExit }) => {
         </div>
       </div>
 
-      {/* Toast Notification Popup */}
       {toast && (
-        <div className={`fixed bottom-6 right-6 px-6 py-3 rounded-lg shadow-lg text-sm font-medium transition-all duration-300 z-50 flex items-center gap-2 ${
-          toast.type === 'success' ? 'bg-slate-800 text-white border border-slate-700' : 'bg-red-50 text-red-600 border border-red-200'
-        }`}>
-          {toast.type === 'success' ? (
-            <span className="text-green-400">✓</span>
-          ) : (
-            <span className="text-red-500">✕</span>
-          )}
+        <div className={`fixed bottom-6 right-6 px-6 py-3 rounded-lg shadow-lg text-sm font-medium transition-all duration-300 z-50 flex items-center gap-2 ${toast.type === 'success' ? 'bg-slate-800 text-white border border-slate-700' : 'bg-red-50 text-red-600 border border-red-200'}`}>
+          {toast.type === 'success' ? <span className="text-green-400">✓</span> : <span className="text-red-500">✕</span>}
           {toast.message}
         </div>
       )}
@@ -331,9 +319,6 @@ const QuizBuilder = ({ onExit }) => {
   );
 };
 
-// ==========================================
-// Vanilla JS Bridge
-// ==========================================
 (function initReactBridge() {
   const triggerBtn = document.getElementById('standalone-create-quiz-btn');
   const rootElement = document.getElementById('react-builder-root');
@@ -343,26 +328,17 @@ const QuizBuilder = ({ onExit }) => {
   if (triggerBtn && rootElement && mainPortalContent) {
     triggerBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      
       mainPortalContent.classList.add('hidden');
       rootElement.classList.remove('hidden');
-      
-      if (!reactRoot) {
-        reactRoot = ReactDOM.createRoot(rootElement);
-      }
-      
+      if (!reactRoot) reactRoot = ReactDOM.createRoot(rootElement);
       reactRoot.render(
-        <QuizBuilder 
-          onExit={() => {
-            reactRoot.unmount();
-            reactRoot = null;
-            rootElement.classList.add('hidden');
-            mainPortalContent.classList.remove('hidden');
-          }} 
-        />
+        <QuizBuilder onExit={() => {
+          reactRoot.unmount();
+          reactRoot = null;
+          rootElement.classList.add('hidden');
+          mainPortalContent.classList.remove('hidden');
+        }} />
       );
     });
-  } else {
-    console.error("React Builder Bridge Error: Could not find one of the required HTML elements.");
   }
 })();

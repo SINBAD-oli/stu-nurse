@@ -1,6 +1,8 @@
+// ./js/quizEngine.js
+
 import { setupQuizConfig } from './quizConfig.js';
 import { renderQuestion } from './quizQuestion.js';
-import { normalizeChapterName, saveQuizResultsToFirestore } from './quizScoring.js';
+import { normalizeChapterName, saveQuizResultsToFirestore, evaluateBowTieAnswer } from './quizScoring.js';
 
 export function shuffleArray(array) {
   let currentIndex = array.length, randomIndex;
@@ -146,10 +148,11 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
 
   submitAnswerBtn?.addEventListener('click', () => {
     const q = questionsList[currentQuestionIndex];
-    const qType = (q.type || "MCQ").trim();
-    const isCompletion = qType.toLowerCase() === 'completion';
+    const rawType = (q.type || "MCQ").toLowerCase().replace(/[\s-_]/g, '');
+    const isCompletion = rawType === 'completion';
+    const isBowTie = rawType === 'bowtie';
 
-    if (!isCompletion && selectedOptionIndices.length === 0) return;
+    if (!isCompletion && !isBowTie && selectedOptionIndices.length === 0) return;
 
     answeredCount++;
     let questionEarnedScore = 0;
@@ -179,6 +182,67 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
           rationales: q.rationale || q.feedback || ""
         });
       }
+    } else if (isBowTie) {
+      // --- BOW TIE EVALUATION & HIGHLIGHTING LOGIC ---
+      const evalResult = evaluateBowTieAnswer(q, selectedOptionIndices);
+      questionEarnedScore = evalResult.score === 5 ? 1 : 0; 
+      feedbackStatus = evalResult.isCorrect ? "correct" : "incorrect";
+
+      const correctActionIndices = (q.actions || []).map((a, idx) => a.isCorrect ? String(idx) : null).filter(val => val !== null);
+      const correctConditionIndex = String((q.conditions || []).findIndex(c => c.isCorrect));
+      const correctParamIndices = (q.parameters || []).map((p, idx) => p.isCorrect ? String(idx) : null).filter(val => val !== null);
+
+      const a1 = document.getElementById('bt-action-1');
+      const a2 = document.getElementById('bt-action-2');
+      const cond = document.getElementById('bt-condition');
+      const p1 = document.getElementById('bt-param-1');
+      const p2 = document.getElementById('bt-param-2');
+
+      const styleSelect = (el, isCorr) => {
+        if (!el) return;
+        el.disabled = true;
+        el.style.borderColor = isCorr ? '#10b981' : '#ef4444';
+        el.style.background = isCorr ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.1)';
+        el.style.color = isCorr ? '#34d399' : '#f87171';
+      };
+
+      const evaluatedActions = [];
+      [a1, a2].forEach(sel => {
+        if (!sel) return;
+        const val = sel.value;
+        const isCorr = correctActionIndices.includes(val) && !evaluatedActions.includes(val);
+        if (isCorr) evaluatedActions.push(val);
+        styleSelect(sel, isCorr);
+      });
+
+      if (cond) styleSelect(cond, cond.value === correctConditionIndex);
+
+      const evaluatedParams = [];
+      [p1, p2].forEach(sel => {
+        if (!sel) return;
+        const val = sel.value;
+        const isCorr = correctParamIndices.includes(val) && !evaluatedParams.includes(val);
+        if (isCorr) evaluatedParams.push(val);
+        styleSelect(sel, isCorr);
+      });
+
+      if (evalResult.isCorrect) {
+        if (feedbackText) {
+          feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong><br><br><strong>Global Rationale:</strong> ${evalResult.rationale}`;
+        }
+      } else {
+        if (feedbackText) {
+          feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts) — Incorrect selections are highlighted in red.</strong><br><br><strong>Global Rationale:</strong> ${evalResult.rationale}`;
+        }
+        sessionMissedQuestions.push({
+          chapter: specificChap,
+          questionText: q.questionText,
+          clientNeed: q.clientNeed || "N/A",
+          cognitiveLevel: q.cognitiveLevel || "N/A",
+          concept: q.concept || "Clinical Judgment",
+          rationales: evalResult.rationale
+        });
+      }
     } else {
       const optionsList = q.options || [];
       const correctIndices = [];
@@ -189,7 +253,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       });
 
       const correctOptionsCount = correctIndices.length;
-      const isSATA = qType.toLowerCase() === 'sata';
+      const isSATA = rawType === 'sata';
 
       if (!isSATA) {
         const chosenIdx = selectedOptionIndices[0];
@@ -246,7 +310,6 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
         }
       });
 
-      // Render individual option rationales below each option
       optionsList.forEach((opt, idx) => {
         if (opt.rationale && labels[idx]) {
           const textContainer = labels[idx].querySelector('div');

@@ -1,3 +1,5 @@
+// ./js/quizScoring.js
+
 import { db, auth } from './firebase-config.js';
 import { doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
@@ -115,4 +117,51 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
   } catch (err) {
     console.error("❌ Error updating scores in Firestore:", err);
   }
+}
+
+// --- NEW: Strict All-or-Nothing Bow Tie Scoring ---
+export function evaluateBowTieAnswer(question, userSelections) {
+  if (!userSelections) return { score: 0, maxScore: 5, isCorrect: false, rationale: question.rationale };
+
+  const correctActionIndices = question.actions
+    .map((a, idx) => a.isCorrect ? String(idx) : null)
+    .filter(val => val !== null);
+
+  const correctConditionIndex = question.conditions
+    .findIndex(c => c.isCorrect);
+
+  const correctParamIndices = question.parameters
+    .map((p, idx) => p.isCorrect ? String(idx) : null)
+    .filter(val => val !== null);
+
+  const userActions = [String(userSelections.action1), String(userSelections.action2)];
+  const userCondition = String(userSelections.condition);
+  const userParams = [String(userSelections.param1), String(userSelections.param2)];
+
+  // 1. Verify Actions (must select both correct actions and keep them distinct)
+  const actionsMatch = userActions.length === 2 &&
+    userActions.every(act => correctActionIndices.includes(act)) &&
+    new Set(userActions).size === 2;
+
+  // 2. Verify Condition (must select the 1 correct condition)
+  const conditionMatch = userCondition === String(correctConditionIndex);
+
+  // 3. Verify Parameters (must select both correct parameters and keep them distinct)
+  const paramsMatch = userParams.length === 2 &&
+    userParams.every(param => correctParamIndices.includes(param)) &&
+    new Set(userParams).size === 2;
+
+  // All-or-nothing evaluation
+  const allCorrect = actionsMatch && conditionMatch && paramsMatch;
+
+  const maxScore = 5;
+  const earnedScore = allCorrect ? 5 : 0;
+
+  return {
+    score: earnedScore,
+    maxScore: maxScore,
+    isCorrect: allCorrect,
+    correct: allCorrect,
+    rationale: question.rationale || "Global rationale not provided."
+  };
 }

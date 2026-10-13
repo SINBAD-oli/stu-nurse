@@ -1,3 +1,5 @@
+// ./js/quizQuestion.js
+
 export function renderQuestion(q, currentQuestionIndex, totalQuestions, score, answeredCount, isFlagged, onToggleFlag, onSelectionChange) {
   const questionProgress = document.getElementById('modal-quiz-progress');
   const questionMeta = document.getElementById('modal-question-meta');
@@ -12,9 +14,11 @@ export function renderQuestion(q, currentQuestionIndex, totalQuestions, score, a
     questionProgress.innerHTML = `Question ${currentQuestionIndex + 1} of ${totalQuestions} | Score: ${score.toFixed(1)} (${percentage}%)`;
   }
 
-  const qType = (q.type || "MCQ").trim();
-  const isCompletion = qType.toLowerCase() === 'completion';
-  const isSATA = qType.toLowerCase() === 'sata';
+  // Bulletproof type normalization
+  const rawType = (q.type || "MCQ").toLowerCase().replace(/[\s-_]/g, '');
+  const isCompletion = rawType === 'completion';
+  const isSATA = rawType === 'sata';
+  const isBowTie = rawType === 'bowtie';
   const optionsList = q.options || [];
 
   let typeBadgeLabel = 'MCQ';
@@ -25,6 +29,9 @@ export function renderQuestion(q, currentQuestionIndex, totalQuestions, score, a
   } else if (isSATA) {
     typeBadgeLabel = 'SATA';
     typeBadgeColor = 'background: #78350f; color: #fde68a;';
+  } else if (isBowTie) {
+    typeBadgeLabel = 'Bow Tie';
+    typeBadgeColor = 'background: #7c2d12; color: #ffedd5;';
   }
 
   if (questionMeta) {
@@ -48,7 +55,7 @@ export function renderQuestion(q, currentQuestionIndex, totalQuestions, score, a
   if (submitAnswerBtn) submitAnswerBtn.disabled = !isCompletion;
   if (nextQuestionBtn) nextQuestionBtn.classList.add('hidden');
 
-  let selectedIndices = [];
+  let selectedIndices = isBowTie ? { action1: '', action2: '', condition: '', param1: '', param2: '' } : [];
 
   if (isCompletion) {
     if (optionsContainer) {
@@ -66,6 +73,142 @@ export function renderQuestion(q, currentQuestionIndex, totalQuestions, score, a
         const isValid = inputElem.value.trim().length > 0;
         if (submitAnswerBtn) submitAnswerBtn.disabled = !isValid;
         onSelectionChange([inputElem.value.trim()]);
+      });
+    }
+  } else if (isBowTie) {
+    const exhibits = q.exhibits && q.exhibits.length > 0 ? q.exhibits : [{ title: "Nurses' Notes", content: q.questionText }];
+    const actions = q.actions || [];
+    const conditions = q.conditions || [];
+    const parameters = q.parameters || [];
+
+    const updateBowTieState = () => {
+      const { action1, action2, condition, param1, param2 } = selectedIndices;
+      const allSelected = action1 !== '' && action2 !== '' && condition !== '' && param1 !== '' && param2 !== '';
+      const distinctActions = action1 !== action2;
+      const distinctParams = param1 !== param2;
+
+      if (submitAnswerBtn) {
+        submitAnswerBtn.disabled = !(allSelected && distinctActions && distinctParams);
+      }
+      onSelectionChange(selectedIndices);
+    };
+
+    if (optionsContainer) {
+      optionsContainer.innerHTML = `
+        <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 10px;">
+          <!-- Exhibit Tabs Container (Scrollable up to 260px) -->
+          <div style="background: #0f172a; border: 1px solid #334155; border-radius: 8px; overflow: hidden;">
+            <div id="bowtie-tabs-header" style="display: flex; background: #1e293b; border-bottom: 1px solid #334155; overflow-x: auto;">
+              ${exhibits.map((ex, idx) => `
+                <button type="button" data-ex-id="${ex.id !== undefined ? ex.id : idx}" class="bowtie-tab-btn" style="padding: 10px 16px; font-size: 13px; font-weight: 600; background: ${idx === 0 ? '#0f172a' : 'transparent'}; color: ${idx === 0 ? '#38bdf8' : '#94a3b8'}; border: none; border-bottom: 2px solid ${idx === 0 ? '#38bdf8' : 'transparent'}; cursor: pointer; white-space: nowrap;">
+                  ${ex.title}
+                </button>
+              `).join('')}
+            </div>
+            <div id="bowtie-tab-content" style="padding: 16px; font-size: 14px; color: #f8fafc; line-height: 1.5; min-height: 140px; max-height: 260px; overflow-y: auto; white-space: pre-wrap;">
+              ${exhibits[0].content}
+            </div>
+          </div>
+
+          <!-- Bow Tie Dropdowns Grid -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; background: #0f172a; padding: 16px; border-radius: 8px; border: 1px solid #334155;">
+            
+            <!-- Actions (Pick 2) -->
+            <div style="display: flex; flex-direction: column; gap: 10px; background: rgba(59, 130, 246, 0.05); padding: 12px; border-radius: 6px; border: 1px solid rgba(59, 130, 246, 0.2);">
+              <span style="font-size: 12px; font-weight: 700; color: #60a5fa; text-align: center; text-transform: uppercase;">Actions to Take (Pick 2)</span>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-size: 11px; color: #94a3b8;">Action 1:</label>
+                <select id="bt-action-1" style="width: 100%; padding: 8px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 4px; font-size: 12px;">
+                  <option value="">-- Select Action --</option>
+                  ${actions.map((act, i) => `<option value="${i}">${act.text}</option>`).join('')}
+                </select>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-size: 11px; color: #94a3b8;">Action 2:</label>
+                <select id="bt-action-2" style="width: 100%; padding: 8px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 4px; font-size: 12px;">
+                  <option value="">-- Select Action --</option>
+                  ${actions.map((act, i) => `<option value="${i}">${act.text}</option>`).join('')}
+                </select>
+              </div>
+            </div>
+
+            <!-- Condition (Pick 1) -->
+            <div style="display: flex; flex-direction: column; gap: 10px; background: rgba(34, 197, 94, 0.05); padding: 12px; border-radius: 6px; border: 1px solid rgba(34, 197, 94, 0.2); justify-content: center;">
+              <span style="font-size: 12px; font-weight: 700; color: #4ade80; text-align: center; text-transform: uppercase;">Potential Condition (Pick 1)</span>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-size: 11px; color: #94a3b8;">Condition:</label>
+                <select id="bt-condition" style="width: 100%; padding: 8px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 4px; font-size: 12px;">
+                  <option value="">-- Select Condition --</option>
+                  ${conditions.map((cond, i) => `<option value="${i}">${cond.text}</option>`).join('')}
+                </select>
+              </div>
+            </div>
+
+            <!-- Parameters (Pick 2) -->
+            <div style="display: flex; flex-direction: column; gap: 10px; background: rgba(249, 115, 22, 0.05); padding: 12px; border-radius: 6px; border: 1px solid rgba(249, 115, 22, 0.2);">
+              <span style="font-size: 12px; font-weight: 700; color: #fb923c; text-align: center; text-transform: uppercase;">Parameters (Pick 2)</span>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-size: 11px; color: #94a3b8;">Parameter 1:</label>
+                <select id="bt-param-1" style="width: 100%; padding: 8px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 4px; font-size: 12px;">
+                  <option value="">-- Select Parameter --</option>
+                  ${parameters.map((param, i) => `<option value="${i}">${param.text}</option>`).join('')}
+                </select>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-size: 11px; color: #94a3b8;">Parameter 2:</label>
+                <select id="bt-param-2" style="width: 100%; padding: 8px; background: #1e293b; color: #f8fafc; border: 1px solid #334155; border-radius: 4px; font-size: 12px;">
+                  <option value="">-- Select Parameter --</option>
+                  ${parameters.map((param, i) => `<option value="${i}">${param.text}</option>`).join('')}
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      `;
+
+      // Event Listeners for Exhibit Tabs
+      const tabButtons = optionsContainer.querySelectorAll('.bowtie-tab-btn');
+      const tabContentBox = document.getElementById('bowtie-tab-content');
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabButtons.forEach(b => {
+            b.style.background = 'transparent';
+            b.style.color = '#94a3b8';
+            b.style.borderBottomColor = 'transparent';
+          });
+          btn.style.background = '#0f172a';
+          btn.style.color = '#38bdf8';
+          btn.style.borderBottomColor = '#38bdf8';
+
+          const targetId = btn.getAttribute('data-ex-id');
+          const found = exhibits.find((ex, idx) => (ex.id !== undefined ? String(ex.id) : String(idx)) === String(targetId));
+          if (found && tabContentBox) {
+            tabContentBox.textContent = found.content;
+          }
+        });
+      });
+
+      // Event Listeners for Dropdowns
+      document.getElementById('bt-action-1')?.addEventListener('change', (e) => {
+        selectedIndices.action1 = e.target.value;
+        updateBowTieState();
+      });
+      document.getElementById('bt-action-2')?.addEventListener('change', (e) => {
+        selectedIndices.action2 = e.target.value;
+        updateBowTieState();
+      });
+      document.getElementById('bt-condition')?.addEventListener('change', (e) => {
+        selectedIndices.condition = e.target.value;
+        updateBowTieState();
+      });
+      document.getElementById('bt-param-1')?.addEventListener('change', (e) => {
+        selectedIndices.param1 = e.target.value;
+        updateBowTieState();
+      });
+      document.getElementById('bt-param-2')?.addEventListener('change', (e) => {
+        selectedIndices.param2 = e.target.value;
+        updateBowTieState();
       });
     }
   } else {
