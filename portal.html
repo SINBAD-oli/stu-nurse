@@ -71,8 +71,8 @@
           
           <!-- NEW: Standalone React Builder Button -->
           <button id="standalone-create-quiz-btn" class="action-button hidden" style="flex: 1; background-color: #3b82f6; border-color: #3b82f6; color: white;">
-  Create Custom Quiz
-</button>
+            Create Custom Quiz
+          </button>
         </div>
 
         <!-- Recent Updates Section with Timestamps -->
@@ -165,16 +165,17 @@
   <script type="module" src="./js/portal.js"></script>
   
   <!-- NEW: Babel script that loads the React code -->
-<!-- 1. Load the MCQ component first (It has no imports) -->
-<script type="text/babel" src="./js/AddMCQ.jsx"></script>
-<script type="text/babel" src="./js/addSATA.jsx"></script>
-<script type="text/babel" src="./js/AddBowTie.jsx"></script>
+  <!-- 1. Load the MCQ component first (It has no imports) -->
+  <script type="text/babel" src="./js/AddMCQ.jsx"></script>
+  <script type="text/babel" src="./js/addSATA.jsx"></script>
+  <script type="text/babel" src="./js/AddBowTie.jsx"></script>
 
-<!-- 2. Load the Builder WITH data-type="module" so the Firebase imports work -->
-<script type="text/babel" data-type="module" src="./js/quizBuilderStandalone.jsx"></script>
+  <!-- 2. Load the Builder WITH data-type="module" so the Firebase imports work -->
+  <script type="text/babel" data-type="module" src="./js/quizBuilderStandalone.jsx"></script>
+
+  <!-- portal.html footer -->
+  <footer style="text-align: center; padding: 24px; color: #64748b; font-size: 12px; font-style: italic; border-top: 1px solid #334155; margin-top: 40px; background: #0f172a;">
+    Created By: Oliver — Powered by caffeine, pure panic, and student tears.
+  </footer>
 </body>
-<!-- portal.html footer -->
-<footer style="text-align: center; padding: 24px; color: #64748b; font-size: 12px; font-style: italic; border-top: 1px solid #334155; margin-top: 40px; background: #0f172a;">
-  Created By: Oliver — Powered by caffeine, pure panic, and student tears.
-</footer>
 </html>

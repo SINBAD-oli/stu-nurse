@@ -27,7 +27,8 @@ setPersistence(auth, browserLocalPersistence).then(() => {
   onAuthStateChanged(auth, async (user) => {
     if (user) {
       try {
-        const docRef = doc(db, "users", user.uid);
+        // Use user.email as the document key in Firestore
+        const docRef = doc(db, "users", user.email);
         
         onSnapshot(docRef, async (docSnap) => {
           if (!docSnap.exists()) {
@@ -49,7 +50,7 @@ setPersistence(auth, browserLocalPersistence).then(() => {
             const data = docSnap.data();
             if (fullNameSpan) fullNameSpan.textContent = `${data.firstName || "Nursing"} ${data.lastName || "Student"}`;
             
-            // Set display role based on isAdmin boolean
+            // Set display role based on isAdmin boolean or role string
             if (roleSpan) {
               roleSpan.textContent = data.isAdmin ? "Admin" : (data.role || "Nursing Student");
             }
@@ -66,7 +67,7 @@ setPersistence(auth, browserLocalPersistence).then(() => {
               }
             }
 
-            renderProfileCard(user.uid, data);
+            renderProfileCard(user.email, data);
           }
         }, (error) => {
           console.error("Snapshot error:", error);
@@ -82,7 +83,7 @@ setPersistence(auth, browserLocalPersistence).then(() => {
   });
 });
 
-function renderProfileCard(userId, userData) {
+function renderProfileCard(userEmail, userData) {
   const profileCard = document.querySelector('.profile-card');
   if (!profileCard) return;
 
@@ -163,7 +164,6 @@ function renderProfileCard(userId, userData) {
     editBtn.addEventListener('click', () => {
       nameInput.value = `${userData.firstName || ""} ${userData.lastName || ""}`.trim();
       
-      // Lock the role input field so users cannot alter their own permissions
       if (roleInput) {
         roleInput.value = userData.isAdmin ? "Admin" : (userData.role || "Nursing Student");
         roleInput.disabled = true;
@@ -197,7 +197,8 @@ function initProfileModalListeners() {
     const lastName = parts.slice(1).join(' ') || "Student";
 
     try {
-      await updateDoc(doc(db, "users", user.uid), {
+      // Use user.email for document update
+      await updateDoc(doc(db, "users", user.email), {
         firstName,
         lastName
       });
