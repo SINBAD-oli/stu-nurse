@@ -38,7 +38,8 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
   }
 
   try {
-    const userRef = doc(db, "users", currentUser.uid);
+    // Use currentUser.email as the document ID in Firestore
+    const userRef = doc(db, "users", currentUser.email);
     const userSnap = await getDoc(userRef);
     
     let uData = userSnap.exists() ? userSnap.data() : {};
@@ -104,6 +105,7 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
     }
 
     const payload = sanitizeForFirestore({
+      email: currentUser.email,
       totalQuizzesTaken: newTotalQuizzes,
       averageAccuracy: trueOverallAccuracy,
       chapterProgressMap: chapterProgressMap,
@@ -113,13 +115,13 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
 
     await updateDoc(userRef, payload);
 
-    console.log("✅ Successfully saved quiz results with raw question keys for chapter:", standardizedChapterKey);
+    console.log("✅ Successfully saved quiz results with email doc ID for chapter:", standardizedChapterKey);
   } catch (err) {
     console.error("❌ Error updating scores in Firestore:", err);
   }
 }
 
-// --- NEW: Strict All-or-Nothing Bow Tie Scoring ---
+// --- Strict All-or-Nothing Bow Tie Scoring ---
 export function evaluateBowTieAnswer(question, userSelections) {
   if (!userSelections) return { score: 0, maxScore: 5, isCorrect: false, rationale: question.rationale };
 

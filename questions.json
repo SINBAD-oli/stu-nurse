@@ -2,956 +2,1763 @@
   {
     "questionNumber": 1,
     "type": "MCQ",
-    "questionText": "During morning rounds, a male patient asks the nurse to shave him with a disposable razor. Before shaving him, the nurse should take which action?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Identify factors influencing personal hygiene practices.",
-    "page": 791,
-    "heading": "Shaving; Procedure 22-11",
+    "questionText": "The nurse is reviewing the chart of a newly admitted client. The history and physical state that there is an absence of the stratum corneum. Which of the following explains why this is a concern?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Discuss factors that affect skin integrity.",
+    "page": 1308,
+    "heading": "What Factors Affect Skin Integrity?",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Perfusion",
-    "difficulty": "Easy",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Have him sign a permission form.",
+        "text": "The stratum corneum provides insulation for temperature regulation.",
         "isCorrect": false,
-        "rationale": "This is incorrect. A permission form is not needed for shaving."
+        "rationale": "This is incorrect. The subcutaneous layer is composed of adipose and connective tissue that provide insulation, protection, and an energy reserve (adipose)."
       },
       {
-        "text": "Check to see whether he is taking anticoagulants.",
+        "text": "The stratum corneum promotes strength and elasticity to the skin.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The dermis is composed of irregular fibrous connective tissue that provides strength and elasticity to the skin."
+      },
+      {
+        "text": "The stratum corneum protects the body against the entry of pathogens.",
         "isCorrect": true,
-        "rationale": "This is correct. If the patient has a bleeding disorder or is taking anticoagulant medication, the nurse should use an electric razor, not a disposable razor."
+        "rationale": "This is correct. The stratum corneum is the outermost layer of the epidermis and is composed of dead cells. Functioning as a barrier to the environment, it restricts water loss, prevents entry of fluids into the body, and protects the body against the entry of pathogens and chemicals."
       },
       {
-        "text": "Tell him that only a family member may shave a patient.",
+        "text": "The stratum corneum produces new skin cells on a continuing basis.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Staff or family can shave a patient."
-      },
-      {
-        "text": "Position him flat in bed.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The patient does not have to be flat; in fact, most patients like to be upright or sitting."
+        "rationale": "This is incorrect. The stratum germinativum is the innermost layer of the skin that produces new cells, pushing older cells toward the skin surface."
       }
     ]
   },
   {
     "questionNumber": 2,
     "type": "MCQ",
-    "questionText": "The nurse is caring for an admitted patient with a history of dementia. Which action by the nurse is appropriate when providing hygiene care for this patient?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Demonstrate nursing skills to promote patient hygiene (such as bathing, foot care, and bed making).",
-    "page": 770,
-    "heading": "Bathing Patients Who Have Dementia; and iCare Box 22-2: Caring Tips for Bathing a Patient With Dementia; Procedure 22-1: Bathing: Providing a Complete Bed Bath Using a Prepackaged Bathing Product > What If You Are Bathing a Patient With Dementia?",
+    "questionText": "The nurse understands that the client who takes blood pressure medications is at risk for compromised skin integrity and poor wound healing. What is the rationale for that understanding?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Discuss factors that affect skin integrity.",
+    "page": 1309,
+    "heading": "What Factors Affect Skin Integrity? > Medications",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Patient-Centered Care",
-    "difficulty": "Difficult",
+    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Bathe the patient quickly.",
+        "text": "Blood pressure medications can cause cellular toxicity.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Bathe the patient slowly. Do not rush, as this may cause the patient to feel tension and become agitated."
+        "rationale": "This is incorrect. Chemotherapeutic agents delay wound healing due to toxicity to rapidly growing cells."
       },
       {
-        "text": "Use cool water for bathing.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Using cool water to bathe the patient may cause shivering. The patient should be kept warm, using warm water."
-      },
-      {
-        "text": "Provide care in short intervals.",
+        "text": "Blood pressure medications increase the risk of ischemia.",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should provide care in short intervals to avoid overstimulating the patient."
+        "rationale": "This is correct. Blood pressure medications decrease the amount of pressure required to occlude blood flow to an area, creating a risk for ischemia."
       },
       {
-        "text": "Turn up the brightness of the lights.",
+        "text": "Blood pressure medications can delay wound healing.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Avoid sensory overload by keeping the lights turned down."
+        "rationale": "This is incorrect. Anticoagulants can lead to extravasation of blood into subcutaneous tissue. Even minimal pressure or injury can cause a hematoma."
+      },
+      {
+        "text": "Blood pressure medications predispose to hematoma formation.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Blood pressure medications do not increase the clotting factor."
       }
     ]
   },
   {
     "questionNumber": 3,
     "type": "MCQ",
-    "questionText": "While bathing a patient, the nurse observes that they have dry skin. The best action by the nurse is to:",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Apply the nursing process to common hygiene-related problems of the skin, feet, nails, mouth, hair, eyes, ears, and nose.",
-    "page": 765,
-    "heading": "Clinical Insight 22-1: Assisting With a Shower or Tub Bath",
+    "questionText": "The nurse is assessing the client with a chronic wound. The client asks the nurse to explain the difference between chronic and acute wounds. Which of the following would best describe the primary difference between chronic and acute?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Differentiate the kinds of chronic wounds.",
+    "page": 1310,
+    "heading": "Types of Wounds > Wounds > Length of Time for Healing",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Analysis [Analyzing]",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Understanding [Comprehension]",
     "concept": "Tissue Integrity",
     "difficulty": "Easy",
     "options": [
       {
-        "text": "Bathe the patient more frequently.",
+        "text": "Chronic wounds are often full-thickness wounds, but acute wounds are superficial.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Frequent bathing will increase dryness."
+        "rationale": "This is incorrect. Both chronic and acute wounds can be either full-thickness or superficial."
       },
       {
-        "text": "Use an emollient.",
+        "text": "Chronic wounds are the result of pressure, but acute wounds result from surgery.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Both chronic and acute wounds can be caused by pressure or surgery. Factors that delay healing wounds may cause chronic wounds."
+      },
+      {
+        "text": "Chronic wounds are usually infected, whereas acute wounds are contaminated.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Both chronic and acute wounds can be infected."
+      },
+      {
+        "text": "Chronic wounds do not heal within an expected time frame, but acute wounds heal within 2 to 4 weeks.",
         "isCorrect": true,
-        "rationale": "This is correct. Using an emollient will aid in soothing dry skin."
-      },
-      {
-        "text": "Massage the skin with warm water.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Massaging skin with water will not play a role in improving dry skin."
-      },
-      {
-        "text": "Discourage fluid intake.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Discouraging fluid intake will increase dry skin."
+        "rationale": "This is correct. The length of healing time determines whether a wound is acute or chronic. Wounds that do not heal within 2 to 4 weeks are considered chronic."
       }
     ]
   },
   {
     "questionNumber": 4,
     "type": "MCQ",
-    "questionText": "The nurse is ready to bathe a female patient who has an intravenous (IV) line with no two-way, needle-free connector and needs to remove the patient's gown. The nurse should take which action?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Demonstrate nursing skills to promote patient hygiene (such as bathing, foot care, and bed making).",
-    "page": 768,
-    "heading": "Procedure 22-1: Bathing: Providing a Complete Bed Bath Using a Prepackaged Bathing Product > Patient With an IV Line",
+    "questionText": "The nurse is assessing the client who presents to the outpatient clinic with a wound that extends through the epidermis into the dermis. When documenting the depth of the wound, how would the nurse classify it?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Assess and categorize pressure injury based on the pressure injury staging system.",
+    "page": 1323,
+    "heading": "Table 32-3: Staging Pressure Injury",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Infection",
+    "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Temporarily disconnect the IV tubing at a point close to the patient and thread it through the gown.",
+        "text": "Stage 1",
         "isCorrect": false,
-        "rationale": "This is incorrect. Never disconnect this type of IV tubing connection; this breaks the sterile system and provides a portal of entry for pathogens."
+        "rationale": "This is incorrect. A stage 1 pressure injury is an area of persistent redness and does not blanch."
       },
       {
-        "text": "Cut the gown with scissors to allow the patient's arm to be easily removed from the gown.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse does not cut the gown. A gown with snap-open sleeves can be used for this patient."
-      },
-      {
-        "text": "Thread the bag and tubing through the gown sleeve, keeping the line intact.",
+        "text": "Stage 2",
         "isCorrect": true,
-        "rationale": "This is correct. If there is no two-way, needle-free connector on the tubing, the bag should be threaded through the gown sleeve, keeping the line intact to prevent contamination and infection."
+        "rationale": "This is correct. A stage 2 pressure injury involves partial-thickness loss of dermis."
       },
       {
-        "text": "Disconnect the tubing, thread it through the gown, and reconnect the tubing.",
+        "text": "Stage 3",
         "isCorrect": false,
-        "rationale": "This is incorrect. If the patient has a needle-free two-way connector, this technique may be used. However, this patient does not have a two-way connector."
+        "rationale": "This is incorrect. A stage 3 pressure injury is characterized by full-thickness skin loss involving damage or necrosis of subcutaneous tissue, which may extend down to, but not through, the underlying fascia. The ulcer appears as a deep crater."
+      },
+      {
+        "text": "Stage 4",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A stage 4 pressure injury involves full-thickness skin loss with extensive destruction; tissue necrosis; or damage to muscle, bone, or support structures. Undermining and sinus tracts (blind tracts underneath the epidermis) are common."
       }
     ]
   },
   {
     "questionNumber": 5,
     "type": "MCQ",
-    "questionText": "For which of the following patients can the nurse safely delegate morning care to an experienced unlicensed assistive personnel (UAP)?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Discuss delegation of hygiene activities to unlicensed assistive personnel (UAP).",
-    "page": 742,
-    "heading": "Delegating Hygiene Care",
+    "questionText": "A client underwent emergency abdominal surgery for a ruptured appendix. The surgeon did not surgically close the wound. The wound healing process described in this situation is:",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Distinguish primary intention healing, secondary intention healing, and tertiary intention healing.",
+    "page": 1312,
+    "heading": "Types of Healing",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Leadership and Management",
-    "difficulty": "Difficult",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "A 32-year-old just admitted with a closed head injury",
+        "text": "Approximation intention healing.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The patient who sustained a closed head injury is unstable. Therefore, care of this patient should not be delegated to the UAP."
+        "rationale": "This is incorrect. Approximation is another word for the joining of wound edges."
       },
       {
-        "text": "A 76-year-old admitted with septic shock",
+        "text": "Primary intention healing.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The patient admitted with septic shock may easily become unstable during care; therefore, a registered nurse is required to provide morning care safely."
+        "rationale": "This is incorrect. Primary intention healing occurs when a wound is surgically closed."
       },
       {
-        "text": "A 62-year-old who underwent surgical repair of a bowel obstruction 2 days ago",
+        "text": "Secondary intention healing.",
         "isCorrect": true,
-        "rationale": "This is correct. Morning care for the patient who underwent surgical repair of a bowel 2 days ago can be safely delegated to the UAP because the patient is stable."
+        "rationale": "This is correct. Secondary intention healing occurs when a wound is left open, and it heals from the inner layer to the surface by filling in with beefy red granulation tissue."
       },
       {
-        "text": "A 23-year-old recently admitted with an exacerbation of asthma with dyspnea on exertion",
+        "text": "Tertiary intention healing.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The patient who was admitted with exacerbation of asthma and becomes short of breath with activity requires the critical-thinking skills of a registered nurse to quickly detect respiratory compromise."
+        "rationale": "This is incorrect. Tertiary intention healing occurs when a wound that was previously left open to heal by secondary intention is closed by joining the margins of granulation tissue."
       }
     ]
   },
   {
     "questionNumber": 6,
     "type": "MCQ",
-    "questionText": "A client's epidermis has insufficient melanin. Which nursing diagnosis is appropriate?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Identify the nursing diagnoses related to self-care ability and hygiene practices.",
-    "page": 746,
-    "heading": "Anatomy and Physiology of the Skin; Analysis/Nursing Diagnosis (Skin)",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Analysis [Analyzing]",
+    "questionText": "The nurse is developing a teaching plan for a client who has a surgical incision that has been left open. Which of the following points would the nurse make?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Review the major complications of wound healing.",
+    "page": 1312,
+    "heading": "Types of Healing",
+    "integratedProcesses": "Teaching and Learning",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
+    "cognitiveLevel": "Application [Applying]",
     "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Risk for infection",
+        "text": "The client will need to have twice daily wet-to-dry dressing changes until the wound is completely healed.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Fibroblasts (not melanin), also found in the dermis, produce new cells and assist in wound healing, thereby helping to prevent infection."
+        "rationale": "This is incorrect. Wound treatment is individualized, and there is no indication of twice daily wet-to-dry dressing changes in the narrative. Wet-to-dry dressings were once common, but use has declined because it can be painful and removes both debris and healing granulation tissue."
       },
       {
-        "text": "Risk for impaired skin integrity",
+        "text": "The client will need to start a course of antibiotics for the infection until the wound is completely healed.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. There is no indication that the wound is infected. Although open wounds are more prone to contamination and infection, this is not an expected outcome, and antibiotics would not necessarily be needed."
+      },
+      {
+        "text": "The client will have more scar tissue formation than there would be for a wound closed at surgery.",
         "isCorrect": true,
-        "rationale": "This is correct. The epidermis contains melanin, a pigment that protects against the sun's ultraviolet rays; therefore, a person with insufficient melanin is at risk for impaired skin integrity, such as a sunburn."
+        "rationale": "This is correct. Wounds that heal by secondary intention heal more slowly, are more prone to infection, and develop more scar tissue. The scar tissue is related to wound edges that are not approximated."
       },
       {
-        "text": "Risk for deficient fluid volume",
+        "text": "The client should expect to remain hospitalized in an isolation room until the wound is completely healed.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The dermis contains blood and lymphatic vessels, nerves, bases of hair follicles, and sebaceous and sweat glands; melanin does not prevent fluid loss."
-      },
-      {
-        "text": "Impaired skin integrity",
-        "isCorrect": false,
-        "rationale": "This is incorrect. There are no symptoms to indicate that the client has a break or injury to the skin, only that a risk factor is present."
+        "rationale": "This is incorrect. A client with an open wound should not expect an extended hospital stay if wound care can be provided in the home or an outpatient setting."
       }
     ]
   },
   {
     "questionNumber": 7,
     "type": "MCQ",
-    "questionText": "When making an occupied bed, which action is most important for the nurse to do?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Demonstrate nursing skills to promote patient hygiene (such as bathing, foot care, and bed making).",
-    "page": 801,
-    "heading": "Procedure 22-16: Making an Occupied Bed",
+    "questionText": "What type of wound can be described as a superficial wound, usually self-inflicted due to excessive scratching or mechanical force?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Describe the three phases of wound healing.",
+    "page": 1311,
+    "heading": "Table 32-1: Types of Wounds",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Comfort",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Keep the bed in the low position.",
+        "text": "Laceration",
         "isCorrect": false,
-        "rationale": "This is incorrect. Keeping the bed in the low position may strain the nurse's back."
+        "rationale": "This is incorrect. A laceration can be described as skin or mucous membranes that are torn open, resulting in a wound with jagged margins."
       },
       {
-        "text": "Raise the siderails on both sides of the bed.",
+        "text": "Contusion",
         "isCorrect": false,
-        "rationale": "This is incorrect. Working over raised siderails may strain the nurse's back."
+        "rationale": "This is incorrect. A contusion can be described as a 'bruise' or ecchymotic area caused by blunt trauma."
       },
       {
-        "text": "Move back and forth between the sides of the bed when adjusting linens.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Continually moving from side to side is disorganized and time-consuming."
-      },
-      {
-        "text": "Use a bath blanket or sheet to maintain patient warmth and privacy.",
+        "text": "Excoriation",
         "isCorrect": true,
-        "rationale": "This is correct. When making an occupied bed, the nurse should cover the patient with a bath blanket, if available, or leave the top sheet over the patient. Covering the patient prevents chilling and preserves modesty."
+        "rationale": "This is correct. Excoriation can be described as a superficial wound, usually self-inflicted due to excessive scratching or mechanical force."
+      },
+      {
+        "text": "Incision",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Incision can be described as an open, intentional wound."
       }
     ]
   },
   {
     "questionNumber": 8,
     "type": "MCQ",
-    "questionText": "Which intervention would be appropriate for a patient who has an eye infection with a moderate amount of discharge?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Demonstrate care of the eyes, ears, and teeth, including glasses, contacts, hearing aids, and dentures.",
-    "page": 760,
-    "heading": "Care of the Eyes",
+    "questionText": "The nurse documents that the new wound has serosanguineous drainage. How is serosanguineous described?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Describe three types of wound drainage.",
+    "page": 1315,
+    "heading": "Types of Wound Drainage",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Infection",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Cleansing the eye with hydrogen peroxide",
+        "text": "Bloody",
         "isCorrect": false,
-        "rationale": "This is incorrect. Agency-approved water or normal saline (not hydrogen peroxide) should be used for cleansing the eye of any discharge."
+        "rationale": "This is incorrect. 'Bloody drainage' is the description for the term sanguineous."
       },
       {
-        "text": "Wiping from the outer canthus to the inner canthus",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Always cleanse from the inner canthus to the outer canthus to avoid forcing debris into the nasolacrimal duct. The inner canthus is considered 'clean.'"
-      },
-      {
-        "text": "Positioning the patient on the same side as the eye to be cleansed",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The patient does not have to be lying on the side to clean the eye. The patient can be supine."
-      },
-      {
-        "text": "Using a different wipe to cleanse each eye",
+        "text": "Red, watery, clear",
         "isCorrect": true,
-        "rationale": "This is correct. To prevent cross-contamination if there is drainage or crusting, a different wipe should be used for each eye."
+        "rationale": "This is correct. Serosanguineous drainage is described as red and watery."
+      },
+      {
+        "text": "Purulent drainage",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Purosanguineous (purulent) drainage is bloody, pus-filled fluid."
+      },
+      {
+        "text": "Straw colored",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Serous drainage is described as straw-colored fluid."
       }
     ]
   },
   {
     "questionNumber": 9,
     "type": "MCQ",
-    "questionText": "The nurse documents that the patient with diarrhea, incontinence of liquid stool, now has excoriated skin on the buttocks. Which finding by the nurse led to this documentation?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Describe assessments to make when providing hygiene care of the skin, feet, nails, mouth, hair, eyes, ears, and nose.",
-    "page": 747,
-    "heading": "Common Skin Problems",
-    "integratedProcesses": "Communication and Documentation",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "questionText": "The nurse is reviewing the client's surgical report and notes that the client has a history of evisceration. The nurse researches the differences between dehiscence and evisceration. Which of the following describes the difference between dehiscence and evisceration?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Review the major complications of wound healing.",
+    "page": 1315,
+    "heading": "Complications of Wound Healing",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "The skin was softened from prolonged exposure to moisture.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Maceration is the term for softening of skin from exposure to moisture."
-      },
-      {
-        "text": "The superficial layers of the skin were absent.",
+        "text": "Dehiscence involves a separation of one or more layers of wound tissue; evisceration involves the protrusion of internal viscera from the incision site.",
         "isCorrect": true,
-        "rationale": "This is correct. Excoriation refers to loss of the superficial layers of the skin caused by the digestive enzymes in feces."
+        "rationale": "This is correct. With dehiscence, there is separation of one or more layers of wound tissue, whereas evisceration involves the protrusion of internal viscera from the incision site."
       },
       {
-        "text": "The epidermal layer of the skin was rubbed away.",
+        "text": "Dehiscence is an urgent complication that requires surgery as soon as possible; evisceration is not as urgent.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Abrasion, rubbing away of the epidermal layer of the skin, especially over bony areas, is often caused by friction or shearing forces that occur when a patient moves in bed."
+        "rationale": "This is incorrect. Evisceration is an urgent complication usually requiring immediate surgical intervention."
       },
       {
-        "text": "A lesion caused by tissue compression was present.",
+        "text": "Dehiscence involves the protrusion of internal viscera from the incision site; evisceration involves a separation of one or more layers of wound tissue.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Pressure injuries, which are lesions caused by tissue compression and inadequate perfusion, are the result of immobility, not moving in bed."
+        "rationale": "This is incorrect. Evisceration is the protrusion of internal viscera from an incisional site; dehiscence is the separation of the surgical wound."
+      },
+      {
+        "text": "Dehiscence involves rupture of subcutaneous tissue; evisceration involves damage to dermal tissue.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Evisceration can damage internal organs, while dehiscence can damage dermal tissue."
       }
     ]
   },
   {
     "questionNumber": 10,
     "type": "MCQ",
-    "questionText": "For which patient is it most important to provide frequent perineal care? The patient:",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Identify the factors influencing personal hygiene practices.",
-    "page": 750,
-    "heading": "Perineal Care",
+    "questionText": "The nurse will know that the plan of care for the diabetic client with severe peripheral neuropathy is effective if the client:",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Provide nursing care that limits the risk of pressure injury development.",
+    "page": 1332,
+    "heading": "Planning Interventions/Implementation > What Wound Care Competencies Do I Need?",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Patient-Centered Care",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Synthesis [Creating]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "With active lower gastrointestinal bleeding.",
+        "text": "Begins an aggressive exercise program.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. An aggressive exercise program would not be appropriate for a client with severely diminished sensation in the feet."
+      },
+      {
+        "text": "Follows a diet plan of 1,200 calories per day.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Although diabetic clients experiencing difficulty with blood sugar control are prone to the development of peripheral neuropathy, which results in decreased sensation in the feet and lower extremities, a 1,200-calorie diet would be inadequate for most clients."
+      },
+      {
+        "text": "Is fitted for deep-depth diabetic footwear.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Being fitted for diabetic footwear represents an intervention rather than an outcome."
+      },
+      {
+        "text": "Remains free of foot wounds.",
         "isCorrect": true,
-        "rationale": "This is correct. The patient admitted with active lower gastrointestinal bleeding will require frequent perineal care because of the irritating effect of the enzymes in stools."
-      },
-      {
-        "text": "Who is continent of urine.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. A patient who is incontinent (not continent) of urine would require more frequent perineal care."
-      },
-      {
-        "text": "Who has a circumcised penis.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The uncircumcised patient, not the circumcised patient, may require frequent perineal care."
-      },
-      {
-        "text": "With a history of acute asthma.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Patients who have a history of acute asthma do not require frequent perineal care."
+        "rationale": "This is correct. Decreased sensation in the feet places the client at increased risk for development of wounds or pressure ulcers in the feet. The nurse will know this plan of care is effective when the client's feet remain free of wounds. Feet remaining free of wounds represents an outcome."
       }
     ]
   },
   {
     "questionNumber": 11,
     "type": "MCQ",
-    "questionText": "A patient with dementia becomes belligerent when the nurse attempts to give them a tub bath. How should the nurse proceed?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Demonstrate the nursing skills to promote patient hygiene (such as bathing, foot care, and bed making).",
-    "page": 750,
-    "heading": "Bathing Patients Who Have Dementia; What If You Are Bathing a Patient With Dementia?",
+    "questionText": "The nurse recognizes that pressure injuries are directly caused by which of the following processes?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Explain the factors involved in the development of pressure injury.",
+    "page": 1330,
+    "heading": "Assessment Guidelines and Tools > Braden Scale for Predicting Pressure Sore Risk; Norton Pressure Sore Risk-Assessment Scale; The PUSH Tool for Evaluation of Pressure Ulcers",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Safety",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Call for assistance to help the patient into the bathtub.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The patient should not be helped into the tub with assistance, as this could increase the agitation and belligerence."
-      },
-      {
-        "text": "Wait for the patient to calm down, and then give them a towel bath.",
+        "text": "Ischemia",
         "isCorrect": true,
-        "rationale": "This is correct. Nurses need to individualize bathing to meet the needs of the patient. If the patient becomes belligerent, the nurse should wait until the patient calms down and then attempt a towel bath. Towel baths have been shown to reduce agitation significantly."
+        "rationale": "This is correct. Pressure injuries are caused by pressure, shear, and friction, resulting in tissue ischemia and injury. Ischemia is the pathophysiological process underlying pressure injuries. Factors like edema, advanced age, and impaired circulation may make pressure injuries more likely to occur, but the process occurring is ischemia."
       },
       {
-        "text": "Allow the patient to go without bathing for about a week.",
+        "text": "Edema",
         "isCorrect": false,
-        "rationale": "This is incorrect. While a patient does not have to bathe every day, a week may be too long. There is a better option for a belligerent patient who has dementia."
+        "rationale": "This is incorrect. Edema causes decreased skin elasticity and interferes with the diffusion of oxygen to cells. This makes skin more prone to breakdown, but does not represent the underlying process."
       },
       {
-        "text": "Ask another staff member to attempt the tub bath.",
+        "text": "Advanced age",
         "isCorrect": false,
-        "rationale": "This is incorrect. Having another staff member attempt the tub bath will most likely increase the patient's agitation, as consistency of caregivers is important for patients with dementia."
+        "rationale": "This is incorrect. With age, the subcutaneous tissue layer becomes thinner and the dermal layer loses elasticity. These changes make the skin prone to breakdown and prolonged wound-healing time but do not represent the underlying process."
+      },
+      {
+        "text": "Impaired circulation",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Impaired venous circulation results in engorged tissues containing high levels of metabolic waste products that make the tissue susceptible to edema, ulceration, and breakdown. Circulatory impairment is one of the main causes of chronic wounds but does not represent the underlying process."
       }
     ]
   },
   {
     "questionNumber": 12,
     "type": "MCQ",
-    "questionText": "The nurse is teaching a UAP how to give a complete bed bath. Which instruction should the nurse include?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Describe the following types of baths: complete, assist, partial, towel, bag, shower, tub, and therapeutic.",
-    "page": 767,
-    "heading": "Highlights of Procedures 22-1",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
+    "questionText": "A client hospitalized in a long-term rehabilitation facility is immobile and requires mechanical ventilation with a tracheostomy. There is a pressure area on the client's coccyx measuring 5 x 3 cm. The area is covered with 100% eschar. What would the nurse identify this as?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Assess and categorize pressure injury based on the pressure injury staging system.",
+    "page": 1325,
+    "heading": "Table 32-3: Staging Pressure Injury",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Collaboration",
+    "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "'Cleanse only those areas likely to cause odor.'",
+        "text": "Stage 2 pressure injury",
         "isCorrect": false,
-        "rationale": "This is incorrect. During a partial bath, the UAP should cleanse only the areas that may cause odor or discomfort."
+        "rationale": "This is incorrect. Stage 2 is defined as 'involves partial-thickness loss of dermis.' Stage 2 pressure injuries are open but shallow and with a red pink wound bed. There is no slough (tan, yellow, gray, green, or brown necrotic tissue). It may also be an intact or open/ruptured serum-filled blister or a shiny or dry shallow ulcer without slough or bruising."
       },
       {
-        "text": "'Provide the patient with warm water for washing the perineum.'",
+        "text": "Stage 3 pressure injury",
         "isCorrect": false,
-        "rationale": "This is incorrect. The UAP should provide the patient with a basin of warm water and allow them to wash the perineum when giving an assisted bath or bed bath (the question concerns a complete bed bath)."
+        "rationale": "This is incorrect. Stage 3 is defined as 'a deep crater characterized by full-thickness skin loss with damage or necrosis of subcutaneous tissue.' Adipose tissue is visible and it may extend down to, but not through, underlying fascia. Undermining (deeper-level damage under boggy superficial layers) of adjacent tissue may be present and bone/tendon is not visible or directly palpable."
       },
       {
-        "text": "'Wash the patient's back, buttocks, and perineum first.'",
+        "text": "Stage 4 pressure injury",
         "isCorrect": false,
-        "rationale": "This is incorrect. The UAP should never begin the bath with the back, buttocks, and perineum because this violates the principle of 'clean to dirty.'"
+        "rationale": "This is incorrect. Stage 4 is defined as 'involves full-thickness skin loss with extensive destruction, tissue necrosis, or damage to muscle, bone, or support structures.' Exposed bone/tendon/cartilage is visible or directly palpable. Slough or eschar (tan, black, or brown leathery necrotic tissue) may be present. Epibole (rolled edges), undermining, and sinus tracts (blind tracts underneath the epidermis) are common."
       },
       {
-        "text": "'Bathe the patient from head to toe, cleanest areas first.'",
+        "text": "Unstageable pressure injury",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should instruct the UAP to give a complete bed bath (a bath for patients who must remain in bed but who are unable to bathe themselves) in a head-to-toe fashion, beginning with the cleanest part of the body and ending with the dirtiest."
+        "rationale": "This is correct. An eschar is a black, leathery covering made up of necrotic tissue. An ulcer covered in eschar cannot be classified using a staging method because it is impossible to determine the depth."
       }
     ]
   },
   {
     "questionNumber": 13,
     "type": "MCQ",
-    "questionText": "Which action should the nurse take when scanning the patient's environment?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Discuss the relationship between a patient's overall well-being and the immediate environment.",
-    "page": 761,
-    "heading": "Assessment (Scanning the Environment)",
+    "questionText": "A client developed a pressure injury on his sacrum. The wound appears to be a shallow crater involving only partial skin loss with a red pink wound bed. What would the nurse classify the pressure injury as?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Assess and categorize pressure injury based on the pressure injury staging system.",
+    "page": 1325,
+    "heading": "Table 32-3: Staging Pressure Injury",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Safety",
-    "difficulty": "Easy",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Check to make sure the nurse call device is within reach.",
+        "text": "Stage 1",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This would remain a stage 4 pressure ulcer that has healed. Reverse staging is not done because as the ulcer heals with granulation tissue and becomes shallower, the lost muscle, subcutaneous fat, and dermis are not replaced. Pressure ulcers maintain their original staging classification throughout the healing process but are accompanied by the modifier healing."
+      },
+      {
+        "text": "Stage 2",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Reverse staging is not done because as the ulcer heals with granulation tissue and becomes shallower, the lost muscle, subcutaneous fat, and dermis are not replaced. Pressure ulcers maintain their original staging classification throughout the healing process but are accompanied by the modifier healing."
+      },
+      {
+        "text": "Stage 3",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Reverse staging is not done because as the ulcer heals with granulation tissue and becomes shallower, the lost muscle, subcutaneous fat, and dermis are not replaced. Pressure ulcers maintain their original staging classification throughout the healing process but are accompanied by the modifier healing."
+      },
+      {
+        "text": "Stage 4",
         "isCorrect": true,
-        "rationale": "This is correct. When scanning the environment, the nurse should make sure the nurse call device is within reach."
-      },
-      {
-        "text": "Place the bed in the high position.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The bed should be in the low position, not the high position."
-      },
-      {
-        "text": "Keep a food tray in the patient's room for later snacking.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. All odors should be avoided. The food tray should be removed to decrease unpleasant odors."
-      },
-      {
-        "text": "Allow the linens to have a few wrinkles.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The bed linens should be clean and free of wrinkles."
+        "rationale": "This is correct. This remains a stage 4 pressure ulcer that is healing. Reverse staging is not done because as the ulcer heals with granulation tissue and becomes shallower, the lost muscle, subcutaneous fat, and dermis are not replaced. Pressure ulcers maintain their original staging classification throughout the healing process but are accompanied by the modifier healing."
       }
     ]
   },
   {
     "questionNumber": 14,
     "type": "MCQ",
-    "questionText": "A patient admitted with an acute exacerbation of chronic obstructive pulmonary disease has a nursing diagnosis of activity intolerance. Which type of bath is preferred for this patient?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Describe the following types of baths: complete, assist, partial, towel, bag, shower, tub, and therapeutic.",
-    "page": 749,
-    "heading": "Bed Baths and Modified Bed Baths > Towel Bath",
+    "questionText": "What is the most useful tool for delegating pressure injury prevention to unlicensed assistive personnel (UAP)?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Manage the risk of pressure injury.",
+    "page": 1329,
+    "heading": "Assessment > What Assessments Can I Delegate?",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Patient-Centered Care",
-    "difficulty": "Moderate",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Synthesis [Creating]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "Tub bath",
+        "text": "Braden scale",
         "isCorrect": false,
-        "rationale": "This is incorrect. A tub bath may deplete this patient's energy."
+        "rationale": "This is incorrect. The Braden scale and Norton scale are tools for assessing pressure injury risk. Assessment should not be delegated to the UAP."
       },
       {
-        "text": "Complete bed bath",
-        "isCorrect": false,
-        "rationale": "This is incorrect. While a complete bed bath can be used, it is not the best method for a patient who is experiencing an acute exacerbation of respiratory problems."
-      },
-      {
-        "text": "Towel bath",
+        "text": "Turning chart at the bedside",
         "isCorrect": true,
-        "rationale": "This is correct. A towel bath is a modification of the bed bath, in which a large towel and a bath blanket are placed in a plastic bag and saturated with a commercially prepared mixture of moisturizer, nonrinse cleaning agent, and water. The bag and its contents are then placed in the microwave, and they are used to bathe the patient. This bathing method is preferred for patients who have activity intolerance."
+        "rationale": "This is correct. The nurse must provide the UAP with the times for turning and how the client should be positioned at each turn. A turning chart at the bedside is helpful. Turning and movement prevent pressure injuries."
       },
       {
-        "text": "Therapeutic",
+        "text": "At-risk sticker on the patient chart",
         "isCorrect": false,
-        "rationale": "This is incorrect. Therapeutic baths (sitz, oatmeal, coal tar) are given for a specific purpose; for example, to relax muscles or to removes scales and crust from the skin."
+        "rationale": "This is incorrect. Stickers on charts remind staff to implement prevention strategies. However, the nurse must communicate with the UAP. A turning chart at the bedside is the most useful tool for delegating pressure injury prevention to the UAP."
+      },
+      {
+        "text": "Norton scale",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The Braden scale and Norton scale are tools for assessing pressure injury risk. Assessment should not be delegated to the UAP."
       }
     ]
   },
   {
     "questionNumber": 15,
     "type": "MCQ",
-    "questionText": "The school nurse is teaching a group of middle-school students how to prevent tinea pedis. Which remark by a student provides evidence of learning?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Apply the nursing process to common hygiene-related problems of the skin, feet, nails, mouth, hair, eyes, ears, and nose.",
-    "page": 752,
-    "heading": "Common Foot Problems",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Health Promotion and Maintenance",
+    "questionText": "The nurse is providing care to the client who is 2 days post-cerebrovascular accident with residual decreased left-sided mobility. During the assessment, the nurse discovers a stage 1 pressure area on the client's left heel. What is the initial treatment for this pressure ulcer?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Assess and categorize pressure injury based on the pressure injury staging system.",
+    "page": 1323,
+    "heading": "Table 32-3: Staging Pressure Injury",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Infection",
+    "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "'I can contract the infection by walking barefoot in the gymnasium's showers.'",
+        "text": "Antibiotic treatment for 2 weeks",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Antibiotics treat infection; a stage 1 pressure injury is not infected."
+      },
+      {
+        "text": "Normal saline irrigation of the ulcer daily",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Skin of a stage 1 pressure wound is intact but has nonblanching redness; therefore, irrigation is not indicated for stage 1 pressure wounds."
+      },
+      {
+        "text": "Debridement to the left heel",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The area may be painful, firm, soft, or warmer or cooler as compared with adjacent tissue but is not deep enough for debridement and the wound is not open."
+      },
+      {
+        "text": "Elevation of the left heel off the bed",
         "isCorrect": true,
-        "rationale": "This is correct. One can contract the infection by walking barefoot in public showers, such as those in the school's gymnasium."
-      },
-      {
-        "text": "'The best way to avoid contracting the infection is to use good handwashing.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Good handwashing does not prevent a person from contracting tinea pedis."
-      },
-      {
-        "text": "'Wearing unventilated shoes prevents the fungus from gaining contact with my feet.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Wearing unventilated shoes may actually aggravate the infection by allowing moisture to accumulate in the shoes."
-      },
-      {
-        "text": "'There is really no way to prevent its spread; it's a highly contagious scalp infection.'",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Tinea pedis, also called athlete's foot, is not a scalp infection. Pediculosis is the term for infestation by head lice."
+        "rationale": "This is correct. Pressure ulcers are caused by pressure to an area that restricts blood flow, causing ischemia to underlying tissue. The primary treatment is to relieve the pressure, thus improving blood flow. Elevating the client's left heel off the bed would relieve pressure to this area."
       }
     ]
   },
   {
     "questionNumber": 16,
     "type": "MCQ",
-    "questionText": "The nurse is delegating the foot care of a patient with congestive heart failure to the UAP. At which temperature would the nurse tell the UAP to prepare the water?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Demonstrate the nursing skills to promote patient hygiene (such as bathing, foot care, and bed making).",
-    "page": 778,
-    "heading": "Procedure 22-5: Providing Foot Care",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Knowledge [Remembering]",
-    "concept": "Tissue Integrity",
+    "questionText": "The nurse obtains a swab culture from a chronic wound and understands that this may have limited findings. Why is the information obtained from a swab culture of a chronic wound limited?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Review the major complications of wound healing.",
+    "page": 1307,
+    "heading": "What Factors Affect Skin Integrity?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Infection",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "99°F (37.2°C)",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Water temperature of 99°F (37.2°C) is too cold."
-      },
-      {
-        "text": "102°F (38.9°C)",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Water temperature of 102°F (38.9°C) is too cold."
-      },
-      {
-        "text": "103°F (39.4°C)",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Water temperature at 103°F (39.4°C) is too cold."
-      },
-      {
-        "text": "105°F (40.6°C)",
+        "text": "A positive culture does not necessarily indicate infection because chronic wounds are often colonized by bacteria.",
         "isCorrect": true,
-        "rationale": "This is correct. Fill the basin halfway with warm water (approximately 105°F to 110°F [40°C to 43°C]). Warm water promotes circulation."
+        "rationale": "This is correct. The most common and noninvasive method to obtain a culture is with a swab; however, a positive culture may not indicate an infection, as chronic wounds are colonized with bacteria."
+      },
+      {
+        "text": "A negative culture may not indicate infection because chronic wounds are often colonized by bacteria.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Chronic wounds are colonized by bacteria. Bacterial colonization would cause a positive swab culture."
+      },
+      {
+        "text": "Most wound infections are viral, so the swab culture would not be indicative of an infection.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Most wound infections are bacterial, not viral."
+      },
+      {
+        "text": "A swab culture result does not include bacterial sensitivity information necessary to provide treatment.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Swab cultures are sensitive to bacteria. Alternative culture methods should be used when antibiotic-resistant bacteria is suspected."
       }
     ]
   },
   {
     "questionNumber": 17,
     "type": "MCQ",
-    "questionText": "While assessing a patient, the nurse notes that their nails are excessively brittle. What does this finding suggest?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Describe routine assessments to make when providing hygiene care of the skin, feet, nails, mouth, hair, eyes, ears, and nose.",
-    "page": 753,
-    "heading": "Care of the Nails",
+    "questionText": "The nurse is developing a plan of care for the client with a stage 4 pressure injury. What would an appropriate goal/outcome be?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Provide nursing care that limits the risk of pressure injury development.",
+    "page": 1310,
+    "heading": "Skin Integrity and Wound Healing",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Nutrition",
-    "difficulty": "Moderate",
+    "clientNeed": "Safe and Effective Care",
+    "cognitiveLevel": "Synthesis [Creating]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Difficult",
     "options": [
       {
-        "text": "Inadequate dietary intake",
+        "text": "Client skin will remain intact throughout hospitalization.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A stage 4 pressure injury involves full-thickness skin loss with extensive destruction. This outcome is not appropriate because the client's skin is already not intact."
+      },
+      {
+        "text": "Pressure at the pressure injury site will be minimized.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Although appropriate for this client, avoiding pressure at the site of tissue injury is an intervention, not a goal/outcome."
+      },
+      {
+        "text": "Wound will close with no evidence of infection within 6 weeks.",
         "isCorrect": true,
-        "rationale": "This is correct. Inadequate dietary intake or metabolic changes can cause the nails to become brittle."
+        "rationale": "This is correct. This represents an expected goal/outcome."
       },
       {
-        "text": "Normal aging process",
+        "text": "Clients will be repositioned at least every 2 hours.",
         "isCorrect": false,
-        "rationale": "This is incorrect. As a person ages, nails thicken, become ridged, and may yellow or become concave in shape."
-      },
-      {
-        "text": "Periodontal disease",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Periodontal disease (pyorrhea) is the major cause of tooth loss in adults 35 years of age and older. It is an inflammation characterized by bleeding and receding gums and destruction of the surrounding bone structure. It does not cause brittle nails."
-      },
-      {
-        "text": "Pallor",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Pallor in a light-skinned person may appear as pale skin without underlying pink tones. In a dark-skinned person, the nurse should observe for an ashen gray or yellow color. Pallor does not make nails brittle."
+        "rationale": "This is incorrect. Although appropriate for this client, frequent repositioning is an intervention, not a goal/outcome."
       }
     ]
   },
   {
     "questionNumber": 18,
     "type": "MCQ",
-    "questionText": "A patient with a history of seizures who takes phenytoin is at risk for which oral problem?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Describe routine assessments to make when providing hygiene care of the skin, feet, nails, mouth, hair, eyes, ears, and nose.",
-    "page": 755,
-    "heading": "Risk Factors for Oral Problems",
+    "questionText": "The nurse is developing a plan of care for a client who was injured in a motor vehicle accident yesterday. The client is to be sedated for more than 2 weeks while breathing with the assistance of a mechanical ventilator. Which of the following would be an appropriate nursing diagnosis for them at this time?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Provide nursing care that limits the risk of pressure injury development.",
+    "page": 1239,
+    "heading": "Analysis/Nursing Diagnosis",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
+    "clientNeed": "Safe and Effective Care",
+    "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Dryness of the mouth",
+        "text": "Risk for infection related to subcutaneous injuries",
         "isCorrect": false,
-        "rationale": "This is incorrect. Medications such as nifedipine cause dry mouth."
+        "rationale": "This is incorrect. There is no mention of subcutaneous injuries, ruling out risk for infection related to subcutaneous injuries."
       },
       {
-        "text": "Brownish pigmentation of the gums",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Older adult patients can develop brownish pigmentation of the gums from the aging process, not from phenytoin."
-      },
-      {
-        "text": "Demineralization of the tooth enamel",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Phenytoin does not cause demineralization of the tooth enamel. Carbohydrates, like milk, and fruit juice in a baby bottle can lead to demineralization of the tooth enamel, causing 'baby-bottle tooth decay.'"
-      },
-      {
-        "text": "Gingival hyperplasia",
+        "text": "Risk for impaired skin integrity related to immobility",
         "isCorrect": true,
-        "rationale": "This is correct. Phenytoin causes gingival hyperplasia."
+        "rationale": "This is correct. This client is at risk for impaired skin integrity because they are being kept in a sedated state. Thus, they are unable to turn themself to relieve pressure."
+      },
+      {
+        "text": "Impaired tissue integrity related to ventilator dependency",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Impaired tissue integrity has no supporting evidence for this nursing diagnosis."
+      },
+      {
+        "text": "Impaired skin integrity related to ventilator dependency",
+        "isCorrect": false,
+        "rationale": "This is incorrect. There is no supporting evidence for impaired skin integrity."
       }
     ]
   },
   {
     "questionNumber": 19,
     "type": "MCQ",
-    "questionText": "The nurse has been teaching a student how to perform mouth care for an unconscious patient. The student shows evidence of understanding when they place the patient in which of the following positions?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Apply the nursing process to common hygiene-related problems of the skin, feet, nails, mouth, hair, eyes, ears, and nose.",
-    "page": 784,
-    "heading": "Procedure 22-8: Providing Oral Care for an Unconscious Patient",
-    "integratedProcesses": "Teaching and Learning",
-    "clientNeed": "Safe and Effective Care Environment: Management of Care",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Safety",
+    "questionText": "The nurse is assessing the client's wound and notes that the wound bed shows granulation. What phase of wound healing is described by the nurse's note?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Describe the three phases of wound healing.",
+    "page": 1313,
+    "heading": "Wounds: Phases of Healing",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Supine",
+        "text": "Hemostasis",
         "isCorrect": false,
-        "rationale": "This is incorrect. The supine position can cause the patient to aspirate."
+        "rationale": "This is incorrect. Hemostasis is a component of the inflammation phase. At the time of injury, tissue and capillaries are destroyed, causing blood and plasma to leak into the wound. Area vessels constrict to limit blood loss. Platelets aggregate (clump together) to slow bleeding. At the same time, the clotting mechanism is activated to form a blood clot."
       },
       {
-        "text": "Prone",
+        "text": "Inflammation",
         "isCorrect": false,
-        "rationale": "This is incorrect. The prone position does not allow for easy access to the mouth."
+        "rationale": "This is incorrect. The inflammatory reaction is characterized by edema, erythema, pain, temperature elevation, and migration of white blood cells into the wound tissues. Within 24 hours, macrophages begin engulfing bacteria (phagocytosis) and clearing debris. Along with plasma proteins and fibrin, they form a scab on the wound surface, which seals the wound and helps prevent microbial invasion."
       },
       {
-        "text": "Semi-Fowler's",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The semi-Fowler's position can lead to aspiration."
-      },
-      {
-        "text": "Side-lying",
+        "text": "Proliferative",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should position an unconscious patient in the side-lying position to prevent aspiration while providing mouth care."
+        "rationale": "This is correct. In the proliferation phase, granulation, also called regeneration or healing, occurs from days 5 to 21. Cells develop to fill the wound defect and resurface the skin. Fibroblasts (connective tissue cells) migrate to the wound where they form collagen, a protein substance that adds strength to the healing wound. New blood and lymph vessels sprout from the existing capillaries at the edge of the wound. The result is the formation of granulation tissue, a beefy red tissue that bleeds readily and is easily damaged. As the clot or scab is dissolved, epithelial cells begin to grow into the wound from surrounding healthy tissue and seal over the wound (epithelialization)."
+      },
+      {
+        "text": "Maturation",
+        "isCorrect": false,
+        "rationale": "This is incorrect. In the maturation phase, epithelialization is the final stage of the healing process. Also known as remodeling, this phase begins in the second or third week and continues even after the wound has closed. During the next 3 to 6 months, the initial collagen fibers that were laid in the wound bed during the proliferation phase are broken down and remodeled into an organized structure (e.g., scar tissue), increasing the tensile strength of the wound."
       }
     ]
   },
   {
     "questionNumber": 20,
     "type": "MCQ",
-    "questionText": "After receiving a course of chemotherapy, a patient begins losing hair. This adverse effect of chemotherapy should be documented as:",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Describe routine assessments to make when providing hygiene care of the skin, feet, nails, mouth, hair, eyes, ears, and nose.",
-    "page": 759,
-    "heading": "Analysis/Nursing Diagnosis (Hair)",
+    "questionText": "The nurse is reviewing the chart of a client. The nurse reads the following documentation: 'healing stage 3 pressure injury to client's right hip with 100% granulation tissue in wound bed, moderate serous drainage noted, surrounding skin intact.' What is the most important information missing from this documentation?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Accurately chart an assessment of a wound.",
+    "page": 1326,
+    "heading": "Assessment Chronic Wounds > Focused on Physical Examination",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Cellular Regulation",
+    "clientNeed": "Management of Care",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Pediculosis.",
+        "text": "Periwound slightly macerated",
         "isCorrect": false,
-        "rationale": "This is incorrect. Pediculosis is infestation of head lice."
+        "rationale": "This is incorrect. The documentation states 'surrounding skin intact' and thus has included a periwound assessment."
       },
       {
-        "text": "Alopecia.",
+        "text": "3 x 2 cm",
         "isCorrect": true,
-        "rationale": "This is correct. Alopecia is abnormal hair loss that can occur as a result of chemotherapy."
+        "rationale": "This is correct. Size is the most important information missing from this documentation. Serial photographs showing the wound's dimensions are useful in documenting baseline and wound healing."
       },
       {
-        "text": "Dandruff.",
+        "text": "Malodorous",
         "isCorrect": false,
-        "rationale": "This is incorrect. Dandruff is a condition in which there is excessive shedding of the epidermal layer of the scalp."
+        "rationale": "This is incorrect. Documenting whether or not an odor was noted can add important clues about the state of the wound, but it is not the most important information missing. Size is the most important information missing from this documentation."
       },
       {
-        "text": "Vellus hair.",
+        "text": "Client tolerated dressing change well",
         "isCorrect": false,
-        "rationale": "This is incorrect. Vellus hair is the short, fine hair present over much of the body."
+        "rationale": "This is incorrect. Documenting pain and comfort level associated with wounds and dressing changes provides important information that should be documented. However, size is the most important information missing from this document."
       }
     ]
   },
   {
     "questionNumber": 21,
     "type": "MCQ",
-    "questionText": "Which action would the nurse take when removing and cleaning a hearing aid?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Demonstrate care of the eyes, ears, and teeth, including glasses, contacts, hearing aids, and dentures.",
-    "page": 795,
-    "heading": "Procedure 22-14: Caring for Hearing Aids",
-    "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Basic Care and Comfort",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Sensory Perception",
+    "questionText": "Which of the following would be the most appropriate outcome for the client with an open stage 2 pressure injury?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Provide nursing care that limits the risk of pressure injury development.",
+    "page": 1331,
+    "heading": "Planning Outcomes/Evaluation",
+    "integratedProcesses": "Communication and Documentation",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
     "difficulty": "Difficult",
     "options": [
       {
-        "text": "Wash only the external surfaces, not the canal portion.",
+        "text": "The wound is completely healed without scarring.",
         "isCorrect": false,
-        "rationale": "This is incorrect. The external surfaces are cleaned with a damp cloth, not washed, and the canal portion should be cleaned."
+        "rationale": "This is incorrect. An open stage 2 pressure injury heals by secondary intention. Wounds that heal by secondary intention heal more slowly, are more prone to infection, and develop more scar tissue."
       },
       {
-        "text": "Clean the top part of the canal portion of the device.",
+        "text": "The wound will be completely healed within 14 days.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The final phase of the healing process, maturation phase, begins 2 to 3 weeks after injury and continues over 3 to 6 months. A goal of complete healing in 2 weeks is not realistic."
+      },
+      {
+        "text": "The wound remains free of scab.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Development of a scab is a normal and expected part of the inflammation process. It seals the wound and prevents microbial invasion. The scab is then replaced by epithelial cells during the proliferative phase of wound healing."
+      },
+      {
+        "text": "The wound bed contains 100% granulated tissue.",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should clean the top part of the canal portion of the hearing aid by using the wax loop and wax brush, cotton-tipped applicator, pipe cleaner, or toothpick."
-      },
-      {
-        "text": "Insert a wax loop or toothpick into the hearing aid itself.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Nothing should be inserted into the hearing aid."
-      },
-      {
-        "text": "Gently submerge the hearing aid in warm water.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The hearing aid should never be placed in water."
+        "rationale": "This is correct. A wound bed with 100% granulation tissue indicates healing. This is an appropriate outcome."
       }
     ]
   },
   {
     "questionNumber": 22,
     "type": "MCQ",
-    "questionText": "The patient is sitting in a chair at the bedside. The nurse is preparing to remove the patient's artificial eye. What should the nurse ask the patient to do to best position them for this procedure?",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Demonstrate care of the eyes, ears, and teeth, including glasses, contacts, hearing aids, and dentures.",
-    "page": 794,
-    "heading": "Procedure 22-13: Caring for Artificial Eyes",
+    "questionText": "The nurse is preparing to perform a dressing change on a tunneling wound. The wound is located on the client's right hip, with tunneling at the 8 o'clock position, extending 5 cm. The wound is draining large amounts of serosanguinous fluid and contains 100% red beefy tissue in the wound bed. Of the following, which would be an appropriate dressing choice?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Discuss when and how to use absorbent, alginate, collagen, gauze dressings, transparent films, hydrocolloids, hydrogels, and foam and antimicrobial dressings.",
+    "page": 1336,
+    "heading": "Table 32-5: Types of Wound Dressings",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Safe and Effective Care Environment: Basic Care and Comfort",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Sensory Perception",
+    "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Lean forward and rest the arms on the overbed table.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Leaning forward and resting the arms on an overbed table would not provide the nurse access to the eye to remove the prosthesis."
-      },
-      {
-        "text": "Sit back in the chair and tilt the head back.",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Sitting back in the chair would allow access to the eye but would not protect the artificial eye from falling to the floor."
-      },
-      {
-        "text": "Move to the bed and lie down.",
+        "text": "Alginate dressing",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse should have the patient lie down so that if the eye is dropped when removing it, it will fall on the bed instead of the floor."
+        "rationale": "This is correct. Alginates are highly absorbent and are appropriate for wounds with moderate to large amounts of drainage. They are ideal for wounds with tunneling, as they will conform to fill the tunnel."
       },
       {
-        "text": "Stand up and lean over the bed.",
+        "text": "Dry gauze dressing",
         "isCorrect": false,
-        "rationale": "This is incorrect. Standing up and leaning over the bed would not provide the nurse access to the eye to remove the prosthesis."
+        "rationale": "This is incorrect. Gauze and hydrocolloids have limited absorptive ability. Gauze could adhere to the wound bed and cause trauma when removed."
+      },
+      {
+        "text": "Hydrogel",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A hydrogel would increase the drainage, with the potential of macerating surrounding skin."
+      },
+      {
+        "text": "Hydrocolloid dressing",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Hydrocolloids have limited absorptive ability. A hydrogel would increase the drainage, with the potential of macerating surrounding skin."
       }
     ]
   },
   {
     "questionNumber": 23,
-    "type": "SATA",
-    "questionText": "Which areas should the nurse inspect when assessing for cyanosis in a dark-skinned patient? Select all that apply.",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Describe routine assessments to make when providing hygiene care of the skin, feet, nails, mouth, hair, eyes, ears, and nose.",
-    "page": 741,
-    "heading": "Focused Assessment (Skin) > Objective Data",
-    "integratedProcesses": "Culture and Spirituality",
-    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
-    "cognitiveLevel": "Comprehension [Understanding]",
-    "concept": "Oxygenation",
-    "difficulty": "Difficult",
+    "type": "MCQ",
+    "questionText": "The nurse is preparing to perform wound irrigation. Which of the following is the best choice for performing wound irrigation?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Demonstrate appropriate techniques for irrigating a wound.",
+    "page": 1348,
+    "heading": "Procedure 32-2: Performing a Sterile Wound Irrigation",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care Environment: Safety and Infection Control",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
     "options": [
       {
-        "text": "Buccal mucosa",
-        "isCorrect": true,
-        "rationale": "This is correct. In dark-skinned people, cyanosis can be best assessed by examining the buccal mucosa."
-      },
-      {
-        "text": "Around the lips",
+        "text": "Sterile water irrigation",
         "isCorrect": false,
-        "rationale": "This is incorrect. In light-skinned people, the area around the lips can be inspected."
+        "rationale": "This is incorrect. Normal saline is the most commonly used wound irrigation solution. Sterile water may also be used when other solutions are not available, but this is not the best answer."
       },
       {
-        "text": "Palms",
+        "text": "35-mL syringe with a 19-gauge angiocatheter",
         "isCorrect": true,
-        "rationale": "This is correct. In dark-skinned people, the palms of the hands or the soles of the feet can be used to assess for cyanosis."
+        "rationale": "This is correct. A 35-mL syringe with a 19-gauge angiocatheter is the best choice for irrigation because it will deliver the irrigation solution at approximately 8 psi."
       },
       {
-        "text": "Tongue",
-        "isCorrect": true,
-        "rationale": "This is correct. The tongue can be used in dark-skinned people to assess for cyanosis."
-      },
-      {
-        "text": "Sclera",
+        "text": "5-mL syringe with a 23-gauge needle",
         "isCorrect": false,
-        "rationale": "This is incorrect. Jaundice, not cyanosis, can be detected in the sclera of the eyes."
+        "rationale": "This is incorrect. Using a smaller syringe and smaller-gauge needle delivers pressures above 15 psi and increases the risk of driving bacteria into the tissues, disturbing granulation tissue, and can cause pain."
+      },
+      {
+        "text": "Clean bulb syringe and canister",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A bulb syringe is not advised because it increases the risk of aspirating the drainage and disrupting healing granulation tissue."
       }
     ]
   },
   {
     "questionNumber": 24,
-    "type": "SATA",
-    "questionText": "Which of the following are the benefits of bathing? Select all that apply.",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Explain how personal hygiene relates to health and well-being.",
-    "page": 749,
-    "heading": "Planning Interventions/Implementation (Skin) > Bathing",
+    "type": "MCQ",
+    "questionText": "The nurse is preparing to provide wound care to a client with many open wounds. Which of the following actions would be the most appropriate method for dressing changes of multiple open wounds that require treatment?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Review the major complications of wound healing.",
+    "page": 1352,
+    "heading": "Procedure 32-4: Removing and Applying Dry Dressings",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
-    "cognitiveLevel": "Knowledge [Remembering]",
+    "clientNeed": "Safe and Effective Care",
+    "cognitiveLevel": "Synthesis [Creating]",
     "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Constricts blood vessels",
+        "text": "Remove all of the soiled dressings before beginning wound treatment.",
         "isCorrect": false,
-        "rationale": "This is incorrect. Bathing dilates (not constricts) blood vessels near the skin's surface, increasing circulation."
+        "rationale": "This is incorrect. This would leave all of the wounds open to contamination during a dressing change."
       },
       {
-        "text": "Increases depth of respirations",
+        "text": "Cleanse wounds from the most contaminated area to the least contaminated area.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Treat the least contaminated wound first, then progress to the most contaminated. Wash hands and change gloves between each wound."
+      },
+      {
+        "text": "Treat wounds on the client's side first and then the front and back of the client.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. There is not enough information to describe the placement of the wounds."
+      },
+      {
+        "text": "Irrigate wounds from the least contaminated area to the most contaminated area.",
         "isCorrect": true,
-        "rationale": "This is correct. Bathing stimulates the depth of respirations."
-      },
-      {
-        "text": "Provides opportunity for assessments",
-        "isCorrect": true,
-        "rationale": "This is correct. Bathing presents an opportunity to perform a variety of assessments."
-      },
-      {
-        "text": "Reduces sensory input",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Bathing provides (not reduces) sensory input."
-      },
-      {
-        "text": "Prevents buildup of plaque",
-        "isCorrect": false,
-        "rationale": "This is incorrect. Plaque, an invisible bacterial film that builds up on teeth, eventually leads to destruction of the tooth enamel and is decreased with brushing teeth, not bathing."
+        "rationale": "This is correct. Treat the least contaminated wound first, then progress to the most contaminated. Wash hands and change gloves between each wound."
       }
     ]
   },
   {
     "questionNumber": 25,
-    "type": "SATA",
-    "questionText": "For which patients should the nurse avoid using back massage? Select all that apply.",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Identify the factors influencing personal hygiene practices.",
-    "page": 749,
-    "heading": "Planning Interventions/Implementation (Skin) > Back Massage",
+    "type": "MCQ",
+    "questionText": "A client is post-abdominal surgery. The incision has been closed by primary intention, and the staples are intact. To provide more support to the incision site and decrease the risk of dehiscence, it would be appropriate to apply which of the following?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Demonstrate bandage and binder application.",
+    "page": 1315,
+    "heading": "Types of Healing",
     "integratedProcesses": "Nursing Process",
     "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
     "cognitiveLevel": "Application [Applying]",
-    "concept": "Patient-Centered Care",
-    "difficulty": "Moderate",
+    "concept": "Tissue Integrity",
+    "difficulty": "Easy",
     "options": [
       {
-        "text": "One who underwent heart surgery 2 days ago",
+        "text": "Steri-Strips",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Steri-Strips would not be needed for an approximated incision that has intact staples or sutures."
+      },
+      {
+        "text": "Abdominal binder",
         "isCorrect": true,
-        "rationale": "This is correct. The nurse would avoid a back massage in this patient. Back massage is contraindicated in a patient who underwent heart surgery 2 days ago."
+        "rationale": "This is correct. An abdominal binder provides added support to an incision site and decreases the risk of wound dehiscence."
       },
       {
-        "text": "One who sustained rib fractures from a fall",
-        "isCorrect": true,
-        "rationale": "This is correct. The nurse would avoid performing a back massage on this patient. Back massages are contraindicated in a patient with fractured ribs."
-      },
-      {
-        "text": "One who has heartburn",
+        "text": "T-binder",
         "isCorrect": false,
-        "rationale": "This is incorrect. A back massage is allowed on a patient who has heartburn."
+        "rationale": "This is incorrect. A T-binder is used in the perineal area."
       },
       {
-        "text": "One who sustained a leg fracture in a sledding accident",
+        "text": "Paper tape",
         "isCorrect": false,
-        "rationale": "This is incorrect. Massage is acceptable for the patient with a leg fracture."
-      },
-      {
-        "text": "One who has a backache",
-        "isCorrect": false,
-        "rationale": "This is incorrect. The nurse would provide a massage to a patient who has a backache."
+        "rationale": "This is incorrect. Paper tape would not be needed for an approximated incision that has intact staples or sutures."
       }
     ]
   },
   {
     "questionNumber": 26,
-    "type": "SATA",
-    "questionText": "Which of the following are common etiologies that contribute to a patient's self-care deficit, meaning they are unable to perform one or more ADLs, such as bathing and toileting? Select all that apply.",
-    "chapter": "Chapter 22: Facilitating Hygiene",
-    "objective": "Discuss the nurse's role in determining a client's self-care ability.",
-    "page": 739,
-    "heading": "How Does Health Status Affect Self-Care Ability? > Practical Knowledge: Knowing How > Client Condition: Hygiene Self-Care Deficit",
+    "type": "MCQ",
+    "questionText": "A client has an area of nonblanchable erythema on his coccyx. The nurse has determined this to be a stage 1 pressure ulcer. What would be the most important treatment for this client?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Discuss when and how to use absorbent, alginate, collagen, gauze dressings, transparent films, hydrocolloids, hydrogels, and foam and antimicrobial dressings.",
+    "page": 1322,
+    "heading": "Example Problem: Pressure Injury",
     "integratedProcesses": "Nursing Process",
-    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Patient-Centered Care",
+    "clientNeed": "Safe and Effective Care",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Tissue Integrity",
     "difficulty": "Moderate",
     "options": [
       {
-        "text": "Pain",
-        "isCorrect": true,
-        "rationale": "This is correct. Pain is a common etiology for being unable to perform appropriate self-care."
+        "text": "Transparent film dressing",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A stage 1 pressure injury is not an open wound. Therefore a transparent film dressing is not indicated."
       },
       {
-        "text": "Fatigue and decreased strength and endurance",
-        "isCorrect": true,
-        "rationale": "This is correct. Fatigue and decreased strength and endurance are common etiologies for being unable to perform appropriate self-care."
+        "text": "Hydrogel",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Hydrogel dressings are appropriate for wounds with small amounts of draining. They may also protect skin at risk for breakdown. However, this is not the most appropriate intervention."
       },
       {
-        "text": "Lack of knowledge",
+        "text": "Frequent turn schedule",
         "isCorrect": true,
-        "rationale": "This is correct. Lack of knowledge is a common etiology for being unable to perform appropriate self-care."
+        "rationale": "This is correct. The client should be placed on a turn schedule to relieve the pressure. If pressure is not relieved, the pressure injury will progress."
       },
       {
-        "text": "Medication side effects",
-        "isCorrect": true,
-        "rationale": "This is correct. Medication side effects, for example drowsiness, is a common etiology for being unable to perform appropriate self-care."
+        "text": "Enzymatic debridement",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Enzymatic debridement is used to remove slough or eschar in an open wound."
+      }
+    ]
+  },
+  {
+    "questionNumber": 27,
+    "type": "MCQ",
+    "questionText": "The nurse is preparing to apply cold therapy to a wound. In which case is this not appropriate?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Describe guidelines to follow when applying heat or cold therapy.",
+    "page": 1344,
+    "heading": "Clinical Insight 32-1: Applying Local Heat Therapy",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "An 8-year-old patient post-tonsillectomy",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Cold therapy is appropriate to prevent swelling after surgery. An ice collar may be applied to the throat after a tonsillectomy."
       },
       {
-        "text": "Lack of motivation",
+        "text": "A 24-year-old patient 12 hours post-vaginal delivery",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Cold therapy is appropriate after vaginal delivery. An ice bag may be applied to the perineum after childbirth."
+      },
+      {
+        "text": "A 92-year-old patient on antihypertensives",
         "isCorrect": true,
-        "rationale": "This is correct. Lack of motivation, when the patient simply doesn't want to do it, is a common etiology for being unable to perform appropriate self-care."
+        "rationale": "This is correct. Cold therapy is not appropriate in clients with elevated blood pressure. Cold causes vasoconstriction and cold therapy may increase blood pressure."
+      },
+      {
+        "text": "A 36-year-old male waiting on an x-ray of the right ankle",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Cold therapy is appropriate to treat musculoskeletal injuries. A client waiting on an x-ray of the right ankle is likely being evaluated for a sprain, strain, or fracture."
+      }
+    ]
+  },
+  {
+    "questionNumber": 28,
+    "type": "MCQ",
+    "questionText": "The nurse is preparing to provide care to the client who has a contaminated right hip wound that requires dressing changes twice daily. The surgeon informs the nurse that when the wound 'heals a little more,' they will suture it closed. The nurse recognizes that the surgeon is using which form of wound healing?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Demonstrate bandage and binder application.",
+    "page": 1312,
+    "heading": "Wound Healing Process > Types of Healing",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Reduction of Risk Potential",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Primary intention",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Primary intention healing occurs when a wound involves minimal or no tissue loss and has edges that are well approximated (closed). Little scarring is expected. A clean surgical incision heals by this method. Even so, a scar is only 80% as strong as the original tissue."
+      },
+      {
+        "text": "Regenerative healing",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Regenerative/epithelial healing occurs when a wound affects only the epidermis and dermis. No scar forms and the new (regenerated) epithelial and dermal cells form new skin that cannot be distinguished from the intact skin. Partial-thickness wounds heal by regeneration."
+      },
+      {
+        "text": "Secondary intention",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Secondary intention healing occurs when a wound (1) involves extensive tissue loss, which prevents wound edges from approximating (coming together), or (2) should not be closed (e.g., because it is infected). Because the wound is left open, it heals from the inner layer to the surface by filling in with beefy red granulation tissue (a form of connective tissue with an abundant blood supply). Epithelial tissue may appear in the wound as small pink or pearl-like areas."
+      },
+      {
+        "text": "Tertiary intention",
+        "isCorrect": true,
+        "rationale": "This is correct. Tertiary intention is used when a wound is clean-contaminated or 'dirty' (potentially infected). Initially, the wound can heal by secondary intention, and when there is no evidence of edema, infection, or foreign matter, granulating tissue is brought together, and the wound edges are sutured closed."
+      }
+    ]
+  },
+  {
+    "questionNumber": 29,
+    "type": "MCQ",
+    "questionText": "The nurse is reviewing a wound care nurse's narrative note that states there is a fistula in the lower abdominal wall as a result of a poorly healing surgical wound. What is a common cause of a fistula?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Review the major complications of wound healing.",
+    "page": 1316,
+    "heading": "Complications of Wound Healing > Integrated Processes",
+    "integratedProcesses": "",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Ischemic pressure to a bony prominence",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This describes the etiology of a pressure injury."
+      },
+      {
+        "text": "Diminished venous return to the site",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This describes the etiology of a venous stasis ulcer, not a fistula."
+      },
+      {
+        "text": "Abscess formation from infection or debris",
+        "isCorrect": true,
+        "rationale": "This is correct. A fistula is an abnormal passage connecting two body cavities or a cavity and the skin. Fistulas often result from infection or debris left in the wound. An abscess forms, which breaks down surrounding tissue and creates the abnormal passageway. Chronic drainage from the fistula may lead to skin breakdown and delayed wound healing. The most common sites of fistula formation are the gastrointestinal and genitourinary tracts."
+      },
+      {
+        "text": "Abnormal straining over the incisional site",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This describes a wound dehiscence. The client may cough or strain and feel a 'pop' followed by an opening forming in the incision."
+      }
+    ]
+  },
+  {
+    "questionNumber": 30,
+    "type": "MCQ",
+    "questionText": "Which of the following clients does the nurse recognize as being at greatest risk for pressure injury?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Use the Braden scale to assess risk for pressure injury.",
+    "page": 1330,
+    "heading": "The Braden Scale for Predicting Pressure Sore Risk",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "An infant with skin excoriations in the diaper region",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The infant with disruption to the skin is at risk for infection, not a pressure injury."
+      },
+      {
+        "text": "A young adult with diabetes in skeletal traction",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A young client with diabetes is at increased risk for delayed wound healing, but not a pressure injury. A young client is likely to reposition independently in response to discomfort or pressure on bony sites."
+      },
+      {
+        "text": "A middle-aged adult with quadriplegia",
+        "isCorrect": true,
+        "rationale": "This is correct. The client at greatest risk for pressure sores is the one with impaired sensory perception at the site (e.g., quadriplegia)."
+      },
+      {
+        "text": "An older adult requiring use of assistive device for ambulation",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The older adult is normally at risk for pressure injury, but when mobile, even with an assistive device, the risk is minimal."
+      }
+    ]
+  },
+  {
+    "questionNumber": 31,
+    "type": "MCQ",
+    "questionText": "The nurse working in the emergency department is preparing heat therapy for one of the clients in the unit. Which one is it most likely to be?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Demonstrate bandage and binder application.",
+    "page": 1341,
+    "heading": "Using Heat and Cold Therapy",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity: Basic Care and Comfort",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "The client who is actively bleeding",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Applying heat promotes vasodilation and reduces blood thickness (viscosity) and leaky capillaries, all of which would be harmful to the client who is actively bleeding. It can lead to a drop in blood pressure."
+      },
+      {
+        "text": "The client who has a swollen, tender insect bite",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Heat should not be applied to a site with inflammation (insect bite) because it can increase edema to the site."
+      },
+      {
+        "text": "The client who has just sprained their ankle",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Heat should not be applied to a site with inflammation (acute joint injury with swelling) because it can increase edema to the site."
+      },
+      {
+        "text": "The client who has lower back pain",
+        "isCorrect": true,
+        "rationale": "This is correct. Heat therapy is used to relieve stiffness and discomfort commonly associated with musculoskeletal soreness. Heat causes dilation of the blood vessels and improves delivery of oxygen and nutrients to the tissues. It promotes relaxation and is used to aid in the healing process."
+      }
+    ]
+  },
+  {
+    "questionNumber": 32,
+    "type": "MCQ",
+    "questionText": "The nurse assesses assigned clients and determines which of the following has the highest risk for altered skin integrity?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Discuss the factors that affect skin integrity.",
+    "page": 1331,
+    "heading": "Analysis/Nursing Diagnosis",
+    "integratedProcesses": "Tissue Integrity",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Synthesis [Creating]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Difficult",
+    "options": [
+      {
+        "text": "A young adult in traction who has a low-protein diet and dehydration",
+        "isCorrect": true,
+        "rationale": "This is correct. The young adult client in traction has multiple risk factors, including immobility, dehydration, and inadequate protein intake. Healthy skin depends on adequate protein levels to maintain the skin, repair minor defects, and preserve intravascular volume. Therefore, this client is at greatest risk for altered skin integrity."
+      },
+      {
+        "text": "An older client diagnosed with well-controlled type 2 diabetes",
+        "isCorrect": false,
+        "rationale": "This is incorrect. An elderly client with well-controlled diabetes has only one risk factor, and therefore is not at highest risk among the group of clients in the scenario."
+      },
+      {
+        "text": "A middle-aged adult with metabolic syndrome taking antihypertensives",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The middle-aged adult with metabolic syndrome, which involves obesity, hyperlipidemia, and hypertension, has compromised health, although not necessarily compromised skin integrity-unless the client were immobile, which they are not."
+      },
+      {
+        "text": "An adolescent in bed with influenza, having periods of high fever and diaphoresis",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Although fever and skin moisture can compromise skin integrity, the adolescent's condition is likely transient."
+      }
+    ]
+  },
+  {
+    "questionNumber": 33,
+    "type": "MCQ",
+    "questionText": "The nurse assesses the surrounding skin of the client's colostomy. The client has been incorrectly applying his ostomy appliance, which caused a wound due to the continuous contact with liquid stool. The nurse notes bleeding and purulent drainage that has extended to the connective and adipose tissues. How will the nurse classify and document this contaminated wound?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Differentiate the kinds of chronic wounds.",
+    "page": 1326,
+    "heading": "Assessment > Assessment Guidelines and Tools, Physical Examination > Wound Assessment",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Acute, full thickness, open",
+        "isCorrect": true,
+        "rationale": "This is correct. The wound is acute because it developed recently. The wound is full thickness because it involves subcutaneous tissue."
+      },
+      {
+        "text": "Chronic, partial thickness, closed",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The wound is open because it was bleeding, so the skin must be broken. The wound is contaminated because it is exposed to stool and appears to be infected."
+      },
+      {
+        "text": "Acute, partial thickness, closed",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The wound is open and full thickness due to involvement of subcutaneous tissue."
+      },
+      {
+        "text": "Chronic, unstageable, open",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This is a new wound, not chronic, and stageable as it involves subcutaneous tissue."
+      }
+    ]
+  },
+  {
+    "questionNumber": 34,
+    "type": "MCQ",
+    "questionText": "The nurse caring for a patient who is 24 hours post-op after a major abdominal surgery is assessing the operative site. The nurse observes internal viscera protruding through the incision site. The nurse acts quickly and should complete all of the following, except:",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Distinguish primary intention healing, secondary intention healing, and tertiary intention healing.",
+    "page": 1316,
+    "heading": "Complications of Wound Healing",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Covering the wound with a sterile saline dressing.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Evisceration is a rare complication and a surgical emergency. The nurse should immediately cover the wound with dressings soaked in sterile saline to prevent the organs from drying out and becoming contaminated with environmental bacteria."
+      },
+      {
+        "text": "Putting a binder on the patient.",
+        "isCorrect": true,
+        "rationale": "This is correct. Should the client report a 'pop' or tear and the nurse identifies an immediate increase in serosanguineous drainage, the nurse would apply a binder to prevent evisceration. The nurse in this scenario observes internal viscera protruding through the incision site, indicating evisceration. A binder should not be applied in this scenario."
+      },
+      {
+        "text": "Immediately notifying the surgeon.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Evisceration is a rare complication and a surgical emergency. The nurse should immediately notify the surgeon and prepare the patient for surgery."
+      },
+      {
+        "text": "Having the patient bend their knees and remain in bed.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Evisceration is a rare complication and a surgical emergency. The nurse should have the patient stay in bed with knees bent to minimize strain on the incision."
+      }
+    ]
+  },
+  {
+    "questionNumber": 35,
+    "type": "MCQ",
+    "questionText": "The nurse in the emergency department admits a client with a gunshot wound to the lower abdomen accompanied by heavy bleeding. What type of drainage does the nurse expect to see on the dressing?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Identify wounds based on accepted classification schemes.",
+    "page": 1315,
+    "heading": "Types of Wound Drainage",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Serous",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Serous drainage is clear, faintly yellow drainage. Serous drainage occurs when there is inflammation, such as with a burn injury."
+      },
+      {
+        "text": "Sanguineous",
+        "isCorrect": true,
+        "rationale": "This is correct. Sanguineous drainage contains blood, which would be expected from a wound with active bleeding."
+      },
+      {
+        "text": "Purosanguineous",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Purosanguineous fluid contains pus, which occurs with infection. This client has a wound from an acute injury. Although infection risk is high with gunshot wounds, infection generally takes 2 or more days to occur."
+      },
+      {
+        "text": "Purulent",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Purulent drainage indicates infection. This wound is too recent to demonstrate infection."
+      }
+    ]
+  },
+  {
+    "questionNumber": 36,
+    "type": "MCQ",
+    "questionText": "An adult client is fully able to detect and respond to pain and discomfort. They have no incontinence or mobility limitations. They are of normal weight and consume a nutritious diet. The client has no problem with rubbing, friction, or shear. What is the Braden score for this client?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Use the Braden scale to assess risk for pressure injury.",
+    "page": 1330,
+    "heading": "The Braden Scale for Predicting Pressure Sore Risk",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "10",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The Braden scale evaluates six major risk factors: sensory perception, moisture, activity, mobility, nutrition, and friction and sheer. Each category is rated on a scale of 1 to 4, excluding the friction and shear, which is rated on a scale of 1 to 3. The final score reflects the client's risk: the lower the score, the more likely it is that the client will develop a pressure ulcer."
+      },
+      {
+        "text": "15",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The Braden scale evaluates six major risk factors: sensory perception, moisture, activity, mobility, nutrition, and friction and sheer. Each category is rated on a scale of 1 to 4, excluding the friction and shear, which is rated on a scale of 1 to 3. The final score reflects the client's risk: the lower the score, the more likely it is that the client will develop a pressure ulcer."
+      },
+      {
+        "text": "20",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The Braden scale evaluates six major risk factors: sensory perception, moisture, activity, mobility, nutrition, and friction and sheer. Each category is rated on a scale of 1 to 4, excluding the friction and shear, which is rated on a scale of 1 to 3. The final score reflects the client's risk: the lower the score, the more likely it is that the client will develop a pressure ulcer."
+      },
+      {
+        "text": "23",
+        "isCorrect": true,
+        "rationale": "This is correct. The Braden scale evaluates six major risk factors: sensory perception, moisture, activity, mobility, nutrition, and friction and sheer. Each category is rated on a scale of 1 to 4, excluding the friction and shear, which is rated on a scale of 1 to 3. The final score reflects the client's risk: the lower the score, the more likely it is that the client will develop a pressure ulcer. The client receives 4 points for sensory perception, moisture, activity, mobility, and nutrition and 3 points for friction and shear, making a total of 23 points, which is a perfect score."
+      }
+    ]
+  },
+  {
+    "questionNumber": 37,
+    "type": "MCQ",
+    "questionText": "The nurse admits an older adult client to the long-term care facility. When assessing for pressure injury risk, what should the nurse do after conducting the Braden scale assessment?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Provide nursing care that limits the risk of pressure injury development.",
+    "page": 1330,
+    "heading": "The Braden Scale for Predicting Pressure Sore Risk",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Difficult",
+    "options": [
+      {
+        "text": "Apply transparent film dressings to buttocks.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Application of barrier products, such as transparent film dressing, prior to a thorough and accurate assessment of need is premature and possibly not needed."
+      },
+      {
+        "text": "Reassess by using the Braden Q scale.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The Braden Q scale is used to assess pressure ulcer risk in children. Massaging the area over bony prominences could irritate the skin and lead to injury."
+      },
+      {
+        "text": "Conduct another assessment in 3 days.",
+        "isCorrect": true,
+        "rationale": "This is correct. The initial Braden scale assessment should be repeated in 48 to 72 hours to establish an accurate baseline."
+      },
+      {
+        "text": "Massage areas over the bony prominences.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Massaging the area over bony prominences could irritate the skin and lead to injury."
+      }
+    ]
+  },
+  {
+    "questionNumber": 38,
+    "type": "MCQ",
+    "questionText": "The client has ulcerations over the medial calf of the right leg. The surrounding skin is reddened. There is a moderate amount of fluid drainage. The client takes anticoagulants because of recurrent deep vein thrombosis. They also report a sedentary lifestyle. How would this chronic wound be classified?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Differentiate the kinds of chronic wounds.",
+    "page": 1311,
+    "heading": "Table 32-1: Types of Wounds",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Easy",
+    "options": [
+      {
+        "text": "Pressure injury",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A pressure ulcer is unlikely to develop on the medial side of the calf because it is neither a bony area nor one that is likely to be an area where there is pressure."
+      },
+      {
+        "text": "Venous stasis ulcer",
+        "isCorrect": true,
+        "rationale": "This is correct. The location of the ulcers and the history of past deep vein thrombosis would make venous stasis ulcers the most likely classification for these wounds. They occur usually between the inside ankle and the knee, not necessarily over a bony prominence, and are typically red in color, shiny, and taut, and may even feel warm or hot. Fluid drainage can be significant."
+      },
+      {
+        "text": "Diabetic foot ulcer",
+        "isCorrect": false,
+        "rationale": "This is incorrect. There is no indication that this client is diabetic, and the wound is not on the foot."
+      },
+      {
+        "text": "Arterial ulcer",
+        "isCorrect": false,
+        "rationale": "This is incorrect. An arterial (ischemic) ulcer tends to be dry and pale, with little drainage. Arterial ulcers are usually very painful, especially at night."
+      }
+    ]
+  },
+  {
+    "questionNumber": 39,
+    "type": "MCQ",
+    "questionText": "While applying a wet-to-dry dressing, the nurse explains to the client how the procedure promotes healing. A wet-to-dry dressing is a:",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Differentiate the five forms of wound debridement.",
+    "page": 1336,
+    "heading": "Table 32-5: Types of Wound Dressings",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Method that involves soaking the wound in water and then drying the wound bed.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Hydrotherapy or whirlpool treatments are nonselective debridement wherein the wound is submerged in a whirlpool containing tepid water for a prescribed amount of time (usually 5 to 15 minutes). This form of debridement is reserved for wounds with a large amount of nonviable tissue, such as burns."
+      },
+      {
+        "text": "Procedure that uses proteolytic agents to break down necrotic tissue in the wound bed.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Enzymatic debridement uses proteolytic agents to break down necrotic tissue without affecting viable tissue in the wound. To use an enzymatic product, clean the wound with normal saline, apply a thin layer of the cream, and cover with a moisture-retaining dressing."
+      },
+      {
+        "text": "Form of debridement that removes debris and healing granulation tissue.",
+        "isCorrect": true,
+        "rationale": "This is correct. A wet-to-dry dressing uses coarse gauze moistened with normal saline that is packed into the wound, allowed to dry, and then removed, perhaps several times a day. This form of nonselective debridement removes not only debris but also granulation tissue from the wound. It is also quite painful and not commonly used."
+      },
+      {
+        "text": "Form of debridement that uses an occlusive, moisture-retaining dressing to break down necrotic tissue.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Autolysis breaks down necrotic tissue by using an occlusive, moisture-retaining dressing (e.g., transparent dressing) and the body's own enzymes and defense mechanisms. This process takes more time than the other techniques, but it is better tolerated."
+      }
+    ]
+  },
+  {
+    "questionNumber": 40,
+    "type": "MCQ",
+    "questionText": "The nurse is caring for a client with an infected full-thickness wound with moderate drainage and no odor. What type of dressing will be most appropriate for the nurse to apply?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Discuss when and how to use absorbent, alginate, collagen, gauze dressings, transparent films, hydrocolloids, hydrogels, and foam and antimicrobial dressings.",
+    "page": 1336,
+    "heading": "Table 32-5: Types of Wound Dressings",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Alginate",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Although alginate dressings will absorb the drainage, they do not treat the infection."
+      },
+      {
+        "text": "Autolytic debridement",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Autolytic debridement (autolysis) is contraindicated in the presence of infection or immunosuppression."
+      },
+      {
+        "text": "Foam dressing",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Foam dressings are highly absorbent, but they will not treat the infected wound."
+      },
+      {
+        "text": "Antimicrobial collagen dressings",
+        "isCorrect": true,
+        "rationale": "This is correct. An antimicrobial collagen dressing promotes wound healing, is absorbent, and is treated with an antimicrobial to promote infection resolution."
+      }
+    ]
+  },
+  {
+    "questionNumber": 41,
+    "type": "MCQ",
+    "questionText": "The nurse is preparing to apply cold therapy. Which of the following diagnoses are contraindicated for cold therapy?",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Demonstrate bandage and binder application.",
+    "page": 1341,
+    "heading": "Using Heat and Cold Therapy",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "The client with a bleeding wound",
+        "isCorrect": false,
+        "rationale": "This is incorrect. A cold pack may be used for the client with active bleeding because it causes vasoconstriction and would reduce bleeding."
+      },
+      {
+        "text": "The client with a sprained wrist",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Cold therapy is appropriate for the client with a sprain to reduce edema, inflammation, and pain."
+      },
+      {
+        "text": "The client with an infected wound",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Application of cold slows bacterial growth, so this may be used for an infected wound that is warm to the touch and inflamed."
+      },
+      {
+        "text": "The client with a pressure ulcer",
+        "isCorrect": true,
+        "rationale": "This is correct. The client with a pressure ulcer would not benefit from a cold application because it would slow blood supply and wound healing and increase risk of further tissue damage."
+      }
+    ]
+  },
+  {
+    "questionNumber": 42,
+    "type": "SATA",
+    "questionText": "Select the process(es) that occur(s) during the inflammatory phase of wound healing. Select all that apply.",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Describe the three phases of wound healing.",
+    "page": 1312,
+    "heading": "Wound Healing",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Tissue integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Granulation",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Granulation is part of the proliferative phase. During days 5 to 21, cells develop to fill the wound defect and resurface the skin."
+      },
+      {
+        "text": "Hemostasis",
+        "isCorrect": true,
+        "rationale": "This is correct. The inflammatory phase, also called cleansing, lasts from 1 to 5 days and consists of 2 major processes: hemostasis and inflammation."
+      },
+      {
+        "text": "Epithelialization",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Epithelialization occurs during the proliferative and maturation phases. As the clot or scab is dissolved, epithelial cells grow into the wound from surrounding healthy tissues to seal over the wound. Remodeling begins in the second or third week and continues after the wound is closed."
+      },
+      {
+        "text": "Inflammation",
+        "isCorrect": true,
+        "rationale": "This is correct. The inflammatory phase, also called cleansing, lasts from 1 to 5 days and consists of 2 major processes: hemostasis and inflammation."
+      },
+      {
+        "text": "Maturation",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Maturation is the final phase of healing, not part of the inflammatory phase."
+      }
+    ]
+  },
+  {
+    "questionNumber": 43,
+    "type": "SATA",
+    "questionText": "Which of the following assessment tools are used to assess risk for pressure injury? Select all that apply.",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Explain the factors involved in the development of pressure injury; use the Braden Scale to assess risk for pressure injury.",
+    "page": 1330,
+    "heading": "The Braden Scale for Predicting Pressure Sore Risk",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Pressure Ulcer Healing Chart",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The Pressure Ulcer Healing Chart is part of the PUSH tool, which reports the progression of a pressure injury and is not used to assess risk."
+      },
+      {
+        "text": "PUSH tool",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The PUSH tool reports the progression of a pressure injury and is not used to assess risk. Surface area, exudate, and type of wound tissue are scored and totaled. As the injured area heals, the total score falls."
+      },
+      {
+        "text": "Braden scale",
+        "isCorrect": true,
+        "rationale": "This is correct. The Braden scale is a tool used to predict the risk of developing a pressure sore. Evaluation is based on six areas (indicators): sensory perception, moisture, activity, mobility, nutrition, and friction or shear."
+      },
+      {
+        "text": "Norton scale",
+        "isCorrect": true,
+        "rationale": "This is correct. The Norton scale is another tool used to assess the risk for pressure ulcers based on the client's physical condition, mental state, activity, mobility, and incontinence."
+      },
+      {
+        "text": "Braden Q Scale",
+        "isCorrect": true,
+        "rationale": "This is correct. The Braden Q scale is used to evaluate pressure injury risk in children."
+      }
+    ]
+  },
+  {
+    "questionNumber": 44,
+    "type": "SATA",
+    "questionText": "Which of the following are examples of nonselective mechanical debridement methods? Select all that apply.",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Discuss when and how to use absorbent, alginate, collagen, gauze dressings, transparent films, hydrocolloids, hydrogels, and foam and antimicrobial dressings.",
+    "page": 1336,
+    "heading": "Table 32-5: Types of Wound Dressings",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Safe and Effective Care",
+    "cognitiveLevel": "Comprehension [Understanding]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Wet-to-dry dressings",
+        "isCorrect": true,
+        "rationale": "This is correct. Wet-to-dry dressings and hydrotherapy (e.g., whirlpool and pulsed lavage) are nonselective forms of debridement, which means that healthy tissue as well as devitalized tissue can be removed with their use."
+      },
+      {
+        "text": "Sharp debridement",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Sharp debridement is a selective form of debridement. With sharp debridement, only devitalized tissue is removed."
+      },
+      {
+        "text": "Whirlpool",
+        "isCorrect": true,
+        "rationale": "This is correct. Hydrotherapy is a nonselective form of debridement, which means that healthy tissue as well as devitalized tissue can be removed with its use."
+      },
+      {
+        "text": "Pulsed lavage",
+        "isCorrect": true,
+        "rationale": "This is correct. Pulsed lavage is a form of hydrotherapy that debrides healthy as well as nonviable tissue."
+      },
+      {
+        "text": "Foam alginate",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Foam alginate is an absorbent dressing, not a debriding agent."
+      }
+    ]
+  },
+  {
+    "questionNumber": 45,
+    "type": "SATA",
+    "questionText": "Why is an accurate description of the location of a wound important? Select all that apply.",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Accurately document assessment of a wound.",
+    "page": 1317,
+    "heading": "Assessing Treated Wounds",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Influences the rate of healing",
+        "isCorrect": true,
+        "rationale": "This is correct. A major determinant of healing time is depth of the wound and location. The deeper the wound, the longer the healing time. Wounds in highly vascular regions, such as the scalp or hands, heal more rapidly than wounds in less vascular regions, such as the abdomen or heel."
+      },
+      {
+        "text": "Determines the appropriate treatment choice",
+        "isCorrect": true,
+        "rationale": "This is correct. Wounds that can be stabilized also heal more readily than those in areas in which there is movement or pressure."
+      },
+      {
+        "text": "Will affect the frequency of dressing changes",
+        "isCorrect": false,
+        "rationale": "This is incorrect. The frequency of dressing changes will be dependent on the type of wound and amount of drainage, but not necessarily the location."
+      },
+      {
+        "text": "Affects client movement and mobility",
+        "isCorrect": true,
+        "rationale": "This is correct. Wounds located on a plantar surface would impede the client's mobility. Those in a location causing pain would also likely lead to restricted range of motion and movement (mobility)."
+      },
+      {
+        "text": "Provides clues to wound etiology",
+        "isCorrect": true,
+        "rationale": "This is correct. Location can give you clues to the wound etiology. A wound over a bony prominence could be related to pressure, whereas one on the bottom of the foot could be a diabetic foot ulcer."
+      }
+    ]
+  },
+  {
+    "questionNumber": 46,
+    "type": "SATA",
+    "questionText": "The nurse learns in a report that the assigned client has a stage 3 pressure ulcer. What type of tissue does the nurse expect to visualize in the wound? Select all that apply.",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Discuss the different kinds of tissue found in wounds.",
+    "page": 1324,
+    "heading": "What Are the Main Points in This Chapter?",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Knowledge [Remembering]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Muscle",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This would be a stage 4 pressure ulcer."
+      },
+      {
+        "text": "Eschar",
+        "isCorrect": false,
+        "rationale": "This is incorrect. This would be an unstageable pressure ulcer."
+      },
+      {
+        "text": "Subcutaneous tissue",
+        "isCorrect": true,
+        "rationale": "This is correct. A stage 3 pressure injury is characterized by full-thickness skin loss involving damage or necrosis of subcutaneous tissue, which may extend down to, but not through, the underlying fascia. The ulcer appears as a deep crater."
+      },
+      {
+        "text": "Dermis",
+        "isCorrect": true,
+        "rationale": "This is correct. A stage 3 pressure injury is characterized by full-thickness skin loss involving damage or necrosis of subcutaneous tissue, which may extend down to, but not through, the underlying fascia. The ulcer appears as a deep crater."
+      },
+      {
+        "text": "Fascia",
+        "isCorrect": true,
+        "rationale": "This is correct. A stage 3 pressure injury is characterized by full-thickness skin loss involving damage or necrosis of subcutaneous tissue, which may extend down to, but not through, the underlying fascia. The ulcer appears as a deep crater."
+      }
+    ]
+  },
+  {
+    "questionNumber": 47,
+    "type": "SATA",
+    "questionText": "Which actions would the nurse take when emptying the client's closed-wound drainage system? Select all that apply.",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Describe care of a wound with a drain.",
+    "page": 1334,
+    "heading": "Types of Drains",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Difficult",
+    "options": [
+      {
+        "text": "Don sterile gloves and personal protective equipment.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Emptying a closed-wound drainage system is not a sterile procedure; therefore, sterile gloves and personal protective equipment (e.g., mask, gown, goggles) would not be necessary. Clean gloves would protect the nurse from contamination and prevent the transmission of microbes with exposure to drainage."
+      },
+      {
+        "text": "Assess the drainage tube site and sutures, if in place.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse would assess the appearance of the insertion site of the drain for signs of infection or skin irritation."
+      },
+      {
+        "text": "Check that the drainage system and connections are securely fastened.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse would check the tubing to be sure it is tightly connected and there is no leakage."
+      },
+      {
+        "text": "Test the suction apparatus at the prescribed pressure.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse assesses the suction apparatus to ensure the system is working properly."
+      },
+      {
+        "text": "Document the color, type, and amount of drainage.",
+        "isCorrect": true,
+        "rationale": "This is correct. Documentation of the amount and characteristics of the drainage (e.g., color, type, thickness, odor) would aid care providers in assessing the potential for development of wound infection."
+      }
+    ]
+  },
+  {
+    "questionNumber": 48,
+    "type": "SATA",
+    "questionText": "The home-health nurse learns that an elderly client isn't able to get to the grocery store. They don't have much food in their home, and they eat and drink little. Most of their time is spent sitting in their chair watching television, often not realizing that they have had bladder leakage. Which nursing actions would be implemented to reduce the risk of this client developing a pressure injury? Select all that apply.",
+    "chapter": "Chapter 32: Skin Integrity & Wound Healing",
+    "objective": "Provide nursing care that limits the risk of pressure injury development.",
+    "page": 1320,
+    "heading": "Example Problem: Pressure Injury",
+    "integratedProcesses": "Nursing Process",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Tissue Integrity",
+    "difficulty": "Moderate",
+    "options": [
+      {
+        "text": "Help the client to get out of the chair every 2 hours.",
+        "isCorrect": true,
+        "rationale": "This is correct. Immobility is a major cause of skin breakdown, especially when skin integrity is already compromised with poor nutritional status and poor hydration. Therefore, it is very important for the client to get up out of the chair and move around periodically."
+      },
+      {
+        "text": "Change the client's clothing frequently.",
+        "isCorrect": true,
+        "rationale": "This is correct. The moisture from wet clothing is a source of skin breakdown. The nurse would not only need to help the woman put on dry undergarments but also implement a plan for incontinence care, including using protective pads and absorption garments."
+      },
+      {
+        "text": "Bath the client using soap and water.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Clean skin is important for optimizing skin integrity. However, soap can be drying to the skin, which could increase risk of alterations in skin integrity."
+      },
+      {
+        "text": "Promote intake of green tea throughout the day.",
+        "isCorrect": false,
+        "rationale": "This is incorrect. Although this client is at risk for dehydration and undernourishment, which compromises skin integrity, the nurse should educate the client to drink decaffeinated fluids, especially water. Caffeine can aggravate incontinence."
+      },
+      {
+        "text": "Encourage the client to wear incontinence products.",
+        "isCorrect": true,
+        "rationale": "This is correct. The nurse would not only need to help the woman put on dry undergarments but also implement a plan for incontinence care, including using protective pads and absorption garments."
       }
     ]
   }
