@@ -1,7 +1,7 @@
 // ./js/quizScoring.js
 
 import { db, auth } from './firebase-config.js';
-import { doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
 export function normalizeChapterName(name) {
   if (!name) return "General Practice";
@@ -38,7 +38,6 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
   }
 
   try {
-    // Use currentUser.email as the document ID in Firestore
     const userRef = doc(db, "users", currentUser.email);
     const userSnap = await getDoc(userRef);
     
@@ -59,7 +58,6 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
                           sessionChapterQuestions[standardizedChapterKey] || 
                           Object.values(sessionChapterQuestions)[0] || {};
 
-      // Use raw question text as map key so unmastered filtering matches correctly
       for (const [qText, qDetails] of Object.entries(sessionQMap)) {
         chapterProgressMap[standardizedChapterKey][qText] = sanitizeForFirestore({
           ...qDetails,
@@ -113,7 +111,8 @@ export async function saveQuizResultsToFirestore(sessionChapter, score, totalQue
       missedQuestions: existingMissed
     });
 
-    await updateDoc(userRef, payload);
+    // Use setDoc with merge: true to guarantee document creation & safe updating
+    await setDoc(userRef, payload, { merge: true });
 
     console.log("✅ Successfully saved quiz results with email doc ID for chapter:", standardizedChapterKey);
   } catch (err) {
@@ -140,20 +139,16 @@ export function evaluateBowTieAnswer(question, userSelections) {
   const userCondition = String(userSelections.condition);
   const userParams = [String(userSelections.param1), String(userSelections.param2)];
 
-  // 1. Verify Actions (must select both correct actions and keep them distinct)
   const actionsMatch = userActions.length === 2 &&
     userActions.every(act => correctActionIndices.includes(act)) &&
     new Set(userActions).size === 2;
 
-  // 2. Verify Condition (must select the 1 correct condition)
   const conditionMatch = userCondition === String(correctConditionIndex);
 
-  // 3. Verify Parameters (must select both correct parameters and keep them distinct)
   const paramsMatch = userParams.length === 2 &&
     userParams.every(param => correctParamIndices.includes(param)) &&
     new Set(userParams).size === 2;
 
-  // All-or-nothing evaluation
   const allCorrect = actionsMatch && conditionMatch && paramsMatch;
 
   const maxScore = 5;

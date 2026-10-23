@@ -27,20 +27,36 @@ function normalizeChapterName(name) {
 
 async function uploadQuestions() {
   const rawData = fs.readFileSync("questions.json", "utf8");
-  const questions = JSON.parse(rawData);
-
-  console.log("🚀 Uploading new questions to Firestore using JSON metadata IDs...");
+  const parsedData = JSON.parse(rawData);
   
-  for (const q of questions) {
-    const normalizedChap = normalizeChapterName(q.chapter);
+  // Automatically handles: 1) Arrays [...], 2) Wrapped objects { questions: [...] }, 3) Single object {...}
+  let questions = [];
+  if (Array.isArray(parsedData)) {
+    questions = parsedData;
+  } else if (parsedData.questions && Array.isArray(parsedData.questions)) {
+    questions = parsedData.questions;
+  } else if (typeof parsedData === 'object' && parsedData !== null) {
+    questions = [parsedData];
+  }
+
+  if (questions.length === 0) {
+    console.error("❌ Error: No questions found in questions.json or invalid format.");
+    process.exit(1);
+  }
+
+  console.log(`🚀 Uploading ${questions.length} questions to Firestore...`);
+  
+  for (let i = 0; i < questions.length; i++) {
+    const q = questions[i];
+    const normalizedChap = normalizeChapterName(q.chapter || "Matrix Test One");
     
-    // Extract chapter number directly from the chapter string (e.g., "Chapter 3: ...")
+    // Fallback safe for chapters without numbers (like "Matrix Test One")
     const chapMatch = normalizedChap.match(/\d+/);
-    const chapNum = chapMatch ? chapMatch[0] : "gen";
-    const qNum = q.questionNumber || 0;
+    const chapSlug = chapMatch ? `ch${chapMatch[0]}` : normalizedChap.toLowerCase().replace(/[^a-z0-9]/g, '_');
+    const qNum = q.questionNumber || (i + 1);
     
-    // Construct clean, predictable ID using chapter and question numbers
-    const docId = `ch${chapNum}_q${qNum}`;
+    // Unique document ID to prevent overwriting
+    const docId = `${chapSlug}_q${qNum}`;
 
     const docRef = db.collection("questions").doc(docId);
     await docRef.set({
@@ -57,12 +73,14 @@ async function uploadQuestions() {
       concept: q.concept || "",
       difficulty: q.difficulty || "Moderate",
       options: q.options || [],
+      columns: q.columns || [], // Required for Matrix questions
+      rows: q.rows || [],       // Required for Matrix questions
       correctAnswer: q.correctAnswer || "",
       rationale: q.rationale || ""
     });
   }
 
-  console.log(`✅ Successfully uploaded ${questions.length} questions to Firestore with uniform titles and clean IDs!`);
+  console.log(`✅ Successfully uploaded ${questions.length} questions to Firestore!`);
   process.exit(0);
 }
 

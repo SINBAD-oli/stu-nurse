@@ -4,10 +4,11 @@ import { db } from './js/firebase-config.js';
 import { collection, getDocs, query, where, writeBatch, doc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
 const QuizBuilder = ({ onExit }) => {
-  // Grab ALL components from the window
+  // Grab ALL components from the window including Matrix
   const AddMCQ = window.AddMCQ;
   const AddSATA = window.AddSATA;
   const AddBowTie = window.AddBowTie;
+  const AddMatrix = window.AddMatrix;
 
   const [quizTitle, setQuizTitle] = React.useState('');
   const [activeTab, setActiveTab] = React.useState('library');
@@ -191,20 +192,6 @@ const QuizBuilder = ({ onExit }) => {
                         </button>
                       </div>
                       <p className="font-medium text-slate-800 mb-4 text-sm">{q.questionText || "Question text not found."}</p>
-                      {/* Only render simple options preview if it has them (ignores Bow Tie in this view) */}
-                      {q.options && Array.isArray(q.options) && (
-                        <div className="space-y-2">
-                          {q.options.map((opt, i) => (
-                            <div key={i} className={`p-3 rounded-md border ${opt.isCorrect ? 'bg-green-50 border-green-200' : 'bg-slate-50 border-slate-200'}`}>
-                              <div className="text-sm text-slate-800 flex items-start gap-2 mb-1">
-                                <span className={`mt-0.5 ${opt.isCorrect ? 'text-green-600 font-bold' : 'text-slate-400'}`}>{opt.isCorrect ? '✓' : '○'}</span>
-                                <span className={opt.isCorrect ? 'font-medium' : ''}>{opt.text}</span>
-                              </div>
-                              {opt.rationale && <p className="text-xs text-slate-500 italic ml-6">Rationale: {opt.rationale}</p>}
-                            </div>
-                          ))}
-                        </div>
-                      )}
                     </div>
                   );
                 })}
@@ -215,18 +202,22 @@ const QuizBuilder = ({ onExit }) => {
               {!manualType ? (
                 <div className="p-8 h-full flex flex-col items-center justify-center bg-slate-50">
                   <h3 className="text-xl font-bold text-slate-700 mb-6">Select Question Type</h3>
-                  <div className="grid grid-cols-3 gap-4 w-full max-w-2xl">
-                    <button onClick={() => setManualType('MCQ')} className="p-6 bg-white border-2 border-blue-200 hover:border-blue-500 rounded-xl flex flex-col items-center gap-2 transition-all shadow-sm hover:shadow-md">
-                      <span className="font-bold text-blue-600 text-lg">MCQ</span>
-                      <span className="text-xs text-slate-500 text-center">Multiple Choice Question</span>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
+                    <button onClick={() => setManualType('MCQ')} className="p-4 bg-white border-2 border-blue-200 hover:border-blue-500 rounded-xl flex flex-col items-center gap-1 transition-all shadow-sm hover:shadow-md">
+                      <span className="font-bold text-blue-600 text-base">MCQ</span>
+                      <span className="text-[11px] text-slate-500 text-center">Multiple Choice</span>
                     </button>
-                    <button onClick={() => setManualType('SATA')} className="p-6 bg-white border-2 border-purple-200 hover:border-purple-500 rounded-xl flex flex-col items-center gap-2 transition-all shadow-sm hover:shadow-md">
-                      <span className="font-bold text-purple-600 text-lg">SATA</span>
-                      <span className="text-xs text-slate-500 text-center">Select All That Apply</span>
+                    <button onClick={() => setManualType('SATA')} className="p-4 bg-white border-2 border-purple-200 hover:border-purple-500 rounded-xl flex flex-col items-center gap-1 transition-all shadow-sm hover:shadow-md">
+                      <span className="font-bold text-purple-600 text-base">SATA</span>
+                      <span className="text-[11px] text-slate-500 text-center">Select All</span>
                     </button>
-                    <button onClick={() => setManualType('BowTie')} className="p-6 bg-white border-2 border-orange-200 hover:border-orange-500 rounded-xl flex flex-col items-center gap-2 transition-all shadow-sm hover:shadow-md">
-                      <span className="font-bold text-orange-600 text-lg">Bow Tie</span>
-                      <span className="text-xs text-slate-500 text-center">NGN Clinical Judgment</span>
+                    <button onClick={() => setManualType('BowTie')} className="p-4 bg-white border-2 border-orange-200 hover:border-orange-500 rounded-xl flex flex-col items-center gap-1 transition-all shadow-sm hover:shadow-md">
+                      <span className="font-bold text-orange-600 text-base">Bow Tie</span>
+                      <span className="text-[11px] text-slate-500 text-center">Clinical Judgment</span>
+                    </button>
+                    <button onClick={() => setManualType('Matrix')} className="p-4 bg-white border-2 border-emerald-200 hover:border-emerald-500 rounded-xl flex flex-col items-center gap-1 transition-all shadow-sm hover:shadow-md">
+                      <span className="font-bold text-emerald-600 text-base">Matrix</span>
+                      <span className="text-[11px] text-slate-500 text-center">NGN Grid</span>
                     </button>
                   </div>
                 </div>
@@ -256,7 +247,15 @@ const QuizBuilder = ({ onExit }) => {
                       quizTitle={quizTitle}
                     />
                   )}
-                  {((manualType === 'MCQ' && !AddMCQ) || (manualType === 'SATA' && !AddSATA) || (manualType === 'BowTie' && !AddBowTie)) && (
+                  {manualType === 'Matrix' && AddMatrix && (
+                    <AddMatrix 
+                      onAdd={handleManualAdd} 
+                      onCancel={() => setManualType('')} 
+                      draftCount={draftQuestions.length}
+                      quizTitle={quizTitle}
+                    />
+                  )}
+                  {((manualType === 'MCQ' && !AddMCQ) || (manualType === 'SATA' && !AddSATA) || (manualType === 'BowTie' && !AddBowTie) || (manualType === 'Matrix' && !AddMatrix)) && (
                      <div className="p-8 text-center text-red-500">Error: Component failed to load. Check script tags in portal.html.</div>
                   )}
                 </>
@@ -288,12 +287,12 @@ const QuizBuilder = ({ onExit }) => {
                 </div>
               ) : (
                 draftQuestions.map((q, index) => (
-                  <div key={q.id} className="bg-white border border-slate-200 rounded-lg p-4 shadow-sm flex items-start gap-4">
+                  <div key={q.id || index} className="bg-white border border-slate-200 rounded-lg p-4 shadow-sm flex items-start gap-4">
                     <div className="flex-shrink-0 w-6 h-6 bg-slate-100 text-slate-500 rounded-full flex items-center justify-center font-bold text-xs">
                       {index + 1}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <span className={`text-[10px] font-bold uppercase ${q.type === 'SATA' ? 'text-purple-500' : q.type === 'BowTie' ? 'text-orange-500' : 'text-blue-500'}`}>
+                      <span className={`text-[10px] font-bold uppercase ${q.type === 'SATA' ? 'text-purple-500' : q.type === 'BowTie' ? 'text-orange-500' : q.type === 'matrix' || q.type === 'Matrix' ? 'text-emerald-500' : 'text-blue-500'}`}>
                         {q.type || 'MCQ'}
                       </span>
                       <p className="text-sm font-medium text-slate-800 mb-1 truncate">{q.questionText}</p>

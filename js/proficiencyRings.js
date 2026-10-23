@@ -1,3 +1,5 @@
+// ./js/proficiencyRings.js
+
 import { db, auth } from './firebase-config.js';
 import { doc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { normalizeChapterName } from './quizScoring.js';
@@ -7,25 +9,31 @@ export async function openProficiencyReviewModal(chapterName) {
   if (!currentUser) return;
 
   try {
+    // FIX: Match quizScoring.js by using currentUser.email as the document ID lookup
+    const userIdentifier = currentUser.email || currentUser.uid;
+
     const [userSnap, querySnapshot] = await Promise.all([
-      getDoc(doc(db, "users", currentUser.uid)),
+      getDoc(doc(db, "users", userIdentifier)),
       getDocs(collection(db, "questions"))
     ]);
 
-    if (!userSnap.exists()) return;
+    if (!userSnap.exists()) {
+      alert("User profile record not found in Firestore.");
+      return;
+    }
 
     const userData = userSnap.data();
     const progressMap = userData.chapterProgressMap || {};
     
     const normalizedTarget = normalizeChapterName(chapterName);
-    let chapterProgress = progressMap[chapterName] || progressMap[normalizedTarget] || {};
-    
-    if (Object.keys(chapterProgress).length === 0) {
-      const foundKey = Object.keys(progressMap).find(k => normalizeChapterName(k) === normalizedTarget || k.toLowerCase() === chapterName.toLowerCase());
-      if (foundKey) {
-        chapterProgress = progressMap[foundKey];
-      }
-    }
+    const foundKey = Object.keys(progressMap).find(k => 
+      k === chapterName ||
+      normalizeChapterName(k) === normalizedTarget || 
+      k.toLowerCase() === chapterName.toLowerCase() ||
+      k.replace(/\s+/g, '').toLowerCase() === chapterName.replace(/\s+/g, '').toLowerCase()
+    );
+
+    const chapterProgress = foundKey ? progressMap[foundKey] : {};
 
     const allQuestions = [];
     querySnapshot.forEach(docSnap => {
@@ -52,12 +60,12 @@ export async function openProficiencyReviewModal(chapterName) {
 
     const answeredEntries = Object.entries(chapterProgress);
     if (answeredEntries.length === 0) {
-      alert("No answered questions found for this chapter yet!");
+      alert(`No answered questions found for chapter "${chapterName}"!`);
       return;
     }
 
     let contentHtml = `
-      <div style="background: #1e293b; color: #f8fafc; width: 100%; max-width: 750px; max-height: 85vh; border-radius: 12px; display: flex; flex-direction: column; border: 1px solid #334155; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); box-sizing: border-box; overflow: hidden;">
+      <div style="background: #1e293b; color: #f8fafc; width: 100%; max-width: 800px; max-height: 85vh; border-radius: 12px; display: flex; flex-direction: column; border: 1px solid #334155; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); box-sizing: border-box; overflow: hidden;">
         <div style="padding: 16px 20px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; background: #0f172a;">
           <h3 style="margin: 0; font-size: 18px; color: #f8fafc;">📖 Proficiency Review: ${chapterName}</h3>
           <button id="close-proficiency-modal" style="background: none; border: none; color: #94a3b8; font-size: 24px; cursor: pointer; padding: 0 6px;">&times;</button>
@@ -68,9 +76,8 @@ export async function openProficiencyReviewModal(chapterName) {
     answeredEntries.forEach(([qKey, qData], idx) => {
       const matchedQ = questionMap[qKey?.trim()] || {};
       const displayQuestionText = qData.questionText || matchedQ.questionText || (isNaN(qKey) ? qKey : "Question Item");
-      const optionsList = qData.options || matchedQ.options || [];
-      const correctAnswerIndex = qData.correctAnswerIndex !== undefined ? qData.correctAnswerIndex : matchedQ.correctAnswerIndex;
-
+      
+      const isMatrix = (qData.type || matchedQ.type)?.toLowerCase() === 'matrix';
       const isCorrect = qData.correct === true || qData.score === 1;
       const isPartial = qData.score > 0 && qData.score < 1;
       
@@ -104,27 +111,70 @@ export async function openProficiencyReviewModal(chapterName) {
             <div style="display: flex; flex-direction: column; gap: 10px;">
       `;
 
-      optionsList.forEach((opt, oIdx) => {
-        const isOptCorrect = opt.isCorrect === true || (oIdx + 1) === correctAnswerIndex;
-        
-        let optBorder = '#334155';
-        let optBg = 'rgba(30, 41, 59, 0.5)';
-
-        if (isOptCorrect) {
-          optBorder = '#10b981';
-          optBg = 'rgba(16, 185, 129, 0.08)';
-        } else if (!isCorrect && !isOptCorrect) {
-          optBorder = '#f87171';
-          optBg = 'rgba(248, 113, 113, 0.05)';
-        }
+      if (isMatrix) {
+        const qRows = qData.rows || matchedQ.rows || [];
+        const qColumns = qData.columns || matchedQ.columns || [];
+        const globalRationale = qData.rationale || matchedQ.rationale || "";
 
         contentHtml += `
-          <div style="padding: 10px 14px; border-radius: 6px; border: 1px solid ${optBorder}; background: ${optBg}; font-size: 14px; box-sizing: border-box;">
-            <span style="color: #e2e8f0; line-height: 1.4; display: block;">${opt.text}</span>
-            ${opt.rationale ? `<div style="font-size: 12px; color: #cbd5e1; font-style: italic; margin-top: 6px; border-left: 2px solid ${optBorder}; padding-left: 10px; line-height: 1.4;">Rationale: ${opt.rationale}</div>` : ''}
+          <div style="font-size: 13px; color: #38bdf8; font-weight: 600; margin-bottom: 2px;">Matrix Grid & Correct Mapping:</div>
+          <div style="overflow-x: auto; background: #1e293b; border: 1px solid #334155; border-radius: 6px; padding: 8px;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
+              <thead>
+                <tr style="border-bottom: 1px solid #334155; color: #94a3b8;">
+                  <th style="padding: 6px; text-align: left;">Finding</th>
+                  ${qColumns.map(c => `<th style="padding: 6px; text-align: center; color: #38bdf8;">${c}</th>`).join('')}
+                </tr>
+              </thead>
+              <tbody>
+        `;
+
+        qRows.forEach(row => {
+          contentHtml += `<tr style="border-bottom: 1px solid rgba(51, 65, 85, 0.5);"><td style="padding: 6px; color: #f8fafc; font-weight: 500;">${row.text}</td>`;
+          qColumns.forEach(colText => {
+            const opt = (row.options || []).find(o => o.text === colText);
+            const isCorr = opt ? opt.isCorrect : false;
+            contentHtml += `<td style="padding: 6px; text-align: center; color: ${isCorr ? '#34d399' : '#64748b'}; font-weight: bold;">${isCorr ? '✓' : '—'}</td>`;
+          });
+          contentHtml += `</tr>`;
+        });
+
+        contentHtml += `
+              </tbody>
+            </table>
           </div>
         `;
-      });
+
+        if (globalRationale) {
+          contentHtml += `<div style="font-size: 12px; color: #cbd5e1; font-style: italic; margin-top: 6px; border-left: 2px solid #38bdf8; padding-left: 10px; line-height: 1.4;">Rationale: ${globalRationale}</div>`;
+        }
+
+      } else {
+        const optionsList = qData.options || matchedQ.options || [];
+        const correctAnswerIndex = qData.correctAnswerIndex !== undefined ? qData.correctAnswerIndex : matchedQ.correctAnswerIndex;
+
+        optionsList.forEach((opt, oIdx) => {
+          const isOptCorrect = opt.isCorrect === true || (oIdx + 1) === correctAnswerIndex;
+          
+          let optBorder = '#334155';
+          let optBg = 'rgba(30, 41, 59, 0.5)';
+
+          if (isOptCorrect) {
+            optBorder = '#10b981';
+            optBg = 'rgba(16, 185, 129, 0.08)';
+          } else if (!isCorrect && !isOptCorrect) {
+            optBorder = '#f87171';
+            optBg = 'rgba(248, 113, 113, 0.05)';
+          }
+
+          contentHtml += `
+            <div style="padding: 10px 14px; border-radius: 6px; border: 1px solid ${optBorder}; background: ${optBg}; font-size: 14px; box-sizing: border-box;">
+              <span style="color: #e2e8f0; line-height: 1.4; display: block;">${opt.text}</span>
+              ${opt.rationale ? `<div style="font-size: 12px; color: #cbd5e1; font-style: italic; margin-top: 6px; border-left: 2px solid ${optBorder}; padding-left: 10px; line-height: 1.4;">Rationale: ${opt.rationale}</div>` : ''}
+            </div>
+          `;
+        });
+      }
 
       contentHtml += `
             </div>

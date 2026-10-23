@@ -1,28 +1,26 @@
-import React, { useState } from 'react';
-import { db } from './firebase-config.js';
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+// ./js/AddMatrix.jsx
 
-export default function AddMatrix({ onBack }) {
-  const [chapter, setChapter] = useState('');
-  const [heading, setHeading] = useState('');
-  const [questionNumber, setQuestionNumber] = useState('');
-  const [page, setPage] = useState('');
-  const [difficulty, setDifficulty] = useState('Moderate');
-  const [cognitiveLevel, setCognitiveLevel] = useState('');
-  const [clientNeed, setClientNeed] = useState('');
-  const [concept, setConcept] = useState('');
-  const [integratedProcesses, setIntegratedProcesses] = useState('');
-  const [objective, setObjective] = useState('');
-  const [questionText, setQuestionText] = useState('');
-  const [rationale, setRationale] = useState('');
+function AddMatrix({ onAdd, onCancel, draftCount, quizTitle }) {
+  const [chapter, setChapter] = React.useState(quizTitle || '');
+  const [heading, setHeading] = React.useState('');
+  const [questionNumber, setQuestionNumber] = React.useState(draftCount + 1);
+  const [page, setPage] = React.useState('');
+  const [difficulty, setDifficulty] = React.useState('Moderate');
+  const [cognitiveLevel, setCognitiveLevel] = React.useState('');
+  const [clientNeed, setClientNeed] = React.useState('');
+  const [concept, setConcept] = React.useState('');
+  const [integratedProcesses, setIntegratedProcesses] = React.useState('');
+  const [objective, setObjective] = React.useState('');
+  const [questionText, setQuestionText] = React.useState('');
+  const [rationale, setRationale] = React.useState('');
 
-  const [columns, setColumns] = useState(['Decreased Tissue Perfusion', 'Pulmonary Congestion']);
-  const [newColText, setNewColText] = useState('');
+  const [columns, setColumns] = React.useState(['Decreased Tissue Perfusion', 'Pulmonary Congestion']);
+  const [newColText, setNewColText] = React.useState('');
   
-  const [rows, setRows] = useState([
+  const [rows, setRows] = React.useState([
     { text: 'Urine output of 25 mL/hr', selections: [true, false] }
   ]);
-  const [newRowText, setNewRowText] = useState('');
+  const [newRowText, setNewRowText] = React.useState('');
 
   const addColumn = () => {
     if (!newColText.trim()) return;
@@ -58,10 +56,10 @@ export default function AddMatrix({ onBack }) {
     setRows(updatedRows);
   };
 
-  const handleSave = async (e) => {
+  const handleSave = (e) => {
     e.preventDefault();
     if (!questionText.trim() || rows.length === 0 || columns.length === 0) {
-      alert('Please fill out the question text, at least one column, and one row.');
+      alert('Please fill out the question prompt, at least one column, and one row.');
       return;
     }
 
@@ -74,10 +72,11 @@ export default function AddMatrix({ onBack }) {
     }));
 
     const questionPayload = {
-      type: "matrix",
-      chapter,
+      id: 'matrix_' + Date.now(),
+      type: 'matrix',
+      chapter: quizTitle || chapter || 'Custom Chapter',
       heading,
-      questionNumber: Number(questionNumber) || 0,
+      questionNumber: Number(questionNumber) || (draftCount + 1),
       page: Number(page) || 0,
       difficulty,
       cognitiveLevel,
@@ -88,116 +87,198 @@ export default function AddMatrix({ onBack }) {
       questionText,
       rationale,
       columns,
-      rows: formattedRows,
-      createdAt: new Date().toISOString()
+      rows: formattedRows
     };
 
-    try {
-      await addDoc(collection(db, "questions"), questionPayload);
-      alert("Matrix question successfully saved to Firestore!");
-      if (onBack) onBack();
-    } catch (err) {
-      console.error("Error saving matrix question:", err);
-      alert("Error saving question. Check console.");
-    }
+    if (onAdd) onAdd(questionPayload);
   };
 
   return (
-    <div style={{ background: 'rgba(15, 23, 42, 0.95)', border: '1px solid #334155', borderRadius: '8px', padding: '16px', color: '#f8fafc', fontFamily: 'system-ui, sans-serif' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ margin: 0, fontSize: '16px', color: '#38bdf8' }}>➕ Create NGN Matrix Question</h3>
-        {onBack && <button onClick={onBack} style={{ background: '#475569', color: 'white', border: 'none', padding: '4px 10px', borderRadius: '4px', cursor: 'pointer' }}>Back</button>}
+    <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col h-[600px] overflow-y-auto text-slate-800">
+      <div className="flex justify-between items-center mb-6 pb-3 border-b border-slate-100">
+        <div>
+          <h3 className="text-lg font-bold text-slate-800">Create NGN Matrix Question</h3>
+          <p className="text-xs text-slate-500">Configure columns, statements, and correct cell selections.</p>
+        </div>
+        {onCancel && (
+          <button 
+            type="button" 
+            onClick={onCancel}
+            className="text-sm px-3 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 font-medium"
+          >
+            Cancel
+          </button>
+        )}
       </div>
 
-      <form onSubmit={handleSave} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '8px' }}>
+      <form onSubmit={handleSave} className="space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div>
-            <label style={{ fontSize: '11px', color: '#94a3b8' }}>Chapter</label>
-            <input type="text" value={chapter} onChange={e => setChapter(e.target.value)} placeholder="e.g. Chapter 33" style={{ width: '100%', background: '#1e293b', border: '1px solid #475569', color: 'white', padding: '6px', borderRadius: '4px', fontSize: '12px' }} />
+            <label className="block text-xs font-semibold text-slate-600 mb-1">Chapter / Quiz Title</label>
+            <input 
+              type="text" 
+              value={chapter} 
+              onChange={e => setChapter(e.target.value)} 
+              placeholder="e.g. Chapter 33" 
+              className="w-full p-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" 
+            />
           </div>
           <div>
-            <label style={{ fontSize: '11px', color: '#94a3b8' }}>Heading</label>
-            <input type="text" value={heading} onChange={e => setHeading(e.target.value)} placeholder="e.g. Oxygenation" style={{ width: '100%', background: '#1e293b', border: '1px solid #475569', color: 'white', padding: '6px', borderRadius: '4px', fontSize: '12px' }} />
+            <label className="block text-xs font-semibold text-slate-600 mb-1">Heading</label>
+            <input 
+              type="text" 
+              value={heading} 
+              onChange={e => setHeading(e.target.value)} 
+              placeholder="e.g. Oxygenation" 
+              className="w-full p-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" 
+            />
           </div>
           <div>
-            <label style={{ fontSize: '11px', color: '#94a3b8' }}>Question Number</label>
-            <input type="number" value={questionNumber} onChange={e => setQuestionNumber(e.target.value)} placeholder="e.g. 2" style={{ width: '100%', background: '#1e293b', border: '1px solid #475569', color: 'white', padding: '6px', borderRadius: '4px', fontSize: '12px' }} />
+            <label className="block text-xs font-semibold text-slate-600 mb-1">Question Number</label>
+            <input 
+              type="number" 
+              value={questionNumber} 
+              onChange={e => setQuestionNumber(e.target.value)} 
+              className="w-full p-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" 
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label className="block text-xs font-semibold text-slate-600 mb-1">Page</label>
+            <input 
+              type="number" 
+              value={page} 
+              onChange={e => setPage(e.target.value)} 
+              placeholder="e.g. 1408" 
+              className="w-full p-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" 
+            />
           </div>
           <div>
-            <label style={{ fontSize: '11px', color: '#94a3b8' }}>Page</label>
-            <input type="number" value={page} onChange={e => setPage(e.target.value)} placeholder="e.g. 1408" style={{ width: '100%', background: '#1e293b', border: '1px solid #475569', color: 'white', padding: '6px', borderRadius: '4px', fontSize: '12px' }} />
-          </div>
-          <div>
-            <label style={{ fontSize: '11px', color: '#94a3b8' }}>Difficulty</label>
-            <select value={difficulty} onChange={e => setDifficulty(e.target.value)} style={{ width: '100%', background: '#1e293b', border: '1px solid #475569', color: 'white', padding: '6px', borderRadius: '4px', fontSize: '12px' }}>
+            <label className="block text-xs font-semibold text-slate-600 mb-1">Difficulty</label>
+            <select 
+              value={difficulty} 
+              onChange={e => setDifficulty(e.target.value)} 
+              className="w-full p-2 text-sm border border-slate-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none"
+            >
               <option value="Easy">Easy</option>
               <option value="Moderate">Moderate</option>
               <option value="Hard">Hard</option>
             </select>
           </div>
           <div>
-            <label style={{ fontSize: '11px', color: '#94a3b8' }}>Cognitive Level</label>
-            <input type="text" value={cognitiveLevel} onChange={e => setCognitiveLevel(e.target.value)} placeholder="e.g. Analysis [Analyzing]" style={{ width: '100%', background: '#1e293b', border: '1px solid #475569', color: 'white', padding: '6px', borderRadius: '4px', fontSize: '12px' }} />
+            <label className="block text-xs font-semibold text-slate-600 mb-1">Cognitive Level</label>
+            <input 
+              type="text" 
+              value={cognitiveLevel} 
+              onChange={e => setCognitiveLevel(e.target.value)} 
+              placeholder="e.g. Analysis [Analyzing]" 
+              className="w-full p-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" 
+            />
           </div>
         </div>
 
         <div>
-          <label style={{ fontSize: '11px', color: '#94a3b8' }}>Question Prompt / Instructions</label>
-          <textarea value={questionText} onChange={e => setQuestionText(e.target.value)} rows={2} placeholder="For each assessment finding, determine whether..." style={{ width: '100%', background: '#1e293b', border: '1px solid #475569', color: 'white', padding: '8px', borderRadius: '4px', fontSize: '12px', boxSizing: 'border-box' }} />
+          <label className="block text-xs font-semibold text-slate-600 mb-1">Question Prompt / Instructions</label>
+          <textarea 
+            value={questionText} 
+            onChange={e => setQuestionText(e.target.value)} 
+            rows={2} 
+            placeholder="For each assessment finding, determine whether..." 
+            className="w-full p-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" 
+          />
         </div>
 
-        <div style={{ background: '#1e293b', padding: '10px', borderRadius: '6px', border: '1px solid #334155' }}>
-          <label style={{ fontSize: '12px', color: '#38bdf8', fontWeight: '600', display: 'block', marginBottom: '6px' }}>Column Headers</label>
-          <div style={{ display: 'flex', gap: '8px', marginBottom: '8px', flexWrap: 'wrap' }}>
+        <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <label className="block text-sm font-semibold text-slate-700 mb-2">Column Headers</label>
+          <div className="flex flex-wrap gap-2 mb-3">
             {columns.map((col, index) => (
-              <div key={index} style={{ display: 'flex', alignItems: 'center', background: '#334155', padding: '4px 8px', borderRadius: '4px', fontSize: '11px', gap: '6px' }}>
+              <div key={index} className="flex items-center bg-white border border-slate-300 px-3 py-1.5 rounded-lg text-xs font-medium gap-2 shadow-sm">
                 <span>{col}</span>
-                {columns.length > 1 && <button type="button" onClick={() => removeColumn(index)} style={{ background: 'transparent', border: 'none', color: '#f87171', cursor: 'pointer', fontWeight: 'bold' }}>×</button>}
+                {columns.length > 1 && (
+                  <button 
+                    type="button" 
+                    onClick={() => removeColumn(index)} 
+                    className="text-red-500 hover:text-red-700 font-bold"
+                  >
+                    ×
+                  </button>
+                )}
               </div>
             ))}
           </div>
-          <div style={{ display: 'flex', gap: '6px' }}>
-            <input type="text" value={newColText} onChange={e => setNewColText(e.target.value)} placeholder="New column name..." style={{ flex: 1, background: '#0f172a', border: '1px solid #475569', color: 'white', padding: '5px', borderRadius: '4px', fontSize: '11px' }} />
-            <button type="button" onClick={addColumn} style={{ background: '#2563eb', color: 'white', border: 'none', padding: '5px 10px', borderRadius: '4px', cursor: 'pointer', fontSize: '11px' }}>Add Column</button>
+          <div className="flex gap-2">
+            <input 
+              type="text" 
+              value={newColText} 
+              onChange={e => setNewColText(e.target.value)} 
+              placeholder="New column name..." 
+              className="flex-1 p-2 text-xs border border-slate-300 rounded-lg bg-white outline-none" 
+            />
+            <button 
+              type="button" 
+              onClick={addColumn} 
+              className="px-4 py-2 bg-slate-800 text-white rounded-lg text-xs font-semibold hover:bg-slate-700"
+            >
+              Add Column
+            </button>
           </div>
         </div>
 
-        <div style={{ background: '#1e293b', padding: '10px', borderRadius: '6px', border: '1px solid #334155' }}>
-          <label style={{ fontSize: '12px', color: '#38bdf8', fontWeight: '600', display: 'block', marginBottom: '6px' }}>Matrix Rows & Correct Answers (Check boxes that are correct)</label>
-          
-          <div style={{ display: 'flex', gap: '6px', marginBottom: '10px' }}>
-            <input type="text" value={newRowText} onChange={e => setNewRowText(e.target.value)} placeholder="New row statement / finding..." style={{ flex: 1, background: '#0f172a', border: '1px solid #475569', color: 'white', padding: '5px', borderRadius: '4px', fontSize: '11px' }} />
-            <button type="button" onClick={addRow} style={{ background: '#10b981', color: 'white', border: 'none', padding: '5px 10px', borderRadius: '4px', cursor: 'pointer', fontSize: '11px' }}>Add Row</button>
+        <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <label className="block text-sm font-semibold text-slate-700 mb-2">Matrix Rows & Correct Answers</label>
+          <div className="flex gap-2 mb-3">
+            <input 
+              type="text" 
+              value={newRowText} 
+              onChange={e => setNewRowText(e.target.value)} 
+              placeholder="New row statement / finding..." 
+              className="flex-1 p-2 text-xs border border-slate-300 rounded-lg bg-white outline-none" 
+            />
+            <button 
+              type="button" 
+              onClick={addRow} 
+              className="px-4 py-2 bg-emerald-600 text-white rounded-lg text-xs font-semibold hover:bg-emerald-700"
+            >
+              Add Row
+            </button>
           </div>
 
           {rows.length > 0 && (
-            <div style={{ overflowX: 'auto' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '11px' }}>
+            <div className="overflow-x-auto bg-white rounded-lg border border-slate-200">
+              <table className="w-full border-collapse text-xs">
                 <thead>
-                  <tr style={{ borderBottom: '1px solid #475569', textAlign: 'left' }}>
-                    <th style={{ padding: '6px', color: '#94a3b8' }}>Finding / Statement</th>
+                  <tr className="border-b border-slate-200 bg-slate-100 text-slate-700 text-left">
+                    <th className="p-2.5 font-semibold">Finding / Statement</th>
                     {columns.map((col, idx) => (
-                      <th key={idx} style={{ padding: '6px', color: '#38bdf8', textAlign: 'center' }}>{col}</th>
+                      <th key={idx} className="p-2.5 font-semibold text-center text-blue-600">{col}</th>
                     ))}
-                    <th style={{ padding: '6px', textAlign: 'center', color: '#94a3b8' }}>Action</th>
+                    <th className="p-2.5 text-center font-semibold">Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   {rows.map((row, rIdx) => (
-                    <tr key={rIdx} style={{ borderBottom: '1px solid #334155' }}>
-                      <td style={{ padding: '6px', color: '#f8fafc' }}>{row.text}</td>
+                    <tr key={rIdx} className="border-b border-slate-100 hover:bg-slate-50">
+                      <td className="p-2.5 text-slate-800 font-medium">{row.text}</td>
                       {columns.map((_, cIdx) => (
-                        <td key={cIdx} style={{ padding: '6px', textAlign: 'center' }}>
+                        <td key={cIdx} className="p-2.5 text-center">
                           <input 
                             type="checkbox" 
                             checked={row.selections[cIdx]} 
                             onChange={() => toggleSelection(rIdx, cIdx)} 
-                            style={{ cursor: 'pointer', transform: 'scale(1.1)' }} 
+                            className="cursor-pointer w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500" 
                           />
                         </td>
                       ))}
-                      <td style={{ padding: '6px', textAlign: 'center' }}>
-                        <button type="button" onClick={() => removeRow(rIdx)} style={{ background: 'transparent', border: 'none', color: '#ef4444', cursor: 'pointer', fontWeight: 'bold' }}>Remove</button>
+                      <td className="p-2.5 text-center">
+                        <button 
+                          type="button" 
+                          onClick={() => removeRow(rIdx)} 
+                          className="text-red-500 hover:text-red-700 font-bold px-2 py-1"
+                        >
+                          Remove
+                        </button>
                       </td>
                     </tr>
                   ))}
@@ -208,12 +289,28 @@ export default function AddMatrix({ onBack }) {
         </div>
 
         <div>
-          <label style={{ fontSize: '11px', color: '#94a3b8' }}>Overall Rationale</label>
-          <textarea value={rationale} onChange={e => setRationale(e.target.value)} rows={2} placeholder="Explain correct answers..." style={{ width: '100%', background: '#1e293b', border: '1px solid #475569', color: 'white', padding: '8px', borderRadius: '4px', fontSize: '12px', boxSizing: 'border-box' }} />
+          <label className="block text-xs font-semibold text-slate-600 mb-1">Overall Rationale</label>
+          <textarea 
+            value={rationale} 
+            onChange={e => setRationale(e.target.value)} 
+            rows={2} 
+            placeholder="Explain correct mappings..." 
+            className="w-full p-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" 
+          />
         </div>
 
-        <button type="submit" style={{ background: '#2563eb', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '4px', fontWeight: '600', cursor: 'pointer', fontSize: '13px', marginTop: '4px' }}>Save Matrix Question to Firestore</button>
+        <div className="pt-2">
+          <button 
+            type="submit" 
+            className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold text-sm hover:bg-blue-700 shadow-sm transition-colors"
+          >
+            Add Matrix Question to Draft
+          </button>
+        </div>
       </form>
     </div>
   );
 }
+
+// Attach globally for in-browser Babel loading
+window.AddMatrix = AddMatrix;

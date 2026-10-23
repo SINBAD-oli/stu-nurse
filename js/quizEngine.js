@@ -31,7 +31,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
   const normalizedActiveChapter = normalizeChapterName(activeChapterName);
 
   modal.innerHTML = `
-    <div style="background: #1e293b; color: #f8fafc; width: 100%; max-width: 750px; max-height: 90vh; border-radius: 12px; display: flex; flex-direction: column; border: 1px solid #334155; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); box-sizing: border-box; overflow: hidden;">
+    <div style="background: #1e293b; color: #f8fafc; width: 100%; max-width: 850px; max-height: 90vh; border-radius: 12px; display: flex; flex-direction: column; border: 1px solid #334155; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); box-sizing: border-box; overflow: hidden;">
       <div style="padding: 16px 20px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; background: #0f172a;">
         <h3 id="modal-quiz-progress" style="margin: 0; font-size: 16px; color: #f8fafc;">Quiz Session: ${normalizedActiveChapter}</h3>
         <div id="modal-question-meta" style="display: flex; gap: 8px; align-items: center;"></div>
@@ -55,6 +55,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
   let questionsList = [];
   let currentQuestionIndex = 0;
   let selectedOptionIndices = [];
+  let matrixSelections = {}; 
   let score = 0;
   let answeredCount = 0;
   let sessionMissedQuestions = [];
@@ -93,24 +94,112 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
   function loadCurrentQuestion() {
     if (questionsList.length === 0) return;
     const q = questionsList[currentQuestionIndex];
+    const rawType = (q.type || "MCQ").toLowerCase().replace(/[\s-_]/g, '');
     const isFlagged = flaggedQuestionIndices.has(currentQuestionIndex);
 
-    renderQuestion(
-      q,
-      currentQuestionIndex,
-      questionsList.length,
-      score,
-      answeredCount,
-      isFlagged,
-      () => {
+    const progressElem = document.getElementById('modal-quiz-progress');
+    const metaElem = document.getElementById('modal-question-meta');
+    const textElem = document.getElementById('modal-question-text');
+    const optionsElem = document.getElementById('modal-options-container');
+    const submitBtn = document.getElementById('modal-submit-btn');
+    const nextBtn = document.getElementById('modal-next-btn');
+    const feedbackBox = document.getElementById('modal-feedback-box');
+
+    if (progressElem) progressElem.textContent = `Question ${currentQuestionIndex + 1} of ${questionsList.length}`;
+    if (metaElem) {
+      const typeBadge = (q.type || 'MCQ').toUpperCase();
+      const badgeBg = typeBadge === 'MATRIX' ? '#059669' : typeBadge === 'SATA' ? '#7c3aed' : typeBadge === 'BOWTIE' ? '#ea580c' : '#2563eb';
+      metaElem.innerHTML = `
+        <span style="background: ${badgeBg}; color: white; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">${typeBadge}</span>
+        <button id="flag-question-btn" style="background: ${isFlagged ? '#f59e0b' : '#334155'}; color: white; border: none; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer;">
+          ${isFlagged ? '🚩 Flagged' : '🏳️ Flag'}
+        </button>
+      `;
+      document.getElementById('flag-question-btn')?.addEventListener('click', () => {
         if (flaggedQuestionIndices.has(currentQuestionIndex)) flaggedQuestionIndices.delete(currentQuestionIndex);
         else flaggedQuestionIndices.add(currentQuestionIndex);
         loadCurrentQuestion();
-      },
-      (selection) => {
-        selectedOptionIndices = selection;
-      }
-    );
+      });
+    }
+
+    if (textElem) textElem.textContent = q.questionText || "";
+    if (feedbackBox) feedbackBox.classList.add('hidden');
+    if (submitBtn) submitBtn.classList.remove('hidden');
+    if (nextBtn) nextBtn.classList.add('hidden');
+    selectedOptionIndices = [];
+
+    if (rawType === 'matrix') {
+      const cols = q.columns || [];
+      const rows = q.rows || [];
+      const currentSelections = matrixSelections[currentQuestionIndex] || {};
+
+      optionsElem.innerHTML = `
+        <div style="overflow-x: auto; border: 1px solid #334155; border-radius: 8px; background: #1e293b;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px; text-align: left;">
+            <thead>
+              <tr style="background: #0f172a; border-bottom: 1px solid #334155; color: #f8fafc;">
+                <th style="padding: 10px 12px; border-right: 1px solid #334155; font-weight: 600; width: 35%;">Assessment Finding</th>
+                ${cols.map(col => `<th style="padding: 10px 12px; border-right: 1px solid #334155; font-weight: 600; text-align: center; color: #38bdf8;">${col}</th>`).join('')}
+              </tr>
+            </thead>
+            <tbody>
+              ${rows.map((row, rIdx) => `
+                <tr style="border-bottom: 1px solid #334155;">
+                  <td style="padding: 10px 12px; border-right: 1px solid #334155; color: #f8fafc; font-weight: 500;">${row.text}</td>
+                  ${cols.map((_, cIdx) => {
+                    const isChecked = currentSelections[rIdx]?.[cIdx] || false;
+                    return `
+                      <td style="padding: 10px 12px; border-right: 1px solid #334155; text-align: center;">
+                        <input 
+                          type="checkbox" 
+                          class="matrix-cell-input" 
+                          data-row="${rIdx}" 
+                          data-col="${cIdx}" 
+                          ${isChecked ? 'checked' : ''}
+                          style="cursor: pointer; transform: scale(1.2); accent-color: #2563eb;"
+                        />
+                      </td>
+                    `;
+                  }).join('')}
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      optionsElem.querySelectorAll('.matrix-cell-input').forEach(input => {
+        input.addEventListener('change', (e) => {
+          const r = parseInt(e.target.dataset.row, 10);
+          const c = parseInt(e.target.dataset.col, 10);
+          if (!matrixSelections[currentQuestionIndex]) {
+            matrixSelections[currentQuestionIndex] = {};
+          }
+          if (!matrixSelections[currentQuestionIndex][r]) {
+            matrixSelections[currentQuestionIndex][r] = {};
+          }
+          matrixSelections[currentQuestionIndex][r][c] = e.target.checked;
+        });
+      });
+
+    } else {
+      renderQuestion(
+        q,
+        currentQuestionIndex,
+        questionsList.length,
+        score,
+        answeredCount,
+        isFlagged,
+        () => {
+          if (flaggedQuestionIndices.has(currentQuestionIndex)) flaggedQuestionIndices.delete(currentQuestionIndex);
+          else flaggedQuestionIndices.add(currentQuestionIndex);
+          loadCurrentQuestion();
+        },
+        (selection) => {
+          selectedOptionIndices = selection;
+        }
+      );
+    }
   }
 
   setupQuizConfig(
@@ -129,6 +218,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       currentQuestionIndex = 0;
       score = 0;
       answeredCount = 0;
+      matrixSelections = {};
       flaggedQuestionIndices.clear();
       sessionMissedQuestions = [];
       sessionChapterQuestions = {};
@@ -151,8 +241,9 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
     const rawType = (q.type || "MCQ").toLowerCase().replace(/[\s-_]/g, '');
     const isCompletion = rawType === 'completion';
     const isBowTie = rawType === 'bowtie';
+    const isMatrix = rawType === 'matrix';
 
-    if (!isCompletion && !isBowTie && selectedOptionIndices.length === 0) return;
+    if (!isCompletion && !isBowTie && !isMatrix && selectedOptionIndices.length === 0) return;
 
     answeredCount++;
     let questionEarnedScore = 0;
@@ -182,8 +273,69 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
           rationales: q.rationale || q.feedback || ""
         });
       }
+    } else if (isMatrix) {
+      // --- MATRIX EVALUATION & DUAL-LAYER SCORING WITH ROW HIGHLIGHTING ---
+      const userQSelections = matrixSelections[currentQuestionIndex] || {};
+      let correctRowsCount = 0;
+      const totalRows = (q.rows || []).length;
+      const rowResults = [];
+
+      q.rows.forEach((row, rIdx) => {
+        const userRow = userQSelections[rIdx] || {};
+        let isRowFullyCorrect = true;
+
+        row.options.forEach((opt, cIdx) => {
+          const userChecked = !!userRow[cIdx];
+          if (userChecked !== opt.isCorrect) {
+            isRowFullyCorrect = false;
+          }
+        });
+
+        rowResults[rIdx] = isRowFullyCorrect;
+        if (isRowFullyCorrect) {
+          correctRowsCount++;
+        }
+      });
+
+      questionEarnedScore = totalRows > 0 ? (correctRowsCount / totalRows) : 0;
+      const isFullyMastered = correctRowsCount === totalRows;
+      feedbackStatus = isFullyMastered ? "correct" : (questionEarnedScore > 0 ? "partial" : "incorrect");
+
+      const tableContainer = document.getElementById('modal-options-container');
+      if (tableContainer) {
+        tableContainer.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.disabled = true);
+        
+        const tableRows = tableContainer.querySelectorAll('tbody tr');
+        q.rows.forEach((_, rIdx) => {
+          const tr = tableRows[rIdx];
+          const isCorrectRow = rowResults[rIdx];
+          if (tr) {
+            tr.style.backgroundColor = isCorrectRow ? 'rgba(16, 185, 129, 0.15)' : 'rgba(239, 68, 68, 0.15)';
+            tr.style.borderLeft = isCorrectRow ? '4px solid #10b981' : '4px solid #ef4444';
+          }
+        });
+      }
+
+      if (!isFullyMastered) {
+        sessionMissedQuestions.push({
+          chapter: specificChap,
+          questionText: q.questionText,
+          clientNeed: q.clientNeed || "N/A",
+          cognitiveLevel: q.cognitiveLevel || "N/A",
+          concept: q.concept || q.heading || "Clinical Judgment Matrix",
+          rationales: q.rationale || "Review matrix mapping and correct findings."
+        });
+      }
+
+      if (isFullyMastered) {
+        if (feedbackText) feedbackText.innerHTML = `<strong>Correct! (+1.0 pt)</strong><br><br><strong>Rationale:</strong> ${q.rationale || "All matrix rows analyzed correctly."}`;
+      } else if (questionEarnedScore > 0) {
+        if (feedbackText) feedbackText.innerHTML = `<strong>Partially Correct! (+${questionEarnedScore.toFixed(2)} pts) — Incorrect rows are highlighted in red.</strong><br><br><strong>Rationale:</strong> ${q.rationale || ""}`;
+      } else {
+        if (feedbackText) feedbackText.innerHTML = `<strong>Incorrect. (0.0 pts) — Incorrect rows are highlighted in red.</strong><br><br><strong>Rationale:</strong> ${q.rationale || ""}`;
+      }
+
     } else if (isBowTie) {
-      // --- BOW TIE EVALUATION & HIGHLIGHTING LOGIC ---
       const evalResult = evaluateBowTieAnswer(q, selectedOptionIndices);
       questionEarnedScore = evalResult.score === 5 ? 1 : 0; 
       feedbackStatus = evalResult.isCorrect ? "correct" : "incorrect";
@@ -351,8 +503,11 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       questionText: q.questionText,
       type: q.type || "MCQ",
       options: q.options || [],
+      columns: q.columns || [],
+      rows: q.rows || [],
       correctAnswerIndex: q.correctAnswerIndex,
-      correctAnswer: q.correctAnswer
+      correctAnswer: q.correctAnswer,
+      rationale: q.rationale || ""
     };
   });
 
