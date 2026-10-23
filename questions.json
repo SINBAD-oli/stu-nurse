@@ -1,65 +1,498 @@
-{
-  "type": "matrix",
-  "chapter": "Matrix Test One",
-  "heading": "Generate Solutions > Medications",
-  "questionNumber": 3,
-  "page": 1410,
-  "difficulty": "Moderate",
-  "cognitiveLevel": "Analysis [Analyzing]",
-  "clientNeed": "Pharmacological and Parenteral Therapies",
-  "questionText": "For each medication, determine the most appropriate nursing consideration. Select the most characteristic risk for each medication. A risk may be selected more than once.",
-  "columns": [
-    "Bradycardia",
-    "Hyperkalemia",
-    "Hypokalemia",
-    "Bleeding"
-  ],
-  "rows": [
-    {
-      "text": "Metoprolol",
-      "options": [
-        { "text": "Bradycardia", "isCorrect": true },
-        { "text": "Hyperkalemia", "isCorrect": false },
-        { "text": "Hypokalemia", "isCorrect": false },
-        { "text": "Bleeding", "isCorrect": false }
-      ]
+[
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Moderate",
+    "heading": "Recognize Cues",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Recognize atypical ACS symptoms.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Chronic atrial fibrillation can cause an irregular pulse, and tachycardia deserves assessment; however, it is not the strongest new clue to ACS.",
+        "text": "A history of chronic atrial fibrillation with an irregular heart rate of 112 beats/min"
+      },
+      {
+        "isCorrect": false,
+        "rationale": "An SpO2 of 95% does not exclude myocardial ischemia or reduced systemic perfusion.",
+        "text": "An oxygen saturation of 95% despite complaints of fatigue and shortness of breath"
+      },
+      {
+        "isCorrect": true,
+        "rationale": "New epigastric pressure with diaphoresis and dyspnea may represent an atypical ACS presentation, particularly in an older adult with diabetes. Prompt ECG assessment is indicated.",
+        "text": "New epigastric pressure accompanied by diaphoresis and shortness of breath"
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Crackles can reflect heart failure and require assessment, but the new ischemic symptom cluster makes C the priority for suspected ACS.",
+        "text": "Fine crackles at the lung bases in a patient with previously diagnosed heart failure"
+      }
+    ],
+    "questionNumber": 1,
+    "questionText": "Patient X arrives at the emergency department reporting increased fatigue, intermittent nausea, and shortness of breath over the past two days. He denies crushing chest pain but describes pressure in his upper abdomen. Which finding should cause the nurse the greatest concern for an acute cardiovascular event requiring immediate evaluation?",
+    "rationale": "New epigastric pressure with diaphoresis and dyspnea may represent an atypical ACS presentation, particularly in an older adult with diabetes. Prompt ECG assessment is indicated.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Decreased Tissue Perfusion",
+      "Pulmonary Congestion",
+      "Both"
+    ],
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Moderate",
+    "heading": "Analyze Cues",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Distinguish pulmonary congestion from impaired systemic perfusion.",
+    "rows": {
+      "0": {
+        "text": "Urine output of 25 mL/hr",
+        "options": {
+          "0": { "isCorrect": true, "text": "Decreased Tissue Perfusion" },
+          "1": { "isCorrect": false, "text": "Pulmonary Congestion" },
+          "2": { "isCorrect": false, "text": "Both" }
+        }
+      },
+      "1": {
+        "text": "Bilateral crackles",
+        "options": {
+          "0": { "isCorrect": false, "text": "Decreased Tissue Perfusion" },
+          "1": { "isCorrect": true, "text": "Pulmonary Congestion" },
+          "2": { "isCorrect": false, "text": "Both" }
+        }
+      },
+      "2": {
+        "text": "Capillary refill of 4 seconds",
+        "options": {
+          "0": { "isCorrect": true, "text": "Decreased Tissue Perfusion" },
+          "1": { "isCorrect": false, "text": "Pulmonary Congestion" },
+          "2": { "isCorrect": false, "text": "Both" }
+        }
+      },
+      "3": {
+        "text": "Increasing dyspnea with cool extremities",
+        "options": {
+          "0": { "isCorrect": false, "text": "Decreased Tissue Perfusion" },
+          "1": { "isCorrect": false, "text": "Pulmonary Congestion" },
+          "2": { "isCorrect": true, "text": "Both" }
+        }
+      },
+      "4": {
+        "text": "Weak peripheral pulses",
+        "options": {
+          "0": { "isCorrect": true, "text": "Decreased Tissue Perfusion" },
+          "1": { "isCorrect": false, "text": "Pulmonary Congestion" },
+          "2": { "isCorrect": false, "text": "Both" }
+        }
+      }
     },
-    {
-      "text": "Warfarin",
-      "options": [
-        { "text": "Bradycardia", "isCorrect": false },
-        { "text": "Hyperkalemia", "isCorrect": false },
-        { "text": "Hypokalemia", "isCorrect": false },
-        { "text": "Bleeding", "isCorrect": true }
-      ]
+    "questionNumber": 2,
+    "questionText": "For each assessment finding, determine whether it is most consistent with decreased tissue perfusion, pulmonary congestion, or both. Select one response for each row.",
+    "rationale": "Urine output 25 mL/hr: Decreased tissue perfusion (oliguria may reflect reduced renal blood flow). Bilateral crackles: Pulmonary congestion (consistent with fluid in alveolar/interstitial spaces). Capillary refill 4 seconds: Decreased tissue perfusion (delayed refill suggests compromised peripheral circulation). Increasing dyspnea with cool extremities: Both (dyspnea suggests pulmonary involvement while cool extremities suggest poor systemic flow). Weak peripheral pulses: Decreased tissue perfusion (diminished pulse strength suggests reduced peripheral circulation).",
+    "type": "matrix"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Difficult",
+    "heading": "Prioritize Hypotheses",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Prioritize acute interventions.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "BNP may support a heart-failure assessment but does not replace immediate evaluation for ACS.",
+        "text": "Obtain the BNP level first because the patient has a history of heart failure and bilateral crackles."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Obtain a 12-lead ECG immediately (goal within 10 minutes of presentation), initiate monitoring, and arrange blood work without delaying the ECG.",
+        "text": "Obtain a 12-lead ECG immediately while initiating cardiac monitoring and arranging the ordered laboratory testing."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Troponin results may take time; waiting could delay recognition of an evolving ischemic event. A nondiagnostic ECG also does not exclude ACS.",
+        "text": "Wait for the initial troponin result before obtaining the ECG because the patient denies typical chest pain."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A scheduled oral diuretic is not the priority when ACS is suspected, particularly with borderline BP and possible impaired perfusion.",
+        "text": "Administer the patient's scheduled furosemide before performing additional cardiac assessments."
+      }
+    ],
+    "questionNumber": 3,
+    "questionText": "The nurse suspects acute coronary syndrome (ACS). The healthcare provider has ordered an ECG, high-sensitivity troponin testing, BNP, and a complete metabolic panel. Which nursing action is the highest priority?",
+    "rationale": "Obtain a 12-lead ECG immediately (goal within 10 minutes of presentation), initiate monitoring, and arrange blood work without delaying the ECG.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Moderate",
+    "heading": "Analyze Cues",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Interpret ECG findings and biomarkers together.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Elevated troponin indicates myocardial injury, not automatically infarction. MI diagnosis requires appropriate clinical evidence of ischemia.",
+        "text": "The elevated troponin confirms an acute myocardial infarction regardless of the patient's clinical presentation."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "New ST-segment depression plus symptoms raises concern for ischemia.",
+        "text": "New ST-segment depression combined with epigastric pressure and diaphoresis increases concern for myocardial ischemia."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "BNP elevation supports possible heart failure, but age, kidney function, examination, and imaging affect interpretation.",
+        "text": "The elevated BNP supports possible worsening heart failure but must be interpreted alongside the patient's renal function and assessment findings."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Hypokalemia and hypomagnesemia increase dysrhythmia risk.",
+        "text": "The patient's potassium and magnesium levels increase the risk of additional cardiac dysrhythmias."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Pulse oximetry measures arterial oxygen saturation, not adequacy of blood flow or tissue oxygen delivery.",
+        "text": "The patient's oxygen saturation of 95% indicates that adequate tissue perfusion is being maintained."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Serial high-sensitivity troponins help identify a dynamic rise or fall in myocardial injury.",
+        "text": "Serial troponin measurements are necessary to evaluate changes in myocardial injury over time."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A therapeutic INR on warfarin does not rule out plaque-related ACS.",
+        "text": "The patient's therapeutic INR eliminates the possibility of an acute coronary event."
+      }
+    ],
+    "questionNumber": 4,
+    "questionText": "The nurse reviews the ECG and laboratory results. Which interpretations are clinically appropriate? Select all that apply.",
+    "rationale": "New ST-segment depression, elevated BNP, hypokalemia, hypomagnesemia, and the need for serial troponins are all appropriate interpretations based on the clinical picture.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Pharmacological and Parenteral Therapies",
+    "cognitiveLevel": "Application [Applying]",
+    "columns": [
+      "Bradycardia",
+      "Hyperkalemia",
+      "Hypokalemia",
+      "Bleeding"
+    ],
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Moderate",
+    "heading": "Generate Solutions",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Identify medication-related electrolyte risks.",
+    "rows": {
+      "0": {
+        "text": "Metoprolol",
+        "options": {
+          "0": { "isCorrect": true, "text": "Bradycardia" },
+          "1": { "isCorrect": false, "text": "Hyperkalemia" },
+          "2": { "isCorrect": false, "text": "Hypokalemia" },
+          "3": { "isCorrect": false, "text": "Bleeding" }
+        }
+      },
+      "1": {
+        "text": "Warfarin",
+        "options": {
+          "0": { "isCorrect": false, "text": "Bradycardia" },
+          "1": { "isCorrect": false, "text": "Hyperkalemia" },
+          "2": { "isCorrect": false, "text": "Hypokalemia" },
+          "3": { "isCorrect": true, "text": "Bleeding" }
+        }
+      },
+      "2": {
+        "text": "Furosemide",
+        "options": {
+          "0": { "isCorrect": false, "text": "Bradycardia" },
+          "1": { "isCorrect": false, "text": "Hyperkalemia" },
+          "2": { "isCorrect": true, "text": "Hypokalemia" },
+          "3": { "isCorrect": false, "text": "Bleeding" }
+        }
+      },
+      "3": {
+        "text": "Spironolactone",
+        "options": {
+          "0": { "isCorrect": false, "text": "Bradycardia" },
+          "1": { "isCorrect": true, "text": "Hyperkalemia" },
+          "2": { "isCorrect": false, "text": "Hypokalemia" },
+          "3": { "isCorrect": false, "text": "Bleeding" }
+        }
+      },
+      "4": {
+        "text": "Lisinopril",
+        "options": {
+          "0": { "isCorrect": false, "text": "Bradycardia" },
+          "1": { "isCorrect": true, "text": "Hyperkalemia" },
+          "2": { "isCorrect": false, "text": "Hypokalemia" },
+          "3": { "isCorrect": false, "text": "Bleeding" }
+        }
+      }
     },
-    {
-      "text": "Furosemide",
-      "options": [
-        { "text": "Bradycardia", "isCorrect": false },
-        { "text": "Hyperkalemia", "isCorrect": false },
-        { "text": "Hypokalemia", "isCorrect": true },
-        { "text": "Bleeding", "isCorrect": false }
-      ]
+    "questionNumber": 5,
+    "questionText": "For each medication, determine the most appropriate nursing consideration. Select the most characteristic risk for each medication. A risk may be selected more than once.",
+    "rationale": "Metoprolol causes bradycardia. Warfarin causes bleeding. Furosemide causes hypokalemia. Spironolactone and Lisinopril cause hyperkalemia.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Application [Applying]",
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Moderate",
+    "heading": "Prioritize Interventions",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Prioritize acute pulmonary edema interventions.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Scheduled oral furosemide is too slow for immediate respiratory stabilization, and hypotension complicates fluid-management decisions.",
+        "text": "Administer the patient's scheduled oral furosemide to decrease pulmonary fluid accumulation."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "High-Fowler positioning, prompt oxygen/respiratory support per protocol, and rapid response activation address life-threatening breathing and circulation problems.",
+        "text": "Place the patient in high-Fowler's position, initiate supplemental oxygen according to emergency protocol, and activate the rapid response team."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A repeat BNP does not address immediate hypoxemia or respiratory distress.",
+        "text": "Obtain another BNP level to determine whether the patient's heart failure has progressed."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Weight and edema are useful for longitudinal monitoring but should not delay emergency treatment.",
+        "text": "Assess peripheral edema and obtain an accurate daily weight before contacting the healthcare provider."
+      }
+    ],
+    "questionNumber": 6,
+    "questionText": "The nurse recognizes that Patient X is experiencing acute respiratory deterioration. Which nursing action should be performed first?",
+    "rationale": "High-Fowler positioning, prompt oxygen/respiratory support per protocol, and rapid response activation address life-threatening breathing and circulation problems.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Moderate",
+    "heading": "Recognize and Analyze Cues",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Identify acute pulmonary edema manifestations.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "New confusion/restlessness can indicate impaired cerebral perfusion or hypoxemia.",
+        "text": "New confusion and restlessness"
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Pink frothy sputum is a classic concerning sign of acute pulmonary edema.",
+        "text": "Pink, frothy sputum"
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Worsening oliguria suggests deteriorating renal perfusion.",
+        "text": "Urine output decreasing from 25 mL/hr to 15 mL/hr"
+      },
+      {
+        "isCorrect": false,
+        "rationale": "The earlier 95% saturation does not represent the patient's current respiratory status.",
+        "text": "Oxygen saturation previously measuring 95% on room air"
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Hypotension with cool pale skin supports systemic hypoperfusion.",
+        "text": "Hypotension accompanied by cool, pale extremities"
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Diffuse crackles and severe respiratory distress support pulmonary edema.",
+        "text": "Increasing bilateral crackles and respiratory distress"
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Chronic AFib and a previously therapeutic INR are relevant background, not direct evidence of the acute deterioration.",
+        "text": "Chronic atrial fibrillation with a previously therapeutic INR"
+      }
+    ],
+    "questionNumber": 7,
+    "questionText": "The nurse suspects acute pulmonary edema with severely decreased cardiac output. Which findings support this concern? Select all that apply.",
+    "rationale": "New confusion, pink frothy sputum, decreasing urine output, hypotension with cool extremities, and increasing bilateral crackles are all direct signs of acute pulmonary edema and decreased cardiac output.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Impaired Oxygenation",
+      "Impaired Tissue Perfusion",
+      "Both"
+    ],
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Moderate",
+    "heading": "Prioritize Hypotheses",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Distinguish pulmonary congestion from impaired systemic perfusion.",
+    "rows": {
+      "0": {
+        "text": "SpO2 of 86%",
+        "options": {
+          "0": { "isCorrect": true, "text": "Impaired Oxygenation" },
+          "1": { "isCorrect": false, "text": "Impaired Tissue Perfusion" },
+          "2": { "isCorrect": false, "text": "Both" }
+        }
+      },
+      "1": {
+        "text": "Urine output of 15 mL/hr",
+        "options": {
+          "0": { "isCorrect": false, "text": "Impaired Oxygenation" },
+          "1": { "isCorrect": true, "text": "Impaired Tissue Perfusion" },
+          "2": { "isCorrect": false, "text": "Both" }
+        }
+      },
+      "2": {
+        "text": "New confusion with severe dyspnea",
+        "options": {
+          "0": { "isCorrect": false, "text": "Impaired Oxygenation" },
+          "1": { "isCorrect": false, "text": "Impaired Tissue Perfusion" },
+          "2": { "isCorrect": true, "text": "Both" }
+        }
+      },
+      "3": {
+        "text": "Cool extremities and weak pulses",
+        "options": {
+          "0": { "isCorrect": false, "text": "Impaired Oxygenation" },
+          "1": { "isCorrect": true, "text": "Impaired Tissue Perfusion" },
+          "2": { "isCorrect": false, "text": "Both" }
+        }
+      },
+      "4": {
+        "text": "Pink, frothy sputum with diffuse crackles",
+        "options": {
+          "0": { "isCorrect": true, "text": "Impaired Oxygenation" },
+          "1": { "isCorrect": false, "text": "Impaired Tissue Perfusion" },
+          "2": { "isCorrect": false, "text": "Both" }
+        }
+      }
     },
-    {
-      "text": "Spironolactone",
-      "options": [
-        { "text": "Bradycardia", "isCorrect": false },
-        { "text": "Hyperkalemia", "isCorrect": true },
-        { "text": "Hypokalemia", "isCorrect": false },
-        { "text": "Bleeding", "isCorrect": false }
-      ]
-    },
-    {
-      "text": "Lisinopril",
-      "options": [
-        { "text": "Bradycardia", "isCorrect": false },
-        { "text": "Hyperkalemia", "isCorrect": true },
-        { "text": "Hypokalemia", "isCorrect": false },
-        { "text": "Bleeding", "isCorrect": false }
-      ]
-    }
-  ],
-  "rationale": "Metoprolol: Bradycardia — beta blockade slows heart rate and AV nodal conduction. Warfarin: Bleeding — anticoagulation reduces clotting capacity; monitor INR and bleeding. Furosemide: Hypokalemia — loop diuresis increases urinary potassium losses. Spironolactone: Hyperkalemia — potassium-sparing aldosterone blockade reduces potassium excretion. Lisinopril: Hyperkalemia — ACE inhibition can reduce aldosterone-mediated potassium excretion."
-}
+    "questionNumber": 8,
+    "questionText": "Determine whether each finding is primarily associated with impaired oxygenation, impaired tissue perfusion, or both.",
+    "rationale": "SpO2 86% relates to impaired oxygenation. Urine output 15 mL/hr relates to impaired tissue perfusion. New confusion with severe dyspnea relates to both. Cool extremities and weak pulses relate to impaired tissue perfusion. Pink, frothy sputum with diffuse crackles relates to impaired oxygenation.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Evaluation [Evaluating]",
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Difficult",
+    "heading": "Evaluate Outcomes",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Interpret ECG findings and biomarkers together.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "A rising troponin shows dynamic myocardial injury; symptoms and ECG help establish whether this represents MI.",
+        "text": "The increasing troponin indicates evolving myocardial injury and must be interpreted with the ECG and clinical presentation."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Creatinine rising from 1.9 to 2.3 mg/dL suggests worsening kidney function; low cardiac output is one possible contributor.",
+        "text": "The increase in creatinine may indicate worsening renal function associated with decreased renal perfusion."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Further decreases in potassium and magnesium increase electrical instability and dysrhythmia risk.",
+        "text": "Decreasing potassium and magnesium increase the risk of potentially serious dysrhythmias."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "An EF of 25% documents severe systolic dysfunction but does not prove its cause is exclusively an acute MI.",
+        "text": "The echocardiogram confirms that heart failure is caused exclusively by an acute myocardial infarction."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "BNP is not a stand-alone diagnostic test for cardiogenic shock.",
+        "text": "Elevated BNP independently establishes cardiogenic shock as the definitive diagnosis."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Persistent hypotension, oliguria, and altered mentation together suggest shock physiology and impaired end-organ perfusion.",
+        "text": "Persistent hypotension, oliguria, and altered mental status raise concern for shock associated with impaired cardiac output."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "CKD may affect baseline troponin, but a substantial rise with ischemic symptoms cannot be dismissed.",
+        "text": "Because the patient has chronic kidney disease, elevated troponin should be considered clinically insignificant."
+      }
+    ],
+    "questionNumber": 9,
+    "questionText": "The nurse compares initial and repeat laboratory results. Which conclusions are supported by the available findings? Select all that apply.",
+    "rationale": "Rising troponin indicates evolving injury; increasing creatinine indicates worsening renal perfusion; decreasing K and Mg increase dysrhythmia risk; and persistent hypotension/oliguria/altered mental status suggest shock.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "NGN Cardiovascular Case Study",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Evaluation [Evaluating]",
+    "concept": "Perfusion",
+    "correctAnswer": "",
+    "difficulty": "Moderate",
+    "heading": "Evaluate Outcomes and Prioritize Care",
+    "integratedProcesses": "Nursing Process",
+    "objective": "Evaluate treatment effectiveness.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Improved saturation alone does not prove perfusion has recovered while oliguria and confusion persist.",
+        "text": "Oxygen saturation increases from 86% to 97% with supplemental oxygen, but urine output remains 15 mL/hr and the patient remains confused."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A lower heart rate is insufficient when BP remains low and peripheral circulation remains poor.",
+        "text": "Heart rate decreases from 132 to 94 beats/min, but blood pressure remains 86/50 mmHg and peripheral pulses remain weak."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Improved urine output, mentation, capillary refill, and BP together indicate improving systemic and end-organ perfusion.",
+        "text": "Urine output increases to 45 mL/hr, mental status returns to baseline, capillary refill improves to 2 seconds, and blood pressure increases to 108/68 mmHg."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A small BNP change does not outweigh persistent hypotension, dyspnea, and low urine output.",
+        "text": "BNP decreases slightly, but the patient continues to experience dyspnea, hypotension, and reduced urine output."
+      }
+    ],
+    "questionNumber": 10,
+    "questionText": "Following emergency interventions, which finding provides the strongest evidence that tissue perfusion is improving?",
+    "rationale": "Improved urine output, mentation, capillary refill, and BP together indicate improving systemic and end-organ perfusion.",
+    "type": "MCQ"
+  }
+]

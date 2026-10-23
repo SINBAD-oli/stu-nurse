@@ -20,3 +20,58 @@ body {
 .hidden {
   display: none !important;
 }
+
+/* ==========================================
+   BULLETPROOF LIGHT MODE OVERRIDES 
+   ================================---------- */
+/* --- Light Mode Class-Specific Overrides (Keeps background wallpaper intact) --- */
+
+body.light-mode {
+  color: #0f172a !important;
+}
+
+/* Target the exact classes shown in your inspector */
+body.light-mode .card,
+body.light-mode .profile-card,
+body.light-mode .study-card,
+body.light-mode .app-header,
+body.light-mode footer,
+body.light-mode #quiz-session-modal > div,
+body.light-mode #proficiency-review-modal > div {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Force dark, high-contrast text across all text elements inside these cards & headers */
+body.light-mode .card *,
+body.light-mode .profile-card *,
+body.light-mode .study-card *,
+body.light-mode .app-header *,
+body.light-mode footer *,
+body.light-mode #quiz-session-modal *,
+body.light-mode #proficiency-review-modal * {
+  color: #0f172a !important;
+}
+
+/* Form inputs and answer choices in light mode */
+body.light-mode input, 
+body.light-mode select, 
+body.light-mode textarea {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Tables in matrix and proficiency reviews */
+body.light-mode table th {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+body.light-mode table td {
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}

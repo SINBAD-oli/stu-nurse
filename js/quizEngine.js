@@ -16,6 +16,14 @@ export function shuffleArray(array) {
 
 export { normalizeChapterName };
 
+// Bulletproof helper to safely convert Firestore arrays, maps, or undefined into arrays
+function safeArray(data) {
+  if (!data) return [];
+  if (Array.isArray(data)) return data;
+  if (typeof data === 'object') return Object.values(data);
+  return [];
+}
+
 export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredChapterQuestions, activeChapterName, onBackToChapters) {
   let modal = document.getElementById('quiz-session-modal');
   if (!modal) {
@@ -95,6 +103,10 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
     if (questionsList.length === 0) return;
     const q = questionsList[currentQuestionIndex];
     const rawType = (q.type || "MCQ").toLowerCase().replace(/[\s-_]/g, '');
+    
+    const rowsArray = safeArray(q.rows);
+    const colsArray = safeArray(q.columns);
+    const isMatrixType = rawType === 'matrix' || rowsArray.length > 0;
     const isFlagged = flaggedQuestionIndices.has(currentQuestionIndex);
 
     const progressElem = document.getElementById('modal-quiz-progress');
@@ -107,7 +119,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
 
     if (progressElem) progressElem.textContent = `Question ${currentQuestionIndex + 1} of ${questionsList.length}`;
     if (metaElem) {
-      const typeBadge = (q.type || 'MCQ').toUpperCase();
+      const typeBadge = isMatrixType ? 'MATRIX' : (q.type || 'MCQ').toUpperCase();
       const badgeBg = typeBadge === 'MATRIX' ? '#059669' : typeBadge === 'SATA' ? '#7c3aed' : typeBadge === 'BOWTIE' ? '#ea580c' : '#2563eb';
       metaElem.innerHTML = `
         <span style="background: ${badgeBg}; color: white; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">${typeBadge}</span>
@@ -128,9 +140,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
     if (nextBtn) nextBtn.classList.add('hidden');
     selectedOptionIndices = [];
 
-    if (rawType === 'matrix') {
-      const cols = q.columns || [];
-      const rows = q.rows || [];
+    if (isMatrixType) {
       const currentSelections = matrixSelections[currentQuestionIndex] || {};
 
       optionsElem.innerHTML = `
@@ -139,30 +149,33 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
             <thead>
               <tr style="background: #0f172a; border-bottom: 1px solid #334155; color: #f8fafc;">
                 <th style="padding: 10px 12px; border-right: 1px solid #334155; font-weight: 600; width: 35%;">Assessment Finding</th>
-                ${cols.map(col => `<th style="padding: 10px 12px; border-right: 1px solid #334155; font-weight: 600; text-align: center; color: #38bdf8;">${col}</th>`).join('')}
+                ${colsArray.map(col => `<th style="padding: 10px 12px; border-right: 1px solid #334155; font-weight: 600; text-align: center; color: #38bdf8;">${col}</th>`).join('')}
               </tr>
             </thead>
             <tbody>
-              ${rows.map((row, rIdx) => `
-                <tr style="border-bottom: 1px solid #334155;">
-                  <td style="padding: 10px 12px; border-right: 1px solid #334155; color: #f8fafc; font-weight: 500;">${row.text}</td>
-                  ${cols.map((_, cIdx) => {
-                    const isChecked = currentSelections[rIdx]?.[cIdx] || false;
-                    return `
-                      <td style="padding: 10px 12px; border-right: 1px solid #334155; text-align: center;">
-                        <input 
-                          type="checkbox" 
-                          class="matrix-cell-input" 
-                          data-row="${rIdx}" 
-                          data-col="${cIdx}" 
-                          ${isChecked ? 'checked' : ''}
-                          style="cursor: pointer; transform: scale(1.2); accent-color: #2563eb;"
-                        />
-                      </td>
-                    `;
-                  }).join('')}
-                </tr>
-              `).join('')}
+              ${rowsArray.map((row, rIdx) => {
+                const rowText = typeof row === 'object' && row !== null ? (row.text || '') : row;
+                return `
+                  <tr style="border-bottom: 1px solid #334155;">
+                    <td style="padding: 10px 12px; border-right: 1px solid #334155; color: #f8fafc; font-weight: 500;">${rowText}</td>
+                    ${colsArray.map((_, cIdx) => {
+                      const isChecked = currentSelections[rIdx]?.[cIdx] || false;
+                      return `
+                        <td style="padding: 10px 12px; border-right: 1px solid #334155; text-align: center;">
+                          <input 
+                            type="checkbox" 
+                            class="matrix-cell-input" 
+                            data-row="${rIdx}" 
+                            data-col="${cIdx}" 
+                            ${isChecked ? 'checked' : ''}
+                            style="cursor: pointer; transform: scale(1.2); accent-color: #2563eb;"
+                          />
+                        </td>
+                      `;
+                    }).join('')}
+                  </tr>
+                `;
+              }).join('')}
             </tbody>
           </table>
         </div>
@@ -241,7 +254,9 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
     const rawType = (q.type || "MCQ").toLowerCase().replace(/[\s-_]/g, '');
     const isCompletion = rawType === 'completion';
     const isBowTie = rawType === 'bowtie';
-    const isMatrix = rawType === 'matrix';
+    
+    const rowsArray = safeArray(q.rows);
+    const isMatrix = rawType === 'matrix' || rowsArray.length > 0;
 
     if (!isCompletion && !isBowTie && !isMatrix && selectedOptionIndices.length === 0) return;
 
@@ -277,14 +292,16 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       // --- MATRIX EVALUATION & DUAL-LAYER SCORING WITH ROW HIGHLIGHTING ---
       const userQSelections = matrixSelections[currentQuestionIndex] || {};
       let correctRowsCount = 0;
-      const totalRows = (q.rows || []).length;
+      const totalRows = rowsArray.length;
       const rowResults = [];
 
-      q.rows.forEach((row, rIdx) => {
+      rowsArray.forEach((row, rIdx) => {
         const userRow = userQSelections[rIdx] || {};
         let isRowFullyCorrect = true;
 
-        row.options.forEach((opt, cIdx) => {
+        const rowOptsArray = safeArray(row.options);
+
+        rowOptsArray.forEach((opt, cIdx) => {
           const userChecked = !!userRow[cIdx];
           if (userChecked !== opt.isCorrect) {
             isRowFullyCorrect = false;
@@ -306,7 +323,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
         tableContainer.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.disabled = true);
         
         const tableRows = tableContainer.querySelectorAll('tbody tr');
-        q.rows.forEach((_, rIdx) => {
+        rowsArray.forEach((_, rIdx) => {
           const tr = tableRows[rIdx];
           const isCorrectRow = rowResults[rIdx];
           if (tr) {
@@ -340,9 +357,9 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
       questionEarnedScore = evalResult.score === 5 ? 1 : 0; 
       feedbackStatus = evalResult.isCorrect ? "correct" : "incorrect";
 
-      const correctActionIndices = (q.actions || []).map((a, idx) => a.isCorrect ? String(idx) : null).filter(val => val !== null);
-      const correctConditionIndex = String((q.conditions || []).findIndex(c => c.isCorrect));
-      const correctParamIndices = (q.parameters || []).map((p, idx) => p.isCorrect ? String(idx) : null).filter(val => val !== null);
+      const correctActionIndices = safeArray(q.actions).map((a, idx) => a.isCorrect ? String(idx) : null).filter(val => val !== null);
+      const correctConditionIndex = String(safeArray(q.conditions).findIndex(c => c.isCorrect));
+      const correctParamIndices = safeArray(q.parameters).map((p, idx) => p.isCorrect ? String(idx) : null).filter(val => val !== null);
 
       const a1 = document.getElementById('bt-action-1');
       const a2 = document.getElementById('bt-action-2');
@@ -396,7 +413,7 @@ export function setupQuizSession(allQuestions, fullChapterQuestions, unmasteredC
         });
       }
     } else {
-      const optionsList = q.options || [];
+      const optionsList = safeArray(q.options);
       const correctIndices = [];
       optionsList.forEach((opt, idx) => {
         if (opt.isCorrect === true || (idx + 1) === q.correctAnswerIndex) {

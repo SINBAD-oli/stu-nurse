@@ -77,7 +77,9 @@ export async function openProficiencyReviewModal(chapterName) {
       const matchedQ = questionMap[qKey?.trim()] || {};
       const displayQuestionText = qData.questionText || matchedQ.questionText || (isNaN(qKey) ? qKey : "Question Item");
       
-      const isMatrix = (qData.type || matchedQ.type)?.toLowerCase() === 'matrix';
+      const qRowsData = qData.rows || matchedQ.rows || {};
+      const qRowsArray = Array.isArray(qRowsData) ? qRowsData : Object.values(qRowsData);
+      const isMatrix = ((qData.type || matchedQ.type)?.toLowerCase() === 'matrix') || qRowsArray.length > 0;
       const isCorrect = qData.correct === true || qData.score === 1;
       const isPartial = qData.score > 0 && qData.score < 1;
       
@@ -112,7 +114,6 @@ export async function openProficiencyReviewModal(chapterName) {
       `;
 
       if (isMatrix) {
-        const qRows = qData.rows || matchedQ.rows || [];
         const qColumns = qData.columns || matchedQ.columns || [];
         const globalRationale = qData.rationale || matchedQ.rationale || "";
 
@@ -129,10 +130,13 @@ export async function openProficiencyReviewModal(chapterName) {
               <tbody>
         `;
 
-        qRows.forEach(row => {
-          contentHtml += `<tr style="border-bottom: 1px solid rgba(51, 65, 85, 0.5);"><td style="padding: 6px; color: #f8fafc; font-weight: 500;">${row.text}</td>`;
+        qRowsArray.forEach(row => {
+          const rowText = typeof row === 'object' && row !== null ? (row.text || '') : row;
+          contentHtml += `<tr style="border-bottom: 1px solid rgba(51, 65, 85, 0.5);"><td style="padding: 6px; color: #f8fafc; font-weight: 500;">${rowText}</td>`;
           qColumns.forEach(colText => {
-            const opt = (row.options || []).find(o => o.text === colText);
+            const rowOptsData = row.options || {};
+            const rowOptsArray = Array.isArray(rowOptsData) ? rowOptsData : Object.values(rowOptsData);
+            const opt = rowOptsArray.find(o => o.text === colText);
             const isCorr = opt ? opt.isCorrect : false;
             contentHtml += `<td style="padding: 6px; text-align: center; color: ${isCorr ? '#34d399' : '#64748b'}; font-weight: bold;">${isCorr ? '✓' : '—'}</td>`;
           });
@@ -150,7 +154,8 @@ export async function openProficiencyReviewModal(chapterName) {
         }
 
       } else {
-        const optionsList = qData.options || matchedQ.options || [];
+        const optionsData = qData.options || matchedQ.options || [];
+        const optionsList = Array.isArray(optionsData) ? optionsData : Object.values(optionsData);
         const correctAnswerIndex = qData.correctAnswerIndex !== undefined ? qData.correctAnswerIndex : matchedQ.correctAnswerIndex;
 
         optionsList.forEach((opt, oIdx) => {
