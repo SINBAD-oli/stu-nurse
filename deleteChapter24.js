@@ -31,7 +31,7 @@ async function inspectAndDelete() {
       
       // Match variants of Chapter 24 or Nutrition
       if (
-        chapField.toLowerCase().includes("chapter 24") || 
+        chapField.toLowerCase().includes("cardiac nursing") || 
         chapField.toLowerCase().includes("nutrition")
       ) {
         console.log(`Deleting document ID ${docSnap.id} with chapter: "${chapField}"`);

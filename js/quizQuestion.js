@@ -1,5 +1,13 @@
 // ./js/quizQuestion.js
 
+// Bulletproof helper to safely convert Firestore arrays, maps, or undefined into arrays
+function safeArray(data) {
+  if (!data) return [];
+  if (Array.isArray(data)) return data;
+  if (typeof data === 'object') return Object.values(data);
+  return [];
+}
+
 export function renderQuestion(q, currentQuestionIndex, totalQuestions, score, answeredCount, isFlagged, onToggleFlag, onSelectionChange) {
   const questionProgress = document.getElementById('modal-quiz-progress');
   const questionMeta = document.getElementById('modal-question-meta');
@@ -19,7 +27,7 @@ export function renderQuestion(q, currentQuestionIndex, totalQuestions, score, a
   const isCompletion = rawType === 'completion';
   const isSATA = rawType === 'sata';
   const isBowTie = rawType === 'bowtie';
-  const optionsList = q.options || [];
+  const optionsList = safeArray(q.options);
 
   let typeBadgeLabel = 'MCQ';
   let typeBadgeColor = 'background: #312e81; color: #c7d2fe;';
@@ -76,10 +84,11 @@ export function renderQuestion(q, currentQuestionIndex, totalQuestions, score, a
       });
     }
   } else if (isBowTie) {
-    const exhibits = q.exhibits && q.exhibits.length > 0 ? q.exhibits : [{ title: "Nurses' Notes", content: q.questionText }];
-    const actions = q.actions || [];
-    const conditions = q.conditions || [];
-    const parameters = q.parameters || [];
+    const rawExhibits = safeArray(q.exhibits);
+    const exhibits = rawExhibits.length > 0 ? rawExhibits : [{ title: "Nurses' Notes", content: q.questionText }];
+    const actions = safeArray(q.actions);
+    const conditions = safeArray(q.conditions);
+    const parameters = safeArray(q.parameters);
 
     const updateBowTieState = () => {
       const { action1, action2, condition, param1, param2 } = selectedIndices;

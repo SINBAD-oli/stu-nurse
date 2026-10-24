@@ -1,498 +1,3708 @@
 [
   {
-    "chapter": "NGN Cardiovascular Case Study",
+    "chapter": "Cardiac Nursing",
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Moderate",
-    "heading": "Recognize Cues",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Recognize atypical ACS symptoms.",
+    "concept": "Integrating clinical cues",
+    "correctAnswer": "A",
+    "difficulty": "Hard",
+    "heading": "Cardiac Assessment",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Integrate symptoms, vital signs, baseline changes, and perfusion findings to identify deterioration.",
     "options": [
       {
-        "isCorrect": false,
-        "rationale": "Chronic atrial fibrillation can cause an irregular pulse, and tachycardia deserves assessment; however, it is not the strongest new clue to ACS.",
-        "text": "A history of chronic atrial fibrillation with an irregular heart rate of 112 beats/min"
-      },
-      {
-        "isCorrect": false,
-        "rationale": "An SpO2 of 95% does not exclude myocardial ischemia or reduced systemic perfusion.",
-        "text": "An oxygen saturation of 95% despite complaints of fatigue and shortness of breath"
-      },
-      {
         "isCorrect": true,
-        "rationale": "New epigastric pressure with diaphoresis and dyspnea may represent an atypical ACS presentation, particularly in an older adult with diabetes. Prompt ECG assessment is indicated.",
-        "text": "New epigastric pressure accompanied by diaphoresis and shortness of breath"
+        "rationale": "A change in symptoms together with hypotension, cool skin, delayed refill, and reduced urine output suggests a pattern of impaired perfusion; prompt reassessment and escalation may be needed.",
+        "text": "The findings should be analyzed together as possible reduced perfusion or clinical deterioration."
       },
       {
         "isCorrect": false,
-        "rationale": "Crackles can reflect heart failure and require assessment, but the new ischemic symptom cluster makes C the priority for suspected ACS.",
-        "text": "Fine crackles at the lung bases in a patient with previously diagnosed heart failure"
+        "rationale": "Cardiac deterioration may occur without classic chest pain; waiting could delay recognition of impaired perfusion.",
+        "text": "Fatigue is nonspecific, so the nurse should wait for chest pain before acting."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A single value does not provide a full stability assessment; symptoms, trends, skin, pulses, mental status, and urine output also matter.",
+        "text": "The blood pressure alone is sufficient to classify the patient as stable."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "LDL-C informs long-term cardiovascular risk and does not take priority over new symptoms and perfusion changes.",
+        "text": "The nurse should review LDL-C before repeating the assessment."
       }
     ],
     "questionNumber": 1,
-    "questionText": "Patient X arrives at the emergency department reporting increased fatigue, intermittent nausea, and shortness of breath over the past two days. He denies crushing chest pain but describes pressure in his upper abdomen. Which finding should cause the nurse the greatest concern for an acute cardiovascular event requiring immediate evaluation?",
-    "rationale": "New epigastric pressure with diaphoresis and dyspnea may represent an atypical ACS presentation, particularly in an older adult with diabetes. Prompt ECG assessment is indicated.",
+    "questionText": "A patient with known cardiac disease reports new fatigue and shortness of breath. The nurse notes BP 94/60 mm Hg, cool hands, delayed capillary refill, and urine output lower than the patient’s usual pattern. Which interpretation should guide the next nursing response?",
+    "rationale": "A change in symptoms together with hypotension, cool skin, delayed refill, and reduced urine output suggests a pattern of impaired perfusion; prompt reassessment and escalation may be needed.",
     "type": "MCQ"
   },
   {
-    "chapter": "NGN Cardiovascular Case Study",
+    "chapter": "Cardiac Nursing",
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
-    "columns": [
-      "Decreased Tissue Perfusion",
-      "Pulmonary Congestion",
-      "Both"
-    ],
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Moderate",
-    "heading": "Analyze Cues",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Distinguish pulmonary congestion from impaired systemic perfusion.",
-    "rows": {
-      "0": {
-        "text": "Urine output of 25 mL/hr",
-        "options": {
-          "0": { "isCorrect": true, "text": "Decreased Tissue Perfusion" },
-          "1": { "isCorrect": false, "text": "Pulmonary Congestion" },
-          "2": { "isCorrect": false, "text": "Both" }
-        }
-      },
-      "1": {
-        "text": "Bilateral crackles",
-        "options": {
-          "0": { "isCorrect": false, "text": "Decreased Tissue Perfusion" },
-          "1": { "isCorrect": true, "text": "Pulmonary Congestion" },
-          "2": { "isCorrect": false, "text": "Both" }
-        }
-      },
-      "2": {
-        "text": "Capillary refill of 4 seconds",
-        "options": {
-          "0": { "isCorrect": true, "text": "Decreased Tissue Perfusion" },
-          "1": { "isCorrect": false, "text": "Pulmonary Congestion" },
-          "2": { "isCorrect": false, "text": "Both" }
-        }
-      },
-      "3": {
-        "text": "Increasing dyspnea with cool extremities",
-        "options": {
-          "0": { "isCorrect": false, "text": "Decreased Tissue Perfusion" },
-          "1": { "isCorrect": false, "text": "Pulmonary Congestion" },
-          "2": { "isCorrect": true, "text": "Both" }
-        }
-      },
-      "4": {
-        "text": "Weak peripheral pulses",
-        "options": {
-          "0": { "isCorrect": true, "text": "Decreased Tissue Perfusion" },
-          "1": { "isCorrect": false, "text": "Pulmonary Congestion" },
-          "2": { "isCorrect": false, "text": "Both" }
-        }
-      }
-    },
-    "questionNumber": 2,
-    "questionText": "For each assessment finding, determine whether it is most consistent with decreased tissue perfusion, pulmonary congestion, or both. Select one response for each row.",
-    "rationale": "Urine output 25 mL/hr: Decreased tissue perfusion (oliguria may reflect reduced renal blood flow). Bilateral crackles: Pulmonary congestion (consistent with fluid in alveolar/interstitial spaces). Capillary refill 4 seconds: Decreased tissue perfusion (delayed refill suggests compromised peripheral circulation). Increasing dyspnea with cool extremities: Both (dyspnea suggests pulmonary involvement while cool extremities suggest poor systemic flow). Weak peripheral pulses: Decreased tissue perfusion (diminished pulse strength suggests reduced peripheral circulation).",
-    "type": "matrix"
-  },
-  {
-    "chapter": "NGN Cardiovascular Case Study",
-    "clientNeed": "Physiological Integrity",
-    "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Difficult",
-    "heading": "Prioritize Hypotheses",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Prioritize acute interventions.",
+    "concept": "Atypical ACS presentation",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "Acute Coronary Syndrome",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize potentially serious ACS symptoms even when classic chest pain is absent.",
     "options": [
       {
         "isCorrect": false,
-        "rationale": "BNP may support a heart-failure assessment but does not replace immediate evaluation for ACS.",
-        "text": "Obtain the BNP level first because the patient has a history of heart failure and bilateral crackles."
+        "rationale": "ACS can present primarily with dyspnea, fatigue, nausea, diaphoresis, or weakness; absence of classic chest pain does not rule it out.",
+        "text": "Treat the symptoms as noncardiac because chest pain is absent."
       },
       {
         "isCorrect": true,
-        "rationale": "Obtain a 12-lead ECG immediately (goal within 10 minutes of presentation), initiate monitoring, and arrange blood work without delaying the ECG.",
-        "text": "Obtain a 12-lead ECG immediately while initiating cardiac monitoring and arranging the ordered laboratory testing."
+        "rationale": "The combined symptoms may indicate ACS, so prompt evaluation and monitoring are warranted even without reported chest pain.",
+        "text": "Recognize a possible time-sensitive ACS pattern and escalate for ECG-based evaluation and serial hs-troponin."
       },
       {
         "isCorrect": false,
-        "rationale": "Troponin results may take time; waiting could delay recognition of an evolving ischemic event. A nondiagnostic ECG also does not exclude ACS.",
-        "text": "Wait for the initial troponin result before obtaining the ECG because the patient denies typical chest pain."
+        "rationale": "BNP supports assessment for heart failure and is not a prerequisite for urgent evaluation of possible ACS.",
+        "text": "Obtain a BNP first and defer further assessment until the result returns."
       },
       {
         "isCorrect": false,
-        "rationale": "A scheduled oral diuretic is not the priority when ACS is suspected, particularly with borderline BP and possible impaired perfusion.",
-        "text": "Administer the patient's scheduled furosemide before performing additional cardiac assessments."
+        "rationale": "New unexplained symptoms may represent acute deterioration and should not be treated as routine preventive-care needs.",
+        "text": "Provide routine risk-factor teaching and reassess at the next scheduled round."
+      }
+    ],
+    "questionNumber": 2,
+    "questionText": "A 69-year-old patient develops nausea, diaphoresis, unusual weakness, and new dyspnea but denies chest pain. Which response best reflects the cardiac study guide?",
+    "rationale": "The combined symptoms may indicate ACS, so prompt evaluation and monitoring are warranted even without reported chest pain.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Myocardial injury versus MI",
+    "correctAnswer": "C",
+    "difficulty": "Hard",
+    "heading": "Troponin Interpretation",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Interpret serial hs-troponin with symptoms and ischemic evidence.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Troponin indicates myocardial injury but does not independently identify its cause.",
+        "text": "The troponin rise by itself identifies the exact cause of injury."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Symptoms and ischemic ECG changes may support ischemia even without classic chest pain.",
+        "text": "The patient has no concern for MI unless chest pain is present."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "A rise/fall in troponin together with evidence of ischemia supports acute MI; the pattern requires urgent evaluation.",
+        "text": "The serial rise supports acute myocardial injury, and the symptoms plus ischemic ECG change raise concern for acute MI."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "ECG and clinical symptoms are essential context for interpreting troponin and assessing ischemia.",
+        "text": "The ECG can be ignored once troponin is above the reference limit."
       }
     ],
     "questionNumber": 3,
-    "questionText": "The nurse suspects acute coronary syndrome (ACS). The healthcare provider has ordered an ECG, high-sensitivity troponin testing, BNP, and a complete metabolic panel. Which nursing action is the highest priority?",
-    "rationale": "Obtain a 12-lead ECG immediately (goal within 10 minutes of presentation), initiate monitoring, and arrange blood work without delaying the ECG.",
+    "questionText": "A patient has new dyspnea and nausea, lateral ST depression, and hs-troponin rising from 24 to 87 ng/L over two hours. Which statement is most accurate?",
+    "rationale": "A rise/fall in troponin together with evidence of ischemia supports acute MI; the pattern requires urgent evaluation.",
     "type": "MCQ"
   },
   {
-    "chapter": "NGN Cardiovascular Case Study",
+    "chapter": "Cardiac Nursing",
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Moderate",
-    "heading": "Analyze Cues",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Interpret ECG findings and biomarkers together.",
+    "concept": "Left-sided congestion",
+    "correctAnswer": "C",
+    "difficulty": "Hard",
+    "heading": "Heart Failure",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Differentiate pulmonary congestion from systemic congestion and low forward flow.",
     "options": [
       {
         "isCorrect": false,
-        "rationale": "Elevated troponin indicates myocardial injury, not automatically infarction. MI diagnosis requires appropriate clinical evidence of ischemia.",
-        "text": "The elevated troponin confirms an acute myocardial infarction regardless of the patient's clinical presentation."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "New ST-segment depression plus symptoms raises concern for ischemia.",
-        "text": "New ST-segment depression combined with epigastric pressure and diaphoresis increases concern for myocardial ischemia."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "BNP elevation supports possible heart failure, but age, kidney function, examination, and imaging affect interpretation.",
-        "text": "The elevated BNP supports possible worsening heart failure but must be interpreted alongside the patient's renal function and assessment findings."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "Hypokalemia and hypomagnesemia increase dysrhythmia risk.",
-        "text": "The patient's potassium and magnesium levels increase the risk of additional cardiac dysrhythmias."
+        "rationale": "This cluster more strongly indicates systemic/right-sided congestion.",
+        "text": "JVD, dependent edema, and ascites without respiratory symptoms."
       },
       {
         "isCorrect": false,
-        "rationale": "Pulse oximetry measures arterial oxygen saturation, not adequacy of blood flow or tissue oxygen delivery.",
-        "text": "The patient's oxygen saturation of 95% indicates that adequate tissue perfusion is being maintained."
+        "rationale": "These findings suggest reduced forward flow or poor perfusion rather than specifically pulmonary congestion.",
+        "text": "Cool extremities, fatigue, and oliguria without lung findings."
       },
       {
         "isCorrect": true,
-        "rationale": "Serial high-sensitivity troponins help identify a dynamic rise or fall in myocardial injury.",
-        "text": "Serial troponin measurements are necessary to evaluate changes in myocardial injury over time."
+        "rationale": "The guide identifies dyspnea, orthopnea, crackles, and hypoxemia as left-sided pulmonary congestion cues; breathing needs priority attention.",
+        "text": "Dyspnea, orthopnea, crackles, and SpO₂ 89% on room air."
       },
       {
         "isCorrect": false,
-        "rationale": "A therapeutic INR on warfarin does not rule out plaque-related ACS.",
-        "text": "The patient's therapeutic INR eliminates the possibility of an acute coronary event."
+        "rationale": "These are long-term cardiovascular risk markers, not acute signs of pulmonary congestion.",
+        "text": "Elevated LDL-C and HbA1c at a routine appointment."
       }
     ],
     "questionNumber": 4,
-    "questionText": "The nurse reviews the ECG and laboratory results. Which interpretations are clinically appropriate? Select all that apply.",
-    "rationale": "New ST-segment depression, elevated BNP, hypokalemia, hypomagnesemia, and the need for serial troponins are all appropriate interpretations based on the clinical picture.",
-    "type": "SATA"
+    "questionText": "Which cluster most strongly points to left-sided heart-failure congestion that may impair oxygenation?",
+    "rationale": "The guide identifies dyspnea, orthopnea, crackles, and hypoxemia as left-sided pulmonary congestion cues; breathing needs priority attention.",
+    "type": "MCQ"
   },
   {
-    "chapter": "NGN Cardiovascular Case Study",
-    "clientNeed": "Pharmacological and Parenteral Therapies",
-    "cognitiveLevel": "Application [Applying]",
-    "columns": [
-      "Bradycardia",
-      "Hyperkalemia",
-      "Hypokalemia",
-      "Bleeding"
-    ],
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Moderate",
-    "heading": "Generate Solutions",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Identify medication-related electrolyte risks.",
-    "rows": {
-      "0": {
-        "text": "Metoprolol",
-        "options": {
-          "0": { "isCorrect": true, "text": "Bradycardia" },
-          "1": { "isCorrect": false, "text": "Hyperkalemia" },
-          "2": { "isCorrect": false, "text": "Hypokalemia" },
-          "3": { "isCorrect": false, "text": "Bleeding" }
-        }
-      },
-      "1": {
-        "text": "Warfarin",
-        "options": {
-          "0": { "isCorrect": false, "text": "Bradycardia" },
-          "1": { "isCorrect": false, "text": "Hyperkalemia" },
-          "2": { "isCorrect": false, "text": "Hypokalemia" },
-          "3": { "isCorrect": true, "text": "Bleeding" }
-        }
-      },
-      "2": {
-        "text": "Furosemide",
-        "options": {
-          "0": { "isCorrect": false, "text": "Bradycardia" },
-          "1": { "isCorrect": false, "text": "Hyperkalemia" },
-          "2": { "isCorrect": true, "text": "Hypokalemia" },
-          "3": { "isCorrect": false, "text": "Bleeding" }
-        }
-      },
-      "3": {
-        "text": "Spironolactone",
-        "options": {
-          "0": { "isCorrect": false, "text": "Bradycardia" },
-          "1": { "isCorrect": true, "text": "Hyperkalemia" },
-          "2": { "isCorrect": false, "text": "Hypokalemia" },
-          "3": { "isCorrect": false, "text": "Bleeding" }
-        }
-      },
-      "4": {
-        "text": "Lisinopril",
-        "options": {
-          "0": { "isCorrect": false, "text": "Bradycardia" },
-          "1": { "isCorrect": true, "text": "Hyperkalemia" },
-          "2": { "isCorrect": false, "text": "Hypokalemia" },
-          "3": { "isCorrect": false, "text": "Bleeding" }
-        }
-      }
-    },
-    "questionNumber": 5,
-    "questionText": "For each medication, determine the most appropriate nursing consideration. Select the most characteristic risk for each medication. A risk may be selected more than once.",
-    "rationale": "Metoprolol causes bradycardia. Warfarin causes bleeding. Furosemide causes hypokalemia. Spironolactone and Lisinopril cause hyperkalemia.",
-    "type": "matrix"
-  },
-  {
-    "chapter": "NGN Cardiovascular Case Study",
+    "chapter": "Cardiac Nursing",
     "clientNeed": "Physiological Integrity",
-    "cognitiveLevel": "Application [Applying]",
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Moderate",
-    "heading": "Prioritize Interventions",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Prioritize acute pulmonary edema interventions.",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Systemic congestion",
+    "correctAnswer": "A",
+    "difficulty": "Hard",
+    "heading": "Heart Failure",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize right-sided/systemic congestion cues and appropriate assessment trends.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "Daily weight and fluid-balance trends help identify worsening congestion; they should be interpreted alongside the full assessment.",
+        "text": "Serial daily weights and intake/output, interpreted with symptoms and examination."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "LDL-C informs long-term risk and does not track acute fluid accumulation.",
+        "text": "A single LDL-C value."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "The PR interval reflects atrioventricular conduction and is not a measure of systemic fluid congestion.",
+        "text": "The PR interval alone."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Normal SpO₂ does not establish that congestion is controlled; edema, weight, breathlessness, and fluid balance still matter.",
+        "text": "A single normal SpO₂ reading as proof that heart failure is controlled."
+      }
+    ],
+    "questionNumber": 5,
+    "questionText": "A patient with heart failure has increasing abdominal girth, JVD, and dependent edema. Which additional trend is most useful to evaluate fluid accumulation over time?",
+    "rationale": "Daily weight and fluid-balance trends help identify worsening congestion; they should be interpreted alongside the full assessment.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Reduced forward flow",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "Perfusion",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize signs that cardiac output may be inadequate for organ perfusion.",
     "options": [
       {
         "isCorrect": false,
-        "rationale": "Scheduled oral furosemide is too slow for immediate respiratory stabilization, and hypotension complicates fluid-management decisions.",
-        "text": "Administer the patient's scheduled oral furosemide to decrease pulmonary fluid accumulation."
+        "rationale": "The patient has multiple current signs of impaired perfusion, not merely long-term risk markers.",
+        "text": "Long-term atherosclerotic risk without acute clinical change."
       },
       {
         "isCorrect": true,
-        "rationale": "High-Fowler positioning, prompt oxygen/respiratory support per protocol, and rapid response activation address life-threatening breathing and circulation problems.",
-        "text": "Place the patient in high-Fowler's position, initiate supplemental oxygen according to emergency protocol, and activate the rapid response team."
+        "rationale": "Cool skin, confusion, weak pulses, and oliguria point to poor perfusion and require prompt reassessment and escalation.",
+        "text": "Reduced forward flow with possible inadequate tissue and renal perfusion."
       },
       {
         "isCorrect": false,
-        "rationale": "A repeat BNP does not address immediate hypoxemia or respiratory distress.",
-        "text": "Obtain another BNP level to determine whether the patient's heart failure has progressed."
+        "rationale": "Venous insufficiency can cause edema and skin changes but does not adequately explain new confusion and oliguria with weak pulses.",
+        "text": "Isolated venous insufficiency."
       },
       {
         "isCorrect": false,
-        "rationale": "Weight and edema are useful for longitudinal monitoring but should not delay emergency treatment.",
-        "text": "Assess peripheral edema and obtain an accurate daily weight before contacting the healthcare provider."
+        "rationale": "Cardiac output can affect renal blood flow; urine output is an important functional trend of renal perfusion.",
+        "text": "An uncomplicated finding because urine output is unrelated to cardiac status."
       }
     ],
     "questionNumber": 6,
-    "questionText": "The nurse recognizes that Patient X is experiencing acute respiratory deterioration. Which nursing action should be performed first?",
-    "rationale": "High-Fowler positioning, prompt oxygen/respiratory support per protocol, and rapid response activation address life-threatening breathing and circulation problems.",
+    "questionText": "A patient with worsening heart failure has cool extremities, new confusion, weak pulses, and urine output of 15 mL/hr. Which problem best unifies these cues?",
+    "rationale": "Cool skin, confusion, weak pulses, and oliguria point to poor perfusion and require prompt reassessment and escalation.",
     "type": "MCQ"
   },
   {
-    "chapter": "NGN Cardiovascular Case Study",
+    "chapter": "Cardiac Nursing",
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Moderate",
-    "heading": "Recognize and Analyze Cues",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Identify acute pulmonary edema manifestations.",
+    "concept": "Stability and perfusion",
+    "correctAnswer": "C",
+    "difficulty": "Hard",
+    "heading": "Dysrhythmias",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Prioritize patient stability and perfusion rather than heart rate alone.",
     "options": [
       {
-        "isCorrect": true,
-        "rationale": "New confusion/restlessness can indicate impaired cerebral perfusion or hypoxemia.",
-        "text": "New confusion and restlessness"
-      },
-      {
-        "isCorrect": true,
-        "rationale": "Pink frothy sputum is a classic concerning sign of acute pulmonary edema.",
-        "text": "Pink, frothy sputum"
-      },
-      {
-        "isCorrect": true,
-        "rationale": "Worsening oliguria suggests deteriorating renal perfusion.",
-        "text": "Urine output decreasing from 25 mL/hr to 15 mL/hr"
+        "isCorrect": false,
+        "rationale": "The guide emphasizes assessing stability and perfusion, not heart rate alone.",
+        "text": "The heart rate is the only finding needed to determine urgency."
       },
       {
         "isCorrect": false,
-        "rationale": "The earlier 95% saturation does not represent the patient's current respiratory status.",
-        "text": "Oxygen saturation previously measuring 95% on room air"
+        "rationale": "Dizziness with hypotension and cool clammy skin may indicate poor perfusion and instability.",
+        "text": "Dizziness is expected with all palpitations and requires no reassessment."
       },
       {
         "isCorrect": true,
-        "rationale": "Hypotension with cool pale skin supports systemic hypoperfusion.",
-        "text": "Hypotension accompanied by cool, pale extremities"
-      },
-      {
-        "isCorrect": true,
-        "rationale": "Diffuse crackles and severe respiratory distress support pulmonary edema.",
-        "text": "Increasing bilateral crackles and respiratory distress"
+        "rationale": "Hypotension and poor-perfusion signs make the rhythm clinically concerning and warrant urgent response.",
+        "text": "The combination suggests possible hemodynamic instability; assess promptly, monitor rhythm, and escalate per emergency protocol."
       },
       {
         "isCorrect": false,
-        "rationale": "Chronic AFib and a previously therapeutic INR are relevant background, not direct evidence of the acute deterioration.",
-        "text": "Chronic atrial fibrillation with a previously therapeutic INR"
+        "rationale": "Preventive teaching does not take priority over possible acute instability.",
+        "text": "Routine lipid education is the safest first action."
       }
     ],
     "questionNumber": 7,
-    "questionText": "The nurse suspects acute pulmonary edema with severely decreased cardiac output. Which findings support this concern? Select all that apply.",
-    "rationale": "New confusion, pink frothy sputum, decreasing urine output, hypotension with cool extremities, and increasing bilateral crackles are all direct signs of acute pulmonary edema and decreased cardiac output.",
-    "type": "SATA"
+    "questionText": "A patient reports palpitations and dizziness. The pulse is irregular, BP is 86/50 mm Hg, and the skin is cool and clammy. Which assessment judgment is most appropriate?",
+    "rationale": "Hypotension and poor-perfusion signs make the rhythm clinically concerning and warrant urgent response.",
+    "type": "MCQ"
   },
   {
-    "chapter": "NGN Cardiovascular Case Study",
+    "chapter": "Cardiac Nursing",
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
-    "columns": [
-      "Impaired Oxygenation",
-      "Impaired Tissue Perfusion",
-      "Both"
-    ],
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Moderate",
-    "heading": "Prioritize Hypotheses",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Distinguish pulmonary congestion from impaired systemic perfusion.",
-    "rows": {
-      "0": {
-        "text": "SpO2 of 86%",
-        "options": {
-          "0": { "isCorrect": true, "text": "Impaired Oxygenation" },
-          "1": { "isCorrect": false, "text": "Impaired Tissue Perfusion" },
-          "2": { "isCorrect": false, "text": "Both" }
-        }
-      },
-      "1": {
-        "text": "Urine output of 15 mL/hr",
-        "options": {
-          "0": { "isCorrect": false, "text": "Impaired Oxygenation" },
-          "1": { "isCorrect": true, "text": "Impaired Tissue Perfusion" },
-          "2": { "isCorrect": false, "text": "Both" }
-        }
-      },
-      "2": {
-        "text": "New confusion with severe dyspnea",
-        "options": {
-          "0": { "isCorrect": false, "text": "Impaired Oxygenation" },
-          "1": { "isCorrect": false, "text": "Impaired Tissue Perfusion" },
-          "2": { "isCorrect": true, "text": "Both" }
-        }
-      },
-      "3": {
-        "text": "Cool extremities and weak pulses",
-        "options": {
-          "0": { "isCorrect": false, "text": "Impaired Oxygenation" },
-          "1": { "isCorrect": true, "text": "Impaired Tissue Perfusion" },
-          "2": { "isCorrect": false, "text": "Both" }
-        }
-      },
-      "4": {
-        "text": "Pink, frothy sputum with diffuse crackles",
-        "options": {
-          "0": { "isCorrect": true, "text": "Impaired Oxygenation" },
-          "1": { "isCorrect": false, "text": "Impaired Tissue Perfusion" },
-          "2": { "isCorrect": false, "text": "Both" }
-        }
-      }
-    },
-    "questionNumber": 8,
-    "questionText": "Determine whether each finding is primarily associated with impaired oxygenation, impaired tissue perfusion, or both.",
-    "rationale": "SpO2 86% relates to impaired oxygenation. Urine output 15 mL/hr relates to impaired tissue perfusion. New confusion with severe dyspnea relates to both. Cool extremities and weak pulses relate to impaired tissue perfusion. Pink, frothy sputum with diffuse crackles relates to impaired oxygenation.",
-    "type": "matrix"
-  },
-  {
-    "chapter": "NGN Cardiovascular Case Study",
-    "clientNeed": "Physiological Integrity",
-    "cognitiveLevel": "Evaluation [Evaluating]",
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Difficult",
-    "heading": "Evaluate Outcomes",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Interpret ECG findings and biomarkers together.",
+    "concept": "Hypokalemia",
+    "correctAnswer": "C",
+    "difficulty": "Hard",
+    "heading": "Electrolytes",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Connect a low potassium result with dysrhythmia risk and clinical cues.",
     "options": [
       {
-        "isCorrect": true,
-        "rationale": "A rising troponin shows dynamic myocardial injury; symptoms and ECG help establish whether this represents MI.",
-        "text": "The increasing troponin indicates evolving myocardial injury and must be interpreted with the ECG and clinical presentation."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "Creatinine rising from 1.9 to 2.3 mg/dL suggests worsening kidney function; low cardiac output is one possible contributor.",
-        "text": "The increase in creatinine may indicate worsening renal function associated with decreased renal perfusion."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "Further decreases in potassium and magnesium increase electrical instability and dysrhythmia risk.",
-        "text": "Decreasing potassium and magnesium increase the risk of potentially serious dysrhythmias."
+        "isCorrect": false,
+        "rationale": "A markedly low potassium with new ventricular ectopy is a concerning combination requiring prompt assessment and escalation.",
+        "text": "The potassium is only mildly abnormal and can wait until routine follow-up."
       },
       {
         "isCorrect": false,
-        "rationale": "An EF of 25% documents severe systolic dysfunction but does not prove its cause is exclusively an acute MI.",
-        "text": "The echocardiogram confirms that heart failure is caused exclusively by an acute myocardial infarction."
-      },
-      {
-        "isCorrect": false,
-        "rationale": "BNP is not a stand-alone diagnostic test for cardiogenic shock.",
-        "text": "Elevated BNP independently establishes cardiogenic shock as the definitive diagnosis."
+        "rationale": "Potassium abnormalities can increase dysrhythmia risk.",
+        "text": "The potassium result is unrelated to cardiac rhythm."
       },
       {
         "isCorrect": true,
-        "rationale": "Persistent hypotension, oliguria, and altered mentation together suggest shock physiology and impaired end-organ perfusion.",
-        "text": "Persistent hypotension, oliguria, and altered mental status raise concern for shock associated with impaired cardiac output."
+        "rationale": "Hypokalemia can cause weakness, ectopy, and possible U waves; the new rhythm finding raises urgency.",
+        "text": "The finding is consistent with hypokalemia-associated electrical instability and needs prompt monitoring and escalation."
       },
       {
         "isCorrect": false,
-        "rationale": "CKD may affect baseline troponin, but a substantial rise with ischemic symptoms cannot be dismissed.",
-        "text": "Because the patient has chronic kidney disease, elevated troponin should be considered clinically insignificant."
+        "rationale": "Long-term glycemic risk is not the immediate priority when severe hypokalemia and ventricular ectopy occur together.",
+        "text": "The nurse should review HbA1c before addressing the rhythm."
+      }
+    ],
+    "questionNumber": 8,
+    "questionText": "A patient taking a loop diuretic has K⁺ 2.7 mEq/L and new ventricular ectopy. What is the safest interpretation?",
+    "rationale": "Hypokalemia can cause weakness, ectopy, and possible U waves; the new rhythm finding raises urgency.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Hyperkalemia",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "Electrolytes",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize hyperkalemia-related conduction risk and relevant context.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Hyperkalemia with ECG changes can be dangerous and requires urgent assessment and action according to protocol.",
+        "text": "The result is expected in CKD and does not need urgent follow-up."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Hyperkalemia can cause conduction slowing and serious arrhythmias; renal function and ACE inhibitor use are relevant context.",
+        "text": "Possible hyperkalemia-related electrical instability is present; promptly escalate and monitor."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Fluid intake alone does not address the immediate electrolyte and rhythm concern.",
+        "text": "Only the patient’s fluid intake needs to be recorded."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "SpO₂ does not exclude an electrolyte-related conduction problem.",
+        "text": "A normal oxygen saturation would exclude a cardiac emergency."
       }
     ],
     "questionNumber": 9,
-    "questionText": "The nurse compares initial and repeat laboratory results. Which conclusions are supported by the available findings? Select all that apply.",
-    "rationale": "Rising troponin indicates evolving injury; increasing creatinine indicates worsening renal perfusion; decreasing K and Mg increase dysrhythmia risk; and persistent hypotension/oliguria/altered mental status suggest shock.",
-    "type": "SATA"
+    "questionText": "A patient with CKD taking an ACE inhibitor has K⁺ 6.2 mEq/L and new conduction slowing on ECG. What should the nurse conclude?",
+    "rationale": "Hyperkalemia can cause conduction slowing and serious arrhythmias; renal function and ACE inhibitor use are relevant context.",
+    "type": "MCQ"
   },
   {
-    "chapter": "NGN Cardiovascular Case Study",
+    "chapter": "Cardiac Nursing",
     "clientNeed": "Physiological Integrity",
-    "cognitiveLevel": "Evaluation [Evaluating]",
-    "concept": "Perfusion",
-    "correctAnswer": "",
-    "difficulty": "Moderate",
-    "heading": "Evaluate Outcomes and Prioritize Care",
-    "integratedProcesses": "Nursing Process",
-    "objective": "Evaluate treatment effectiveness.",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "BNP and NT-proBNP",
+    "correctAnswer": "C",
+    "difficulty": "Hard",
+    "heading": "Heart Failure Biomarkers",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Interpret BNP or NT-proBNP values with clinical context and avoid interchangeable cutoffs.",
     "options": [
       {
         "isCorrect": false,
-        "rationale": "Improved saturation alone does not prove perfusion has recovered while oliguria and confusion persist.",
-        "text": "Oxygen saturation increases from 86% to 97% with supplemental oxygen, but urine output remains 15 mL/hr and the patient remains confused."
+        "rationale": "Higher values can support HF but are not diagnostic alone; renal function and other clinical factors affect interpretation.",
+        "text": "Acute heart failure is confirmed by any BNP above 100 pg/mL."
       },
       {
         "isCorrect": false,
-        "rationale": "A lower heart rate is insufficient when BP remains low and peripheral circulation remains poor.",
-        "text": "Heart rate decreases from 132 to 94 beats/min, but blood pressure remains 86/50 mmHg and peripheral pulses remain weak."
+        "rationale": "The 300 pg/mL rule given in the source is for NT-proBNP, not BNP; the cutoffs are not interchangeable.",
+        "text": "BNP 180 means acute HF is less likely because the value is below 300."
       },
       {
         "isCorrect": true,
-        "rationale": "Improved urine output, mentation, capillary refill, and BP together indicate improving systemic and end-organ perfusion.",
-        "text": "Urine output increases to 45 mL/hr, mental status returns to baseline, capillary refill improves to 2 seconds, and blood pressure increases to 108/68 mmHg."
+        "rationale": "BNP values are affected by age, kidney function, obesity, and atrial fibrillation and cannot establish HF alone.",
+        "text": "The value must be interpreted with symptoms, examination, kidney function, and other diagnostic findings."
       },
       {
         "isCorrect": false,
-        "rationale": "A small BNP change does not outweigh persistent hypotension, dyspnea, and low urine output.",
-        "text": "BNP decreases slightly, but the patient continues to experience dyspnea, hypotension, and reduced urine output."
+        "rationale": "BNP supports assessment of ventricular wall stress/HF; it is not a substitute for troponin and ischemia evaluation.",
+        "text": "BNP can be used to diagnose acute MI instead of serial hs-troponin."
       }
     ],
     "questionNumber": 10,
-    "questionText": "Following emergency interventions, which finding provides the strongest evidence that tissue perfusion is improving?",
-    "rationale": "Improved urine output, mentation, capillary refill, and BP together indicate improving systemic and end-organ perfusion.",
+    "questionText": "A patient with dyspnea and CKD has BNP 180 pg/mL. Which interpretation is best?",
+    "rationale": "BNP values are affected by age, kidney function, obesity, and atrial fibrillation and cannot establish HF alone.",
     "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Anemia and SpO₂",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "CBC and Oxygen Delivery",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Explain why normal oxygen saturation does not exclude anemia-related reduced oxygen delivery.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "SpO₂ estimates the percentage of hemoglobin saturated with oxygen; it does not tell how much hemoglobin is available.",
+        "text": "Normal SpO₂ proves oxygen delivery is adequate."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The source emphasizes that normal SpO₂ does not exclude anemia and that anemia can worsen angina, fatigue, and dyspnea.",
+        "text": "Anemia may reduce oxygen-carrying capacity and contribute to fatigue, dyspnea, or angina even with normal SpO₂."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Hemoglobin is relevant to oxygen delivery and anemia, not specific to HF diagnosis.",
+        "text": "Hemoglobin is a marker used only to diagnose heart failure."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Hemoglobin has independent importance for oxygen-carrying capacity; a normal WBC does not remove that concern.",
+        "text": "The low hemoglobin can be ignored unless the WBC is also elevated."
+      }
+    ],
+    "questionNumber": 11,
+    "questionText": "A patient reports fatigue and exertional dyspnea. SpO₂ is 97% on room air, but hemoglobin is low. Which interpretation is correct?",
+    "rationale": "The source emphasizes that normal SpO₂ does not exclude anemia and that anemia can worsen angina, fatigue, and dyspnea.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Renal perfusion trends",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "Renal Function and Diuresis",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Connect urine output, creatinine, electrolytes, and diuretic treatment.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Improvement in one congestion cue does not rule out worsening perfusion or treatment-related electrolyte changes.",
+        "text": "Improving edema means all treatment effects are favorable; no further assessment is needed."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Diuresis can change creatinine, potassium, and magnesium; low urine output and worsening values require evaluation in context.",
+        "text": "The findings require trending renal function, urine output, potassium, magnesium, blood pressure, and rhythm with prompt clinical communication."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Renal status is best interpreted from trends and clinical context, including urine output and perfusion.",
+        "text": "Creatinine should be interpreted without considering baseline or urine output."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "BNP does not replace assessment of urine output, renal function, electrolytes, and perfusion.",
+        "text": "Only the BNP needs repeating because it replaces renal assessment."
+      }
+    ],
+    "questionNumber": 12,
+    "questionText": "A patient with heart failure is receiving diuresis. The edema is improving, but urine output falls and creatinine rises while potassium and magnesium decrease. What is the best nursing interpretation?",
+    "rationale": "Diuresis can change creatinine, potassium, and magnesium; low urine output and worsening values require evaluation in context.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "ECG intervals and waveforms",
+    "correctAnswer": "A",
+    "difficulty": "Hard",
+    "heading": "ECG Basics",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Match basic ECG components to their electrical meaning.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "These are the correct basic meanings; PR reflects conduction from atrial activation through AV conduction, and QRS is usually under 0.12 seconds.",
+        "text": "P wave = atrial depolarization; QRS = ventricular depolarization; T wave = ventricular repolarization."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "This reverses the basic meanings of the waveforms.",
+        "text": "P wave = ventricular depolarization; QRS = atrial depolarization; T wave = AV conduction."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "These are not the electrical meanings in the study guide.",
+        "text": "P wave = ventricular repolarization; QRS = ventricular filling; T wave = atrial depolarization."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Each waveform represents a different part of cardiac electrical activity.",
+        "text": "P wave, QRS, and T wave all represent the same electrical event."
+      }
+    ],
+    "questionNumber": 13,
+    "questionText": "A student explains that the QRS complex represents atrial depolarization and the P wave represents ventricular repolarization. Which correction is accurate?",
+    "rationale": "These are the correct basic meanings; PR reflects conduction from atrial activation through AV conduction, and QRS is usually under 0.12 seconds.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Choosing a diagnostic test",
+    "correctAnswer": "C",
+    "difficulty": "Hard",
+    "heading": "Cardiac Diagnostics",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Differentiate the principal purpose of common cardiac diagnostic tests.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "A chest radiograph can show congestion and alternative pulmonary causes but does not directly characterize ejection fraction and valve structure.",
+        "text": "Chest radiograph."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Telemetry provides ongoing rhythm surveillance in selected patients.",
+        "text": "Telemetry."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "An echocardiogram evaluates ejection fraction, valves, chamber size, and wall motion.",
+        "text": "Echocardiogram."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A lipid panel supports long-term cardiovascular risk assessment rather than cardiac structure or function.",
+        "text": "Lipid panel."
+      }
+    ],
+    "questionNumber": 14,
+    "questionText": "A patient with worsening dyspnea has crackles and edema. Which test most directly evaluates ejection fraction, valves, chamber size, and wall motion?",
+    "rationale": "An echocardiogram evaluates ejection fraction, valves, chamber size, and wall motion.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Arterial versus venous insufficiency",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "Peripheral Circulation",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Differentiate inadequate arterial delivery from impaired venous return.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "These findings are consistent with arterial insufficiency.",
+        "text": "Cool, pale foot with diminished pulses and exertional leg pain."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The guide identifies edema, heaviness, skin discoloration, and gaiter-area ulcers as venous insufficiency cues.",
+        "text": "Dependent edema, leg heaviness, discoloration, and ulcers in the gaiter area."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "This is concerning for acute limb ischemia and requires urgent escalation.",
+        "text": "Sudden severe limb pain, pallor, paresthesia, and loss of pulse."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "This pattern raises concern for DVT rather than chronic venous insufficiency alone.",
+        "text": "Sudden unilateral swelling, warmth, and tenderness."
+      }
+    ],
+    "questionNumber": 15,
+    "questionText": "Which assessment pattern is most consistent with venous insufficiency rather than arterial insufficiency?",
+    "rationale": "The guide identifies edema, heaviness, skin discoloration, and gaiter-area ulcers as venous insufficiency cues.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Acute limb ischemia",
+    "correctAnswer": "C",
+    "difficulty": "Hard",
+    "heading": "Peripheral Circulation",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize acute limb ischemia as an emergency pattern.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Sudden severe pain with pallor, pulselessness, sensory change, and weakness indicates possible acute limb ischemia and must not be delayed.",
+        "text": "Encourage walking to improve arterial flow and reassess after the shift."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "The abrupt onset and signs of impaired arterial perfusion are not typical routine venous edema findings.",
+        "text": "Treat as routine venous edema because the limb is painful."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The combination includes several classic acute limb ischemia warning signs; urgent evaluation is needed.",
+        "text": "Escalate urgently for possible acute limb ischemia and reassess limb/perfusion status while following emergency protocols."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A lipid panel does not determine the urgency of a sudden ischemic limb.",
+        "text": "Wait for the lipid panel before deciding whether to notify the team."
+      }
+    ],
+    "questionNumber": 16,
+    "questionText": "A patient suddenly develops severe leg pain. The limb is pale and cold, the pulse is absent, and the patient reports numbness with new weakness. What is the priority?",
+    "rationale": "The combination includes several classic acute limb ischemia warning signs; urgent evaluation is needed.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Possible DVT and PE",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "Peripheral Circulation",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize unilateral swelling and possible pulmonary embolism as urgent concerns.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Sudden dyspnea in the context of findings concerning for DVT raises concern for PE and requires urgent escalation.",
+        "text": "Document both findings as chronic venous insufficiency and continue routine care."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The guide identifies unilateral swelling/tenderness/warmth as possible DVT cues and suspected PE as requiring urgent escalation.",
+        "text": "Escalate urgently for possible PE and assess respiratory status and hemodynamic stability."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "New dyspnea is an urgent respiratory/circulatory cue and should not be deferred.",
+        "text": "Apply the usual chronic-leg-edema plan and defer evaluation unless the leg becomes pale."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Breathing and stability take priority over long-term risk testing.",
+        "text": "Obtain a lipid panel before assessing breathing."
+      }
+    ],
+    "questionNumber": 17,
+    "questionText": "A patient develops new unilateral leg swelling, warmth, and tenderness, then suddenly becomes short of breath. Which response is best?",
+    "rationale": "The guide identifies unilateral swelling/tenderness/warmth as possible DVT cues and suspected PE as requiring urgent escalation.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Shock and hypoperfusion",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "Clinical Pattern Recognition",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize combined evidence of hemodynamic instability and organ hypoperfusion.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "This pattern lacks the immediate perfusion deterioration described in the guide.",
+        "text": "Stable blood pressure, warm skin, usual urine output, and a routine elevated LDL-C."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Cerebral, peripheral, and renal perfusion cues together suggest significant hypoperfusion and require prompt escalation.",
+        "text": "New confusion, cool mottled skin, weak pulses, delayed capillary refill, and falling urine output."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Stable chronic edema alone is less urgent than new multi-organ hypoperfusion cues.",
+        "text": "Mild dependent edema that is unchanged from baseline with no respiratory symptoms."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A BNP value alone does not establish shock and should be interpreted with clinical findings.",
+        "text": "A single elevated BNP value in a comfortable patient with no change from baseline."
+      }
+    ],
+    "questionNumber": 18,
+    "questionText": "Which patient pattern is most concerning for shock or significant hypoperfusion?",
+    "rationale": "Cerebral, peripheral, and renal perfusion cues together suggest significant hypoperfusion and require prompt escalation.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Lipid panel and HbA1c",
+    "correctAnswer": "B",
+    "difficulty": "Hard",
+    "heading": "Cardiac Risk Assessment",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Differentiate long-term cardiovascular risk markers from acute diagnostic tests.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "Lipid and HbA1c results do not diagnose acute MI.",
+        "text": "These results diagnose acute MI and should replace ECG and hs-troponin."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "LDL-C and HbA1c inform long-term risk; the source specifically notes that they are not diagnostic of acute MI or acute HF.",
+        "text": "These results contribute to long-term cardiovascular risk assessment and prevention planning, not the diagnosis of acute MI or acute HF."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "These markers do not establish current hemodynamic stability or instability.",
+        "text": "The results show that the patient is currently hemodynamically unstable."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "HbA1c reflects longer-term glycemic exposure, not oxygen saturation.",
+        "text": "The HbA1c measures oxygen saturation over the last several hours."
+      }
+    ],
+    "questionNumber": 19,
+    "questionText": "A patient’s LDL-C is 154 mg/dL and HbA1c is 7.2% at a routine follow-up. Which interpretation is most accurate?",
+    "rationale": "LDL-C and HbA1c inform long-term risk; the source specifically notes that they are not diagnostic of acute MI or acute HF.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Urgent versus nonurgent findings",
+    "correctAnswer": "D",
+    "difficulty": "Hard",
+    "heading": "Prioritization",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Prioritize acute electrical instability over chronic risk findings.",
+    "options": [
+      {
+        "isCorrect": false,
+        "rationale": "This is relevant to long-term risk management but is not the most immediate threat among these choices.",
+        "text": "LDL-C 154 mg/dL at a routine appointment with no acute symptoms."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "This warrants ongoing risk management but not emergency response by itself.",
+        "text": "HbA1c 7.2% at a scheduled diabetes follow-up."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "BNP requires clinical context and does not alone establish an emergency.",
+        "text": "BNP 180 pg/mL in a patient with CKD who is comfortable and unchanged from baseline."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Significant hypokalemia combined with a new ventricular rhythm abnormality creates a concerning risk of electrical instability and calls for prompt assessment and escalation.",
+        "text": "Potassium 2.7 mEq/L with new ventricular ectopy."
+      }
+    ],
+    "questionNumber": 20,
+    "questionText": "Which finding requires the most urgent nursing follow-up?",
+    "rationale": "Significant hypokalemia combined with a new ventricular rhythm abnormality creates a concerning risk of electrical instability and calls for prompt assessment and escalation.",
+    "type": "MCQ"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Complete cue collection",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Cardiac Assessment",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Select findings and assessment domains needed to build a safe cardiac picture.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "Symptoms and changes from baseline are core recognition cues.",
+        "text": "New or worsening chest discomfort, dyspnea, orthopnea, fatigue, or syncope."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Vital-sign trends help establish acuity and whether the patient is deteriorating.",
+        "text": "Blood pressure, heart rate, respiratory rate, and oxygen saturation trends."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These findings help assess cerebral and peripheral perfusion.",
+        "text": "Mental status, skin temperature/color, capillary refill, and pulse strength."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Edema and auscultation help identify congestion and cardiac changes.",
+        "text": "Edema and lung/heart auscultation findings."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "The guide specifically emphasizes recognizing changes from baseline and looking for combined trends.",
+        "text": "Only one isolated measurement, because baseline comparison adds no value."
+      }
+    ],
+    "questionNumber": 21,
+    "questionText": "A nurse is reassessing a patient with a new cardiac complaint. Which data should be integrated rather than interpreted in isolation? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. Symptoms and changes from baseline are core recognition cues. Vital-sign trends help establish acuity and whether the patient is deteriorating. These findings help assess cerebral and peripheral perfusion. Edema and auscultation help identify congestion and cardiac changes.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "ACS manifestations",
+    "correctAnswer": "A, B, C, D, F",
+    "difficulty": "Hard",
+    "heading": "Acute Coronary Syndrome",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize classic and atypical ACS manifestations.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "Chest discomfort is a common ACS cue.",
+        "text": "Chest pressure, heaviness, tightness, or discomfort."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Radiation to these areas is described in the guide.",
+        "text": "Discomfort radiating to the shoulder, arm, back, neck, or jaw."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These accompanying symptoms may occur with ACS.",
+        "text": "Diaphoresis, nausea, dyspnea, pallor, or weakness."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Some patients present primarily with fatigue or dyspnea; absence of classic chest pain does not rule out ACS.",
+        "text": "Fatigue or dyspnea as the main presentation, even without classic chest pain."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "This is a dangerous rule-out assumption and contradicts the source.",
+        "text": "No chest pain means ACS is excluded."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The guide emphasizes time-sensitive ECG, serial troponin, and urgent evaluation.",
+        "text": "Urgent ECG and serial hs-troponin evaluation when the pattern is concerning."
+      }
+    ],
+    "questionNumber": 22,
+    "questionText": "Which findings can be part of a concerning ACS presentation? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D, F. Chest discomfort is a common ACS cue. Radiation to these areas is described in the guide. These accompanying symptoms may occur with ACS. Some patients present primarily with fatigue or dyspnea; absence of classic chest pain does not rule out ACS. The guide emphasizes time-sensitive ECG, serial troponin, and urgent evaluation.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Congestion versus low output",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Heart Failure",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Separate cues of left-sided congestion, systemic congestion, and reduced forward flow.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "These findings point to fluid backing up toward the lungs.",
+        "text": "Orthopnea and crackles suggest pulmonary/left-sided congestion."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These findings are consistent with systemic venous congestion.",
+        "text": "JVD, dependent edema, and ascites suggest systemic/right-sided congestion."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These findings suggest inadequate effective blood delivery and possible organ hypoperfusion.",
+        "text": "Cool extremities, fatigue, and oliguria suggest reduced forward flow/poor perfusion."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "A change over time in weight and symptoms can indicate decompensation.",
+        "text": "Rapid weight gain and worsening breathlessness can signal acute worsening."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Congestion and low output can coexist, so edema does not establish adequate perfusion.",
+        "text": "Edema alone establishes that tissue perfusion is adequate."
+      }
+    ],
+    "questionNumber": 23,
+    "questionText": "Which pairings are accurate for a patient with heart failure? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. These findings point to fluid backing up toward the lungs. These findings are consistent with systemic venous congestion. These findings suggest inadequate effective blood delivery and possible organ hypoperfusion. A change over time in weight and symptoms can indicate decompensation.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Organ-specific signs",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Perfusion",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Map perfusion findings to affected organ systems and identify multi-cue deterioration.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "These can signal impaired cerebral perfusion.",
+        "text": "Confusion, restlessness, dizziness, or syncope."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These may reflect reduced renal perfusion or kidney function changes.",
+        "text": "Reduced urine output or rising creatinine."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These are concerning peripheral perfusion cues.",
+        "text": "Cool mottled skin, weak pulses, or delayed capillary refill."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Cardiac ischemia and electrical instability can accompany poor perfusion.",
+        "text": "Ischemic discomfort or dysrhythmias."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "The guide warns to trend findings together; one isolated value may mislead.",
+        "text": "A single normal finding always rules out perfusion impairment."
+      }
+    ],
+    "questionNumber": 24,
+    "questionText": "Which findings may indicate poor tissue perfusion? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. These can signal impaired cerebral perfusion. These may reflect reduced renal perfusion or kidney function changes. These are concerning peripheral perfusion cues. Cardiac ischemia and electrical instability can accompany poor perfusion.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Priority evaluation",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Acute Coronary Syndrome",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Identify appropriate responses to a concerning ACS cue cluster.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "Breathing and circulation status are central to immediate risk assessment.",
+        "text": "Assess ABCs and hemodynamic stability promptly."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "ECG evaluation is a time-sensitive component of ACS assessment.",
+        "text": "Obtain or review a 12-lead ECG promptly according to protocol."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Serial hs-troponin and ischemia evidence help evaluate myocardial injury/MI.",
+        "text": "Use serial hs-troponin and clinical evidence together."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "A concerning ACS pattern requires urgent evaluation and escalation.",
+        "text": "Monitor and escalate urgently according to emergency/chest-pain protocol."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "BNP is not required before urgent assessment of possible ACS.",
+        "text": "Delay escalation until a BNP result is available."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A changing symptom does not independently exclude ischemia; the full clinical pattern still matters.",
+        "text": "Rule out ACS if classic pain resolves before the nurse arrives."
+      }
+    ],
+    "questionNumber": 25,
+    "questionText": "A patient has new chest pressure, diaphoresis, and dyspnea. Which nursing responses are supported by the study guide? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. Breathing and circulation status are central to immediate risk assessment. ECG evaluation is a time-sensitive component of ACS assessment. Serial hs-troponin and ischemia evidence help evaluate myocardial injury/MI. A concerning ACS pattern requires urgent evaluation and escalation.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Correct biomarker reasoning",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Troponin Interpretation",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Apply the source distinction between myocardial injury and myocardial infarction.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "Troponin is evidence of myocardial injury; the cause needs clinical interpretation.",
+        "text": "Troponin reflects myocardial injury but does not automatically prove myocardial infarction."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "There is no universal single normal troponin number; interpretation uses the specific assay reference.",
+        "text": "The positive threshold is assay-specific and relates to the 99th-percentile upper reference limit."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The source identifies both dynamic troponin change and evidence of ischemia as important for MI diagnosis.",
+        "text": "A rise/fall pattern plus evidence of ischemia supports acute MI."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The source notes common serial timing at 0 and 1–2 hours.",
+        "text": "Serial values may be obtained at 0 and 1–2 hours, depending on the protocol."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "An elevation alone indicates injury and is not enough to establish MI.",
+        "text": "One elevated result always confirms an acute MI regardless of symptoms or ECG."
+      }
+    ],
+    "questionNumber": 26,
+    "questionText": "Which statements about high-sensitivity troponin are accurate? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. Troponin is evidence of myocardial injury; the cause needs clinical interpretation. There is no universal single normal troponin number; interpretation uses the specific assay reference. The source identifies both dynamic troponin change and evidence of ischemia as important for MI diagnosis. The source notes common serial timing at 0 and 1–2 hours.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Purpose of cardiac tests",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Laboratory Testing",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Match common laboratory tests with the clinical question they help answer.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "This is the principal question addressed by troponin.",
+        "text": "hs-troponin helps assess myocardial injury."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These biomarkers support, but do not independently establish, HF.",
+        "text": "BNP/NT-proBNP can support assessment of ventricular wall stress and heart failure."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Potassium, magnesium, and renal function affect electrical stability and treatment decisions.",
+        "text": "BMP and magnesium help assess electrolytes, renal function, dysrhythmia risk, and therapy safety."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Hemoglobin is relevant to oxygen-carrying capacity and symptoms such as fatigue or dyspnea.",
+        "text": "CBC can identify anemia that may affect oxygen delivery."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "They support long-term cardiovascular risk assessment, not acute MI diagnosis.",
+        "text": "Lipid panel and HbA1c are primary tests for diagnosing an acute MI."
+      }
+    ],
+    "questionNumber": 27,
+    "questionText": "Which laboratory interpretations align with the study guide? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. This is the principal question addressed by troponin. These biomarkers support, but do not independently establish, HF. Potassium, magnesium, and renal function affect electrical stability and treatment decisions. Hemoglobin is relevant to oxygen-carrying capacity and symptoms such as fatigue or dyspnea.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Potassium-related safety",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Electrolytes",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize electrolyte-related dysrhythmia risk and relevant clinical context.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "These are described manifestations of low potassium.",
+        "text": "Hypokalemia can contribute to weakness, cramps, ectopy, and possible U waves."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "High potassium can be electrically dangerous.",
+        "text": "Hyperkalemia can cause weakness, conduction slowing, and serious arrhythmias."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Medication and kidney context can help explain risk and guide safe treatment evaluation.",
+        "text": "Loop diuretics, ACE inhibitors/ARBs/ARNIs, MRAs, and renal function are relevant when reviewing potassium abnormalities."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Marked electrolyte abnormalities can be urgent, especially with symptoms or ECG/rhythm changes.",
+        "text": "Severe potassium abnormalities warrant prompt assessment and monitoring."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "The source notes that a hemolyzed sample may need confirmation when clinically appropriate.",
+        "text": "A hemolyzed sample should always be accepted as definitive without clinical consideration."
+      }
+    ],
+    "questionNumber": 28,
+    "questionText": "Which statements about potassium and cardiac safety are accurate? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. These are described manifestations of low potassium. High potassium can be electrically dangerous. Medication and kidney context can help explain risk and guide safe treatment evaluation. Marked electrolyte abnormalities can be urgent, especially with symptoms or ECG/rhythm changes.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Diuresis and renal trends",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Heart Failure Treatment Monitoring",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Choose relevant reassessment parameters during diuresis.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "These help determine whether pulmonary congestion is improving or worsening.",
+        "text": "Respiratory status, orthopnea, and breathlessness."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These are central fluid-balance and congestion trends.",
+        "text": "Intake/output, daily weight, and edema."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These help detect hypotension or impaired perfusion.",
+        "text": "Blood pressure, skin temperature, pulses, and mental status."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Renal function and electrolytes can change during diuresis and affect safety.",
+        "text": "Urine output, creatinine/eGFR, potassium, and magnesium."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Improvement in edema alone can miss reduced perfusion or therapy-related complications.",
+        "text": "Only whether the edema appears smaller."
+      }
+    ],
+    "questionNumber": 29,
+    "questionText": "A patient with worsening HF is receiving diuresis. Which variables should the nurse trend together? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. These help determine whether pulmonary congestion is improving or worsening. These are central fluid-balance and congestion trends. These help detect hypotension or impaired perfusion. Renal function and electrolytes can change during diuresis and affect safety.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Cutoff and context interpretation",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "BNP and NT-proBNP",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Interpret natriuretic peptide cutoffs and factors that affect their meaning.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "This is the approximate source cutoff for BNP.",
+        "text": "BNP below 100 pg/mL makes acute HF less likely in the guide’s context."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "This is the approximate source cutoff for NT-proBNP.",
+        "text": "NT-proBNP below 300 pg/mL makes acute HF less likely in the guide’s context."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The two biomarkers have different cutoffs and should not be swapped.",
+        "text": "BNP and NT-proBNP cutoffs should not be treated as interchangeable."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The source lists these factors as important context.",
+        "text": "Age, kidney function, obesity, and atrial fibrillation may influence values."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Higher values support HF but are not diagnostic by themselves.",
+        "text": "A higher value confirms acute HF without considering symptoms or other tests."
+      }
+    ],
+    "questionNumber": 30,
+    "questionText": "Which statements are accurate when interpreting BNP or NT-proBNP? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. This is the approximate source cutoff for BNP. This is the approximate source cutoff for NT-proBNP. The two biomarkers have different cutoffs and should not be swapped. The source lists these factors as important context.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Electrical activity and intervals",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "ECG Basics",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Interpret basic ECG waves and approximate intervals.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "This is the guide’s definition of the P wave.",
+        "text": "The P wave represents atrial depolarization."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "This is the approximate reference interval given in the guide.",
+        "text": "The PR interval is approximately 0.12–0.20 seconds."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "This is the approximate usual QRS duration cited in the guide.",
+        "text": "The QRS duration is usually less than 0.12 seconds."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "This is the guide’s definition of the T wave.",
+        "text": "The T wave represents ventricular repolarization."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "The guide instructs interpretation using sex, rate, and clinical context.",
+        "text": "QTc should be interpreted without considering heart rate or clinical context."
+      }
+    ],
+    "questionNumber": 31,
+    "questionText": "Which ECG statements match the guide? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. This is the guide’s definition of the P wave. This is the approximate reference interval given in the guide. This is the approximate usual QRS duration cited in the guide. This is the guide’s definition of the T wave.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Test selection",
+    "correctAnswer": "A, B, C, D, E",
+    "difficulty": "Hard",
+    "heading": "Cardiac Diagnostics",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Choose what common diagnostic studies can contribute to cardiovascular assessment.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "This is the role described in the guide.",
+        "text": "12-lead ECG: ischemia, conduction, and rhythm changes."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Echo provides structural and functional assessment.",
+        "text": "Echocardiogram: EF, valves, chamber size, and wall motion."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "A chest radiograph can help assess congestion and other pulmonary explanations for symptoms.",
+        "text": "Chest radiograph: congestion and alternative pulmonary causes."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Telemetry is used for ongoing rhythm monitoring when indicated.",
+        "text": "Telemetry: rhythm surveillance in selected patients."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These modalities can assess coronary/anatomic structure when clinically indicated.",
+        "text": "Coronary angiography or CT: anatomical assessment when indicated."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "A lipid panel measures risk-related blood values; it does not image coronary anatomy.",
+        "text": "Lipid panel: direct visualization of coronary anatomy."
+      }
+    ],
+    "questionNumber": 32,
+    "questionText": "Which diagnostic-test pairings are accurate? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D, E. This is the role described in the guide. Echo provides structural and functional assessment. A chest radiograph can help assess congestion and other pulmonary explanations for symptoms. Telemetry is used for ongoing rhythm monitoring when indicated. These modalities can assess coronary/anatomic structure when clinically indicated.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Arterial versus venous patterns",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Peripheral Circulation",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Classify typical arterial and venous insufficiency findings.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "These are reduced arterial-delivery findings.",
+        "text": "Arterial insufficiency: cool or pale limb and diminished pulse."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Exertional pain is consistent with arterial insufficiency in the guide.",
+        "text": "Arterial insufficiency: exertional leg pain."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These are typical venous insufficiency findings described in the source.",
+        "text": "Venous insufficiency: edema, heaviness, skin discoloration, or gaiter-area ulcers."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "This cue cluster raises concern for DVT.",
+        "text": "Possible DVT: unilateral swelling, tenderness, and warmth."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Acute limb ischemia is associated with sudden ischemic cues such as pain, pallor, pulselessness, and sensory or motor changes.",
+        "text": "Acute limb ischemia: gradual unchanged edema as the only finding."
+      }
+    ],
+    "questionNumber": 33,
+    "questionText": "Which findings are accurately associated with the stated peripheral circulation problem? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. These are reduced arterial-delivery findings. Exertional pain is consistent with arterial insufficiency in the guide. These are typical venous insufficiency findings described in the source. This cue cluster raises concern for DVT.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Six Ps and urgent response",
+    "correctAnswer": "A, B, C, D, E",
+    "difficulty": "Hard",
+    "heading": "Acute Limb Ischemia",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize the warning signs of acute limb ischemia.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "Acute onset pain is a key warning sign.",
+        "text": "Sudden severe pain."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Pallor and temperature change are among the classic warning signs.",
+        "text": "Pallor and a cold limb/poikilothermia."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Loss of pulse suggests impaired arterial flow.",
+        "text": "Absent or diminished pulse/pulselessness."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Sensory changes are concerning in acute limb ischemia.",
+        "text": "Paresthesia or new sensory loss."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Motor changes may indicate severe limb ischemia and are urgent.",
+        "text": "Paralysis or new weakness."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "This is more consistent with chronic venous findings than acute limb ischemia.",
+        "text": "Stable chronic gaiter-area ulcer with no acute change."
+      }
+    ],
+    "questionNumber": 34,
+    "questionText": "Which findings are warning signs of acute limb ischemia that warrant urgent escalation? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D, E. Acute onset pain is a key warning sign. Pallor and temperature change are among the classic warning signs. Loss of pulse suggests impaired arterial flow. Sensory changes are concerning in acute limb ischemia. Motor changes may indicate severe limb ischemia and are urgent.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Renal interpretation",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Renal Function and Perfusion",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Interpret renal tests and urine output in clinical context.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "These tests inform kidney status and treatment safety.",
+        "text": "Creatinine and eGFR help assess kidney function and medication considerations."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The guide warns that BUN is not specific.",
+        "text": "BUN provides context about volume/perfusion but is not specific by itself."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Falling urine output may signal reduced renal blood flow or other clinical concerns.",
+        "text": "Urine output is a functional trend that can reflect renal perfusion."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Cardiac output and renal perfusion are connected.",
+        "text": "Poor cardiac output may reduce renal blood flow."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Improving respiratory findings do not make renal and electrolyte trends irrelevant.",
+        "text": "Changes in creatinine, potassium, and magnesium during diuresis can be ignored if breathing improves."
+      }
+    ],
+    "questionNumber": 35,
+    "questionText": "Which statements about renal function and cardiac perfusion are accurate? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. These tests inform kidney status and treatment safety. The guide warns that BUN is not specific. Falling urine output may signal reduced renal blood flow or other clinical concerns. Cardiac output and renal perfusion are connected.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Interpreting CBC",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "CBC and Oxygen Delivery",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Recognize how CBC findings relate to oxygen delivery and antithrombotic care.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "Reduced hemoglobin can reduce oxygen-carrying capacity and increase symptoms.",
+        "text": "Anemia can worsen angina, fatigue, and dyspnea."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "WBC must be interpreted with clinical context and is not specific for cardiac disease.",
+        "text": "WBC may reflect infection or stress but is not cardiac-specific."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Platelet counts can affect bleeding-risk decisions.",
+        "text": "Platelets are relevant to bleeding and antithrombotic care."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Reference ranges are not identical for all patients and settings.",
+        "text": "Hemoglobin and hematocrit ranges vary by laboratory, age, and context."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Normal SpO₂ does not rule out low hemoglobin or impaired oxygen-carrying capacity.",
+        "text": "Normal SpO₂ excludes anemia."
+      }
+    ],
+    "questionNumber": 36,
+    "questionText": "Which statements about CBC interpretation in cardiac patients are accurate? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. Reduced hemoglobin can reduce oxygen-carrying capacity and increase symptoms. WBC must be interpreted with clinical context and is not specific for cardiac disease. Platelet counts can affect bleeding-risk decisions. Reference ranges are not identical for all patients and settings.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "Lipid panel and HbA1c",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "Long-Term Cardiovascular Risk",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Differentiate long-term risk markers from acute diagnostic data.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "LDL-C is important to long-term cardiovascular risk management.",
+        "text": "LDL-C is atherogenic cholesterol, and lower targets may be used for higher-risk patients."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These are additional lipid-related risk markers.",
+        "text": "HDL-C and triglycerides provide additional risk information."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "HbA1c is not an acute glucose measurement; it reflects longer-term glycemia.",
+        "text": "HbA1c reflects longer-term glycemic exposure."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These are approximate common ranges in the source, with clinical context still needed.",
+        "text": "The guide gives common reference examples of triglycerides below 150 mg/dL and HbA1c below 5.7%."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "The source explicitly states that these are not diagnostic of acute MI or acute HF.",
+        "text": "Lipid and HbA1c results independently diagnose acute MI or acute HF."
+      }
+    ],
+    "questionNumber": 37,
+    "questionText": "Which statements about lipid panel and HbA1c findings are accurate? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. LDL-C is important to long-term cardiovascular risk management. These are additional lipid-related risk markers. HbA1c is not an acute glucose measurement; it reflects longer-term glycemia. These are approximate common ranges in the source, with clinical context still needed.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "concept": "From cue to action to evaluation",
+    "correctAnswer": "A, B, C, D",
+    "difficulty": "Hard",
+    "heading": "RN Priorities",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Apply the recognition-prioritization-action-evaluation workflow.",
+    "options": [
+      {
+        "isCorrect": true,
+        "rationale": "Recognition depends on the complete clinical picture, not isolated numbers.",
+        "text": "Recognize symptoms, vital signs, perfusion, and rhythm cues together."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These are urgent threats highlighted by the guide.",
+        "text": "Prioritize breathing compromise, hemodynamic instability, and possible ischemia."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Assessment and prompt escalation are key actions during deterioration.",
+        "text": "Monitor, reassess, and escalate according to emergency protocols."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Evaluation checks the response to care and whether the patient is improving or worsening.",
+        "text": "Evaluate response using symptoms, I&O, daily weight, labs, ECG, and vital-sign trends as appropriate."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Teaching is important but should not displace immediate stabilization and escalation.",
+        "text": "Teach medication adherence before stabilizing an acutely unstable patient."
+      }
+    ],
+    "questionNumber": 38,
+    "questionText": "Which actions follow the guide’s RN priority framework when a cardiac patient deteriorates? Select all that apply.",
+    "rationale": "Correct selections: A, B, C, D. Recognition depends on the complete clinical picture, not isolated numbers. These are urgent threats highlighted by the guide. Assessment and prompt escalation are key actions during deterioration. Evaluation checks the response to care and whether the patient is improving or worsening.",
+    "type": "SATA"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Left-sided/pulmonary congestion",
+      "Right-sided/systemic congestion",
+      "Reduced forward flow/poor perfusion"
+    ],
+    "concept": "Congestion versus low output",
+    "correctAnswer": "0: Left-sided/pulmonary congestion ; 1: Right-sided/systemic congestion ; 2: Reduced forward flow/poor perfusion ; 3: Right-sided/systemic congestion ; 4: Left-sided/pulmonary congestion ; 5: Reduced forward flow/poor perfusion",
+    "difficulty": "Hard",
+    "heading": "Heart Failure Cue Classification",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Classify clinical cues as pulmonary congestion, systemic congestion, or reduced forward flow.",
+    "rows": {
+      "0": {
+        "text": "Orthopnea with crackles",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Left-sided/pulmonary congestion"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Right-sided/systemic congestion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Reduced forward flow/poor perfusion"
+          }
+        }
+      },
+      "1": {
+        "text": "JVD with dependent edema",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Left-sided/pulmonary congestion"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Right-sided/systemic congestion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Reduced forward flow/poor perfusion"
+          }
+        }
+      },
+      "2": {
+        "text": "Cool hands with low urine output",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Left-sided/pulmonary congestion"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Right-sided/systemic congestion"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Reduced forward flow/poor perfusion"
+          }
+        }
+      },
+      "3": {
+        "text": "Ascites with increasing abdominal distention",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Left-sided/pulmonary congestion"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Right-sided/systemic congestion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Reduced forward flow/poor perfusion"
+          }
+        }
+      },
+      "4": {
+        "text": "Hypoxemia with worsening dyspnea",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Left-sided/pulmonary congestion"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Right-sided/systemic congestion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Reduced forward flow/poor perfusion"
+          }
+        }
+      },
+      "5": {
+        "text": "Fatigue, weak pulses, and new confusion",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Left-sided/pulmonary congestion"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Right-sided/systemic congestion"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Reduced forward flow/poor perfusion"
+          }
+        }
+      }
+    },
+    "questionNumber": 39,
+    "questionText": "For each finding, select the best-fitting cardiac pattern. Each row has one best answer.",
+    "rationale": "Orthopnea with crackles: Orthopnea and crackles suggest fluid backing up toward the lungs. JVD with dependent edema: JVD and dependent edema suggest systemic venous congestion. Cool hands with low urine output: Cool extremities and oliguria suggest reduced forward flow and impaired perfusion. Ascites with increasing abdominal distention: Ascites is a systemic congestion cue. Hypoxemia with worsening dyspnea: Hypoxemia and dyspnea point to pulmonary congestion and impaired oxygenation. Fatigue, weak pulses, and new confusion: These cues suggest poor perfusion affecting peripheral and cerebral systems.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Myocardial injury",
+      "HF / ventricular wall stress support",
+      "Electrolyte, renal, and therapy safety",
+      "Oxygen-carrying capacity / blood cells",
+      "Long-term cardiovascular risk"
+    ],
+    "concept": "Clinical question and lab selection",
+    "correctAnswer": "0: Myocardial injury ; 1: HF / ventricular wall stress support ; 2: Electrolyte, renal, and therapy safety ; 3: Oxygen-carrying capacity / blood cells ; 4: Long-term cardiovascular risk",
+    "difficulty": "Hard",
+    "heading": "Laboratory Test Purpose",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Connect cardiac laboratory tests to the main clinical question they help address.",
+    "rows": {
+      "0": {
+        "text": "High-sensitivity troponin",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Myocardial injury"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "HF / ventricular wall stress support"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Electrolyte, renal, and therapy safety"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Oxygen-carrying capacity / blood cells"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Long-term cardiovascular risk"
+          }
+        }
+      },
+      "1": {
+        "text": "BNP or NT-proBNP",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Myocardial injury"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "HF / ventricular wall stress support"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Electrolyte, renal, and therapy safety"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Oxygen-carrying capacity / blood cells"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Long-term cardiovascular risk"
+          }
+        }
+      },
+      "2": {
+        "text": "BMP plus magnesium",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Myocardial injury"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "HF / ventricular wall stress support"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Electrolyte, renal, and therapy safety"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Oxygen-carrying capacity / blood cells"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Long-term cardiovascular risk"
+          }
+        }
+      },
+      "3": {
+        "text": "CBC, especially hemoglobin",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Myocardial injury"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "HF / ventricular wall stress support"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Electrolyte, renal, and therapy safety"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Oxygen-carrying capacity / blood cells"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Long-term cardiovascular risk"
+          }
+        }
+      },
+      "4": {
+        "text": "Lipid panel and HbA1c",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Myocardial injury"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "HF / ventricular wall stress support"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Electrolyte, renal, and therapy safety"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Oxygen-carrying capacity / blood cells"
+          },
+          "4": {
+            "isCorrect": true,
+            "text": "Long-term cardiovascular risk"
+          }
+        }
+      }
+    },
+    "questionNumber": 40,
+    "questionText": "For each test, select the primary clinical question it helps address. Use the most direct match.",
+    "rationale": "High-sensitivity troponin: hs-troponin reflects myocardial injury; MI interpretation also requires ischemic context. BNP or NT-proBNP: Natriuretic peptides support assessment of ventricular wall stress and HF. BMP plus magnesium: BMP and Mg help assess electrolytes, renal function, and dysrhythmia/therapy risks. CBC, especially hemoglobin: Hemoglobin relates to anemia and oxygen-carrying capacity; CBC also supplies WBC and platelet information. Lipid panel and HbA1c: These markers support long-term cardiovascular and diabetes-related risk assessment.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Hypokalemia",
+      "Hyperkalemia",
+      "Not specific to either alone"
+    ],
+    "concept": "Electrolyte pattern recognition",
+    "correctAnswer": "0: Hypokalemia ; 1: Hyperkalemia ; 2: Hypokalemia ; 3: Hyperkalemia ; 4: Not specific to either alone ; 5: Hypokalemia",
+    "difficulty": "Hard",
+    "heading": "Potassium Clinical Risk",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Distinguish findings more characteristic of low potassium, high potassium, or nonspecific effects.",
+    "rows": {
+      "0": {
+        "text": "K⁺ 2.9 mEq/L with muscle cramps",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Hypokalemia"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Hyperkalemia"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Not specific to either alone"
+          }
+        }
+      },
+      "1": {
+        "text": "Conduction slowing with K⁺ 6.1 mEq/L",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Hypokalemia"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Hyperkalemia"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Not specific to either alone"
+          }
+        }
+      },
+      "2": {
+        "text": "Ventricular ectopy with K⁺ 2.7 mEq/L",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Hypokalemia"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Hyperkalemia"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Not specific to either alone"
+          }
+        }
+      },
+      "3": {
+        "text": "Weakness with a high potassium result",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Hypokalemia"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Hyperkalemia"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Not specific to either alone"
+          }
+        }
+      },
+      "4": {
+        "text": "A potassium abnormality in a patient taking a loop diuretic or ACE inhibitor",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Hypokalemia"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Hyperkalemia"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Not specific to either alone"
+          }
+        }
+      },
+      "5": {
+        "text": "Possible U waves with low potassium",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Hypokalemia"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Hyperkalemia"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Not specific to either alone"
+          }
+        }
+      }
+    },
+    "questionNumber": 41,
+    "questionText": "Classify each cue by the potassium pattern with which it is most directly associated in the study guide.",
+    "rationale": "K⁺ 2.9 mEq/L with muscle cramps: Potassium below approximately 3.5 mEq/L is hypokalemia; cramps and weakness may occur. Conduction slowing with K⁺ 6.1 mEq/L: Hyperkalemia can slow conduction and cause dangerous arrhythmias. Ventricular ectopy with K⁺ 2.7 mEq/L: Hypokalemia can increase ectopy/dysrhythmia risk, particularly with a markedly low result. Weakness with a high potassium result: Weakness may occur with hyperkalemia, and the elevated value requires clinical interpretation. A potassium abnormality in a patient taking a loop diuretic or ACE inhibitor: Medication context affects the risk and interpretation but does not alone identify whether the potassium is high or low. Possible U waves with low potassium: U waves are a possible ECG finding in hypokalemia.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Atrial depolarization",
+      "Atrioventricular conduction interval",
+      "Ventricular depolarization",
+      "Ventricular repolarization"
+    ],
+    "concept": "Basic ECG meaning",
+    "correctAnswer": "0: Atrial depolarization ; 1: Atrioventricular conduction interval ; 2: Ventricular depolarization ; 3: Ventricular repolarization",
+    "difficulty": "Hard",
+    "heading": "ECG Components",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Match each ECG component to its fundamental electrical meaning or interval.",
+    "rows": {
+      "0": {
+        "text": "P wave",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Atrial depolarization"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Atrioventricular conduction interval"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Ventricular depolarization"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Ventricular repolarization"
+          }
+        }
+      },
+      "1": {
+        "text": "PR interval",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Atrial depolarization"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Atrioventricular conduction interval"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Ventricular depolarization"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Ventricular repolarization"
+          }
+        }
+      },
+      "2": {
+        "text": "QRS complex",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Atrial depolarization"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Atrioventricular conduction interval"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Ventricular depolarization"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Ventricular repolarization"
+          }
+        }
+      },
+      "3": {
+        "text": "T wave",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Atrial depolarization"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Atrioventricular conduction interval"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Ventricular depolarization"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Ventricular repolarization"
+          }
+        }
+      }
+    },
+    "questionNumber": 42,
+    "questionText": "Match each ECG component with its basic interpretation.",
+    "rationale": "P wave: The P wave represents atrial depolarization. PR interval: The PR interval reflects conduction from atrial activation through AV conduction; approximate range is 0.12–0.20 seconds. QRS complex: The QRS complex represents ventricular depolarization and is usually under 0.12 seconds. T wave: The T wave represents ventricular repolarization.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Arterial insufficiency",
+      "Venous insufficiency",
+      "Possible DVT",
+      "Acute limb ischemia"
+    ],
+    "concept": "Arterial, venous, DVT, or acute ischemia",
+    "correctAnswer": "0: Arterial insufficiency ; 1: Venous insufficiency ; 2: Possible DVT ; 3: Acute limb ischemia ; 4: Arterial insufficiency ; 5: Venous insufficiency",
+    "difficulty": "Hard",
+    "heading": "Peripheral Circulation",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Classify peripheral vascular findings using timing, skin, pulse, and symptom cues.",
+    "rows": {
+      "0": {
+        "text": "Cool, pale limb with diminished pulse",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Arterial insufficiency"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Venous insufficiency"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Possible DVT"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Acute limb ischemia"
+          }
+        }
+      },
+      "1": {
+        "text": "Chronic dependent edema and gaiter-area ulcer",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Arterial insufficiency"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Venous insufficiency"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Possible DVT"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Acute limb ischemia"
+          }
+        }
+      },
+      "2": {
+        "text": "New unilateral swelling, warmth, and tenderness",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Arterial insufficiency"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Venous insufficiency"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Possible DVT"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Acute limb ischemia"
+          }
+        }
+      },
+      "3": {
+        "text": "Sudden severe pain, pulselessness, paresthesia, and cold limb",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Arterial insufficiency"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Venous insufficiency"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Possible DVT"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Acute limb ischemia"
+          }
+        }
+      },
+      "4": {
+        "text": "Pain with exertion and diminished peripheral pulses",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Arterial insufficiency"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Venous insufficiency"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Possible DVT"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Acute limb ischemia"
+          }
+        }
+      },
+      "5": {
+        "text": "Chronic leg heaviness with discoloration and edema",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Arterial insufficiency"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Venous insufficiency"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Possible DVT"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Acute limb ischemia"
+          }
+        }
+      }
+    },
+    "questionNumber": 43,
+    "questionText": "For each finding, select the best-fitting peripheral circulation category.",
+    "rationale": "Cool, pale limb with diminished pulse: Coolness, pallor, and diminished pulses suggest arterial insufficiency. Chronic dependent edema and gaiter-area ulcer: Edema and gaiter-area ulcers are classic venous insufficiency cues. New unilateral swelling, warmth, and tenderness: This combination raises concern for DVT. Sudden severe pain, pulselessness, paresthesia, and cold limb: Abrupt pain with absent pulse, sensory change, and temperature change is concerning for acute limb ischemia. Pain with exertion and diminished peripheral pulses: Exertional pain with diminished pulse is consistent with arterial insufficiency. Chronic leg heaviness with discoloration and edema: Heaviness, discoloration, and edema are consistent with venous insufficiency.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "12-lead ECG",
+      "Echocardiogram",
+      "Chest radiograph",
+      "Telemetry",
+      "Coronary angiography / CT"
+    ],
+    "concept": "Selecting the best diagnostic modality",
+    "correctAnswer": "0: 12-lead ECG ; 1: Echocardiogram ; 2: Chest radiograph ; 3: Telemetry ; 4: Coronary angiography / CT",
+    "difficulty": "Hard",
+    "heading": "Cardiac Diagnostics",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Match a cardiac diagnostic test to the main information it provides.",
+    "rows": {
+      "0": {
+        "text": "Assess ischemia, conduction, and rhythm changes",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "12-lead ECG"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Echocardiogram"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Chest radiograph"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Telemetry"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Coronary angiography / CT"
+          }
+        }
+      },
+      "1": {
+        "text": "Evaluate EF, valves, chamber size, and wall motion",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "12-lead ECG"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Echocardiogram"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Chest radiograph"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Telemetry"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Coronary angiography / CT"
+          }
+        }
+      },
+      "2": {
+        "text": "Assess pulmonary congestion and alternative pulmonary causes",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "12-lead ECG"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Echocardiogram"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Chest radiograph"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Telemetry"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Coronary angiography / CT"
+          }
+        }
+      },
+      "3": {
+        "text": "Provide ongoing rhythm surveillance in a selected patient",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "12-lead ECG"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Echocardiogram"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Chest radiograph"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Telemetry"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Coronary angiography / CT"
+          }
+        }
+      },
+      "4": {
+        "text": "Assess coronary/anatomic structures when indicated",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "12-lead ECG"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Echocardiogram"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Chest radiograph"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Telemetry"
+          },
+          "4": {
+            "isCorrect": true,
+            "text": "Coronary angiography / CT"
+          }
+        }
+      }
+    },
+    "questionNumber": 44,
+    "questionText": "For each clinical need, select the test that best matches the purpose stated in the study guide.",
+    "rationale": "Assess ischemia, conduction, and rhythm changes: A 12-lead ECG evaluates ischemia, conduction, and rhythm changes. Evaluate EF, valves, chamber size, and wall motion: Echocardiography evaluates structure and function, including EF and valves. Assess pulmonary congestion and alternative pulmonary causes: Chest radiograph can show congestion and other pulmonary causes of symptoms. Provide ongoing rhythm surveillance in a selected patient: Telemetry supports ongoing rhythm monitoring when indicated. Assess coronary/anatomic structures when indicated: Coronary angiography or CT may provide anatomical assessment when indicated.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Cerebral",
+      "Renal",
+      "Peripheral",
+      "Cardiac"
+    ],
+    "concept": "Perfusion finding to body system",
+    "correctAnswer": "0: Cerebral ; 1: Renal ; 2: Peripheral ; 3: Cardiac",
+    "difficulty": "Hard",
+    "heading": "Organ Perfusion",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Relate perfusion cues to the organ system most directly represented.",
+    "rows": {
+      "0": {
+        "text": "New confusion, restlessness, or syncope",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Cerebral"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Renal"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Peripheral"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Cardiac"
+          }
+        }
+      },
+      "1": {
+        "text": "Reduced urine output and rising creatinine",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Cerebral"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Renal"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Peripheral"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Cardiac"
+          }
+        }
+      },
+      "2": {
+        "text": "Cool mottled skin, weak pulses, delayed refill",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Cerebral"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Renal"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Peripheral"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Cardiac"
+          }
+        }
+      },
+      "3": {
+        "text": "Ischemic discomfort or dysrhythmia",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Cerebral"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Renal"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Peripheral"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Cardiac"
+          }
+        }
+      }
+    },
+    "questionNumber": 45,
+    "questionText": "For each finding, select the organ system or perfusion area most directly represented.",
+    "rationale": "New confusion, restlessness, or syncope: Changes in mental status and syncope can reflect impaired cerebral perfusion. Reduced urine output and rising creatinine: Urine output and creatinine trends are relevant to renal function/perfusion. Cool mottled skin, weak pulses, delayed refill: These findings reflect peripheral perfusion. Ischemic discomfort or dysrhythmia: Cardiac ischemic discomfort and electrical instability are cardiac cues.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Possible ACS",
+      "Acute HF congestion",
+      "Dysrhythmia with possible instability",
+      "Shock / hypoperfusion"
+    ],
+    "concept": "Acute syndrome matching",
+    "correctAnswer": "0: Possible ACS ; 1: Acute HF congestion ; 2: Dysrhythmia with possible instability ; 3: Shock / hypoperfusion",
+    "difficulty": "Hard",
+    "heading": "Clinical Pattern Recognition",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Match cue clusters to the clinical pattern that best explains them.",
+    "rows": {
+      "0": {
+        "text": "New discomfort with diaphoresis and a concerning ECG/troponin pattern",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Possible ACS"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Acute HF congestion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Dysrhythmia with possible instability"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Shock / hypoperfusion"
+          }
+        }
+      },
+      "1": {
+        "text": "Orthopnea, crackles, edema, and worsening breathlessness",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Possible ACS"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Acute HF congestion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Dysrhythmia with possible instability"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Shock / hypoperfusion"
+          }
+        }
+      },
+      "2": {
+        "text": "Palpitations or irregular pulse with dizziness and hypotension",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Possible ACS"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Acute HF congestion"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Dysrhythmia with possible instability"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Shock / hypoperfusion"
+          }
+        }
+      },
+      "3": {
+        "text": "Confusion, cool mottled skin, weak pulses, and oliguria",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Possible ACS"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Acute HF congestion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Dysrhythmia with possible instability"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Shock / hypoperfusion"
+          }
+        }
+      }
+    },
+    "questionNumber": 46,
+    "questionText": "For each cluster, select the most likely clinical pattern to recognize and escalate.",
+    "rationale": "New discomfort with diaphoresis and a concerning ECG/troponin pattern: New ischemic discomfort with symptoms and ECG/troponin changes raises concern for ACS. Orthopnea, crackles, edema, and worsening breathlessness: These cues suggest worsening HF congestion. Palpitations or irregular pulse with dizziness and hypotension: The rhythm symptom plus poor-perfusion cues suggests possible unstable dysrhythmia. Confusion, cool mottled skin, weak pulses, and oliguria: Multiple organ perfusion cues together raise concern for shock/hypoperfusion.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Supported by the guide",
+      "Incorrect or overstates what the test shows",
+      "Requires clinical context"
+    ],
+    "concept": "Ranges and limitations",
+    "correctAnswer": "0: Supported by the guide ; 1: Supported by the guide ; 2: Incorrect or overstates what the test shows ; 3: Incorrect or overstates what the test shows ; 4: Requires clinical context",
+    "difficulty": "Hard",
+    "heading": "Biomarker Interpretation",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Interpret common biomarker examples without treating a single value as diagnostic.",
+    "rows": {
+      "0": {
+        "text": "BNP below 100 pg/mL makes acute HF less likely",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Supported by the guide"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Incorrect or overstates what the test shows"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Requires clinical context"
+          }
+        }
+      },
+      "1": {
+        "text": "NT-proBNP below 300 pg/mL makes acute HF less likely",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Supported by the guide"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Incorrect or overstates what the test shows"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Requires clinical context"
+          }
+        }
+      },
+      "2": {
+        "text": "Any troponin elevation automatically proves acute MI",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Supported by the guide"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Incorrect or overstates what the test shows"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Requires clinical context"
+          }
+        }
+      },
+      "3": {
+        "text": "A higher BNP value in CKD confirms HF without other findings",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Supported by the guide"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Incorrect or overstates what the test shows"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Requires clinical context"
+          }
+        }
+      },
+      "4": {
+        "text": "A changing troponin should be interpreted alongside symptoms and ECG",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Supported by the guide"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Incorrect or overstates what the test shows"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Requires clinical context"
+          }
+        }
+      }
+    },
+    "questionNumber": 47,
+    "questionText": "Classify each statement according to the most accurate interpretation.",
+    "rationale": "BNP below 100 pg/mL makes acute HF less likely: This is the approximate BNP cutoff example given in the source. NT-proBNP below 300 pg/mL makes acute HF less likely: This is the approximate NT-proBNP cutoff example given in the source. Any troponin elevation automatically proves acute MI: Troponin indicates myocardial injury; acute MI requires a rise/fall and evidence of ischemia. A higher BNP value in CKD confirms HF without other findings: Kidney function can influence natriuretic peptide values, and higher values are not diagnostic alone. A changing troponin should be interpreted alongside symptoms and ECG: Serial change and ischemic evidence need to be evaluated together.",
+    "type": "matrix"
+  },
+  {
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analysis [Analyzing]",
+    "columns": [
+      "Fluid congestion",
+      "Renal perfusion / kidney function",
+      "Electrical stability",
+      "Oxygen delivery / anemia"
+    ],
+    "concept": "Recognizing change over time",
+    "correctAnswer": "0: Fluid congestion ; 1: Renal perfusion / kidney function ; 2: Electrical stability ; 3: Oxygen delivery / anemia",
+    "difficulty": "Hard",
+    "heading": "Trend Assessment",
+    "integratedProcesses": "Clinical Judgment",
+    "objective": "Select what each trend most directly helps evaluate during cardiac care.",
+    "rows": {
+      "0": {
+        "text": "Daily weight and intake/output",
+        "options": {
+          "0": {
+            "isCorrect": true,
+            "text": "Fluid congestion"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Renal perfusion / kidney function"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Electrical stability"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Oxygen delivery / anemia"
+          }
+        }
+      },
+      "1": {
+        "text": "Urine output with creatinine/eGFR trend",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Fluid congestion"
+          },
+          "1": {
+            "isCorrect": true,
+            "text": "Renal perfusion / kidney function"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Electrical stability"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Oxygen delivery / anemia"
+          }
+        }
+      },
+      "2": {
+        "text": "Rhythm monitoring with potassium and magnesium values",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Fluid congestion"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Renal perfusion / kidney function"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Electrical stability"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Oxygen delivery / anemia"
+          }
+        }
+      },
+      "3": {
+        "text": "Hemoglobin in a patient with fatigue and dyspnea",
+        "options": {
+          "0": {
+            "isCorrect": false,
+            "text": "Fluid congestion"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Renal perfusion / kidney function"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Electrical stability"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Oxygen delivery / anemia"
+          }
+        }
+      }
+    },
+    "questionNumber": 48,
+    "questionText": "Match each trend to the most direct assessment purpose.",
+    "rationale": "Daily weight and intake/output: Daily weights and fluid balance help evaluate volume trends. Urine output with creatinine/eGFR trend: These data help assess renal function and possible renal perfusion changes. Rhythm monitoring with potassium and magnesium values: Rhythm and electrolytes together help assess dysrhythmia/electrical risk. Hemoglobin in a patient with fatigue and dyspnea: Hemoglobin helps evaluate anemia and oxygen-carrying capacity.",
+    "type": "matrix"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Promptly assess breathing/oxygenation and escalate concerning hypoxemia and respiratory distress per protocol"
+      },
+      {
+        "isCorrect": true,
+        "text": "Assess hemodynamic stability/perfusion and initiate or continue indicated monitoring while escalating promptly"
+      },
+      {
+        "isCorrect": false,
+        "text": "Wait for a repeat BNP before responding to the low SpO₂"
+      },
+      {
+        "isCorrect": false,
+        "text": "Focus first on long-term diet and lipid teaching"
+      },
+      {
+        "isCorrect": false,
+        "text": "Assume cool hands are expected because edema is present and defer reassessment"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Acute HF with congestion and low output",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Acute worsening HF with pulmonary congestion and signs of reduced perfusion"
+      },
+      {
+        "isCorrect": false,
+        "text": "Isolated chronic venous insufficiency without cardiopulmonary change"
+      },
+      {
+        "isCorrect": false,
+        "text": "Stable long-term cardiovascular risk without current deterioration"
+      },
+      {
+        "isCorrect": false,
+        "text": "An uncomplicated dysrhythmia without congestion or perfusion concern"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "HFrEF and CKD; rapid 8-lb weight gain in 3 days; BP 92/58; HR 112; RR 28; SpO₂ 89% on room air; crackles; orthopnea; 2+ leg edema; cool hands; BNP 1,180 pg/mL; K⁺ 3.1 mEq/L; creatinine 2.0 mg/dL.",
+        "id": "1",
+        "title": "Nurses’ Notes and Results"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Respiratory status, SpO₂, work of breathing, and lung findings"
+      },
+      {
+        "isCorrect": true,
+        "text": "BP/perfusion findings plus urine output and renal/electrolyte trends"
+      },
+      {
+        "isCorrect": false,
+        "text": "LDL-C alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "A single daily temperature without repeat cardiopulmonary assessment"
+      },
+      {
+        "isCorrect": false,
+        "text": "Whether the leg edema appears smaller, without tracking other cues"
+      }
+    ],
+    "questionNumber": 49,
+    "questionText": "A 76-year-old patient with HFrEF and CKD has gained 8 lb in 3 days. BP is 92/58 mm Hg, HR 112/min, RR 28/min, and SpO₂ 89% on room air. The patient has crackles, orthopnea, 2+ leg edema, and cool hands. BNP is 1,180 pg/mL, K⁺ is 3.1 mEq/L, and creatinine is 2.0 mg/dL. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "The cue cluster indicates worsening HF with pulmonary congestion plus possible low output: hypoxemia, tachypnea, crackles, orthopnea, rapid weight gain, hypotension, cool hands, renal impairment, and low potassium all matter. Priority actions address breathing and hemodynamic/perfusion risk. Evaluate respiratory status and perfusion/renal/electrolyte trends rather than relying on BNP or edema alone.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Escalate urgently and initiate ECG-based evaluation/monitoring according to the emergency or chest-pain protocol"
+      },
+      {
+        "isCorrect": true,
+        "text": "Assess ABCs and hemodynamic stability; reassess symptoms promptly"
+      },
+      {
+        "isCorrect": false,
+        "text": "Wait for chest pain to develop before notifying the team"
+      },
+      {
+        "isCorrect": false,
+        "text": "Order routine lipid teaching before evaluation of the acute symptom cluster"
+      },
+      {
+        "isCorrect": false,
+        "text": "Treat the troponin rise as proof of its cause and ignore the ECG"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Possible acute myocardial infarction",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Possible acute MI in the setting of myocardial injury and ischemic evidence"
+      },
+      {
+        "isCorrect": false,
+        "text": "HF ruled in by BNP criteria even though no BNP was measured"
+      },
+      {
+        "isCorrect": false,
+        "text": "Chronic anemia as the only supported explanation for all findings"
+      },
+      {
+        "isCorrect": false,
+        "text": "Stable dysrhythmia without concern for ischemia"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "New dyspnea, nausea, and diaphoresis without reported chest pain; lateral ST depression; hs-troponin 24 ng/L then 87 ng/L 2 hours later.",
+        "id": "1",
+        "title": "Symptoms, ECG, and Serial hs-Troponin"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Serial hs-troponin trend interpreted with symptoms and ECG findings"
+      },
+      {
+        "isCorrect": true,
+        "text": "Vital signs, ongoing symptoms, and hemodynamic stability"
+      },
+      {
+        "isCorrect": false,
+        "text": "HbA1c alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "Daily weight only"
+      },
+      {
+        "isCorrect": false,
+        "text": "A single BNP value as a required prerequisite to escalation"
+      }
+    ],
+    "questionNumber": 50,
+    "questionText": "A 69-year-old patient reports new dyspnea and nausea and is diaphoretic, but denies chest pain. ECG shows ST depression in lateral leads. hs-troponin rises from 24 to 87 ng/L over 2 hours. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "A dynamic hs-troponin rise supports acute myocardial injury. New dyspnea, nausea, diaphoresis, and ischemic ST depression add evidence concerning for ischemia, so ACS/MI must be urgently evaluated even without classic chest pain. Monitor the clinical/hemodynamic status and interpret serial troponin with ECG and symptoms.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Promptly assess the patient and escalate the low potassium with new ventricular ectopy according to protocol"
+      },
+      {
+        "isCorrect": true,
+        "text": "Review rhythm, magnesium, renal function, and medication context while arranging indicated monitoring and treatment per orders/protocol"
+      },
+      {
+        "isCorrect": false,
+        "text": "Wait until the next routine clinic visit because the patient has no chest pain"
+      },
+      {
+        "isCorrect": false,
+        "text": "Focus on HbA1c and LDL-C before addressing the rhythm"
+      },
+      {
+        "isCorrect": false,
+        "text": "Assume the ectopy is harmless because weakness is common"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Electrolyte-related electrical instability",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Clinically significant hypokalemia with increased dysrhythmia risk"
+      },
+      {
+        "isCorrect": false,
+        "text": "Hyperkalemia causing conduction slowing"
+      },
+      {
+        "isCorrect": false,
+        "text": "Isolated venous congestion"
+      },
+      {
+        "isCorrect": false,
+        "text": "A routine long-term lipid abnormality"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "K⁺ 2.7 mEq/L; new ventricular ectopy; weakness; medication list includes a loop diuretic. Renal function and magnesium have not yet been reviewed.",
+        "id": "1",
+        "title": "Telemetry and Laboratory Results"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Cardiac rhythm/ectopy and associated symptoms"
+      },
+      {
+        "isCorrect": true,
+        "text": "Potassium, magnesium, renal function, and response to ordered treatment"
+      },
+      {
+        "isCorrect": false,
+        "text": "Daily weight alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "A routine lipid panel"
+      },
+      {
+        "isCorrect": false,
+        "text": "Skin discoloration in the gaiter area only"
+      }
+    ],
+    "questionNumber": 51,
+    "questionText": "A patient taking a loop diuretic has K⁺ 2.7 mEq/L and new ventricular ectopy on telemetry. The patient reports weakness. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "K⁺ 2.7 mEq/L is significant hypokalemia, and new ventricular ectopy makes the finding more urgent. Diuretic use is relevant; magnesium and renal function also inform dysrhythmia risk and safe treatment. Reassess rhythm and trends rather than relying on symptom absence.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Escalate immediately for urgent evaluation of possible acute limb ischemia"
+      },
+      {
+        "isCorrect": true,
+        "text": "Promptly reassess and document limb perfusion findings while following emergency protocols"
+      },
+      {
+        "isCorrect": false,
+        "text": "Encourage walking and reassess at end of shift"
+      },
+      {
+        "isCorrect": false,
+        "text": "Treat as routine edema without notifying the care team"
+      },
+      {
+        "isCorrect": false,
+        "text": "Wait for the lipid panel before escalating"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Acute limb ischemia",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Acute limb ischemia with threatened arterial perfusion"
+      },
+      {
+        "isCorrect": false,
+        "text": "Chronic venous insufficiency with typical dependent edema"
+      },
+      {
+        "isCorrect": false,
+        "text": "Uncomplicated systemic congestion due to HF"
+      },
+      {
+        "isCorrect": false,
+        "text": "Routine exertional claudication without acute change"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "Sudden severe unilateral leg pain; pallor; cold limb; absent pedal pulse; paresthesia and new weakness.",
+        "id": "1",
+        "title": "Peripheral Vascular Assessment"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Limb color, temperature, pulse, pain, sensation, and motor function"
+      },
+      {
+        "isCorrect": true,
+        "text": "Changes in limb perfusion and overall clinical status during urgent evaluation"
+      },
+      {
+        "isCorrect": false,
+        "text": "HbA1c alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "BNP alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "Daily weight as the only reassessment parameter"
+      }
+    ],
+    "questionNumber": 52,
+    "questionText": "A patient suddenly develops severe left-leg pain. The leg is pale and cold, the pedal pulse is absent, and the patient reports numbness with new weakness. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "The sudden onset plus pain, pallor, pulselessness, paresthesia, coldness, and weakness is a time-sensitive pattern of acute limb ischemia. Delay can threaten limb viability; urgent escalation and a focused serial limb-perfusion assessment are essential.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Assess ABCs, hemodynamic stability, and perfusion and escalate urgently per emergency protocol"
+      },
+      {
+        "isCorrect": true,
+        "text": "Initiate or continue cardiac rhythm monitoring and promptly reassess vital signs and mental status"
+      },
+      {
+        "isCorrect": false,
+        "text": "Judge urgency from the heart rate alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "Assume confusion is unrelated and wait until routine rounds"
+      },
+      {
+        "isCorrect": false,
+        "text": "Prioritize lipid and HbA1c education before reassessment"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Dysrhythmia with hemodynamic instability",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Dysrhythmia with signs of hemodynamic instability and poor perfusion"
+      },
+      {
+        "isCorrect": false,
+        "text": "Stable asymptomatic tachycardia with preserved perfusion"
+      },
+      {
+        "isCorrect": false,
+        "text": "Isolated venous insufficiency"
+      },
+      {
+        "isCorrect": false,
+        "text": "Routine long-term cardiovascular risk without acute change"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "Palpitations; dizziness; irregular HR 148/min; BP 84/48 mm Hg; new confusion; cool clammy skin.",
+        "id": "1",
+        "title": "Vital Signs and Focused Assessment"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Rhythm, heart rate, blood pressure, and response to intervention"
+      },
+      {
+        "isCorrect": true,
+        "text": "Mental status, skin perfusion, pulse quality, and other signs of organ perfusion"
+      },
+      {
+        "isCorrect": false,
+        "text": "LDL-C alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "Daily weight only"
+      },
+      {
+        "isCorrect": false,
+        "text": "Gaiter-area skin changes only"
+      }
+    ],
+    "questionNumber": 53,
+    "questionText": "A patient reports palpitations and dizziness. HR is 148/min and irregular, BP is 84/48 mm Hg, mental status is newly confused, and the skin is cool and clammy. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "The rhythm abnormality is accompanied by hypotension, confusion, and cool clammy skin, indicating possible hemodynamic instability. Urgent assessment/escalation and rhythm plus perfusion reassessment are needed; the heart rate alone is not enough to judge severity.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Promptly assess the patient and escalate the new ectopy, low electrolytes, reduced urine output, and creatinine change"
+      },
+      {
+        "isCorrect": true,
+        "text": "Review vital signs/perfusion, renal function, potassium, magnesium, rhythm, and prescribed diuretic plan with the clinical team"
+      },
+      {
+        "isCorrect": false,
+        "text": "Stop evaluating the patient because edema has improved"
+      },
+      {
+        "isCorrect": false,
+        "text": "Check only LDL-C because it is a cardiovascular marker"
+      },
+      {
+        "isCorrect": false,
+        "text": "Ignore creatinine changes if the patient reports less shortness of breath"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Treatment response and safety monitoring",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Possible diuretic-associated electrolyte depletion with renal/perfusion concern and increased dysrhythmia risk"
+      },
+      {
+        "isCorrect": false,
+        "text": "Uncomplicated improvement in HF requiring no further assessment"
+      },
+      {
+        "isCorrect": false,
+        "text": "Acute MI confirmed by the potassium result alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "Chronic venous insufficiency as the explanation for all findings"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "After diuresis, crackles and edema improve; urine output decreases; creatinine rises from baseline; K⁺ is 3.0 mEq/L; magnesium is low; new ectopy appears on telemetry.",
+        "id": "1",
+        "title": "Intake/Output, Labs, and Telemetry"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Rhythm and ectopy with potassium and magnesium trends"
+      },
+      {
+        "isCorrect": true,
+        "text": "Urine output, creatinine/eGFR, BP/perfusion, and volume-status trends"
+      },
+      {
+        "isCorrect": false,
+        "text": "HbA1c alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "A single weight without other reassessment"
+      },
+      {
+        "isCorrect": false,
+        "text": "Skin color of one leg only"
+      }
+    ],
+    "questionNumber": 54,
+    "questionText": "A patient hospitalized with HF is receiving diuresis. Crackles and edema have decreased, but urine output falls, creatinine rises from baseline, K⁺ is 3.0 mEq/L, Mg²⁺ is low, and telemetry shows new ectopy. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "Improved congestion does not prove that treatment remains safe. Reduced urine output and rising creatinine require renal/perfusion review, while low potassium/magnesium and new ectopy raise electrical instability concerns. Trend both treatment response and adverse effects.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Escalate urgently and follow the emergency/electrolyte protocol for hyperkalemia with ECG change"
+      },
+      {
+        "isCorrect": true,
+        "text": "Promptly assess hemodynamic status and rhythm; review renal function and medication context with the clinical team"
+      },
+      {
+        "isCorrect": false,
+        "text": "Wait for a routine repeat in several days because CKD commonly causes abnormal labs"
+      },
+      {
+        "isCorrect": false,
+        "text": "Focus on diet teaching before assessing ECG changes"
+      },
+      {
+        "isCorrect": false,
+        "text": "Ignore conduction slowing unless chest pain appears"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Hyperkalemia-related conduction risk",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Hyperkalemia with possible cardiac conduction instability"
+      },
+      {
+        "isCorrect": false,
+        "text": "Hypokalemia with characteristic low-potassium risk"
+      },
+      {
+        "isCorrect": false,
+        "text": "Stable arterial insufficiency"
+      },
+      {
+        "isCorrect": false,
+        "text": "Long-term hyperlipidemia without acute electrolyte concern"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "History of CKD; ACE inhibitor on medication list; K⁺ 6.2 mEq/L; weakness; ECG shows conduction slowing.",
+        "id": "1",
+        "title": "Medication Review, Electrolyte Result, and ECG"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Cardiac rhythm and ECG/conduction changes"
+      },
+      {
+        "isCorrect": true,
+        "text": "Potassium trend, renal function, and clinical response to urgent management"
+      },
+      {
+        "isCorrect": false,
+        "text": "Daily weight alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "HbA1c alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "Gaiter-area skin findings only"
+      }
+    ],
+    "questionNumber": 55,
+    "questionText": "A patient with CKD takes an ACE inhibitor. A new lab reports K⁺ 6.2 mEq/L, and the ECG is described as showing conduction slowing. The patient reports generalized weakness. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "Hyperkalemia can cause conduction slowing and serious arrhythmias. CKD and ACE inhibitor therapy are relevant context, but the potassium result plus ECG change is the urgent cue cluster. Prompt escalation, rhythm assessment, and monitoring of potassium and renal response are priorities.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Escalate urgently and assess ABCs/respiratory and hemodynamic stability according to emergency protocol"
+      },
+      {
+        "isCorrect": true,
+        "text": "Provide/prepare for indicated respiratory support and close monitoring per protocol while the team evaluates the patient"
+      },
+      {
+        "isCorrect": false,
+        "text": "Delay action until chronic edema teaching is complete"
+      },
+      {
+        "isCorrect": false,
+        "text": "Wait for lipid results before addressing hypoxemia"
+      },
+      {
+        "isCorrect": false,
+        "text": "Treat unilateral swelling as harmless because the pulse may still be present"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Possible venous thromboembolism with respiratory deterioration",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Possible pulmonary embolism with acute respiratory compromise in the setting of possible DVT"
+      },
+      {
+        "isCorrect": false,
+        "text": "Routine chronic venous insufficiency without acute change"
+      },
+      {
+        "isCorrect": false,
+        "text": "Stable long-term diabetes-related risk"
+      },
+      {
+        "isCorrect": false,
+        "text": "Uncomplicated anemia as the only supported conclusion"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "New unilateral calf swelling, warmth, tenderness; sudden dyspnea; RR 30/min; SpO₂ 88% on room air.",
+        "id": "1",
+        "title": "Peripheral and Respiratory Assessment"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "SpO₂, respiratory rate/work of breathing, and respiratory response"
+      },
+      {
+        "isCorrect": true,
+        "text": "BP, HR, mental status, and other hemodynamic/perfusion cues"
+      },
+      {
+        "isCorrect": false,
+        "text": "HbA1c alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "Daily weight alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "LDL-C alone"
+      }
+    ],
+    "questionNumber": 56,
+    "questionText": "A patient has new unilateral calf swelling, warmth, and tenderness. During reassessment, the patient develops sudden dyspnea, RR 30/min, and SpO₂ 88% on room air. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "Unilateral swelling, warmth, and tenderness raise concern for DVT; sudden dyspnea and hypoxemia create urgent concern for PE and respiratory compromise. Prioritize ABCs, escalation, respiratory monitoring, and hemodynamic reassessment rather than treating the leg finding as routine.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Assess current symptoms, vital signs, hemodynamic status, and any concerning ischemic cues; escalate changes as indicated"
+      },
+      {
+        "isCorrect": true,
+        "text": "Report/communicate the significant hemoglobin change and trend CBC with the clinical team while further evaluation proceeds"
+      },
+      {
+        "isCorrect": false,
+        "text": "Dismiss dyspnea because SpO₂ is normal"
+      },
+      {
+        "isCorrect": false,
+        "text": "Assume anemia is the only possible diagnosis and omit cardiac assessment"
+      },
+      {
+        "isCorrect": false,
+        "text": "Prioritize routine lipid teaching before evaluating new symptoms"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Reduced oxygen-carrying capacity",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Reduced oxygen-carrying capacity from anemia may be contributing to symptoms; acute cardiac causes still require assessment"
+      },
+      {
+        "isCorrect": false,
+        "text": "Normal SpO₂ rules out clinically important anemia and cardiac concerns"
+      },
+      {
+        "isCorrect": false,
+        "text": "Confirmed acute MI based solely on a low hemoglobin"
+      },
+      {
+        "isCorrect": false,
+        "text": "Isolated right-sided HF established by fatigue alone"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "Known coronary disease; new/worsening fatigue, exertional dyspnea, weakness; SpO₂ 98% on room air; hemoglobin markedly below the patient’s baseline; acute ischemia evaluation has not yet been completed.",
+        "id": "1",
+        "title": "CBC and Focused Assessment"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Hemoglobin/CBC trend and symptoms such as fatigue, dyspnea, or angina"
+      },
+      {
+        "isCorrect": true,
+        "text": "Vital signs, perfusion, and ischemic assessment results as obtained"
+      },
+      {
+        "isCorrect": false,
+        "text": "LDL-C alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "Daily weight alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "PR interval alone as proof that oxygen delivery is adequate"
+      }
+    ],
+    "questionNumber": 57,
+    "questionText": "A patient with known coronary disease reports increased fatigue, dyspnea on exertion, and weakness. SpO₂ is 98% on room air, but hemoglobin is significantly below the patient’s baseline. No ECG or troponin results are available yet. Select ONE best-supported condition, TWO nursing actions, and TWO parameters.",
+    "rationale": "Normal SpO₂ does not exclude anemia because saturation does not measure the amount of hemoglobin available to carry oxygen. Anemia may worsen fatigue, dyspnea, and angina, but it should not automatically be assumed to explain all new symptoms in a patient with coronary disease. Trend CBC and clinical/ischemic findings.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Assess ABCs and hemodynamic stability and escalate urgently for possible deterioration"
+      },
+      {
+        "isCorrect": true,
+        "text": "Reassess mental status, pulse quality, skin/peripheral perfusion, and urine output while following emergency protocols"
+      },
+      {
+        "isCorrect": false,
+        "text": "Wait until the next scheduled routine assessment despite new changes"
+      },
+      {
+        "isCorrect": false,
+        "text": "Focus only on a single creatinine value and ignore the other cues"
+      },
+      {
+        "isCorrect": false,
+        "text": "Begin long-term cardiovascular risk education before assessing stability"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Multi-organ perfusion impairment",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Possible shock or significant systemic hypoperfusion"
+      },
+      {
+        "isCorrect": false,
+        "text": "Isolated peripheral venous insufficiency"
+      },
+      {
+        "isCorrect": false,
+        "text": "Stable long-term atherosclerotic risk without acute deterioration"
+      },
+      {
+        "isCorrect": false,
+        "text": "An uncomplicated elevated HbA1c"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "New restlessness and confusion; downward BP trend; cool mottled hands; weak pulses; delayed capillary refill; declining urine output.",
+        "id": "1",
+        "title": "Serial Vital Signs and Focused Assessment"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "BP/HR trends, mental status, skin/pulses/capillary refill, and response to intervention"
+      },
+      {
+        "isCorrect": true,
+        "text": "Urine output and renal-function trends as part of organ-perfusion evaluation"
+      },
+      {
+        "isCorrect": false,
+        "text": "LDL-C alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "HbA1c alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "One isolated normal SpO₂ value as the only parameter"
+      }
+    ],
+    "questionNumber": 58,
+    "questionText": "A patient with cardiac disease becomes newly restless and confused. BP is trending down, the hands are cool and mottled, capillary refill is delayed, pulses are weak, and urine output has fallen. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "Confusion/restlessness, falling BP, cool mottled skin, weak pulses, delayed refill, and oliguria indicate several organ systems may be underperfused. The nurse should not rely on one lab or one vital sign; urgent escalation and trending hemodynamic, peripheral, neurologic, and renal findings are central.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Prioritize respiratory assessment/oxygenation and escalate hypoxemia or respiratory distress according to protocol"
+      },
+      {
+        "isCorrect": true,
+        "text": "Assess hemodynamic status and fluid/perfusion trends while initiating appropriate monitoring and reassessment"
+      },
+      {
+        "isCorrect": false,
+        "text": "Provide routine sodium or exercise teaching before responding to hypoxemia"
+      },
+      {
+        "isCorrect": false,
+        "text": "Wait for a BNP result before assessing breathing"
+      },
+      {
+        "isCorrect": false,
+        "text": "Interpret weight gain as unrelated to the new orthopnea and crackles"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Acute HF respiratory deterioration",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Acute worsening HF with pulmonary congestion and impaired oxygenation"
+      },
+      {
+        "isCorrect": false,
+        "text": "Isolated chronic venous insufficiency without a cardiopulmonary problem"
+      },
+      {
+        "isCorrect": false,
+        "text": "Long-term risk profile only, without acute change"
+      },
+      {
+        "isCorrect": false,
+        "text": "Hyperkalemia-related conduction instability despite no potassium data"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "New/worsening orthopnea and dyspnea; crackles; RR 29/min; SpO₂ 89% on room air; weight increased 3.5 lb over two days; worsening dependent edema.",
+        "id": "1",
+        "title": "Respiratory Assessment and Daily Weight"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "SpO₂, respiratory rate/work of breathing, orthopnea, and lung findings"
+      },
+      {
+        "isCorrect": true,
+        "text": "Daily weight, intake/output, edema, BP, and perfusion trend"
+      },
+      {
+        "isCorrect": false,
+        "text": "HbA1c alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "LDL-C alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "A single PR interval without respiratory reassessment"
+      }
+    ],
+    "questionNumber": 59,
+    "questionText": "A patient with heart failure who was previously able to lie flat now needs three pillows to sleep. The patient has worsening dyspnea, crackles, RR 29/min, and SpO₂ 89% on room air. Daily weight is up 3.5 lb since two days ago, and dependent edema has increased. Select ONE condition, TWO actions, and TWO parameters.",
+    "rationale": "The worsening orthopnea, dyspnea, crackles, tachypnea, hypoxemia, rapid weight gain, and edema form a pattern of acute HF congestion. Breathing/oxygenation and clinical stability take priority; trend respiratory findings and volume/perfusion measures to evaluate response.",
+    "type": "BowTie"
+  },
+  {
+    "actions": [
+      {
+        "isCorrect": true,
+        "text": "Obtain/review ECG and symptoms promptly and follow the indicated evaluation pathway for the patient’s clinical context"
+      },
+      {
+        "isCorrect": true,
+        "text": "Use serial hs-troponin and trend clinical findings rather than interpreting one value in isolation"
+      },
+      {
+        "isCorrect": false,
+        "text": "Document confirmed acute MI based only on the first troponin result"
+      },
+      {
+        "isCorrect": false,
+        "text": "Dismiss the result without considering renal function or clinical context"
+      },
+      {
+        "isCorrect": false,
+        "text": "Delay all assessment until the next routine appointment because chest pain is absent"
+      }
+    ],
+    "chapter": "Cardiac Nursing",
+    "clientNeed": "Physiological Integrity",
+    "cognitiveLevel": "Analyze [Analyzing]",
+    "concept": "Avoiding overinterpretation of a single biomarker",
+    "conditions": [
+      {
+        "isCorrect": true,
+        "text": "Myocardial injury is possible, but one troponin result alone does not establish acute MI; interpretation needs serial change and ischemic evidence"
+      },
+      {
+        "isCorrect": false,
+        "text": "Acute MI is definitively confirmed by any result above the reference limit"
+      },
+      {
+        "isCorrect": false,
+        "text": "ACS is excluded because there is no chest pain"
+      },
+      {
+        "isCorrect": false,
+        "text": "BNP is required to determine whether the troponin is real"
+      }
+    ],
+    "difficulty": "Hard",
+    "exhibits": [
+      {
+        "content": "History of CKD; hs-troponin above the assay-specific 99th-percentile upper reference limit; only one measurement available; no chest discomfort; dyspnea unchanged from baseline; ECG interpretation pending.",
+        "id": "1",
+        "title": "History, Initial Troponin, and Pending ECG"
+      }
+    ],
+    "parameters": [
+      {
+        "isCorrect": true,
+        "text": "Serial hs-troponin trend interpreted using the assay reference and clinical context"
+      },
+      {
+        "isCorrect": true,
+        "text": "ECG findings, symptoms, vital signs, and changes from baseline"
+      },
+      {
+        "isCorrect": false,
+        "text": "LDL-C alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "One daily weight without symptom assessment"
+      },
+      {
+        "isCorrect": false,
+        "text": "Gaiter-area skin assessment alone"
+      }
+    ],
+    "questionNumber": 60,
+    "questionText": "A patient with CKD has hs-troponin above the assay’s 99th-percentile reference limit, but the first value is the only result available. The patient denies chest discomfort; baseline dyspnea is unchanged, and no ECG interpretation is yet available. Select ONE best interpretation, TWO actions, and TWO parameters.",
+    "rationale": "Troponin above the assay-specific 99th percentile indicates myocardial injury but does not automatically prove acute MI. A rise/fall and evidence of ischemia are needed for MI interpretation. Use serial results, ECG, symptoms, kidney function, and clinical context; neither absent chest pain nor a single elevated value should end the evaluation.",
+    "type": "BowTie"
   }
 ]
