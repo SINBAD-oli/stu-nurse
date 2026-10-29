@@ -29,7 +29,6 @@ async function uploadQuestions() {
   const rawData = fs.readFileSync("questions.json", "utf8");
   const parsedData = JSON.parse(rawData);
   
-  // Automatically handles: 1) Arrays [...], 2) Wrapped objects { questions: [...] }, 3) Single object {...}
   let questions = [];
   if (Array.isArray(parsedData)) {
     questions = parsedData;
@@ -50,12 +49,10 @@ async function uploadQuestions() {
     const q = questions[i];
     const normalizedChap = normalizeChapterName(q.chapter || "Matrix Test One");
     
-    // Fallback safe for chapters without numbers (like "Matrix Test One")
     const chapMatch = normalizedChap.match(/\d+/);
     const chapSlug = chapMatch ? `ch${chapMatch[0]}` : normalizedChap.toLowerCase().replace(/[^a-z0-9]/g, '_');
     const qNum = q.questionNumber || (i + 1);
     
-    // Unique document ID to prevent overwriting
     const docId = `${chapSlug}_q${qNum}`;
 
     const docRef = db.collection("questions").doc(docId);
@@ -73,8 +70,14 @@ async function uploadQuestions() {
       concept: q.concept || "",
       difficulty: q.difficulty || "Moderate",
       options: q.options || [],
-      columns: q.columns || [], // Required for Matrix questions
-      rows: q.rows || [],       // Required for Matrix questions
+      columns: q.columns || [], 
+      rows: q.rows || [],       
+      // --- CRITICAL: Added BowTie fields so they are preserved ---
+      actions: q.actions || [],
+      conditions: q.conditions || [],
+      exhibits: q.exhibits || [],
+      parameters: q.parameters || [],
+      // -----------------------------------------------------------
       correctAnswer: q.correctAnswer || "",
       rationale: q.rationale || ""
     });

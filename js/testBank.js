@@ -1,6 +1,7 @@
 import { db, auth } from './firebase-config.js';
 import { collection, getDocs, doc, getDoc, setDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { setupQuizSession, normalizeChapterName } from './quizEngine.js';
+import { openAdminQuestionViewer } from './adminQuestionViewer.js';
 
 export async function initTestBank() {
   const allCards = document.querySelectorAll('div');
@@ -48,7 +49,6 @@ export async function initTestBank() {
 
     const isAdmin = userData.isAdmin === true;
 
-    // Render Master Admin Control Panel & Multi-Chapter Checkbox Manager if Admin
     if (isAdmin) {
       const adminControlsRoot = quickStudyCard.querySelector('#admin-controls-root');
       if (adminControlsRoot) {
@@ -59,33 +59,36 @@ export async function initTestBank() {
               <button id="unrelease-all-btn" style="background: #dc2626; color: white; border: none; padding: 5px 10px; border-radius: 4px; font-size: 11px; cursor: pointer; font-weight: 600;">🔒 Unrelease All Chapters</button>
             </div>
             
-            <div style="border-top: 1px solid #334155; paddingTop: 10px; margin-top: 10px;">
-              <span style="font-size: 12px; color: #f8fafc; font-weight: 600; display: block; margin-bottom: 6px;">👥 Manual Multi-Chapter User Unlock</span>
+            <div style="border-top: 1px solid #334155; padding-top: 10px; margin-top: 10px;">
+              <span style="font-size: 12px; color: #f8fafc; font-weight: 600; display: block; margin-bottom: 6px;">👥 Manual Multi-User & Multi-Chapter Unlock</span>
               
               <div style="display: flex; flex-direction: column; gap: 8px;">
-                <select id="admin-user-select" style="width: 100%; background: #1e293b; color: white; border: 1px solid #475569; padding: 6px; border-radius: 4px; font-size: 11px;">
-                  <option value="">Select User...</option>
-                </select>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <label style="font-size: 11px; color: #94a3b8;">Select Users:</label>
+                  <input type="text" id="admin-user-search" placeholder="Filter users..." style="background: #0f172a; color: white; border: 1px solid #475569; padding: 2px 6px; border-radius: 4px; font-size: 10px; width: 130px;" />
+                </div>
+                
+                <div id="admin-users-checkboxes" style="max-height: 110px; overflow-y: auto; background: #1e293b; border: 1px solid #475569; padding: 6px; border-radius: 4px; display: flex; flex-direction: column; gap: 4px;">
+                  <span style="font-size: 11px; color: #64748b; font-style: italic;">Loading users...</span>
+                </div>
 
-                <label style="font-size: 11px; color: #94a3b8;">Select Chapters to Unlock:</label>
+                <label style="font-size: 11px; color: #94a3b8; margin-top: 4px;">Select Chapters to Unlock:</label>
                 <div id="admin-chapter-checkboxes" style="max-height: 110px; overflow-y: auto; background: #1e293b; border: 1px solid #475569; padding: 6px; border-radius: 4px; display: flex; flex-direction: column; gap: 4px;">
                   <span style="font-size: 11px; color: #64748b; font-style: italic;">Loading chapters...</span>
                 </div>
 
-                <button id="admin-grant-btn" style="background: #10b981; color: white; border: none; padding: 6px 12px; border-radius: 4px; font-size: 11px; cursor: pointer; font-weight: 600; margin-top: 4px;">Grant Access to Selected Chapters</button>
+                <button id="admin-grant-btn" style="background: #10b981; color: white; border: none; padding: 6px 12px; border-radius: 4px; font-size: 11px; cursor: pointer; font-weight: 600; margin-top: 4px;">Grant Access to Selected Users & Chapters</button>
               </div>
             </div>
           </div>
         `;
 
-        // Unrelease All handler
         adminControlsRoot.querySelector('#unrelease-all-btn')?.addEventListener('click', async () => {
           if (confirm("Are you sure you want to lock/unrelease all chapters globally?")) {
             await unreleaseAllChapters();
           }
         });
 
-        // Populate dropdowns and checkboxes for admin user management
         populateAdminAdminControls();
       }
     }
@@ -113,24 +116,41 @@ export async function initTestBank() {
 
 async function populateAdminAdminControls() {
   try {
-    const userSelect = document.getElementById('admin-user-select');
+    const usersContainer = document.getElementById('admin-users-checkboxes');
+    const searchInput = document.getElementById('admin-user-search');
     const checkboxesContainer = document.getElementById('admin-chapter-checkboxes');
     const grantBtn = document.getElementById('admin-grant-btn');
 
-    if (!userSelect || !checkboxesContainer || !grantBtn) return;
+    if (!usersContainer || !checkboxesContainer || !grantBtn) return;
 
-    // Fetch all users
     const usersSnap = await getDocs(collection(db, "users"));
-    usersSnap.forEach(docSnap => {
-      const uData = docSnap.data();
-      const email = docSnap.id;
-      const opt = document.createElement('option');
-      opt.value = email;
-      opt.textContent = `${uData.firstName || email} (${email})`;
-      userSelect.appendChild(opt);
-    });
+    usersContainer.innerHTML = '';
+    if (usersSnap.empty) {
+      usersContainer.innerHTML = `<span style="font-size: 11px; color: #64748b; font-style: italic;">No users found.</span>`;
+    } else {
+      usersSnap.forEach(docSnap => {
+        const uData = docSnap.data();
+        const email = docSnap.id;
+        const displayName = uData.firstName ? `${uData.firstName} ${uData.lastName || ''} (${email})` : email;
 
-    // Fetch all questions to populate chapter checkboxes
+        const label = document.createElement('label');
+        label.style.cssText = `display: flex; align-items: center; gap: 6px; font-size: 11px; color: #f8fafc; cursor: pointer;`;
+        label.innerHTML = `<input type="checkbox" class="admin-user-cb" value="${email}" style="cursor: pointer; accent-color: #3b82f6;"> ${displayName}`;
+        usersContainer.appendChild(label);
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const filterVal = e.target.value.toLowerCase().trim();
+        const labels = usersContainer.querySelectorAll('label');
+        labels.forEach(label => {
+          const text = label.textContent.toLowerCase();
+          label.style.display = text.includes(filterVal) ? 'flex' : 'none';
+        });
+      });
+    }
+
     const qSnap = await getDocs(collection(db, "questions"));
     const chapterSet = new Set();
     qSnap.forEach(docSnap => {
@@ -145,34 +165,39 @@ async function populateAdminAdminControls() {
       chapterSet.forEach(chap => {
         const label = document.createElement('label');
         label.style.cssText = `display: flex; align-items: center; gap: 6px; font-size: 11px; color: #f8fafc; cursor: pointer;`;
-        label.innerHTML = `<input type="checkbox" class="admin-chap-cb" value="${chap}" style="cursor: pointer;"> ${chap}`;
+        label.innerHTML = `<input type="checkbox" class="admin-chap-cb" value="${chap}" style="cursor: pointer; accent-color: #3b82f6;"> ${chap}`;
         checkboxesContainer.appendChild(label);
       });
     }
 
-    // Grant access button click listener for multi-checkbox selection
     grantBtn.addEventListener('click', async () => {
-      const targetEmail = userSelect.value;
-      if (!targetEmail) {
-        alert("Please select a user.");
+      const checkedUsers = usersContainer.querySelectorAll('.admin-user-cb:checked');
+      if (checkedUsers.length === 0) {
+        alert("Please select at least one user.");
         return;
       }
 
-      const checkedBoxes = checkboxesContainer.querySelectorAll('.admin-chap-cb:checked');
-      if (checkedBoxes.length === 0) {
+      const checkedChapters = checkboxesContainer.querySelectorAll('.admin-chap-cb:checked');
+      if (checkedChapters.length === 0) {
         alert("Please select at least one chapter to unlock.");
         return;
       }
 
       const unlockedUpdates = {};
-      checkedBoxes.forEach(cb => {
+      checkedChapters.forEach(cb => {
         unlockedUpdates[`unlockedChapters.${cb.value}`] = true;
       });
 
-      const targetUserRef = doc(db, "users", targetEmail);
-      await updateDoc(targetUserRef, unlockedUpdates);
+      const updatePromises = [];
+      checkedUsers.forEach(userCb => {
+        const targetEmail = userCb.value;
+        const targetUserRef = doc(db, "users", targetEmail);
+        updatePromises.push(updateDoc(targetUserRef, unlockedUpdates));
+      });
 
-      alert(`Successfully granted access to selected chapters for ${targetEmail}!`);
+      await Promise.all(updatePromises);
+
+      alert(`Successfully granted access to selected chapters for ${checkedUsers.length} user(s)!`);
       initTestBank();
     });
 
@@ -262,9 +287,12 @@ async function renderChapterSelector(allQuestions, releasedMap, userUnlockedMap,
     card.onmouseout = () => card.style.borderColor = '#334155';
 
     const adminActionHTML = isAdmin ? `
-      <div style="margin-top: 4px; display: flex;">
+      <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 4px;">
         <button class="toggle-release-btn" data-chap="${chapName}" data-status="${!isGloballyReleased}" style="width: 100%; padding: 5px; font-size: 11px; background: ${isGloballyReleased ? '#dc2626' : '#10b981'}; color: white; border: none; border-radius: 4px; cursor: pointer;">
           ${isGloballyReleased ? '🔒 Unrelease / Lock' : '🔓 Release Globally'}
+        </button>
+        <button class="question-view-btn" data-chap="${chapName}" style="width: 100%; padding: 5px; font-size: 11px; background: #8b5cf6; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 600;">
+          👁️ Question View (${questions.length})
         </button>
       </div>
     ` : '';
@@ -286,6 +314,14 @@ async function renderChapterSelector(allQuestions, releasedMap, userUnlockedMap,
           const chap = toggleBtn.getAttribute('data-chap');
           const newStatus = toggleBtn.getAttribute('data-status') === 'true';
           await toggleChapterRelease(chap, newStatus);
+        });
+      }
+
+      const viewBtn = card.querySelector('.question-view-btn');
+      if (viewBtn) {
+        viewBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openAdminQuestionViewer(chapName, questions);
         });
       }
     }

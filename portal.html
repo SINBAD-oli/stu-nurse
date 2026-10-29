@@ -69,10 +69,22 @@
             Launch Test Bank Quiz
           </button>
           
-          <!-- NEW: Standalone React Builder Button -->
+          <!-- Standalone React Builder Button -->
           <button id="standalone-create-quiz-btn" class="action-button hidden" style="flex: 1; background-color: #3b82f6; border-color: #3b82f6; color: white;">
             Create Custom Quiz
           </button>
+        </div>
+
+        <!-- Admin Control Section (Hidden by default unless isAdmin === true) -->
+        <div id="admin-control-section" class="hidden" style="margin-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.25rem;">
+          <h3 style="font-size: 0.85rem; font-weight: 600; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Admin Multi-User Unlock</h3>
+          
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="font-size: 13px; font-weight: 600; color: #cbd5e1;">Select Users:</label>
+            <div id="admin-users-checklist" style="max-height: 160px; overflow-y: auto; background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; gap: 6px; box-sizing: border-box;">
+              <!-- Dynamically populated via js/portal.js -->
+            </div>
+          </div>
         </div>
 
         <!-- Recent Updates Section with Timestamps -->
@@ -159,19 +171,15 @@
 
   </div>
 
-  <!-- NEW: React Mount Container (Hidden by default) -->
+  <!-- React Mount Container (Hidden by default) -->
   <div id="react-builder-root" class="hidden" style="position: absolute; inset: 0; z-index: 9999; background: #f8fafc; overflow-y: auto;"></div>
 
   <script type="module" src="./js/portal.js"></script>
   
-  <!-- NEW: Babel script that loads the React code -->
-  <!-- 1. Load the MCQ component first (It has no imports) -->
   <script type="text/babel" src="./js/AddMatrix.jsx"></script>
   <script type="text/babel" src="./js/AddMCQ.jsx"></script>
   <script type="text/babel" src="./js/AddSATA.jsx"></script>
   <script type="text/babel" src="./js/AddBowTie.jsx"></script>
-
-  <!-- 2. Load the Builder WITH data-type="module" so the Firebase imports work -->
   <script type="text/babel" data-type="module" src="./js/quizBuilderStandalone.jsx"></script>
 
   <!-- portal.html footer -->

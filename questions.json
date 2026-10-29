@@ -757,11 +757,6 @@
       },
       {
         "isCorrect": true,
-        "rationale": "Vital-sign trends help establish acuity and whether the patient is deteriorating.",
-        "text": "Blood pressure, heart rate, respiratory rate, and oxygen saturation trends."
-      },
-      {
-        "isCorrect": true,
         "rationale": "These findings help assess cerebral and peripheral perfusion.",
         "text": "Mental status, skin temperature/color, capillary refill, and pulse strength."
       },
@@ -769,6 +764,11 @@
         "isCorrect": true,
         "rationale": "Edema and auscultation help identify congestion and cardiac changes.",
         "text": "Edema and lung/heart auscultation findings."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "Vital-sign trends help establish acuity and whether the patient is deteriorating.",
+        "text": "Blood pressure, heart rate, respiratory rate, and oxygen saturation trends."
       },
       {
         "isCorrect": false,
@@ -786,16 +786,26 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "ACS manifestations",
-    "correctAnswer": "A, B, C, D, F",
+    "correctAnswer": "B, C, D, E, F",
     "difficulty": "Hard",
     "heading": "Acute Coronary Syndrome",
     "integratedProcesses": "Clinical Judgment",
     "objective": "Recognize classic and atypical ACS manifestations.",
     "options": [
       {
+        "isCorrect": false,
+        "rationale": "This is a dangerous rule-out assumption and contradicts the source.",
+        "text": "No chest pain means ACS is excluded."
+      },
+      {
         "isCorrect": true,
-        "rationale": "Chest discomfort is a common ACS cue.",
-        "text": "Chest pressure, heaviness, tightness, or discomfort."
+        "rationale": "Some patients present primarily with fatigue or dyspnea; absence of classic chest pain does not rule out ACS.",
+        "text": "Fatigue or dyspnea as the main presentation, even without classic chest pain."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The guide emphasizes time-sensitive ECG, serial troponin, and urgent evaluation.",
+        "text": "Urgent ECG and serial hs-troponin evaluation when the pattern is concerning."
       },
       {
         "isCorrect": true,
@@ -804,28 +814,18 @@
       },
       {
         "isCorrect": true,
+        "rationale": "Chest discomfort is a common ACS cue.",
+        "text": "Chest pressure, heaviness, tightness, or discomfort."
+      },
+      {
+        "isCorrect": true,
         "rationale": "These accompanying symptoms may occur with ACS.",
         "text": "Diaphoresis, nausea, dyspnea, pallor, or weakness."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "Some patients present primarily with fatigue or dyspnea; absence of classic chest pain does not rule out ACS.",
-        "text": "Fatigue or dyspnea as the main presentation, even without classic chest pain."
-      },
-      {
-        "isCorrect": false,
-        "rationale": "This is a dangerous rule-out assumption and contradicts the source.",
-        "text": "No chest pain means ACS is excluded."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "The guide emphasizes time-sensitive ECG, serial troponin, and urgent evaluation.",
-        "text": "Urgent ECG and serial hs-troponin evaluation when the pattern is concerning."
       }
     ],
     "questionNumber": 22,
     "questionText": "Which findings can be part of a concerning ACS presentation? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D, F. Chest discomfort is a common ACS cue. Radiation to these areas is described in the guide. These accompanying symptoms may occur with ACS. Some patients present primarily with fatigue or dyspnea; absence of classic chest pain does not rule out ACS. The guide emphasizes time-sensitive ECG, serial troponin, and urgent evaluation.",
+    "rationale": "Correct selections: B, C, D, E, F. Chest discomfort is a common ACS cue. Radiation to these areas is described in the guide. These accompanying symptoms may occur with ACS. Some patients present primarily with fatigue or dyspnea; absence of classic chest pain does not rule out ACS. The guide emphasizes time-sensitive ECG, serial troponin, and urgent evaluation.",
     "type": "SATA"
   },
   {
@@ -833,7 +833,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Congestion versus low output",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "A, C, D, E",
     "difficulty": "Hard",
     "heading": "Heart Failure",
     "integratedProcesses": "Clinical Judgment",
@@ -841,18 +841,13 @@
     "options": [
       {
         "isCorrect": true,
-        "rationale": "These findings point to fluid backing up toward the lungs.",
-        "text": "Orthopnea and crackles suggest pulmonary/left-sided congestion."
-      },
-      {
-        "isCorrect": true,
         "rationale": "These findings are consistent with systemic venous congestion.",
         "text": "JVD, dependent edema, and ascites suggest systemic/right-sided congestion."
       },
       {
-        "isCorrect": true,
-        "rationale": "These findings suggest inadequate effective blood delivery and possible organ hypoperfusion.",
-        "text": "Cool extremities, fatigue, and oliguria suggest reduced forward flow/poor perfusion."
+        "isCorrect": false,
+        "rationale": "Congestion and low output can coexist, so edema does not establish adequate perfusion.",
+        "text": "Edema alone establishes that tissue perfusion is adequate."
       },
       {
         "isCorrect": true,
@@ -860,14 +855,19 @@
         "text": "Rapid weight gain and worsening breathlessness can signal acute worsening."
       },
       {
-        "isCorrect": false,
-        "rationale": "Congestion and low output can coexist, so edema does not establish adequate perfusion.",
-        "text": "Edema alone establishes that tissue perfusion is adequate."
+        "isCorrect": true,
+        "rationale": "These findings point to fluid backing up toward the lungs.",
+        "text": "Orthopnea and crackles suggest pulmonary/left-sided congestion."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These findings suggest inadequate effective blood delivery and possible organ hypoperfusion.",
+        "text": "Cool extremities, fatigue, and oliguria suggest reduced forward flow/poor perfusion."
       }
     ],
     "questionNumber": 23,
     "questionText": "Which pairings are accurate for a patient with heart failure? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. These findings point to fluid backing up toward the lungs. These findings are consistent with systemic venous congestion. These findings suggest inadequate effective blood delivery and possible organ hypoperfusion. A change over time in weight and symptoms can indicate decompensation.",
+    "rationale": "Correct selections: A, C, D, E. These findings point to fluid backing up toward the lungs. These findings are consistent with systemic venous congestion. These findings suggest inadequate effective blood delivery and possible organ hypoperfusion. A change over time in weight and symptoms can indicate decompensation.",
     "type": "SATA"
   },
   {
@@ -875,21 +875,16 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Organ-specific signs",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "B, C, D, E",
     "difficulty": "Hard",
     "heading": "Perfusion",
     "integratedProcesses": "Clinical Judgment",
     "objective": "Map perfusion findings to affected organ systems and identify multi-cue deterioration.",
     "options": [
       {
-        "isCorrect": true,
-        "rationale": "These can signal impaired cerebral perfusion.",
-        "text": "Confusion, restlessness, dizziness, or syncope."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "These may reflect reduced renal perfusion or kidney function changes.",
-        "text": "Reduced urine output or rising creatinine."
+        "isCorrect": false,
+        "rationale": "The guide warns to trend findings together; one isolated value may mislead.",
+        "text": "A single normal finding always rules out perfusion impairment."
       },
       {
         "isCorrect": true,
@@ -898,18 +893,23 @@
       },
       {
         "isCorrect": true,
+        "rationale": "These may reflect reduced renal perfusion or kidney function changes.",
+        "text": "Reduced urine output or rising creatinine."
+      },
+      {
+        "isCorrect": true,
         "rationale": "Cardiac ischemia and electrical instability can accompany poor perfusion.",
         "text": "Ischemic discomfort or dysrhythmias."
       },
       {
-        "isCorrect": false,
-        "rationale": "The guide warns to trend findings together; one isolated value may mislead.",
-        "text": "A single normal finding always rules out perfusion impairment."
+        "isCorrect": true,
+        "rationale": "These can signal impaired cerebral perfusion.",
+        "text": "Confusion, restlessness, dizziness, or syncope."
       }
     ],
     "questionNumber": 24,
     "questionText": "Which findings may indicate poor tissue perfusion? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. These can signal impaired cerebral perfusion. These may reflect reduced renal perfusion or kidney function changes. These are concerning peripheral perfusion cues. Cardiac ischemia and electrical instability can accompany poor perfusion.",
+    "rationale": "Correct selections: B, C, D, E. These can signal impaired cerebral perfusion. These may reflect reduced renal perfusion or kidney function changes. These are concerning peripheral perfusion cues. Cardiac ischemia and electrical instability can accompany poor perfusion.",
     "type": "SATA"
   },
   {
@@ -917,21 +917,21 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Priority evaluation",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "C, D, E, F",
     "difficulty": "Hard",
     "heading": "Acute Coronary Syndrome",
     "integratedProcesses": "Clinical Judgment",
     "objective": "Identify appropriate responses to a concerning ACS cue cluster.",
     "options": [
       {
-        "isCorrect": true,
-        "rationale": "Breathing and circulation status are central to immediate risk assessment.",
-        "text": "Assess ABCs and hemodynamic stability promptly."
+        "isCorrect": false,
+        "rationale": "BNP is not required before urgent assessment of possible ACS.",
+        "text": "Delay escalation until a BNP result is available."
       },
       {
-        "isCorrect": true,
-        "rationale": "ECG evaluation is a time-sensitive component of ACS assessment.",
-        "text": "Obtain or review a 12-lead ECG promptly according to protocol."
+        "isCorrect": false,
+        "rationale": "A changing symptom does not independently exclude ischemia; the full clinical pattern still matters.",
+        "text": "Rule out ACS if classic pain resolves before the nurse arrives."
       },
       {
         "isCorrect": true,
@@ -944,19 +944,19 @@
         "text": "Monitor and escalate urgently according to emergency/chest-pain protocol."
       },
       {
-        "isCorrect": false,
-        "rationale": "BNP is not required before urgent assessment of possible ACS.",
-        "text": "Delay escalation until a BNP result is available."
+        "isCorrect": true,
+        "rationale": "ECG evaluation is a time-sensitive component of ACS assessment.",
+        "text": "Obtain or review a 12-lead ECG promptly according to protocol."
       },
       {
-        "isCorrect": false,
-        "rationale": "A changing symptom does not independently exclude ischemia; the full clinical pattern still matters.",
-        "text": "Rule out ACS if classic pain resolves before the nurse arrives."
+        "isCorrect": true,
+        "rationale": "Breathing and circulation status are central to immediate risk assessment.",
+        "text": "Assess ABCs and hemodynamic stability promptly."
       }
     ],
     "questionNumber": 25,
     "questionText": "A patient has new chest pressure, diaphoresis, and dyspnea. Which nursing responses are supported by the study guide? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. Breathing and circulation status are central to immediate risk assessment. ECG evaluation is a time-sensitive component of ACS assessment. Serial hs-troponin and ischemia evidence help evaluate myocardial injury/MI. A concerning ACS pattern requires urgent evaluation and escalation.",
+    "rationale": "Correct selections: C, D, E, F. Breathing and circulation status are central to immediate risk assessment. ECG evaluation is a time-sensitive component of ACS assessment. Serial hs-troponin and ischemia evidence help evaluate myocardial injury/MI. A concerning ACS pattern requires urgent evaluation and escalation.",
     "type": "SATA"
   },
   {
@@ -964,22 +964,12 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Correct biomarker reasoning",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "A, B, C, E",
     "difficulty": "Hard",
     "heading": "Troponin Interpretation",
     "integratedProcesses": "Clinical Judgment",
     "objective": "Apply the source distinction between myocardial injury and myocardial infarction.",
     "options": [
-      {
-        "isCorrect": true,
-        "rationale": "Troponin is evidence of myocardial injury; the cause needs clinical interpretation.",
-        "text": "Troponin reflects myocardial injury but does not automatically prove myocardial infarction."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "There is no universal single normal troponin number; interpretation uses the specific assay reference.",
-        "text": "The positive threshold is assay-specific and relates to the 99th-percentile upper reference limit."
-      },
       {
         "isCorrect": true,
         "rationale": "The source identifies both dynamic troponin change and evidence of ischemia as important for MI diagnosis.",
@@ -991,14 +981,24 @@
         "text": "Serial values may be obtained at 0 and 1–2 hours, depending on the protocol."
       },
       {
+        "isCorrect": true,
+        "rationale": "Troponin is evidence of myocardial injury; the cause needs clinical interpretation.",
+        "text": "Troponin reflects myocardial injury but does not automatically prove myocardial infarction."
+      },
+      {
         "isCorrect": false,
         "rationale": "An elevation alone indicates injury and is not enough to establish MI.",
         "text": "One elevated result always confirms an acute MI regardless of symptoms or ECG."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "There is no universal single normal troponin number; interpretation uses the specific assay reference.",
+        "text": "The positive threshold is assay-specific and relates to the 99th-percentile upper reference limit."
       }
     ],
     "questionNumber": 26,
     "questionText": "Which statements about high-sensitivity troponin are accurate? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. Troponin is evidence of myocardial injury; the cause needs clinical interpretation. There is no universal single normal troponin number; interpretation uses the specific assay reference. The source identifies both dynamic troponin change and evidence of ischemia as important for MI diagnosis. The source notes common serial timing at 0 and 1–2 hours.",
+    "rationale": "Correct selections: A, B, C, E. Troponin is evidence of myocardial injury; the cause needs clinical interpretation. There is no universal single normal troponin number; interpretation uses the specific assay reference. The source identifies both dynamic troponin change and evidence of ischemia as important for MI diagnosis. The source notes common serial timing at 0 and 1–2 hours.",
     "type": "SATA"
   },
   {
@@ -1006,7 +1006,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Purpose of cardiac tests",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "A, B, D, E",
     "difficulty": "Hard",
     "heading": "Laboratory Testing",
     "integratedProcesses": "Clinical Judgment",
@@ -1019,8 +1019,13 @@
       },
       {
         "isCorrect": true,
-        "rationale": "These biomarkers support, but do not independently establish, HF.",
-        "text": "BNP/NT-proBNP can support assessment of ventricular wall stress and heart failure."
+        "rationale": "Hemoglobin is relevant to oxygen-carrying capacity and symptoms such as fatigue or dyspnea.",
+        "text": "CBC can identify anemia that may affect oxygen delivery."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "They support long-term cardiovascular risk assessment, not acute MI diagnosis.",
+        "text": "Lipid panel and HbA1c are primary tests for diagnosing an acute MI."
       },
       {
         "isCorrect": true,
@@ -1029,18 +1034,13 @@
       },
       {
         "isCorrect": true,
-        "rationale": "Hemoglobin is relevant to oxygen-carrying capacity and symptoms such as fatigue or dyspnea.",
-        "text": "CBC can identify anemia that may affect oxygen delivery."
-      },
-      {
-        "isCorrect": false,
-        "rationale": "They support long-term cardiovascular risk assessment, not acute MI diagnosis.",
-        "text": "Lipid panel and HbA1c are primary tests for diagnosing an acute MI."
+        "rationale": "These biomarkers support, but do not independently establish, HF.",
+        "text": "BNP/NT-proBNP can support assessment of ventricular wall stress and heart failure."
       }
     ],
     "questionNumber": 27,
     "questionText": "Which laboratory interpretations align with the study guide? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. This is the principal question addressed by troponin. These biomarkers support, but do not independently establish, HF. Potassium, magnesium, and renal function affect electrical stability and treatment decisions. Hemoglobin is relevant to oxygen-carrying capacity and symptoms such as fatigue or dyspnea.",
+    "rationale": "Correct selections: A, B, D, E. This is the principal question addressed by troponin. These biomarkers support, but do not independently establish, HF. Potassium, magnesium, and renal function affect electrical stability and treatment decisions. Hemoglobin is relevant to oxygen-carrying capacity and symptoms such as fatigue or dyspnea.",
     "type": "SATA"
   },
   {
@@ -1048,7 +1048,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Potassium-related safety",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "A, C, D, E",
     "difficulty": "Hard",
     "heading": "Electrolytes",
     "integratedProcesses": "Clinical Judgment",
@@ -1060,9 +1060,9 @@
         "text": "Hypokalemia can contribute to weakness, cramps, ectopy, and possible U waves."
       },
       {
-        "isCorrect": true,
-        "rationale": "High potassium can be electrically dangerous.",
-        "text": "Hyperkalemia can cause weakness, conduction slowing, and serious arrhythmias."
+        "isCorrect": false,
+        "rationale": "The source notes that a hemolyzed sample may need confirmation when clinically appropriate.",
+        "text": "A hemolyzed sample should always be accepted as definitive without clinical consideration."
       },
       {
         "isCorrect": true,
@@ -1071,18 +1071,18 @@
       },
       {
         "isCorrect": true,
-        "rationale": "Marked electrolyte abnormalities can be urgent, especially with symptoms or ECG/rhythm changes.",
-        "text": "Severe potassium abnormalities warrant prompt assessment and monitoring."
+        "rationale": "High potassium can be electrically dangerous.",
+        "text": "Hyperkalemia can cause weakness, conduction slowing, and serious arrhythmias."
       },
       {
-        "isCorrect": false,
-        "rationale": "The source notes that a hemolyzed sample may need confirmation when clinically appropriate.",
-        "text": "A hemolyzed sample should always be accepted as definitive without clinical consideration."
+        "isCorrect": true,
+        "rationale": "Marked electrolyte abnormalities can be urgent, especially with symptoms or ECG/rhythm changes.",
+        "text": "Severe potassium abnormalities warrant prompt assessment and monitoring."
       }
     ],
     "questionNumber": 28,
     "questionText": "Which statements about potassium and cardiac safety are accurate? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. These are described manifestations of low potassium. High potassium can be electrically dangerous. Medication and kidney context can help explain risk and guide safe treatment evaluation. Marked electrolyte abnormalities can be urgent, especially with symptoms or ECG/rhythm changes.",
+    "rationale": "Correct selections: A, C, D, E. These are described manifestations of low potassium. High potassium can be electrically dangerous. Medication and kidney context can help explain risk and guide safe treatment evaluation. Marked electrolyte abnormalities can be urgent, especially with symptoms or ECG/rhythm changes.",
     "type": "SATA"
   },
   {
@@ -1090,7 +1090,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Diuresis and renal trends",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "A, B, C, E",
     "difficulty": "Hard",
     "heading": "Heart Failure Treatment Monitoring",
     "integratedProcesses": "Clinical Judgment",
@@ -1098,18 +1098,8 @@
     "options": [
       {
         "isCorrect": true,
-        "rationale": "These help determine whether pulmonary congestion is improving or worsening.",
-        "text": "Respiratory status, orthopnea, and breathlessness."
-      },
-      {
-        "isCorrect": true,
         "rationale": "These are central fluid-balance and congestion trends.",
         "text": "Intake/output, daily weight, and edema."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "These help detect hypotension or impaired perfusion.",
-        "text": "Blood pressure, skin temperature, pulses, and mental status."
       },
       {
         "isCorrect": true,
@@ -1117,14 +1107,24 @@
         "text": "Urine output, creatinine/eGFR, potassium, and magnesium."
       },
       {
+        "isCorrect": true,
+        "rationale": "These help detect hypotension or impaired perfusion.",
+        "text": "Blood pressure, skin temperature, pulses, and mental status."
+      },
+      {
         "isCorrect": false,
         "rationale": "Improvement in edema alone can miss reduced perfusion or therapy-related complications.",
         "text": "Only whether the edema appears smaller."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These help determine whether pulmonary congestion is improving or worsening.",
+        "text": "Respiratory status, orthopnea, and breathlessness."
       }
     ],
     "questionNumber": 29,
     "questionText": "A patient with worsening HF is receiving diuresis. Which variables should the nurse trend together? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. These help determine whether pulmonary congestion is improving or worsening. These are central fluid-balance and congestion trends. These help detect hypotension or impaired perfusion. Renal function and electrolytes can change during diuresis and affect safety.",
+    "rationale": "Correct selections: A, B, C, E. These help determine whether pulmonary congestion is improving or worsening. These are central fluid-balance and congestion trends. These help detect hypotension or impaired perfusion. Renal function and electrolytes can change during diuresis and affect safety.",
     "type": "SATA"
   },
   {
@@ -1132,21 +1132,21 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Cutoff and context interpretation",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "B, C, D, E",
     "difficulty": "Hard",
     "heading": "BNP and NT-proBNP",
     "integratedProcesses": "Clinical Judgment",
     "objective": "Interpret natriuretic peptide cutoffs and factors that affect their meaning.",
     "options": [
       {
-        "isCorrect": true,
-        "rationale": "This is the approximate source cutoff for BNP.",
-        "text": "BNP below 100 pg/mL makes acute HF less likely in the guide’s context."
+        "isCorrect": false,
+        "rationale": "Higher values support HF but are not diagnostic by themselves.",
+        "text": "A higher value confirms acute HF without considering symptoms or other tests."
       },
       {
         "isCorrect": true,
-        "rationale": "This is the approximate source cutoff for NT-proBNP.",
-        "text": "NT-proBNP below 300 pg/mL makes acute HF less likely in the guide’s context."
+        "rationale": "This is the approximate source cutoff for BNP.",
+        "text": "BNP below 100 pg/mL makes acute HF less likely in the guide’s context."
       },
       {
         "isCorrect": true,
@@ -1159,14 +1159,14 @@
         "text": "Age, kidney function, obesity, and atrial fibrillation may influence values."
       },
       {
-        "isCorrect": false,
-        "rationale": "Higher values support HF but are not diagnostic by themselves.",
-        "text": "A higher value confirms acute HF without considering symptoms or other tests."
+        "isCorrect": true,
+        "rationale": "This is the approximate source cutoff for NT-proBNP.",
+        "text": "NT-proBNP below 300 pg/mL makes acute HF less likely in the guide’s context."
       }
     ],
     "questionNumber": 30,
     "questionText": "Which statements are accurate when interpreting BNP or NT-proBNP? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. This is the approximate source cutoff for BNP. This is the approximate source cutoff for NT-proBNP. The two biomarkers have different cutoffs and should not be swapped. The source lists these factors as important context.",
+    "rationale": "Correct selections: B, C, D, E. This is the approximate source cutoff for BNP. This is the approximate source cutoff for NT-proBNP. The two biomarkers have different cutoffs and should not be swapped. The source lists these factors as important context.",
     "type": "SATA"
   },
   {
@@ -1182,6 +1182,11 @@
     "options": [
       {
         "isCorrect": true,
+        "rationale": "This is the approximate usual QRS duration cited in the guide.",
+        "text": "The QRS duration is usually less than 0.12 seconds."
+      },
+      {
+        "isCorrect": true,
         "rationale": "This is the guide’s definition of the P wave.",
         "text": "The P wave represents atrial depolarization."
       },
@@ -1189,11 +1194,6 @@
         "isCorrect": true,
         "rationale": "This is the approximate reference interval given in the guide.",
         "text": "The PR interval is approximately 0.12–0.20 seconds."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "This is the approximate usual QRS duration cited in the guide.",
-        "text": "The QRS duration is usually less than 0.12 seconds."
       },
       {
         "isCorrect": true,
@@ -1216,7 +1216,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Test selection",
-    "correctAnswer": "A, B, C, D, E",
+    "correctAnswer": "A, B, C, D, F",
     "difficulty": "Hard",
     "heading": "Cardiac Diagnostics",
     "integratedProcesses": "Clinical Judgment",
@@ -1224,23 +1224,13 @@
     "options": [
       {
         "isCorrect": true,
-        "rationale": "This is the role described in the guide.",
-        "text": "12-lead ECG: ischemia, conduction, and rhythm changes."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "Echo provides structural and functional assessment.",
-        "text": "Echocardiogram: EF, valves, chamber size, and wall motion."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "A chest radiograph can help assess congestion and other pulmonary explanations for symptoms.",
-        "text": "Chest radiograph: congestion and alternative pulmonary causes."
-      },
-      {
-        "isCorrect": true,
         "rationale": "Telemetry is used for ongoing rhythm monitoring when indicated.",
         "text": "Telemetry: rhythm surveillance in selected patients."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "This is the role described in the guide.",
+        "text": "12-lead ECG: ischemia, conduction, and rhythm changes."
       },
       {
         "isCorrect": true,
@@ -1248,14 +1238,24 @@
         "text": "Coronary angiography or CT: anatomical assessment when indicated."
       },
       {
+        "isCorrect": true,
+        "rationale": "Echo provides structural and functional assessment.",
+        "text": "Echocardiogram: EF, valves, chamber size, and wall motion."
+      },
+      {
         "isCorrect": false,
         "rationale": "A lipid panel measures risk-related blood values; it does not image coronary anatomy.",
         "text": "Lipid panel: direct visualization of coronary anatomy."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "A chest radiograph can help assess congestion and other pulmonary explanations for symptoms.",
+        "text": "Chest radiograph: congestion and alternative pulmonary causes."
       }
     ],
     "questionNumber": 32,
     "questionText": "Which diagnostic-test pairings are accurate? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D, E. This is the role described in the guide. Echo provides structural and functional assessment. A chest radiograph can help assess congestion and other pulmonary explanations for symptoms. Telemetry is used for ongoing rhythm monitoring when indicated. These modalities can assess coronary/anatomic structure when clinically indicated.",
+    "rationale": "Correct selections: A, B, C, D, F. This is the role described in the guide. Echo provides structural and functional assessment. A chest radiograph can help assess congestion and other pulmonary explanations for symptoms. Telemetry is used for ongoing rhythm monitoring when indicated. These modalities can assess coronary/anatomic structure when clinically indicated.",
     "type": "SATA"
   },
   {
@@ -1263,7 +1263,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Arterial versus venous patterns",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "A, B, D, E",
     "difficulty": "Hard",
     "heading": "Peripheral Circulation",
     "integratedProcesses": "Clinical Judgment",
@@ -1271,18 +1271,18 @@
     "options": [
       {
         "isCorrect": true,
-        "rationale": "These are reduced arterial-delivery findings.",
-        "text": "Arterial insufficiency: cool or pale limb and diminished pulse."
-      },
-      {
-        "isCorrect": true,
         "rationale": "Exertional pain is consistent with arterial insufficiency in the guide.",
         "text": "Arterial insufficiency: exertional leg pain."
       },
       {
         "isCorrect": true,
-        "rationale": "These are typical venous insufficiency findings described in the source.",
-        "text": "Venous insufficiency: edema, heaviness, skin discoloration, or gaiter-area ulcers."
+        "rationale": "These are reduced arterial-delivery findings.",
+        "text": "Arterial insufficiency: cool or pale limb and diminished pulse."
+      },
+      {
+        "isCorrect": false,
+        "rationale": "Acute limb ischemia is associated with sudden ischemic cues such as pain, pallor, pulselessness, and sensory or motor changes.",
+        "text": "Acute limb ischemia: gradual unchanged edema as the only finding."
       },
       {
         "isCorrect": true,
@@ -1290,14 +1290,14 @@
         "text": "Possible DVT: unilateral swelling, tenderness, and warmth."
       },
       {
-        "isCorrect": false,
-        "rationale": "Acute limb ischemia is associated with sudden ischemic cues such as pain, pallor, pulselessness, and sensory or motor changes.",
-        "text": "Acute limb ischemia: gradual unchanged edema as the only finding."
+        "isCorrect": true,
+        "rationale": "These are typical venous insufficiency findings described in the source.",
+        "text": "Venous insufficiency: edema, heaviness, skin discoloration, or gaiter-area ulcers."
       }
     ],
     "questionNumber": 33,
     "questionText": "Which findings are accurately associated with the stated peripheral circulation problem? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. These are reduced arterial-delivery findings. Exertional pain is consistent with arterial insufficiency in the guide. These are typical venous insufficiency findings described in the source. This cue cluster raises concern for DVT.",
+    "rationale": "Correct selections: A, B, D, E. These are reduced arterial-delivery findings. Exertional pain is consistent with arterial insufficiency in the guide. These are typical venous insufficiency findings described in the source. This cue cluster raises concern for DVT.",
     "type": "SATA"
   },
   {
@@ -1305,7 +1305,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Six Ps and urgent response",
-    "correctAnswer": "A, B, C, D, E",
+    "correctAnswer": "A, B, C, E, F",
     "difficulty": "Hard",
     "heading": "Acute Limb Ischemia",
     "integratedProcesses": "Clinical Judgment",
@@ -1313,8 +1313,8 @@
     "options": [
       {
         "isCorrect": true,
-        "rationale": "Acute onset pain is a key warning sign.",
-        "text": "Sudden severe pain."
+        "rationale": "Loss of pulse suggests impaired arterial flow.",
+        "text": "Absent or diminished pulse/pulselessness."
       },
       {
         "isCorrect": true,
@@ -1323,13 +1323,13 @@
       },
       {
         "isCorrect": true,
-        "rationale": "Loss of pulse suggests impaired arterial flow.",
-        "text": "Absent or diminished pulse/pulselessness."
+        "rationale": "Acute onset pain is a key warning sign.",
+        "text": "Sudden severe pain."
       },
       {
-        "isCorrect": true,
-        "rationale": "Sensory changes are concerning in acute limb ischemia.",
-        "text": "Paresthesia or new sensory loss."
+        "isCorrect": false,
+        "rationale": "This is more consistent with chronic venous findings than acute limb ischemia.",
+        "text": "Stable chronic gaiter-area ulcer with no acute change."
       },
       {
         "isCorrect": true,
@@ -1337,14 +1337,14 @@
         "text": "Paralysis or new weakness."
       },
       {
-        "isCorrect": false,
-        "rationale": "This is more consistent with chronic venous findings than acute limb ischemia.",
-        "text": "Stable chronic gaiter-area ulcer with no acute change."
+        "isCorrect": true,
+        "rationale": "Sensory changes are concerning in acute limb ischemia.",
+        "text": "Paresthesia or new sensory loss."
       }
     ],
     "questionNumber": 34,
     "questionText": "Which findings are warning signs of acute limb ischemia that warrant urgent escalation? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D, E. Acute onset pain is a key warning sign. Pallor and temperature change are among the classic warning signs. Loss of pulse suggests impaired arterial flow. Sensory changes are concerning in acute limb ischemia. Motor changes may indicate severe limb ischemia and are urgent.",
+    "rationale": "Correct selections: A, B, C, E, F. Acute onset pain is a key warning sign. Pallor and temperature change are among the classic warning signs. Loss of pulse suggests impaired arterial flow. Sensory changes are concerning in acute limb ischemia. Motor changes may indicate severe limb ischemia and are urgent.",
     "type": "SATA"
   },
   {
@@ -1365,11 +1365,6 @@
       },
       {
         "isCorrect": true,
-        "rationale": "The guide warns that BUN is not specific.",
-        "text": "BUN provides context about volume/perfusion but is not specific by itself."
-      },
-      {
-        "isCorrect": true,
         "rationale": "Falling urine output may signal reduced renal blood flow or other clinical concerns.",
         "text": "Urine output is a functional trend that can reflect renal perfusion."
       },
@@ -1377,6 +1372,11 @@
         "isCorrect": true,
         "rationale": "Cardiac output and renal perfusion are connected.",
         "text": "Poor cardiac output may reduce renal blood flow."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "The guide warns that BUN is not specific.",
+        "text": "BUN provides context about volume/perfusion but is not specific by itself."
       },
       {
         "isCorrect": false,
@@ -1394,7 +1394,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Interpreting CBC",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "A, B, D, E",
     "difficulty": "Hard",
     "heading": "CBC and Oxygen Delivery",
     "integratedProcesses": "Clinical Judgment",
@@ -1402,13 +1402,18 @@
     "options": [
       {
         "isCorrect": true,
+        "rationale": "Reference ranges are not identical for all patients and settings.",
+        "text": "Hemoglobin and hematocrit ranges vary by laboratory, age, and context."
+      },
+      {
+        "isCorrect": true,
         "rationale": "Reduced hemoglobin can reduce oxygen-carrying capacity and increase symptoms.",
         "text": "Anemia can worsen angina, fatigue, and dyspnea."
       },
       {
-        "isCorrect": true,
-        "rationale": "WBC must be interpreted with clinical context and is not specific for cardiac disease.",
-        "text": "WBC may reflect infection or stress but is not cardiac-specific."
+        "isCorrect": false,
+        "rationale": "Normal SpO₂ does not rule out low hemoglobin or impaired oxygen-carrying capacity.",
+        "text": "Normal SpO₂ excludes anemia."
       },
       {
         "isCorrect": true,
@@ -1417,18 +1422,13 @@
       },
       {
         "isCorrect": true,
-        "rationale": "Reference ranges are not identical for all patients and settings.",
-        "text": "Hemoglobin and hematocrit ranges vary by laboratory, age, and context."
-      },
-      {
-        "isCorrect": false,
-        "rationale": "Normal SpO₂ does not rule out low hemoglobin or impaired oxygen-carrying capacity.",
-        "text": "Normal SpO₂ excludes anemia."
+        "rationale": "WBC must be interpreted with clinical context and is not specific for cardiac disease.",
+        "text": "WBC may reflect infection or stress but is not cardiac-specific."
       }
     ],
     "questionNumber": 36,
     "questionText": "Which statements about CBC interpretation in cardiac patients are accurate? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. Reduced hemoglobin can reduce oxygen-carrying capacity and increase symptoms. WBC must be interpreted with clinical context and is not specific for cardiac disease. Platelet counts can affect bleeding-risk decisions. Reference ranges are not identical for all patients and settings.",
+    "rationale": "Correct selections: A, B, D, E. Reduced hemoglobin can reduce oxygen-carrying capacity and increase symptoms. WBC must be interpreted with clinical context and is not specific for cardiac disease. Platelet counts can affect bleeding-risk decisions. Reference ranges are not identical for all patients and settings.",
     "type": "SATA"
   },
   {
@@ -1436,7 +1436,7 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "Lipid panel and HbA1c",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "A, B, C, E",
     "difficulty": "Hard",
     "heading": "Long-Term Cardiovascular Risk",
     "integratedProcesses": "Clinical Judgment",
@@ -1446,11 +1446,6 @@
         "isCorrect": true,
         "rationale": "LDL-C is important to long-term cardiovascular risk management.",
         "text": "LDL-C is atherogenic cholesterol, and lower targets may be used for higher-risk patients."
-      },
-      {
-        "isCorrect": true,
-        "rationale": "These are additional lipid-related risk markers.",
-        "text": "HDL-C and triglycerides provide additional risk information."
       },
       {
         "isCorrect": true,
@@ -1466,11 +1461,16 @@
         "isCorrect": false,
         "rationale": "The source explicitly states that these are not diagnostic of acute MI or acute HF.",
         "text": "Lipid and HbA1c results independently diagnose acute MI or acute HF."
+      },
+      {
+        "isCorrect": true,
+        "rationale": "These are additional lipid-related risk markers.",
+        "text": "HDL-C and triglycerides provide additional risk information."
       }
     ],
     "questionNumber": 37,
     "questionText": "Which statements about lipid panel and HbA1c findings are accurate? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. LDL-C is important to long-term cardiovascular risk management. These are additional lipid-related risk markers. HbA1c is not an acute glucose measurement; it reflects longer-term glycemia. These are approximate common ranges in the source, with clinical context still needed.",
+    "rationale": "Correct selections: A, B, C, E. LDL-C is important to long-term cardiovascular risk management. These are additional lipid-related risk markers. HbA1c is not an acute glucose measurement; it reflects longer-term glycemia. These are approximate common ranges in the source, with clinical context still needed.",
     "type": "SATA"
   },
   {
@@ -1478,21 +1478,21 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "concept": "From cue to action to evaluation",
-    "correctAnswer": "A, B, C, D",
+    "correctAnswer": "B, C, D, E",
     "difficulty": "Hard",
     "heading": "RN Priorities",
     "integratedProcesses": "Clinical Judgment",
     "objective": "Apply the recognition-prioritization-action-evaluation workflow.",
     "options": [
       {
-        "isCorrect": true,
-        "rationale": "Recognition depends on the complete clinical picture, not isolated numbers.",
-        "text": "Recognize symptoms, vital signs, perfusion, and rhythm cues together."
+        "isCorrect": false,
+        "rationale": "Teaching is important but should not displace immediate stabilization and escalation.",
+        "text": "Teach medication adherence before stabilizing an acutely unstable patient."
       },
       {
         "isCorrect": true,
-        "rationale": "These are urgent threats highlighted by the guide.",
-        "text": "Prioritize breathing compromise, hemodynamic instability, and possible ischemia."
+        "rationale": "Evaluation checks the response to care and whether the patient is improving or worsening.",
+        "text": "Evaluate response using symptoms, I&O, daily weight, labs, ECG, and vital-sign trends as appropriate."
       },
       {
         "isCorrect": true,
@@ -1501,18 +1501,18 @@
       },
       {
         "isCorrect": true,
-        "rationale": "Evaluation checks the response to care and whether the patient is improving or worsening.",
-        "text": "Evaluate response using symptoms, I&O, daily weight, labs, ECG, and vital-sign trends as appropriate."
+        "rationale": "These are urgent threats highlighted by the guide.",
+        "text": "Prioritize breathing compromise, hemodynamic instability, and possible ischemia."
       },
       {
-        "isCorrect": false,
-        "rationale": "Teaching is important but should not displace immediate stabilization and escalation.",
-        "text": "Teach medication adherence before stabilizing an acutely unstable patient."
+        "isCorrect": true,
+        "rationale": "Recognition depends on the complete clinical picture, not isolated numbers.",
+        "text": "Recognize symptoms, vital signs, perfusion, and rhythm cues together."
       }
     ],
     "questionNumber": 38,
     "questionText": "Which actions follow the guide’s RN priority framework when a cardiac patient deteriorates? Select all that apply.",
-    "rationale": "Correct selections: A, B, C, D. Recognition depends on the complete clinical picture, not isolated numbers. These are urgent threats highlighted by the guide. Assessment and prompt escalation are key actions during deterioration. Evaluation checks the response to care and whether the patient is improving or worsening.",
+    "rationale": "Correct selections: B, C, D, E. Recognition depends on the complete clinical picture, not isolated numbers. These are urgent threats highlighted by the guide. Assessment and prompt escalation are key actions during deterioration. Evaluation checks the response to care and whether the patient is improving or worsening.",
     "type": "SATA"
   },
   {
@@ -1520,9 +1520,9 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
-      "Left-sided/pulmonary congestion",
       "Right-sided/systemic congestion",
-      "Reduced forward flow/poor perfusion"
+      "Reduced forward flow/poor perfusion",
+      "Left-sided/pulmonary congestion"
     ],
     "concept": "Congestion versus low output",
     "correctAnswer": "0: Left-sided/pulmonary congestion ; 1: Right-sided/systemic congestion ; 2: Reduced forward flow/poor perfusion ; 3: Right-sided/systemic congestion ; 4: Left-sided/pulmonary congestion ; 5: Reduced forward flow/poor perfusion",
@@ -1535,16 +1535,16 @@
         "text": "Orthopnea with crackles",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Left-sided/pulmonary congestion"
-          },
-          "1": {
             "isCorrect": false,
             "text": "Right-sided/systemic congestion"
           },
-          "2": {
+          "1": {
             "isCorrect": false,
             "text": "Reduced forward flow/poor perfusion"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Left-sided/pulmonary congestion"
           }
         }
       },
@@ -1552,16 +1552,16 @@
         "text": "JVD with dependent edema",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Left-sided/pulmonary congestion"
-          },
-          "1": {
             "isCorrect": true,
             "text": "Right-sided/systemic congestion"
           },
-          "2": {
+          "1": {
             "isCorrect": false,
             "text": "Reduced forward flow/poor perfusion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Left-sided/pulmonary congestion"
           }
         }
       },
@@ -1570,15 +1570,15 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Left-sided/pulmonary congestion"
-          },
-          "1": {
-            "isCorrect": false,
             "text": "Right-sided/systemic congestion"
           },
-          "2": {
+          "1": {
             "isCorrect": true,
             "text": "Reduced forward flow/poor perfusion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Left-sided/pulmonary congestion"
           }
         }
       },
@@ -1586,16 +1586,16 @@
         "text": "Ascites with increasing abdominal distention",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Left-sided/pulmonary congestion"
-          },
-          "1": {
             "isCorrect": true,
             "text": "Right-sided/systemic congestion"
           },
-          "2": {
+          "1": {
             "isCorrect": false,
             "text": "Reduced forward flow/poor perfusion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Left-sided/pulmonary congestion"
           }
         }
       },
@@ -1603,16 +1603,16 @@
         "text": "Hypoxemia with worsening dyspnea",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Left-sided/pulmonary congestion"
-          },
-          "1": {
             "isCorrect": false,
             "text": "Right-sided/systemic congestion"
           },
-          "2": {
+          "1": {
             "isCorrect": false,
             "text": "Reduced forward flow/poor perfusion"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Left-sided/pulmonary congestion"
           }
         }
       },
@@ -1621,15 +1621,15 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Left-sided/pulmonary congestion"
-          },
-          "1": {
-            "isCorrect": false,
             "text": "Right-sided/systemic congestion"
           },
-          "2": {
+          "1": {
             "isCorrect": true,
             "text": "Reduced forward flow/poor perfusion"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Left-sided/pulmonary congestion"
           }
         }
       }
@@ -1644,11 +1644,11 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
-      "Myocardial injury",
       "HF / ventricular wall stress support",
-      "Electrolyte, renal, and therapy safety",
       "Oxygen-carrying capacity / blood cells",
-      "Long-term cardiovascular risk"
+      "Long-term cardiovascular risk",
+      "Electrolyte, renal, and therapy safety",
+      "Myocardial injury"
     ],
     "concept": "Clinical question and lab selection",
     "correctAnswer": "0: Myocardial injury ; 1: HF / ventricular wall stress support ; 2: Electrolyte, renal, and therapy safety ; 3: Oxygen-carrying capacity / blood cells ; 4: Long-term cardiovascular risk",
@@ -1661,24 +1661,24 @@
         "text": "High-sensitivity troponin",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Myocardial injury"
-          },
-          "1": {
             "isCorrect": false,
             "text": "HF / ventricular wall stress support"
           },
-          "2": {
-            "isCorrect": false,
-            "text": "Electrolyte, renal, and therapy safety"
-          },
-          "3": {
+          "1": {
             "isCorrect": false,
             "text": "Oxygen-carrying capacity / blood cells"
           },
-          "4": {
+          "2": {
             "isCorrect": false,
             "text": "Long-term cardiovascular risk"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Electrolyte, renal, and therapy safety"
+          },
+          "4": {
+            "isCorrect": true,
+            "text": "Myocardial injury"
           }
         }
       },
@@ -1686,24 +1686,24 @@
         "text": "BNP or NT-proBNP",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Myocardial injury"
-          },
-          "1": {
             "isCorrect": true,
             "text": "HF / ventricular wall stress support"
           },
-          "2": {
-            "isCorrect": false,
-            "text": "Electrolyte, renal, and therapy safety"
-          },
-          "3": {
+          "1": {
             "isCorrect": false,
             "text": "Oxygen-carrying capacity / blood cells"
           },
-          "4": {
+          "2": {
             "isCorrect": false,
             "text": "Long-term cardiovascular risk"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Electrolyte, renal, and therapy safety"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Myocardial injury"
           }
         }
       },
@@ -1712,23 +1712,23 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Myocardial injury"
+            "text": "HF / ventricular wall stress support"
           },
           "1": {
             "isCorrect": false,
-            "text": "HF / ventricular wall stress support"
+            "text": "Oxygen-carrying capacity / blood cells"
           },
           "2": {
+            "isCorrect": false,
+            "text": "Long-term cardiovascular risk"
+          },
+          "3": {
             "isCorrect": true,
             "text": "Electrolyte, renal, and therapy safety"
           },
-          "3": {
-            "isCorrect": false,
-            "text": "Oxygen-carrying capacity / blood cells"
-          },
           "4": {
             "isCorrect": false,
-            "text": "Long-term cardiovascular risk"
+            "text": "Myocardial injury"
           }
         }
       },
@@ -1737,23 +1737,23 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Myocardial injury"
-          },
-          "1": {
-            "isCorrect": false,
             "text": "HF / ventricular wall stress support"
           },
-          "2": {
-            "isCorrect": false,
-            "text": "Electrolyte, renal, and therapy safety"
-          },
-          "3": {
+          "1": {
             "isCorrect": true,
             "text": "Oxygen-carrying capacity / blood cells"
           },
-          "4": {
+          "2": {
             "isCorrect": false,
             "text": "Long-term cardiovascular risk"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Electrolyte, renal, and therapy safety"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "Myocardial injury"
           }
         }
       },
@@ -1762,23 +1762,23 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Myocardial injury"
+            "text": "HF / ventricular wall stress support"
           },
           "1": {
             "isCorrect": false,
-            "text": "HF / ventricular wall stress support"
+            "text": "Oxygen-carrying capacity / blood cells"
           },
           "2": {
-            "isCorrect": false,
-            "text": "Electrolyte, renal, and therapy safety"
+            "isCorrect": true,
+            "text": "Long-term cardiovascular risk"
           },
           "3": {
             "isCorrect": false,
-            "text": "Oxygen-carrying capacity / blood cells"
+            "text": "Electrolyte, renal, and therapy safety"
           },
           "4": {
-            "isCorrect": true,
-            "text": "Long-term cardiovascular risk"
+            "isCorrect": false,
+            "text": "Myocardial injury"
           }
         }
       }
@@ -1793,9 +1793,9 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
-      "Hypokalemia",
+      "Not specific to either alone",
       "Hyperkalemia",
-      "Not specific to either alone"
+      "Hypokalemia"
     ],
     "concept": "Electrolyte pattern recognition",
     "correctAnswer": "0: Hypokalemia ; 1: Hyperkalemia ; 2: Hypokalemia ; 3: Hyperkalemia ; 4: Not specific to either alone ; 5: Hypokalemia",
@@ -1808,16 +1808,16 @@
         "text": "K⁺ 2.9 mEq/L with muscle cramps",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Hypokalemia"
+            "isCorrect": false,
+            "text": "Not specific to either alone"
           },
           "1": {
             "isCorrect": false,
             "text": "Hyperkalemia"
           },
           "2": {
-            "isCorrect": false,
-            "text": "Not specific to either alone"
+            "isCorrect": true,
+            "text": "Hypokalemia"
           }
         }
       },
@@ -1826,7 +1826,7 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Hypokalemia"
+            "text": "Not specific to either alone"
           },
           "1": {
             "isCorrect": true,
@@ -1834,7 +1834,7 @@
           },
           "2": {
             "isCorrect": false,
-            "text": "Not specific to either alone"
+            "text": "Hypokalemia"
           }
         }
       },
@@ -1842,16 +1842,16 @@
         "text": "Ventricular ectopy with K⁺ 2.7 mEq/L",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Hypokalemia"
+            "isCorrect": false,
+            "text": "Not specific to either alone"
           },
           "1": {
             "isCorrect": false,
             "text": "Hyperkalemia"
           },
           "2": {
-            "isCorrect": false,
-            "text": "Not specific to either alone"
+            "isCorrect": true,
+            "text": "Hypokalemia"
           }
         }
       },
@@ -1860,7 +1860,7 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Hypokalemia"
+            "text": "Not specific to either alone"
           },
           "1": {
             "isCorrect": true,
@@ -1868,7 +1868,7 @@
           },
           "2": {
             "isCorrect": false,
-            "text": "Not specific to either alone"
+            "text": "Hypokalemia"
           }
         }
       },
@@ -1876,16 +1876,16 @@
         "text": "A potassium abnormality in a patient taking a loop diuretic or ACE inhibitor",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Hypokalemia"
+            "isCorrect": true,
+            "text": "Not specific to either alone"
           },
           "1": {
             "isCorrect": false,
             "text": "Hyperkalemia"
           },
           "2": {
-            "isCorrect": true,
-            "text": "Not specific to either alone"
+            "isCorrect": false,
+            "text": "Hypokalemia"
           }
         }
       },
@@ -1893,16 +1893,16 @@
         "text": "Possible U waves with low potassium",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Hypokalemia"
+            "isCorrect": false,
+            "text": "Not specific to either alone"
           },
           "1": {
             "isCorrect": false,
             "text": "Hyperkalemia"
           },
           "2": {
-            "isCorrect": false,
-            "text": "Not specific to either alone"
+            "isCorrect": true,
+            "text": "Hypokalemia"
           }
         }
       }
@@ -1917,10 +1917,10 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
-      "Atrial depolarization",
-      "Atrioventricular conduction interval",
+      "Ventricular repolarization",
       "Ventricular depolarization",
-      "Ventricular repolarization"
+      "Atrial depolarization",
+      "Atrioventricular conduction interval"
     ],
     "concept": "Basic ECG meaning",
     "correctAnswer": "0: Atrial depolarization ; 1: Atrioventricular conduction interval ; 2: Ventricular depolarization ; 3: Ventricular repolarization",
@@ -1933,20 +1933,20 @@
         "text": "P wave",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Atrial depolarization"
+            "isCorrect": false,
+            "text": "Ventricular repolarization"
           },
           "1": {
             "isCorrect": false,
-            "text": "Atrioventricular conduction interval"
+            "text": "Ventricular depolarization"
           },
           "2": {
-            "isCorrect": false,
-            "text": "Ventricular depolarization"
+            "isCorrect": true,
+            "text": "Atrial depolarization"
           },
           "3": {
             "isCorrect": false,
-            "text": "Ventricular repolarization"
+            "text": "Atrioventricular conduction interval"
           }
         }
       },
@@ -1955,19 +1955,19 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Atrial depolarization"
+            "text": "Ventricular repolarization"
           },
           "1": {
-            "isCorrect": true,
-            "text": "Atrioventricular conduction interval"
-          },
-          "2": {
             "isCorrect": false,
             "text": "Ventricular depolarization"
           },
-          "3": {
+          "2": {
             "isCorrect": false,
-            "text": "Ventricular repolarization"
+            "text": "Atrial depolarization"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Atrioventricular conduction interval"
           }
         }
       },
@@ -1976,19 +1976,19 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Atrial depolarization"
+            "text": "Ventricular repolarization"
           },
           "1": {
-            "isCorrect": false,
-            "text": "Atrioventricular conduction interval"
-          },
-          "2": {
             "isCorrect": true,
             "text": "Ventricular depolarization"
           },
+          "2": {
+            "isCorrect": false,
+            "text": "Atrial depolarization"
+          },
           "3": {
             "isCorrect": false,
-            "text": "Ventricular repolarization"
+            "text": "Atrioventricular conduction interval"
           }
         }
       },
@@ -1996,20 +1996,20 @@
         "text": "T wave",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Atrial depolarization"
+            "isCorrect": true,
+            "text": "Ventricular repolarization"
           },
           "1": {
             "isCorrect": false,
-            "text": "Atrioventricular conduction interval"
+            "text": "Ventricular depolarization"
           },
           "2": {
             "isCorrect": false,
-            "text": "Ventricular depolarization"
+            "text": "Atrial depolarization"
           },
           "3": {
-            "isCorrect": true,
-            "text": "Ventricular repolarization"
+            "isCorrect": false,
+            "text": "Atrioventricular conduction interval"
           }
         }
       }
@@ -2024,10 +2024,10 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
-      "Arterial insufficiency",
       "Venous insufficiency",
-      "Possible DVT",
-      "Acute limb ischemia"
+      "Arterial insufficiency",
+      "Acute limb ischemia",
+      "Possible DVT"
     ],
     "concept": "Arterial, venous, DVT, or acute ischemia",
     "correctAnswer": "0: Arterial insufficiency ; 1: Venous insufficiency ; 2: Possible DVT ; 3: Acute limb ischemia ; 4: Arterial insufficiency ; 5: Venous insufficiency",
@@ -2040,20 +2040,20 @@
         "text": "Cool, pale limb with diminished pulse",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Arterial insufficiency"
-          },
-          "1": {
             "isCorrect": false,
             "text": "Venous insufficiency"
           },
+          "1": {
+            "isCorrect": true,
+            "text": "Arterial insufficiency"
+          },
           "2": {
             "isCorrect": false,
-            "text": "Possible DVT"
+            "text": "Acute limb ischemia"
           },
           "3": {
             "isCorrect": false,
-            "text": "Acute limb ischemia"
+            "text": "Possible DVT"
           }
         }
       },
@@ -2061,20 +2061,20 @@
         "text": "Chronic dependent edema and gaiter-area ulcer",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Arterial insufficiency"
-          },
-          "1": {
             "isCorrect": true,
             "text": "Venous insufficiency"
           },
+          "1": {
+            "isCorrect": false,
+            "text": "Arterial insufficiency"
+          },
           "2": {
             "isCorrect": false,
-            "text": "Possible DVT"
+            "text": "Acute limb ischemia"
           },
           "3": {
             "isCorrect": false,
-            "text": "Acute limb ischemia"
+            "text": "Possible DVT"
           }
         }
       },
@@ -2083,19 +2083,19 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Arterial insufficiency"
+            "text": "Venous insufficiency"
           },
           "1": {
             "isCorrect": false,
-            "text": "Venous insufficiency"
+            "text": "Arterial insufficiency"
           },
           "2": {
-            "isCorrect": true,
-            "text": "Possible DVT"
-          },
-          "3": {
             "isCorrect": false,
             "text": "Acute limb ischemia"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Possible DVT"
           }
         }
       },
@@ -2104,19 +2104,19 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Arterial insufficiency"
+            "text": "Venous insufficiency"
           },
           "1": {
             "isCorrect": false,
-            "text": "Venous insufficiency"
+            "text": "Arterial insufficiency"
           },
           "2": {
-            "isCorrect": false,
-            "text": "Possible DVT"
-          },
-          "3": {
             "isCorrect": true,
             "text": "Acute limb ischemia"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Possible DVT"
           }
         }
       },
@@ -2124,20 +2124,20 @@
         "text": "Pain with exertion and diminished peripheral pulses",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Arterial insufficiency"
-          },
-          "1": {
             "isCorrect": false,
             "text": "Venous insufficiency"
           },
+          "1": {
+            "isCorrect": true,
+            "text": "Arterial insufficiency"
+          },
           "2": {
             "isCorrect": false,
-            "text": "Possible DVT"
+            "text": "Acute limb ischemia"
           },
           "3": {
             "isCorrect": false,
-            "text": "Acute limb ischemia"
+            "text": "Possible DVT"
           }
         }
       },
@@ -2145,20 +2145,20 @@
         "text": "Chronic leg heaviness with discoloration and edema",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Arterial insufficiency"
-          },
-          "1": {
             "isCorrect": true,
             "text": "Venous insufficiency"
           },
+          "1": {
+            "isCorrect": false,
+            "text": "Arterial insufficiency"
+          },
           "2": {
             "isCorrect": false,
-            "text": "Possible DVT"
+            "text": "Acute limb ischemia"
           },
           "3": {
             "isCorrect": false,
-            "text": "Acute limb ischemia"
+            "text": "Possible DVT"
           }
         }
       }
@@ -2173,11 +2173,11 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
-      "12-lead ECG",
-      "Echocardiogram",
       "Chest radiograph",
       "Telemetry",
-      "Coronary angiography / CT"
+      "Coronary angiography / CT",
+      "Echocardiogram",
+      "12-lead ECG"
     ],
     "concept": "Selecting the best diagnostic modality",
     "correctAnswer": "0: 12-lead ECG ; 1: Echocardiogram ; 2: Chest radiograph ; 3: Telemetry ; 4: Coronary angiography / CT",
@@ -2190,24 +2190,24 @@
         "text": "Assess ischemia, conduction, and rhythm changes",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "12-lead ECG"
-          },
-          "1": {
-            "isCorrect": false,
-            "text": "Echocardiogram"
-          },
-          "2": {
             "isCorrect": false,
             "text": "Chest radiograph"
           },
-          "3": {
+          "1": {
             "isCorrect": false,
             "text": "Telemetry"
           },
-          "4": {
+          "2": {
             "isCorrect": false,
             "text": "Coronary angiography / CT"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Echocardiogram"
+          },
+          "4": {
+            "isCorrect": true,
+            "text": "12-lead ECG"
           }
         }
       },
@@ -2216,23 +2216,23 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "12-lead ECG"
-          },
-          "1": {
-            "isCorrect": true,
-            "text": "Echocardiogram"
-          },
-          "2": {
-            "isCorrect": false,
             "text": "Chest radiograph"
           },
-          "3": {
+          "1": {
             "isCorrect": false,
             "text": "Telemetry"
           },
-          "4": {
+          "2": {
             "isCorrect": false,
             "text": "Coronary angiography / CT"
+          },
+          "3": {
+            "isCorrect": true,
+            "text": "Echocardiogram"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "12-lead ECG"
           }
         }
       },
@@ -2240,24 +2240,24 @@
         "text": "Assess pulmonary congestion and alternative pulmonary causes",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "12-lead ECG"
-          },
-          "1": {
-            "isCorrect": false,
-            "text": "Echocardiogram"
-          },
-          "2": {
             "isCorrect": true,
             "text": "Chest radiograph"
           },
-          "3": {
+          "1": {
             "isCorrect": false,
             "text": "Telemetry"
           },
-          "4": {
+          "2": {
             "isCorrect": false,
             "text": "Coronary angiography / CT"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Echocardiogram"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "12-lead ECG"
           }
         }
       },
@@ -2266,23 +2266,23 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "12-lead ECG"
-          },
-          "1": {
-            "isCorrect": false,
-            "text": "Echocardiogram"
-          },
-          "2": {
-            "isCorrect": false,
             "text": "Chest radiograph"
           },
-          "3": {
+          "1": {
             "isCorrect": true,
             "text": "Telemetry"
           },
-          "4": {
+          "2": {
             "isCorrect": false,
             "text": "Coronary angiography / CT"
+          },
+          "3": {
+            "isCorrect": false,
+            "text": "Echocardiogram"
+          },
+          "4": {
+            "isCorrect": false,
+            "text": "12-lead ECG"
           }
         }
       },
@@ -2291,23 +2291,23 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "12-lead ECG"
+            "text": "Chest radiograph"
           },
           "1": {
             "isCorrect": false,
-            "text": "Echocardiogram"
+            "text": "Telemetry"
           },
           "2": {
-            "isCorrect": false,
-            "text": "Chest radiograph"
+            "isCorrect": true,
+            "text": "Coronary angiography / CT"
           },
           "3": {
             "isCorrect": false,
-            "text": "Telemetry"
+            "text": "Echocardiogram"
           },
           "4": {
-            "isCorrect": true,
-            "text": "Coronary angiography / CT"
+            "isCorrect": false,
+            "text": "12-lead ECG"
           }
         }
       }
@@ -2323,9 +2323,9 @@
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
       "Cerebral",
-      "Renal",
+      "Cardiac",
       "Peripheral",
-      "Cardiac"
+      "Renal"
     ],
     "concept": "Perfusion finding to body system",
     "correctAnswer": "0: Cerebral ; 1: Renal ; 2: Peripheral ; 3: Cardiac",
@@ -2343,7 +2343,7 @@
           },
           "1": {
             "isCorrect": false,
-            "text": "Renal"
+            "text": "Cardiac"
           },
           "2": {
             "isCorrect": false,
@@ -2351,7 +2351,7 @@
           },
           "3": {
             "isCorrect": false,
-            "text": "Cardiac"
+            "text": "Renal"
           }
         }
       },
@@ -2363,16 +2363,16 @@
             "text": "Cerebral"
           },
           "1": {
-            "isCorrect": true,
-            "text": "Renal"
+            "isCorrect": false,
+            "text": "Cardiac"
           },
           "2": {
             "isCorrect": false,
             "text": "Peripheral"
           },
           "3": {
-            "isCorrect": false,
-            "text": "Cardiac"
+            "isCorrect": true,
+            "text": "Renal"
           }
         }
       },
@@ -2385,7 +2385,7 @@
           },
           "1": {
             "isCorrect": false,
-            "text": "Renal"
+            "text": "Cardiac"
           },
           "2": {
             "isCorrect": true,
@@ -2393,7 +2393,7 @@
           },
           "3": {
             "isCorrect": false,
-            "text": "Cardiac"
+            "text": "Renal"
           }
         }
       },
@@ -2405,16 +2405,16 @@
             "text": "Cerebral"
           },
           "1": {
-            "isCorrect": false,
-            "text": "Renal"
+            "isCorrect": true,
+            "text": "Cardiac"
           },
           "2": {
             "isCorrect": false,
             "text": "Peripheral"
           },
           "3": {
-            "isCorrect": true,
-            "text": "Cardiac"
+            "isCorrect": false,
+            "text": "Renal"
           }
         }
       }
@@ -2429,10 +2429,10 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
-      "Possible ACS",
-      "Acute HF congestion",
+      "Shock / hypoperfusion",
       "Dysrhythmia with possible instability",
-      "Shock / hypoperfusion"
+      "Acute HF congestion",
+      "Possible ACS"
     ],
     "concept": "Acute syndrome matching",
     "correctAnswer": "0: Possible ACS ; 1: Acute HF congestion ; 2: Dysrhythmia with possible instability ; 3: Shock / hypoperfusion",
@@ -2445,20 +2445,20 @@
         "text": "New discomfort with diaphoresis and a concerning ECG/troponin pattern",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Possible ACS"
+            "isCorrect": false,
+            "text": "Shock / hypoperfusion"
           },
           "1": {
             "isCorrect": false,
-            "text": "Acute HF congestion"
+            "text": "Dysrhythmia with possible instability"
           },
           "2": {
             "isCorrect": false,
-            "text": "Dysrhythmia with possible instability"
+            "text": "Acute HF congestion"
           },
           "3": {
-            "isCorrect": false,
-            "text": "Shock / hypoperfusion"
+            "isCorrect": true,
+            "text": "Possible ACS"
           }
         }
       },
@@ -2467,19 +2467,19 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Possible ACS"
+            "text": "Shock / hypoperfusion"
           },
           "1": {
-            "isCorrect": true,
-            "text": "Acute HF congestion"
-          },
-          "2": {
             "isCorrect": false,
             "text": "Dysrhythmia with possible instability"
           },
+          "2": {
+            "isCorrect": true,
+            "text": "Acute HF congestion"
+          },
           "3": {
             "isCorrect": false,
-            "text": "Shock / hypoperfusion"
+            "text": "Possible ACS"
           }
         }
       },
@@ -2488,19 +2488,19 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Possible ACS"
+            "text": "Shock / hypoperfusion"
           },
           "1": {
-            "isCorrect": false,
-            "text": "Acute HF congestion"
-          },
-          "2": {
             "isCorrect": true,
             "text": "Dysrhythmia with possible instability"
           },
+          "2": {
+            "isCorrect": false,
+            "text": "Acute HF congestion"
+          },
           "3": {
             "isCorrect": false,
-            "text": "Shock / hypoperfusion"
+            "text": "Possible ACS"
           }
         }
       },
@@ -2508,20 +2508,20 @@
         "text": "Confusion, cool mottled skin, weak pulses, and oliguria",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Possible ACS"
+            "isCorrect": true,
+            "text": "Shock / hypoperfusion"
           },
           "1": {
             "isCorrect": false,
-            "text": "Acute HF congestion"
+            "text": "Dysrhythmia with possible instability"
           },
           "2": {
             "isCorrect": false,
-            "text": "Dysrhythmia with possible instability"
+            "text": "Acute HF congestion"
           },
           "3": {
-            "isCorrect": true,
-            "text": "Shock / hypoperfusion"
+            "isCorrect": false,
+            "text": "Possible ACS"
           }
         }
       }
@@ -2537,8 +2537,8 @@
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
       "Supported by the guide",
-      "Incorrect or overstates what the test shows",
-      "Requires clinical context"
+      "Requires clinical context",
+      "Incorrect or overstates what the test shows"
     ],
     "concept": "Ranges and limitations",
     "correctAnswer": "0: Supported by the guide ; 1: Supported by the guide ; 2: Incorrect or overstates what the test shows ; 3: Incorrect or overstates what the test shows ; 4: Requires clinical context",
@@ -2556,11 +2556,11 @@
           },
           "1": {
             "isCorrect": false,
-            "text": "Incorrect or overstates what the test shows"
+            "text": "Requires clinical context"
           },
           "2": {
             "isCorrect": false,
-            "text": "Requires clinical context"
+            "text": "Incorrect or overstates what the test shows"
           }
         }
       },
@@ -2573,11 +2573,11 @@
           },
           "1": {
             "isCorrect": false,
-            "text": "Incorrect or overstates what the test shows"
+            "text": "Requires clinical context"
           },
           "2": {
             "isCorrect": false,
-            "text": "Requires clinical context"
+            "text": "Incorrect or overstates what the test shows"
           }
         }
       },
@@ -2589,12 +2589,12 @@
             "text": "Supported by the guide"
           },
           "1": {
-            "isCorrect": true,
-            "text": "Incorrect or overstates what the test shows"
-          },
-          "2": {
             "isCorrect": false,
             "text": "Requires clinical context"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Incorrect or overstates what the test shows"
           }
         }
       },
@@ -2606,12 +2606,12 @@
             "text": "Supported by the guide"
           },
           "1": {
-            "isCorrect": true,
-            "text": "Incorrect or overstates what the test shows"
-          },
-          "2": {
             "isCorrect": false,
             "text": "Requires clinical context"
+          },
+          "2": {
+            "isCorrect": true,
+            "text": "Incorrect or overstates what the test shows"
           }
         }
       },
@@ -2623,12 +2623,12 @@
             "text": "Supported by the guide"
           },
           "1": {
-            "isCorrect": false,
-            "text": "Incorrect or overstates what the test shows"
-          },
-          "2": {
             "isCorrect": true,
             "text": "Requires clinical context"
+          },
+          "2": {
+            "isCorrect": false,
+            "text": "Incorrect or overstates what the test shows"
           }
         }
       }
@@ -2643,10 +2643,10 @@
     "clientNeed": "Physiological Integrity",
     "cognitiveLevel": "Analysis [Analyzing]",
     "columns": [
-      "Fluid congestion",
       "Renal perfusion / kidney function",
+      "Oxygen delivery / anemia",
       "Electrical stability",
-      "Oxygen delivery / anemia"
+      "Fluid congestion"
     ],
     "concept": "Recognizing change over time",
     "correctAnswer": "0: Fluid congestion ; 1: Renal perfusion / kidney function ; 2: Electrical stability ; 3: Oxygen delivery / anemia",
@@ -2659,20 +2659,20 @@
         "text": "Daily weight and intake/output",
         "options": {
           "0": {
-            "isCorrect": true,
-            "text": "Fluid congestion"
+            "isCorrect": false,
+            "text": "Renal perfusion / kidney function"
           },
           "1": {
             "isCorrect": false,
-            "text": "Renal perfusion / kidney function"
+            "text": "Oxygen delivery / anemia"
           },
           "2": {
             "isCorrect": false,
             "text": "Electrical stability"
           },
           "3": {
-            "isCorrect": false,
-            "text": "Oxygen delivery / anemia"
+            "isCorrect": true,
+            "text": "Fluid congestion"
           }
         }
       },
@@ -2680,12 +2680,12 @@
         "text": "Urine output with creatinine/eGFR trend",
         "options": {
           "0": {
-            "isCorrect": false,
-            "text": "Fluid congestion"
-          },
-          "1": {
             "isCorrect": true,
             "text": "Renal perfusion / kidney function"
+          },
+          "1": {
+            "isCorrect": false,
+            "text": "Oxygen delivery / anemia"
           },
           "2": {
             "isCorrect": false,
@@ -2693,7 +2693,7 @@
           },
           "3": {
             "isCorrect": false,
-            "text": "Oxygen delivery / anemia"
+            "text": "Fluid congestion"
           }
         }
       },
@@ -2702,11 +2702,11 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Fluid congestion"
+            "text": "Renal perfusion / kidney function"
           },
           "1": {
             "isCorrect": false,
-            "text": "Renal perfusion / kidney function"
+            "text": "Oxygen delivery / anemia"
           },
           "2": {
             "isCorrect": true,
@@ -2714,7 +2714,7 @@
           },
           "3": {
             "isCorrect": false,
-            "text": "Oxygen delivery / anemia"
+            "text": "Fluid congestion"
           }
         }
       },
@@ -2723,19 +2723,19 @@
         "options": {
           "0": {
             "isCorrect": false,
-            "text": "Fluid congestion"
+            "text": "Renal perfusion / kidney function"
           },
           "1": {
-            "isCorrect": false,
-            "text": "Renal perfusion / kidney function"
+            "isCorrect": true,
+            "text": "Oxygen delivery / anemia"
           },
           "2": {
             "isCorrect": false,
             "text": "Electrical stability"
           },
           "3": {
-            "isCorrect": true,
-            "text": "Oxygen delivery / anemia"
+            "isCorrect": false,
+            "text": "Fluid congestion"
           }
         }
       }
@@ -2748,8 +2748,16 @@
   {
     "actions": [
       {
+        "isCorrect": false,
+        "text": "Focus first on long-term diet and lipid teaching"
+      },
+      {
         "isCorrect": true,
         "text": "Promptly assess breathing/oxygenation and escalate concerning hypoxemia and respiratory distress per protocol"
+      },
+      {
+        "isCorrect": false,
+        "text": "Assume cool hands are expected because edema is present and defer reassessment"
       },
       {
         "isCorrect": true,
@@ -2758,14 +2766,6 @@
       {
         "isCorrect": false,
         "text": "Wait for a repeat BNP before responding to the low SpO₂"
-      },
-      {
-        "isCorrect": false,
-        "text": "Focus first on long-term diet and lipid teaching"
-      },
-      {
-        "isCorrect": false,
-        "text": "Assume cool hands are expected because edema is present and defer reassessment"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -2779,15 +2779,15 @@
       },
       {
         "isCorrect": false,
+        "text": "An uncomplicated dysrhythmia without congestion or perfusion concern"
+      },
+      {
+        "isCorrect": false,
         "text": "Isolated chronic venous insufficiency without cardiopulmonary change"
       },
       {
         "isCorrect": false,
         "text": "Stable long-term cardiovascular risk without current deterioration"
-      },
-      {
-        "isCorrect": false,
-        "text": "An uncomplicated dysrhythmia without congestion or perfusion concern"
       }
     ],
     "difficulty": "Hard",
@@ -2800,8 +2800,8 @@
     ],
     "parameters": [
       {
-        "isCorrect": true,
-        "text": "Respiratory status, SpO₂, work of breathing, and lung findings"
+        "isCorrect": false,
+        "text": "Whether the leg edema appears smaller, without tracking other cues"
       },
       {
         "isCorrect": true,
@@ -2809,15 +2809,15 @@
       },
       {
         "isCorrect": false,
-        "text": "LDL-C alone"
-      },
-      {
-        "isCorrect": false,
         "text": "A single daily temperature without repeat cardiopulmonary assessment"
       },
       {
+        "isCorrect": true,
+        "text": "Respiratory status, SpO₂, work of breathing, and lung findings"
+      },
+      {
         "isCorrect": false,
-        "text": "Whether the leg edema appears smaller, without tracking other cues"
+        "text": "LDL-C alone"
       }
     ],
     "questionNumber": 49,
@@ -2828,12 +2828,16 @@
   {
     "actions": [
       {
-        "isCorrect": true,
-        "text": "Escalate urgently and initiate ECG-based evaluation/monitoring according to the emergency or chest-pain protocol"
+        "isCorrect": false,
+        "text": "Treat the troponin rise as proof of its cause and ignore the ECG"
       },
       {
         "isCorrect": true,
         "text": "Assess ABCs and hemodynamic stability; reassess symptoms promptly"
+      },
+      {
+        "isCorrect": true,
+        "text": "Escalate urgently and initiate ECG-based evaluation/monitoring according to the emergency or chest-pain protocol"
       },
       {
         "isCorrect": false,
@@ -2842,10 +2846,6 @@
       {
         "isCorrect": false,
         "text": "Order routine lipid teaching before evaluation of the acute symptom cluster"
-      },
-      {
-        "isCorrect": false,
-        "text": "Treat the troponin rise as proof of its cause and ignore the ECG"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -2854,20 +2854,20 @@
     "concept": "Possible acute myocardial infarction",
     "conditions": [
       {
+        "isCorrect": false,
+        "text": "Chronic anemia as the only supported explanation for all findings"
+      },
+      {
         "isCorrect": true,
         "text": "Possible acute MI in the setting of myocardial injury and ischemic evidence"
       },
       {
         "isCorrect": false,
-        "text": "HF ruled in by BNP criteria even though no BNP was measured"
-      },
-      {
-        "isCorrect": false,
-        "text": "Chronic anemia as the only supported explanation for all findings"
-      },
-      {
-        "isCorrect": false,
         "text": "Stable dysrhythmia without concern for ischemia"
+      },
+      {
+        "isCorrect": false,
+        "text": "HF ruled in by BNP criteria even though no BNP was measured"
       }
     ],
     "difficulty": "Hard",
@@ -2881,15 +2881,7 @@
     "parameters": [
       {
         "isCorrect": true,
-        "text": "Serial hs-troponin trend interpreted with symptoms and ECG findings"
-      },
-      {
-        "isCorrect": true,
         "text": "Vital signs, ongoing symptoms, and hemodynamic stability"
-      },
-      {
-        "isCorrect": false,
-        "text": "HbA1c alone"
       },
       {
         "isCorrect": false,
@@ -2898,6 +2890,14 @@
       {
         "isCorrect": false,
         "text": "A single BNP value as a required prerequisite to escalation"
+      },
+      {
+        "isCorrect": true,
+        "text": "Serial hs-troponin trend interpreted with symptoms and ECG findings"
+      },
+      {
+        "isCorrect": false,
+        "text": "HbA1c alone"
       }
     ],
     "questionNumber": 50,
@@ -2909,19 +2909,19 @@
     "actions": [
       {
         "isCorrect": true,
-        "text": "Promptly assess the patient and escalate the low potassium with new ventricular ectopy according to protocol"
+        "text": "Review rhythm, magnesium, renal function, and medication context while arranging indicated monitoring and treatment per orders/protocol"
       },
       {
-        "isCorrect": true,
-        "text": "Review rhythm, magnesium, renal function, and medication context while arranging indicated monitoring and treatment per orders/protocol"
+        "isCorrect": false,
+        "text": "Focus on HbA1c and LDL-C before addressing the rhythm"
       },
       {
         "isCorrect": false,
         "text": "Wait until the next routine clinic visit because the patient has no chest pain"
       },
       {
-        "isCorrect": false,
-        "text": "Focus on HbA1c and LDL-C before addressing the rhythm"
+        "isCorrect": true,
+        "text": "Promptly assess the patient and escalate the low potassium with new ventricular ectopy according to protocol"
       },
       {
         "isCorrect": false,
@@ -2934,8 +2934,8 @@
     "concept": "Electrolyte-related electrical instability",
     "conditions": [
       {
-        "isCorrect": true,
-        "text": "Clinically significant hypokalemia with increased dysrhythmia risk"
+        "isCorrect": false,
+        "text": "Isolated venous congestion"
       },
       {
         "isCorrect": false,
@@ -2943,11 +2943,11 @@
       },
       {
         "isCorrect": false,
-        "text": "Isolated venous congestion"
+        "text": "A routine long-term lipid abnormality"
       },
       {
-        "isCorrect": false,
-        "text": "A routine long-term lipid abnormality"
+        "isCorrect": true,
+        "text": "Clinically significant hypokalemia with increased dysrhythmia risk"
       }
     ],
     "difficulty": "Hard",
@@ -2964,6 +2964,10 @@
         "text": "Cardiac rhythm/ectopy and associated symptoms"
       },
       {
+        "isCorrect": false,
+        "text": "Skin discoloration in the gaiter area only"
+      },
+      {
         "isCorrect": true,
         "text": "Potassium, magnesium, renal function, and response to ordered treatment"
       },
@@ -2974,10 +2978,6 @@
       {
         "isCorrect": false,
         "text": "A routine lipid panel"
-      },
-      {
-        "isCorrect": false,
-        "text": "Skin discoloration in the gaiter area only"
       }
     ],
     "questionNumber": 51,
@@ -2988,16 +2988,12 @@
   {
     "actions": [
       {
-        "isCorrect": true,
-        "text": "Escalate immediately for urgent evaluation of possible acute limb ischemia"
+        "isCorrect": false,
+        "text": "Encourage walking and reassess at end of shift"
       },
       {
         "isCorrect": true,
         "text": "Promptly reassess and document limb perfusion findings while following emergency protocols"
-      },
-      {
-        "isCorrect": false,
-        "text": "Encourage walking and reassess at end of shift"
       },
       {
         "isCorrect": false,
@@ -3006,6 +3002,10 @@
       {
         "isCorrect": false,
         "text": "Wait for the lipid panel before escalating"
+      },
+      {
+        "isCorrect": true,
+        "text": "Escalate immediately for urgent evaluation of possible acute limb ischemia"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -3014,20 +3014,20 @@
     "concept": "Acute limb ischemia",
     "conditions": [
       {
-        "isCorrect": true,
-        "text": "Acute limb ischemia with threatened arterial perfusion"
+        "isCorrect": false,
+        "text": "Routine exertional claudication without acute change"
       },
       {
         "isCorrect": false,
         "text": "Chronic venous insufficiency with typical dependent edema"
       },
       {
-        "isCorrect": false,
-        "text": "Uncomplicated systemic congestion due to HF"
+        "isCorrect": true,
+        "text": "Acute limb ischemia with threatened arterial perfusion"
       },
       {
         "isCorrect": false,
-        "text": "Routine exertional claudication without acute change"
+        "text": "Uncomplicated systemic congestion due to HF"
       }
     ],
     "difficulty": "Hard",
@@ -3044,12 +3044,8 @@
         "text": "Limb color, temperature, pulse, pain, sensation, and motor function"
       },
       {
-        "isCorrect": true,
-        "text": "Changes in limb perfusion and overall clinical status during urgent evaluation"
-      },
-      {
         "isCorrect": false,
-        "text": "HbA1c alone"
+        "text": "Daily weight as the only reassessment parameter"
       },
       {
         "isCorrect": false,
@@ -3057,7 +3053,11 @@
       },
       {
         "isCorrect": false,
-        "text": "Daily weight as the only reassessment parameter"
+        "text": "HbA1c alone"
+      },
+      {
+        "isCorrect": true,
+        "text": "Changes in limb perfusion and overall clinical status during urgent evaluation"
       }
     ],
     "questionNumber": 52,
@@ -3072,16 +3072,16 @@
         "text": "Assess ABCs, hemodynamic stability, and perfusion and escalate urgently per emergency protocol"
       },
       {
+        "isCorrect": false,
+        "text": "Assume confusion is unrelated and wait until routine rounds"
+      },
+      {
         "isCorrect": true,
         "text": "Initiate or continue cardiac rhythm monitoring and promptly reassess vital signs and mental status"
       },
       {
         "isCorrect": false,
         "text": "Judge urgency from the heart rate alone"
-      },
-      {
-        "isCorrect": false,
-        "text": "Assume confusion is unrelated and wait until routine rounds"
       },
       {
         "isCorrect": false,
@@ -3094,12 +3094,12 @@
     "concept": "Dysrhythmia with hemodynamic instability",
     "conditions": [
       {
-        "isCorrect": true,
-        "text": "Dysrhythmia with signs of hemodynamic instability and poor perfusion"
-      },
-      {
         "isCorrect": false,
         "text": "Stable asymptomatic tachycardia with preserved perfusion"
+      },
+      {
+        "isCorrect": true,
+        "text": "Dysrhythmia with signs of hemodynamic instability and poor perfusion"
       },
       {
         "isCorrect": false,
@@ -3120,14 +3120,6 @@
     ],
     "parameters": [
       {
-        "isCorrect": true,
-        "text": "Rhythm, heart rate, blood pressure, and response to intervention"
-      },
-      {
-        "isCorrect": true,
-        "text": "Mental status, skin perfusion, pulse quality, and other signs of organ perfusion"
-      },
-      {
         "isCorrect": false,
         "text": "LDL-C alone"
       },
@@ -3136,8 +3128,16 @@
         "text": "Daily weight only"
       },
       {
+        "isCorrect": true,
+        "text": "Mental status, skin perfusion, pulse quality, and other signs of organ perfusion"
+      },
+      {
         "isCorrect": false,
         "text": "Gaiter-area skin changes only"
+      },
+      {
+        "isCorrect": true,
+        "text": "Rhythm, heart rate, blood pressure, and response to intervention"
       }
     ],
     "questionNumber": 53,
@@ -3148,24 +3148,24 @@
   {
     "actions": [
       {
-        "isCorrect": true,
-        "text": "Promptly assess the patient and escalate the new ectopy, low electrolytes, reduced urine output, and creatinine change"
-      },
-      {
-        "isCorrect": true,
-        "text": "Review vital signs/perfusion, renal function, potassium, magnesium, rhythm, and prescribed diuretic plan with the clinical team"
+        "isCorrect": false,
+        "text": "Ignore creatinine changes if the patient reports less shortness of breath"
       },
       {
         "isCorrect": false,
         "text": "Stop evaluating the patient because edema has improved"
       },
       {
+        "isCorrect": true,
+        "text": "Promptly assess the patient and escalate the new ectopy, low electrolytes, reduced urine output, and creatinine change"
+      },
+      {
         "isCorrect": false,
         "text": "Check only LDL-C because it is a cardiovascular marker"
       },
       {
-        "isCorrect": false,
-        "text": "Ignore creatinine changes if the patient reports less shortness of breath"
+        "isCorrect": true,
+        "text": "Review vital signs/perfusion, renal function, potassium, magnesium, rhythm, and prescribed diuretic plan with the clinical team"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -3174,16 +3174,16 @@
     "concept": "Treatment response and safety monitoring",
     "conditions": [
       {
-        "isCorrect": true,
-        "text": "Possible diuretic-associated electrolyte depletion with renal/perfusion concern and increased dysrhythmia risk"
+        "isCorrect": false,
+        "text": "Acute MI confirmed by the potassium result alone"
       },
       {
         "isCorrect": false,
         "text": "Uncomplicated improvement in HF requiring no further assessment"
       },
       {
-        "isCorrect": false,
-        "text": "Acute MI confirmed by the potassium result alone"
+        "isCorrect": true,
+        "text": "Possible diuretic-associated electrolyte depletion with renal/perfusion concern and increased dysrhythmia risk"
       },
       {
         "isCorrect": false,
@@ -3200,12 +3200,8 @@
     ],
     "parameters": [
       {
-        "isCorrect": true,
-        "text": "Rhythm and ectopy with potassium and magnesium trends"
-      },
-      {
-        "isCorrect": true,
-        "text": "Urine output, creatinine/eGFR, BP/perfusion, and volume-status trends"
+        "isCorrect": false,
+        "text": "Skin color of one leg only"
       },
       {
         "isCorrect": false,
@@ -3216,8 +3212,12 @@
         "text": "A single weight without other reassessment"
       },
       {
-        "isCorrect": false,
-        "text": "Skin color of one leg only"
+        "isCorrect": true,
+        "text": "Urine output, creatinine/eGFR, BP/perfusion, and volume-status trends"
+      },
+      {
+        "isCorrect": true,
+        "text": "Rhythm and ectopy with potassium and magnesium trends"
       }
     ],
     "questionNumber": 54,
@@ -3237,7 +3237,7 @@
       },
       {
         "isCorrect": false,
-        "text": "Wait for a routine repeat in several days because CKD commonly causes abnormal labs"
+        "text": "Ignore conduction slowing unless chest pain appears"
       },
       {
         "isCorrect": false,
@@ -3245,7 +3245,7 @@
       },
       {
         "isCorrect": false,
-        "text": "Ignore conduction slowing unless chest pain appears"
+        "text": "Wait for a routine repeat in several days because CKD commonly causes abnormal labs"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -3254,8 +3254,8 @@
     "concept": "Hyperkalemia-related conduction risk",
     "conditions": [
       {
-        "isCorrect": true,
-        "text": "Hyperkalemia with possible cardiac conduction instability"
+        "isCorrect": false,
+        "text": "Long-term hyperlipidemia without acute electrolyte concern"
       },
       {
         "isCorrect": false,
@@ -3266,8 +3266,8 @@
         "text": "Stable arterial insufficiency"
       },
       {
-        "isCorrect": false,
-        "text": "Long-term hyperlipidemia without acute electrolyte concern"
+        "isCorrect": true,
+        "text": "Hyperkalemia with possible cardiac conduction instability"
       }
     ],
     "difficulty": "Hard",
@@ -3280,16 +3280,12 @@
     ],
     "parameters": [
       {
+        "isCorrect": false,
+        "text": "Gaiter-area skin findings only"
+      },
+      {
         "isCorrect": true,
         "text": "Cardiac rhythm and ECG/conduction changes"
-      },
-      {
-        "isCorrect": true,
-        "text": "Potassium trend, renal function, and clinical response to urgent management"
-      },
-      {
-        "isCorrect": false,
-        "text": "Daily weight alone"
       },
       {
         "isCorrect": false,
@@ -3297,7 +3293,11 @@
       },
       {
         "isCorrect": false,
-        "text": "Gaiter-area skin findings only"
+        "text": "Daily weight alone"
+      },
+      {
+        "isCorrect": true,
+        "text": "Potassium trend, renal function, and clinical response to urgent management"
       }
     ],
     "questionNumber": 55,
@@ -3312,8 +3312,8 @@
         "text": "Escalate urgently and assess ABCs/respiratory and hemodynamic stability according to emergency protocol"
       },
       {
-        "isCorrect": true,
-        "text": "Provide/prepare for indicated respiratory support and close monitoring per protocol while the team evaluates the patient"
+        "isCorrect": false,
+        "text": "Treat unilateral swelling as harmless because the pulse may still be present"
       },
       {
         "isCorrect": false,
@@ -3324,8 +3324,8 @@
         "text": "Wait for lipid results before addressing hypoxemia"
       },
       {
-        "isCorrect": false,
-        "text": "Treat unilateral swelling as harmless because the pulse may still be present"
+        "isCorrect": true,
+        "text": "Provide/prepare for indicated respiratory support and close monitoring per protocol while the team evaluates the patient"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -3343,11 +3343,11 @@
       },
       {
         "isCorrect": false,
-        "text": "Stable long-term diabetes-related risk"
+        "text": "Uncomplicated anemia as the only supported conclusion"
       },
       {
         "isCorrect": false,
-        "text": "Uncomplicated anemia as the only supported conclusion"
+        "text": "Stable long-term diabetes-related risk"
       }
     ],
     "difficulty": "Hard",
@@ -3360,16 +3360,16 @@
     ],
     "parameters": [
       {
-        "isCorrect": true,
-        "text": "SpO₂, respiratory rate/work of breathing, and respiratory response"
+        "isCorrect": false,
+        "text": "HbA1c alone"
       },
       {
         "isCorrect": true,
         "text": "BP, HR, mental status, and other hemodynamic/perfusion cues"
       },
       {
-        "isCorrect": false,
-        "text": "HbA1c alone"
+        "isCorrect": true,
+        "text": "SpO₂, respiratory rate/work of breathing, and respiratory response"
       },
       {
         "isCorrect": false,
@@ -3388,20 +3388,20 @@
   {
     "actions": [
       {
-        "isCorrect": true,
-        "text": "Assess current symptoms, vital signs, hemodynamic status, and any concerning ischemic cues; escalate changes as indicated"
-      },
-      {
-        "isCorrect": true,
-        "text": "Report/communicate the significant hemoglobin change and trend CBC with the clinical team while further evaluation proceeds"
+        "isCorrect": false,
+        "text": "Assume anemia is the only possible diagnosis and omit cardiac assessment"
       },
       {
         "isCorrect": false,
         "text": "Dismiss dyspnea because SpO₂ is normal"
       },
       {
-        "isCorrect": false,
-        "text": "Assume anemia is the only possible diagnosis and omit cardiac assessment"
+        "isCorrect": true,
+        "text": "Report/communicate the significant hemoglobin change and trend CBC with the clinical team while further evaluation proceeds"
+      },
+      {
+        "isCorrect": true,
+        "text": "Assess current symptoms, vital signs, hemodynamic status, and any concerning ischemic cues; escalate changes as indicated"
       },
       {
         "isCorrect": false,
@@ -3414,8 +3414,8 @@
     "concept": "Reduced oxygen-carrying capacity",
     "conditions": [
       {
-        "isCorrect": true,
-        "text": "Reduced oxygen-carrying capacity from anemia may be contributing to symptoms; acute cardiac causes still require assessment"
+        "isCorrect": false,
+        "text": "Isolated right-sided HF established by fatigue alone"
       },
       {
         "isCorrect": false,
@@ -3426,8 +3426,8 @@
         "text": "Confirmed acute MI based solely on a low hemoglobin"
       },
       {
-        "isCorrect": false,
-        "text": "Isolated right-sided HF established by fatigue alone"
+        "isCorrect": true,
+        "text": "Reduced oxygen-carrying capacity from anemia may be contributing to symptoms; acute cardiac causes still require assessment"
       }
     ],
     "difficulty": "Hard",
@@ -3440,6 +3440,14 @@
     ],
     "parameters": [
       {
+        "isCorrect": false,
+        "text": "Daily weight alone"
+      },
+      {
+        "isCorrect": false,
+        "text": "PR interval alone as proof that oxygen delivery is adequate"
+      },
+      {
         "isCorrect": true,
         "text": "Hemoglobin/CBC trend and symptoms such as fatigue, dyspnea, or angina"
       },
@@ -3450,14 +3458,6 @@
       {
         "isCorrect": false,
         "text": "LDL-C alone"
-      },
-      {
-        "isCorrect": false,
-        "text": "Daily weight alone"
-      },
-      {
-        "isCorrect": false,
-        "text": "PR interval alone as proof that oxygen delivery is adequate"
       }
     ],
     "questionNumber": 57,
@@ -3468,12 +3468,8 @@
   {
     "actions": [
       {
-        "isCorrect": true,
-        "text": "Assess ABCs and hemodynamic stability and escalate urgently for possible deterioration"
-      },
-      {
-        "isCorrect": true,
-        "text": "Reassess mental status, pulse quality, skin/peripheral perfusion, and urine output while following emergency protocols"
+        "isCorrect": false,
+        "text": "Begin long-term cardiovascular risk education before assessing stability"
       },
       {
         "isCorrect": false,
@@ -3484,8 +3480,12 @@
         "text": "Focus only on a single creatinine value and ignore the other cues"
       },
       {
-        "isCorrect": false,
-        "text": "Begin long-term cardiovascular risk education before assessing stability"
+        "isCorrect": true,
+        "text": "Assess ABCs and hemodynamic stability and escalate urgently for possible deterioration"
+      },
+      {
+        "isCorrect": true,
+        "text": "Reassess mental status, pulse quality, skin/peripheral perfusion, and urine output while following emergency protocols"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -3499,15 +3499,15 @@
       },
       {
         "isCorrect": false,
-        "text": "Isolated peripheral venous insufficiency"
-      },
-      {
-        "isCorrect": false,
         "text": "Stable long-term atherosclerotic risk without acute deterioration"
       },
       {
         "isCorrect": false,
         "text": "An uncomplicated elevated HbA1c"
+      },
+      {
+        "isCorrect": false,
+        "text": "Isolated peripheral venous insufficiency"
       }
     ],
     "difficulty": "Hard",
@@ -3521,11 +3521,11 @@
     "parameters": [
       {
         "isCorrect": true,
-        "text": "BP/HR trends, mental status, skin/pulses/capillary refill, and response to intervention"
+        "text": "Urine output and renal-function trends as part of organ-perfusion evaluation"
       },
       {
         "isCorrect": true,
-        "text": "Urine output and renal-function trends as part of organ-perfusion evaluation"
+        "text": "BP/HR trends, mental status, skin/pulses/capillary refill, and response to intervention"
       },
       {
         "isCorrect": false,
@@ -3549,11 +3549,15 @@
     "actions": [
       {
         "isCorrect": true,
-        "text": "Prioritize respiratory assessment/oxygenation and escalate hypoxemia or respiratory distress according to protocol"
+        "text": "Assess hemodynamic status and fluid/perfusion trends while initiating appropriate monitoring and reassessment"
       },
       {
         "isCorrect": true,
-        "text": "Assess hemodynamic status and fluid/perfusion trends while initiating appropriate monitoring and reassessment"
+        "text": "Prioritize respiratory assessment/oxygenation and escalate hypoxemia or respiratory distress according to protocol"
+      },
+      {
+        "isCorrect": false,
+        "text": "Interpret weight gain as unrelated to the new orthopnea and crackles"
       },
       {
         "isCorrect": false,
@@ -3562,10 +3566,6 @@
       {
         "isCorrect": false,
         "text": "Wait for a BNP result before assessing breathing"
-      },
-      {
-        "isCorrect": false,
-        "text": "Interpret weight gain as unrelated to the new orthopnea and crackles"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -3574,16 +3574,16 @@
     "concept": "Acute HF respiratory deterioration",
     "conditions": [
       {
+        "isCorrect": false,
+        "text": "Long-term risk profile only, without acute change"
+      },
+      {
         "isCorrect": true,
         "text": "Acute worsening HF with pulmonary congestion and impaired oxygenation"
       },
       {
         "isCorrect": false,
         "text": "Isolated chronic venous insufficiency without a cardiopulmonary problem"
-      },
-      {
-        "isCorrect": false,
-        "text": "Long-term risk profile only, without acute change"
       },
       {
         "isCorrect": false,
@@ -3604,20 +3604,20 @@
         "text": "SpO₂, respiratory rate/work of breathing, orthopnea, and lung findings"
       },
       {
-        "isCorrect": true,
-        "text": "Daily weight, intake/output, edema, BP, and perfusion trend"
+        "isCorrect": false,
+        "text": "HbA1c alone"
       },
       {
         "isCorrect": false,
-        "text": "HbA1c alone"
+        "text": "A single PR interval without respiratory reassessment"
       },
       {
         "isCorrect": false,
         "text": "LDL-C alone"
       },
       {
-        "isCorrect": false,
-        "text": "A single PR interval without respiratory reassessment"
+        "isCorrect": true,
+        "text": "Daily weight, intake/output, edema, BP, and perfusion trend"
       }
     ],
     "questionNumber": 59,
@@ -3629,23 +3629,23 @@
     "actions": [
       {
         "isCorrect": true,
-        "text": "Obtain/review ECG and symptoms promptly and follow the indicated evaluation pathway for the patient’s clinical context"
-      },
-      {
-        "isCorrect": true,
         "text": "Use serial hs-troponin and trend clinical findings rather than interpreting one value in isolation"
-      },
-      {
-        "isCorrect": false,
-        "text": "Document confirmed acute MI based only on the first troponin result"
       },
       {
         "isCorrect": false,
         "text": "Dismiss the result without considering renal function or clinical context"
       },
       {
+        "isCorrect": true,
+        "text": "Obtain/review ECG and symptoms promptly and follow the indicated evaluation pathway for the patient’s clinical context"
+      },
+      {
         "isCorrect": false,
         "text": "Delay all assessment until the next routine appointment because chest pain is absent"
+      },
+      {
+        "isCorrect": false,
+        "text": "Document confirmed acute MI based only on the first troponin result"
       }
     ],
     "chapter": "Cardiac Nursing",
@@ -3654,20 +3654,20 @@
     "concept": "Avoiding overinterpretation of a single biomarker",
     "conditions": [
       {
-        "isCorrect": true,
-        "text": "Myocardial injury is possible, but one troponin result alone does not establish acute MI; interpretation needs serial change and ischemic evidence"
-      },
-      {
         "isCorrect": false,
         "text": "Acute MI is definitively confirmed by any result above the reference limit"
       },
       {
         "isCorrect": false,
-        "text": "ACS is excluded because there is no chest pain"
+        "text": "BNP is required to determine whether the troponin is real"
+      },
+      {
+        "isCorrect": true,
+        "text": "Myocardial injury is possible, but one troponin result alone does not establish acute MI; interpretation needs serial change and ischemic evidence"
       },
       {
         "isCorrect": false,
-        "text": "BNP is required to determine whether the troponin is real"
+        "text": "ACS is excluded because there is no chest pain"
       }
     ],
     "difficulty": "Hard",
@@ -3680,20 +3680,20 @@
     ],
     "parameters": [
       {
-        "isCorrect": true,
-        "text": "Serial hs-troponin trend interpreted using the assay reference and clinical context"
+        "isCorrect": false,
+        "text": "One daily weight without symptom assessment"
       },
       {
         "isCorrect": true,
         "text": "ECG findings, symptoms, vital signs, and changes from baseline"
       },
       {
-        "isCorrect": false,
-        "text": "LDL-C alone"
+        "isCorrect": true,
+        "text": "Serial hs-troponin trend interpreted using the assay reference and clinical context"
       },
       {
         "isCorrect": false,
-        "text": "One daily weight without symptom assessment"
+        "text": "LDL-C alone"
       },
       {
         "isCorrect": false,
